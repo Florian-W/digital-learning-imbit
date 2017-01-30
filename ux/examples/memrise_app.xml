@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"  ?>
+<?xml-stylesheet type="text/xsl" href="../xslt/Learning.xsl"?>
+<Learning guid="c46782ca-3c02-4360-a166-1156cb3df3e6" cost="false" offerLimited="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3schools.com ../xsd/Learning.xsd">
+  <Title>Memrise</Title>
+  <Description>
+	Online Lerntool mit Karteikarten, hauptsächlich Sprachkurse, aber auch Kurse für andere akademische und nicht-akademische Fächer wie Wissenschaft, Musik, Geschichte, Philosophie oder Kultur
+	</Description>
+  <Source type="application">
+    <App>
+		<Android id="com.memrise.android.memrisecompanion" />
+		<iOS id="635966718" />
+	</App>
+    <Author>Memrise Ltd</Author>
+    <Copyright>Memrise Ltd</Copyright>
+    <Stand>2017</Stand>
+    <!-- Optional ab hier -->
+    <Thumbnail src="https://fthmb.tqn.com/mmyEgRJ2P7RVlkt9OZOXzZ5USWE=/2400x1400/filters:no_upscale()/about/memrise-logo-579bd4db5f9b589aa9789d2a.png"/>
+    <!--  Optional Ende -->
+  </Source>
+  <MetaInformation>
+    <Class>Spanisch</Class>
+    <!-- Optional ab hier -->
+    <!--  Optional Ende -->
+  </MetaInformation>
+</Learning>

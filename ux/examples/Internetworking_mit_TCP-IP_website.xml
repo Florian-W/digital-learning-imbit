@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"  ?>
+<?xml-stylesheet type="text/xsl" href="../xslt/Learning.xsl"?>
+<Learning guid="b8384699-84d7-4251-9161-0b911487f5ac" cost="false" offerLimited="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3schools.com ../xsd/Learning.xsd">
+  <Title>Internetworking mit TCP/IP</Title>
+  <Description>
+	Dieser Kurs bringt Ihnen die technologischen Grundlagen des Internets näher. Er behandelt die physikalischen Grundlagen der Datenübertragung basierend auf funktionalen Prinzipien und Technologien von Local Area Networks (LANS) und Wide Area Networks (WANs). Außerdem lernen die Teilnehmer das TCP/IP reference model - das Herz des Internets - kennen und steigen somit in die komplexe Welt der Internettechnologoien ein.
+	
+  </Description>
+  <Source type="website">
+    <URI embedded="false" src="https://open.hpi.de/courses/internetworking2014"/>
+    <Author>Prof. Dr. Christoph Meinel</Author>
+    <Copyright>Hasso-Plattner-Institut</Copyright>
+    <Stand>2014</Stand>
+	
+    <!-- Optional ab hier -->
+    <Thumbnail src="http://educationcareerarticles.com/wp-content/uploads/2013/04/Internetwork-Engineering.jpg"/>
+    <!--  Optional Ende -->
+  </Source>
+  <MetaInformation>
+    <Class>Kommunikationssysteme</Class>
+    <!-- Optional ab hier -->
+    <Professor>Sebastian Welter</Professor>
+    <!--  Optional Ende -->
+  </MetaInformation>
+</Learning>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"  ?>
+<?xml-stylesheet type="text/xsl" href="../xslt/Learning.xsl"?>
+<Learning guid="b82da83a-9b73-49c1-933b-2350fee0edd5" cost="false" offerLimited="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3schools.com ../xsd/Learning.xsd">
+  <Title>Kulturelle Dimensionen des GLOBE-Projekts</Title>
+  <Description>
+	Anhand einer interaktiven Lernkarte erfährt man die Ausprägungen der einzelnen Länder in diversen kulturellen Dimensionen, 
+	nach denen die Untersuchungen des GLOBE-Projekts (2004) durchgeführt wurden. 
+	Das gewonnene Wissen bietet sich für die Bearbeitung von Case Studies im internationalen und interkulturellen Kontext an.
+  </Description>
+  <Source type="website">
+    <URI embedded="false" src="http://globe.bus.sfu.ca/results/countries/DEU?menu=country"/>
+    <Author>Global Leadership and Organizational Behavior Effectiveness</Author>
+    <Copyright>GLOBE</Copyright>
+    <Stand>2016</Stand>
+    <!-- Optional ab hier -->
+    <Thumbnail src="http://globe.bus.sfu.ca/assets/culture-leadership-and-organization-bookcover-8e7598c4ae8aed4159bd4b43e9f14a43c9964e1f6f072ac873e5a7a7d9bbc6c4.jpg"/>
+    <!--  Optional Ende -->
+  </Source>
+  <MetaInformation>
+    <Class>Intercultural Management</Class>
+    <!-- Optional ab hier -->
+    <Professor>Prof. Dr. Nick-Magin</Professor>
+    <!--  Optional Ende -->
+  </MetaInformation>
+</Learning>

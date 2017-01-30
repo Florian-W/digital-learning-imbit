@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"  ?>
+<?xml-stylesheet type="text/xsl" href="../xslt/Learning.xsl"?>
+<Learning guid="3ece1853-8c86-45db-a57e-f665ee33d8a8" cost="false" offerLimited="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3schools.com ../xsd/Learning.xsd">
+  <Title>Michael Porter's 5 Forces model explained</Title>
+  <Description>
+	This webseminar explains the five forces model of Michael Porter. Also explained in this video how this model can be used in practice.
+  </Description>
+  <Source type="youtube">
+    <Video embedded="false" id="33XmkfbzwO8"/>
+    <Author>Pepijn Schoemaker</Author>
+    <Copyright>Pepijn Schoemaker</Copyright>
+    <Stand>2016-03-21</Stand>
+    <!-- Optional ab hier -->
+    <!--  Optional Ende -->
+  </Source>
+  <MetaInformation>
+    <Class>BWL</Class>
+    <!-- Optional ab hier -->
+    <Professor>Prof. Bendl</Professor>
+    <!--  Optional Ende -->
+  </MetaInformation>
+</Learning>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"  ?>
+<?xml-stylesheet type="text/xsl" href="../xslt/Learning.xsl"?>
+<Learning guid="3ece1853-8c86-45db-a57e-f665ee33d8a7" cost="false" offerLimited="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3schools.com ../xsd/Learning.xsd">
+  <Title>St. Galler Management Model</Title>
+  <Description>
+	Management wird anspruchsvoller und kontroverser. In einer unübersichtlichen und vernetzten Welt beruht wirksames Management auf vielfältigen Voraussetzungen. Diese fundiert zu verstehen, wird noch wichtiger. Nur auf dieser Grundlage kann die eigene Management-Praxis so gestaltet werden, dass sich die organisationale Wertschöpfung im Zusammenspiel mit der steigenden Umweltdynamik erfolgreich weiterentwickelt.
+	Für Manager-Communities ist es unerlässlich, sowohl die verantwortete Wertschöpfung als auch die eigene Management-Praxis sorgfältig zu reflektieren. Hierzu sind eine differenzierte Sprache und ein integrativer Ordnungsrahmen erforderlich, die es erlauben, die komplexen Herausforderungen, mit denen sich die heutige Management-Praxis konfrontiert sieht, greifbar zu machen und diskutieren zu können. Genau dazu dient das St. Galler Management-Modell (SGMM) seit der 1. Generation von Hans Ulrich und Walter Krieg (1972).
+	Dieses traditionsreiche Management-Modell der Universität St. Gallen (HSG) ist 2015 grundlegend weiterentwickelt worden und neu in der 4. Generation im praktischen Einsatz.
+	Es stellt ein Arbeitsinstrument und eine Reflexionshilfe für eine vertiefte Auseinander­setzung mit Management dar und unterstützt die Lehre in der Ausbildung von Studierenden und Praktikern, sowie die unternehmerische Praxis und die wissen­schaftliche Forschung bei Fragen der Management-Innovation.
+  </Description>
+  <Source type="website">
+    <URI embedded="false" src="https://www.sgmm.ch/"/>
+    <Author>Johannes Rüegg-Stürm &amp; Simon Grand</Author>
+    <Copyright>Institut für Systemisches Management und Public Governance (IMP-HSG)</Copyright>
+    <Stand>2015</Stand>
+    <!-- Optional ab hier -->
+    <Thumbnail src="https://www.sgmm.ch/wp-content/themes/theme-sgmm/build/img/ikone-sgmm.png"/>
+    <!--  Optional Ende -->
+  </Source>
+  <MetaInformation>
+    <Class>BWL</Class>
+    <!-- Optional ab hier -->
+    <Professor>Prof. Bendl</Professor>
+    <!--  Optional Ende -->
+  </MetaInformation>
+</Learning>

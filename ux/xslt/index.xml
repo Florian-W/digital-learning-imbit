@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"  ?>
+<?xml-stylesheet type="text/xsl" href="xslt/ExampleCollection.xsl"?>
+<ExampleCollection>
+	<Example name="Website" url="examples/exmple_website.xml" />
+	<Example name="Youtube" url="examples/exmple_youtube.xml" />
+	<Example name="Youtube - Embedded" url="examples/exmple_youtube_embedded.xml" />
+	<Example name="Introduction to Economics" url="examples/Introduction_to_Economics_Macroeconomics_website.xml" />
+	<Example name="Input out: Die umgedrehte Mathematikvorlesung" url="examples/youtube_embedded_umgedrehte_mathe.xml" />
+	<Example name="UML Tutorial - Englisch" url="examples/Webseite_UML_Tutorial.xml" />
+	<Example name="Memrise APP" url="examples/memrise_app.xml" />
+	<Example name="Logic MOOC" url="examples/Introduction_to_logic_MOOC_website.xml" />
+	<Example name="Kulturelle Dimensionen des GLOBE-Projekts" url="examples/Kulturelle_Dimensionen_Globe_website.xml" />
+</ExampleCollection>
