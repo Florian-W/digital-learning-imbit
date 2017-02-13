@@ -1,0 +1,20 @@
+@CHARSET "ISO-8859-1";
+
+div.studentHomepage{
+	background-image:url(../img/Web_Background.png);
+	background-repeat: no-repeat;
+    background-position:90% 60%;	
+	background-size: 60% 90%;
+	background-color: #d5edf3;
+}
+div.studentRegisterContainer{
+	width: 391px !important;
+	height: initial !important; 
+	margin-top: 45px;
+	margin-left: 150px;
+	float: left;
+	
+}
+.center{
+	background-color: #d5edf3;
+}

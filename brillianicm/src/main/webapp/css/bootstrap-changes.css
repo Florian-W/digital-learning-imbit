@@ -1,0 +1,72 @@
+@CHARSET "ISO-8859-1";
+a {
+    color: #ff8040; /*Color linked text, old value #42dca3*/
+}
+body {
+	background-color: #d5edf3;
+	color: #000000; /*Text color body*/
+	}
+.intro {
+	 background-color: #d5edf3; 
+	 background: url(../img/Web_Background.png) no-repeat bottom right scroll;  
+	 background-size: 60% 90%;
+	}
+.btn-default {
+    border: 1px solid #ff8040; /*#42dca3*/
+    color: #ff8040; /*#42dca3*/
+   
+}
+.navbar-custom {
+    background-color: #63a8b7;
+     text-transform: none;
+      color: #000000;
+}
+ .navbar-custom.top-nav-collapse {
+        background: #63a8b7;
+    }
+    .btn-default:hover,
+.btn-default:focus {
+    border: 1px solid #63a8b7;
+    background-color: #63a8b7;
+}
+.footer{
+	background-color: #63a8b7;
+	height: 100%;
+	overflow:hidden;
+	color: #ffffff;
+	border-color: #63a8b7;
+}
+
+.countryselect{
+	font-family: Georgia, Times, 'Times New Roman', serif !important;
+	font-size: 20px;
+	background-color: transparent;
+	border: none;
+	
+}
+.countryselect option{
+	background-color: #d5edf3;
+	color: #000000;
+	font-size: 20px;
+}
+
+.tooltip{
+	opacity: 1;
+
+}
+
+.nav a{
+	color:#000000;
+	font-size: 20px;
+}
+.col-md-8{
+	float: left;
+    color: #000; 
+    width: 35%;
+}
+input,
+select
+{
+	font-family: Georgia, Times, 'Times New Roman', serif !important;	
+}
+

@@ -1,0 +1,1735 @@
+@font-face {
+	font-family: agency;
+	src: url(agency_fb.ttf);
+}
+
+/*from .panel-body*/
+.bc {
+	border-style: solid;
+	border-color: #707a8f;
+}
+
+/*from .panel-header*/
+.bph {
+	background-color: #e6edfa;
+}
+
+/*from .datagrid-row-selected*/
+/*Defines color of highlighted element*/
+.elementHighlight {
+	background: #c1d3f6;
+	color: #000000;
+}
+
+.datagrid-header td, .datagrid-body td, .datagrid-footer td {
+	cursor: pointer;
+}
+
+.datagrid-toolbar {
+	height: 30px;
+}
+
+.datagrid-cell {
+	line-height: 23px;
+}
+
+/*Prevents hover-coloring*/
+.datagrid-row-selected, .datagrid-row-over {
+	background: inherit;
+}
+
+html, input, select {
+	font-family: agency !important;
+	font-weight: normal;
+	white-space: normal;
+}
+
+input, select {
+	font-size: 18px;
+}
+
+select {
+	width: 137px;
+	margin-left: 2px;
+}
+
+embed {
+	height: 0px !important;
+}
+
+/* prohibit selection of text and pictures */
+div {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+body {
+	display: none;
+}
+
+div.north {
+	height: 30px;
+}
+
+div.north div a, div.welcome {
+	margin-top: 2px;
+	margin-right: 5px;
+	float: right;
+}
+
+.layout-panel-west div.panel-header {
+	border-left: 0px;
+}
+
+.layout-panel-east div.panel-header {
+	border-right: 0px;
+}
+
+div.west {
+	width: 200px;
+	border-bottom: 0px;
+	border-left: 10px;
+}
+
+div.east {
+	width: 200px;
+	border-bottom: 0px;
+	border-right: 0px;
+}
+
+div.east {
+	width: 200px;
+}
+
+div.east-south {
+	height: 120px;
+	padding: 10px 10px 10px 10px;
+}
+
+div.center {
+	border-right: 0px;
+	padding: 0px;
+	border-top-width: 1px;
+}
+
+div.center-south {
+	height: 80px;
+}
+
+div.timeline {
+	margin-right: auto;
+	margin-left: auto;
+	height: 80px;
+	width: 600px;
+	-webkit-backface-visibility: hidden;
+	transition: background-image 1s ease-in-out;
+	background-image: url(images/blank.gif);
+	background-repeat: no-repeat;
+	background-size: 600px 80px;
+	background-position: center;
+}
+
+div.center-center {
+	border-bottom-width: 0px;
+}
+
+div.noPadding {
+	padding: 0px;
+}
+
+div.center div.panel {
+	
+}
+
+.centerMerger {
+	display: none;
+	height: 564px;
+	width: 851px;
+	padding: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+div.mainLogoContainer {
+	height: 100%;
+	border-width: 0 0 0 0;
+}
+
+div.mainLogo {
+	height: 100%;
+	background-image: url(../images/logo.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+div.mainLogo:hover {
+	cursor: pointer;
+}
+
+div.audioPlayer {
+	display: none;
+}
+
+div.div-header {
+	float: right;
+	width: 100%;
+	height: inherit;
+	border: 0px;
+	padding: 0px;
+}
+
+div.welcome {
+	line-height: 24px;
+	margin-top: 3px;
+}
+
+div.mainCarlendar {
+	width: 156px !important;
+	height: 176px !important;
+	margin: 10px;
+	font-size: 14px !important;
+}
+
+.calendar-today {
+	background-color: #ffe48d;
+	color: #000000;
+	border: 1px solid #ffab3f;
+	font-weight: bold;
+}
+
+div.loadingScreenImageContainer {
+	-webkit-backface-visibility: hidden;
+	transition: background-image 2s ease-in-out;
+	text-align: center;
+	padding-top: 250px;
+	font-size: 70px;
+	background-image: url(images/blank.gif);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+div.transitionScreenImageContainer {
+	-webkit-backface-visibility: hidden;
+	transition: background-image 2s ease-in-out;
+	text-align: center;
+	height: 100%;
+	font-size: 30px;
+	background-image: url(images/blank.gif);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+div.mainLocationButtonContainer {
+	margin: 10px 10px 0 10px;
+	text-align: left;
+}
+
+div.mainLocationButton {
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 80px;
+}
+
+/*deprecated*/
+div.mainLocationButtonSelected {
+	background: #eaf2ff;
+	color: #000000;
+	border: 1px solid #b7d2ff;
+	filter: none;
+}
+
+div.mainLocationButtonHighlight, div.mainMailButtonHighlight {
+	background: #FFE48D;
+	color: #000000;
+}
+
+div.mainLaptopButtonContainer {
+	display: none;
+	border-width: 1px 0 0 0;
+	padding: 10px 10px 10px 10px;
+}
+
+.projektStrukturPlanButtonContainer, .ganttButtonContainer,
+	.projektCharterButtonContainer {
+	border-width: 1px 0 0 0;
+	padding: 10px 10px 10px 10px;
+}
+
+div.mainLaptopButton, div.projektStrukturPlanButton, div.ganttButton,
+	div.projektCharterButton {
+	height: 70px;
+	background-image: url(images/blank.gif);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+div.projektCharterButton {
+	background-size: 70px 40px;
+}
+
+div.ganttButton {
+	background-size: 80px 50px;
+}
+
+div.mainLaptopButton:hover, div.projektStrukturPlanButton:hover, div.ganttButton:hover,
+	div.projektCharterButton:hover {
+	cursor: pointer;
+}
+
+img.newMailImage {
+	display: none;
+	float: right;
+}
+
+div.mainTCQContainer {
+	height: 140px;
+	border-width: 0 0 0 0;
+	padding: 10px 10px 10px 10px;
+}
+
+div.mainTCQ {
+	height: 140px;
+	-webkit-backface-visibility: hidden;
+	transition: background-image 1s ease-in-out;
+	transition: height 1s ease-in-out;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+div.center div.mainTCQ {
+	width: 140px;
+}
+
+img#costState, img#timeState, img#qualityState {
+	height: 40px;
+	width: 40px;
+	padding-right: 1px;
+}
+
+img#timeState {
+	vertical-align: top;
+	padding-top: 20px;
+}
+
+img#costState, img#qualityState {
+	padding-top: 86px;
+}
+
+div.locationBackgroundContainer {
+	-webkit-backface-visibility: hidden;
+	transition: background-image 2s ease-in-out;
+	background-size: 849px 562px;
+	background-repeat: no-repeat;
+}
+
+div.dialogMoodContainer {
+	display: none;
+	float: right;
+	padding: 10px;
+	margin: 20px;
+}
+
+div.dialogTextContainer {
+	opacity: 0.9; /*RE-EDIT MANH MAR 7, 2016. Orig: 0.7. Eangel: 0.9*/
+	line-height: 20px;  
+	float: left;
+	position: absolute;
+	display: block;
+}
+
+div.dialogTextContainerTwo {
+	opacity: 0.9;
+	padding: 10px;
+	line-height: 20px;
+	border-width: 0 1px 0 0;
+	background: white;
+	opacity: 0.9;
+}
+
+div.dialogPartner {
+	padding: 10px;
+}
+
+div.dialogPartnerName {
+	height: initial;
+	margin-bottom: 10px; 
+}
+
+div.dialogPartnerText {
+	
+}
+
+div.dialogButton {
+	margin-top: 10px;
+	padding: 10px;
+	text-align: left;
+	display: block;
+}
+
+img.dialogMood {
+	float: right;
+	width: 60px;
+	height: 60px;
+}
+
+body.dialogBody, body.mainBody {
+	margin: 0px;
+}
+
+.dialogContainer {
+	-webkit-backface-visibility: hidden;
+	transition: background-image 2s ease-in-out;
+	width: 100% height: 100% background-repeat: no-repeat;
+	display: none;
+}
+
+.selectionContainer {
+	-webkit-backface-visibility: hidden;
+	transition: background-image 2s ease-in-out;
+	background-size: 849px 562px;
+	background-repeat: no-repeat;
+	display: none;
+	text-align: center;
+}
+
+.dialogContainer video {
+	position: absolute;
+	display: none;
+	float: left;
+	height: 100% !important;
+	margin-left: 315px;
+}
+
+div.bgimg {
+	text-align: center;
+}
+
+.selectionContainer, .allocationContainer {
+	background: white;
+	opacity: 1.0;
+}
+
+.selectionContainer, .allocationContainerThree {
+	background: white;
+	opacity: 1.0;
+}
+
+.selectionContainer, .allocationContainerTwo {
+	background: white;
+	opacity: 1.0;
+}
+
+.selectionTitle {
+	display: none;
+}
+
+.selectionOptionContainer {
+	float: left;
+	text-align: center;
+	padding: 0px;
+	margin-right: 0px;
+	border-width: 0 1px 0 0;
+	width: 33.33%;
+	height: 100%;
+}
+
+.container {
+	text-align: center;
+	float: center;
+}
+
+.selectionOptionContainer:nth-child(odd) {
+	/* width: 283px; */
+	
+}
+
+.selectionOptionContainer:last-child {
+	border-width: 0 0 0 0;
+}
+
+.selectionPicture {
+	height: 597px;
+	width: 100%;
+	border-width: 0 0 1px 0;
+	display: none;
+}
+
+.selectionText {
+	padding: 10px;
+}
+
+.selectionButton {
+	width: 100%;
+	float: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-right: 0px !important;
+	border-left: 0px !important;
+}
+
+div.centerContainer {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+	position: absolute;
+	overflow-y: auto;
+}
+
+div.laptopContainer {
+	width: 849px;
+	height: 540px;
+	padding: 0px;
+}
+
+div.laptopMailClient {
+	width: 849px;
+	height: 540px;
+}
+
+/*begin mail and mailDraft*/
+div.mailHeadline {
+	border-bottom: dotted 1px lightgray;
+	float: left;
+	width: 100%;
+}
+
+div.mailHeadline div {
+	float: left;
+}
+
+div.mailHeadline div:first-child {
+	width: 75px;
+	padding-left: 4px;
+}
+
+div.date {
+	float: right !important;
+	padding-right: 4px;
+}
+
+div.attachment {
+	text-decoration: underline;
+}
+
+div.attachment:hover {
+	cursor: pointer;
+}
+
+div.content {
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+div.content-first {
+	padding-top: 13px;
+}
+
+div.draftbuttonContainer {
+	padding: 3px;
+}
+
+div.draftbutton {
+	text-align: left;
+	display: block;
+	margin-top: 3px;
+	padding: 5px;
+}
+
+div.draftbutton-first {
+	margin-top: 0px;
+}
+
+/*end mail and mailDraft*/
+div.allocationContainer {
+	display: none;
+}
+
+div.phaseTitle {
+	border-width: 1px;
+	width: 23.8%;
+	line-height: 10px;
+	height: 20px;
+	float: left;
+	text-align: center;
+	border-right-width: 0px;
+}
+
+div.phaseTitleContainer {
+	height: 20px;
+	margin-left: 15px !important;
+}
+
+div.phaseTitleContainerTwo {
+	margin-left: auto;
+	margin-right: auto;
+	float: center;
+	height: 20px;
+}
+
+div.phaseTitleThree {
+	border-width: 1px;
+	width: 408px;
+	margin-top: 5px;
+	height: 16px;
+	float: left;
+	text-align: center;
+	border-right-width: 0px;
+}
+
+div.phase {
+	border-width: 1px;
+	width: 23.8%;
+	height: 280px;
+	vertical-align: top;
+	float: left;
+	margin-top: 0px;
+	overflow: hidden;
+	margin-right: 0px;
+	border-right-width: 0px;
+	border-top-width: 0px;
+	overflow-y: auto;
+	padding-bottom: 5px;
+}
+
+div.phaseContainer {
+	height: 280px;
+	margin-left: 15px !important;
+}
+
+div.phaseThree {
+	width: 99%;
+	height: 200px;
+	vertical-align: top;
+	margin-top: 0px;
+	overflow: hidden;
+	margin-right: 0px;
+	border-width: 2px;
+	border-color: white;
+	overflow-y: auto;
+	padding-bottom: 5px;
+}
+
+div.phaseContainerThree {
+	height: 405px;
+}
+
+div.phaseTitle:last-child, div.phase:last-child {
+	border-right-width: 1px;
+}
+
+div.phaseTitleTwo {
+	border-width: 1px;
+	width: 50%;
+	line-height: 10px;
+	height: 20px;
+	float: left;
+	text-align: center;
+	border-right-width: 0px;
+}
+
+div.phaseTwo {
+	border-width: 1px;
+	width: 50%;
+	height: 280px;
+	vertical-align: top;
+	float: left;
+	margin-top: 0px;
+	overflow: hidden;
+	margin-right: 0px;
+	border-right-width: 0px;
+	border-top-width: 0px;
+	overflow-y: auto;
+	padding-bottom: 5px;
+}
+
+div.phaseContainerTwo {
+	height: 280px;
+}
+
+div.phaseTitleTwo:last-child, div.phaseTwo:last-child {
+	border-right-width: 1px;
+}
+
+div.draggableContainer {
+	border-width: 1px;
+	height: 99px !important;
+	width: 99%;
+	float: center;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+div.draggableContainerTwo {
+	border-width: 1px;
+	height: 130px !important; /*RE-EDIT MANH MAR 7, 2016. Orig: 99px. Eangel: 130px*/
+	width: 99%;
+	margin-top: 0px; /*RE-EDIT MANH MAR 7, 2016. Orig: 10px. Eangel: 0px*/ 
+	margin-bottom: 0px; /*RE-EDIT MANH MAR 7, 2016. Orig: 15px. Eangel: 0px*/ 
+	padding-bottom: 0px; /*RE-EDIT MANH MAR 7, 2016. Orig: 5px. Eangel: 0px*/ 
+	padding-left: 1px; 
+	overflow-y: scroll;
+}
+
+div.draggableContainerThree {
+	border-width: 1px;
+	height: 99px !important;
+	width: 99.84%;
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	padding-left: 1px;
+	overflow-y: auto;
+	border: none;
+}
+
+div.buttonContainer {
+	text-align: center;
+}
+
+div.button-bottom {
+	position: absolute;
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+	bottom: 1%; /* EDIT MANH MAR 7, 2016. Orig: 1%. Eangel: 5%*/
+}
+
+div.button-bottom2 {
+	position: absolute;
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+	padding: 20 0 0 0;
+}
+
+div.drag {
+	float: left;
+	width: auto; /*RE-EDIT MANH MAR 7, 2016. Orig: 200px. Eangel: auto*/ 
+	height: 26px; 
+	padding: 0 10px 0 10px; /*RE-EDIT MANH MAR 7, 2016. Orig: 0 0 0 5px. Lena: 0 10px 0 10px*/ 
+	margin: 5px 6px 0 5px;
+	border-width: 1px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: normal; /*RE-EDIT MANH MAR 7, 2016. Orig: nowrap. Eangel: normal*/ 
+	cursor: pointer !important;
+}
+
+/*This class is used for labeling all tiles that will get drag functionality
+Tiles shall be organized in a tile matrix*/
+div.matrixAllocationContainer {
+	text-align: center;
+	vertical-align: middle;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+div.matrixAllocationContainerStandard {
+	text-align: center;
+	vertical-align: middle;
+	display: block;
+}
+
+div.conversation {
+	text-align: center;
+	vertical-align: middle;
+	display: block;
+}
+
+div.textBox {
+	text-align: center;
+	vertical-align: middle;
+	display: block;
+}
+
+div.matrixAllocationContainerEarsModell {
+	text-align: center;
+	vertical-align: middle;
+	display: block;
+}
+
+div.outerTitleAcceptorContainer {
+	width: 600px;
+	margin: 0px auto;
+}
+
+div.tileAcceptorContainer, .tileAcceptorContainerStandard {
+	/*Params needed for centering the stakeholder analysis*/
+	display: inline-block;
+	text-align: center;
+}
+
+div.eventContainer {
+	display: inline-block;
+	text-align: center;
+	margin-right: 20px;
+}
+
+div.infoContainer {
+	display: block;
+	width: 840px;
+	margin: 0 auto;
+}
+
+div .align-left {
+	float: right;
+}
+
+.eventInfoTable, .eventInfoTable tr {
+	border-width: 1px;
+}
+
+.eventInfoTable tr td.border_bottom {
+	border-bottom: 1px solid #707a8f;
+}
+
+.eventInfoTable .elementNumber-header, .eventInfoTable .elementInfo-header
+	{
+	font-weight: bold;
+}
+
+td.elementNumber {
+	width: 25px;
+}
+
+td.elementInfo {
+	width: 771px;
+}
+
+.tileAcceptorContainerStandard {
+	width: 471px;
+}
+
+div.BorderHorizontalVertical {
+	border: 5px solid rgba(255, 255, 255, .5);
+	width: 150px;
+	height: 30px;
+	vertical-align: middle;
+	float: left;
+	margin-top: 0% px;
+	overflow: hidden;
+	margin-right: 0px;
+	margin-left: 0px;
+	overflow-y: auto;
+	padding-bottom: 5px;
+	display: table-cell;
+	text-align: center;
+}
+
+div.BorderHorizontal {
+	border: 5px solid rgba(255, 255, 255, .5);
+	width: 157px;
+	height: 30px;
+	vertical-align: middle;
+	float: left;
+	margin-top: 0% px;
+	overflow: hidden;
+	margin-right: 0px;
+	margin-left: 0px;
+	overflow-y: auto;
+	padding-bottom: 5px;
+	display: table-cell;
+	text-align: center;
+}
+
+div.BorderVertical {
+	border: 5px solid rgba(255, 255, 255, .5);
+	width: 150px;
+	height: 157px;
+	vertical-align: middle;
+	float: left;
+	margin-top: 0% px;
+	overflow: hidden;
+	margin-right: 0px;
+	margin-left: 0px;
+	overflow-y: auto;
+	padding-bottom: 5px;
+	display: table-cell;
+	text-align: center;
+}
+
+/*Tile matrix place holders in top row*/
+div.tileAcceptor {
+	border-width: 5px;
+	width: 157px;
+	height: 157px;
+	vertical-align: middle;
+	float: left;
+	margin-top: 0% px;
+	overflow: hidden;
+	margin-right: 0px;
+	margin-left: 0px;
+	overflow-y: hidden;
+	display: table-cell;
+	text-align: center;
+}
+
+div.tileAcceptorStandard {
+	border-width: 5px;
+	width: 157px;
+	height: 157px;
+	vertical-align: middle;
+	float: left;
+	margin-top: 0% px;
+	overflow: hidden;
+	margin-right: 0px;
+	margin-left: 0px;
+	overflow-y: hidden;
+	padding-bottom: 5px;
+	display: table-cell;
+	text-align: center;
+}
+/*Tile matrix place holders in top row*/
+div.tileAcceptorTransparent {
+	border-width: 5px;
+	border-color: transparent;
+	width: 157px;
+	height: 157px;
+	vertical-align: middle;
+	float: left;
+	margin-top: 5px;
+	overflow: hidden;
+	overflow-y: auto;
+	padding-bottom: 5px;
+	display: table-cell;
+	text-align: center;
+}
+
+div.Message {
+	text-align: center;
+	margin-top: 45px;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+div.BorderHorizontalVertical {
+	border-width: 5px;
+	border-color: transparent;
+	width: 150px;
+	height: 30px;
+	vertical-align: middle;
+	float: left;
+	margin-top: 0% px;
+	overflow: hidden;
+	margin-right: 0px;
+	margin-left: 0px;
+	overflow-y: auto;
+	padding-bottom: 5px;
+	display: table-cell;
+	text-align: center;
+}
+
+div.BorderHorizontal {
+	border-width: 5px;
+	border-color: transparent;
+	width: 157px;
+	height: 66px;
+	vertical-align: middle;
+	float: left;
+	margin-top: 0% px;
+	overflow: hidden;
+	margin-right: 0px;
+	margin-left: 0px;
+	overflow-y: auto;
+	padding-bottom: 5px;
+	display: table-cell;
+	text-align: center;
+}
+
+div.BorderVertical {
+	border-width: 5px;
+	border-color: transparent;
+	width: 150px;
+	height: 157px;
+	vertical-align: middle;
+	float: left;
+	margin-top: 0% px;
+	overflow: hidden;
+	margin-right: 0px;
+	margin-left: 0px;
+	overflow-y: auto;
+	padding-bottom: 5px;
+	display: table-cell;
+	text-align: center;
+}
+
+div.outerleftMessage {
+	text-align: left;
+	margin-top: 50%;
+	margin-left: 15px;
+}
+
+div.outerrightMessage {
+	text-align: right;
+	margin-top: 50%;
+	margin-right: 15px;
+}
+
+div.draggableTilesContainer, div.draggableTilesContainerAlternate {
+	border-width: 1px;
+	height: 135px !important;
+	width: 656px; 	/*EDIT BY ADRIAN ON MAR 03,2016. Old: "width: 820px;"*/
+	margin-top: 10px;
+	margin-bottom: 15px;
+	padding-left: 1px;
+	overflow-y: auto;
+	display: inline-block; /*EDIT BY ADRIAN ON MAR 03, 2016. Added attribute for centered drag-box*/
+}
+
+div.draggableTilesContainerStandard {
+	border-width: 1px;
+	height: 135px !important;
+	width: 820px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	overflow-y: auto;
+}
+
+div.description {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 35px; 
+	margin-top: 20px;
+	margin-bottom: 20px;  
+	width: 100%; 
+	text-align: center;
+	background: rgba(255, 255, 255, 0.8);  
+}
+
+div.messageBox {
+	/*padding: 10px;*/
+	width: 50%;  
+	text-align: justify;
+	border-width: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: auto;
+	background: rgba(255, 255, 255, 0.8);  
+}
+
+/* tiles to be dragged and dropped*/
+div.dragTile {
+	float: center;
+	width: 157px; /* EDIT BY ADRIAN ON MAR 03, 2016. Old: "width: 147px;"*/
+	height: 157px; /* EDIT BY ADRIAN ON MAR 03, 2016. Old: "height: 147px;"*/
+	padding: 0 10px 10px 10px; /* EDIT BY ADRIAN ON MAR 03, 2016. Old: "0 0 0 0px;"*/
+	vertical-align: baseline;
+	border-width: 1px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: normal;
+	cursor: pointer !important;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: left; /* EDIT BY ADRIAN ON MAR 03, 3016. Old: "text-align: center;"*/
+	/* break line for different browsers*/
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+
+div.xAxisDescription {
+	height: 30px;
+	width: 494px;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: auto;
+	margin-bottom: 50px;
+	word-break: break-all;
+	font-size: 30px
+}
+
+div.yAxisDescription {
+	width: 25px;
+	font-size: 30px;
+	position: static;
+	float: left;
+	margin-left: 150px;
+	word-break: break-all;
+	float: left;
+}
+
+div.dragIncorrect {
+	background-color: #ffa8a8;
+}
+
+div.dp {
+	opacity: 0.5;
+	filter: alpha(opacity = 50);
+}
+
+div.over {
+	background: #FBEC88;
+}
+
+.fancybox {
+	display: inherit;
+	line-height: 0px;
+}
+
+.fancybox-overlay {
+	z-index: 10000 !important;
+}
+
+.fancybox-wrap {
+	z-index: 10001 !important;
+}
+
+.loginContainer {
+	padding: 10px;
+}
+
+.loginButtonContainer a {
+	display: table;
+	margin-bottom: 10px;
+}
+
+/*removes text decoration from links on front page*/
+.login {
+	text-decoration: none;
+	color: #0000EE;
+}
+
+.imprintContainer {
+	padding: 10px;
+}
+
+.formLabel {
+	width: 130px;
+	float: left;
+	line-height: 30px;
+}
+
+.dragInfoContainer, .dragInfoContainerTwo, .dragInfoContainerThree {
+	height: 24px;
+	margin-bottom: 10px;
+}
+
+.group {
+	margin-bottom: 30px;
+}
+
+.margin-left {
+	margin-left: 10px;
+}
+/* student landing page*/
+a.studentButton {
+	width: 267px;
+}
+
+a.startGameButton {
+	width: 267px;
+	background-color: #c1d3f6;
+}
+
+/* student landing page begin*/
+div.studentHomepage {
+	background-image: url(../images/BackgroundStudentLandingpage.png);
+	background-repeat: no-repeat;
+	background-position: 350px -40px;
+}
+
+div.studentHomepageContainer {
+	width: 291px !important;
+	height: initial !important;
+	margin-top: 145px;
+	margin-left: 150px;
+	float: left;
+}
+
+a.studentButton {
+	width: 267px;
+}
+
+a.startGameButton {
+	width: 267px;
+	height: 50px;
+	padding-top: 23px;
+	background-color: #c1d3f6;
+	font-weight: bold;
+}
+
+/* student landing page end*/
+div.studentRegisterContainer {
+	width: 391px !important;
+	height: initial !important;
+	margin-top: 45px;
+	margin-left: 280px;
+	float: left;
+}
+
+a.studentRegisterButton {
+	width: 125px;
+	margin-left: 2px;
+}
+
+select.registerGender {
+	width: 127px;
+}
+
+div.mainWindow {
+	background-image: url(../img/bar.png);
+	background-repeat: repeat;
+	height: 90%;
+	top: 70px;
+}
+
+div.transitionContinueButtonContainer {
+	text-align: center;
+}
+
+div.transitionContinueButton {
+	font-size: 18px;
+}
+
+div.mainLocationButton span.l-btn-left {
+	float: left;
+	padding-left: 20px;
+}
+
+div.mainLocationButton img, div.mainMailButton img {
+	padding-right: 20px;
+}
+
+div.transitionScreenTextContainer {
+	background: white;
+	opacity: 0.8;
+}
+
+div.transitionScreenImageContainer:hover {
+	cursor: pointer;
+}
+
+.new-button-highlight {
+	-webkit-animation: blink 1s step-end infinite;
+	animation: blink 1s step-end infinite;
+}
+
+@
+keyframes blink { 0% {
+	background-color: #e6edfa
+}
+
+50%
+{
+background-color
+
+
+:
+
+ 
+
+#6699ff
+
+
+}
+}
+@
+-webkit-keyframes blink { 0% {
+	background-color: #e6edfa
+}
+
+50%
+{
+background-color
+
+
+:
+
+ 
+
+#6699ff
+
+
+}
+}
+.tabs-tool {
+	height: inherit !important;
+	border-top-width: 0px;
+	border-right-width: 0px;
+}
+
+div.dialogBox {
+	width: 50%;
+	height: inherit;
+	border-width: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.messageBoxA {
+	width: 100%;
+	float: left;
+	padding: 10px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-width: 2px;
+	border-color: #63a8b7;
+	background-color: #d5edf3;
+}
+
+div.messageBoxB {
+	width: 100%;
+	float: right;
+	padding: 10px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-width: 2px;
+	border-color: #63a8b7;
+	background-color: #63A8B7; /*EDIT BY LENA ON FEB 17, 2016. Orig: #d5edf3. Lena: #63A8B7*/
+}
+
+div.messageBoxATriangle {
+	width: 0px;
+	height: 0px;
+	float: left;
+	border: 11px solid #63a8b7;
+	margin-top: 5px;
+	margin-left: 15px;
+	border-radius: 100px;
+}
+
+div.messageBoxATriangle2 {
+	width: 0px;
+	height: 0px;
+	float: left;
+	border: 7px solid #63a8b7;
+	margin-right: 100%;
+	border-radius: 20px;
+}
+
+div.messageBoxBTriangle {
+	width: 0px;
+	height: 0px;
+	float: right;
+	border: 11px solid #63a8b7;
+	margin-top: 5px;
+	margin-right: 15px;
+	border-radius: 100px;
+	/* border-color: red red transparent  transparent; */
+}
+
+div.messageBoxBTriangle2 {
+	width: 0px;
+	height: 0px;
+	float: right;
+	border: 7px solid #63a8b7;
+	margin-left: 100%;
+	border-radius: 20px;
+
+	/*  border-color: white white transparent  transparent    ; */
+}
+
+div.messageBoxAContainer {
+	width: 51%;
+	float: left;
+	border-color: transparent;
+}
+
+div.messageBoxBContainer {
+	width: 51%;
+	float: right;
+	border-color: transparent;
+}
+
+/*  worldmap */
+#worldMap {
+	margin: 0 auto;
+	padding-top: 119px !important;
+	padding-left: 119px !important;
+	padding-bottom: 119px !important;
+	width: 856px;
+}
+
+#b11, #b12, #b13, #b14, #b21, #b22, #b23, #b24, #b31, #b32, #b33, #b34,
+	#b41, #b42, #b43, #b44 {
+	
+}
+
+.block {
+	width: 150px;
+	height: 150px;
+	display: block;
+}
+
+.worldmapImg div:hover {
+	-moz-box-shadow: 0 0 20px #000;
+	-webkit-box-shadow: 0 0 20px #000;
+	box-shadow: 0 0 20px #000;
+	cursor: pointer;
+}
+
+.worldmap {
+	/*    height:inherit !important;
+   width:inherit !important; */
+	display: block;
+}
+
+/*Evventtyp: 26*/
+div.inputRowPD, div.inputRowInsC, div.inputRowGE, div.inputRowIngC, div.inputRowPO,
+	div.inputRowFO, div.inputRowUA, div.inputRowA, div.inputRowHO {
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+input {
+	float: left;
+}
+
+div.scrollBarContent {
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	width: 590px;
+	height: 455px;
+	opacity: 0.9
+}
+
+div.solutionPD, div.solutionInsC, div.solutionGE, div.solutionIngC, div.solutionPO,
+	div.solutionFO, div.solutionPOFO, div.solutionUA, div.solutionA, div.solutionHO
+	{
+	width: 18px;
+	float: right;
+	text-align: right;
+}
+
+input.text {
+	/*padding: 10px;*/ /* EDIT BY MANH ON MAR 7, 2016. This line was added to the original code*/
+	width: 260px;
+	border: none;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+input.input {
+	width: 25px;
+	border: none;
+	font-size: 18px;
+}
+
+div.numberOne {
+	float: left;
+}
+
+div.description2 {
+	font-size: 15px;
+	float: left;
+	margin-left: 330px;
+	background-color: white;
+}
+
+div.description3 {
+	font-size: 15px;
+	float: right;
+	background-color: white;
+	font-weight: bold;
+}
+
+div.description26 {
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 10px;
+	background: rgba(255, 255, 255, 0.8);
+}
+
+div.numberTwo {
+	float: right;
+}
+
+div.title-factsheet {
+	color: black;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 60px;
+	margin: 20px 0 20px 30px;
+	float: left;
+}
+
+img.img-factsheet2 {
+	width: 320px;
+	height: 200px;
+	margin: 20px 20px 0 0;
+	float: right;
+}
+
+img.img-factsheet1 {
+	width: 150px;
+	height: 100px;
+	font-weight: bold;
+	margin: 20px 100px 50px 30px;
+}
+
+div .txt-factsheet1 {
+	text-align: left;
+	vertical-align: top;
+	color: black;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+	padding: 3px 0 7px 30px;
+}
+
+div .txt-factsheet2 {
+	text-align: left;
+	vertical-align: top;
+	color: black;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+	padding: 3px 25px 7px 50px;
+}
+
+a.link-factsheet {
+	text-align: left;
+	vertical-align: top;
+	color: blue;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+	padding: 3px 25px 50px 50px;
+	display: block;
+}
+
+.factsheetContainer {
+	display: none;
+}
+/*
+ * Christian Heyer
+ * 02.03.2016
+ */
+.mapAllocationContainer {
+	display: none;
+}
+
+#mapContainer {
+	display: block;
+	width: 402px;
+	padding: 0;
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	font-size: 0px;
+	letter-spacing: 0px;
+	word-spacing: 0px;
+	position: static;
+}
+
+#mapContainer>div.square {
+	margin: 0;
+	padding: 0;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	font-size: 15px;
+	letter-spacing: auto;
+	/*word-spacing: 2em;*/
+	border: solid 1px rgba(255, 255, 255, 0.0);
+	overflow: hidden;
+	position: static;
+}
+
+#src>div.dragsquare {
+	margin: 10px;
+}
+
+.dragsquare {
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	color: white;
+	background: #3498db;
+	position: static;
+	margin: 0;
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 40px;
+	overflow: hidden;
+	/* new for background */
+	background-position: center;
+	background-size: contain;
+	background-repeat: none;
+}
+
+.dragsquare.false {
+	/* overlay */
+	background-color: red;
+	background-blend-mode: multiply;
+}
+
+#itemDescription {
+	margin-top: 10px;
+	width: 420px;
+	background: white;
+	border: 1px solid #2c3e50;
+}
+#itemDescription>div.itemdescription{
+	margin: 10px;
+	text-align: left;
+}
+
+#src {
+	margin-top: 10px;
+	width: 420px;
+	background: white;
+	border: 1px solid #2c3e50;
+	min-height: 50px;
+}
+
+/* END */
+/*Anastasia Reimer 03.03.2016*/
+div.phaseTitleContainerFour {
+	margin-left: auto;
+	margin-right: auto;
+	float: center;
+	height: 20px;
+}
+
+div.phaseTitleFour {
+	border-width: 1px;
+	width: 33%;
+	line-height: 10px;
+	height: 20px;
+	float: left;
+	text-align: center;
+	border-right-width: 1px;
+}
+
+div.phaseContainerFour {
+	height: 280px;
+}
+
+div.phaseFour {
+	border-width: 1px;
+	width: 33%;
+	height: 280px;
+	vertical-align: top;
+	float: left;
+	margin-top: 0px;
+	overflow: hidden;
+	margin-right: 0px;
+	border-right-width: 1px;
+	border-top-width: 0px;
+	overflow-y: auto;
+	padding-bottom: 5px;
+}
+
+div.draggableContainerFour {
+	border-width: 1px;
+	height: 99px !important;
+	width: 99%;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	padding-left: 1px;
+	overflow-y: scroll;
+}
+/*End*/
+
+
+/* EDIT BY MANH ON MAR 6, 2016 */
+/* Modified animation of Marvin in order to display the effect on mobile devices*/
+@-webkit-keyframes scale {
+    0% {-webkit-transform: scale(1);}
+    50% {-webkit-transform: scale(1.33);}
+    100% {-webkit-transform: scale(1);}
+}
+
+#titletext {
+    -webkit-animation-name: scale;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-delay: 1s;
+}
+
+#flag {
+    -webkit-animation-name: scale;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-delay: 2.3s;
+ 	
+ 	cursor: pointer;   
+}
+/* END OF LINE */
+
+
+/* EDIT BY MANH ON FEB 17, 2016 */
+/* Style of the modal popup window for goodies */
+#divLayer {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 99999;
+
+	background: rgba(0,0,0,0.9);
+}
+
+#divClose {
+	top: 1%;
+	right: 1%;
+	position: fixed;
+	z-index: 100000;
+	font-size: xx-large;
+	font-family: Arial;
+	color: rgba(128,128,128,1);
+	cursor: pointer;
+}
+
+#divClose:hover {
+	color: white;
+}
+
+
+#divContent {
+	width: 80%;
+	height: 80%;
+	display: inline-block;
+	position: absolute;
+	z-index: 100001;
+	border-radius: 5px;
+	padding: 1%;
+	background: rgba(255,255,255,1);
+	text-align: center; 
+	overflow: auto;
+}
+/* END OF LINE */ 
+
+
+/* EDIT BY MANH ON FEB 27, 2016 */
+/* CSS animation in order to make the polarclock pulsate if there is a goodie on the page */
+@-webkit-keyframes pulse {
+    0% {-webkit-transform: scale(1, 1); opacity: 0;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1.1, 1.1); opacity: 0;}
+}
+
+.pulse {
+    -webkit-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: 8;
+}
+/* END OF LINE*/
