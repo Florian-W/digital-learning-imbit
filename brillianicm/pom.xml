@@ -1,0 +1,225 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>imbit13</groupId>
+	<artifactId>brillianicm</artifactId>
+	<version>0.0.1</version>
+	<packaging>war</packaging>
+	<!-- https://maven.apache.org/guides/introduction/introduction-to-the-pom.html -->
+
+	<dependencies>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.6</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.2.1</version> <!-- makesure correct version here -->
+		</dependency>
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-core</artifactId>
+			<version>1.2.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-web</artifactId>
+			<version>1.2.3</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.0.1</version>
+		</dependency>
+		<!-- Removed old Servlet which does not support annotation for test with 
+			2.0.4_a3 @benste <dependency> <groupId>javax.servlet</groupId> <artifactId>servlet-api</artifactId> 
+			<version>2.4</version> <scope>provided</scope> </dependency> -->
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>taglibs</groupId>
+			<artifactId>standard</artifactId>
+			<version>1.1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.derby</groupId>
+			<artifactId>derby</artifactId>
+			<version>10.10.1.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>1.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-javadoc-plugin</artifactId>
+			<version>2.10.3</version>
+			<type>maven-plugin</type>
+		</dependency>
+	</dependencies>
+
+	<properties>
+		<yworks.uml.path>${basedir}/yworks-uml-doclet-3.0_02-jdk1.5</yworks.uml.path>
+	</properties>
+
+	<build>
+		<!-- Basic Config -->
+		<directory>target</directory>
+		<outputDirectory>target/classes</outputDirectory>
+		<finalName>${project.artifactId}-${project.version}</finalName>
+		<testOutputDirectory>target/test-classes</testOutputDirectory>
+		<sourceDirectory>src/main/java</sourceDirectory>
+		<!-- unsure -->
+		<scriptSourceDirectory>WebContent</scriptSourceDirectory>
+		<!-- <testSourceDirectory>src/test</testSourceDirectory> -->
+		<resources>
+			<!-- The XML file //TODO move to correct location -->
+			<resource>
+				<directory>src/main/java/org/dhbw/imbit11</directory>
+				<includes>
+					<!-- just include masterfile -->
+					<include>masterfile.xml</include>
+				</includes>
+			</resource>
+			<!-- Whatever ... -->
+			<resource>
+				<directory>WebContent</directory>
+			</resource>
+		</resources>
+		<!-- <testResources> <testResource> <directory>src/test/resources</directory> 
+			</testResource> </testResources> -->
+
+		<!-- Plugins -->
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.0.2</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+			<!-- Other -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<name>brillianicm</name>
+	<organization>
+		<name>DHBW-Mannheim</name>
+		<url>http://www.imbit.dhbw-mannheim.de/</url>
+	</organization>
+	<issueManagement>
+		<url>https://github.com/cheyer/brillianicm</url>
+	</issueManagement>
+
+	<!-- Javadoc generation uses yWorks doclet when available -->
+	<profiles>
+		<profile>
+			<id>plain-javadoc</id>
+			<activation>
+				<file>
+					<missing>${yworks.uml.path}/lib/ydoc.jar</missing>
+				</file>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-javadoc-plugin</artifactId>
+						<version>2.10.3</version>
+						<executions>
+							<execution>
+								<id>attach-javadoc</id>
+								<goals>
+									<goal>jar</goal>
+								</goals>
+							</execution>
+						</executions>
+						<configuration>
+							<encoding>UTF-8</encoding>
+						</configuration>
+					</plugin>
+					<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-pdf-plugin</artifactId> 
+						<version>1.3</version> <executions> <execution> <id>pdf</id> <phase>site</phase> 
+						<goals> <goal>pdf</goal> </goals> <configuration> <outputDirectory>${basedir}\target\apidocs</outputDirectory> 
+						<includeReports>false</includeReports> </configuration> </execution> </executions> 
+						</plugin> -->
+				</plugins>
+			</build>
+		</profile>
+
+		<profile>
+			<id>yworks-uml-doclet</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+				<file>
+					<exists>${yworks.uml.path}/lib/ydoc.jar</exists>
+				</file>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-javadoc-plugin</artifactId>
+						<version>2.10.3</version>
+						<configuration>
+							<encoding>UTF-8</encoding>
+							<doclet>ydoc.doclets.YStandard</doclet>
+							<docletPath>${yworks.uml.path}/lib/ydoc.jar:${yworks.uml.path}/lib/class2svg:${yworks.uml.path}/resources</docletPath>
+							<sourcepath>${basedir}/target/finalName/WEB-INF/org</sourcepath>
+							<additionalparam>-umlautogen</additionalparam>
+						</configuration>
+						<executions>
+							<execution>
+								<id>attach-javadoc</id>
+								<goals>
+									<goal>jar</goal>
+								</goals>
+							</execution>
+							<execution>
+								<id>aggregate</id>
+								<goals>
+									<goal>aggregate</goal>
+								</goals>
+								<phase>site</phase>
+								<configuration></configuration>
+							</execution>
+						</executions>
+					</plugin>
+					<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-pdf-plugin</artifactId> 
+						<version>1.3</version> <executions> <execution> <id>pdf</id> <phase>site</phase> 
+						<goals> <goal>pdf</goal> </goals> <configuration> <outputDirectory>${basedir}\target\apidocs</outputDirectory> 
+						<includeReports>false</includeReports> </configuration> </execution> </executions> 
+						</plugin> -->
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+</project>

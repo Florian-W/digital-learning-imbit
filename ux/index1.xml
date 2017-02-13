@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"  ?>
-<?xml-stylesheet type="text/xsl" href="xslt/ExampleCollection.xsl"?>
-<ExampleCollection>
-	<Example name="Website" url="examples/exmple_website.xml" />
-	<Example name="Youtube" url="examples/exmple_youtube.xml" />
-	<Example name="Youtube - Embedded" url="examples/exmple_youtube_embedded.xml" />
-</ExampleCollection>
