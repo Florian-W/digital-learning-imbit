@@ -1,0 +1,23 @@
+{"quizlist":[
+  
+	{
+	"question":"Portuguese is spoken in _______",
+	"option1":"Brazil",
+	"option2":"Argentina",
+	"option3":"Ecuador"
+	},
+	{
+	"question":"What is the capital of Peru?",
+	"option1":"Lima",
+	"option2":"Bogota",
+	"option3":"San Juan"
+	},
+	{
+	"question":"Which country is long and thin?",
+	"option1":"Chile",
+	"option2":"Uruguay",
+	"option3":"Colombia"
+	}
+
+]
+}

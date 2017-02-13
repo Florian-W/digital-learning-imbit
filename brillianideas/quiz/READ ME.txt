@@ -1,0 +1,2 @@
+1 To test, open index.html in IE, Firefox or Safari
+2 When OFFLINE, it will not work in Chrome due to security restrictions. It will work in Chrome when online
