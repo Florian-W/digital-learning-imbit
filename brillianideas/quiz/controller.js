@@ -2,17 +2,12 @@ $(document).ready(function () {
 	
 var questionNumber=0;
 var questionBank=new Array();
+var q=new Array();
 var stage="#game1";
 var stage2=new Object;
 var questionLock=false;
 var numberOfQuestions;
 var score=0;
-		 
-
-		 
-		 
-		 
-
  
  		$.getJSON('activity.json', function(data) {
 
@@ -22,6 +17,8 @@ var score=0;
 			questionBank[i][1]=data.quizlist[i].option1;
 			questionBank[i][2]=data.quizlist[i].option2;
 			questionBank[i][3]=data.quizlist[i].option3;
+			questionBank[i][4]=data.quizlist[i].option4;
+			questionBank[i][5]=data.quizlist[i].option5;
 		}
 		 numberOfQuestions=questionBank.length; 
 		
@@ -34,37 +31,40 @@ var score=0;
 
 
 function displayQuestion(){
- var rnd=Math.random()*3;
-rnd=Math.ceil(rnd);
- var q1;
- var q2;
- var q3;
 
-if(rnd==1){q1=questionBank[questionNumber][1];q2=questionBank[questionNumber][2];q3=questionBank[questionNumber][3];}
-if(rnd==2){q2=questionBank[questionNumber][1];q3=questionBank[questionNumber][2];q1=questionBank[questionNumber][3];}
-if(rnd==3){q3=questionBank[questionNumber][1];q1=questionBank[questionNumber][2];q2=questionBank[questionNumber][3];}
 
-$(stage).append('<div class="questionText">'+questionBank[questionNumber][0]+'</div><div id="1" class="option">'+q1+'</div><div id="2" class="option">'+q2+'</div><div id="3" class="option">'+q3+'</div>');
+var q=new Array();
+var contentArray =new Array();
+$(stage).append('<div class="questionText">'+questionBank[questionNumber][0]+'</div>')
+for(i=1;i<questionBank[questionNumber].length;i++){
+	q[i-1]=questionBank[questionNumber][i];
+	
+	
+	contentArray[i-1] = '<div id='+ i +' class="option">'+q[i-1]+'</div>';	
+}
+
+	shuffle(contentArray);
+
+	for(i=0;i<contentArray.length;i++){
+		$(stage).append(contentArray[i]);
+	}
+	
 
  $('.option').click(function(){
   if(questionLock==false){questionLock=true;	
   //correct answer
-  if(this.id==rnd){
+  if(this.id==1){
    $(stage).append('<div class="feedback1">CORRECT</div>');
    score++;
    }
   //wrong answer	
-  if(this.id!=rnd){
+  if(this.id!=1){
    $(stage).append('<div class="feedback2">WRONG</div>');
   }
   setTimeout(function(){changeQuestion()},1000);
  }})
 }//display question
 
-	
-	
-	
-	
 	
 	function changeQuestion(){
 		
@@ -89,8 +89,20 @@ $(stage).append('<div class="questionText">'+questionBank[questionNumber][0]+'</
 	}//display final slide
 	
 	
-	
-	
+	/**
+	 * Shuffles array in place.
+	 * @param {Array} a items The array containing the items.
+	 */
+	function shuffle(a) {
+	    var j, x, i;
+	    for (i = a.length; i; i--) {
+	        j = Math.floor(Math.random() * i);
+	        x = a[i - 1];
+	        a[i - 1] = a[j];
+	        a[j] = x;
+	    }
+	}
+
 	
 	
 	
