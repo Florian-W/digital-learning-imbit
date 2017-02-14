@@ -1,7 +1,7 @@
 html, body {
 	margin: 0;
 	padding: 0;
-  background-image:url(greybg.png);
+  background-color: #990133;
 	  font-family: Arial, Helvetica, sans-serif;
 	    }
 
@@ -46,24 +46,13 @@ padding:2px;
 padding-left:10px;
 border: 2px solid white;
 cursor:pointer;
-background-color:#3399FF;
+background-color: #6c132e;
 }
 
 .option:hover{
-border:#FC0 solid 2px;
-color:#FC0;
+border:#e53f5f solid 2px;
+color:#e53f5f;
 }
-
-
-		
-
-
-
-
-
-
-
- 
 
 #topbar{
 height:50px;
@@ -80,17 +69,12 @@ border-bottom:solid white 1px;
 height:30px;
 }
 
- 
-
-
-
-
 .feedback1{
 width:150px;
 padding:5px;
 font-size:30px;
 color:#FFFFCC;
-background-color:#009900;
+background-color: #85ba1c;
 font-family:Arial, Helvetica, sans-serif;
 text-align:center;
 }
@@ -100,7 +84,7 @@ width:150px;
 padding:5px;
 font-size:30px;
 color:#FFFFCC;
-background-color:#CC3300;
+background-color:#e53f5f;
 font-family:Arial, Helvetica, sans-serif;
 text-align:center;
 }

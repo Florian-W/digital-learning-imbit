@@ -1,22 +1,36 @@
 {"quizlist":[
   
 	{
-	"question":"Portuguese is spoken in _______",
-	"option1":"Brazil",
-	"option2":"Argentina",
-	"option3":"Ecuador"
+	"question":"Welcher der folgenden Prozesse ist nicht Teil der Primären Aktivitäten?",
+	"option1":"Personalwesen",
+	"option2":"Ausgangslogistik",
+	"option3":"Kundendienst",
+	"option4":"Marketing und Vertrieb",
+	"option5":"Eingangslogistik"
 	},
 	{
-	"question":"What is the capital of Peru?",
-	"option1":"Lima",
-	"option2":"Bogota",
-	"option3":"San Juan"
+	"question":"Welcher der folgenden Prozesse ist nicht Teil der Sekundären Aktivitäten?",
+	"option1":"Kundendienst",
+	"option2":"Unternehmensinfrastruktur",
+	"option3":"Personalwesen",
+	"option4":"Technologieentwicklung",
+	"option5":"Beschaffung"
 	},
 	{
-	"question":"Which country is long and thin?",
-	"option1":"Chile",
-	"option2":"Uruguay",
-	"option3":"Colombia"
+	"question":"Welcher der folgenden Aktivitäten ist nicht Teil der Personalarbeit?",
+	"option1":"Marktanalyse",
+	"option2":"Rekrutierung",
+	"option3":"Personalbetreuung",
+	"option4":"Mitarbeitermotivation",
+	"option5":"Ausbildung"
+	},
+	{
+	"question":"Welcher der folgenden Aktivitäten ist nicht Teil Eingangslogistik?",
+	"option1":"Annahme der Ware",
+	"option2":"Verhandlung mit Zulieferern",
+	"option3":"Zwischenlagerung",
+	"option4":"Transport zur Produktion",
+	"option5":"Absatzstrategien"
 	}
 
 ]
