@@ -59,7 +59,8 @@ for(i=1;i<questionBank[questionNumber].length;i++){
    }
   //wrong answer	
   if(this.id!=1){
-   $(stage).append('<div class="feedback2">WRONG</div>');
+	  $("#1").css('background-color', '#85ba1c');
+	  $(stage).append('<div class="feedback2">WRONG</div>');
   }
   setTimeout(function(){changeQuestion()},1000);
  }})
@@ -103,7 +104,5 @@ for(i=1;i<questionBank[questionNumber].length;i++){
 	    }
 	}
 
-	
-	
 	
 	});//doc ready
