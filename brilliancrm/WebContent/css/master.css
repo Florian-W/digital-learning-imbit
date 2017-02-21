@@ -1,0 +1,842 @@
+@font-face {
+	font-family: agency;
+	src: url(agency_fb.ttf);
+}
+
+/*from .panel-body*/
+.bc {
+	border-style: solid;
+	border-color: #707a8f;
+}
+
+/*from .panel-header*/
+.bph {
+	background-color: #e6edfa;
+}
+
+/*from .datagrid-row-selected*/
+/*Defines color of highlighted element*/
+.elementHighlight {
+	background: #c1d3f6;
+	color: #000000;
+}
+
+.datagrid-header td,.datagrid-body td,.datagrid-footer td {
+	cursor: pointer;
+}
+
+.datagrid-toolbar {
+	height: 30px;
+}
+
+.datagrid-cell {
+	line-height: 23px;
+}
+
+/*Prevents hover-coloring*/
+.datagrid-row-selected,.datagrid-row-over {
+	background: inherit;
+}
+
+html,input,select {
+	font-family: agency !important;
+	font-weight: normal;
+	white-space: normal;
+}
+
+input,select {
+	font-size: 18px;
+}
+
+select {
+	width: 137px;
+	margin-left: 2px;
+}
+
+embed {
+	height: 0px !important;
+}
+
+/* prohibit selection of text and pictures */
+div {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+body {
+	display: none;
+}
+
+div.north {
+	height: 30px;
+}
+
+div.north div a,div.welcome {
+	margin-top: 2px;
+	margin-right: 5px;
+	float: right;
+}
+
+.layout-panel-west div.panel-header {
+	border-left: 0px;
+}
+
+.layout-panel-east div.panel-header {
+	border-right: 0px;
+}
+
+div.west {
+	width: 200px;
+	border-bottom: 0px;
+	border-left: 0px;
+}
+
+div.east {
+	width: 200px;
+	border-bottom: 0px;
+	border-right: 0px;
+}
+
+div.east {
+	width: 200px;
+}
+
+div.east-south {
+	height: 120px;
+	padding: 10px 10px 10px 10px;
+}
+
+div.center {
+	border-right: 0px;
+	padding: 10px;
+	border-top-width: 1px;
+}
+
+div.center-south {
+	height:80px;
+}
+
+div.timeline {
+	margin-right: auto;
+	margin-left: auto;
+	height: 80px;
+	width:600px;
+	-webkit-backface-visibility: hidden;
+	transition: background-image 1s ease-in-out;
+	background-image: url(images/blank.gif);
+	background-repeat: no-repeat;
+	background-size: 600px 80px;
+	background-position: center;
+}
+
+div.center-center {
+	border-bottom-width: 0px;
+}
+
+div.noPadding {
+	padding: 0px;
+}
+
+div.center div.panel {
+}
+
+.centerMerger{
+	display:none;
+    height:564px;
+    width:851px;
+    padding:10px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+div.centerContainer {
+}
+
+div.mainLogoContainer {
+	height: 100%;
+	border-width: 0 0 0 0;
+}
+
+div.mainLogo {
+	height: 100%;
+	background-image: url(../images/logo.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+div.mainLogo:hover {
+	cursor: pointer;
+}
+
+div.audioPlayer {
+	display: none;
+}
+
+div.div-header {
+	float: right;
+	width: 100%;
+	height: inherit;
+	border: 0px;
+	padding: 0px;
+}
+
+div.welcome {
+	line-height: 24px;
+	margin-top: 3px;
+}
+
+div.mainCarlendar {
+	width: 156px !important;
+	height: 176px !important;
+	margin: 10px;
+	font-size: 14px !important;
+}
+
+.calendar-today {
+	background-color: #ffe48d;
+	color: #000000;
+	border: 1px solid #ffab3f;
+	font-weight: bold;
+}
+
+div.loadingScreenImageContainer {
+	-webkit-backface-visibility: hidden;
+	transition: background-image 2s ease-in-out;
+	text-align: center;
+	padding-top: 250px;
+	font-size: 70px;
+	background-image: url(images/blank.gif);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+div.transitionScreenImageContainer {
+	-webkit-backface-visibility: hidden;
+	transition: background-image 2s ease-in-out;
+	text-align: center;
+	height: 100%;
+	font-size: 30px;
+	background-image: url(images/blank.gif);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+div.mainLocationButtonContainer {
+	margin: 10px 10px 0 10px;
+	text-align: left !important;
+}
+
+div.mainLocationButton, div.mainMailButton {
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+}
+
+/*deprecated*/
+div.mainLocationButtonSelected {
+	background: #eaf2ff;
+	color: #000000;
+	border: 1px solid #b7d2ff;
+	filter: none;
+}
+
+div.mainLocationButtonHighlight, div.mainMailButtonHighlight {
+	background: #FFE48D;
+	color: #000000;
+}
+
+div.mainLaptopButtonContainer{
+	display:none;
+	border-width: 1px 0 0 0;
+	padding: 10px 10px 10px 10px;
+}
+
+.projektStrukturPlanButtonContainer, .ganttButtonContainer, .projektCharterButtonContainer {
+	border-width: 1px 0 0 0;
+	padding: 10px 10px 10px 10px;
+}
+
+div.mainLaptopButton, div.projektStrukturPlanButton, div.ganttButton, div.projektCharterButton {
+	height: 70px;
+	background-image: url(images/blank.gif);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+div.projektCharterButton {
+	background-size: 70px 40px;
+}
+
+div.ganttButton {
+	background-size: 80px 50px;
+}
+
+div.mainLaptopButton:hover, div.projektStrukturPlanButton:hover, div.ganttButton:hover, div.projektCharterButton:hover {
+	cursor: pointer;
+}
+
+img.newMailImage {
+	display: none;
+	float: right;
+}
+
+div.mainTCQContainer {
+	height: 140px;
+	border-width: 0 0 0 0;
+	padding: 10px 10px 10px 10px;
+}
+
+div.mainTCQ {
+	height: 140px;
+	-webkit-backface-visibility: hidden;
+	transition: background-image 1s ease-in-out;
+	transition: height 1s ease-in-out;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+div.center div.mainTCQ {
+	width:140px;
+}
+
+img#costState,img#timeState,img#qualityState {
+	height: 40px;
+	width: 40px;
+	padding-right: 1px;
+}
+
+img#timeState {
+	vertical-align: top;
+	padding-top: 20px;
+}
+
+img#costState,img#qualityState {
+	padding-top: 86px;
+}
+
+div.locationBackgroundContainer {
+	-webkit-backface-visibility: hidden;
+	transition: background-image 2s ease-in-out;
+	background-size: 849px 562px;
+	background-repeat: no-repeat;
+}
+
+div.dialogMoodContainer {
+	display: none;
+	float: right;
+	padding: 10px;
+	margin: 20px;
+}
+
+div.dialogTextContainer {
+	opacity: 0.9;
+	padding: 10px;
+	line-height: 20px;
+	border-width: 0 1px 0 0;
+	background: white;
+	opacity: 0.9;
+}
+
+div.dialogPartner {
+	display: none;
+	padding: 10px;
+}
+
+div.dialogPartnerName {
+	height: initial;
+	margin-bottom: 10px;
+}
+
+div.dialogPartnerText {
+	
+}
+
+div.dialogButton {
+	display: none;
+	margin-top: 10px;
+	padding: 10px;
+	text-align: left;
+}
+
+img.dialogMood {
+	float: right;
+	width: 60px;
+	height: 60px;
+}
+
+body.dialogBody,body.mainBody {
+	margin: 0px;
+}
+
+.dialogContainer,.selectionContainer {
+	-webkit-backface-visibility: hidden;
+	transition: background-image 2s ease-in-out;
+	background-size: 849px 562px;
+	background-repeat: no-repeat;
+	display: none;
+}
+
+.dialogContainer video {
+	position:absolute;
+	z-index:0;
+	width: 852px !important;
+	height: 562px !important;
+}
+
+.dialogContainer div.panel {
+	margin-left: inherit !important;
+	margin-right: inherit !important;
+}
+
+.selectionContainer,.allocationContainer {
+	background: white;
+	opacity: 1.0;
+}
+
+.selectionTitle {
+	display: none;
+}
+
+.selectionOptionContainer {
+	float: left;
+	text-align: center;
+	padding: 0px;
+	margin-right: 0px;
+	border-width: 0 1px 0 0;
+	width: 282px;
+	height: 562px;
+}
+
+.selectionOptionContainer:nth-child(odd) {
+	width: 283px;
+}
+
+.selectionOptionContainer:last-child {
+	border-width: 0 0 0 0;
+}
+
+.selectionPicture {
+	height: 250px;
+	width: 100%;
+	border-width: 0 0 1px 0;
+	display: none;
+}
+
+.selectionText {
+	padding: 10px;
+}
+
+.selectionButton {
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-right: 0px !important;
+	border-left: 0px !important;
+}
+
+div.laptopContainer {
+	width: 849px;
+	height: 540px;
+	padding: 0px;
+}
+
+div.laptopMailClient {
+	width: 849px;
+	height: 540px;
+}
+
+/*begin mail and mailDraft*/
+div.mailHeadline {
+	border-bottom: dotted 1px lightgray;
+	float: left;
+	width: 100%;
+}
+
+div.mailHeadline div {
+	float: left;
+}
+
+div.mailHeadline div:first-child {
+	width: 75px;
+	padding-left: 4px;
+}
+
+div.date {
+	float: right !important;
+	padding-right: 4px;
+}
+
+div.attachment {
+	text-decoration: underline;
+}
+
+div.attachment:hover {
+	cursor: pointer;
+}
+
+div.content {
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+div.content-first {
+	padding-top: 13px;
+}
+
+div.draftbuttonContainer {
+	padding: 3px;
+}
+
+div.draftbutton {
+	text-align: left;
+	display: block;
+	margin-top: 3px;
+	padding: 5px;
+}
+
+div.draftbutton-first {
+	margin-top: 0px;
+}
+
+/*end mail and mailDraft*/
+div.allocationContainer {
+	padding: 10px;
+	display: none;
+	width: 100%;
+}
+
+div.phaseTitle {
+	border-width: 1px;
+	width: 190px;
+	margin-top: 5px;
+	height: 16px;
+	float: left;
+	text-align: center;
+	border-right-width: 0px;
+}
+
+div.phase {
+	border-width: 1px;
+	width: 200px;
+	height: 280px;
+	vertical-align: top;
+	float: left;
+	margin-top: 0px;
+	overflow: hidden;
+	margin-right: 0px;
+	border-right-width: 0px;
+	border-top-width: 0px;
+	overflow-y: auto;
+	padding-bottom: 5px;
+}
+
+div.phaseTitle:last-child,div.phase:last-child {
+	border-right-width: 1px;
+}
+
+div.draggableContainer {
+	border-width: 1px;
+	height: 99px !important;
+	width: 826px;
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	padding-left: 1px;
+	overflow-y: scroll;
+}
+
+div.allocationContainer div.buttonContainer {
+	text-align: center;
+}
+
+div.drag {
+	float: left;
+	width: 173px;
+	height: 26px;
+	padding: 0 0 0 5px;
+	margin: 5px 6px 0 5px;
+	border-width: 1px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	cursor: pointer !important;
+}
+
+/*This class is used for labeling all tiles that will get drag functionality
+Tiles shall be organized in a tile matrix*/
+
+div.matrixAllocationContainer{
+	text-align: center;
+	vertical-align: middle;
+	display:block;
+}
+
+div.tileAcceptorContainer{
+	/*Params needed for centering the stakeholder analysis*/
+	display: inline-block;
+    text-align: left;
+
+}
+
+/*Tile matrix place holders in top row*/
+div.tileAcceptor {
+	border-width: 5px;
+	width: 157px;
+	height: 157px;
+	vertical-align: middle;
+	float: left;
+	margin-top: 0px;
+	overflow: hidden;
+	margin-right: 0px;
+	margin-left:0px;
+	overflow-y: auto;
+	padding-bottom: 5px;
+	display: table-cell;
+	text-align:center;
+}
+
+
+div.draggableTilesContainer {
+	border-width: 1px;
+	height: 135px !important;
+	width:820px;
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	padding-left: 1px;
+	overflow-y: scroll;
+}
+
+div.description{
+	
+	padding-bottom: 20px;
+padding-top: 20px;
+}
+
+
+
+/* tiles to be dragged and dropped*/
+div.dragTile {
+	float: center;
+	width: 150px;
+	height: 144px;
+	padding: 0 0 0 0px;
+	vertical-align: baseline;
+	margin-top:5px;
+	border-width: 1px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	cursor: pointer !important;
+	display: inline-block;
+	text-align: left;
+	
+	/* break line for different browsers*/
+	white-space: pre-wrap;    
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	
+}
+
+#xAxisDescription {
+	background: white;
+	height: 30px;
+	width: 494px;
+	margin-left: 165px;
+	font-size: 30px
+}
+
+
+#yAxisDescription{
+	width:20px;
+	font-size:38px;
+	background-color: white;
+	position:static;
+	float:left;
+	margin-left:60px;
+	margin-right:-100px;
+	word-break:break-all;
+	margin-top:40px;
+}
+
+
+
+div.dragIncorrect {
+	background-color: #ffa8a8;
+}
+
+div.dp {
+	opacity: 0.5;
+	filter: alpha(opacity = 50);
+}
+
+div.over {
+	background: #FBEC88;
+}
+
+.fancybox {
+	display: inherit;
+	line-height: 0px;
+}
+
+.fancybox-overlay {
+	z-index: 10000 !important;
+}
+
+.fancybox-wrap {
+	z-index: 10001 !important;
+}
+
+.loginContainer {
+	padding: 10px;
+}
+
+.loginButtonContainer a {
+	display: table;
+	margin-bottom: 10px;
+}
+
+/*removes text decoration from links on front page*/
+.login{
+	text-decoration:none;
+	color:#0000EE;
+}
+
+.imprintContainer {
+	padding: 10px;
+}
+
+.formLabel {
+	width: 130px;
+	float: left;
+	line-height: 30px;
+}
+
+.dragInfoContainer {
+	height: 24px;
+}
+
+.group {
+	margin-bottom: 30px;
+}
+
+/* student landing page*/
+a.studentButton{
+	width: 267px;
+}
+
+a.startGameButton {
+	width: 267px;
+	background-color: #c1d3f6;
+}
+
+/* student landing page begin*/
+div.studentHomepage{
+	background-image:url(../images/BackgroundStudentLandingpage.png);
+	background-repeat: no-repeat;
+	background-position: 350px -40px;	
+}
+
+div.studentHomepageContainer{
+	width: 291px !important;
+	height: initial !important; 
+	margin-top: 145px;
+	margin-left: 150px;
+	float: left;
+	
+}
+
+a.studentButton{
+	width: 267px;
+}
+
+a.startGameButton {
+	width: 267px;
+	height: 50px;
+	padding-top: 23px;
+	background-color: #c1d3f6;
+	font-weight: bold;
+}
+
+/* student landing page end*/
+
+div.studentRegisterContainer{
+	width: 391px !important;
+	height: initial !important; 
+	margin-top: 45px;
+	margin-left: 280px;
+	float: left;
+	
+}
+a.studentRegisterButton{
+	width: 125px;
+	margin-left:2px;
+}
+
+select.registerGender{
+    width: 127px;
+}
+
+div.mainWindow{
+	background-image:url(../images/background.png);
+	background-repeat: repeat;
+}
+
+div.transitionContinueButtonContainer{
+	text-align: center;	
+}
+
+div.transitionContinueButton {
+	font-size: 18px;
+}
+
+div.mainLocationButton span.l-btn-left, div.mainMailButton span.l-btn-left {
+	float: left;
+	padding-left: 20px;
+}
+
+div.mainLocationButton img, div.mainMailButton img {
+	padding-right: 20px;
+}
+
+div.transitionScreenTextContainer {
+	background: white;
+	opacity: 0.8;
+}
+
+div.transitionScreenImageContainer:hover {
+	cursor: pointer;
+}
+
+.new-button-highlight {
+    -webkit-animation: blink 1s step-end infinite;
+    animation: blink 1s step-end infinite;
+}
+@keyframes blink {
+	0% {background-color: #e6edfa}
+	50% {background-color: #6699ff}
+}
+@-webkit-keyframes blink {
+    0% {background-color: #e6edfa}
+	50% {background-color: #6699ff}
+}
+
+.tabs-tool{
+	height: inherit !important;
+	border-top-width: 0px;
+	border-right-width: 0px;
+}
