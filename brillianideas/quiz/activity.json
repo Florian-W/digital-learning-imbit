@@ -2,36 +2,13 @@
   
 	{
 	"question":"Welcher der folgenden Prozesse ist nicht Teil der Primären Aktivitäten?",
-	"option1":"Personalwesen",
-	"option2":"Ausgangslogistik",
-	"option3":"Kundendienst",
-	"option4":"Marketing und Vertrieb",
-	"option5":"Eingangslogistik"
-	},
-	{
-	"question":"Welcher der folgenden Prozesse ist nicht Teil der Sekundären Aktivitäten?",
-	"option1":"Kundendienst",
-	"option2":"Unternehmensinfrastruktur",
-	"option3":"Personalwesen",
-	"option4":"Technologieentwicklung",
-	"option5":"Beschaffung"
-	},
-	{
-	"question":"Welcher der folgenden Aktivitäten ist nicht Teil der Personalarbeit?",
-	"option1":"Marktanalyse",
-	"option2":"Rekrutierung",
-	"option3":"Personalbetreuung",
-	"option4":"Mitarbeitermotivation",
-	"option5":"Ausbildung"
-	},
-	{
-	"question":"Welcher der folgenden Aktivitäten ist nicht Teil Eingangslogistik?",
-	"option1":"Absatzstrategien",
-	"option2":"Verhandlung mit Zulieferern",
-	"option3":"Zwischenlagerung",
-	"option4":"Transport zur Produktion",
-	"option5":"Annahme der Ware"
+	"optionTrue":"Personalwesen",
+	"optionFalse":[
+			"Ausgangslogistik",
+			"Kundendienst",
+			"Marketing und Vertrieb",
+			"Eingangslogistik"
+			 ]
 	}
-
 ]
 }
