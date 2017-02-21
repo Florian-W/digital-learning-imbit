@@ -54,6 +54,12 @@ border:#e53f5f solid 2px;
 color:#e53f5f;
 }
 
+.option:focus{
+border:#e53f5f solid 2px;
+color:#e53f5f;
+}
+
+
 #topbar{
 height:50px;
 margin:auto;

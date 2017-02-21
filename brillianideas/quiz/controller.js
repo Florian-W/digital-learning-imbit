@@ -10,23 +10,33 @@ $(document)
 					var questionLock = false;
 					var numberOfQuestions;
 					var score = 0;
+					var numberOfFalseOptions;
+					console.log("Test");
 
 					$.getJSON('activity.json', function(data) {
-
+						// Alle fragen und antwortmöglichkeiten im json werden durchlaufen
 						for (i = 0; i < data.quizlist.length; i++) {
-							questionBank[i] = new Array;
+							questionBank[i] = new Array();
+							//Die Frage und die richtige Antwort werden in einem zweidimensionalen Array gespeichert
 							questionBank[i][0] = data.quizlist[i].question;
 							questionBank[i][1] = data.quizlist[i].optionTrue;
-							
-							console.log(data.quizlist[0].optionFalse);
-							for (j = 0; j < data.quizlist[0].optionFalse.length; j++) {
-							questionBank[i][j+2] = data.quizlist[0].optionFalse[j]
-							}
+
+
+
+							// Es werden entweder mehrere falsche (SingleChoice Minispiel) oder nur eine Antwortmöglichkeit (Yes/No Minispiele) zum Array hinzugefügt
+								for (j = 0; j < data.quizlist[i].optionFalse.length; j++) {
+								questionBank[i][j+2] = data.quizlist[i].optionFalse[j];
+								}
+
+								// Anzahl der Optionen die falsch sind wird nochmal extra in einer globalen variable für späteren Nutzen gespeichert
+								numberOfFalseOptions =data.quizlist[i].optionFalse.length
+
+
 						}
 						numberOfQuestions = questionBank.length;
 
 						displayQuestion();
-					})// gtjson
+					});// gtjson
 
 					function displayQuestion() {
 
@@ -40,18 +50,41 @@ $(document)
 							q[i - 1] = questionBank[questionNumber][i];
 
 							contentArray[i - 1] = '<div id=' + i
-									+ ' class="option">' + q[i - 1] + '</div>';
+									+ ' class="option" tabindex="1">' + q[i - 1] + '</div>';
 						}
 
-						shuffle(contentArray);
+						// wenn es mehr als eine falsche Antwortmöglichkeit gibt, werden sie in eine zufällige Reihenfolge gebracht...
+						if(numberOfFalseOptions>1) {
+							shuffle(contentArray);
+						};
 
+						// ...und dann angezeigt
 						for (i = 0; i < contentArray.length; i++) {
-							$(stage).append(contentArray[i]);
+							if(numberOfFalseOptions>1){
+								$(stage).append(contentArray[i]);
+							} else {
+								//gibt es nur eine Antwortmöglichkeit wird immer die Option "Ja" zuerst angezeigt
+									if(q[i]=="Ja") {
+										$(stage).append(contentArray[0]);
+									} else {
+										$(stage).append(contentArray[1]);
+									}
+
+							}
 						}
 
 						$('.option')
 								.click(
 										function() {
+
+											// markiere ausgewählte Antwortmöglichkeit weiterhin, auch wenn irgendwo anders auf der Seite geklickt wird
+											var styles = {
+												border: "#e53f5f solid 2px",
+
+												color:"#e53f5f"
+											};
+											$(this).css(styles);
+
 											if (questionLock == false) {
 												questionLock = true;
 												// correct answer
@@ -66,18 +99,26 @@ $(document)
 													$("#1").css(
 															'background-color',
 															'#85ba1c');
+
 													$(stage)
 															.append(
 																	'<div class="feedback2">WRONG</div>');
+
 												}
+
+
 												$(stage)
 														.append(
 																'<div class="next">Next</div>');
+
+												//wenn eine Antwortmöglichkeit ausgewählt wurde kann keine andere mehr selektiert werden
+												$(".option").css("pointer-events", "none");
+
 												$('.next').click(function(){
 													changeQuestion();
-												})
+												});
 											}
-										})
+										});
 					}// display question
 
 					function displayFinalSlide() {
@@ -93,7 +134,7 @@ $(document)
 
 					/**
 					 * Shuffles array in place.
-					 * 
+					 *
 					 * @param {Array}
 					 *            a items The array containing the items.
 					 */
@@ -106,7 +147,7 @@ $(document)
 							a[j] = x;
 						}
 					}
-					
+
 					function changeQuestion() {
 
 						questionNumber++;
