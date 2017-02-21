@@ -11,6 +11,25 @@ var score=0;
 var progress=0;
 var yourAnswers=new Array();
 
+// switch (gametype) {
+//   case ValueChainYesNo: $.getJSON('masterfile.json', function(data) {
+//
+//   for(i=0;i<data.MultipleChoice.TestGame.length;i++){
+//     questionBank[i]=new Array;
+//     questionBank[i][0]=data.MultipleChoice.TestGame[i].question;
+//     questionBank[i][1]=data.MultipleChoice.TestGame[i].option1;
+//     questionBank[i][2]=data.MultipleChoice.TestGame[i].option2;
+//     console.log(data.MultipleChoice.TestGame[0].question)
+//   }
+//    numberOfQuestions=questionBank.length;
+//
+//   displayQuestion();
+//   })//gtjson
+//
+//     break;
+//   default:
+//
+// }
 
  		$.getJSON('masterfile.json', function(data) {
 
@@ -19,6 +38,7 @@ var yourAnswers=new Array();
 			questionBank[i][0]=data.MultipleChoice.TestGame[i].question;
 			questionBank[i][1]=data.MultipleChoice.TestGame[i].option1;
 			questionBank[i][2]=data.MultipleChoice.TestGame[i].option2;
+      console.log(data.MultipleChoice.TestGame[0].question)
 		}
 		 numberOfQuestions=questionBank.length;
 
@@ -44,7 +64,7 @@ for(i=1;i<questionBank[questionNumber].length;i++){
 	q[i-1]=questionBank[questionNumber][i];
 
 
-	contentArray[i-1] = '<div id='+ i +' class="option">'+q[i-1]+'</div>';
+	contentArray[i-1] = '<div id='+ i +' class="option" tabindex="1">'+q[i-1]+'</div>';
 }
 
 	//shuffle(contentArray);
