@@ -16,11 +16,12 @@ $(document)
 						for (i = 0; i < data.quizlist.length; i++) {
 							questionBank[i] = new Array;
 							questionBank[i][0] = data.quizlist[i].question;
-							questionBank[i][1] = data.quizlist[i].option1;
-							questionBank[i][2] = data.quizlist[i].option2;
-							questionBank[i][3] = data.quizlist[i].option3;
-							questionBank[i][4] = data.quizlist[i].option4;
-							questionBank[i][5] = data.quizlist[i].option5;
+							questionBank[i][1] = data.quizlist[i].optionTrue;
+							
+							console.log(data.quizlist[0].optionFalse);
+							for (j = 0; j < data.quizlist[0].optionFalse.length; j++) {
+							questionBank[i][j+2] = data.quizlist[0].optionFalse[j]
+							}
 						}
 						numberOfQuestions = questionBank.length;
 
