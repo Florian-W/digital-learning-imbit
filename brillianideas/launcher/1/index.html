@@ -4,43 +4,53 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Launcher 1</title>
+		<script src="jquery.js"></script>
 	<script src="launcher.js"></script>
 	<link rel="stylesheet" type="text/css" href="launcher.css">
   </head>
   <body>
-<div class="container">
-  <div class="floaty">
+  <div id="header">
+    <form onsubmit="false;">
+        <button type="button" id="homeButton"><img src="home-white.png" alt="hone"/></button>
+        <input type="text" id="searchField"></input>
+        <button type="button" id="voiceSearch"><img width="14px" height="14px" src="http://www.iconsdb.com/icons/preview/white/microphone-3-xxl.png" alt=""/></button>
+    </form>
+</div>
+<div id="container" class="" >
+	<div class="floaty">
     <ul class="floaty-list">
       <li class="floaty-list-item">
-        <span class="floaty-list-item-label">brillianICM</span>
-        <img src="https://goo.gl/N5Fuxq" alt="" />
+        <span class="floaty-list-item-label" href="www.brillianicm.com">brillianICM</span>
+        <img src="img2.png" alt="" height="40" width="40"/>
       </li>
       <li class="floaty-list-item">
-        <span class="floaty-list-item-label">brillianCRM</span>
-        <img src="http://goo.gl/F5yGOp" alt="" />
+        <span class="floaty-list-item-label" href="www.brilliancrm.com">brillianCRM</span>
+        <img src="img3.png" alt="" height="40" width="40"/>
       </li>
-      <li class="floaty-list-item floaty-list-item--blue">
-        <span class="floaty-list-item-label">Cloud Wiki</span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="absolute-center">
-            <path d="M0 0h24v24h-24z" fill="none"/>
-            <path d="M22 5.72l-4.6-3.86-1.29 1.53 4.6 3.86 1.29-1.53zm-14.12-2.33l-1.28-1.53-4.6 3.85 1.29 1.53 4.59-3.85zm4.62 4.61h-1.5v6l4.75 2.85.75-1.23-4-2.37v-5.25zm-.5-4c-4.97 0-9 4.03-9 9s4.02 9 9 9c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"/>
-        </svg>
+	        <li class="floaty-list-item" id="newContent">
+        <span class="floaty-list-item-label">New Content</span>
+		<img src="img1.png" alt="" height="40" width="40"/>
+		</li>
+      <li class="floaty-list-item floaty-list-item--blue" href="wiki.brillianideas.com" >
+        <span class="floaty-list-item-label" >Cloud Wiki</span>
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 10 100 125" enable-background="new 0 0 100 100" xml:space="preserve"><g><path d="M77.742,54.63C77.896,53.661,78,52.677,78,51.666C78,41.359,69.641,33,59.333,33c-8.104,0-14.981,5.177-17.562,12.393   c-1.916-1.064-4.088-1.727-6.438-1.727c-6.552,0-11.974,4.74-13.094,10.969C17.521,55.739,14,59.947,14,65   c0,5.891,4.776,10.666,10.667,10.666l0,0h50.666l0,0l0,0C81.224,75.666,86,70.891,86,65C86,59.942,82.469,55.727,77.742,54.63z"/></g></svg>
       </li>
     </ul>
     <div class="floaty-btn">
       <span class="floaty-btn-label">
         IMBIT
       </span>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="floaty-btn-icon floaty-btn-icon-plus absolute-center">
-          <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" fill="#fff"/>
-          <path d="M0 0h24v24h-24z" fill="none"/>
-      </svg>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="floaty-btn-icon floaty-btn-icon-create absolute-center">
-          <path d="M3 17.25v3.75h3.75l11.06-11.06-3.75-3.75-11.06 11.06zm17.71-10.21c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" fill="#fff"/>
-          <path d="M0 0h24v24h-24z" fill="none"/>
+      <svg viewBox="-10 -10 120 120">
+		<g>
+		<polygon points="83.781 75.269 86.367 72.683 88.954 75.269 88.954 50.216 83.781 52.514" fill="#fff" />
+		<path d="m93.912 39.711l-41.342-20.705c-1.413-0.708-3.726-0.708-5.139 0l-41.343 20.705c-1.413 0.708-1.455 1.944-0.094 2.746l38.516 22.696 0.026 0.015-25.574-11.445v7.495c0 1.581 1.114 3.531 2.476 4.333l26.086 15.371c1.362 0.803 3.59 0.803 4.952 0l26.086-15.371c1.362-0.803 2.476-2.752 2.476-4.333v-7.486l-25.087 11.149 38.055-22.424c1.361-0.803 1.319-2.039-0.094-2.746z" fill="#fff"/>
+		</g>
       </svg>
     </div>
   </div>
+</div>
+<div id="footer">
+    <span style="float:right" id="impressumLink">Impressum</span>
 </div>
   </body>
 </html>

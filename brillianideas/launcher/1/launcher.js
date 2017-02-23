@@ -7,6 +7,7 @@ $floaty.on('mouseover click', function(e) {
 
 $floaty.on('mouseout', function() {
   $floaty.removeClass('is-active');
+  console.log("Test");
 });
 
 $('.container').on('click', function() {
