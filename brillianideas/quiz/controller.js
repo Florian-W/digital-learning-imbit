@@ -11,9 +11,29 @@ $(document)
 					var numberOfQuestions;
 					var score = 0;
 					var numberOfFalseOptions;
-					console.log("Test");
+					var jsonFileName;
 
-					$.getJSON('activity.json', function(data) {
+
+					// Lese Parameter (Name des benötigten JSON Files) aus und speichere ihn in der variable jsonFileName, welche dann an die $getJSON methode weitergegeben wird
+					var getUrlParameter = function getUrlParameter(sParam) {
+			    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+			        sURLVariables = sPageURL.split('&'),
+			        sParameterName,
+			        i;
+
+	    		for (i = 0; i < sURLVariables.length; i++) {
+	        	sParameterName = sURLVariables[i].split('=');
+	        	if (sParameterName[0] === sParam) {
+	            	return sParameterName[1] === undefined ? true : sParameterName[1];
+	        	}
+	    		}
+				};
+
+				var jsonFileName = getUrlParameter('jsonFileName');
+				console.log("json in use: " +jsonFileName)
+
+
+					$.getJSON(jsonFileName, function(data) {
 						// Alle fragen und antwortmöglichkeiten im json werden durchlaufen
 						for (i = 0; i < data.quizlist.length; i++) {
 							questionBank[i] = new Array();
@@ -34,6 +54,13 @@ $(document)
 
 						}
 						numberOfQuestions = questionBank.length;
+
+						// entferne '.json' vom String
+						var trimmedFileName = jsonFileName.replace('.json','');
+						//Setze SpieleNamen in <div> element mit id=navbar und in html <title> element
+						$('#topbar').text(trimmedFileName)
+						$(document).find("title").text(trimmedFileName +" Quiz")
+						console.log("page title: "+ $(document).find("title").text(trimmedFileName +" Quiz"))
 
 						displayQuestion();
 					});// gtjson
@@ -91,7 +118,7 @@ $(document)
 												if (this.id == 1) {
 													$(stage)
 															.append(
-																	'<div class="feedback1">CORRECT</div>');
+																	'<div class="feedback1">Richtig</div>');
 													score++;
 												}
 												// wrong answer
@@ -102,14 +129,14 @@ $(document)
 
 													$(stage)
 															.append(
-																	'<div class="feedback2">WRONG</div>');
+																	'<div class="feedback2">Falsch</div>');
 
 												}
 
 
 												$(stage)
 														.append(
-																'<div class="next">Next</div>');
+																'<div class="next">Weiter</div>');
 
 												//wenn eine Antwortmöglichkeit ausgewählt wurde kann keine andere mehr selektiert werden
 												$(".option").css("pointer-events", "none");
@@ -125,9 +152,9 @@ $(document)
 
 						$(stage)
 								.append(
-										'<div class="questionText">You have finished the quiz!<br><br>Total questions: '
+										'<div class="questionText">Sie haben das Quiz erfolgreich absolviert!<br><br>Anzahl Fragen: '
 												+ numberOfQuestions
-												+ '<br>Correct answers: '
+												+ '<br>Richtige Antworten: '
 												+ score + '</div>');
 
 					}// display final slide
