@@ -152,10 +152,18 @@ $(document)
 
 						$(stage)
 								.append(
-										'<div class="questionText">Sie haben das Quiz erfolgreich absolviert!<br><br>Anzahl Fragen: '
-												+ numberOfQuestions
-												+ '<br>Richtige Antworten: '
-												+ score + '</div>');
+										'<div class="questionText">Das Quiz wurde erfolgreich absolviert!<br><br>Sie haben  '
+												+ score
+												+ ' von '
+												+ numberOfQuestions + ' Fragen richtig beantwortet!' + '</div>');
+
+												$(stage)
+														.append(
+																'<div class="backToQuizOverview">Zurück zur Spieleübersicht</div>');
+
+												$('.backToQuizOverview').click(function(){
+													window.location.href = "test.html";
+												});
 
 					}// display final slide
 
