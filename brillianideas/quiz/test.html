@@ -10,12 +10,18 @@
 <script type="text/javascript">
 			$(document).ready(function() {
 
-				//Füge EventListener hinzu für ein Click Event
-				if (document.addEventListener) {
-				    document.addEventListener("click", handleClick, false);
-				}
-				else if (document.attachEvent) {
-				    document.attachEvent("onclick", handleClick);
+
+				//Füge alle Buttons auf der Seite dem EventListener hinzu
+				// Jeder Click auf einen button wird vom EventListener abgefangen und bearbeitet
+				var buttons = document.getElementsByTagName('button');
+				for (var i = 0; i < buttons.length; i++) {
+				  var button = buttons[i];
+					if (button.addEventListener) {
+					    button.addEventListener("click", handleClick, false);
+					}
+					else if (button.attachEvent) {
+					    button.attachEvent("onclick", handleClick);
+					}
 				}
 
 				// Wenn ein Button angeklickt wird, gebe die ID des Buttons an die Methode openQuiz weiter
