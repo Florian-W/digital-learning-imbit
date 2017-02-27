@@ -1,48 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto);
-
-/* Setup styles - you don't need these */
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
-.is-active{
-	cursor: pointer;	
-}
-
-#launcher_left_top{
-	position: fixed;
-	top: 80px;
-	left: -205px;
-}
-
-#launcher_left_bottom{
-	position: fixed;
-	bottom: 80px;
-	left: -205px;
-}
-
-#launcher_right_top{
-	position: fixed;
-	top: 80px;
-	right: -205px;
-}
-
-#launcher_right_bottom{
-	position: fixed;
-	bottom: 80px;
-	right: -205px;
-}
-
-
-
-
-
-
-
-
-
-
-
 html {
     font-size: 100%;
 }
@@ -184,6 +139,65 @@ img.thumb {
     max-height: 500px;
 }
 
+.footerElement{
+	 padding-left: 1em;
+	 padding-right: 1em;
+	 cursor:pointer;
+}
+
+.form_label{
+	padding-right: 1em;
+	line-height: 400%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #overlay {
     display: none;
@@ -197,6 +211,14 @@ img.thumb {
 }
 
 #Impressum {
+    position: absolute;
+    display: none;
+    background-color: inherit;
+    padding: 1em;
+    z-index: 1002;
+}
+
+#Feedback {
     position: absolute;
     display: none;
     background-color: inherit;
@@ -335,32 +357,4 @@ and (max-device-width: 1024px) {
         top: -32px;
     }
 
-}
-:root{
-    --color-pink: rgb(229, 63, 95);
-    --color-bordeaux: rgb(153, 27, 51);
-    --color-dark-bordeauch: rgb(108, 19, 46);
-    --color-gray: rgb(148, 148, 148);
-    --color-green: rgb(133,186, 28);
-    --color-yellow: rgb(205, 145, 25);
-
-    --background: var(--color-bordeaux);
-    --background-highlight: var(--color-yellow);
-    --text: white;
-    --link: var(--color-gray);
-    --link-visited: var(--color-green);
-    --border: var(--color-gray);
-
-}
-
-body {
-    background-color: var(--background);
-    color: var(--text);
-    background-image: url('../img/brillainIDEAS_UX_20170202_Oktopus-Tentakel4_F.png');
-    background-repeat: no-repeat;
-    background-position-y: -40px;
-}
-
-.flipcard .face{
-    background-color: var(--background-highlight);
 }
