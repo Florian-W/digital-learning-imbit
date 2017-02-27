@@ -469,3 +469,15 @@ body {
 .flipcard .face{
     background-color: var(--background-highlight);
 }
+
+#page{
+	text-align: center;
+	width:100vw;
+	height:100vh;
+}
+
+.ksystem {
+	width: 70vw;
+	height:70vh;
+	margin-top:90px;
+}
