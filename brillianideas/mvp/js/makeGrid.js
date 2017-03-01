@@ -79,16 +79,9 @@ var makeGrid = function makeGrid(view){
                 $.ajax('xml/index.php?base=grid&type=class').done(function (data) {
                     $('#site').append(data);
                     $('#grid').css("width", $display.width).css("height", $display.height).append('<div id="backlayer"></div>');
-
                 }),
-                $('#animation_l, #animation_im, #animation_b, #animation_it').animate({opacity: 1}, {duration: 1000})
+                $('#animation_l, #animation_im, #animation_b, #animation_it, #animation_mg').animate({opacity: 1}, {duration: 1000})
             ).done(function () {
-                $.when(
-                    $('#xaxis').animate({opacity: 1, width: $display.width}, {duration: 1000})
-                ).done(function () {
-                    $.when(
-                        $('#yaxis').animate({opacity: 1, height: $display.height}, {duration: 1000})
-                    ).done(function () {
                         $.when(
                             $('#animation_l, #animation_im, #animation_b, #animation_it').animate({opacity: 0}),
                             $('#animation_l, #animation_im, #animation_b, #animation_it').css('display', 'none'),
@@ -98,7 +91,7 @@ var makeGrid = function makeGrid(view){
                             $('#W3WI_IMBIT_303').css('left', Math.floor(0 * $display.width)).css('top', Math.floor(0.2 * $display.height)).attr('data-sid', '3'),
                             $('#W3WI_IMBIT_304').css('left', Math.floor(0.1 * $display.width)).css('top', Math.floor(0.7 * $display.height)).attr('data-sid', '4'),
                             $('#W3WI_IMBIT_305').css('left', Math.floor(0.7 * $display.width)).css('top', Math.floor(0.8 * $display.height)).attr('data-sid', '5'),
-                            $('#W3WI_IMBIT_401').css('left', Math.floor(0.5 * $display.width)).css('top', Math.floor(0.5 * $display.height)).attr('data-sid', '5'),
+                           /*  $('#W3WI_IMBIT_401').css('left', Math.floor(0.5 * $display.width)).css('top', Math.floor(0.5 * $display.height)).attr('data-sid', '5'),
                             $('#W3WI_IMBIT_402').css('left', Math.floor(0.9 * $display.width)).css('top', Math.floor(0.2 * $display.height)).attr('data-sid', '5'),
                             $('#W3WI_IMBIT_403').css('left', Math.floor(0.7 * $display.width)).css('top', Math.floor(0.1 * $display.height)).attr('data-sid', '5'),
                             $('#W3WI_IMBIT_404').css('left', Math.floor(0.5 * $display.width)).css('top', Math.floor(0.1 * $display.height)).attr('data-sid', '5'),
@@ -119,8 +112,36 @@ var makeGrid = function makeGrid(view){
                             $('#W3WI_505').css('left', Math.floor(0.5 * $display.width)).css('top', Math.floor(0.25 * $display.height)).attr('data-sid', '5'),
                             $('#W3WI_506').css('left', Math.floor(0.4 * $display.width)).css('top', Math.floor(0.25 * $display.height)).attr('data-sid', '5'),
                             $('#W3WI_601').css('left', Math.floor(0.6 * $display.width)).css('top', Math.floor(0.4 * $display.height)).attr('data-sid', '5'),
-                            $('#Sprachschule').css('left', Math.floor(1 * $display.width)).css('top', Math.floor(1 * $display.height)).attr('data-sid', '5'),
+                            $('#Sprachschule').css('left', Math.floor(1 * $display.width)).css('top', Math.floor(1 * $display.height)).attr('data-sid', '5'), */
                             // TODO: data-left data-right und data-sid in xml+xsl einpflegen und schnließend unten einbauen (by Nick L.)
+							
+							$('#W3WI_IMBIT_401').remove(),
+                            $('#W3WI_IMBIT_402').remove(),
+                            $('#W3WI_IMBIT_403').remove(),
+                            $('#W3WI_IMBIT_404').remove(),
+                            $('#W3WI_IMBIT_405').remove(),
+                            $('#W3WI_101').remove(),
+                            $('#W3WI_103').remove(),
+                            $('#W3WI_104').remove(),
+                            $('#W3WI_105').remove(),
+                            $('#W3WI_106').remove(),
+                            $('#W3WI_107').remove(),
+                            $('#W3WI_108').remove(),
+                            $('#W3WI_110').remove(),
+                            $('#W3WI_111').remove(),
+                            $('#W3WI_201').remove(),
+                            $('#W3WI_202').remove(),
+                            $('#W3WI_203').remove(),
+                            $('#W3WI_204').remove(),
+                            $('#W3WI_505').remove(),
+                            $('#W3WI_506').remove(),
+                            $('#W3WI_601').remove(),
+                            $('#Sprachschule').remove(),
+							
+							
+							
+							
+							
                             $('#grid').css('opacity', 1)
                         ).done(function () {
                             var deferredArray = [];
@@ -144,9 +165,7 @@ var makeGrid = function makeGrid(view){
                                 openPath();
                             });
                         });
-                    });
                 });
-            });
             break;
     }
 }

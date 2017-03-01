@@ -48,7 +48,7 @@
                                 <xsl:value-of select="Number"/>
                             </xsl:attribute>
                             <xsl:attribute name="class">
-                                <xsl:text>flipcard</xsl:text>
+                                <xsl:text>flipcard IMBIT_Weg</xsl:text>
                             </xsl:attribute>
                             <xsl:element name="div">
                                 <xsl:attribute name="class">

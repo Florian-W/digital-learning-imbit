@@ -53,7 +53,7 @@ $(document).ready(function (event) {
             displaySpalsh('Impressum');
         } else if (target.is('#overlay')) {
             $('#overlay').fadeOut().children().fadeOut();
-        } else if (target.is(".flipcard .face.front")) {
+        } else if (target.is(".flipcard .flipcard_IMBIT .face.front")) {
             target.parent().children('.back').css('display', 'block');
             target.parent().toggleClass('flipped');
             $('#backlayer').toggle();
