@@ -10,23 +10,60 @@ $(document)
 					var questionLock = false;
 					var numberOfQuestions;
 					var score = 0;
+					var numberOfFalseOptions;
+					var jsonFileName;
 
-					$.getJSON('activity.json', function(data) {
 
+					// Lese Parameter (Name des benötigten JSON Files) aus und speichere ihn in der variable jsonFileName, welche dann an die $getJSON methode weitergegeben wird
+					var getUrlParameter = function getUrlParameter(sParam) {
+			    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+			        sURLVariables = sPageURL.split('&'),
+			        sParameterName,
+			        i;
+
+	    		for (i = 0; i < sURLVariables.length; i++) {
+	        	sParameterName = sURLVariables[i].split('=');
+	        	if (sParameterName[0] === sParam) {
+	            	return sParameterName[1] === undefined ? true : sParameterName[1];
+	        	}
+	    		}
+				};
+
+				var jsonFileName = getUrlParameter('jsonFileName');
+				console.log("json in use: " +jsonFileName)
+
+
+					$.getJSON(jsonFileName, function(data) {
+						// Alle fragen und antwortmöglichkeiten im json werden durchlaufen
 						for (i = 0; i < data.quizlist.length; i++) {
-							questionBank[i] = new Array;
+							questionBank[i] = new Array();
+							//Die Frage und die richtige Antwort werden in einem zweidimensionalen Array gespeichert
 							questionBank[i][0] = data.quizlist[i].question;
 							questionBank[i][1] = data.quizlist[i].optionTrue;
-							
-							console.log(data.quizlist[0].optionFalse);
-							for (j = 0; j < data.quizlist[0].optionFalse.length; j++) {
-							questionBank[i][j+2] = data.quizlist[0].optionFalse[j]
-							}
+
+
+
+							// Es werden entweder mehrere falsche (SingleChoice Minispiel) oder nur eine Antwortmöglichkeit (Yes/No Minispiele) zum Array hinzugefügt
+								for (j = 0; j < data.quizlist[i].optionFalse.length; j++) {
+								questionBank[i][j+2] = data.quizlist[i].optionFalse[j];
+								}
+
+								// Anzahl der Optionen die falsch sind wird nochmal extra in einer globalen variable für späteren Nutzen gespeichert
+								numberOfFalseOptions =data.quizlist[i].optionFalse.length
+
+
 						}
 						numberOfQuestions = questionBank.length;
 
+						// entferne '.json' vom String
+						var trimmedFileName = jsonFileName.replace('.json','');
+						//Setze SpieleNamen in <div> element mit id=navbar und in html <title> element
+						$('#topbar').text(trimmedFileName)
+						$(document).find("title").text(trimmedFileName +" Quiz")
+						console.log("page title: "+ $(document).find("title").text(trimmedFileName +" Quiz"))
+
 						displayQuestion();
-					})// gtjson
+					});// gtjson
 
 					function displayQuestion() {
 
@@ -40,25 +77,48 @@ $(document)
 							q[i - 1] = questionBank[questionNumber][i];
 
 							contentArray[i - 1] = '<div id=' + i
-									+ ' class="option">' + q[i - 1] + '</div>';
+									+ ' class="option" tabindex="1">' + q[i - 1] + '</div>';
 						}
 
-						shuffle(contentArray);
+						// wenn es mehr als eine falsche Antwortmöglichkeit gibt, werden sie in eine zufällige Reihenfolge gebracht...
+						if(numberOfFalseOptions>1) {
+							shuffle(contentArray);
+						};
 
+						// ...und dann angezeigt
 						for (i = 0; i < contentArray.length; i++) {
-							$(stage).append(contentArray[i]);
+							if(numberOfFalseOptions>1){
+								$(stage).append(contentArray[i]);
+							} else {
+								//gibt es nur eine Antwortmöglichkeit wird immer die Option "Ja" zuerst angezeigt
+									if(q[i]=="Ja") {
+										$(stage).append(contentArray[0]);
+									} else {
+										$(stage).append(contentArray[1]);
+									}
+
+							}
 						}
 
 						$('.option')
 								.click(
 										function() {
+
+											// markiere ausgewählte Antwortmöglichkeit weiterhin, auch wenn irgendwo anders auf der Seite geklickt wird
+											var styles = {
+												border: "#e53f5f solid 2px",
+
+												color:"#e53f5f"
+											};
+											$(this).css(styles);
+
 											if (questionLock == false) {
 												questionLock = true;
 												// correct answer
 												if (this.id == 1) {
 													$(stage)
 															.append(
-																	'<div class="feedback1">CORRECT</div>');
+																	'<div class="feedback1">Richtig</div>');
 													score++;
 												}
 												// wrong answer
@@ -66,34 +126,50 @@ $(document)
 													$("#1").css(
 															'background-color',
 															'#85ba1c');
+
 													$(stage)
 															.append(
-																	'<div class="feedback2">WRONG</div>');
+																	'<div class="feedback2">Falsch</div>');
+
 												}
+
+
 												$(stage)
 														.append(
-																'<div class="next">Next</div>');
+																'<div class="next">Weiter</div>');
+
+												//wenn eine Antwortmöglichkeit ausgewählt wurde kann keine andere mehr selektiert werden
+												$(".option").css("pointer-events", "none");
+
 												$('.next').click(function(){
 													changeQuestion();
-												})
+												});
 											}
-										})
+										});
 					}// display question
 
 					function displayFinalSlide() {
 
 						$(stage)
 								.append(
-										'<div class="questionText">You have finished the quiz!<br><br>Total questions: '
-												+ numberOfQuestions
-												+ '<br>Correct answers: '
-												+ score + '</div>');
+										'<div class="questionText">Das Quiz wurde erfolgreich absolviert!<br><br>Sie haben  '
+												+ score
+												+ ' von '
+												+ numberOfQuestions + ' Fragen richtig beantwortet!' + '</div>');
+
+												$(stage)
+														.append(
+																'<div class="backToQuizOverview">Zurück zur Spieleübersicht</div>');
+
+												$('.backToQuizOverview').click(function(){
+													window.location.href = "test.html";
+												});
 
 					}// display final slide
 
 					/**
 					 * Shuffles array in place.
-					 * 
+					 *
 					 * @param {Array}
 					 *            a items The array containing the items.
 					 */
@@ -106,7 +182,7 @@ $(document)
 							a[j] = x;
 						}
 					}
-					
+
 					function changeQuestion() {
 
 						questionNumber++;

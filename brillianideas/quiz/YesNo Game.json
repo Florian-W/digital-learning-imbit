@@ -1,0 +1,33 @@
+{"quizlist":[
+
+	{
+	"question":"Welcher der folgenden Prozesse ist nicht Teil der Primären Aktivitäten?",
+	"optionTrue":"Nein",
+	"optionFalse":[
+			"Ja"
+			 ]
+	},
+	{
+	"question":"Welcher der folgenden Prozesse ist nicht Teil der Primären Aktivitäten?",
+	"optionTrue":"Nein",
+	"optionFalse":[
+			"Ja"
+			 ]
+	},
+	{
+	"question":"Welcher der folgenden Prozesse ist nicht Teil der Primären Aktivitäten?",
+	"optionTrue":"Nein",
+	"optionFalse":[
+			"Ja"
+			 ]
+	},
+	{
+	"question":"Welcher der folgenden Prozesse ist nicht Teil der Primären Aktivitäten?",
+	"optionTrue":"Ja",
+	"optionFalse":[
+			"Nein"
+			 ]
+	}
+
+]
+}
