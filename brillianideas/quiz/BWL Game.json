@@ -1,4 +1,19 @@
-{"quizlist":[
+{
+
+	"DragAndDrop": [
+    {
+  	"question":"Welcher der folgenden Prozesse ist nicht Teil der Primären Aktivitäten?",
+  	"optionTrue":"Personalwesen",
+  	"optionFalse":[
+  		"Ausgangslogistik",
+  		"Kundendienst",
+  		"Marketing und Vertrieb",
+  		"Eingangslogistik"
+  			 ]
+  	}
+	],
+
+	"quizlist":[
 
 	{
 	"question":"Welcher der folgenden Prozesse ist nicht Teil der Primären Aktivitäten?",
