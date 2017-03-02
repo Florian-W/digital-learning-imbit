@@ -1,0 +1,40 @@
+body{
+	background: #991B33;
+}
+
+.ksystem{
+	margin-top: 3%;
+	width: 100%;
+	height: auto; 
+}
+
+.expstickybar{
+position:fixed;
+color: black;
+right:0; /*horizontally center bar in window*/
+left:0; /*horizontally center bar in window*/
+visibility:hidden;
+background: transparent;
+z-index: 10000;
+width:auto; /*set width of bar to width of entire window*/
+font-weight:bold;
+/*background-image: url("img/line.png");*/
+}
+
+.expstickybar figure {
+	display: table-cell; 
+	padding: 0 0%; 
+	text-align: center;
+}
+
+#openImg{
+	width: 48; 
+	margin-left: 1%;
+}
+#content{
+	background: #949494;	
+}
+
+.expstickybar a{
+color: #6C132E;
+}
