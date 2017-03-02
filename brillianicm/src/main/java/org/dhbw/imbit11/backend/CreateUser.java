@@ -63,7 +63,7 @@ import javax.servlet.http.HttpServletResponse;
 		
 		String groupnumber = request.getParameter("groupnumber");
 
-		// //System.out.println(groupnumber);
+		//System.out.println(groupnumber);
 
 		String url = "/Registration?g=" + groupnumber;
 
@@ -73,6 +73,7 @@ import javax.servlet.http.HttpServletResponse;
 		String lastname = request.getParameter("lastname");
 		String firstname = request.getParameter("firstname");
 		switch (role) {
+		//TODO: pruefen ob diese URL abgerufen wird oder entfernt werden kann
 		case "student":
 			url = "/Registration?g=" + groupnumber;
 			break;
@@ -291,6 +292,8 @@ import javax.servlet.http.HttpServletResponse;
 	/*Joana Haase
 	 * 29.02.2016, 23:33 Uhr
 	 * \n durch <br> ersetzt als Zeilenumbruch. Inhalt der Mail ist in HTML
+	 * flag fuer Zusammensetzung des Links by Florian
+	 * TODO: Zusammensetzung des Links ändern*
 	 */
 	protected void sendConfirmationMail(String email, String firstname, String lastname, String unverifiedEmail, HttpServletRequest request){
         
