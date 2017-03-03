@@ -18,7 +18,6 @@
     <script src="js/VoiceRecognition.js"></script>
     <script src="js/makeGrid.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/search.js"></script>
 
     <!-- jQuery Mobile -->
     <script src="lib/jQuery/Mobile/jquery.mobile.custom.js"></script>
@@ -35,19 +34,33 @@
 <div id="header">
     <form onsubmit="false;">
         <button type="button" id="homeButton"><img src="img/icons-png/home-white.png" alt="hone"/></button>
-        <input type="text" id="searchField"></input>
-        <button type="button" id="voiceSearch"><img width="14px" height="14px" src="http://www.iconsdb.com/icons/preview/white/microphone-3-xxl.png" alt=""/></button>
     </form>
 </div>
 <div id="site" class="">
     <span id="animation_welcome">Lernen</span>
     <div class="axis x" id="xaxis">
-        <span id="animation_xaxis_left" class="axistext">formell</span>
-        <span id="animation_xaxis_right" class="axistext">informell</span>
+        <span id="animation_xaxis_left" class="axistext">
+            <span id="animation_xaxis_left_line_left" class="axistext"></span>
+                <span>Formell</span>
+            <span id="animation_xaxis_left_line_right" class="axistext"></span>
+        </span>
+        <span id="animation_xaxis_right" class="axistext">
+            <span id="animation_xaxis_right_line_left" class="axistext"></span>
+                <span>Informell</span>
+            <span id="animation_xaxis_right_line_right" class="axistext"></span>
+        </span>
     </div>
     <div class="axis y" id="yaxis">
-        <span id="animation_yaxis_top" class="axistext">kollaborativ</span>
-        <span id="animation_yaxis_bottom" class="axistext">individuell</span>
+        <span id="animation_yaxis_top" class="axistext">
+            <span id="animation_yaxis_top_line_top" class="axistext"></span>
+                <span>Kollaborativ</span>
+            <span id="animation_yaxis_top_line_bottom" class="axistext"></span>
+        </span>
+        <span id="animation_yaxis_bottom" class="axistext">
+            <span id="animation_yaxis_bottom_line_top" class="axistext"> </span>
+                <span>Individuell</span>
+            <span id="animation_yaxis_bottom_line_bottom" class="axistext"></span>
+        </span>
     </div>
 </div>
 <div id="footer">
