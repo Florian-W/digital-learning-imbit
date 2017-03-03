@@ -50,8 +50,10 @@ $(document).ready(function (event) {
         var target = $(e.target);
         console.log(e.target);
         if (target.is('#impressumLink')) {
-            displaySpalsh('Impressum');
-        } else if (target.is('#overlay')) {
+            displaySplash('Impressum');
+        } else if (target.is('#searchButton')) {
+        	displaySplash('Suche');
+    	} else if (target.is('#overlay')) {
             $('#overlay').fadeOut().children().fadeOut();
         } else if (target.is(".flipcard .face.front")) {
             target.parent().children('.back').css('display', 'block');
@@ -129,18 +131,19 @@ $.fn.center = function () {
  *
  * @param id
  */
-var displaySpalsh = function displaySpalsh(id) {
+var displaySplash = function displaySplash(id) {
     $("#overlay").fadeIn();
     $("#" + id).fadeIn().center();
 };
 
-var walkToPath = function waltToPath(){
+var walkToPath = function walkToPath(){
     $newPosition = window.location.length > 1 ?
         window.location.hash.substr(1).split('.') : [];
     if ($currentPosition.length > $newPosition.length){
         //go in
     } else {
         // go out
+    	// should enable back and forth browser functions
     }
 };
 
