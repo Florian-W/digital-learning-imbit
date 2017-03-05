@@ -28,9 +28,59 @@ height:400px;
 right:-100%;
 position:absolute;
 }
+.buttonToQuiz1, .buttonToQuiz2, .buttonToQuiz3, .buttonToQuiz4, .buttonToQuiz5 {
+	border:2px solid #ccc;
+	background-color: rgb(153,27,51);
+	color: white;
+}
 
-.buttonToQuiz{
+.buttonToQuiz1:hover, .buttonToQuiz2:hover, .buttonToQuiz3:hover, .buttonToQuiz4:hover, .buttonToQuiz5:hover{
+border:#e53f5f solid 2px;
+color:#e53f5f;
+}
 
+
+.buttonToQuiz1 {
+
+	width:300px;
+	height:100px;
+	display:inline-block;
+
+
+  margin-left: 20%;
+	  margin-top: 8%;
+
+
+
+}
+
+.buttonToQuiz2 {
+	width:300px;
+	height:100px;
+	display:inline-block;
+	margin-top: 5%;
+}
+
+.buttonToQuiz3 {
+	width:300px;
+	height:100px;
+	display:inline-block;
+	margin-left: 20%;
+	margin-top: 1%;
+}
+
+.buttonToQuiz4 {
+	width:300px;
+	height:100px;
+	display:inline-block;
+}
+
+.buttonToQuiz5{
+	width:300px;
+	height:100px;
+	display:inline-block;
+	margin-left: 35%;
+	margin-top: 1%;
 }
 
 #gameDescription {
@@ -298,7 +348,7 @@ p{
 			white-space:nowrap;
 			/*height:10%;*/
 			padding:1.5%;
-			font-size: 11px;
+			font-size: 12px;
 			text-align: center;
 			vertical-align: center;
 			margin:5px;
