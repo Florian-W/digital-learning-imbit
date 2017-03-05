@@ -268,7 +268,7 @@ img.thumb {
     transform: translate(-50%, 150%);
 }
 
-#animation_l, #animation_im, #animation_b, #animation_it, #animation_welcome {
+#animation_l, #animation_im, #animation_b, #animation_it, #animation_mg, #animation_welcome {
     z-index: 1;
     font-family: 'Caveat Brush';
     font-size: 50pt;
@@ -292,6 +292,11 @@ img.thumb {
 #animation_it{
     left: 25vw !important;
     top: 75vh !important;
+}
+
+#animation_mg{
+    left: 50vw !important;
+    top: 50vh !important;
 }
 
 @media only screen
