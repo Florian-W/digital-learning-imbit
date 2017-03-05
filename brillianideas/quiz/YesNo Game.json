@@ -1,8 +1,11 @@
 {
+	"DragDropGames": [
+		
+],
 
-	"DragAndDrop": [
-	
-	],
+"quizGames" : [
+
+{
 
 	"quizlist":[
 
@@ -34,6 +37,10 @@
 			"Nein"
 			 ]
 	}
+
+]
+
+}
 
 ]
 }

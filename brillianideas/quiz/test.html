@@ -47,7 +47,7 @@
 				// die Methode openQuiz holt sich den Namen des jeweiligen JSON und hängt diesen an die URL der Spiele HTML Seite
 				// in der index.html wird dann die controller.js geladen und der Parameter ausgelesen
 				function openQuiz(idOfButtonClicked) {
-				
+
 						var jsonFileName = $('#'+idOfButtonClicked).attr('jsonFileName')
 						window.location = "index.html?jsonFileName=" + jsonFileName;
 
@@ -71,7 +71,7 @@ else if (el.attachEvent)
 
 </head>
 <body>
-	<button jsonFileName="BWL Game.json" type="button" class="test" id="clickMe">BWL Game</button>
+	<button jsonFileName="Wertkettenmodell.json" type="button" class="test" id="clickMe">Wertkettenmodell</button>
 	<button jsonFileName="YesNo Game.json" type="button" class="test" id="clickmeYesNo">Yes/No Game</button>
 	<!-- <input type="button" id="clickMe" value="BWL Game"/> -->
 

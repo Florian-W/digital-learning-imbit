@@ -251,6 +251,21 @@ p{
 
 }
 
+#target3{
+	 border:1px solid #ccc;
+	 width:30%;
+	 height:200px;
+	 float:left;
+
+}
+#target4{
+	 border:1px solid #ccc;
+	 width:30%;
+	 height:200px;
+	 float:left;
+
+}
+
 .demo-info{
 	padding:0 0 12px 0;
 }
