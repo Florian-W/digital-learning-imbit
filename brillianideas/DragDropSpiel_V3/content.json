@@ -1,0 +1,40 @@
+{
+	"DragDropGames": {
+		"IndianCuisine":[
+
+
+			{
+				"id": "d0",
+				"elementtext": "Naan Bread",
+				"target": "target1"
+			},
+
+			{
+				"id": "d1",
+				"elementtext": "Samosas",
+				"target": "target1"
+			},
+
+			{
+				"id": "d2",
+				"elementtext": "Pad Thai",
+				"target": "target1"
+			},
+
+			{
+				"id": "d3",
+				"elementtext": "Ravioli",
+				"target": "target2"
+			},
+
+			{
+				"id": "d4",
+				"elementtext": "Haggis",
+				"target": "target2"
+			}
+
+
+		]
+	}
+
+}
