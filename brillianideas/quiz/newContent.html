@@ -52,8 +52,12 @@
 				// in der index.html wird dann die controller.js geladen und der Parameter ausgelesen
 				function openQuiz(idOfButtonClicked) {
 
-						var jsonFileName = $('#'+idOfButtonClicked).attr('jsonFileName')
+          if(idOfButtonClicked== "clickMe" || idOfButtonClicked== "clickmeYesNo" ) {
+            var jsonFileName = $('#'+idOfButtonClicked).attr('jsonFileName')
 						window.location = "index.html?jsonFileName=" + jsonFileName;
+          }
+
+
 
 				}
 
@@ -75,8 +79,11 @@ else if (el.attachEvent)
 
 </head>
 <body>
-	<button jsonFileName="Wertkettenmodell.json" type="button" class="buttonToQuiz" id="clickMe">Wertkettenmodell</button>
-	<button jsonFileName="St-Galler-Management-Modell.json" type="button" class="buttonToQuiz" id="clickmeYesNo">St-Galler-Management-Modell</button>
+	<button jsonFileName="Wertkettenmodell.json" type="button" class="buttonToQuiz1" id="clickMe">Wertkettenmodell</button>
+	<button jsonFileName="St-Galler-Management-Modell.json" type="button" class="buttonToQuiz2" id="clickmeYesNo">St Galler Management Modell</button>
+  <button jsonFileName="St-Galler-Management-Modell.json" type="button" class="buttonToQuiz3" id="">Business Canvas</button>
+  <button jsonFileName="St-Galler-Management-Modell.json" type="button" class="buttonToQuiz4" id="">Ökonomisches Prinzip</button>
+  <button jsonFileName="St-Galler-Management-Modell.json" type="button" class="buttonToQuiz5" id="">Shareholder/Stakeholder Ansatz</button>
 	<!-- <input type="button" id="clickMe" value="BWL Game"/> -->
 
 
