@@ -29,6 +29,16 @@ right:-100%;
 position:absolute;
 }
 
+.buttonToQuiz{
+
+}
+
+#gameDescription {
+
+font-size:18px;
+
+}
+
 
 
 
@@ -63,16 +73,16 @@ color:#e53f5f;
 #topbar{
 height:20%;
 margin:auto;
-margin-top:50px;
+margin-top:25px;
 color:#FFF;
-font-size:36px;
-font-family:Arial, Helvetica, sans-serif;
+font-size:30px;
+/*font-family:Arial, Helvetica, sans-serif;*/
 width:80%;
 border-bottom:solid white 1px;
 }
 
 .spacer{
-height:30px;
+height:10px;
 }
 
 .feedback1{
@@ -239,14 +249,16 @@ p{
 #target1{
 	 border:1px solid #ccc;
 	 width:30%;
-	 height:200px;
+	 min-height:200px;
+	 /*height:auto;*/
 	 float:left;
 
 }
 #target2{
 	 border:1px solid #ccc;
 	 width:30%;
-	 height:200px;
+	 min-height:200px;
+	 /*height:auto;*/
 	 float:left;
 
 }
@@ -254,14 +266,16 @@ p{
 #target3{
 	 border:1px solid #ccc;
 	 width:30%;
-	 height:200px;
+	 min-height:200px;
+	 /*height:auto;*/
 	 float:left;
 
 }
 #target4{
 	 border:1px solid #ccc;
 	 width:30%;
-	 height:200px;
+	 min-height:200px;
+	 /*height:auto;*/
 	 float:left;
 
 }
@@ -284,6 +298,7 @@ p{
 			white-space:nowrap;
 			/*height:10%;*/
 			padding:1.5%;
+			font-size: 11px;
 			text-align: center;
 			vertical-align: center;
 			margin:5px;
@@ -292,6 +307,14 @@ p{
 			color: white;
 
 		}
+
+#gameTitle	{
+			margin-bottom: 12px;
+		}
+
+#gameDescription	{
+					margin-bottom: 12px;
+				}
 .dp{
 			opacity:0.8;
 			filter:alpha(opacity=60);

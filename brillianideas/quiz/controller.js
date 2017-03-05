@@ -453,14 +453,14 @@ function displayDragAndDropGame(numberOfCurrentDragDropGame){
 
 												$(stage)
 																.append(
-																		'<div id="gameTitle"><strong></strong></div><br>'
-																		+ '<div id="gameDescription"></div><br>'
+																		'<div id="gameTitle"><strong></strong></div>'
+																		+ '<div id="gameDescription"></div>'
 																		+	'<div class="container"><div id="source"></div>'
 																		+ '<div id="target1"></div>'
 																		+ '<div id="target2"></div>'
 																		+ '</div>'
 																		+ '<div style="clear:both"></div>'
-																		+ '<div id="button"><button id= "button" class ="button" onclick="checkInput()">Eingabe prüfen</button></div>'
+																		+ '<div id="button"><button id= "checkInputButton" class ="button" onclick="checkInput()">Eingabe prüfen</button></div>'
 
 																	);
 
@@ -556,15 +556,15 @@ function displayDragAndDropGame(numberOfCurrentDragDropGame){
 												//And set new
 												$(stage)
 																.append(
-																		'<div id="gameTitle"><strong></strong></div><br>'
-																		+ '<div id="gameDescription"></div><br>'
+																		'<div id="gameTitle"><strong></strong></div>'
+																		+ '<div id="gameDescription"></div>'
 																		+	'<div class="container"><div id="source"></div>'
 																		+ '<div id="target1"></div>'
 																		+ '<div id="target2"></div>'
 																		+ '<div id="target3"></div>'
 																		+ '</div>'
 																		+ '<div style="clear:both"></div>'
-																		+ '<div id="button"><button id= "button" class ="button" onclick="checkInput()">Eingabe prüfen</button></div>'
+																		+ '<div id="button"><button id= "checkInputButton" class ="button" onclick="checkInput()">Eingabe prüfen</button></div>'
 
 																		);
 
@@ -676,8 +676,8 @@ function displayDragAndDropGame(numberOfCurrentDragDropGame){
 
 												$(stage)
 																.append(
-																		'<div id="gameTitle"><strong></strong></div><br>'
-																		+ '<div id="gameDescription"></div><br>'
+																		'<div id="gameTitle"><strong></strong></div>'
+																		+ '<div id="gameDescription"></div>'
 																		+	'<div class="container"><div id="source"></div>'
 																		+ '<div id="target1"></div>'
 																		+ '<div id="target2"></div>'
@@ -685,7 +685,7 @@ function displayDragAndDropGame(numberOfCurrentDragDropGame){
 																		+ '<div id="target4"></div>'
 																		+ '</div>'
 																		+ '<div style="clear:both"></div>'
-																		+ '<div id="button"><button id= "button" class ="button" onclick="checkInput()">Eingabe prüfen</button></div>'
+																		+ '<div id="button"><button id= "checkInputButton" class ="button" onclick="checkInput()">Eingabe prüfen</button></div>'
 
 																	);
 
@@ -872,6 +872,8 @@ function displayDragAndDropGame(numberOfCurrentDragDropGame){
 // checkInput überprüft, ob sich die Elemente an der richtigen Stelle befinden. Wenn alle Daten korrekt in der JSON-Datei angeben wurden, ist hier keine Anpassung notwendig
 function checkInput(){
 
+
+
 	console.log("currentNumberOfDragAndDropElements"+ currentNumberOfDragAndDropElements)
 
 
@@ -1035,9 +1037,11 @@ function checkInput(){
 
 			 // Falls es den button schon gibt (User klickt zum zweiten Mal auf den Button), füge ihn nicht nochmal hinzu
         if($('#goToNextQuiz').length >0){
-					alert("Glückwunsch, Sie haben alle Elemente richtig zugeordnet");
+					$('#button').remove();
+					alert("Glückwunsch, Sie haben alle Elemente richtig zugeordnet!");
         } else {
-					alert("Glückwunsch, Sie haben alle Elemente richtig zugeordnet");
+					alert("Glückwunsch, Sie haben alle Elemente richtig zugeordnet!");
+					$('#checkInputButton').remove();
 					$('#button')
 																.append(
 																		'<div id="goToNextQuiz" class="next">Weiter</div>');
@@ -1150,7 +1154,7 @@ function checkInput(){
 
 			for (i = 0; i < contentArray.length; i++) {
 				//gibt es nur eine Antwortmöglichkeit wird immer die Option "Ja" zuerst angezeigt
-					if(q[i]=="Ja") {
+					if(q[i]=="Richtig") {
 						$(stage).append(contentArray[0]);
 					} else {
 						$(stage).append(contentArray[1]);
