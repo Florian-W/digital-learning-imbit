@@ -12,6 +12,10 @@ h1, h2, h3, h4, h5 {
     font-family: 'Caveat Brush';
 }
 
+button:hover {
+	cursor:pointer;
+}
+
 .flipcard {
     opacity: 0;
     perspective: 800;
@@ -197,12 +201,12 @@ img.thumb {
 #header form > button {
     padding: 0;
     margin: 0;
-    width: 14px;
+    width: 20px;
 }
 #header form > input {
     margin: 0;
     padding: 0 15px;
-    width: calc(100vw - 116px);
+    width: calc(100vw - 140px);
 }
 
 #backlayer {
