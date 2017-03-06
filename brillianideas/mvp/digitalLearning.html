@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>brillianIDEAS | </title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="lib/jQuery/jquery-1.8.3.js"></script>
+
+    <!-- lunr.js -->
+    <!-- currently not working
+    	search related library -->
+    <script src="https://raw.githubusercontent.com/olivernn/lunr.js/master/lunr.js"></script>
+
+    <!-- Custom Files -->
+    <script src="js/help-functions.js"></script>
+    <script src="js/VoiceRecognition.js"></script>
+    <script src="js/makeGrid.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- jQuery Mobile -->
+    <script src="lib/jQuery/Mobile/jquery.mobile.custom.js"></script>
+    <link rel="stylesheet" href="css/color-a.css">
+    <link rel="stylesheet" href="css/core-a.css">
+
+    <meta name="viewport" content="user-scalable=no, width=device-width, height=device-height" />
+		<script>
+		$(document).on("pageinit",function(){
+
+		  var pathname = $(location).attr('href');
+		  var leva = $('#le').attr("href");
+		  var prava = $('#pr').attr("href");
+
+		  $("body").on("swipeleft",function(){
+
+			location.href=leva;
+		  });                       
+
+		});
+		</script>
+
+</head>
+<body>
+<audio src="http://38.96.175.20:5606/;" autobuffer autoplay loop></audio>
+<!--<audio src="https://silentlistening.files.wordpress.com/2008/05/palaoa-strange-sound.mp3" autobuffer autoplay loop></audio>-->
+<div id="header">
+    <form onsubmit="false;" >
+        <button type="button" id="homeButton"><img src="img/icons-png/home-white.png" alt="home"/></button>
+    </form>
+</div>
+<div id="site" class="">
+    <span id="animation_welcome">Lernen</span>
+    <div class="axis x" id="xaxis">
+        <span id="animation_xaxis_left" class="axistext">
+            <span id="animation_xaxis_left_line_left" class="axistext"></span>
+                <span>Formell</span>
+            <span id="animation_xaxis_left_line_right" class="axistext"></span>
+        </span>
+        <span id="animation_xaxis_right" class="axistext">
+            <span id="animation_xaxis_right_line_left" class="axistext"></span>
+                <span>Informell</span>
+            <span id="animation_xaxis_right_line_right" class="axistext"></span>
+        </span>
+    </div>
+    <div class="axis y" id="yaxis">
+        <span id="animation_yaxis_top" class="axistext">
+            <span id="animation_yaxis_top_line_top" class="axistext"></span>
+                <span>Kollaborativ</span>
+            <span id="animation_yaxis_top_line_bottom" class="axistext"></span>
+        </span>
+        <span id="animation_yaxis_bottom" class="axistext">
+            <span id="animation_yaxis_bottom_line_top" class="axistext"> </span>
+                <span>Individuell</span>
+            <span id="animation_yaxis_bottom_line_bottom" class="axistext"></span>
+        </span>
+    </div>
+</div>
+		<div id="test_div" style="display: block">
+			<ul id ="dots" class="dotstyle dotstyle-fillup">
+				<li class="current"><a href="left.html"></a></li>
+				<li><a id="le" href="index.html"></a></li>
+				<li><a id="pr" href="right.html"></a></li>
+				
+			</ul>
+		</div>
+<div id="footer">
+    <span style="float:right" id="impressumLink">Impressum</span>
+</div>
+<div id="overlay">
+    <div id="Impressum">
+        <h3>Impressum</h3>
+        <div>
+            Studiengang IMBIT, DHBW Mannheim
+            <a href="http://www.imbit.dhbw-mannheim.de/" target="_blank">www.IMBIT.dhbw-mannheim.de</a> <br />
+            Prof. Dr. Harald Bendl, harald.bendl@dhbw-mannheim.de<br />
+            Coblitzallee 1 – 9, D-68163 Mannheim<br />
+            Tel. +49 621 4105-1719, Fax -1289
+    </div>
+</div>
+</body>
+</html>

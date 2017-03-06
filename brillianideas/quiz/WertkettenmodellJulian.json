@@ -1,0 +1,218 @@
+{
+	"DragDropGames": [
+		{
+			"DragAndDropList": [
+			{
+					"title" : "Indische Küche",
+					"description" : "Ziehe alle Elemente in das richtige Feld. Mit \"Eingabe prüfen\"  kannst du überprüfen, ob alle Elemente richtig sind. Falsche Elemente werden rot makiert",
+					"id": "d0",
+					"elementtext": "Naan Bread",
+					"target": "target1",
+					"targetNumber" : "2",
+					"titleTarget1" : "Nicht indisch",
+					"titleTarget2" : "Indisch"
+
+				},
+
+				{
+					"id": "d1",
+					"elementtext": "Samosas",
+					"target": "target1"
+				},
+
+				{
+					"id": "d2",
+					"elementtext": "Pad Thai",
+					"target": "target1"
+				},
+
+				{
+					"id": "d3",
+					"elementtext": "Ravioli",
+					"target": "target2"
+				},
+
+				{
+					"id": "d4",
+					"elementtext": "Haggis",
+					"target": "target2"
+				},
+
+				{
+					"id": "d5",
+					"elementtext": "milka",
+					"target": "target2"
+				}
+		]
+
+
+	},
+
+	{
+
+				"DragAndDropList": [
+				{
+						"title" : " Küche",
+						"description" : "Ziehe alle Elemente in das richtige Feld. Mit \"Eingabe prüfen\"  kannst du überprüfen, ob alle Elemente richtig sind. Falsche Elemente werden rot makiert",
+						"id": "d0",
+						"elementtext": "Bread",
+						"target": "target1",
+						"targetNumber" : "3",
+						"titleTarget1" : "test1",
+						"titleTarget2" : "test2",
+						"titleTarget3" : "test3"
+					},
+
+					{
+						"id": "d1",
+						"elementtext": "Samosas",
+						"target": "target1"
+					},
+
+					{
+						"id": "d2",
+						"elementtext": "Pad s",
+						"target": "target1"
+					},
+
+					{
+						"id": "d3",
+						"elementtext": "ss",
+						"target": "target2"
+					},
+
+					{
+						"id": "d4",
+						"elementtext": "Haggis",
+						"target": "target2"
+					}
+			]
+		},
+
+		{
+
+					"DragAndDropList": [
+					{
+							"title" : " df",
+							"description" : "Ziehe alle Elemente in das richtige Feld. Mit \"Eingabe prüfen\"  kannst du überprüfen, ob alle Elemente richtig sind. Falsche Elemente werden rot makiert",
+							"id": "d0",
+							"elementtext": "Bread",
+							"target": "target1",
+							"targetNumber" : "4",
+							"titleTarget1" : "test1",
+							"titleTarget2" : "test2",
+							"titleTarget3" : "test3",
+							"titleTarget4" : "test4"
+						},
+
+						{
+							"id": "d1",
+							"elementtext": "Samosas",
+							"target": "target1"
+						},
+
+						{
+							"id": "d2",
+							"elementtext": "dfdffdfd Thai",
+							"target": "target1"
+						},
+
+						{
+							"id": "d3",
+							"elementtext": "Ravioli",
+							"target": "target2"
+						},
+
+						{
+							"id": "d4",
+							"elementtext": "Haggis",
+							"target": "target2"
+						}
+				]
+			}
+
+		],
+
+
+"quizGames" : [
+	{
+
+			"quizlist":[
+
+			{
+			"question":"Welcher der folgenden Prozesse ist nicht Teil der Primären Aktivitäten?",
+			"optionTrue":"Personalwesen",
+			"optionFalse":[
+				"Ausgangslogistik",
+				"Kundendienst",
+				"Marketing und Vertrieb",
+				"Eingangslogistik"
+					 ]
+			},
+			{
+			"question":"Welcher der folgenden Prozesse ist nicht Teil der Sekundären Aktivitäten?",
+			"optionTrue":"Kundendienst",
+			"optionFalse":[
+					"Unternehmensinfrastruktur",
+					"Personalwesen","Technologieentwicklung",
+					"Beschaffung"
+					 ]
+			},
+			{
+			"question":"Welcher der folgenden Aktivitäten ist nicht Teil der Personalarbeit?",
+			"optionTrue":"Marktanalyse",
+			"optionFalse":[
+					"Rekrutierung",
+					"Personalbetreuung",
+					"Mitarbeitermotivation",
+					"Ausbildung"
+					 ]
+			},
+			{
+			"question":"Welcher der folgenden Aktivitäten ist nicht Teil Eingangslogistik?",
+			"optionTrue":"Annahme der Ware",
+			"optionFalse":[
+					"Verhandlung mit Zulieferern",
+					"Zwischenlagerung",
+					"Transport zur Produktion",
+					"Absatzstrategien"
+					 ]
+			},
+			{
+			"question":"Welcher der folgenden Prozesse ist nicht Teil der Primären Aktivitäten?",
+			"optionTrue":"Nein",
+			"optionFalse":[
+					"Ja"
+					 ]
+			},
+			{
+			"question":"Welcher der folgenden Prozesse ist nicht Teil der Primären Aktivitäten?",
+			"optionTrue":"Nein",
+			"optionFalse":[
+					"Ja"
+					 ]
+			},
+			{
+			"question":"Welcher der folgenden Prozesse ist nicht Teil der Primären Aktivitäten?",
+			"optionTrue":"Nein",
+			"optionFalse":[
+					"Ja"
+					 ]
+			},
+			{
+			"question":"Welcher der folgenden Prozesse ist nicht Teil der Primären Aktivitäten?",
+			"optionTrue":"Ja",
+			"optionFalse":[
+					"Nein"
+					 ]
+			}
+
+		]
+
+
+
+}
+
+]
+
+}
