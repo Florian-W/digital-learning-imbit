@@ -138,166 +138,188 @@ Quelle: https://wiki.zum.de/wiki/Wikis_in_der_Schule</Description>
 		<Description>Bei der Lernform Spiel geht es darum, bestimmte Verhaltensweisen und Entscheidungsmuster von Menschen nachzuvollziehen und den Umgang mit Konflikten zu üben. Somit wird erfahrungsbezogenes Lernen ermöglicht. Mithilfe des Spiels werden Wahrnehmungen erweitert und bestimmte Verhaltensmuster diskutiert und reflektiert.</Description>
 		<Thumb>./img/thumbs/spiel.png</Thumb>
 	</LearningType>
-	<Classes>
-		<Name>Intercultural Management</Name>
-		<Number>W3WI_IMBIT_301</Number>
-		<Thumb>https://upload.wikimedia.org/wikipedia/commons/d/da/D083_-_N%C2%B0_330._La_Hanse_et_Venise._-_liv3-ch07.png</Thumb>
-		<Group>International Management</Group>
-	</Classes>
-	<Classes>
-		<Name>SW-Lebenszyklus</Name>
-		<Number>W3WI_IMBIT_302</Number>
-		<Thumb>https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Nanomia_life_cycle_vector_wikimedia.svg/2000px-Nanomia_life_cycle_vector_wikimedia.svg.png</Thumb>
-		<Group>Information Technology</Group>
-	</Classes>
-	<Classes>
-		<Name>Int. Business Law and Organizations</Name>
-		<Number>W3WI_IMBIT_303</Number>
-		<Thumb>https://upload.wikimedia.org/wikipedia/commons/b/bf/B_707.svg</Thumb>
-		<Group>International Management</Group>
-	</Classes>
-	<Classes>
-		<Name>Grundlagen Human Machine Interactions</Name>
-		<Number>W3WI_IMBIT_304</Number>
-		<Thumb>https://upload.wikimedia.org/wikipedia/commons/f/f9/Tin_Woodman.png</Thumb>
-		<Group>Information Technology</Group>
-	</Classes>
-	<Classes>
-		<Name>Spanisch</Name>
-		<Number>W3WI_IMBIT_305</Number>
-		<Thumb>https://c1.staticflickr.com/9/8318/7915744438_71b937a80d_b.jpg</Thumb>
-		<Group>Sprachen</Group>
-	</Classes>
-	<Classes>
-		<Name>IT-Management</Name>
-		<Number>W3WI_IMBIT_401</Number>
-		<Thumb>./img/thumbs/itmgmt.png</Thumb>
-		<Group>Information Technology</Group>
-	</Classes>
-	<Classes>
-		<Name>Betriebswirtschaftliche Standardlösungen</Name>
-		<Number>W3WI_IMBIT_402</Number>
-		<Thumb>http://www.live-karikaturen.ch/wp-content/uploads/2015/07/waiting_ico.png</Thumb>
-		<Group>Business</Group>
-	</Classes>
-	<Classes>
-		<Name>Dienstleistungsmanagement</Name>
-		<Number>W3WI_IMBIT_403</Number>
-		<Thumb>./img/thumbs/service.png</Thumb>
-		<Group>Business</Group>
-	</Classes>
-	<Classes>
-		<Name>Global Project Management Skills</Name>
-		<Number>W3WI_IMBIT_404</Number>
-		<Thumb>https://upload.wikimedia.org/wikipedia/commons/b/b2/PDCA-Cycle-Kaizen.png</Thumb>
-		<Group>International Management</Group>
-	</Classes>
-	<Classes>
-		<Name>Statistik in der Anwendung</Name>
-		<Number>W3WI_IMBIT_405</Number>
-		<Thumb>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Fubini_Nightmare_foliation_Katok_example.svg/2000px-Fubini_Nightmare_foliation_Katok_example.svg.png</Thumb>
-		<Group>Business</Group>
-	</Classes>
-	<Classes>
-		<Name>Methoden der Wirtschaftsinformatik I</Name>
-		<Number>W3WI_101</Number>
-		<Thumb>https://upload.wikimedia.org/wikipedia/commons/b/b5/Design_Management_in_brief.jpg</Thumb>
-		<Group>Business</Group>
-	</Classes>
-	<Classes>
-		<Name>Integrationsseminar</Name>
-		<Number>W3WI_103</Number>
-		<Thumb>https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Integration_surface_elementaire_anneau.svg/500px-Integration_surface_elementaire_anneau.svg.png</Thumb>
-		<Group>International Management</Group>
-	</Classes>
-	<Classes>
-		<Name>Grundlegende Konzepte der IT</Name>
-		<Number>W3WI_104</Number>
-		<Thumb>https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Telephone.svg/1024px-Telephone.svg.png</Thumb>
-		<Group>Information Technology</Group>
-	</Classes>
-	<Classes>
-		<Name>Datenbanken</Name>
-		<Number>W3WI_105</Number>
-		<Thumb>./img/thumbs/db.png</Thumb>
-		<Group>Information Technology</Group>
-	</Classes>
-	<Classes>
-		<Name>Geschäftsprozesse und deren Umsetzung</Name>
-		<Number>W3WI_106</Number>
-		<Thumb>https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brazing_and_soldering_processes_-_AWS_A3.0_2001.svg/491px-Brazing_and_soldering_processes_-_AWS_A3.0_2001.svg.png</Thumb>
-		<Group>Business</Group>
-	</Classes>
-	<Classes>
-		<Name>Projekt</Name>
-		<Number>W3WI_107</Number>
-		<Thumb>https://upload.wikimedia.org/wikipedia/commons/6/67/Space_Shuttle_vs_Soyuz_TM_-_to_scale_drawing.png</Thumb>
-		<Group>International Management</Group>
-	</Classes>
-	<Classes>
-		<Name>Programmierung</Name>
-		<Number>W3WI_108</Number>
-		<Thumb>https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/StammbaumProgrammiersprachen.jpg/649px-StammbaumProgrammiersprachen.jpg</Thumb>
-		<Group>Information Technology</Group>
-	</Classes>
-	<Classes>
-		<Name>Entwicklung verteilter Systeme</Name>
-		<Number>W3WI_110</Number>
-		<Thumb>https://upload.wikimedia.org/wikipedia/commons/9/9d/Joint_Tactical_Information_Distribution_System_Users,_1990.jpg</Thumb>
-		<Group>Information Technology</Group>
-	</Classes>
-	<Classes>
-		<Name>Neue Konzepte</Name>
-		<Number>W3WI_111</Number>
-		<Thumb>https://upload.wikimedia.org/wikipedia/commons/f/f9/MediaSpaceConceptDrawing1982_w600.jpg</Thumb>
-		<Group>Information Technology</Group>
-	</Classes>
-	<Classes>
-		<Name>Grundlagen der Betriebswirtschaftslehre</Name>
-		<Number>W3WI_201</Number>
-		<Thumb>./img/thumbs/bwl.png</Thumb>
-		<Group>Business</Group>
-	</Classes>
-	<Classes>
-		<Name>Grundlagen der Rechnungslegung</Name>
-		<Number>W3WI_202</Number>
-		<Thumb>./img/thumbs/acc.png</Thumb>
-		<Group>Business</Group>
-	</Classes>
-	<Classes>
-		<Name>Finanzierung und Rechnungswesen</Name>
-		<Number>W3WI_203</Number>
-		<Thumb>./img/thumbs/fin.png</Thumb>
-		<Group>Business</Group>
-	</Classes>
-	<Classes>
-		<Name>Management</Name>
-		<Number>W3WI_204</Number>
-		<Thumb>./img/thumbs/mgmnt.png</Thumb>
-		<Group>International Management</Group>
-	</Classes>
-	<Classes>
-		<Name>Volkswirtschaftslehre</Name>
-		<Number>W3WI_505</Number>
-		<Thumb>https://upload.wikimedia.org/wikipedia/commons/2/25/Wpa-done.JPG</Thumb>
-		<Group>Business</Group>
-	</Classes>
-	<Classes>
-		<Name>Recht</Name>
-		<Number>W3WI_506</Number>
-		<Thumb>./img/thumbs/law.png</Thumb>
-		<Group>International Management</Group>
-	</Classes>
-	<Classes>
-		<Name>Mathematik</Name>
-		<Number>W3WI_601</Number>
-		<Thumb>./img/thumbs/math.png</Thumb>
-		<Group>Business</Group>
-	</Classes>
-	<Classes>
-		<Name>Chinesisch</Name>
-		<Number>Sprachschule</Number>
-		<Thumb>https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Chinese_Character_zhao1_cai2_jin4_bao3_Song_style.svg/2000px-Chinese_Character_zhao1_cai2_jin4_bao3_Song_style.svg.png</Thumb>
-		<Group>Sprachen</Group>
-	</Classes>
+	<Groups>
+		<Group-Name>International Management</Group-Name>
+		<Abbr>IM</Abbr>
+		<Classes>
+			<Name>Intercultural Management</Name>
+			<Number>W3WI_IMBIT_301</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/d/da/D083_-_N%C2%B0_330._La_Hanse_et_Venise._-_liv3-ch07.png</Thumb>
+			<Group>International Management</Group>
+		</Classes>
+		<Classes>
+			<Name>Int. Business Law and Organizations</Name>
+			<Number>W3WI_IMBIT_303</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/b/bf/B_707.svg</Thumb>
+			<Group>International Management</Group>
+		</Classes>
+		<Classes>
+			<Name>Int. Business Law and Organizations</Name>
+			<Number>W3WI_IMBIT_303</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/b/bf/B_707.svg</Thumb>
+			<Group>International Management</Group>
+		</Classes>
+		<Classes>
+			<Name>Global Project Management Skills</Name>
+			<Number>W3WI_IMBIT_404</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/b/b2/PDCA-Cycle-Kaizen.png</Thumb>
+			<Group>International Management</Group>
+		</Classes>
+		<Classes>
+			<Name>Integrationsseminar</Name>
+			<Number>W3WI_103</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Integration_surface_elementaire_anneau.svg/500px-Integration_surface_elementaire_anneau.svg.png</Thumb>
+			<Group>International Management</Group>
+		</Classes>
+		<Classes>
+			<Name>Management</Name>
+			<Number>W3WI_204</Number>
+			<Thumb>./img/thumbs/mgmnt.png</Thumb>
+			<Group>International Management</Group>
+		</Classes>
+		<Classes>
+			<Name>Recht</Name>
+			<Number>W3WI_506</Number>
+			<Thumb>./img/thumbs/law.png</Thumb>
+			<Group>International Management</Group>
+		</Classes>
+		<Classes>
+			<Name>Projekt</Name>
+			<Number>W3WI_107</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/6/67/Space_Shuttle_vs_Soyuz_TM_-_to_scale_drawing.png</Thumb>
+			<Group>International Management</Group>
+		</Classes>
+	</Groups>
+	<Groups>
+		<Group-Name>Sprachen</Group-Name>
+		<Abbr>S</Abbr>
+		<Classes>
+			<Name>Spanisch</Name>
+			<Number>W3WI_IMBIT_305</Number>
+			<Thumb>https://c1.staticflickr.com/9/8318/7915744438_71b937a80d_b.jpg</Thumb>
+			<Group>Sprachen</Group>
+		</Classes>
+		<Classes>
+			<Name>Chinesisch</Name>
+			<Number>Sprachschule</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Chinese_Character_zhao1_cai2_jin4_bao3_Song_style.svg/2000px-Chinese_Character_zhao1_cai2_jin4_bao3_Song_style.svg.png</Thumb>
+			<Group>Sprachen</Group>
+		</Classes>
+	</Groups>
+	<Groups>
+		<Group-Name>Information Technology</Group-Name>
+		<Abbr>IT</Abbr>
+		<Classes>
+			<Name>SW-Lebenszyklus</Name>
+			<Number>W3WI_IMBIT_302</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Nanomia_life_cycle_vector_wikimedia.svg/2000px-Nanomia_life_cycle_vector_wikimedia.svg.png</Thumb>
+			<Group>Information Technology</Group>
+		</Classes>
+		<Classes>
+			<Name>Grundlagen Human Machine Interactions</Name>
+			<Number>W3WI_IMBIT_304</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/f/f9/Tin_Woodman.png</Thumb>
+			<Group>Information Technology</Group>
+		</Classes>
+		<Classes>
+			<Name>IT-Management</Name>
+			<Number>W3WI_IMBIT_401</Number>
+			<Thumb>./img/thumbs/itmgmt.png</Thumb>
+			<Group>Information Technology</Group>
+		</Classes>
+		<Classes>
+			<Name>Grundlegende Konzepte der IT</Name>
+			<Number>W3WI_104</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Telephone.svg/1024px-Telephone.svg.png</Thumb>
+			<Group>Information Technology</Group>
+		</Classes>
+		<Classes>
+			<Name>Datenbanken</Name>
+			<Number>W3WI_105</Number>
+			<Thumb>./img/thumbs/db.png</Thumb>
+			<Group>Information Technology</Group>
+		</Classes>
+		<Classes>
+			<Name>Programmierung</Name>
+			<Number>W3WI_108</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/StammbaumProgrammiersprachen.jpg/649px-StammbaumProgrammiersprachen.jpg</Thumb>
+			<Group>Information Technology</Group>
+		</Classes>
+		<Classes>
+			<Name>Entwicklung verteilter Systeme</Name>
+			<Number>W3WI_110</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/9/9d/Joint_Tactical_Information_Distribution_System_Users,_1990.jpg</Thumb>
+			<Group>Information Technology</Group>
+		</Classes>
+		<Classes>
+			<Name>Neue Konzepte</Name>
+			<Number>W3WI_111</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/f/f9/MediaSpaceConceptDrawing1982_w600.jpg</Thumb>
+			<Group>Information Technology</Group>
+		</Classes>
+	</Groups>
+	<Groups>
+		<Group-Name>Business</Group-Name>
+		<Abbr>B</Abbr>			
+		<Classes>
+			<Name>Betriebswirtschaftliche Standardlösungen</Name>
+			<Number>W3WI_IMBIT_402</Number>
+			<Thumb>http://www.live-karikaturen.ch/wp-content/uploads/2015/07/waiting_ico.png</Thumb>
+			<Group>Business</Group>
+		</Classes>
+		<Classes>
+			<Name>Dienstleistungsmanagement</Name>
+			<Number>W3WI_IMBIT_403</Number>
+			<Thumb>./img/thumbs/service.png</Thumb>
+			<Group>Business</Group>
+		</Classes>
+		<Classes>
+			<Name>Statistik in der Anwendung</Name>
+			<Number>W3WI_IMBIT_405</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Fubini_Nightmare_foliation_Katok_example.svg/2000px-Fubini_Nightmare_foliation_Katok_example.svg.png</Thumb>
+			<Group>Business</Group>
+		</Classes>
+		<Classes>
+			<Name>Methoden der Wirtschaftsinformatik I</Name>
+			<Number>W3WI_101</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/b/b5/Design_Management_in_brief.jpg</Thumb>
+			<Group>Business</Group>
+		</Classes>
+		<Classes>
+			<Name>Geschäftsprozesse und deren Umsetzung</Name>
+			<Number>W3WI_106</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brazing_and_soldering_processes_-_AWS_A3.0_2001.svg/491px-Brazing_and_soldering_processes_-_AWS_A3.0_2001.svg.png	</Thumb>
+			<Group>Business</Group>
+		</Classes>
+		<Classes>
+			<Name>Grundlagen der Betriebswirtschaftslehre</Name>
+			<Number>W3WI_201</Number>
+			<Thumb>./img/thumbs/bwl.png</Thumb>
+			<Group>Business</Group>
+		</Classes>
+		<Classes>
+			<Name>Grundlagen der Rechnungslegung</Name>
+			<Number>W3WI_202</Number>
+			<Thumb>./img/thumbs/acc.png</Thumb>
+			<Group>Business</Group>
+		</Classes>
+		<Classes>
+			<Name>Finanzierung und Rechnungswesen</Name>
+			<Number>W3WI_203</Number>
+			<Thumb>./img/thumbs/fin.png</Thumb>
+			<Group>Business</Group>
+		</Classes>
+		<Classes>
+			<Name>Volkswirtschaftslehre</Name>
+			<Number>W3WI_505</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/2/25/Wpa-done.JPG</Thumb>
+			<Group>Business</Group>
+		</Classes>
+		<Classes>
+			<Name>Mathematik</Name>
+			<Number>W3WI_601</Number>
+			<Thumb>./img/thumbs/math.png</Thumb>
+			<Group>Business</Group>
+		</Classes>
+	</Groups>
 </Categories>

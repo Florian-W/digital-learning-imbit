@@ -28,6 +28,20 @@
 
     <meta name="viewport" content="user-scalable=no, width=device-width, height=device-height" />
 
+  <script>
+		$(document).on("pageinit",function(){
+
+		  var pathname = $(location).attr('href');
+		  var leva = $('#le').attr("href");
+		  var prava = $('#pr').attr("href");
+
+		  $("body").on("swipeleft",function(){
+
+			location.href=leva;
+		  });                       
+
+		});
+		</script>
 
 </head>
 <body>
@@ -65,6 +79,15 @@
         </span>
     </div>
 </div>
+		<div id="test_div" style="display: block">
+			<ul id ="dots" class="dotstyle dotstyle-fillup">
+				<li class="current"><a href="left.html"></a></li>
+				<li><a id="le" href="index.html"></a></li>
+				<li><a id="pr" href="right.html"></a></li>
+				
+			</ul>
+		</div>
+
 <div id="footer">
     <span style="float:right" id="impressumLink">Impressum</span>
 </div>
@@ -79,5 +102,5 @@
             Tel. +49 621 4105-1719, Fax -1289
     </div>
 </div>
-</body>
+</body>  
 </html>
