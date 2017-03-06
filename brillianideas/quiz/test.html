@@ -2,8 +2,12 @@
 <html>
 <head>
 <meta charset="utf-8"/>
-<title>Test page</title>
+<title>Games</title>
 <link href="main.css" rel="stylesheet" type="text/css" />
+
+<!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+
 <meta name=viewport
 	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <script src="jquery.js"></script>
@@ -32,7 +36,7 @@
 				    var element = event.target;
 						var idOfButtonClicked;
 
-				        if (element.nodeName === "BUTTON" && /test/.test(element.className)) {
+				        if (element.nodeName === "BUTTON" && /buttonToQuiz/.test(element.className)) {
 				            // The user clicked on a <button> or clicked on an element inside a <button>
 				            // with a class name called "foo"
 				            console.log("button clicked: " + element.id)
@@ -47,7 +51,7 @@
 				// die Methode openQuiz holt sich den Namen des jeweiligen JSON und hängt diesen an die URL der Spiele HTML Seite
 				// in der index.html wird dann die controller.js geladen und der Parameter ausgelesen
 				function openQuiz(idOfButtonClicked) {
-				
+
 						var jsonFileName = $('#'+idOfButtonClicked).attr('jsonFileName')
 						window.location = "index.html?jsonFileName=" + jsonFileName;
 
@@ -71,8 +75,8 @@ else if (el.attachEvent)
 
 </head>
 <body>
-	<button jsonFileName="BWL Game.json" type="button" class="test" id="clickMe">BWL Game</button>
-	<button jsonFileName="YesNo Game.json" type="button" class="test" id="clickmeYesNo">Yes/No Game</button>
+	<button jsonFileName="Wertkettenmodell.json" type="button" class="buttonToQuiz" id="clickMe">Wertkettenmodell</button>
+	<button jsonFileName="St-Galler-Management-Modell.json" type="button" class="buttonToQuiz" id="clickmeYesNo">St-Galler-Management-Modell</button>
 	<!-- <input type="button" id="clickMe" value="BWL Game"/> -->
 
 

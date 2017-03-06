@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="startpage.css">
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<script src="DotNavigationStyles/js/dots.js"></script>
+
+<script>
+$(document).on("pageinit",function(){
+
+  var pathname = $(location).attr('href');
+  var leva = $('#le').attr("href");
+  var prava = $('#pr').attr("href");
+
+  $("body").on("swipeleft",function(){
+    <!--alert("You swiped right!");-->
+    location.href=leva;
+  });                       
+  /*$("body").on("swipeleft",function(){
+    <!--alert("You swiped left!");-->
+    location.href=leva;
+  });*/
+});
+</script>
+<style>
+	.ui-page {background-color:rgb(153,27,51)}
+</style>
+</head>
+<body>
+
+
+<div id="test_div" style="display: block">
+	<ul id ="dots" class="dotstyle dotstyle-fillup">
+		<li class="current"><a href="left.html"></a></li>
+		<li><a id="le" href="index.html"></a></li>
+		<li><a id="pr" href="right.html"></a></li>
+		
+	</ul>
+
+
+</div>
+
+</body>
+</html>

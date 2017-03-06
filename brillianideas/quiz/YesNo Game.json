@@ -1,4 +1,13 @@
-{"quizlist":[
+{
+	"DragDropGames": [
+		
+],
+
+"quizGames" : [
+
+{
+
+	"quizlist":[
 
 	{
 	"question":"Welcher der folgenden Prozesse ist nicht Teil der Primären Aktivitäten?",
@@ -28,6 +37,10 @@
 			"Nein"
 			 ]
 	}
+
+]
+
+}
 
 ]
 }

@@ -22,9 +22,8 @@ button:hover {
     -moz-perspective: 800;
     -webkit-perspective: 800;
     margin: 0;
-    width: 150pt;
-    height: 50pt;
-    border: solid 0.3em;
+    //*border: solid 0.3em;*//
+	border: none;
     font-family: Georgia;
     transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
@@ -34,6 +33,14 @@ button:hover {
     -webkit-transition: 1s;
     cursor: pointer;
     position: absolute;
+	width: 150pt;
+    height: 50pt;
+}
+
+
+.flipcard.IMBIT_Weg{
+	width: 150pt !important;
+    height: 150pt !important;
 }
 
 .flipcard:not(.flipped) {
@@ -259,7 +266,7 @@ img.thumb {
     transform: translate(-50%, 150%);
 }
 
-#animation_l, #animation_im, #animation_b, #animation_it, #animation_welcome {
+#animation_l, #animation_im, #animation_b, #animation_it, #animation_mg, #animation_welcome {
     z-index: 1;
     font-family: 'Caveat Brush';
     font-size: 50pt;
@@ -283,6 +290,11 @@ img.thumb {
 #animation_it{
     left: 25vw !important;
     top: 75vh !important;
+}
+
+#animation_mg{
+    left: 50vw !important;
+    top: 50vh !important;
 }
 
 @media only screen
