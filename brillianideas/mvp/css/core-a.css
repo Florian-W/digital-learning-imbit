@@ -33,16 +33,14 @@ button:hover {
     -webkit-transition: 1s;
     cursor: pointer;
     position: absolute;
-}
-
-.flipcard:not(.IMBIT_Weg){
 	width: 150pt;
     height: 50pt;
 }
 
+
 .flipcard.IMBIT_Weg{
-	width: 150pt;
-    height: 150pt;
+	width: 150pt !important;
+    height: 150pt !important;
 }
 
 .flipcard:not(.flipped) {
