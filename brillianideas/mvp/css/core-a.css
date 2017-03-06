@@ -37,10 +37,18 @@ button:hover {
     height: 50pt;
 }
 
+.gruppe > .vorlesung {
+	opacity: 1 !important;
+	position: static !important;
+	transform: translate(0,0) !important;
+	margin-top: 5px;
+}
+
 
 .flipcard.IMBIT_Weg{
 	width: 150pt !important;
     height: 150pt !important;
+    background-color: var(--color-bordeaux);
 }
 
 .flipcard:not(.flipped) {
@@ -49,7 +57,8 @@ button:hover {
 }
 
 .flipcard, .flipcard .face {
-    border-radius: 50%;
+    /*border-radius: 50%;
+    background-color: transparent;*/
 }
 
 .flipcard.flipped .face {
