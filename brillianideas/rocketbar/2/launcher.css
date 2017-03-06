@@ -1,3 +1,48 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+/* Setup styles - you don't need these */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.is-active{
+	cursor: pointer;	
+}
+
+#launcher_left_top{
+	position: fixed;
+	top: 80px;
+	left: -205px;
+}
+
+#launcher_left_bottom{
+	position: fixed;
+	bottom: 80px;
+	left: -205px;
+}
+
+#launcher_right_top{
+	position: fixed;
+	top: 80px;
+	right: -205px;
+}
+
+#launcher_right_bottom{
+	position: fixed;
+	bottom: 80px;
+	right: -205px;
+}
+
+
+
+
+
+
+
+
+
+
+
 html {
     font-size: 100%;
 }
@@ -12,18 +57,15 @@ h1, h2, h3, h4, h5 {
     font-family: 'Caveat Brush';
 }
 
-button:hover {
-	cursor:pointer;
-}
-
 .flipcard {
     opacity: 0;
     perspective: 800;
     -moz-perspective: 800;
     -webkit-perspective: 800;
     margin: 0;
-    //*border: solid 0.3em;*//
-	border: none;
+    width: 150pt;
+    height: 50pt;
+    border: solid 0.3em;
     font-family: Georgia;
     transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
@@ -33,14 +75,6 @@ button:hover {
     -webkit-transition: 1s;
     cursor: pointer;
     position: absolute;
-	width: 150pt;
-    height: 50pt;
-}
-
-
-.flipcard.IMBIT_Weg{
-	width: 150pt !important;
-    height: 150pt !important;
 }
 
 .flipcard:not(.flipped) {
@@ -199,12 +233,12 @@ img.thumb {
 #header form > button {
     padding: 0;
     margin: 0;
-    width: 20px;
+    width: 14px;
 }
 #header form > input {
     margin: 0;
     padding: 0 15px;
-    width: calc(100vw - 140px);
+    width: calc(100vw - 116px);
 }
 
 #backlayer {
@@ -266,7 +300,7 @@ img.thumb {
     transform: translate(-50%, 150%);
 }
 
-#animation_l, #animation_im, #animation_b, #animation_it, #animation_mg, #animation_welcome {
+#animation_l, #animation_im, #animation_b, #animation_it, #animation_welcome {
     z-index: 1;
     font-family: 'Caveat Brush';
     font-size: 50pt;
@@ -292,11 +326,6 @@ img.thumb {
     top: 75vh !important;
 }
 
-#animation_mg{
-    left: 50vw !important;
-    top: 50vh !important;
-}
-
 @media only screen
 and (min-device-width: 768px)
 and (max-device-width: 1024px) {
@@ -306,4 +335,44 @@ and (max-device-width: 1024px) {
         top: -32px;
     }
 
+}
+:root{
+    --color-pink: rgb(229, 63, 95);
+    --color-bordeaux: rgb(153, 27, 51);
+    --color-dark-bordeauch: rgb(108, 19, 46);
+    --color-gray: rgb(148, 148, 148);
+    --color-green: rgb(133,186, 28);
+    --color-yellow: rgb(205, 145, 25);
+
+    --background: var(--color-bordeaux);
+    --background-highlight: var(--color-yellow);
+    --text: white;
+    --link: var(--color-gray);
+    --link-visited: var(--color-green);
+    --border: var(--color-gray);
+
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    background-image: url('../img/brillainIDEAS_UX_20170202_Oktopus-Tentakel4_F.png');
+    background-repeat: no-repeat;
+    background-position-y: -40px;
+}
+
+.flipcard .face{
+    background-color: var(--background-highlight);
+}
+
+#page{
+	text-align: center;
+	width:100vw;
+	height:100vh;
+}
+
+.ksystem {
+	width: 70vw;
+	height:70vh;
+	margin-top:90px;
 }

@@ -42,10 +42,10 @@
                     </xsl:for-each>
                 </xsl:when>
                 <xsl:when test="$type='class'">
-                    <xsl:for-each select="Categories/Classes">
+                    <xsl:for-each select="Categories/Groups">
                         <xsl:element name="div">
                             <xsl:attribute name="id">
-                                <xsl:value-of select="Number"/>
+                                <xsl:value-of select="Abbr"/>
                             </xsl:attribute>
                             <xsl:attribute name="class">
                                 <xsl:text>flipcard</xsl:text>
@@ -55,16 +55,16 @@
                                     <xsl:text>face front</xsl:text>
                                 </xsl:attribute>
                                 <xsl:attribute name="data-target">
-                                    <xsl:value-of select="Number"/>
+                                    <xsl:value-of select="Abbr"/>
                                 </xsl:attribute>
-                                <xsl:value-of select="Name"/>
+                                <xsl:value-of select="Group-Name"/>
                             </xsl:element>
                             <xsl:element name="div">
                                 <xsl:attribute name="class">
                                     <xsl:text>face back</xsl:text>
                                 </xsl:attribute>
                                 <xsl:attribute name="data-bind">
-                                    <xsl:value-of select="Number"/>
+                                    <xsl:value-of select="Abbr"/>
                                 </xsl:attribute>
                             </xsl:element>
                         </xsl:element>

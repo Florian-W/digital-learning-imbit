@@ -1,3 +1,153 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+/* Setup styles - you don't need these */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#ksystem{
+	vertical-align: middle;
+	margin-left: auto;
+    margin-right: auto;
+	z-index: 4
+}
+
+/* Component styles - this is what you need to grab */
+.absolute-center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+.floaty {
+  position: fixed;
+  bottom: 85px;
+  right: 15px;
+}
+.floaty-list {
+  margin: 0 0 20px;
+  padding: 0 0 0 6px;
+  list-style: none;
+  opacity: 0;
+  transition: opacity .2s ease-out;
+}
+.floaty:hover .floaty-list {
+  opacity: 1;
+}
+.floaty-list-item {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 15px 0;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,.25);
+}
+.floaty-list-item > img {
+  border-radius: 50%;
+}
+
+.floaty-list-item > a {
+  border-radius: 50%;
+}
+.floaty-list-item--yellow {
+  background-color: #d4a717;
+}
+.floaty-list-item--yellow > svg {
+  fill: #fff;
+}
+.floaty-list-item--blue {
+  background-color: #3c80f6;
+}
+.floaty-list-item--blue > svg {
+  fill: #fff;
+}
+.floaty-list-item-label {
+  position: absolute;
+  top: 8px;
+  right: 120%;
+  padding: 4px 8px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #424242;
+  border-radius: 2px;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: opacity .2s ease-out;
+}
+.floaty-list-item:hover > .floaty-list-item-label {
+  opacity: 1;
+}
+.floaty-btn {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  float: right;
+  margin-right: 15px;
+  cursor: pointer;
+  background-color: #DB4437;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,.25);
+}
+.floaty-btn:hover .floaty-btn-label {
+  opacity: 1;
+}
+.floaty-btn-label {
+  position: absolute;
+  top: 14px;
+  right: 115%;
+  padding: 4px 8px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #424242;
+  border-radius: 2px;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  transition: opacity .2s ease-out;
+}
+.floaty-btn-icon {
+  transition: all .2s;
+}
+.floaty-btn-icon-plus {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.floaty.is-active .floaty-btn-icon-plus {
+  opacity: 0;
+  -webkit-transform: rotate(13deg);
+  transform: rotate(130deg);
+}
+.floaty-btn-icon-create {
+  opacity: 0;
+  -webkit-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+}
+.floaty.is-active .floaty-btn-icon-create {
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 html {
     font-size: 100%;
 }
@@ -12,18 +162,15 @@ h1, h2, h3, h4, h5 {
     font-family: 'Caveat Brush';
 }
 
-button:hover {
-	cursor:pointer;
-}
-
 .flipcard {
     opacity: 0;
     perspective: 800;
     -moz-perspective: 800;
     -webkit-perspective: 800;
     margin: 0;
-    //*border: solid 0.3em;*//
-	border: none;
+    width: 150pt;
+    height: 50pt;
+    border: solid 0.3em;
     font-family: Georgia;
     transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
@@ -33,14 +180,6 @@ button:hover {
     -webkit-transition: 1s;
     cursor: pointer;
     position: absolute;
-	width: 150pt;
-    height: 50pt;
-}
-
-
-.flipcard.IMBIT_Weg{
-	width: 150pt !important;
-    height: 150pt !important;
 }
 
 .flipcard:not(.flipped) {
@@ -199,12 +338,12 @@ img.thumb {
 #header form > button {
     padding: 0;
     margin: 0;
-    width: 20px;
+    width: 14px;
 }
 #header form > input {
     margin: 0;
     padding: 0 15px;
-    width: calc(100vw - 140px);
+    width: calc(100vw - 116px);
 }
 
 #backlayer {
@@ -266,7 +405,7 @@ img.thumb {
     transform: translate(-50%, 150%);
 }
 
-#animation_l, #animation_im, #animation_b, #animation_it, #animation_mg, #animation_welcome {
+#animation_l, #animation_im, #animation_b, #animation_it, #animation_welcome {
     z-index: 1;
     font-family: 'Caveat Brush';
     font-size: 50pt;
@@ -292,11 +431,6 @@ img.thumb {
     top: 75vh !important;
 }
 
-#animation_mg{
-    left: 50vw !important;
-    top: 50vh !important;
-}
-
 @media only screen
 and (min-device-width: 768px)
 and (max-device-width: 1024px) {
@@ -306,4 +440,44 @@ and (max-device-width: 1024px) {
         top: -32px;
     }
 
+}
+:root{
+    --color-pink: rgb(229, 63, 95);
+    --color-bordeaux: rgb(153, 27, 51);
+    --color-dark-bordeauch: rgb(108, 19, 46);
+    --color-gray: rgb(148, 148, 148);
+    --color-green: rgb(133,186, 28);
+    --color-yellow: rgb(205, 145, 25);
+
+    --background: var(--color-bordeaux);
+    --background-highlight: var(--color-yellow);
+    --text: white;
+    --link: var(--color-gray);
+    --link-visited: var(--color-green);
+    --border: var(--color-gray);
+
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    background-image: url('../img/brillainIDEAS_UX_20170202_Oktopus-Tentakel4_F.png');
+    background-repeat: no-repeat;
+    background-position-y: -40px;
+}
+
+.flipcard .face{
+    background-color: var(--background-highlight);
+}
+
+#page{
+	text-align: center;
+	width:100vw;
+	height:100vh;
+}
+
+.ksystem {
+	width: 70vw;
+	height:70vh;
+	margin-top:90px;
 }
