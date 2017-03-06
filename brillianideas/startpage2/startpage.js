@@ -414,7 +414,7 @@ var mystickybar=new expstickybar({
 	position:'bottom', //'top' or 'bottom'
 	revealtype:'manual', //'mouseover' or 'manual'
 	peekamount:40, //number of pixels to reveal when sticky bar is closed
-	externalcontent:'rocketbarcontent.htm', //path to sticky bar content file on your server, or "" if content is defined inline on the page
+	externalcontent:'/brillianideas/content/rocketbarcontent.htm', //path to sticky bar content file on your server, or "" if content is defined inline on the page
 	speed:500 //duration of animation (in millisecs)
 })
 
