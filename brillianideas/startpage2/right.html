@@ -1,0 +1,41 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="startpage.css">
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<script src="DotNavigationStyles/js/dots.js"></script>
+
+<script>
+$(document).on("pageinit",function(){
+
+  var pathname = $(location).attr('href');
+  var leva = $('#le').attr("href");
+  var prava = $('#pr').attr("href");
+                  
+  $("body").on("swiperight",function(){
+    location.href=prava;
+  });
+});
+</script>
+<style>
+	.ui-page {background-color:rgb(153,27,51)}
+</style>
+</head>
+<body style="background-color:rgb(153,27,51)">
+
+<div>
+<div id="test_div" style="display: block; background-color:rgb(153,27,51)">
+	<ul id ="dots" class="dotstyle dotstyle-fillup">
+		<li><a href="left.html"></a></li>
+		<li><a id="pr" href="index.html"></a></li>
+		<li class="current"><a href="right.html"></a></li>
+	</ul>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,5 +1,4 @@
 jQuery.noConflict()
-
 function expstickybar(usersetting){
 	var setting=jQuery.extend({position:'bottom', peekamount:30, revealtype:'mouseover', speed:200}, usersetting)
 	var thisbar=this
@@ -59,15 +58,15 @@ expstickybar.prototype={
 		var thisbar=this
 		this.$stickybar=$('#'+setting.id).css('visibility', 'visible')
 		this.height=this.$stickybar.outerHeight()
-		this.currentstate="hide"
+		this.currentstate="show"
 		setting.peekamount=Math.min(this.height, setting.peekamount)
 		this.setting=setting
 		if (setting.revealtype=="mouseover")
 			this.$stickybar.bind("mouseclick touchmove swipe mouseenter mouseleave", function(e){
-				thisbar.showhide((e.type=="mouseenter" || e.type=="mouseclick" || e.type=="touchmove")? "show" : "hide", true)
+				thisbar.showhide("show", true)
 		})
 		this.$indicators=this.$stickybar.find('img[data-openimage]') //find images within bar with data-openimage attribute
-		this.$stickybar.find('a[href=#togglebar]').click(function(){ //find links within bar with href=#togglebar and assign toggle behavior to them
+		this.$stickybar.find('a[href=togglebar]').click(function(){ //find links within bar with href=#togglebar and assign toggle behavior to them
 			thisbar.toggle()
 			return false
 		})
@@ -86,8 +85,8 @@ expstickybar.prototype={
 var mystickybar=new expstickybar({
 	id: "rocketbar", //id of sticky bar DIV
 	position:'bottom', //'top' or 'bottom'
-	revealtype:'mouseover', //'mouseover' or 'manual'
-	peekamount:50, //number of pixels to reveal when sticky bar is closed
+	revealtype:'manual', //'mouseover' or 'manual'
+	peekamount:40, //number of pixels to reveal when sticky bar is closed
 	externalcontent:'rocketbarcontent.htm', //path to sticky bar content file on your server, or "" if content is defined inline on the page
 	speed:500 //duration of animation (in millisecs)
 })
