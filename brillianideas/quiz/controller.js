@@ -1229,7 +1229,7 @@ function checkInput(){
 												'<div class="backToQuizOverview">Zurück zur Spieleübersicht</div>');
 
 								$('.backToQuizOverview').click(function(){
-									window.location.href = "test.html";
+									window.location.href = "newContent.html";
 								});
 
 	}// display final slide
