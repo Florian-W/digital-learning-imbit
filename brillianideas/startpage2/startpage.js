@@ -325,6 +325,48 @@ expstickybar.prototype={
 	},
 
 	init:function($, setting){
+		/* Color */
+		var colorSwitch = Cookies.get('color');
+		switch(colorSwitch) {
+			case "red":
+				jQuery('.content').css('background-color','#949494');
+				jQuery('#rb_toggle').css('background-color','#949494');
+				break;
+			case "grey":
+				jQuery('.content').css('background-color','#991b33');
+				jQuery('#rb_toggle').css('background-color','#991b33');
+				break;
+		}
+		
+		/* Subtitle */
+		var subtitleSwitch = Cookies.get('subtitle');
+		switch(subtitleSwitch) {
+			case "true":
+				jQuery('.rb_description').css('display','inline');
+				break;
+			case "false":
+				jQuery('.rb_description').css('display','none');
+				break;
+			default:
+				console.log("No changes to Subtitle");
+		}
+		
+		/* Punkte */
+		var pointsSwitch = Cookies.get('points');
+		switch(pointsSwitch) {
+			case "left":
+				jQuery('#rb_toggle').css('left','1%');
+				break;
+			case "middle":
+				jQuery('#rb_toggle').css('left','45%');
+				break;
+			case "right":
+				jQuery('#rb_toggle').css('left','90%');
+				break;
+			default:
+				console.log("No changes to Points");
+		}
+		
 		var thisbar=this
 		this.$stickybar=$('#'+setting.id).css('visibility', 'visible')
 		this.height=this.$stickybar.outerHeight()
@@ -355,16 +397,6 @@ expstickybar.prototype={
 		jQuery('#kopf').css("margin-top","-" + imgMargin + 'px');
 		jQuery('#dots').css("margin-top","-" + imgMargin + 'px');
 		
-			/* Color */
-		var colorSwitch = Cookies.get('color');
-		switch(colorSwitch) {
-			case "red":
-				jQuery('.content').css('background-color','#949494');
-				break;
-			case "grey":
-				jQuery('.content').css('background-color','#991b33');
-				break;
-		}
 
 		})
 		this.showhide("hide")
@@ -382,7 +414,7 @@ var mystickybar=new expstickybar({
 	position:'bottom', //'top' or 'bottom'
 	revealtype:'manual', //'mouseover' or 'manual'
 	peekamount:40, //number of pixels to reveal when sticky bar is closed
-	externalcontent:'rocketbarcontent.htm', //path to sticky bar content file on your server, or "" if content is defined inline on the page
+	externalcontent:'/brillianideas/content/rocketbarcontent.htm', //path to sticky bar content file on your server, or "" if content is defined inline on the page
 	speed:500 //duration of animation (in millisecs)
 })
 
