@@ -1,14 +1,17 @@
 html, body {
 	margin: 0;
 	padding: 0;
+	height: 100%;
+	width:100%;
   background-color: #990133;
-	  font-family: Arial, Helvetica, sans-serif;
+	color: white;
+
 	    }
 
 #navContent{
 margin:auto;
 width:80%;
-height:400px;
+height:100%;
 position:relative;
 overflow:hidden;
 }
@@ -32,6 +35,13 @@ position:absolute;
 	border:2px solid #ccc;
 	background-color: rgb(153,27,51);
 	color: white;
+	width:250px;
+	height:75px;
+	margin: 0.35%;
+  display:inline-block;
+	margin-top: 3%;
+
+
 }
 
 .buttonToQuiz1:hover, .buttonToQuiz2:hover, .buttonToQuiz3:hover, .buttonToQuiz4:hover, .buttonToQuiz5:hover{
@@ -40,7 +50,7 @@ color:#e53f5f;
 }
 
 
-.buttonToQuiz1 {
+/*.buttonToQuiz1 {
 
 	width:300px;
 	height:100px;
@@ -53,6 +63,7 @@ color:#e53f5f;
 
 
 }
+
 
 .buttonToQuiz2 {
 	width:300px;
@@ -81,7 +92,7 @@ color:#e53f5f;
 	display:inline-block;
 	margin-left: 35%;
 	margin-top: 1%;
-}
+}*/
 
 #gameDescription {
 
@@ -121,7 +132,7 @@ color:#e53f5f;
 
 
 #topbar{
-height:20%;
+/*height:20%;*/
 margin:auto;
 margin-top:25px;
 color:#FFF;
@@ -141,7 +152,7 @@ padding:5px;
 font-size:30px;
 color:#FFFFCC;
 background-color: #85ba1c;
-font-family:Arial, Helvetica, sans-serif;
+/*font-family:Arial, Helvetica, sans-serif;*/
 text-align:center;
 float: left;
 }
@@ -152,7 +163,7 @@ padding:5px;
 font-size:30px;
 color:#FFFFCC;
 background-color:#e53f5f;
-font-family:Arial, Helvetica, sans-serif;
+/*font-family:Arial, Helvetica, sans-serif;*/
 text-align:center;
 float: left;
 }
@@ -163,7 +174,7 @@ padding:5px;
 font-size:30px;
 color:#FFFFCC;
 background-color:#6c132e;
-font-family:Arial, Helvetica, sans-serif;
+/*font-family:Arial, Helvetica, sans-serif;*/
 border:white solid 2px;
 text-align:center;
 float: right;
@@ -175,7 +186,7 @@ padding:5px;
 font-size:20px;
 color:#FFFFCC;
 background-color:#6c132e;
-font-family:Arial, Helvetica, sans-serif;
+/*font-family:Arial, Helvetica, sans-serif;*/
 border:white solid 2px;
 text-align:center;
 float: right;
@@ -268,7 +279,7 @@ p{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-	font-family: 'Caveat Brush';
+	/*font-family: 'Caveat Brush';*/
 	font-size:20px;
 
 }
@@ -348,7 +359,7 @@ p{
 			white-space:nowrap;
 			/*height:10%;*/
 			padding:1.5%;
-			font-size: 12px;
+			font-size: 16px;
 			text-align: center;
 			vertical-align: center;
 			margin:5px;
@@ -371,4 +382,37 @@ p{
 		}
 .over{
 			background:rgb(108, 19, 46);
+		}
+
+		#header {
+			height: 20%;
+			text-align: center;
+		}
+
+		#container1 {
+			height: 40% ;
+			display: flex;
+		}
+
+		#left {
+			width: 40%;
+
+		}
+
+		#left img{
+			height: 100%;
+			width: 100%;
+			margin-bottom: 1%;
+
+		}
+
+		#right {
+			width: 60%;
+			margin-left: 1%;
+		}
+
+		#container2 {
+			height: 40% ;
+			text-align:center;
+
 		}
