@@ -104,6 +104,10 @@ button:hover {
     color: white;
 }
 
+.flipcard .front:hover{
+    font-weight: bold;
+}
+
 .flipcard.flipped .front {
 }
 
@@ -240,7 +244,7 @@ img.thumb {
 }
 
 .axis {
-    border: 1px solid;
+    border: 0;
 }
 
 .axis.x {
@@ -251,6 +255,52 @@ img.thumb {
 
 .axis.y {
     width: 0px;
+}
+
+#animation_xaxis_left_line_left{
+    display: inline-block;
+    width:15px;
+    border-bottom:solid;
+    margin-bottom:5%;
+}
+#animation_xaxis_left_line_right{
+    display: inline-block;
+    width:15px;
+    border-bottom:solid;
+    margin-bottom:5%;
+}
+#animation_xaxis_right_line_left{
+    display: inline-block;
+    width:15px;
+    border-bottom:solid;
+    margin-bottom:5%;
+}
+#animation_xaxis_right_line_right{
+    display: inline-block;
+    width:15px;
+    border-bottom:solid;
+    margin-bottom:5%;
+}
+
+#animation_yaxis_top_line_top {
+    transform: rotate(90deg);
+    border-left:solid;
+    margin-left:5%;
+}
+#animation_yaxis_top_line_bottom {
+    transform: rotate(90deg);
+    border-left:solid;
+    margin-left:5%;
+}
+#animation_yaxis_bottom_line_top {
+    transform: rotate(90deg);
+    border-left:solid;
+    margin-left:5%;
+}
+#animation_yaxis_bottom_line_bottom {
+    transform: rotate(90deg);
+    border-left:solid;
+    margin-left:5%;
 }
 
 #animation_xaxis_left {
@@ -267,12 +317,14 @@ img.thumb {
     top: 0px;
     position: absolute;
     transform: translate(-50%, -150%);
+    text-align: center;
 }
 
 #animation_yaxis_bottom {
     bottom: 0px;
     position: absolute;
     transform: translate(-50%, 150%);
+    text-align:center;
 }
 
 #animation_l, #animation_im, #animation_b, #animation_it, #animation_mg, #animation_welcome {
