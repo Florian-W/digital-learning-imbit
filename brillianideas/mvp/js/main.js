@@ -51,8 +51,6 @@ $(document).ready(function (event) {
         console.log(e.target);
         if (target.is('#impressumLink')) {
             displaySplash('Impressum');
-        } else if (target.is('#searchButton')) {
-        	displaySplash('Suche');
     	} else if (target.is('#overlay')) {
             $('#overlay').fadeOut().children().fadeOut();
         } else if (target.is(".flipcard .flipcard_IMBIT .face.front")) {
