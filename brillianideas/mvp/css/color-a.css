@@ -16,6 +16,7 @@
 }
 
 body {
+	font-family: 'Caveat Brush';
     background-color: var(--background);
     color: var(--text);
     background-image: url('../img/brillainIDEAS_UX_20170202_Oktopus-Tentakel4_F.png');
