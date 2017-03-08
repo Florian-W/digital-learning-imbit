@@ -96,7 +96,7 @@
                     <xsl:for-each select="Categories/NewContentItems">
                         <xsl:element name="div">
                             <xsl:attribute name="id">
-                                <xsl:value-of select="Abbr"/>
+                                <xsl:value-of select="NewContent_Video"/>
                             </xsl:attribute>
                             <xsl:attribute name="class">
                                 <xsl:text>flipcard</xsl:text>
@@ -106,7 +106,7 @@
                                     <xsl:text>face front</xsl:text>
                                 </xsl:attribute>
                                 <xsl:attribute name="data-target">
-                                    <xsl:value-of select="Abbr"/>
+                                    <xsl:value-of select="NewContent_Video"/>
                                 </xsl:attribute>
                                 <xsl:value-of select="NewContent_Name"/>
                             </xsl:element>
@@ -115,7 +115,7 @@
                                     <xsl:text>face back</xsl:text>
                                 </xsl:attribute>
                                 <xsl:attribute name="data-bind">
-                                    <xsl:value-of select="Abbr"/>
+                                    <xsl:value-of select="NewContent_Video"/>
                                 </xsl:attribute>
                                 
 								
@@ -131,7 +131,7 @@
 									<xsl:attribute name="height">315</xsl:attribute>
 									<xsl:attribute name="src">https://www.youtube.com/embed/<xsl:value-of select="NewContent_Video"/></xsl:attribute>
 									<xsl:attribute name="frameborder">0</xsl:attribute>
-									<xsl:attribute>allowfullscreen</xsl:attribute>
+									<xsl:attribute name="allowfullscreen">allowfullscreen</xsl:attribute>
 									</xsl:element>
 								</xsl:element>
 
@@ -146,28 +146,9 @@
 								
 								
 								
-								
-                                	<xsl:attribute name="class">
-                                		<xsl:text></xsl:text>
-                                	</xsl:attribute>
-                                	<xsl:element name="h1">
-										<xsl:value-of select="Group-Name" />
-									</xsl:element>
-									<xsl:for-each select="Classes">
-										<xsl:element name="div">
-											<xsl:attribute name="class">
-												<xsl:text>vorlesung flipcard</xsl:text>
-											</xsl:attribute>
-											<xsl:element name="div">
-												<xsl:attribute name="class">
-		                                   			<xsl:text>face front</xsl:text>
-		                               			</xsl:attribute>
-		                               			<xsl:value-of select="Name">
-												</xsl:value-of>
-											</xsl:element>
-										</xsl:element>
-									</xsl:for-each>
-                                </xsl:element>
+
+									
+                 
                             </xsl:element>
                         </xsl:element>
                     </xsl:for-each>
