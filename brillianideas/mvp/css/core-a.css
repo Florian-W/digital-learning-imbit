@@ -183,7 +183,7 @@ img.thumb {
     z-index: 1002;
 }
 
-#footer, #header {
+#footer {
     width: calc(100vw - 50px);
     left: 0px;
     position: fixed;
@@ -194,30 +194,6 @@ img.thumb {
 #footer{
     bottom: 0px;
     padding: 25px;
-}
-#header{
-    top:0px;
-    padding: 15px 25px;
-}
-
-#header form > *, #header form > *:focus{
-    border: none;
-    background: transparent;
-    height: calc(11pt + 20px);
-    color: var(--text);
-    font-size: 120%;
-    outline:none;
-}
-
-#header form > button {
-    padding: 0;
-    margin: 0;
-    width: 20px;
-}
-#header form > input {
-    margin: 0;
-    padding: 0 15px;
-    width: calc(100vw - 140px);
 }
 
 #backlayer {

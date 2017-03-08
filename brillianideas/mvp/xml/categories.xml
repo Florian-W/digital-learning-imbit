@@ -316,4 +316,14 @@ Quelle: https://wiki.zum.de/wiki/Wikis_in_der_Schule</Description>
 			<Group>Business</Group>
 		</Classes>
 	</Groups>
+	<Groups>
+		<Group-Name>Methodische Grundlagen</Group-Name>
+		<Abbr>MG</Abbr>
+		<Classes>
+			<Name>Test</Name>
+			<Number>W3WI_0815</Number>
+			<Thumb></Thumb>
+			<Group>Methodische Grundlagen</Group>
+		</Classes>
+	</Groups>
 </Categories>

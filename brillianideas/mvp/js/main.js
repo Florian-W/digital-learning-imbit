@@ -51,8 +51,6 @@ $(document).ready(function (event) {
         console.log(e.target);
         if (target.is('#impressumLink')) {
             displaySplash('Impressum');
-        } else if (target.is('#searchButton')) {
-        	displaySplash('Suche');
     	} else if (target.is('#overlay')) {
             $('#overlay').fadeOut().children().fadeOut();
         } else if (target.is(".flipcard .flipcard_IMBIT .face.front")) {
@@ -87,20 +85,7 @@ $(document).ready(function (event) {
             $('.flipped').removeClass('flipped');
             window.location = '#';
             target.fadeOut();
-        } else if (target.is('#voiceSearch img')) {
-            if ($recognition.isRecording) $recognition.stopDictation(); else $recognition.startDictation($('#searchField'), {
-                continous: true,
-                interimResults: true,
-                maxAlternatives: 1
-            });
-        } else if(target.is('#homeButton, #homeButton *')){
-            var event = jQuery.Event('click');
-            event.target = $('#overlay')[0];
-            $('body').trigger(event);
-            var event2 = jQuery.Event('click');
-            event2.target = $('#backlayer')[0];
-            $('#body').trigger(event2);
-        }
+        } 
     });
 
     // Start Animation
