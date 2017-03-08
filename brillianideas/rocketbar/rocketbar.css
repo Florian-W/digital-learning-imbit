@@ -8,6 +8,7 @@ body{
 	height: auto; 
 }
 
+
 .expstickybar{
 position:fixed;
 color: black;
@@ -27,14 +28,16 @@ font-weight:bold;
 }
 
 #rb_toggle{
-	width: 48; 
+	background-color: rgba(148, 148, 148, 1);
+	width: 48px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
 	position: relative;
 	float:left;
 	left: 1%;
 }
 .content{
-	background-color: rgba(148, 148, 148, 0.8);
-	/*background: #949494;*/
+	background-color: rgba(148, 148, 148, 1);
 	display: table; 
 	width: 100%; 
 	left: auto; 
@@ -43,7 +46,7 @@ font-weight:bold;
 }
 
 .content img{
-	width: 10vw;
+	width: 9vw;
 	height: auto; 
-	padding-top: 10%;
+	padding-top: 7%;
 }
