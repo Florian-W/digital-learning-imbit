@@ -143,12 +143,7 @@
 <xsl:element name="div">
  <!-- The Button to put here -->
 </xsl:element>
-								
-								
-								
 
-									
-                 
                             </xsl:element>
                         </xsl:element>
                     </xsl:for-each>
