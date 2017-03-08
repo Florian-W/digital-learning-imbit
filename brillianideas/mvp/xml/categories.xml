@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Categories>
 	<LearningType>
-		<Medium>Virtual Classrooms</Medium>
+		<Medium>Virtual&#13;&#10;Classrooms</Medium>
 		<Abbr>vc</Abbr>
 		<Description>Ein virtuelles Klassenzimmer bezeichnet Lehrszenarien, in denen das Internet als Kommunikationsmedium für räumlich getrennte Lehrende und Lernende genutzt wird. Durch den Einsatz von Lernplattformen, Webcams, VoIP oder gar Whiteboards kann sowohl eine Sicht-, Hör- und Sprechverbindung der Beteiligten als auch ein gemeinsames und gleichzeitiges Bearbeiten von Dokumenten ermöglicht werden.Deshalb eignet sich dieses Lernform besonders um einzelne Lerninhalte zu verinnerlichen unabhängig von der Distanz.</Description>
 		<Thumb>https://c5.staticflickr.com/9/8891/28845999836_8a1da67949_b.jpg</Thumb>
 	</LearningType>
 	<LearningType>
-		<Medium>Interaktive Whiteboards</Medium>
+		<Medium>Interaktive&#13;&#10;Whiteboards</Medium>
 		<Abbr>iw</Abbr>
 		<Description>Ein interaktives Whiteboard - oder eine "digitale Tafel" - ist eine elektronische Projektionswand bzw. eine Weißwandtafel, die in Verbindung mit einem Computer und einem Projektor/Beamer funktioniert. Häufig werden Whiteboards innerhalb von Vorlesungen eingesetzt. Die Vorteile dieses Lernmediums liegen auf der Hand: Bessere Präsentationsmöglichkeiten von Unterrichtsinhalten, ein hohes Maß an Motivation und eine Vielzahl von Interaktionsmöglichkeiten.Letztendlich können mit Hilfe von interaktiven Whiteboards alle Medien wie Text, Grafik, Bilder, Animationen, Töne und Filme präsentiert werden.</Description>
 		<Thumb>https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Interactive_whiteboard2.jpg/640px-Interactive_whiteboard2.jpg</Thumb>
@@ -25,7 +25,7 @@
 		<Thumb>./img/thumbs/chat.jpg</Thumb>
 	</LearningType>
 	<LearningType>
-		<Medium>Virtuelle 3D-Welten</Medium>
+		<Medium>Virtuelle&#13;&#10;3D-Welten</Medium>
 		<Abbr>3dwelt</Abbr>
 		<Description>Virtuelle Welten sind Lernumgebungen innerhalb deren die Anwender in Form eines virtuellen Charakters, (Avatar) handeln und mit anderen Nutzern kommunizieren können. Dieser Avatar verfügt über bestimmte Merkmale und Fähigkeiten, die erweitert und verändert werden können. Genutzt werden virtuelle Welten unter anderem für Rollenspiele, Gruppenarbeiten, virtuelle Klassenzimmer sowie zur kooperativen Gestaltung von Objekten. Studien haben bewiesen, dass sich die verstärkte Präsenzerfahrung in virtuellen Welten positiv auf das Engagement und die informellen Lernprozesse der Studierenden auswirken. Mit virtuellen Welten können verschiedenen Lerntypen und -stile unterstützt werden, allerdings hängt der erfolgreiche Einsatz stark von der Usability und den technischen Rahmenbedingungen, wie Hardware oder Netzwerk, an der Universität bzw. auf Seiten des Anwenders ab.</Description>
 		<Thumb>https://upload.wikimedia.org/wikipedia/commons/e/ef/VR-Helm.jpg</Thumb>
@@ -49,7 +49,7 @@
 		<Thumb>https://upload.wikimedia.org/wikipedia/commons/f/f7/Immortal_game.jpg</Thumb>
 	</LearningType>
 	<LearningType>
-		<Medium>Blended Learning</Medium>
+		<Medium>Blended&#13;&#10;Learning</Medium>
 		<Abbr>bl</Abbr>
 		<Description>Blended Lerning (dt. Integriertes Lernen) ist eine Mischform unterschiedlicher Lernprinzipien. Es vereint zumeist Elemente von Präsenzunterricht, E-Learnings und Selbstbildung, wobei das Verhältnis dieser Elemente zueinander variieren kann. E-Learnings und Arbeitsmaterialien zur selbständigen Bearbeitung können beispielsweise zum Vor- und Nachbereiten des Präsenzunterrichts dienen, oder aber der Hauptbestandteil sein, sodass gelegentliche Face-to-Face Sitzungen hauptsächlich unterstützend im Umgang mit den Lernmaterialien wirken. So kann der Lernprozess einerseits effektiv und flexibel gestaltet werden, z.B. durch E-Learnings mit anpassbaren Schwierigkeitsniveaus, und beinhaltet andererseits auch Elemente der sozialen Interaktion sowie die Möglichkeit das Wissen im Gespräch zu vertiefen.</Description>
 		<Thumb>https://c1.staticflickr.com/9/8167/7704609288_14d335dd87_b.jpg</Thumb>
@@ -76,7 +76,7 @@ Quelle: http://www.stangl-taller.at/ARBEITSBLAETTER/LERNTECHNIK/Lerntagebuch.sht
 		<Thumb>https://c1.staticflickr.com/3/2075/2256550558_1315e0e881_z.jpg?zz=1</Thumb>
 	</LearningType>
 	<LearningType>
-		<Medium>Microblogging/Twitter</Medium>
+		<Medium>Microblogging/&#13;&#10;Twitter</Medium>
 		<Abbr>twitter</Abbr>
 		<Description>Microblogging, wie etwa Twitter, eignen sich hervorragend um "Häppchenweise" wissen zu vermitteln, wie etwa kurze Fakten.</Description>
 		<Thumb>https://upload.wikimedia.org/wikipedia/commons/a/a6/The_age_of_microblogging.jpg</Thumb>
@@ -103,13 +103,13 @@ Quelle: https://wiki.zum.de/wiki/Wikis_in_der_Schule</Description>
 		<Thumb>./img/thumbs/film.png</Thumb>
 	</LearningType>
 	<LearningType>
-		<Medium>Augmented Reality</Medium>
+		<Medium>Augmented&#13;&#10;Reality</Medium>
 		<Abbr>ar</Abbr>
 		<Description>Unter Augmented Reality versteht man die computergestützte Erweiterung der Wahrnehmung der Realität. Dabei können beispielsweise Bilder oder Vidoes über Einblendungen oder Überlagerungen so dargestellt werden als wären diese in der Realität zu sehen. Zur Darstellung der Augmented Reality wird meistens eine Kamera, Software und GPS, sowie verschiedene Sensoren verwendet. Mithilfe dieser können beispielsweise Kamerabilder mit Informationen zu Sehenswürdigkeiten oder Strassennamen ergänzt werden.</Description>
 		<Thumb>https://upload.wikimedia.org/wikipedia/commons/5/51/Augmented_reality_at_Museu_de_Matar%C3%B3_linking_to_Catalan_Wikipedia_(18).JPG</Thumb>
 	</LearningType>
 	<LearningType>
-		<Medium>CBT WBT</Medium>
+		<Medium>CBT/ WBT</Medium>
 		<Abbr>cbtwbt</Abbr>
 		<Description>CBT ist ein neues Zeitalter des Lernens. Es ist eine Form der Ausbildung, in der ein Schüler lernt, indem er spezielle Trainingsprogramme verwendet, während an einem Computer ist. Dieses System funktionierte gut in den Tagen vor dem Internet, aber mit der explosiven Nutzung des Internets, ist der Umfang der CBTs gezwungen, sich zu erweitern. Es hat mehrere Vorteile gegenüber traditionellen Klassenzimmer-Lernmethoden und über selbst-gelehrte Bücher. WBT ist eine Teilmenge von CBTs, in denen das Material durch das Anwenden von Web-Technologien im Internet zugänglich gemacht wird. Typischerweise hat es Text und Grafiken, Animation, Audio und Video, und braucht zusätzliche Bandbreite und Software, um optimal zu arbeiten. WBT wird auch als "Online-Kurse" und "Web-basierte Instruktion" bezeichnet.</Description>
 		<Thumb>https://upload.wikimedia.org/wikipedia/commons/b/b0/KSTBB_EFDL_Europ%C3%A4ischer_Finanzf%C3%BChrerschein_Online-Pr%C3%BCfung_2015.jpg</Thumb>
@@ -121,13 +121,13 @@ Quelle: https://wiki.zum.de/wiki/Wikis_in_der_Schule</Description>
 		<Thumb>https://upload.wikimedia.org/wikipedia/commons/f/f5/Fahr-Simulation.jpg</Thumb>
 	</LearningType>
 	<LearningType>
-		<Medium>Interaktive e-books</Medium>
+		<Medium>Interaktive&#13;&#10;e-books</Medium>
 		<Abbr>ebook</Abbr>
 		<Description>Interaktive E-Books erweitern die Textinhalte der E-Books um multimediale Inhalte wie Audios und Videos. Der Leser interagiert mit den Inhalten beispielsweise via Mausklick, drag-and-drop oder durch weitere Benutzeraktionen.</Description>
 		<Thumb>https://www.jisc.ac.uk/sites/default/files/tablet_device.jpg</Thumb>
 	</LearningType>
 	<LearningType>
-		<Medium>Learning on demand</Medium>
+		<Medium>Learning&#13;&#10;on demand</Medium>
 		<Abbr>lod</Abbr>
 		<Description>Mit Learning-on-Demand werden Studierende zielbezogener auf unmittelbar bevorstehende Themen und Aufgaben vorbereitet. Diese Lernform kann nicht nur zeit-, sondern auch ortsunabhängig in Anspruch genommen werden. Die Ortsunabhängigkeit birgt die Gefahr, dass das Lernen aufgrund störender Umgebungseinwirkungen unterbrochen wird. Daneben besteht das Risiko, dass die Studierenden zunehmend nur unter Zeitdruck und sehr oberflächlich lernen, da sie erst mit dem Lernen beginnen, wenn die Notwendigkeit gegeben ist. Tendenziell sorgt Learning-on-Demand aber für einen effektiven und effizienten Transfer der erlernten Inhalte.</Description>
 		<Thumb>https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/AWS_Simple_Icons_On-Demand_Workforce_Amazon_Mechanical_Turk_Requester.svg/2000px-AWS_Simple_Icons_On-Demand_Workforce_Amazon_Mechanical_Turk_Requester.svg.png</Thumb>
