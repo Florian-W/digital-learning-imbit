@@ -126,7 +126,13 @@
 								</xsl:element>
 
 								<xsl:element name="div">
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/BPzhtl0D-M8" frameborder="0" allowfullscreen></iframe>
+									<xsl:element name="iframe">
+									<xsl:attribute name="width">560</xsl:attribute>
+									<xsl:attribute name="height">315</xsl:attribute>
+									<xsl:attribute name="src">https://www.youtube.com/embed/<xsl:value-of select="NewContent_Video"/></xsl:attribute>
+									<xsl:attribute name="frameborder">0</xsl:attribute>
+									<xsl:attribute>allowfullscreen</xsl:attribute>
+									</xsl:element>
 								</xsl:element>
 
 <xsl:element name="div">
