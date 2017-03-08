@@ -56,6 +56,9 @@ function prepareTransformCategorie($base){
             case 'class':
                 transformCategorie($base, 'class');
                 break;
+			case 'newcontent':
+                transformCategorie($base, 'newcontent');
+                break;
             case 'learning':
                 if(isset($_GET['detail'])){
                     switch ($_GET['detail']){
