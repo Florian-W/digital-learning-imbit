@@ -22,9 +22,8 @@ button:hover {
     -moz-perspective: 800;
     -webkit-perspective: 800;
     margin: 0;
-    //*border: solid 0.3em;*//
 	border: none;
-    font-family: Georgia;
+    font-family: 'Tinos';
     transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
@@ -46,9 +45,11 @@ button:hover {
 
 
 .flipcard.IMBIT_Weg{
+	/* given height and width only for "toplevel" flipcard
 	width: 150pt !important;
-    height: 150pt !important;
-    background-color: var(--color-bordeaux);
+    height: 150pt !important;*/
+    background-color: var(--color-bordeaux) !important;
+    font-size: 150%;
 }
 
 .flipcard:not(.flipped) {
@@ -57,8 +58,7 @@ button:hover {
 }
 
 .flipcard, .flipcard .face {
-    /*border-radius: 50%;
-    background-color: transparent;*/
+    background-color: inherit;
 }
 
 .flipcard.flipped .face {
@@ -80,13 +80,14 @@ button:hover {
     -webkit-transform: rotatey(-180deg);
     z-index: 4;
     cursor: auto;
+    background-color: var(--background-highlight);
 }
 
 .flipcard .face {
     padding: 1em;
     text-align: center;
     position: absolute;
-    height: calc(100% - 2em);
+    height: calc(100% - 0em);
     width: calc(100% - 2em);
     transition: 1s;
     -moz-transition: 1s;
@@ -101,6 +102,7 @@ button:hover {
 }
 
 .flipcard .front {
+	/* color of text */
     color: white;
 }
 
@@ -108,14 +110,15 @@ button:hover {
     font-weight: bold;
 }
 
-.flipcard.flipped .front {
-}
-
 .flipcard .back {
     transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     overflow: auto;
+}
+
+.flipcard .flipped .back {
+	background-color: var(--background-highlight);
 }
 
 img.thumb {
@@ -163,39 +166,6 @@ img.thumb {
     max-height: 500px;
 }
 
-
-#overlay {
-    display: none;
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 1001;
-}
-
-#Impressum {
-    position: absolute;
-    display: none;
-    background-color: inherit;
-    padding: 1em;
-    z-index: 1002;
-}
-
-#footer {
-    width: calc(100vw - 50px);
-    left: 0px;
-    position: fixed;
-    background-color: rgba(128, 128, 128, 0.5);
-    z-index: 1003;
-}
-
-#footer{
-    bottom: 0px;
-    padding: 25px;
-}
-
 #backlayer {
     position: fixed;
     left: 50%;
@@ -233,28 +203,28 @@ img.thumb {
     width: 0px;
 }
 
+.axistext {
+	font-family: 'Caveat Brush';
+}
+
 #animation_xaxis_left_line_left{
     display: inline-block;
     width:15px;
-    border-bottom:solid;
     margin-bottom:5%;
 }
 #animation_xaxis_left_line_right{
     display: inline-block;
     width:15px;
-    border-bottom:solid;
     margin-bottom:5%;
 }
 #animation_xaxis_right_line_left{
     display: inline-block;
     width:15px;
-    border-bottom:solid;
     margin-bottom:5%;
 }
 #animation_xaxis_right_line_right{
     display: inline-block;
     width:15px;
-    border-bottom:solid;
     margin-bottom:5%;
 }
 
@@ -303,7 +273,7 @@ img.thumb {
     text-align:center;
 }
 
-#animation_l, #animation_im, #animation_b, #animation_it, #animation_mg, #animation_welcome {
+#animation_l, #animation_im, #animation_b, #animation_it, #animation_mg, #animation_welcome, #animation_newContent {
     z-index: 1;
     font-family: 'Caveat Brush';
     font-size: 50pt;
@@ -332,6 +302,15 @@ img.thumb {
 #animation_mg{
     left: 50vw !important;
     top: 50vh !important;
+}
+
+#animation_newContent{
+    left: 50vw !important;
+    top: 50vh !important;
+}
+
+#grid > .flipcard {
+	white-space: pre-line;
 }
 
 @media only screen
