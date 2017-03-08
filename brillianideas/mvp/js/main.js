@@ -18,7 +18,7 @@ $(document).ready(function (event) {
             !(
                 $('#animation_yaxis_top').height() > $('#animation_yaxis_bottom').height()
             ) ? $('#animation_yaxis_bottom').height() : $('#animation_yaxis_top').height()
-        )) * 2),
+        )) * 2) + $('#footer').outerHeight(),
         xoffset: 2 * (
             (
                 $('#animation_xaxis_left').width() > $('#animation_xaxis_right').width()
@@ -33,11 +33,27 @@ $(document).ready(function (event) {
     $display.width = $(window).width() - 2 * $display.xoffset;
     $display.height = $(window).height() - 2 * $display.yoffset;
 
+    $recognition = VoiceRecognition;
+
     //TRIGGER
+    $('#searchField').on('keyup change', function(e){
+        var target = $('#searchField');
+        if (target.val() == ''){
+            $('#overlay').fadeOut().children('.learning').remove();
+        } else {
+            $('#overlay').children('.learning').remove();
+            console.log(target.val());
+            $('.list > .learning:contains("'+target.val() + '")').clone().appendTo('#overlay').fadeIn().parent().fadeIn();
+        }
+    }).parent().on('submit', function(){return false;});
     $('body').click(function (e) {
         var target = $(e.target);
         console.log(e.target);
-        if (target.is(".flipcard .flipcard_IMBIT .face.front")) {
+        if (target.is('#impressumLink')) {
+            displaySplash('Impressum');
+    	} else if (target.is('#overlay')) {
+            $('#overlay').fadeOut().children().fadeOut();
+        } else if (target.is(".flipcard .flipcard_IMBIT .face.front")) {
             target.parent().children('.back').css('display', 'block');
             target.parent().toggleClass('flipped');
             $('#backlayer').toggle();
@@ -95,6 +111,14 @@ $.fn.center = function () {
             $(window).scrollLeft()) + "px"
     );
     return this;
+};
+/**
+ *
+ * @param id
+ */
+var displaySplash = function displaySplash(id) {
+    $("#overlay").fadeIn();
+    $("#" + id).fadeIn().center();
 };
 
 var walkToPath = function walkToPath(){
