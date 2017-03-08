@@ -20,7 +20,7 @@ body {
     color: var(--text);
     background-image: url('../img/brillainIDEAS_UX_20170202_Oktopus-Tentakel4_F.png');
     background-repeat: no-repeat;
-    background-position-y: -40px;
+    background-position: 0px -40px;
 }
 
 .flipcard .face{
