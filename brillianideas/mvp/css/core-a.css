@@ -190,7 +190,7 @@ img.thumb {
 }
 
 .axis {
-    border: 0;
+    border: 0px solid;
 }
 
 .axis.x {
@@ -205,48 +205,6 @@ img.thumb {
 
 .axistext {
 	font-family: 'Caveat Brush';
-}
-
-#animation_xaxis_left_line_left{
-    display: inline-block;
-    width:15px;
-    margin-bottom:5%;
-}
-#animation_xaxis_left_line_right{
-    display: inline-block;
-    width:15px;
-    margin-bottom:5%;
-}
-#animation_xaxis_right_line_left{
-    display: inline-block;
-    width:15px;
-    margin-bottom:5%;
-}
-#animation_xaxis_right_line_right{
-    display: inline-block;
-    width:15px;
-    margin-bottom:5%;
-}
-
-#animation_yaxis_top_line_top {
-    transform: rotate(90deg);
-    border-left:solid;
-    margin-left:5%;
-}
-#animation_yaxis_top_line_bottom {
-    transform: rotate(90deg);
-    border-left:solid;
-    margin-left:5%;
-}
-#animation_yaxis_bottom_line_top {
-    transform: rotate(90deg);
-    border-left:solid;
-    margin-left:5%;
-}
-#animation_yaxis_bottom_line_bottom {
-    transform: rotate(90deg);
-    border-left:solid;
-    margin-left:5%;
 }
 
 #animation_xaxis_left {
@@ -309,6 +267,7 @@ img.thumb {
     top: 50vh !important;
 }
 
+/*enables line breaks out of XML using &#13;&#10; as Carriage Return Line Feed*/
 #grid > .flipcard {
 	white-space: pre-line;
 }

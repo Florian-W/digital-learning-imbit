@@ -1,8 +1,11 @@
 /**
  * Created by nick.london on 20.02.2017.
+ * builds the grid with the flipcards,
+ * spreads the learnings across the grid (currently hardcoded)
  */
 var makeGrid = function makeGrid(view){
     switch (view){
+    		//Learnings by Type
         case 'digitalLearning':
             $.when(
                 $.ajax('xml/index.php?base=grid&type=learning').done(function (data) {
@@ -45,7 +48,9 @@ var makeGrid = function makeGrid(view){
                             $('#ps').css('left', Math.floor(0.38738739 * $display.width)).css('top', Math.floor(0.28181818 * $display.height)).attr('data-sid', '22'),
                             $('#iw').css('left', Math.floor(0.35521236 * $display.width)).css('top', Math.floor(0.075 * $display.height)).attr('data-sid', '23'),
                             // TODO: data-left data-right und data-sid in xml+xsl einpflegen und schnließend unten einbauen (by Nick L.)
-                            $('#grid').css('opacity', 1)
+                            $('#grid').css('opacity', 1),
+                            $('#yaxis').animate({opacity: 0}, {duration: 1000}),
+                            $('#xaxis').animate({opacity: 0}, {duration: 1000})
                         ).done(function () {
                             var deferredArray = [];
                             $('#grid').children('.flipcard').sort(function (a, b) {
