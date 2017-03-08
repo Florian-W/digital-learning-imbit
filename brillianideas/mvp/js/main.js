@@ -39,7 +39,9 @@ $(document).ready(function (event) {
         console.log(e.target);
         if (target.is(".flipcard .face.front")) {
             target.parent().children('.back').css('display', 'block');
+            	//toggleClass(foo) adds foo as class attribute
             target.parent().toggleClass('flipped');
+            	//toggle() shows/ hides element depending on current state
             $('#backlayer').toggle();
             if(location.hash.indexOf(target.data('target')) != -1){
                 window.location = '#' + window.location.hash.substr(1).split('.').slice(0, -1).join('.');
@@ -97,6 +99,10 @@ $.fn.center = function () {
     return this;
 };
 
+/**
+ * should be used for back and forth browser functions
+ * should use URL to open/ close next/last (DOM) element
+ */
 var walkToPath = function walkToPath(){
     $newPosition = window.location.length > 1 ?
         window.location.hash.substr(1).split('.') : [];
@@ -108,6 +114,9 @@ var walkToPath = function walkToPath(){
     }
 };
 
+/**
+ * opens (DOM) element or element chain according to URL
+ */
 var openPath = function openPath(){
     var path = window.location.hash.substr(1).split('.');
     if (path.length > 0){
