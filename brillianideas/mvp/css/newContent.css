@@ -28,7 +28,6 @@ button:hover {
     margin: 0;
     //*border: solid 0.3em;*//
 	border: none;
-    font-family: Georgia;
     transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
@@ -37,7 +36,7 @@ button:hover {
     -webkit-transition: 1s;
     cursor: pointer;
     position: relative;
-	width: 150pt;
+	width: 200pt;
     height: 50pt;
 }
 
@@ -61,8 +60,8 @@ button:hover {
     height: inherit;
     border-radius: 1em;
     position: absolute;
-    left: -8px !important;
-    top: -8px !important;
+    left: 104px !important;
+    top: 33px !important;
     perspective: 1600;
     -moz-perspective: 1600;
     -webkit-perspective: 1600;
@@ -505,8 +504,8 @@ p{
 			height: 100%;
 			width: 100%;
 			bottom: 5%;
-			max-height: 300px;
-			max-width: 300px;
+			max-height: 250px;
+			max-width: 250px;
 			display: block;
 			margin-left: auto;
 			margin-right: auto

@@ -128,8 +128,8 @@ var makeGrid = function makeGrid(view){
             $.when(
                 $.ajax('xml/index.php?base=grid&type=class').done(function (data) {
                     $('#site').append(data);
-                    $('#grid').css("width", $display.width).css("height", $display.height).append('<div id="backlayer"></div>');
-                }),
+					$('#grid').css("width", $display.width).css("height", $display.height).append('<div id="backlayer"></div>');
+					}),
                 $('#animation_newContent').animate({opacity: 1}, {duration: 1000})
             ).done(function () {
                         $.when(
