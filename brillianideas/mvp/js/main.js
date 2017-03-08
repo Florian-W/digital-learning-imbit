@@ -37,7 +37,7 @@ $(document).ready(function (event) {
     $('body').click(function (e) {
         var target = $(e.target);
         console.log(e.target);
-        if (target.is(".flipcard .flipcard_IMBIT .face.front")) {
+        if (target.is(".flipcard .face.front")) {
             target.parent().children('.back').css('display', 'block');
             target.parent().toggleClass('flipped');
             $('#backlayer').toggle();
