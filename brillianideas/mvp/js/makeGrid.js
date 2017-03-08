@@ -131,7 +131,7 @@ var makeGrid = function makeGrid(view){
             $display.width = $display.width - 208;
             $display.height = $display.height - 66;
             $.when(
-                $.ajax('xml/index.php?base=grid&type=class').done(function (data) {
+                $.ajax('xml/index.php?base=grid&type=newcontent').done(function (data) {
                     $('#site').append(data);
 					$('#grid').css("width", $display.width).css("height", $display.height).append('<div id="backlayer"></div>');
 					}),
