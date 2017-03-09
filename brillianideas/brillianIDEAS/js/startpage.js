@@ -181,9 +181,9 @@ $(document).on("pageinit",function(){
 	//document.getElementById("rb_toggle").click();
 	//var pathname = $(location).attr("href");
 	jQuery('#imageTwo').append('<img id="kopf" src="img/kopf.gif" style="marginBottom:0px; visibility:hidden;"/>');
-	//jQuery('#kopf').fadeOut();
-	var left = jQuery('#le').attr("href");
-	var right = jQuery('#pr').attr("href");
+//	Query('#kopf').fadeOut();
+//	var left = jQuery('#le').attr("href");
+//	var right = jQuery('#pr').attr("href");
 	var timeoutID;
 	var tracker;
 	var navbarheight;
@@ -219,10 +219,8 @@ $(document).on("pageinit",function(){
 	}
  
 	function goInactive() {
-	    // do something
-		jQuery('#kopf').css("visibility", "visible");
+	    jQuery('#kopf').css("visibility", "visible");
 		jQuery("#kopf").fadeIn();
-		//jQuery('#imageTwo').append('<img id="kopf" src="img/brillianIDEAS_UX_20170304_Animation_Kopf_D.gif" style="marginBottom:'+ navbarheight +'"/>');
 		tracker = 1;
 	}
 	function removeImg(){
@@ -241,19 +239,47 @@ $(document).on("pageinit",function(){
 	    startTimer();
 	}
 	
-	jQuery("body").on("swiperight",function(){
+	/**
+	 * 
+	 * @param left is navigation leftwards
+	 * @returns true if successfull
+	 */
+	function changePage(left){
+		if (typeof left != "boolean"){
+			return false;
+		}
+		var current = jQuery('.current');
+		var target = left ? current.prev() : current.next();
 		
-		location.href=right;
+		if (target.length == 0){
+			return false;
+		}
+		
+		current.toggleClass('current');
+		target.toggleClass('current');
+		
+		jQuery.ajax({
+			url: target.find('a').attr('href')
+		}).done(function(data){
+			jQuery('#content').empty().append(data);
+		})
+		
+		
+		
+		return true;
+	}
+	
+	jQuery("body").on("swiperight",function(){
+		console.log('User swiped right')
+		changePage(true);
 	});                       
 	jQuery("body").on("swipeleft",function(){
-		
-		location.href=left;
+		changePage(false);
 	});
-	/*jQuery("#rb_toggle").on("click", function(){
-		jQuery('#tentakel').css("margin-bottom", "0px");
-	});*/
+
   
 });
+
 
 jQuery.noConflict()
 
@@ -382,7 +408,7 @@ var mystickybar=new expstickybar({
 	position:'bottom', //'top' or 'bottom'
 	revealtype:'manual', //'mouseover' or 'manual'
 	peekamount:40, //number of pixels to reveal when sticky bar is closed
-	externalcontent:'/brillianideas/content/rocketbarcontent.htm', //path to sticky bar content file on your server, or "" if content is defined inline on the page
+	externalcontent:'./content/rocketbarcontent.htm', //path to sticky bar content file on your server, or "" if content is defined inline on the page
 	speed:500 //duration of animation (in millisecs)
 })
 
