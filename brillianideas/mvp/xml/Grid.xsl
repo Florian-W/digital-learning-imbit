@@ -57,13 +57,8 @@
                                 <xsl:attribute name="data-target">
                                     <xsl:value-of select="Abbr"/>
                                 </xsl:attribute>
-                                <xsl:element name="span">
-                       				<xsl:attribute name="class">
-                       					<xsl:text>groupname</xsl:text>
-                       				</xsl:attribute>
-                           			<xsl:value-of select="Group-Name">
-									</xsl:value-of>
-                       			</xsl:element>
+                                <xsl:value-of select="Group-Name">
+								</xsl:value-of>
                             </xsl:element>
                             <xsl:element name="div">
                                 <xsl:attribute name="class">
@@ -82,15 +77,16 @@
 									<xsl:for-each select="Classes">
 										<xsl:element name="div">
 											<xsl:attribute name="class">
-												<xsl:text>vorlesung flipcard</xsl:text>
+												<xsl:text>vorlesung</xsl:text>
 											</xsl:attribute>
+											<xsl:value-of select="Name">
+											</xsl:value-of>
+											<!--
 											<xsl:element name="div">
 												<xsl:attribute name="class">
-		                                   			<xsl:text>face front</xsl:text>
+		                                   		<xsl:text>face front</xsl:text>
 		                               			</xsl:attribute>
-		                               			<xsl:value-of select="Name">
-												</xsl:value-of>
-											</xsl:element>
+											</xsl:element>-->
 										</xsl:element>
 									</xsl:for-each>
                                 </xsl:element>
