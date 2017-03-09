@@ -141,7 +141,13 @@
 </xsl:element>
 
 <xsl:element name="div">
- <!-- The Button to put here -->
+<xsl:element name="button">
+<xsl:attribute name="jsonFileName"><xsl:value-of select="jsonFileName"/></xsl:attribute>
+<xsl:attribute name="type">button</xsl:attribute>
+<xsl:attribute name="class"><xsl:value-of select="ButtonClass"/></xsl:attribute>
+<xsl:attribute name="id">clickMe</xsl:attribute>
+Quiz
+</xsl:element>
 </xsl:element>
 
                             </xsl:element>
