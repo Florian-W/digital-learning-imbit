@@ -9,6 +9,10 @@
 <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
 
     <link rel="stylesheet" href="../rocketbar/expstickybar.css" />
+    <!-- <link rel="stylesheet" href="../mvp/css/color-a.css" />
+      <link rel="stylesheet" href="../mvp/css/color-b.css" />
+    <link rel="stylesheet" href="../mvp/css/core-a.css" /> -->
+    <!-- <script src="../mvp/js/main.js"></script> -->
   	<!-- <script src="../../rocketbar/4/rocketbar.js"></script> -->
     <!-- test lokal -->
     <!-- <script src="../../../4/rocketbar.js"></script> -->
@@ -19,7 +23,7 @@
 <script type="text/javascript" src="jquery/jquery.min.js"></script>
 <script type="text/javascript" src="jquery/jquery.easyui.min.js"></script>
 <script type="text/javascript" src="jquery/jquery.easyui.mobile.js"></script>
-<!-- <script src="controller.js"></script> -->
+<script src="controller.js"></script>
 
 <script type="text/javascript">
 			$(document).ready(function() {
@@ -62,7 +66,7 @@
 				// in der index.html wird dann die controller.js geladen und der Parameter ausgelesen
 				function openQuiz(idOfButtonClicked) {
 
-          if(idOfButtonClicked== "clickMe" || idOfButtonClicked== "clickmeYesNo" ) {
+          if(idOfButtonClicked== "quizWertkettenmodell" || idOfButtonClicked== "quizSt-Galler-Management-Modell" || idOfButtonClicked == "quizBusinessCanvas" || idOfButtonClicked == "quizOekonomischesPrinzip" || idOfButtonClicked == "quizStakeholderShareholder" ) {
             var jsonFileName = $('#'+idOfButtonClicked).attr('jsonFileName')
 						window.location = "index.html?jsonFileName=" + jsonFileName;
           }
@@ -152,15 +156,15 @@
       	/////////////Initialization code://///////////////////////////
 
       	//Usage: var unqiuevar=new expstickybar(setting)
-
-      	var mystickybar=new expstickybar({
-      		id: "rocketbar", //id of sticky bar DIV
-      		position:'bottom', //'top' or 'bottom'
-      		revealtype:'manual', //'mouseover' or 'manual'
-      		peekamount:40, //number of pixels to reveal when sticky bar is closed
-      		externalcontent:'rocketbarcontent.htm', //path to sticky bar content file on your server, or "" if content is defined inline on the page
-      		speed:500 //duration of animation (in millisecs)
-      	})
+        //
+      	// var mystickybar=new expstickybar({
+      	// 	id: "rocketbar", //id of sticky bar DIV
+      	// 	position:'bottom', //'top' or 'bottom'
+      	// 	revealtype:'manual', //'mouseover' or 'manual'
+      	// 	peekamount:40, //number of pixels to reveal when sticky bar is closed
+      	// 	externalcontent:'rocketbarcontent.htm', //path to sticky bar content file on your server, or "" if content is defined inline on the page
+      	// 	speed:500 //duration of animation (in millisecs)
+      	// })
 
 				});
 
@@ -219,12 +223,20 @@ Euer IMBIT-14C Jahrgang
 
 	</div>
 
+<!-- <button class="buttonToQuiz1" jsonFileName="Wertkettenmodell.json" type="button"  id="clickMe">Wertkettenmodell</button> -->
+
 	<div id="container2">
-		<button jsonFileName="Wertkettenmodell.json" type="button" class="buttonToQuiz1" id="clickMe">Wertkettenmodell</button>
-		<button jsonFileName="St-Galler-Management-Modell.json" type="button" class="buttonToQuiz2" id="clickmeYesNo">St Galler Management Modell</button>
-	  <button jsonFileName="St-Galler-Management-Modell.json" type="button" class="buttonToQuiz3" id="">Business Canvas</button>
-	  <button jsonFileName="St-Galler-Management-Modell.json" type="button" class="buttonToQuiz4" id="">Ökonomisches Prinzip</button>
-	  <button jsonFileName="St-Galler-Management-Modell.json" type="button" class="buttonToQuiz5" id="">Shareholder/Stakeholder Ansatz</button>
+      <button class="buttonToQuiz1" jsonFileName="Wertkettenmodell.json" type="button"  id="quizWertkettenmodell">Wertkettenmodell</button>
+      <button class="buttonToQuiz2" jsonFileName="St-Galler-Management-Modell.json" type="button" id="quizSt-Galler-Management-Modell">St Galler Management Modell</button>
+      <button class="buttonToQuiz3" jsonFileName="Business-Canvas.json" type="button" id="quizBusinessCanvas">Business Canvas</button>
+      <button class="buttonToQuiz4" jsonFileName="Oekonomisches-Prinzip.json" type="button" id="quizOekonomischesPrinzip">Ökonomisches Prinzip</button>
+      <button class="buttonToQuiz5" jsonFileName="Shareholder-Stakeholder-Ansatz.json" type="button" id="quizStakeholderShareholder">Shareholder/Stakeholder Ansatz</button>
+
+
+		<!-- <div jsonFileName="St-Galler-Management-Modell.json" type="button" class="buttonToQuiz2" id="clickmeYesNo">St Galler Management Modell</div>
+	  <div jsonFileName="St-Galler-Management-Modell.json" type="button" class="buttonToQuiz3" id="">Business Canvas</div>
+	  <div jsonFileName="St-Galler-Management-Modell.json" type="button" class="buttonToQuiz4" id="">Ökonomisches Prinzip</div>
+	  <div jsonFileName="St-Galler-Management-Modell.json" type="button" class="buttonToQuiz5" id="">Shareholder/Stakeholder Ansatz</div> -->
 	</div>
 
 

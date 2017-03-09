@@ -50,7 +50,7 @@ color:#e53f5f;
 }
 
 
-/*.buttonToQuiz1 {
+.buttonToQuiz1 {
 
 	width:300px;
 	height:100px;
@@ -92,7 +92,7 @@ color:#e53f5f;
 	display:inline-block;
 	margin-left: 35%;
 	margin-top: 1%;
-}*/
+}
 
 #gameDescription {
 

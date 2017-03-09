@@ -17,7 +17,7 @@ button:hover {
 }
 
 .flipcard {
-    opacity: 0;
+    opacity: 1;
     perspective: 800;
     -moz-perspective: 800;
     -webkit-perspective: 800;
@@ -183,7 +183,7 @@ img.thumb {
     z-index: 1002;
 }
 
-#footer, #header {
+/*#footer, #header {
     width: calc(100vw - 50px);
     left: 0px;
     position: fixed;
@@ -219,7 +219,7 @@ img.thumb {
     padding: 0 15px;
     width: calc(100vw - 140px);
 }
-
+*/
 #backlayer {
     position: fixed;
     left: 50%;
