@@ -57,7 +57,13 @@
                                 <xsl:attribute name="data-target">
                                     <xsl:value-of select="Abbr"/>
                                 </xsl:attribute>
-                                <xsl:value-of select="Group-Name"/>
+                                <xsl:element name="span">
+                       				<xsl:attribute name="class">
+                       					<xsl:text>groupname</xsl:text>
+                       				</xsl:attribute>
+                           			<xsl:value-of select="Group-Name">
+									</xsl:value-of>
+                       			</xsl:element>
                             </xsl:element>
                             <xsl:element name="div">
                                 <xsl:attribute name="class">

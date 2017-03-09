@@ -85,8 +85,7 @@ var makeGrid = function makeGrid(view){
                 $.ajax('xml/index.php?base=grid&type=class').done(function (data) {
                     $('#site').append(data);
                     $('#grid').css("width", $display.width).css("height", $display.height).append('<div id="backlayer"></div>');
-                }),
-                $('#animation_l, #animation_im, #animation_b, #animation_it, #animation_mg').animate({opacity: 1}, {duration: 1000})
+                })
             ).done(function () {
                         $.when(
                             $('#animation_l, #animation_im, #animation_b, #animation_it, #animation_mg').animate({opacity: 0}),
