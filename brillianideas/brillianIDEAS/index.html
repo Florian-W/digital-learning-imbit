@@ -10,7 +10,6 @@
 	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	<script src="js/js.cookie.js"></script>
-	<!--<script src="settings.js"></script>-->
 	<script src="js/startpage.js"></script>
 	<script src="js/dots.js"></script>
 	<script src="js/imagemapresizer.js"></script>
@@ -22,23 +21,23 @@
 	<audio src="https://silentlistening.files.wordpress.com/2008/05/palaoa-strange-sound.mp3" autobuffer autoplay loop></audio>
 
 	<div id="container" style="display:block">
-		<div id="imageOne"><img src="img/tentakel_weiss.png" id="tentakel" usemap="#Map">
 		
-			<map name="Map" id="Map">
-				<area alt="" title="" href="http://www.google.com" shape="poly" coords="234,433,792,448,791,526,236,531" />	
-			</map>
+		<div id='content'>
+			<div id="imageOne">
+				<img src="img/tentakel_weiss.png" id="tentakel" usemap="#Map">
+				<map name="Map" id="Map">
+					<area alt="" title="" href="http://www.google.com" shape="poly" coords="234,433,792,448,791,526,236,531" />	
+				</map>
+			</div>
+			<div id="imageTwo">
+				<img id="kopf" src="img/kopf.gif" style="marginBottom:0px; visibility:hidden;"/>
+			</div>
 		</div>
-		<div id="imageTwo">
-		
-		</div>
-		<!--<div id ="dots" class="dotstyle dotstyle-fillup">-->
-			<ul id ="dots" class="dotstyle dotstyle-fillup">
-				<li><a id="pr" href="http://35.157.70.125/mvp/digitalLearning.html"></a></li>
-				<li class="current"><a href="index.html"></a></li>
-				<li><a id="le" href="right.html"></a></li>
-			</ul>
-		<!--</div>-->
-		<!--<div id="text"><p id="heading">brillianIdeas</p></div>-->
+		<ul id ="dots" class="dotstyle dotstyle-fillup">
+			<li><a href="/mvp/digitalLearning.html"></a></li>
+			<li class="current"><a href="./content/startpage.htm"></a></li>
+			<li><a href="right.html"></a></li>
+		</ul>
 	</div>	
 	
 	
