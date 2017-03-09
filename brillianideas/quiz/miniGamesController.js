@@ -286,6 +286,10 @@ $(document)
 
 				numberOfQuestions = questionBank.length;
 
+				console.log(
+					"------------------------------------------------------------- Number of wuestions: " +
+					numberOfQuestions)
+
 				// entferne '.json' vom String
 				var trimmedFileName = jsonFileName.replace('.json', '');
 				//Setze SpieleNamen in <div> element mit id=navbar und in html <title> element
@@ -1106,18 +1110,22 @@ function displayQuizListQuestion(numberOfDragAndDropGamesPlayed) {
 		console.log(
 			"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
 		)
-		stage = '#game2'
-		questionNumber
+		stage = '#game2';
 	}
+
+
 
 	optionsCounter = 0;
 	var q = new Array();
 	var contentArray = new Array();
+
 	//Füge die Frage hinzu
 	$(stage).append(
 		'<div class="questionText">' +
 		questionBank[questionNumber][0] +
 		'</div>')
+	console.log("questionNumber is: " + questionNumber)
+	console.log("questionBank is: " + JSON.stringify(questionBank))
 
 	// Speichere alle Antworten in einem separatem array, welches dann geshuffelt wird
 	for (i = 1; i < questionBank[questionNumber].length; i++) {
@@ -1130,6 +1138,8 @@ function displayQuizListQuestion(numberOfDragAndDropGamesPlayed) {
 		optionsCounter++;
 
 	}
+
+	console.log("cententArray is: " + JSON.stringify(contentArray))
 
 	console.log("Anzahl Optionen" + optionsCounter)
 
@@ -1207,9 +1217,13 @@ function displayQuizListQuestion(numberOfDragAndDropGamesPlayed) {
 					});
 				}
 			});
+
+	questionNumber++;
 } // display question
 
 function displayFinalSlide() {
+
+	var percentage = score / numberOfQuestions;
 
 	$(stage)
 		.append(
@@ -1225,6 +1239,29 @@ function displayFinalSlide() {
 	$('.backToQuizOverview').click(function() {
 		window.location.href = "newContent.html";
 	});
+
+	if (percentage == 1) {
+
+		$('#navContent')
+			.append(
+				'<img src="img/brillainIDEAS_UX_20170202_Oktopus-Ampel-grün.png" style="object-fit: contain">'
+			);
+
+	} else if (percentage == 0) {
+
+		$('#navContent')
+			.append(
+				'<img src="img/brillainIDEAS_UX_20170202_Oktopus-Ampel-rot.png" style="object-fit: contain">'
+			);
+
+	} else {
+		$('#navContent')
+			.append(
+				'<img src="img/brillainIDEAS_UX_20170202_Oktopus-Ampel-gelb.png" style="object-fit: contain">'
+			);
+	}
+
+
 
 } // display final slide
 
@@ -1251,7 +1288,7 @@ function changeQuestion(numberOfDragAndDropGamesPlayed) {
 
 	if (questionNumber < numberOfQuestions) {
 		displayQuizListQuestion(numberOfDragAndDropGamesPlayed);
-		questionNumber++;
+
 	} else {
 		displayFinalSlide();
 	}
@@ -1349,7 +1386,8 @@ expstickybar.prototype = {
 
 	loadcontent: function($, setting) {
 		var thisbar = this
-		var ajaxfriendlyurl = setting.externalcontent.replace(/^http:\/\/[^\/]+\//i,
+		var ajaxfriendlyurl = setting.externalcontent.replace(
+			/^http:\/\/[^\/]+\//i,
 			"http://" + window.location.hostname + "/")
 		$.ajax({
 			url: ajaxfriendlyurl, //path to external content
@@ -1376,12 +1414,14 @@ expstickybar.prototype = {
 		} : {
 			top: finalpx
 		}
-		this.$stickybar.stop().animate(positioncss, (anim) ? this.setting.speed : 0,
+		this.$stickybar.stop().animate(positioncss, (anim) ? this.setting.speed :
+			0,
 			function() {
 				thisbar.$indicators.each(function() {
 					var $indicator = $(this)
-					$indicator.attr('src', (thisbar.currentstate == "show") ? $indicator.attr(
-						'data-closeimage') : $indicator.attr('data-openimage'))
+					$indicator.attr('src', (thisbar.currentstate == "show") ? $indicator
+						.attr(
+							'data-closeimage') : $indicator.attr('data-openimage'))
 				})
 			})
 
@@ -1403,7 +1443,8 @@ expstickybar.prototype = {
 		if (setting.revealtype == "mouseover")
 			this.$stickybar.bind("mouseclick touchmove swipe mouseenter mouseleave",
 				function(e) {
-					thisbar.showhide((e.type == "mouseenter" || e.type == "mouseclick" || e.type ==
+					thisbar.showhide((e.type == "mouseenter" || e.type == "mouseclick" || e
+						.type ==
 						"touchmove") ? "show" : "hide", true)
 				})
 		this.$indicators = this.$stickybar.find('img[data-openimage]') //find images within bar with data-openimage attribute

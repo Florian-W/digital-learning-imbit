@@ -111,7 +111,8 @@ color:#FFF;
 .option{width:400px;
 height:30px;
 margin:15px;
-font-size:18px;
+font-size:22px;
+line-height: 20px;
 color:#FFFFFF;
 padding:2px;
 padding-left:10px;
@@ -136,7 +137,7 @@ color:#e53f5f;
 margin:auto;
 margin-top:25px;
 color:#FFF;
-font-size:30px;
+font-size:40px;
 /*font-family:Arial, Helvetica, sans-serif;*/
 width:80%;
 border-bottom:solid white 1px;
@@ -359,7 +360,8 @@ p{
 			white-space:nowrap;
 			/*height:10%;*/
 			padding:1.5%;
-			font-size: 16px;
+			font-size: 20px;
+			font-family: 'Tinos';
 			text-align: center;
 			vertical-align: center;
 			margin:5px;
@@ -371,10 +373,14 @@ p{
 
 #gameTitle	{
 			margin-bottom: 12px;
+			font-family: 'Tinos';
+			font-size: 24px;
 		}
 
 #gameDescription	{
 					margin-bottom: 12px;
+					font-family: 'Tinos';
+
 				}
 .dp{
 			opacity:0.8;
