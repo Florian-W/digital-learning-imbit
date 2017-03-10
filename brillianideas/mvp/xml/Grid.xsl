@@ -57,7 +57,8 @@
                                 <xsl:attribute name="data-target">
                                     <xsl:value-of select="Abbr"/>
                                 </xsl:attribute>
-                                <xsl:value-of select="Group-Name"/>
+                                <xsl:value-of select="Group-Name">
+								</xsl:value-of>
                             </xsl:element>
                             <xsl:element name="div">
                                 <xsl:attribute name="class">
@@ -76,15 +77,16 @@
 									<xsl:for-each select="Classes">
 										<xsl:element name="div">
 											<xsl:attribute name="class">
-												<xsl:text>vorlesung flipcard</xsl:text>
+												<xsl:text>vorlesung</xsl:text>
 											</xsl:attribute>
+											<xsl:value-of select="Name">
+											</xsl:value-of>
+											<!--
 											<xsl:element name="div">
 												<xsl:attribute name="class">
-		                                   			<xsl:text>face front</xsl:text>
+		                                   		<xsl:text>face front</xsl:text>
 		                               			</xsl:attribute>
-		                               			<xsl:value-of select="Name">
-												</xsl:value-of>
-											</xsl:element>
+											</xsl:element>-->
 										</xsl:element>
 									</xsl:for-each>
                                 </xsl:element>
@@ -141,7 +143,13 @@
 </xsl:element>
 
 <xsl:element name="div">
- <!-- The Button to put here -->
+<xsl:element name="button">
+<xsl:attribute name="jsonFileName"><xsl:value-of select="jsonFileName"/></xsl:attribute>
+<xsl:attribute name="type">button</xsl:attribute>
+<xsl:attribute name="class"><xsl:value-of select="ButtonClass"/></xsl:attribute>
+<xsl:attribute name="id">clickMe</xsl:attribute>
+Quiz
+</xsl:element>
 </xsl:element>
 
                             </xsl:element>

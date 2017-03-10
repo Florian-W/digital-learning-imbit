@@ -85,17 +85,16 @@ var makeGrid = function makeGrid(view){
                 $.ajax('xml/index.php?base=grid&type=class').done(function (data) {
                     $('#site').append(data);
                     $('#grid').css("width", $display.width).css("height", $display.height).append('<div id="backlayer"></div>');
-                }),
-                $('#animation_l, #animation_im, #animation_b, #animation_it, #animation_mg').animate({opacity: 1}, {duration: 1000})
+                })
             ).done(function () {
                         $.when(
                             $('#animation_l, #animation_im, #animation_b, #animation_it, #animation_mg').animate({opacity: 0}),
                             $('#animation_l, #animation_im, #animation_b, #animation_it, #animation_mg').css('display', 'none'),
 
                             $('#IM').css('left', Math.floor(0.2 * $display.width)).css('top', Math.floor(0.1 * $display.height)).attr('data-sid', '1'),
-                            $('#S').css('left', Math.floor(0.3 * $display.width)).css('top', Math.floor(0.65 * $display.height)).attr('data-sid', '2'),
+                            $('#S').css('left', Math.floor(0.25 * $display.width)).css('top', Math.floor(0.65 * $display.height)).attr('data-sid', '2'),
                             $('#IT').css('left', Math.floor(0.7 * $display.width)).css('top', Math.floor(0.2 * $display.height)).attr('data-sid', '3'),
-                            $('#B').css('left', Math.floor(0.6 * $display.width)).css('top', Math.floor(0.7 * $display.height)).attr('data-sid', '4'),
+                            $('#B').css('left', Math.floor(0.68 * $display.width)).css('top', Math.floor(0.7 * $display.height)).attr('data-sid', '4'),
                             $('#MG').css('left', Math.floor(0.35 * $display.width)).css('top', Math.floor(0.35 * $display.height)).attr('data-sid', '5'),
                             //$('#W3WI_IMBIT_305').css('left', Math.floor(0.7 * $display.width)).css('top', Math.floor(0.8 * $display.height)).attr('data-sid', '5'),
                       
