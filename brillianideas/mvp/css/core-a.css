@@ -12,10 +12,6 @@ h1, h2, h3, h4, h5 {
     font-family: 'Caveat Brush';
 }
 
-button:hover {
-	cursor:pointer;
-}
-
 .flipcard {
     opacity: 0;
     perspective: 800px;
@@ -32,8 +28,6 @@ button:hover {
     -webkit-transition: 1s;
     cursor: pointer;
     position: absolute;
-	width: 200pt;
-    height: 100pt;
     border-radius: 30px;
 }
 
@@ -46,9 +40,8 @@ button:hover {
 
 
 .flipcard.IMBIT_Weg{
-	/* given height and width only for "toplevel" flipcard
-	width: 150pt !important;
-    height: 150pt !important;*/
+	width: 175pt;
+    height: 100pt;
     background-color: var(--color-bordeaux) !important;
     font-size: 150%;
 }
@@ -64,14 +57,14 @@ button:hover {
 }
 
 .flipcard.flipped {
-    width: inherit;
-    height: inherit;
+    width: inherit !important;
+    height: inherit !important;
     position: absolute;
     left: -8px !important;
     top: -8px !important;
-    perspective: 1600;
-    -moz-perspective: 1600;
-    -webkit-perspective: 1600;
+    perspective: 1600px;
+    -moz-perspective: 1600px;
+    -webkit-perspective: 1600px;
     transform: rotatey(-180deg);
     -moz-transform: rotatey(-180deg);
     -webkit-transform: rotatey(-180deg);
@@ -82,7 +75,6 @@ button:hover {
 
 .flipcard.IMBIT_Weg .face {
 	border-radius: 30px;
-    padding: 0em;
     text-align: center;
     position: absolute;
     height: inherit;
@@ -97,16 +89,24 @@ button:hover {
     justify-content: center;
 }
 
-.flipcard:not(IMBIT_Weg) .face {
-    padding: 1em;
-    text-align: center;
+.flipcard:not(.IMBIT_Weg) {
     position: absolute;
-    height: inherit;
-    width: inherit;
+    height: 50pt;
+    width: 100pt;
+    overflow: hidden;
+}
+
+.flipcard:not(.IMBIT_Weg) .face {
+    position: absolute;
     transition: 1s;
     -moz-transition: 1s;
     -webkit-transition: 1s;
-    overflow: hidden;
+    text-align: center;
+}
+
+.flipcard:not(.IMBIT_Weg) .front {
+    height: 50pt;
+    width: 100pt;
 }
 
 .flipcard .face *, .flipcard .face {
@@ -145,6 +145,7 @@ img.thumb {
     max-height: 35vh;
     max-width: 35vh;
     float: left;
+    margin: 2.5px;
 }
 
 .list{
@@ -186,6 +187,11 @@ img.thumb {
     max-height: 500px;
 }
 
+
+.selectionbody {
+	padding: 1em;
+}
+
 #backlayer {
     position: fixed;
     left: 50%;
@@ -196,6 +202,8 @@ img.thumb {
     display: none;
     opacity: 1;
     transform: translate(-50%, -50%);
+    /*cursor: pointer makes element clickable on iOS/ Safari - DO NOT REMOVE */
+    cursor: pointer;
 }
 
 /**
@@ -251,7 +259,7 @@ img.thumb {
     text-align:center;
 }
 
-#animation_l {
+#animation_l, #animation_welcome {
     z-index: 1;
     font-family: 'Caveat Brush';
     font-size: 50pt;
