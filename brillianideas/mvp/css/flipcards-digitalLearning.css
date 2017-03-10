@@ -12,6 +12,10 @@ h1, h2, h3, h4, h5 {
     font-family: 'Caveat Brush';
 }
 
+button:hover {
+	cursor:pointer;
+}
+
 .flipcard {
     opacity: 0;
     perspective: 800px;
@@ -20,6 +24,7 @@ h1, h2, h3, h4, h5 {
     margin: 0;
 	border: none;
     font-family: 'Caveat Brush';
+    
     transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
@@ -31,25 +36,9 @@ h1, h2, h3, h4, h5 {
     border-radius: 30px;
 }
 
-.gruppe > .vorlesung {
-	opacity: 1 !important;
-	position: static !important;
-	transform: translate(0,0) !important;
-	margin-top:10px;
-}
-
-
-.flipcard.IMBIT_Weg{
-	width: 175pt;
-    height: 100pt;
-    background-color: var(--color-bordeaux) !important;
-    font-size: 150%;
-}
-
 .flipcard:not(.flipped) {
     transform: translate(-50%, -50%);
     z-index: 2;
-    
 }
 
 .flipcard, .flipcard .face {
@@ -57,14 +46,14 @@ h1, h2, h3, h4, h5 {
 }
 
 .flipcard.flipped {
-    width: inherit !important;
-    height: inherit !important;
+    width: inherit;
+    height: inherit;
     position: absolute;
     left: -8px !important;
     top: -8px !important;
-    perspective: 1600px;
-    -moz-perspective: 1600px;
-    -webkit-perspective: 1600px;
+    perspective: 1600;
+    -moz-perspective: 1600;
+    -webkit-perspective: 1600;
     transform: rotatey(-180deg);
     -moz-transform: rotatey(-180deg);
     -webkit-transform: rotatey(-180deg);
@@ -73,9 +62,14 @@ h1, h2, h3, h4, h5 {
     background-color: var(--background-highlight);
 }
 
-.flipcard.IMBIT_Weg .face {
-	border-radius: 30px;
-    text-align: center;
+.flipcard {
+    position: absolute;
+    height: 50pt;
+    width: 100pt;
+    overflow: hidden;
+}
+
+.flipcard .face {
     position: absolute;
     height: inherit;
     width: inherit;
@@ -83,36 +77,18 @@ h1, h2, h3, h4, h5 {
     -moz-transition: 1s;
     -webkit-transition: 1s;
     overflow: hidden;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-}
-
-.flipcard:not(.IMBIT_Weg) {
-    position: absolute;
-    height: 50pt;
-    width: 100pt;
-    overflow: hidden;
-}
-
-.flipcard:not(.IMBIT_Weg) .face {
-    position: absolute;
-    transition: 1s;
-    -moz-transition: 1s;
-    -webkit-transition: 1s;
     text-align: center;
-}
-
-.flipcard:not(.IMBIT_Weg) .front {
-    height: 50pt;
-    width: 100pt;
 }
 
 .flipcard .face *, .flipcard .face {
     backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+}
+.flipcard.flipped .face *, .flipcard.flipped .face {
+    backface-visibility: visible;
+    -moz-backface-visibility: visible;
+    -webkit-backface-visibility: visible;
 }
 
 .flipcard .front {
@@ -124,13 +100,6 @@ h1, h2, h3, h4, h5 {
 
 .flipcard .front:hover{
     font-weight: bold;
-}
-
-.groupname {
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	transform: translate(-50%,-50%);
 }
 
 .flipcard .back {
