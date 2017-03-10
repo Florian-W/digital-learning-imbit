@@ -51,6 +51,10 @@ p{
 	vertical-align: middle;
 }
 
+#container{
+	position:absolute;
+}
+
 dotstyle ul {
 	position: relative;
 	display: inline-block;
