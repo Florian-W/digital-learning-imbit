@@ -12,12 +12,17 @@
 	font-size: 5em;
 }
 
+#title a {
+    text-decoration: none;
+}
+
 .upper{
 	text-transform: uppercase;
 }
 
 .background_image{
-	position: absolute;	
+	position: absolute;
+    trasform: translateZ(-10px);	
 }
 
 #start_bg_ltr{
