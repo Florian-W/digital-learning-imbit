@@ -1,123 +1,35 @@
 *{
 	box-sizing: border-box;
-	font-family: 'Caveat Brush';
-	
-	
-}
-body{
-	background-color: rgb(153,27,51);
+	font-family: 'Caveat Brush';	
+	color: var(--color-bordeaux);
 }
 
-p{
-	color: white;
-}
-	
-
-#tentakel{
-
-	display: inline-block;
-	width: 100vw;
-	height: 100vh;
-	top:0;
-	left: 0;
-	/*margin-bottom: 180px;*/
-	background-color: rgb(153,27,51)
-	position:fixed;
-
-
-}
-#kopf{
+#title{
 	position: absolute;
-	width: 25vw;
-	height: auto;
-	bottom: 0;
-	left: 55%;
-
-}
-#heading{
-	position: absolute;
-	width: 50vw;
-	height: auto;
-	top: 0;
-	left: 20%;
-	background-color: transparent;
-
-}
-#imageOne{
-	background-color: rgb(153,27,51)
-}
-#imageTwo{
-	text-align: center;
-	vertical-align: middle;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 5em;
 }
 
-dotstyle ul {
-	position: relative;
-	display: inline-block;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	cursor: default;
-}
-#dots{
-	bottom: 5%;
-	left: 35%;
-	margin: 0 auto;
-	margin-bottom:5px;
-	position: absolute;
-	height: auto;
-	background-color: transparent !important;
-	
-}
-.dotstyle li {
-	position: relative;
-	display: block;
-	float: left;
-	margin: 0 16px;
-	width: 16px;
-	height: 16px;
-	cursor: pointer;
-	background-color: transparent !important;
-
+.upper{
+	text-transform: uppercase;
 }
 
-.dotstyle li a {
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	outline: none;
-	border-radius: 50%;
-	background-color: #fff;
-	background-color: transparent !important;
-	text-indent: -999em;
-	cursor: pointer; /* make the text accessible to screen readers */
-	position: absolute;
-}
-.dotstyle-fillup li a {
-	overflow: hidden;
-	background-color: rgba(0,0,0,0);
-	box-shadow: inset 0 0 0 2px rgba(255,255,255,1);
-	transition: background 0.3s;
+.background_image{
+	position: absolute;	
 }
 
-.dotstyle-fillup li a::after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	height: 0;
-	left: 0;
-	width: 100%;
-	background-color: #fff;
-	box-shadow: 0 0 1px #fff;
-	transition: height 0.3s;
+#start_bg_ltr{
+    top: 50%;
+    width: 50vw;
+    transform: translateY(-50%);
+    max-height: 66vh;
 }
 
-.dotstyle-fillup li a:hover,
-.dotstyle-fillup li a:focus {
-	background-color: rgba(0,0,0,0.2);
-}
-
-.dotstyle-fillup li.current a::after {
-	height: 100%;
+#start_bg_rtl{
+	bottom:0px;
+	right: 0px;
+	width: initial;
+    transform: rotateX(45deg);
 }

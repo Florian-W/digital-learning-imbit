@@ -6,9 +6,9 @@
     --color-green: rgb(133,186, 28);
     --color-yellow: rgb(205, 145, 25);
 
-    --background: var(--color-bordeaux);
+    --background: white;
     --background-highlight: var(--color-yellow);
-    --text: white;
+    --text: var(--color-bordeaux);
     --link: var(--color-gray);
     --link-visited: var(--color-green);
     --border: var(--color-gray);
