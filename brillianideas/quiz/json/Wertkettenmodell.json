@@ -2,7 +2,7 @@
 	"DragDropGames": [{
 		"DragAndDropList": [{
 			"title": "Primäre und Sekundäre Aktivitäten - Drag & Drop",
-			"description": "Ziehe alle Elemente in das richtige Feld. Mit \"Eingabe prüfen\"  kannst du überprüfen, ob alle Elemente richtig sind. Falsche Elemente werden rot makiert",
+			"description": "Ziehe alle Elemente in das richtige Feld. Mit \"Eingabe prüfen\"  kannst du überprüfen, ob alle Elemente richtig sind. Falsche Elemente werden rot markiert.",
 			"id": "d0",
 			"elementtext": "Kundendienst",
 			"target": "target1",

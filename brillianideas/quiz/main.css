@@ -6,7 +6,9 @@ html, body {
   background-color: #990133;
 	color: white;
 
+
 	    }
+
 
 #navContent{
 margin:auto;
@@ -106,6 +108,7 @@ font-size:18px;
 .questionText{
 font-size:27px;
 color:#FFF;
+font-family: 'Tinos';
 }
 
 .option{width:400px;
@@ -357,7 +360,8 @@ p{
 .drag{
 			/*width:25%;*/
 			/*box-sizing: border-box;*/
-			white-space:nowrap;
+			white-space: nowrap;
+			overflow-x:   hidden;
 			/*height:10%;*/
 			padding:1.5%;
 			font-size: 20px;
@@ -412,6 +416,7 @@ p{
 
 		}
 
+
 		#right {
 			width: 60%;
 			margin-left: 1%;
@@ -421,4 +426,28 @@ p{
 			height: 40% ;
 			text-align:center;
 
+		}
+
+		.bob {
+			margin-left: 50%;
+			margin-top: 15%;
+		}
+
+		.bobTrafficLight {
+			 height: 100%;
+			 width: 100%;
+		}
+
+		.background{
+			height: 100%;
+			width: 100%;
+			/*background: url(images/bg.jpg) no-repeat center center fixed;*/
+ 		-webkit-background-size: cover;
+ 		-moz-background-size: cover;
+ 		-o-background-size: cover;
+ 		background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*z-index: -100;
 		}

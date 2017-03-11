@@ -2,7 +2,7 @@
   "DragDropGames": [{
     "DragAndDropList": [{
       "title": "Interne und Externe Stakeholder - Drag & Drop",
-      "description": "Ziehe alle Elemente in das richtige Feld. Mit \"Eingabe prüfen\"  kannst du überprüfen, ob alle Elemente richtig sind. Falsche Elemente werden rot makiert",
+      "description": "Ziehe alle Elemente in das richtige Feld. Mit \"Eingabe prüfen\"  kannst du überprüfen, ob alle Elemente richtig sind. Falsche Elemente werden rot markiert.",
       "id": "d0",
       "elementtext": "Kapitalgeber",
       "target": "target2",

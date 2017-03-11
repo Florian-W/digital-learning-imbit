@@ -2,7 +2,7 @@
 	"DragDropGames": [{
 		"DragAndDropList": [{
 			"title": "Umweltsphären, Anspruchsgruppen und Interaktionsthemen - Drag & Drop",
-			"description": "Ziehe alle Elemente in das richtige Feld. Mit \"Eingabe prüfen\"  kannst du überprüfen, ob alle Elemente richtig sind. Falsche Elemente werden rot makiert",
+			"description": "Ziehe alle Elemente in das richtige Feld. Mit \"Eingabe prüfen\"  kannst du überprüfen, ob alle Elemente richtig sind. Falsche Elemente werden rot markiert.",
 			"id": "d0",
 			"elementtext": "Staat",
 			"target": "target2",
@@ -50,7 +50,7 @@
 	}, {
 		"DragAndDropList": [{
 			"title": "Prozesse, Entwicklungsmodi und Ordnungsmomente - Drag & Drop",
-			"description": "Ziehe alle Elemente in das richtige Feld. Mit \"Eingabe prüfen\"  kannst du überprüfen, ob alle Elemente richtig sind. Falsche Elemente werden rot makiert",
+			"description": "Ziehe alle Elemente in das richtige Feld. Mit \"Eingabe prüfen\"  kannst du überprüfen, ob alle Elemente richtig sind. Falsche Elemente werden rot markiert.",
 			"id": "d0",
 			"elementtext": "Kultur",
 			"target": "target3",
