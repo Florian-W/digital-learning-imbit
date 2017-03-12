@@ -1,0 +1,46 @@
+{
+  "DragDropGames": [
+
+  ],
+  "quizGames": [
+    {
+      "quizlist": [
+        {
+          "question": "Ein Retailer ist ein Beispiel für Channel.",
+          "optionTrue": "Richtig",
+          "optionFalse": [
+            "Falsch"
+          ]
+        },
+        {
+          "question": "Die Produktion gehört zu den Key Activities eines Unternehmens.",
+          "optionTrue": "Richtig",
+          "optionFalse": [
+            "Falsch"
+          ]
+        },
+        {
+          "question": "Das Design eines Produktes zählt nicht zur Value Proposition",
+          "optionTrue": "Falsch",
+          "optionFalse": [
+            "Richtig"
+          ]
+        },
+        {
+          "question": "Unter Customer Segments versteht man den Markt in verschiedene Kundengruppen einzuteilen",
+          "optionTrue": "Richtig",
+          "optionFalse": [
+            "Falsch"
+          ]
+        },
+        {
+          "question": "Der Lieferant ist ein Key Partner für eines Unternehmens.",
+          "optionTrue": "Richtig",
+          "optionFalse": [
+            "Falsch"
+          ]
+        }
+      ]
+    }
+  ]
+}
