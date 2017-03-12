@@ -2,11 +2,12 @@
  * 
  */
 
-/* TODO Config auslagern -> JSON, INI, XML -> zu klären */
+/* TODO Config auslagern -> JSON, INI, XML -> zu klÃ¤ren */
+
+var dotsspace;
 
 $(window).on('load', function(){
 	jQuery(document).on("swiperight",function(){
-		console.log('User swiped right')
 		changePage(true);
 	}).on("swipeleft",function(){
 		changePage(false);
@@ -21,11 +22,35 @@ $(window).on('load', function(){
 		}
 	});
 	
+	$('.dotstyle-fillup li a').click(function(e){
+		e.preventDefault();
+		var target = $(e.target);
+		if (!target.is('current')){
+			var current = jQuery('.current');
+			
+			if (!(target.parent().hasClass('home') ^ mystickybar.currentstate == "hide"))
+				mystickybar.toggle();
+			current.toggleClass('current');
+			target.parent().toggleClass('current');
+			
+			jQuery.ajax({
+				url: target.attr('href')
+			}).done(function(data){
+				jQuery('#content').empty().unbind().append(data);
+			})
+		}		
+		return false;
+	});
+	
+	dotsspace = $(window).height() - $('#dots').position().top - $('#dots').outerHeight();
+	
 	jQuery.ajax({
 		url: jQuery('.home').find('a').attr('href')
 	}).done(function(data){
 		jQuery('#content').append(data);
 	});
+	
+	
 });
 
 /**
@@ -37,6 +62,7 @@ function changePage(left){
 	if (typeof left != "boolean"){
 		return false;
 	}
+	
 	var current = jQuery('.current');
 	var target = left ? current.prev() : current.next();
 	
@@ -44,6 +70,8 @@ function changePage(left){
 		return false;
 	}
 	
+	if (!(target.hasClass('home') ^ mystickybar.currentstate == "hide"))
+		mystickybar.toggle();
 	current.toggleClass('current');
 	target.toggleClass('current');
 	
