@@ -98,7 +98,7 @@
                     <xsl:for-each select="Categories/NewContentItems">
                         <xsl:element name="div">
                             <xsl:attribute name="id">
-                                <xsl:value-of select="NewContent_Video"/>
+                                <xsl:value-of select="NewContent_Name"/>
                             </xsl:attribute>
                             <xsl:attribute name="class">
                                 <xsl:text>flipcard</xsl:text>
@@ -108,7 +108,7 @@
                                     <xsl:text>face front</xsl:text>
                                 </xsl:attribute>
                                 <xsl:attribute name="data-target">
-                                    <xsl:value-of select="NewContent_Video"/>
+                                    <xsl:value-of select="NewContent_Name"/>
                                 </xsl:attribute>
                                 <xsl:value-of select="NewContent_Name"/>
                             </xsl:element>
@@ -117,7 +117,7 @@
                                     <xsl:text>face back</xsl:text>
                                 </xsl:attribute>
                                 <xsl:attribute name="data-bind">
-                                    <xsl:value-of select="NewContent_Video"/>
+                                    <xsl:value-of select="NewContent_Name"/>
                                 </xsl:attribute>
                                 
 								
