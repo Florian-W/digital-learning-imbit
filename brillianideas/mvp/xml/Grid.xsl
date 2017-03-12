@@ -126,7 +126,8 @@
 									<xsl:element name="hr"></xsl:element>
 									<xsl:element name="h2"> <xsl:value-of select="NewContent_Name"/></xsl:element>
 								</xsl:element>
-
+								
+								<xsl:if test="NewContent_Video">
 								<xsl:element name="div">
 									<xsl:element name="iframe">
 									<xsl:attribute name="width">560</xsl:attribute>
@@ -136,11 +137,14 @@
 									<xsl:attribute name="allowfullscreen">allowfullscreen</xsl:attribute>
 									</xsl:element>
 								</xsl:element>
-
+								</xsl:if>
+								
+<xsl:if test="NewContent_Beschreibung">
 <xsl:element name="div">
   <xsl:element name="p"><xsl:value-of select="NewContent_Beschreibung"/>
   </xsl:element>
 </xsl:element>
+</xsl:if>
 
 <xsl:element name="div">
 <xsl:element name="button">

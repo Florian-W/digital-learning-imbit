@@ -156,7 +156,7 @@ var buttonOpenQuiz =function buttonOpenQuiz() {
 	// in der index.html wird dann die controller.js geladen und der Parameter ausgelesen
 	function openQuiz(idOfButtonClicked) {
 
-		 if(idOfButtonClicked== "quizWertkettenmodell" || idOfButtonClicked== "quizSt-Galler-Management-Modell" || idOfButtonClicked == "quizBusinessCanvas" || idOfButtonClicked == "quizOekonomischesPrinzip" || idOfButtonClicked == "quizStakeholderShareholder" ) {
+		 if(idOfButtonClicked== "quizWertkettenmodell" || idOfButtonClicked== "quizSt-Galler-Management-Modell" || idOfButtonClicked == "quizBusinessCanvas" || idOfButtonClicked == "quizOekonomischesPrinzip" || idOfButtonClicked == "quizStakeholderShareholder" || idOfButtonClicked == "quizSurveyMonkey" ) {
 			var jsonFileName = $('#'+idOfButtonClicked).attr('jsonFileName')
 			console.log("jsonFileName: " + jsonFileName);
 			window.location = "miniGames.html?jsonFileName=" + jsonFileName;
