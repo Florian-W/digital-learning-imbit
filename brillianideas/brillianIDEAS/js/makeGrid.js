@@ -51,7 +51,9 @@ var makeGrid = function makeGrid(view){
                             $('#vc').css('left', Math.floor(0.21879022 * $display.width)).css('top', Math.floor(0.23409091 * $display.height)).attr('data-sid', '21'),
                             $('#ps').css('left', Math.floor(0.38738739 * $display.width)).css('top', Math.floor(0.28181818 * $display.height)).attr('data-sid', '22'),
                             $('#iw').css('left', Math.floor(0.35521236 * $display.width)).css('top', Math.floor(0.075 * $display.height)).attr('data-sid', '23'),
+
                             // TODO: data-left data-right und data-sid in xml+xsl einpflegen und schnlieÃŸend unten einbauen (by Nick L.)
+
                             $('#grid').css('opacity', 1) /*,
                             $('#yaxis').animate({opacity: 0}, {duration: 1000}),
                             $('#xaxis').animate({opacity: 0}, {duration: 1000})*/
