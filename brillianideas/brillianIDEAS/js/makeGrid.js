@@ -32,7 +32,11 @@ var digitalLearningArray = [
 		];
 
 
-
+/**
+ * Collets the dimensions and position of a flipcard (required since it takes the 'front'-classed element for width declaration)
+ * @param $div { Object } the flippcard div as a jQuery collection
+ * @returns Constructs a rectOutlines element only use with "new"
+ */
 function rectOutlines($div){
 	this.left = $div.css('left');
 	this.top = $div.css('top');
@@ -82,9 +86,6 @@ function noOVerlayGrid(id, x, y, count){
 					} else {
 						$card.css('top', e_position.bottom);
 					}
-					$card.finish();
-					console.log('moved ' + $card.selector + ' from ' + card_position.top + 'x' + card_position.left + ' to '
-							+ (e_position.top - card_position.height) + "x" + (e_position.left - card_position.width) + ' logValue: ' + $card.attr('style'));
 					allGood = false;
 					return false;
 				}
