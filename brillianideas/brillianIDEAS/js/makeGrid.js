@@ -3,6 +3,99 @@
  * builds the grid with the flipcards,
  * spreads the learnings across the grid (currently hardcoded)
  */
+
+
+var digitalLearningArray = [
+	['mooc', 0.49034749 , 0.16136364 ,1],
+		['3dwelt', 0.5997426 , 0.05681818 ,2],
+		['chat', 0.615118662 , 0.25909091 ,3],
+		['forum', 0.82110682 , 0.25909091 ,4],
+		['sn', 0.8996139 , 0.22272727 ,5],
+		['twitter', 0.6988417 , 0.4 ,6],
+		['weblogs', 0.5456885 , 0.48636364 ,7],
+		['tagebuch', 0.70785071 , 0.53181818 ,8],
+		['wiki', 0.93693694 , 0.66136364 ,9],
+		['podcast', 0.94465894 , 0.75681818 ,10],
+		['ar', 0.92792793 , 0.86590909 ,11],
+		['film', 0.67181467 , 0.83181818 ,12],
+		['lod', 0.71943372 , 0.92727273 ,13],
+		['ebook', 0.52509653 , 0.91818182 ,14],
+		['sim', 0.49034749 , 0.8 ,15],
+		['spiel', 0.36550837 , 0.58181818 ,16],
+		['cbtwbt', 0.16344916 , 0.88863636 ,17],
+		['sg', 0.35392535 , 0.49772727 ,18],
+		['bl', 0.1003861 , 0.40909091 ,19],
+		//['webinar', 0.08880309 , 0.19318182 ,20],
+		['vc', 0.21879022 , 0.23409091 ,21],
+		['ps', 0.38738739 , 0.28181818 ,22],
+		['iw', 0.35521236 , 0.075 ,23]
+		];
+
+
+/**
+ * Collets the dimensions and position of a flipcard (required since it takes the 'front'-classed element for width declaration)
+ * @param $div { Object } the flippcard div as a jQuery collection
+ * @returns Constructs a rectOutlines element only use with "new"
+ */
+function rectOutlines($div){
+	this.left = $div.css('left');
+	this.top = $div.css('top');
+	this.width = $div.find('.front').outerWidth();
+	this.height = $div.find('.front').outerHeight();
+	this.right = this.top + this.width;
+	this.bottom = this.left + this.height;
+};
+/**
+ * 
+ * @param id {String} Id of the Flipcard to position
+ * @param x {Number} Left position of Card 0 < x < 1
+ * @param y {Number} Left position of Card 0 < x < 1
+ * @param count {String | Number} order of appearance
+ * @return {undefined}
+ */
+function noOVerlayGrid(id, x, y, count){
+	// Get target element for quicker access
+	var $card = $('#' + id);
+	// Set initial values for x and y coordinate
+	$card.css('left', Math.floor(x * $display.width)).css('top', Math.floor(y * $display.height));
+	// loop until overlays with no other div of same class	
+	do {
+		// get left, right, top and bottom position of elemen (relative to achors top left position)
+		var card_position = new rectOutlines($card);
+		// set loop variable to exit value
+		var allGood = true;
+		// select all elements of the same class (same class means every single class is lookef for, not the exact combination)
+		$('.' + $card.attr('class').split(" ").join(", .")).each(function(i, e){
+			// Get target element for quicker access
+			$e = $(e);
+			if(!$e.is('#'+id)){
+				// get left, right, top and bottom position of elemen (relative to achors top left position)
+				e_position = new rectOutlines($e)
+				// Todo: Doku
+				if(!(card_position.left >= e_position.right || card_position.right <= e_position.left ||
+						card_position.top >= e_position.bottom || card_position.bottom <= e_position.top) ){
+					console.log(e_position);
+					console.log(card_position);
+					if(card_position.left < e_position.left){
+						$card.css('left', e_position.left - card_position.width);
+					} else {
+						$card.css('left', e_position.right);
+					}
+					if(card_position.top < e_position.top){
+						$card.css('top', e_position.top - card_position.height);
+					} else {
+						$card.css('top', e_position.bottom);
+					}
+					allGood = false;
+					return false;
+				}
+			}
+		})
+	} while(!allGood);
+	$card.attr('data-sid', ((typeof count == typeof "")? count: String.valueOf(count)));
+};
+
+
 var makeGrid = function makeGrid(view){
     switch (view){
     		//Learnings by Type
@@ -26,34 +119,9 @@ var makeGrid = function makeGrid(view){
                         $('#yaxis').animate({opacity: 1, height: $display.height}, {duration: 1000})
                     ).done(function () {
                         $.when(
-                            $('#animation_welcome').animate({opacity: 0}),                            
-                            $('#animation_welcome').css('display', 'none'),
-                            $('#mooc').css('left', Math.floor(0.49034749 * $display.width)).css('top', Math.floor(0.16136364 * $display.height)).attr('data-sid', '1'),
-                            $('#3dwelt').css('left', Math.floor(0.5997426 * $display.width)).css('top', Math.floor(0.05681818 * $display.height)).attr('data-sid', '2'),
-                            $('#chat').css('left', Math.floor(0.615118662 * $display.width)).css('top', Math.floor(0.25909091 * $display.height)).attr('data-sid', '3'),
-                            $('#forum').css('left', Math.floor(0.82110682 * $display.width)).css('top', Math.floor(0.25909091 * $display.height)).attr('data-sid', '4'),
-                            $('#sn').css('left', Math.floor(0.8996139 * $display.width)).css('top', Math.floor(0.22272727 * $display.height)).attr('data-sid', '5'),
-                            $('#twitter').css('left', Math.floor(0.6988417 * $display.width)).css('top', Math.floor(0.4 * $display.height)).attr('data-sid', '6'),
-                            $('#weblogs').css('left', Math.floor(0.5456885 * $display.width)).css('top', Math.floor(0.48636364 * $display.height)).attr('data-sid', '7'),
-                            $('#tagebuch').css('left', Math.floor(0.70785071 * $display.width)).css('top', Math.floor(0.53181818 * $display.height)).attr('data-sid', '8'),
-                            $('#wiki').css('left', Math.floor(0.93693694 * $display.width)).css('top', Math.floor(0.66136364 * $display.height)).attr('data-sid', '9'),
-                            $('#podcast').css('left', Math.floor(0.94465894 * $display.width)).css('top', Math.floor(0.75681818 * $display.height)).attr('data-sid', '10'),
-                            $('#ar').css('left', Math.floor(0.92792793 * $display.width)).css('top', Math.floor(0.86590909 * $display.height)).attr('data-sid', '11'),
-                            $('#film').css('left', Math.floor(0.67181467 * $display.width)).css('top', Math.floor(0.83181818 * $display.height)).attr('data-sid', '12'),
-                            $('#lod').css('left', Math.floor(0.71943372 * $display.width)).css('top', Math.floor(0.92727273 * $display.height)).attr('data-sid', '13'),
-                            $('#ebook').css('left', Math.floor(0.52509653 * $display.width)).css('top', Math.floor(0.91818182 * $display.height)).attr('data-sid', '14'),
-                            $('#sim').css('left', Math.floor(0.49034749 * $display.width)).css('top', Math.floor(0.8 * $display.height)).attr('data-sid', '15'),
-                            $('#spiel').css('left', Math.floor(0.36550837 * $display.width)).css('top', Math.floor(0.58181818 * $display.height)).attr('data-sid', '16'),
-                            $('#cbtwbt').css('left', Math.floor(0.16344916 * $display.width)).css('top', Math.floor(0.88863636 * $display.height)).attr('data-sid', '17'),
-                            $('#sg').css('left', Math.floor(0.35392535 * $display.width)).css('top', Math.floor(0.49772727 * $display.height)).attr('data-sid', '18'),
-                            $('#bl').css('left', Math.floor(0.1003861 * $display.width)).css('top', Math.floor(0.40909091 * $display.height)).attr('data-sid', '19'),
-                            $('#webinar').css('left', Math.floor(0.08880309 * $display.width)).css('top', Math.floor(0.19318182 * $display.height)).attr('data-sid', '20'),
-                            $('#vc').css('left', Math.floor(0.21879022 * $display.width)).css('top', Math.floor(0.23409091 * $display.height)).attr('data-sid', '21'),
-                            $('#ps').css('left', Math.floor(0.38738739 * $display.width)).css('top', Math.floor(0.28181818 * $display.height)).attr('data-sid', '22'),
-                            $('#iw').css('left', Math.floor(0.35521236 * $display.width)).css('top', Math.floor(0.075 * $display.height)).attr('data-sid', '23'),
-
-                            // TODO: data-left data-right und data-sid in xml+xsl einpflegen und schnlieÃŸend unten einbauen (by Nick L.)
-
+                            $.each(digitalLearningArray, function(key, value){
+                            	noOVerlayGrid.apply(this, value);
+                            }),
                             $('#grid').css('opacity', 1) /*,
                             $('#yaxis').animate({opacity: 0}, {duration: 1000}),
                             $('#xaxis').animate({opacity: 0}, {duration: 1000})*/
