@@ -1,7 +1,7 @@
-*{
+html, body {
 	box-sizing: border-box;
-	font-family: 'Caveat Brush';	
-	color: var(--color-bordeaux);
+	font-family: 'Tinos';	
+	color: var(--text);
 }
 
 #title{
@@ -14,6 +14,7 @@
 
 #title a {
     text-decoration: none;
+    color: var(--text);
 }
 
 .upper{
@@ -36,5 +37,6 @@
 	bottom:0px;
 	right: 0px;
 	width: initial;
+	max-width: 75vw;
     transform: rotateX(45deg);
 }

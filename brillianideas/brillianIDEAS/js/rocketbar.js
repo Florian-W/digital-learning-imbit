@@ -41,10 +41,10 @@ expstickybar.prototype={
 		var barSize= jQuery('.content').outerHeight();
 		var finalpx=(keyword=="show")? 0 : - barSize;
 		var positioncss=(thisbar.setting.position=="bottom")? {bottom:finalpx} : {top:finalpx};
-		thisbar.$stickybar.stop().animate(	positioncss, anim ? thisbar.setting.speed : 0);
+		thisbar.$stickybar.finish().animate(	positioncss, anim ? thisbar.setting.speed : 0);
 		
 		
-		jQuery('#container').animate({
+		jQuery('#container').finish().animate({
 				top: (keyword=="show"?'-':'+') + '=' + barSize + 'px'
 			}, thisbar.setting.speed);
 		
