@@ -371,4 +371,10 @@ Quelle: https://wiki.zum.de/wiki/Wikis_in_der_Schule</Description>
 	<ButtonID>quizStakeholderShareholder</ButtonID>
   </NewContentItems>	
 	
+	  <NewContentItems>
+    <NewContent_Name>BWL SurveyMonkey</NewContent_Name>
+	<jsonFileName>SurveyMonkey_questions.json</jsonFileName>
+	<ButtonClass>buttonToQuiz6</ButtonClass>
+	<ButtonID>quizSurveyMonkey</ButtonID>
+  </NewContentItems>
 </Categories>

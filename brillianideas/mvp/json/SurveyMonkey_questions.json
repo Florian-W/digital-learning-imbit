@@ -191,7 +191,7 @@
 				"id": "d8",
 				"elementtext": "Personalwirtschaft",
 				"target": "target2"
-			},
+			}
 
 	]
 },
@@ -207,13 +207,13 @@
 		"Die BWL versucht Lösungsansätze für alle betrieblichen Abläufe und Prozesse zu entwickeln",
 		"Die BWL umfasst die Planung, Organisation und Steuerung des betrieblichen Geschehens"
 			 ],
-	"optionFalse":	"Gegenstand der BWL ist das Aufstellen von Prognosen zur Entwicklung eines Wirtschaftsraums",
+	"optionFalse":	"Gegenstand der BWL ist das Aufstellen von Prognosen zur Entwicklung eines Wirtschaftsraums"
 	},
 	{
 	"question":"Wählen Sie die Teilgebiete der BWL aus (Mehrfachauswahl möglich)",
 	"optionTrue":[
 			"Finanzierung",
-			"Personalwirtschaft (HR)",
+			"Personalwirtschaft (HR)"
 			 ],
 	"optionFalse":[
 			"Geldpolitik",
@@ -228,24 +228,24 @@
 			"Produktivität misst das Verhältnis von Output-Menge zu Input-Menge",
 			"Produktivität misst die Ergiebigkeit der betrieblichen Faktorkombination",
 			"Die Produktivität eines Industrieunternehmens kann durch IT gesteigert werden",
-			"Die Produktivität von guten und schlechten Programmierern kann sich um den Faktor 10 unterscheiden",
+			"Die Produktivität von guten und schlechten Programmierern kann sich um den Faktor 10 unterscheiden"
 			 ],
 	"optionFalse":[
 			"Produktivität misst das Verhältnis von Input-Menge zu Output-Menge",
 			"Ein Unternehmen mit hoher Produktivität ist auch wirtschaftlich",
-			"Produktivitätsfortschritte werden heute primär durch die höhere Belastung der Mitarbeiter erreicht",
+			"Produktivitätsfortschritte werden heute primär durch die höhere Belastung der Mitarbeiter erreicht"
 			 ]
 	},
 	{
 	"question":"Aufgabe der Unternehmensführung ist es:",
 	"optionTrue":[
 			"Die übergeordneten Unternehmensziele zu bestimmen",
-			"Die Umsetzung des unternehmensübergreifenden Plans zu überwachen",
+			"Die Umsetzung des unternehmensübergreifenden Plans zu überwachen"
 			 ],
 	"optionFalse":[
 			"Die Einzelpläne der Funktionsbereiche zu erstellen",
 			"Die Einzelpläne der Funktionsbereiche zielkonform zusammenzufassen",
-			"Die benötigten Informationen zu erheben",
+			"Die benötigten Informationen zu erheben"
 			 ]
 	},
 	{
@@ -258,12 +258,12 @@
 			"... stellt Informationen über die Kosten der Vertriebsabteilung",
 			"... ermittelt den Jahresüberschuss (Gewinn) eines Unternehmens",
 			"... wird von externen Wirtschaftsprüfern überprüft",
-			"... unterstützt die Unternehmensführung in deren Koordinations- und Steuerungsfunktion",
+			"... unterstützt die Unternehmensführung in deren Koordinations- und Steuerungsfunktion"
 			 ],
 	"optionFalse":[
 
 	]
-	},
+	}
 
 ]
 
