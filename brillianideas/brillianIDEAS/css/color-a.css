@@ -6,9 +6,9 @@
     --color-green: rgb(133,186, 28);
     --color-yellow: rgb(205, 145, 25);
 
-    --background: var(--color-bordeaux);
+    --background: white;
     --background-highlight: var(--color-yellow);
-    --text: white;
+    --text: var(--color-bordeaux);
     --link: var(--color-gray);
     --link-visited: var(--color-green);
     --border: var(--color-gray);
@@ -18,7 +18,6 @@
 body {
     background-color: var(--background);
     color: var(--text);
-    background-image: url('../img/brillainIDEAS_UX_20170202_Oktopus-Tentakel4_F.png');
     background-repeat: no-repeat;
     background-position-y: -40px;
 }

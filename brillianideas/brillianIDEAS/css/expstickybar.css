@@ -1,54 +1,70 @@
-body{
-	background: #991B33;
+
+#container{
+	position:absolute;
+	width: 100vw;
+	height: 100vh;
 }
 
-.ksystem{
-	margin-top: 3%;
-	width: 100%;
-	height: auto; 
+#content{
+	width: inherit;
+	height: inherit;
 }
 
-
-.expstickybar{
-position:fixed;
-color: black;
-right:0; /*horizontally center bar in window*/
-left:0; /*horizontally center bar in window*/
-visibility:hidden;
-background: transparent;
-z-index: 10000;
-width:auto; /*set width of bar to width of entire window*/
-font-weight:bold;
-}
-
-.expstickybar figure {
-	display: table-cell; 
-	padding: 0 0%; 
-	text-align: center;
-}
-
-#rb_toggle{
-	width: 48; 
+dotstyle ul {
 	position: relative;
-	float:left;
-	left: 1%;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	cursor: default;
 }
-.content{
-	background-color: rgba(148, 148, 148, 0.8)!important;
-	background: #949494 !important;
-	display: table; 
-	width: 100%; 
-	left: auto; 
-	right: auto;	
-	vertical-align: middle;
+#dots{
+	bottom: 5%;
+	margin: 0 auto;
+	margin-bottom:5px;
+	position: absolute;
+	height: auto;
+	background-color: transparent !important;display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 16px;
+	padding: 0;
+    width: 100vw;
+    justify-content: center;
+}
+.dotstyle li {
+	position: relative;
+	display: block;
+	float: left;
+	margin: 0 16px;
+	width: 8px;
+	height: 8px;
+	cursor: pointer;
+	background-color: transparent !important; 
+	transition: width 0.3s, height 0.3s;
 }
 
-.content img{
-	width: 10vw;
-	height: auto; 
-	padding-top: 5%;
+.dotstyle li.current {
+	width: 16px;
+	height: 16px;
+	transition: width 0.3s, height 0.3s;
 }
 
-.expstickybar a{
-	color: #6C132E;
+.dotstyle li a {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border-radius: 50%;
+	background-color: var(--border);
+	text-indent: -999em;
+	cursor: pointer; /* make the text accessible to screen readers */
+	position: absolute;
+}
+.dotstyle-fillup li a {
+	overflow: hidden;
+	background-color: var(--border); /* ToDo: move to variable */
+	box-shadow: 0px 0px 2px 2px var(--border); /* ToDo: move to variable */
+	transition: background 0.3s;
 }

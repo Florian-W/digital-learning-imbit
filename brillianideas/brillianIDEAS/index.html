@@ -1,53 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="http://192.168.0.118:8080/target/target-script-min.js#anonymous"></script>
 	<link rel="stylesheet" href="css/core-a.css">
+	<link rel="stylesheet" href="css/color-a.css">
 	<link rel="stylesheet" href="css/startpage.css">
+	<link rel="stylesheet" href="css/expstickybar.css" />
 	<link rel="stylesheet" href="css/rocketbar.css"/>
-	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<!-- Old jQuery for jQuery Mobile Support -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4//jquery.js"></script>
+	<!-- Custom jQuery Mobile - Touch Only -->
+	<script src="js/jquery.mobile.custom.js"></script>
+	<!-- Custom jQuery UI - Effects Core -->
+	<script src="js/jquery.waitforimages.js"></script>
 	<script src="js/js.cookie.js"></script>
-	<script src="js/startpage.js"></script>
+	<script src="js/navigation.js"></script>
+	<script type="text/javascript" src="js/coockie.js"></script>
+	<script src="js/rocketbar.js"></script>
 	<script src="js/dots.js"></script>
 	<script src="js/imagemapresizer.js"></script>
-	
-
 
 </head>
-<body>
+<body style="position: fixed;">
 	<audio src="https://silentlistening.files.wordpress.com/2008/05/palaoa-strange-sound.mp3" autobuffer autoplay loop></audio>
 
 	<div id="container" style="display:block">
 		
 		<div id='content'>
-			<div id="imageOne">
-				<img src="img/tentakel_weiss.png" id="tentakel" usemap="#Map">
-				<map name="Map" id="Map">
-					<area alt="" title="" href="http://www.google.com" shape="poly" coords="234,433,792,448,791,526,236,531" />	
-				</map>
-			</div>
-			<div id="imageTwo">
-				<img id="kopf" src="img/kopf.gif" style="marginBottom:0px; visibility:hidden;"/>
-			</div>
 		</div>
 		<ul id ="dots" class="dotstyle dotstyle-fillup">
 			<li><a href="/mvp/digitalLearning.html"></a></li>
-			<li class="current"><a href="./content/startpage.htm"></a></li>
+			<li class="current home"><a href="./content/startpage.htm"></a></li>
 			<li><a href="right.html"></a></li>
 		</ul>
 	</div>	
-	
-	
-
-<!--<div id="test_div" style="display: block;">
-
-    <a id="le" href="http://35.157.70.125/mvp/imbit_eggs.html"></a>
-    <a id="pr" href="left.html"></a>
-
-</div>-->
 
 </body>
 </html>
