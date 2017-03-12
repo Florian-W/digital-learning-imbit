@@ -332,6 +332,7 @@ Quelle: https://wiki.zum.de/wiki/Wikis_in_der_Schule</Description>
 		<NewContent_Beschreibung>In dem folgenden Video Ökonomisches Prinzipwerden die zwei Ansätze anhand von Beispielen näher erläutert. Auch die Begriffe Effizienz und Effektivität werden behandelt. In einem anschließenden Quiz kann das gelernte Wissen getestet werden.</NewContent_Beschreibung>
 		<jsonFileName>St-Galler-Management-Modell.json</jsonFileName>
 		<ButtonClass>buttonToQuiz4</ButtonClass>
+		<ButtonID>quizOekonomischesPrinzip</ButtonID>
 	</NewContentItems>
 
   <NewContentItems>
@@ -340,6 +341,7 @@ Quelle: https://wiki.zum.de/wiki/Wikis_in_der_Schule</Description>
     <NewContent_Beschreibung>Das folgende Video handelt von der Value Chain nach Porter. In diesem werden die primären und sekundären Aktivitäten anhand von Beispielen vorgestellt. In einem anschließenden Quiz kann das gelernte Wissen getestet werden. </NewContent_Beschreibung>
 	<jsonFileName>Wertkettenmodell.json</jsonFileName>
 	<ButtonClass>buttonToQuiz1</ButtonClass>
+	<ButtonID>quizWertkettenmodell</ButtonID>
   </NewContentItems>
 
   <NewContentItems>
@@ -348,6 +350,7 @@ Quelle: https://wiki.zum.de/wiki/Wikis_in_der_Schule</Description>
     <NewContent_Beschreibung>In dem folgenden Video wird das St. Galler Management-Modell anhand eines fiktiven Beispiels erklärt. Bei dem Modell handelt es sich um ein in den 1960er Jahren an der Universität St. Gallen entwickeltes Management-Framework, welches verwendet wird um den Unternehmenskontext zu verstehen.Im Anschluss kann das im Video vermittelteWissen in einem Quizz getestet werden.</NewContent_Beschreibung>
 	<jsonFileName>St-Galler-Management-Modell.json</jsonFileName>
 	<ButtonClass>buttonToQuiz2</ButtonClass>
+	<ButtonID>quizSt-Galler-Management-Modell</ButtonID>
   </NewContentItems>
 
   <NewContentItems>
@@ -356,6 +359,7 @@ Quelle: https://wiki.zum.de/wiki/Wikis_in_der_Schule</Description>
     <NewContent_Beschreibung>Das Business Model Canvas ist ein Mittel um das Geschäftsmodell einer StartUp-Idee zu visualisieren und zu testen, ob diese unternehmerisch sinnvoll ist. In diesem Videowerden die Komponenten des Business Models mit einem fiktiven Beispiel detailliertdargestellt. Das vermittelte Wissen kann im nachfolgenden Quiz getestet werden.</NewContent_Beschreibung>
 	<jsonFileName>St-Galler-Management-Modell.json</jsonFileName>
 	<ButtonClass>buttonToQuiz3</ButtonClass>
+	<ButtonID>quizBusinessCanvas</ButtonID>
   </NewContentItems>
 
   <NewContentItems>
@@ -364,6 +368,7 @@ Quelle: https://wiki.zum.de/wiki/Wikis_in_der_Schule</Description>
     <NewContent_Beschreibung>In dem folgenden Video Shareholder Value vs. Stakeholder Valuefindet eine Gegenüberstellung beider Ansätze statt und schafft ein Verständnis der Vor-und Nachteile beider Prinzipien. In einem anschließenden Quiz kann das gelernte Wissen getestet werden.</NewContent_Beschreibung>
 	<jsonFileName>St-Galler-Management-Modell.json</jsonFileName>
 	<ButtonClass>buttonToQuiz5</ButtonClass>
+	<ButtonID>quizStakeholderShareholder</ButtonID>
   </NewContentItems>	
 	
 </Categories>
