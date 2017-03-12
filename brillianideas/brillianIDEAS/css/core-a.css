@@ -4,8 +4,14 @@ html {
 
 body {
     padding: 0;
-    margin: 0;
+    margin: 10px; /*to fix ios page movement */
+    left:-10px; /* same */
+    top:-10px;/* same */
     overflow: hidden;
+    font-family: 'Tinos';
+    width: 100vw;
+    height: 100vh;
+    position:fixed;
 }
 
 h1, h2, h3, h4, h5 {
@@ -24,7 +30,6 @@ button:hover {
     margin: 0;
     //*border: solid 0.3em;*//
 	border: none;
-    font-family: Georgia;
     transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
@@ -33,8 +38,6 @@ button:hover {
     -webkit-transition: 1s;
     cursor: pointer;
     position: absolute;
-	width: 150pt;
-    height: 50pt;
 }
 
 .gruppe > .vorlesung {
@@ -49,11 +52,18 @@ button:hover {
 	width: 150pt !important;
     height: 150pt !important;
     background-color: var(--color-bordeaux);
+    line-height: 150pt; /* must be queal to height for vertical centering */
 }
 
 .flipcard:not(.flipped) {
     transform: translate(-50%, -50%);
     z-index: 2;
+}
+
+.flipcard:not(.flipped) .back{
+	overflow: hidden;
+    opacity: 0;
+    transition: opacity 0s ease 1s;
 }
 
 .flipcard, .flipcard .face {
@@ -62,16 +72,19 @@ button:hover {
 }
 
 .flipcard.flipped .face {
+	padding: 1em;
     border-radius: 0.5em;
+    height: calc(100% - 2em);
+    width: calc(100% - 2em);
 }
 
 .flipcard.flipped {
-    width: inherit;
-    height: inherit;
+    width: inherit !important;
+    height: inherit !important;
     border-radius: 1em;
     position: absolute;
-    left: -8px !important;
-    top: -8px !important;
+    left: 0 !important;
+    top: 0 !important;
     perspective: 1600;
     -moz-perspective: 1600;
     -webkit-perspective: 1600;
@@ -83,11 +96,8 @@ button:hover {
 }
 
 .flipcard .face {
-    padding: 1em;
     text-align: center;
     position: absolute;
-    height: calc(100% - 2em);
-    width: calc(100% - 2em);
     transition: 1s;
     -moz-transition: 1s;
     -webkit-transition: 1s;
@@ -101,7 +111,11 @@ button:hover {
 }
 
 .flipcard .front {
-    color: white;
+    letter-spacing: -0.1px;
+    line-height: 0.8em;
+    width: inherit;
+    height: inherit;
+    line-height: inherit;
 }
 
 .flipcard .front:hover{
@@ -116,6 +130,7 @@ button:hover {
     -moz-transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     overflow: auto;
+    line-height: normal;
 }
 
 img.thumb {
@@ -211,6 +226,11 @@ img.thumb {
 /**
     Start Animation
  */
+#site{
+	width: inherit;
+	height: inherit;
+} 
+
 #site > * {
     opacity: 0;
     position: absolute;
