@@ -12,6 +12,10 @@ h1, h2, h3, h4, h5 {
     font-family: 'Caveat Brush';
 }
 
+button:hover {
+	cursor:pointer;
+}
+
 .flipcard {
     opacity: 0;
     perspective: 800px;
@@ -20,6 +24,7 @@ h1, h2, h3, h4, h5 {
     margin: 0;
 	border: none;
     font-family: 'Caveat Brush';
+    
     transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
@@ -49,7 +54,6 @@ h1, h2, h3, h4, h5 {
 .flipcard:not(.flipped) {
     transform: translate(-50%, -50%);
     z-index: 2;
-    
 }
 
 .flipcard, .flipcard .face {
@@ -57,14 +61,14 @@ h1, h2, h3, h4, h5 {
 }
 
 .flipcard.flipped {
-    width: inherit !important;
-    height: inherit !important;
+    width: inherit;
+    height: inherit;
     position: absolute;
     left: -8px !important;
     top: -8px !important;
-    perspective: 1600px;
-    -moz-perspective: 1600px;
-    -webkit-perspective: 1600px;
+    perspective: 1600;
+    -moz-perspective: 1600;
+    -webkit-perspective: 1600;
     transform: rotatey(-180deg);
     -moz-transform: rotatey(-180deg);
     -webkit-transform: rotatey(-180deg);
@@ -87,26 +91,6 @@ h1, h2, h3, h4, h5 {
     align-content: center;
     align-items: center;
     justify-content: center;
-}
-
-.flipcard:not(.IMBIT_Weg) {
-    position: absolute;
-    height: 50pt;
-    width: 100pt;
-    overflow: hidden;
-}
-
-.flipcard:not(.IMBIT_Weg) .face {
-    position: absolute;
-    transition: 1s;
-    -moz-transition: 1s;
-    -webkit-transition: 1s;
-    text-align: center;
-}
-
-.flipcard:not(.IMBIT_Weg) .front {
-    height: 50pt;
-    width: 100pt;
 }
 
 .flipcard .face *, .flipcard .face {
@@ -215,64 +199,6 @@ img.thumb {
     left: 50vw;
     top: 50vh;
     transform: translate(-50%, -50%);
-}
-
-.axis {
-    border: 0px solid;
-}
-
-.axis.x {
-    height: 0px;
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.axis.y {
-    width: 0px;
-}
-
-.axistext {
-	font-family: 'Tinos';
-}
-
-#animation_xaxis_left {
-    float: left;
-    transform: translate(-150%, -50%);
-}
-
-#animation_xaxis_right {
-    float: right;
-    transform: translate(150%, -50%);
-}
-
-#animation_yaxis_top {
-    top: 0px;
-    position: absolute;
-    transform: translate(-50%, -150%);
-    text-align: center;
-}
-
-#animation_yaxis_bottom {
-    bottom: 0px;
-    position: absolute;
-    transform: translate(-50%, 150%);
-    text-align:center;
-}
-
-#animation_l, #animation_welcome {
-    z-index: 1;
-    font-family: 'Caveat Brush';
-    font-size: 50pt;
-    text-shadow: 0px 0px 20px black;
-}
-#animation_l{
-    left: 75vw !important;
-    top: 75vh !important;
-}
-
-#animation_newContent{
-    left: 50vw !important;
-    top: 50vh !important;
 }
 
 /*enables line breaks out of XML using &#13;&#10; as Carriage Return Line Feed*/

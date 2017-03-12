@@ -6,7 +6,7 @@
 var makeGrid = function makeGrid(view){
     switch (view){
     		//Learnings by Type
-        case 'digitalLearning':
+        case 'digitalLearning2':
             $.when(
                 $.ajax('xml/index.php?base=grid&type=learning').done(function (data) {
                     $('#site').append(data);
@@ -77,7 +77,7 @@ var makeGrid = function makeGrid(view){
                 });
             });
             break;
-        case 'imbit':
+        case 'imbit2':
 		//This case is used for the IMBIT Way
             $display.width = $display.width - 208;
             $display.height = $display.height - 66;

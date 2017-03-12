@@ -14,81 +14,99 @@ function expstickybar(usersetting){
 		else
 			thisbar.init($, setting)
 	})
+	
 }
 
 expstickybar.prototype={
 
-	/*loadcontent:function($, setting){
+	loadcontent:function($, setting){
 		var thisbar=this
-		var ajaxfriendlyurl=setting.externalcontent.replace(/^http:\/\/[^\/]+\//i, "http://"+window.location.hostname+"/") 
 		$.ajax({
-			url: ajaxfriendlyurl, //path to external content
-			async: true,
-			dataType: 'html',
-			error:function(ajaxrequest){
-				alert('Error fetching Ajax content.<br />Server Response: '+ajaxrequest.responseText)
-			},
-			success:function(content){
-				thisbar.$ajaxstickydiv.html(content)
-				thisbar.init($, setting)
-			}
+			url: setting.externalcontent //path to external content
+		}).done(function(content){
+			thisbar.$ajaxstickydiv.html(content)
+			thisbar.init($, setting)
 		})
 
-	},*/
-
+	},
+	/**
+	 * Displays or hides the rocketbar
+	 * @param keyword {"show" | "hide"} target state
+	 * @param aim {boolean} If true fades with the set speed
+	 */
 	showhide:function(keyword, anim){
-		var thisbar=this, $=jQuery
-		var finalpx=(keyword=="show")? 0 : -(this.height-this.setting.peekamount)
-		var positioncss=(this.setting.position=="bottom")? {bottom:finalpx} : {top:finalpx}
-		this.$stickybar.stop().animate(positioncss, (anim)? this.setting.speed : 0, function(){
-			thisbar.$indicators.each(function(){
-				var $indicator=$(this)
-				$indicator.attr('src', (thisbar.currentstate=="show")? $indicator.attr('data-closeimage') : $indicator.attr('data-openimage'))
-			})
-		})
+		
+		var thisbar=this;
+		$=jQuery;
+		var barSize= jQuery('.content').outerHeight();
+		var finalpx=(keyword=="show")? 0 : - barSize;
+		var positioncss=(thisbar.setting.position=="bottom")? {bottom:finalpx} : {top:finalpx};
+		thisbar.$stickybar.finish().animate(	positioncss, anim ? thisbar.setting.speed : 0);
+		
+		
+		jQuery('#container').finish().animate({
+				top: (keyword=="show"?'-':'+') + '=' + barSize + 'px'
+			}, thisbar.setting.speed);
 		
 		thisbar.currentstate=keyword
 	},
-
+	
 	toggle:function(){
 		var state=(this.currentstate=="show")? "hide" : "show"
 		this.showhide(state, true)
 	},
 
 	init:function($, setting){
-		var thisbar=this
-		this.$stickybar=$('#'+setting.id).css('visibility', 'visible')
-		this.height=this.$stickybar.outerHeight()
-		this.currentstate="hide"
-		setting.peekamount=Math.min(this.height, setting.peekamount)
-		this.setting=setting
+		
+		var thisbar=this;
+		this.$stickybar=jQuery('#'+setting.id);
+		
+		this.$stickybar.css('visibility', 'hidden');
+		
+		this.$stickybar.waitForImages().done(function(){
+			thisbar.$stickybar.css('visibility', 'visible');
+			thisbar.$stickybar.animate({ bottom: '-' + thisbar.$stickybar.outerHeight() }, 0).animate({
+				bottom: '-' + jQuery('.content').outerHeight()
+			}, thisbar.setting.speed * (thisbar.$stickybar.outerHeight() / jQuery('.content').outerHeight() - 1), "swing", (thisbar.toggle).bind(thisbar));
+		});
+		
+		this.height = this.$stickybar.outerHeight();
+		
+		this.currentstate="hide";
+			
+		setting.peekamount=Math.min(this.height, setting.peekamount);
+		this.setting=setting;
+		
 		if (setting.revealtype=="mouseover")
 			this.$stickybar.bind("mouseclick touchmove swipe mouseenter mouseleave", function(e){
-				thisbar.showhide((e.type=="mouseenter" || e.type=="mouseclick" || e.type=="touchmove")? "show" : "hide", true)
-		})
-		this.$indicators=this.$stickybar.find('img[data-openimage]') //find images within bar with data-openimage attribute
+				thisbar.showhide((e.type == "mouseenter" || e.type == "mouseclick" || e.type == "touchmove")? "show" : "hide", true);
+			});
+		
+		this.$indicators = this.$stickybar.find('img[data-openimage]'); //find images within bar with data-openimage attribute
 		this.$stickybar.find('a[href=togglebar]').click(function(){ //find links within bar with href=#togglebar and assign toggle behavior to them
-			thisbar.toggle()
+			thisbar.toggle();
 			return false
-		})
-		setTimeout(function(){
-			thisbar.height=thisbar.$stickybar.outerHeight() //refetch height of bar after 1 second (last change to properly get height of sticky bar)
-		}, 1000)
-		this.showhide("hide")
+		});
+		
+		/* Color */
+		var colorSwitch = Cookies.get('color');
+		switch(colorSwitch) {
+			case "red":
+				jQuery('.content').css('background-color','#949494');
+				break;
+			case "grey":
+				jQuery('.content').css('background-color','#991b33');
+				break;
+		}
 	}
 }
 
 
-/////////////Initialization code://///////////////////////////
-
-//Usage: var unqiuevar=new expstickybar(setting)
-
 var mystickybar=new expstickybar({
 	id: "rocketbar", //id of sticky bar DIV
 	position:'bottom', //'top' or 'bottom'
-	revealtype:'mouseover', //'mouseover' or 'manual'
-	peekamount:40, //number of pixels to reveal when sticky bar is closed
-	externalcontent:'rocketbarcontent.htm', //path to sticky bar content file on your server, or "" if content is defined inline on the page
+	revealtype:'manual', //'mouseover' or 'manual'
+	peekamount:48, //number of pixels to reveal when sticky bar is closed
+	externalcontent:'./content/rocketbarcontent.htm', //path to sticky bar content file on your server, or "" if content is defined inline on the page
 	speed:500 //duration of animation (in millisecs)
 })
-

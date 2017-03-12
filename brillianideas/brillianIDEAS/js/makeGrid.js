@@ -7,6 +7,10 @@ var makeGrid = function makeGrid(view){
     switch (view){
     		//Learnings by Type
         case 'digitalLearning':
+
+            $('#grid').css('cursor', 'pointer');
+            $('.flipcard, .flipcard .face').css('pointer-events', 'none');
+            
             $.when(
                 $.ajax('xml/index.php?base=grid&type=learning').done(function (data) {
                     $('#site').append(data);
@@ -22,7 +26,7 @@ var makeGrid = function makeGrid(view){
                         $('#yaxis').animate({opacity: 1, height: $display.height}, {duration: 1000})
                     ).done(function () {
                         $.when(
-                            $('#animation_welcome').animate({opacity: 0}),
+                            $('#animation_welcome').animate({opacity: 0}),                            
                             $('#animation_welcome').css('display', 'none'),
                             $('#mooc').css('left', Math.floor(0.49034749 * $display.width)).css('top', Math.floor(0.16136364 * $display.height)).attr('data-sid', '1'),
                             $('#3dwelt').css('left', Math.floor(0.5997426 * $display.width)).css('top', Math.floor(0.05681818 * $display.height)).attr('data-sid', '2'),
@@ -47,7 +51,9 @@ var makeGrid = function makeGrid(view){
                             $('#vc').css('left', Math.floor(0.21879022 * $display.width)).css('top', Math.floor(0.23409091 * $display.height)).attr('data-sid', '21'),
                             $('#ps').css('left', Math.floor(0.38738739 * $display.width)).css('top', Math.floor(0.28181818 * $display.height)).attr('data-sid', '22'),
                             $('#iw').css('left', Math.floor(0.35521236 * $display.width)).css('top', Math.floor(0.075 * $display.height)).attr('data-sid', '23'),
-                            // TODO: data-left data-right und data-sid in xml+xsl einpflegen und schnließend unten einbauen (by Nick L.)
+
+                            // TODO: data-left data-right und data-sid in xml+xsl einpflegen und schnlieÃŸend unten einbauen (by Nick L.)
+
                             $('#grid').css('opacity', 1) /*,
                             $('#yaxis').animate({opacity: 0}, {duration: 1000}),
                             $('#xaxis').animate({opacity: 0}, {duration: 1000})*/
@@ -70,6 +76,8 @@ var makeGrid = function makeGrid(view){
                                 }))
                             });
                             $.when.apply($, deferredArray).done(function () {
+                            	$('#grid').css('cursor', 'default'),
+                                $('.flipcard, .flipcard .face').css('pointer-events', 'auto'),
                                 openPath();
                             });
                         });

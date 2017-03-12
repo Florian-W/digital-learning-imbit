@@ -6,9 +6,9 @@
     --color-green: rgb(133,186, 28);
     --color-yellow: rgb(205, 145, 25);
 
-    --background: var(--color-bordeaux);
+    --background: white;
     --background-highlight: var(--color-yellow);
-    --text: white;
+    --text: var(--color-bordeaux);
     --link: var(--color-gray);
     --link-visited: var(--color-green);
     --border: var(--color-gray);
@@ -18,11 +18,27 @@
 body {
     background-color: var(--background);
     color: var(--text);
-    background-image: url('../img/brillainIDEAS_UX_20170202_Oktopus-Tentakel4_F.png');
     background-repeat: no-repeat;
     background-position-y: -40px;
 }
 
+#site.a {
+	background-color: var(--text);
+	color: white;
+}
+
+#site.b {
+    font-family: 'Caveat Brush';
+    background-color: var(--background);
+    color: var(--text);
+    background-image: url('../img/brillainIDEAS_UX_20170227_Oktopus-Kopf_Arme.png');
+    background-repeat: no-repeat;
+    /*background-position-y: calc(100vh - 200px*/);
+    background-size: cover;
+    /*background-position-x: calc(100vw - 200px*/);
+}
+
 .flipcard .face{
-    background-color: var(--background-highlight);
+    background-color: var(--text) !important;
+    color: var(--background) !important;
 }
