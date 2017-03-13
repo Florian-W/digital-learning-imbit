@@ -1,10 +1,12 @@
 /**
- * Created by nick.london on 20.02.2017.
- * builds the grid with the flipcards,
- * spreads the learnings across the grid (currently hardcoded)
+ * @file builds the grid with the flipcards, spreads the learnings across the grid
+ * @author Nick London <nick.london94@gmail.com>
  */
 
-
+/**
+ * Holds the configuration for tile positioning (x, y on a scale of 0 to 1) and order of appearance fot the digitalLearning view
+ * @contant {Array} digitalLearningArray
+ */
 var digitalLearningArray = [
 	['mooc', 0.49034749 , 0.16136364 ,1],
 		['3dwelt', 0.5997426 , 0.05681818 ,2],
@@ -25,7 +27,7 @@ var digitalLearningArray = [
 		['cbtwbt', 0.16344916 , 0.88863636 ,17],
 		['sg', 0.35392535 , 0.49772727 ,18],
 		['bl', 0.1003861 , 0.40909091 ,19],
-		//['webinar', 0.08880309 , 0.19318182 ,20],
+		//['webinar', 0.08880309 , 0.19318182 ,20], // Todo: somehow missing 
 		['vc', 0.21879022 , 0.23409091 ,21],
 		['ps', 0.38738739 , 0.28181818 ,22],
 		['iw', 0.35521236 , 0.075 ,23]
@@ -34,76 +36,141 @@ var digitalLearningArray = [
 
 /**
  * Collets the dimensions and position of a flipcard (required since it takes the 'front'-classed element for width declaration)
+ * @class rectOutlines
  * @param $div { Object } the flippcard div as a jQuery collection
- * @returns Constructs a rectOutlines element only use with "new"
+ * @author Nick London <nick.london94@gmail.com>
  */
 function rectOutlines($div){
+	// uses css selectors (left and top) because jQuery.position() does not update fast enough
+	// uses .front child of flipcard, because some browsers recognize divs with no set size as 0x0
+	/**
+	 * @var {Number} rectOutlines.left The horizontal distance from the left edge to the achor
+	 */
 	this.left = $div.css('left');
+	/**
+	 * @var {Number} rectOutlines.top The vertical distance from the top edge to the achor
+	 */
 	this.top = $div.css('top');
+	/**
+	 * @var {Number} rectOutlines.width The horizontal distance from the left edge to the right edge
+	 */
 	this.width = $div.find('.front').outerWidth();
+	/**
+	 * @var {Number} rectOutlines.height The vertical distance from the top edge to the bottom edge
+	 */
 	this.height = $div.find('.front').outerHeight();
+	/**
+	 * @var {Number} rectOutlines.right The horizontal distance from the right edge to the achor
+	 */
 	this.right = this.top + this.width;
+	/**
+	 * @var {Number} rectOutlines.bottom The vertical distance from the bottom edge to the achor
+	 */
 	this.bottom = this.left + this.height;
 };
 /**
- * 
+ * @function noOVerlayGrid
  * @param id {String} Id of the Flipcard to position
  * @param x {Number} Left position of Card 0 < x < 1
  * @param y {Number} Left position of Card 0 < x < 1
  * @param count {String | Number} order of appearance
  * @return {undefined}
+ * @author Nick London <nick.london94@gmail.com>
  */
 function noOVerlayGrid(id, x, y, count){
-	// Get target element for quicker access
+	/**
+	 * Get target element for quicker access
+	 */ 
 	var $card = $('#' + id);
-	// Set initial values for x and y coordinate
+	/**
+	 * Set initial values for x and y coordinate
+	 */
 	$card.css('left', Math.floor(x * $display.width)).css('top', Math.floor(y * $display.height));
-	// loop until overlays with no other div of same class	
+	/**
+	 * loop until overlays with no other div of same class
+	 */	
 	do {
-		// get left, right, top and bottom position of elemen (relative to achors top left position)
+		/**
+		 * get left, right, top and bottom position of elemen (relative to achors top left position)
+		 */
 		var card_position = new rectOutlines($card);
-		// set loop variable to exit value
+		/**
+		 * set loop variable to exit value
+		 */
 		var allGood = true;
-		// select all elements of the same class (same class means every single class is lookef for, not the exact combination)
+		/**
+		 * select all elements of the same class (same class means every single class is lookef for, not the exact combination)
+		 * iterate through all of them
+		 */
 		$('.' + $card.attr('class').split(" ").join(", .")).each(function(i, e){
-			// Get target element for quicker access
+			/**
+			 * Get target element for quicker access
+			 */
 			$e = $(e);
+			/**
+			 * the element will always overlay with itself
+			 */
 			if(!$e.is('#'+id)){
-				// get left, right, top and bottom position of elemen (relative to achors top left position)
+				/**
+				 * get left, right, top and bottom position of elemen (relative to achors top left position)
+				 */
 				e_position = new rectOutlines($e)
-				// Todo: Doku
+				/**
+				 * check if both divs intersect
+				 */
 				if(!(card_position.left >= e_position.right || card_position.right <= e_position.left ||
 						card_position.top >= e_position.bottom || card_position.bottom <= e_position.top) ){
-					console.log(e_position);
-					console.log(card_position);
+					/**
+					 * either move left or right of the other div (depending on which is more to the left)
+					 */
 					if(card_position.left < e_position.left){
 						$card.css('left', e_position.left - card_position.width);
 					} else {
 						$card.css('left', e_position.right);
 					}
+					/**
+					 * do the same for vertival positioning
+					 */
 					if(card_position.top < e_position.top){
 						$card.css('top', e_position.top - card_position.height);
 					} else {
 						$card.css('top', e_position.bottom);
 					}
+					/**
+					 * ensure loop continues and reset iteration through divs
+					 */
 					allGood = false;
 					return false;
 				}
 			}
 		})
 	} while(!allGood);
+	/**
+	 * set data value for orde of appearance
+	 */
 	$card.attr('data-sid', ((typeof count == typeof "")? count: String.valueOf(count)));
 };
 
-
+/**
+ * Does all the start animation an utilizes the position function noOVerlayGrid
+ * @function makeGrid
+ * @param {String} decides which view to create (only 'digitalLearning' and 'imbit' are valid)
+ * @returns {undefined} nothing
+ * @author Nick London <nick.london94@gmail.com>
+ */
 var makeGrid = function makeGrid(view){
+	/**
+	 * decides the view
+	 */
     switch (view){
-    		//Learnings by Type
         case 'digitalLearning':
 
+        	/**
+        	 * disables the tiles and enables the back layer
+        	 */
             $('#grid').css('cursor', 'pointer');
             $('.flipcard, .flipcard .face').css('pointer-events', 'none');
-            
+            // TODO: dokumentation
             $.when(
                 $.ajax('xml/index.php?base=grid&type=learning').done(function (data) {
                     $('#site').append(data);
@@ -120,11 +187,9 @@ var makeGrid = function makeGrid(view){
                     ).done(function () {
                         $.when(
                             $.each(digitalLearningArray, function(key, value){
-                            	noOVerlayGrid.apply(this, value);
+                            	noOVerlayGrid.apply(this, value); // {@link noOVerlayGrid}
                             }),
-                            $('#grid').css('opacity', 1) /*,
-                            $('#yaxis').animate({opacity: 0}, {duration: 1000}),
-                            $('#xaxis').animate({opacity: 0}, {duration: 1000})*/
+                            $('#grid').css('opacity', 1) 
                         ).done(function () {
                             var deferredArray = [];
                             $('#grid').children('.flipcard').sort(function (a, b) {
