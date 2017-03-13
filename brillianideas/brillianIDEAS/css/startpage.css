@@ -40,3 +40,13 @@ html, body {
 	max-width: 75vw;
     transform: rotateX(45deg);
 }
+#arrowRight{
+	top: 50vh;
+	right: 1%;
+	position: absolute;
+}
+#arrowLeft{
+	top: 50vh;
+	left: 1%;
+	position: absolute;
+}
