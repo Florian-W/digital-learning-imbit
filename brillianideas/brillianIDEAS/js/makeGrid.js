@@ -169,8 +169,8 @@ var makeGrid = function makeGrid(view){
         	 * disables the tiles and enables the back layer
         	 */
             $('#grid').css('cursor', 'pointer');
-            $('.flipcard, .flipcard .face').css('pointer-events', 'none');
-            // TODO: dokumentation
+            $('.flipcard, .flipcard .face').css('pointer-events', 'none').css('cursor', 'default');
+            
             $.when(
                 $.ajax('xml/index.php?base=grid&type=learning').done(function (data) {
                     $('#site').append(data);
@@ -189,13 +189,21 @@ var makeGrid = function makeGrid(view){
                             $.each(digitalLearningArray, function(key, value){
                             	noOVerlayGrid.apply(this, value); // {@link noOVerlayGrid}
                             }),
-                            $('#grid').css('opacity', 1) 
+                            
+                            $.when(
+                            		$('#animation_welcome').animate({opacity: 0}, {duration: 1000})
+                            ).done(function(){
+                            	 $('#animation_welcome').css('display', 'none');
+                            }),
+                            $('#grid').css('opacity', 1) /*,
+                            $('#yaxis').animate({opacity: 0}, {duration: 1000}),
+                            $('#xaxis').animate({opacity: 0}, {duration: 1000})*/
                         ).done(function () {
                             var deferredArray = [];
                             $('#grid').children('.flipcard').sort(function (a, b) {
                                 return (($(a).data('sid') > $(b).data('sid')) ? 1 : -1);
                             }).each(function (index, element) {
-                                deferredArray.push($(element).delay(index * 500).children('.back').css('display', 'none').delay(0).parent().animate({opacity: 1}, {duration: 1000}));
+                                deferredArray.push($(element).delay(index * 500).children('.back').css('display', 'none').delay(0).parent().animate({opacity: 1}, {duration: 500}));
                                 deferredArray.push($.ajax('xml/index.php?base=categories&type=learning&detail=true&filter=' + $(element).attr("id")).done(function (data) {
                                     $(element).children('.back').append(data);
                                     deferredArray.push($.ajax('xml/index.php?base=learning&withLink=false&type=' + $(element).attr('id')).done(function (data2) {
@@ -210,7 +218,7 @@ var makeGrid = function makeGrid(view){
                             });
                             $.when.apply($, deferredArray).done(function () {
                             	$('#grid').css('cursor', 'default'),
-                                $('.flipcard, .flipcard .face').css('pointer-events', 'auto'),
+                                $('.flipcard, .flipcard .face').css('pointer-events', 'auto').css('cursor', 'pointer'),
                                 openPath();
                             });
                         });
