@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>brillianIDEAS | </title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="lib/jQuery/jquery-1.8.3.js"></script>
+
+    <!-- lunr.js -->
+    <!-- currently not working
+    	search related library -->
+    <script src="https://raw.githubusercontent.com/olivernn/lunr.js/master/lunr.js"></script>
+
+    <!-- Custom Files -->
+    <script src="js/help-functions.js"></script>
+    <script src="js/makeGrid.js"></script>
+    <script src="js/main.js"></script>
+	
+	<!--Custom CSS -->
+	<link rel="stylesheet" href="css/color-a.css">
+	<link rel="stylesheet" href="css/newContent.css">
+	
+    
+	
+    <!-- jQuery Mobile -->
+    <script src="lib/jQuery/Mobile/jquery.mobile.custom.js"></script>
+
+    <meta name="viewport" content="user-scalable=no, width=device-width, height=device-height" />
+
+  <script>
+		$(document).on("pageinit",function(){
+
+		  var pathname = $(location).attr('href');
+		  var leva = $('#le').attr("href");
+		  var prava = $('#pr').attr("href");
+
+		  $("body").on("swipeleft",function(){
+
+			location.href=leva;
+		  });                       
+
+		});
+	</script>
+
+</head>
+<body>
+	
+	<div id="Titel">
+	<br/>
+		<h1>Interaktive Lerninhalte</h1>
+		<h2>IMBIT 2014 für BWL</h2>
+	</div>
+
+<div id="container1">
+		<div id="left">
+				<img src="img/Stern-blank-ausgestellt.png" style='object-fit: contain'>
+		</div>
+		<div id="right">
+      Willkommen bei den interaktiven Lerneinheiten!
+<br>
+<br>
+Es handelt sich bei dieser Seite um Lerninhalte zu den Kernthemen der BWL,
+die vom WIMBIT14C Kurs für euch zusammen gestellt wurden.
+Hier findet ihr viele interessante Möglichkeiten euer BWL-Wissen interaktiv
+mittels kurzer Intro-Videos und angehängter Minispiele zu testen.
+Wer also auf der Suche nach praktischen Beispielen im BWL-Kontext ist, der sollte
+hier weiter stöbern.<br>
+Wir wünschen euch viel Spaß beim Ausprobieren!
+<br>
+<br>
+Euer WIMBIT14C Kurs
+
+		</div>
+
+	</div>
+
+
+<div id="site" class="">
+</div>
+</body>  
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>brillianIDEAS | </title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="lib/jQuery/jquery-1.8.3.js"></script>
+
+    <!-- lunr.js -->
+    <script src="https://raw.githubusercontent.com/olivernn/lunr.js/master/lunr.js"></script>
+
+    <!-- Custom Files -->
+
+    <!-- jQuery Mobile -->
+    <script src="lib/jQuery/Mobile/jquery.mobile.custom.js"></script>
+    <link rel="stylesheet" href="css/color-a.css">
+
+    <meta name="viewport" content="user-scalable=no, width=device-width, height=device-height" />
+
+<style>
+    body{
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        font-family: 'Caveat Brush';
+    }
+    .left h2, .right h2{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -100%);
+        -moz-transform: translate(-50%, -100%);
+        -ms-transform: translate(-50%, -100%);
+        -o-transform: translate(-50%, -100%);
+        transform: translate(-50%, -100%);
+        font-size: 300%;
+    }
+    .left, .right{
+        position: absolute;
+        display: block;
+        vertical-align: middle;
+        width: calc(50vw - 0.5em);
+        height: 100vh;
+        top: 0px;
+        padding: 0;
+        margin: 0;
+        z-index: 0;
+    }
+    .left{
+        border-right: 1em solid white;
+        left: 0px;
+        background-image: url('img/brillainIDEAS_UX_20170202_Oktopus-Tentakel4_F.png');
+        background-repeat: no-repeat;
+        background-position-y: -40px;
+    }
+    .right{
+        right: 0px;
+        background-color: var(--color-gray);
+        background-image: url('img/brillainIDEAS_UX_20170202_Oktopus-Tentakel6_F.png');
+        background-repeat: no-repeat;
+        background-position-y: calc(100vh - 200px);
+        background-size: 140px;
+        background-position-x: calc(50vw - 200px);
+    }
+    .center{
+        position: absolute;
+        left: 50vw;
+        top: 50vh;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        z-index:1;
+        border: 1em solid white;
+        border-radius: 50%;
+        background-color: white;
+        color: black;
+        padding: 15px;
+    }
+</style>
+</head>
+<body>
+<!--<audio src="http://38.96.175.20:5606/;" autobuffer autoplay loop></audio>-->
+<audio src="https://silentlistening.files.wordpress.com/2008/05/palaoa-strange-sound.mp3" autobuffer autoplay loop></audio>
+<div id="site" class="">
+    <div class="left" onclick="window.location = 'digitalLearning.html';">
+        <h2>Digital Learning</h2>
+    </div>
+    <div class="center">
+        <h1>brillianIDEAS</h1>
+    </div>
+    <div class="right" onclick="window.location = 'imbit.html';">
+        <h2>IMBIT</h2>
+    </div>
+</div>
+</body>
+</html>

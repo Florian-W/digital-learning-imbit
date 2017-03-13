@@ -1,0 +1,142 @@
+{
+	"DragDropGames": [{
+		"DragAndDropList": [{
+			"title": "Umweltsphären, Anspruchsgruppen und Interaktionsthemen - Drag & Drop",
+			"description": "Ziehe alle Elemente in das richtige Feld. Mit \"Eingabe prüfen\"  kannst du überprüfen, ob alle Elemente richtig sind. Falsche Elemente werden rot markiert.",
+			"id": "d0",
+			"elementtext": "Staat",
+			"target": "target2",
+			"targetNumber": "3",
+			"titleTarget1": "Umweltsphären",
+			"titleTarget2": "Anspruchsgruppen",
+			"titleTarget3": "Interaktionsthemen"
+		}, {
+			"id": "d1",
+			"elementtext": "Gesellschaft",
+			"target": "target1"
+		}, {
+			"id": "d2",
+			"elementtext": "Kunden",
+			"target": "target2"
+		}, {
+			"id": "d3",
+			"elementtext": "Normen & Werte",
+			"target": "target3"
+		}, {
+			"id": "d4",
+			"elementtext": "Lieferanten",
+			"target": "target2"
+		}, {
+			"id": "d5",
+			"elementtext": "Natur",
+			"target": "target1"
+		}, {
+			"id": "d6",
+			"elementtext": "Anliegen & Interessen",
+			"target": "target3"
+		}, {
+			"id": "d7",
+			"elementtext": "Ressourcen",
+			"target": "target3"
+		}, {
+			"id": "d8",
+			"elementtext": "Wirtschaft",
+			"target": "target1"
+		}, {
+			"id": "d9",
+			"elementtext": "Technologie",
+			"target": "target1"
+		}]
+	}, {
+		"DragAndDropList": [{
+			"title": "Prozesse, Entwicklungsmodi und Ordnungsmomente - Drag & Drop",
+			"description": "Ziehe alle Elemente in das richtige Feld. Mit \"Eingabe prüfen\"  kannst du überprüfen, ob alle Elemente richtig sind. Falsche Elemente werden rot markiert.",
+			"id": "d0",
+			"elementtext": "Kultur",
+			"target": "target3",
+			"targetNumber": "3",
+			"titleTarget1": "Prozesse",
+			"titleTarget2": "Entwicklungsmodi",
+			"titleTarget3": "Ordnungsmomente"
+		}, {
+			"id": "d1",
+			"elementtext": "Managementprozesse",
+			"target": "target1"
+		}, {
+			"id": "d2",
+			"elementtext": "Optimierung",
+			"target": "target2"
+		}, {
+			"id": "d3",
+			"elementtext": "Strukturen",
+			"target": "target3"
+		}, {
+			"id": "d4",
+			"elementtext": "Geschäftsprozesse",
+			"target": "target1"
+		}, {
+			"id": "d5",
+			"elementtext": "Strategie",
+			"target": "target3"
+		}, {
+			"id": "d6",
+			"elementtext": "Unterstützungsprozesse",
+			"target": "target1"
+		}, {
+			"id": "d7",
+			"elementtext": "Erneuerung",
+			"target": "target2"
+		}]
+	}],
+	"quizGames": [{
+		"quizlist": [{
+			"question": "Welcher der folgenden Punkte ist nicht Teil der Umweltsphären?",
+			"optionTrue": "Staat",
+			"optionFalse": [
+				"Gesellschaft",
+				"Natur",
+				"Wirtschaft",
+				"Technologie"
+			]
+		}, {
+			"question": "Welcher der folgenden Punkte ist nicht Teil der Interaktionsthemen?",
+			"optionTrue": "Mitarbeiter",
+			"optionFalse": [
+				"Ressourcen",
+				"Normen",
+				"Werte",
+				"Anliegen & Interessen"
+			]
+		}, {
+			"question": "Managementprozesse umfassen alle grundlegenden Aufgaben, die mit der Gestaltung, Lenkung (Steuerung) und Entwicklung von zweckorientierten soziotechnischen Organisationen zu tun haben",
+			"optionTrue": "Richtig",
+			"optionFalse": [
+				"Falsch"
+			]
+		}, {
+			"question": "Anspruchsgruppen bezeichnen alle Gruppen und Individuen, die in irgendeiner Form von der Wert- oder Schadschöpfung der Unternehmen betroffen sind",
+			"optionTrue": "Richtig",
+			"optionFalse": [
+				"Falsch"
+			]
+		}, {
+			"question": "Prozesse sind sich ständig ändernde Abläufe, die das Alltagsgeschehen einer Unternehmung prägen",
+			"optionTrue": "Falsch",
+			"optionFalse": [
+				"Richtig"
+			]
+		}, {
+			"question": "Die Strategie beruht auf langfristigen Entscheidungen, die dem Aufbau von Wettbewerbsvorteilen dienen.",
+			"optionTrue": "Richtig",
+			"optionFalse": [
+				"Falsch"
+			]
+		}, {
+			"question": "Entwicklungsmodi bezeichnen die verschiedenen Arten der Weiterentwicklung einer Unternehmung",
+			"optionTrue": "Richtig",
+			"optionFalse": [
+				"Falsch"
+			]
+		}]
+	}]
+}

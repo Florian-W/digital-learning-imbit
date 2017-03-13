@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Categories>
+	<LearningType>
+		<Medium>Virtual&#13;&#10;Classrooms</Medium>
+		<Abbr>vc</Abbr>
+		<Description>Ein virtuelles Klassenzimmer bezeichnet Lehrszenarien, in denen das Internet als Kommunikationsmedium für räumlich getrennte Lehrende und Lernende genutzt wird. Durch den Einsatz von Lernplattformen, Webcams, VoIP oder gar Whiteboards kann sowohl eine Sicht-, Hör- und Sprechverbindung der Beteiligten als auch ein gemeinsames und gleichzeitiges Bearbeiten von Dokumenten ermöglicht werden.Deshalb eignet sich dieses Lernform besonders um einzelne Lerninhalte zu verinnerlichen unabhängig von der Distanz.</Description>
+		<Thumb>https://c5.staticflickr.com/9/8891/28845999836_8a1da67949_b.jpg</Thumb>
+	</LearningType>
+	<LearningType>
+		<Medium>Interaktive&#13;&#10;Whiteboards</Medium>
+		<Abbr>iw</Abbr>
+		<Description>Ein interaktives Whiteboard - oder eine "digitale Tafel" - ist eine elektronische Projektionswand bzw. eine Weißwandtafel, die in Verbindung mit einem Computer und einem Projektor/Beamer funktioniert. Häufig werden Whiteboards innerhalb von Vorlesungen eingesetzt. Die Vorteile dieses Lernmediums liegen auf der Hand: Bessere Präsentationsmöglichkeiten von Unterrichtsinhalten, ein hohes Maß an Motivation und eine Vielzahl von Interaktionsmöglichkeiten.Letztendlich können mit Hilfe von interaktiven Whiteboards alle Medien wie Text, Grafik, Bilder, Animationen, Töne und Filme präsentiert werden.</Description>
+		<Thumb>https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Interactive_whiteboard2.jpg/640px-Interactive_whiteboard2.jpg</Thumb>
+	</LearningType>
+	<LearningType>
+		<Medium>MOOCs</Medium>
+		<Abbr>mooc</Abbr>
+		<Description>Die Abkürzung MOOC steht für Massive Open Online Course und bezeichnet einen internetbasierten Kurs, der sich an viele Teilnehmer richtet (engl. "massive": "riesig, enorm") und offen für alle ist (engl. "open"). Die Inhalte werden in Form von Videosequenzen, Skripten und ergänzenden Lernmaterialien vermittelt. Der Austausch der Teilnehmenden findet in Foren und sozialen Netzwerken statt. Die Wissensüberprüfung erfolgt meist durch Multiple-Choice-Tests. Man unterscheidet zwischen xMoocs und cMoocs. Während ein xMOOC eher lehrerzentriert ist, ist der cMOOC eher lernerzentriert, informell und den sozialen Medien verpflichtet.</Description>
+		<Thumb>https://upload.wikimedia.org/wikipedia/commons/c/cb/MOOC_poster_mathplourde.jpg</Thumb>
+	</LearningType>
+	<LearningType>
+		<Medium>Chat</Medium>
+		<Abbr>chat</Abbr>
+		<Description>Für eine aktive Verarbeitung des Lerninhaltes im Gedächtnis ist, neben der Wiederholung und den Lernerfolgskontrollen, eine Kommunikation über den Lerninhalt wichtig. Dadurch kommt es indirekt zu einer Wiederholung des Gelernten und damit zu einer weiteren Verankerung im Gehirn. Aus der Wiederholung ergibt sich, dass die Kommunikation nicht ausschließlich für den kommunikativen Lerntyp bedeutend ist. Der Chat stellt hierbei eine Variante der synchronen Kommunikation dar, die dabei hilft, das Gelernte zu verfestigen.</Description>
+		<Thumb>./img/thumbs/chat.jpg</Thumb>
+	</LearningType>
+	<LearningType>
+		<Medium>Virtuelle&#13;&#10;3D-Welten</Medium>
+		<Abbr>3dwelt</Abbr>
+		<Description>Virtuelle Welten sind Lernumgebungen innerhalb deren die Anwender in Form eines virtuellen Charakters, (Avatar) handeln und mit anderen Nutzern kommunizieren können. Dieser Avatar verfügt über bestimmte Merkmale und Fähigkeiten, die erweitert und verändert werden können. Genutzt werden virtuelle Welten unter anderem für Rollenspiele, Gruppenarbeiten, virtuelle Klassenzimmer sowie zur kooperativen Gestaltung von Objekten. Studien haben bewiesen, dass sich die verstärkte Präsenzerfahrung in virtuellen Welten positiv auf das Engagement und die informellen Lernprozesse der Studierenden auswirken. Mit virtuellen Welten können verschiedenen Lerntypen und -stile unterstützt werden, allerdings hängt der erfolgreiche Einsatz stark von der Usability und den technischen Rahmenbedingungen, wie Hardware oder Netzwerk, an der Universität bzw. auf Seiten des Anwenders ab.</Description>
+		<Thumb>https://upload.wikimedia.org/wikipedia/commons/e/ef/VR-Helm.jpg</Thumb>
+	</LearningType>
+	<LearningType>
+		<Medium>Foren</Medium>
+		<Abbr>forum</Abbr>
+		<Description>Foren und Diskussionsformen sind meist Bestandteile von Online-Communities, in denen zwischen Teilnehmern Fragen, Antworten, Meinungen und Hinweise ausgetauscht werden. Somit kann in einem Forum Weiterbildung durch Interaktion mit anderen stattfinden.Neben der Möglichkeit selbst Fragen zu stellen können Foren auch so bei der gezielten Lösungsfindung unterstützen, alsdass vergangene ähnliche Fragen und deren Beantwortung bereits Aufschluss im Bezug auf die eignene Fragestellung geben. Verschlagwortung der Beiträge sowie Foren zu Fokusthemen (z.B. Tech Foren) können bei der gezielten Suche nach Antworten und Hilfestellungen helfen.Oft geben Bewertungen und Kommentare der Teilnehmer aufschluss über die Qualität der Beiträge, trotzdem kann kein zuverlässiges Qualitätsniveau garantiert werden. Im gegensatz zu Chats findet hier eine asynchrone Kommunikation statt, das heißt, dass die Reaktion anderer Forenmitglieder zeitversetzt erfolgt.</Description>
+		<Thumb>https://upload.wikimedia.org/wikipedia/commons/6/60/Forum_Romanum_(16640231981).jpg</Thumb>
+	</LearningType>
+	<LearningType>
+		<Medium>Social Networks</Medium>
+		<Abbr>sn</Abbr>
+		<Description>Ein sogenanntes Social Network stellt Online-Communities einen virtuellen Raum zur Verügung, in dem Mitglieder auf verschiedene Art und Weise interagieren können. Insofern fungieren sie auch als Forum, in dem Fragen beantwortet werden und gemeinsame Diskussionen zur Wissensbildung führen können. Außerdem können über Social Media schnell und für einen großen Empfängerkreis Informationen bereitgestellt werden: Zeitungen und Zeitschriften besitzen beispielsweise Profile, über die sie aktuelle Artikel und Neuigkeiten verbreiten. Außerdem können Firmen über Produkte und Dienstleistungen informieren. Profilen die mit eigenen Interessen und Informationsbedarf übereinstimmen können verfolgt oder 'geliked' werden, sodass Neuigkeiten automatisch übermittelt werden.Je nach Quelle und bereitstellendem Profil ist allerdings zu beachten, dass die veröffentlichen Informationen oft als subjektiv eingefärbt einzustufen sind.</Description>
+		<Thumb>https://upload.wikimedia.org/wikipedia/commons/7/70/Social_Red.jpg</Thumb>
+	</LearningType>
+	<LearningType>
+		<Medium>Planspiele</Medium>
+		<Abbr>ps</Abbr>
+		<Description>Planspiele sind eine bewährte Technik im Business-Management-Training, da sie Kompetenzen im Umfeld des strategischen Managements schulen. Es handelt sich dabei konkret um interaktive Spiele, bei denen Teilnehmer in einer Simulation mit möglichst realitätsnahen Problemstellungen und Aufgaben konfrontiert werden, die es zu lösen gilt.Spieler schlüpfen in Rollen und sollen durch kreatives, selbständiges und organisiertes Handeln, sowie durch kritische Reflexion und Wechsel der Perspektive Entscheidungsprozesse durchleben und die ihrer Rolle zugedachten Aufgaben erfüllen. Teilnehmern wird so die Möglichkeit gegeben in risikofreiem Umfeld gelernte Theorien in der Praxis anzuwenden und sich durch Feedback dabei zu verbessern. Auch die Fähigkeit zur erfolgreichen Interaktion in Teams wird durch die Rollenkonstellationen im Planspiel trainiert.</Description>
+		<Thumb>https://upload.wikimedia.org/wikipedia/commons/f/f7/Immortal_game.jpg</Thumb>
+	</LearningType>
+	<LearningType>
+		<Medium>Blended&#13;&#10;Learning</Medium>
+		<Abbr>bl</Abbr>
+		<Description>Blended Lerning (dt. Integriertes Lernen) ist eine Mischform unterschiedlicher Lernprinzipien. Es vereint zumeist Elemente von Präsenzunterricht, E-Learnings und Selbstbildung, wobei das Verhältnis dieser Elemente zueinander variieren kann. E-Learnings und Arbeitsmaterialien zur selbständigen Bearbeitung können beispielsweise zum Vor- und Nachbereiten des Präsenzunterrichts dienen, oder aber der Hauptbestandteil sein, sodass gelegentliche Face-to-Face Sitzungen hauptsächlich unterstützend im Umgang mit den Lernmaterialien wirken. So kann der Lernprozess einerseits effektiv und flexibel gestaltet werden, z.B. durch E-Learnings mit anpassbaren Schwierigkeitsniveaus, und beinhaltet andererseits auch Elemente der sozialen Interaktion sowie die Möglichkeit das Wissen im Gespräch zu vertiefen.</Description>
+		<Thumb>https://c1.staticflickr.com/9/8167/7704609288_14d335dd87_b.jpg</Thumb>
+	</LearningType>
+	<LearningType>
+		<Medium>Serious Games</Medium>
+		<Abbr>sg</Abbr>
+		<Description>Serious Games sind digitale Spiele bzw. spielähnliche Anwendungen die nicht ausschließlich auf Unterhaltung abzielen, sondern auch ernsthafte Wissensvermittlung und Weiterbildung zum Ziel haben. An den Spieler werden im Verlauf des Spiels Informationen, Fähigkeiten und Handlungsempfehlungen weitergegeben, die Anwendung in realen Lebenssituationen finden können und sollen. Im Unterschied zum klassischen Lernspiel sind bei Serious Games Entertainment- und Bildungsaspekte in sehr ausgewogenem Maße vorhanden und so eng miteinander verwoben, sodass das Spiel nicht auf Phasen der direkten Übermittlung des Lernstoffs folgt sondern im Gegenteil das Lernen zu jedem Zeitpunkt im Spiel ermöglicht wird.</Description>
+		<Thumb>https://c1.staticflickr.com/7/6169/6222514089_9c9545f088_z.jpg</Thumb>
+	</LearningType>
+	<LearningType>
+		<Medium>Weblogs</Medium>
+		<Abbr>weblogs</Abbr>
+		<Description>Ein Weblog ist ein Logbuch im Web – ein Web-Tagebuch, in das man Beiträge aller Art hineinschreiben kann. Ein Weblog (kurz Blog) besteht im Grunde aus ganz „normalen” Webseiten, die im Gegensatz zu den gewohnten statischen HTML-Seiten bei jedem Aufruf dynamisch aus einer Datenbank erzeugt werden. Diese Blogs erlauben interaktivität, durch bspw. Kommentierungsmöglichkeiten. Es kann sich durchaus lohnen einen Weblog während des Studiums zu pflegen um gelerntes zu festigen und gibt anderen die Möglichkeit von eigenen Erfahrungen zu profitieren.</Description>
+		<Thumb>https://c1.staticflickr.com/1/56/192337337_673fd321fe.jpg</Thumb>
+	</LearningType>
+	<LearningType>
+		<Medium>Lerntagebücher</Medium>
+		<Abbr>tagebuch</Abbr>
+		<Description>Das Führen von Lerntagebüchern ist eine bewährte Methode, die eigene Lernpraxis zu dokumentieren, zu erkunden, zu überprüfen und möglicherweise zu verändern. Lerntagebücher werden auch im Ablauf von universitären Lehrveranstaltungen eingesetzt, um die persönliche Auseinandersetzung von Studierenden mit Lehrinhalten und Lehrzielen zu dokumentieren und zu reflektieren. Diese Methode ist vor allem für solche Lehrveranstaltungen geeignet, in denen es darum geht, eigene Erfahrungen und Einstellungen zu aktualisieren und sich mit ihnen kritisch auseinanderzusetzen. Auch lassen sich die kognitiven Ziele der Lehrveranstaltung wesentlich stärker "personenbezogen" gestalten (vgl. Stangl 1998).
+
+Quelle: http://www.stangl-taller.at/ARBEITSBLAETTER/LERNTECHNIK/Lerntagebuch.shtml
+© [werner stangl]s arbeitsblätter</Description>
+		<Thumb>https://c1.staticflickr.com/3/2075/2256550558_1315e0e881_z.jpg?zz=1</Thumb>
+	</LearningType>
+	<LearningType>
+		<Medium>Microblogging/&#13;&#10;Twitter</Medium>
+		<Abbr>twitter</Abbr>
+		<Description>Microblogging, wie etwa Twitter, eignen sich hervorragend um "Häppchenweise" wissen zu vermitteln, wie etwa kurze Fakten.</Description>
+		<Thumb>https://upload.wikimedia.org/wikipedia/commons/a/a6/The_age_of_microblogging.jpg</Thumb>
+	</LearningType>
+	<LearningType>
+		<Medium>Wikis</Medium>
+		<Abbr>wiki</Abbr>
+		<Description>Ein Wiki ist ein Medium, das durch seine offene Struktur für viele Anwendungsfälle geeignet sein kann. Es ist vergleichbar mit der Universalität einer Wandtafel, wobei das Wiki gleichzeitig eine Archivfunktion beinhalten kann. Im Gegensatz etwa zu Content-Management-Systemen ist ein Wiki flexibler, da die Strukturierung der Daten kaum vorgegeben ist.
+
+Ein Wiki ist ein zukunftsweisendes System, das die Medienkompetenz der Schüler wie Lehrer stärkt. Auch die Wikipedia, das wohl bekannteste und größte Wiki, kann aktiv in der Schule und für die Schule genutzt werden. Ein gutes Beispiel für eine Wiki die man zum erhalten neuer Kenntnisse verwenden kann ist z.B. unsere Mediawiki (LINK ZUM MEDIAWIKI).
+Quelle: https://wiki.zum.de/wiki/Wikis_in_der_Schule</Description>
+		<Thumb>https://upload.wikimedia.org/wikipedia/commons/b/b8/Interlanguage_wiki_zh.png</Thumb>
+	</LearningType>
+	<LearningType>
+		<Medium>Podcasts</Medium>
+		<Abbr>podcast</Abbr>
+		<Description>Podcast ist ein zusammengesetztes Kunstwort aus den Begriffen iPod und Broadcast und meint Audio- und Videobeiträge, die über das Internet zum Download bereitgestellt werden. Nach dem Herunterladen können Interessenten die veröffentlichten Beiträge zu jeder beliebigen Zeit und an jedem beliebigen Ort anhören und ansehen. Podcasts können über verschiedene Feed-Formate abonniert werden (bspw. RSS-Feed).</Description>
+		<Thumb>https://c1.staticflickr.com/4/3129/2743534799_e1c988d6be_b.jpg</Thumb>
+	</LearningType>
+	<LearningType>
+		<Medium>Lernfilme</Medium>
+		<Abbr>film</Abbr>
+		<Description>Als Lernfilm bezeichnet man einen für Unterrichtszwecke produzierten Film. Dieser soll schulische Lernprozese unterstützen und wird von online Medienzentren verliehen und vertrieben. Der Lernstoff soll filmisch vermittelt werden. Dabei liegt der Schwerpunkt auf der Übermittlung von Wissen und nicht der Darstellung vom Emotionen oder Handlungen. Lernfilme sind ebenso unter der englischen Bezeichnung Tutorial bekannt und im Internet auffindbar.</Description>
+		<Thumb>./img/thumbs/film.png</Thumb>
+	</LearningType>
+	<LearningType>
+		<Medium>Augmented&#13;&#10;Reality</Medium>
+		<Abbr>ar</Abbr>
+		<Description>Unter Augmented Reality versteht man die computergestützte Erweiterung der Wahrnehmung der Realität. Dabei können beispielsweise Bilder oder Vidoes über Einblendungen oder Überlagerungen so dargestellt werden als wären diese in der Realität zu sehen. Zur Darstellung der Augmented Reality wird meistens eine Kamera, Software und GPS, sowie verschiedene Sensoren verwendet. Mithilfe dieser können beispielsweise Kamerabilder mit Informationen zu Sehenswürdigkeiten oder Strassennamen ergänzt werden.</Description>
+		<Thumb>https://upload.wikimedia.org/wikipedia/commons/5/51/Augmented_reality_at_Museu_de_Matar%C3%B3_linking_to_Catalan_Wikipedia_(18).JPG</Thumb>
+	</LearningType>
+	<LearningType>
+		<Medium>CBT/ WBT</Medium>
+		<Abbr>cbtwbt</Abbr>
+		<Description>CBT ist ein neues Zeitalter des Lernens. Es ist eine Form der Ausbildung, in der ein Schüler lernt, indem er spezielle Trainingsprogramme verwendet, während an einem Computer ist. Dieses System funktionierte gut in den Tagen vor dem Internet, aber mit der explosiven Nutzung des Internets, ist der Umfang der CBTs gezwungen, sich zu erweitern. Es hat mehrere Vorteile gegenüber traditionellen Klassenzimmer-Lernmethoden und über selbst-gelehrte Bücher. WBT ist eine Teilmenge von CBTs, in denen das Material durch das Anwenden von Web-Technologien im Internet zugänglich gemacht wird. Typischerweise hat es Text und Grafiken, Animation, Audio und Video, und braucht zusätzliche Bandbreite und Software, um optimal zu arbeiten. WBT wird auch als "Online-Kurse" und "Web-basierte Instruktion" bezeichnet.</Description>
+		<Thumb>https://upload.wikimedia.org/wikipedia/commons/b/b0/KSTBB_EFDL_Europ%C3%A4ischer_Finanzf%C3%BChrerschein_Online-Pr%C3%BCfung_2015.jpg</Thumb>
+	</LearningType>
+	<LearningType>
+		<Medium>Simulationen</Medium>
+		<Abbr>sim</Abbr>
+		<Description>Eine Simulation ist eine möglichst realitätsnahe Abbildung der Wirklichkeit. Der Mensch lernt am besten in natürlichen Umgebungen, sodass man versucht, den Lernprozess mit Simulationen zu unterstützen. Beispielsweise werden diese dazu eingesetzt, Szenarien durchzuspielen, bei denen Menschen zu Schaden kommen könnten. Durch eine virtuelle Lernumgebung soll das Lernen unterstützt werden. Beispiele für simuliertes Lernen sind Serious Games wie z.B. BrillianICM, das man hier auf der Seite findet. Hier wird man in die Situation eines Expats im Ausland hineinversetzt.</Description>
+		<Thumb>https://upload.wikimedia.org/wikipedia/commons/f/f5/Fahr-Simulation.jpg</Thumb>
+	</LearningType>
+	<LearningType>
+		<Medium>Interaktive&#13;&#10;e-books</Medium>
+		<Abbr>ebook</Abbr>
+		<Description>Interaktive E-Books erweitern die Textinhalte der E-Books um multimediale Inhalte wie Audios und Videos. Der Leser interagiert mit den Inhalten beispielsweise via Mausklick, drag-and-drop oder durch weitere Benutzeraktionen.</Description>
+		<Thumb>https://www.jisc.ac.uk/sites/default/files/tablet_device.jpg</Thumb>
+	</LearningType>
+	<LearningType>
+		<Medium>Learning&#13;&#10;on demand</Medium>
+		<Abbr>lod</Abbr>
+		<Description>Mit Learning-on-Demand werden Studierende zielbezogener auf unmittelbar bevorstehende Themen und Aufgaben vorbereitet. Diese Lernform kann nicht nur zeit-, sondern auch ortsunabhängig in Anspruch genommen werden. Die Ortsunabhängigkeit birgt die Gefahr, dass das Lernen aufgrund störender Umgebungseinwirkungen unterbrochen wird. Daneben besteht das Risiko, dass die Studierenden zunehmend nur unter Zeitdruck und sehr oberflächlich lernen, da sie erst mit dem Lernen beginnen, wenn die Notwendigkeit gegeben ist. Tendenziell sorgt Learning-on-Demand aber für einen effektiven und effizienten Transfer der erlernten Inhalte.</Description>
+		<Thumb>https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/AWS_Simple_Icons_On-Demand_Workforce_Amazon_Mechanical_Turk_Requester.svg/2000px-AWS_Simple_Icons_On-Demand_Workforce_Amazon_Mechanical_Turk_Requester.svg.png</Thumb>
+	</LearningType>
+	<LearningType>
+		<Medium>Spiel</Medium>
+		<Abbr>spiel</Abbr>
+		<Description>Bei der Lernform Spiel geht es darum, bestimmte Verhaltensweisen und Entscheidungsmuster von Menschen nachzuvollziehen und den Umgang mit Konflikten zu üben. Somit wird erfahrungsbezogenes Lernen ermöglicht. Mithilfe des Spiels werden Wahrnehmungen erweitert und bestimmte Verhaltensmuster diskutiert und reflektiert.</Description>
+		<Thumb>./img/thumbs/spiel.png</Thumb>
+	</LearningType>
+	<Groups>
+		<Group-Name>Wirtschaftsinformatik</Group-Name>
+		<Abbr>IM</Abbr>
+		<Classes>
+			<Name>Intercultural Management</Name>
+			<Number>W3WI_IMBIT_301</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/d/da/D083_-_N%C2%B0_330._La_Hanse_et_Venise._-_liv3-ch07.png</Thumb>
+			<Group>Wirtschaftsinformatik</Group>
+		</Classes>
+		<Classes>
+			<Name>Int. Business Law and Organizations</Name>
+			<Number>W3WI_IMBIT_303</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/b/bf/B_707.svg</Thumb>
+			<Group>Wirtschaftsinformatik</Group>
+		</Classes>
+		<Classes>
+			<Name>Global Project Management Skills</Name>
+			<Number>W3WI_IMBIT_404</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/b/b2/PDCA-Cycle-Kaizen.png</Thumb>
+			<Group>Wirtschaftsinformatik</Group>
+		</Classes>
+		<Classes>
+			<Name>Integrationsseminar</Name>
+			<Number>W3WI_103</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Integration_surface_elementaire_anneau.svg/500px-Integration_surface_elementaire_anneau.svg.png</Thumb>
+			<Group>Wirtschaftsinformatik</Group>
+		</Classes>
+		<Classes>
+			<Name>Management</Name>
+			<Number>W3WI_204</Number>
+			<Thumb>./img/thumbs/mgmnt.png</Thumb>
+			<Group>Wirtschaftsinformatik</Group>
+		</Classes>
+		<Classes>
+			<Name>Recht</Name>
+			<Number>W3WI_506</Number>
+			<Thumb>./img/thumbs/law.png</Thumb>
+			<Group>Wirtschaftsinformatik</Group>
+		</Classes>
+		<Classes>
+			<Name>Projekt</Name>
+			<Number>W3WI_107</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/6/67/Space_Shuttle_vs_Soyuz_TM_-_to_scale_drawing.png</Thumb>
+			<Group>Wirtschaftsinformatik</Group>
+		</Classes>
+	</Groups>
+	<Groups>
+		<Group-Name>International</Group-Name>
+		<Abbr>S</Abbr>
+		<Classes>
+			<Name>Spanisch</Name>
+			<Number>W3WI_IMBIT_305</Number>
+			<Thumb>https://c1.staticflickr.com/9/8318/7915744438_71b937a80d_b.jpg</Thumb>
+			<Group>International</Group>
+		</Classes>
+		<Classes>
+			<Name>Chinesisch</Name>
+			<Number>Sprachschule</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Chinese_Character_zhao1_cai2_jin4_bao3_Song_style.svg/2000px-Chinese_Character_zhao1_cai2_jin4_bao3_Song_style.svg.png</Thumb>
+			<Group>International</Group>
+		</Classes>
+	</Groups>
+	<Groups>
+		<Group-Name>Informatik</Group-Name>
+		<Abbr>IT</Abbr>
+		<Classes>
+			<Name>SW-Lebenszyklus</Name>
+			<Number>W3WI_IMBIT_302</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Nanomia_life_cycle_vector_wikimedia.svg/2000px-Nanomia_life_cycle_vector_wikimedia.svg.png</Thumb>
+			<Group>Informatik</Group>
+		</Classes>
+		<Classes>
+			<Name>Grundlagen Human Machine Interactions</Name>
+			<Number>W3WI_IMBIT_304</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/f/f9/Tin_Woodman.png</Thumb>
+			<Group>Informatik</Group>
+		</Classes>
+		<Classes>
+			<Name>IT-Management</Name>
+			<Number>W3WI_IMBIT_401</Number>
+			<Thumb>./img/thumbs/itmgmt.png</Thumb>
+			<Group>Informatik</Group>
+		</Classes>
+		<Classes>
+			<Name>Grundlegende Konzepte der IT</Name>
+			<Number>W3WI_104</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Telephone.svg/1024px-Telephone.svg.png</Thumb>
+			<Group>Informatik</Group>
+		</Classes>
+		<Classes>
+			<Name>Datenbanken</Name>
+			<Number>W3WI_105</Number>
+			<Thumb>./img/thumbs/db.png</Thumb>
+			<Group>Informatik</Group>
+		</Classes>
+		<Classes>
+			<Name>Programmierung</Name>
+			<Number>W3WI_108</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/StammbaumProgrammiersprachen.jpg/649px-StammbaumProgrammiersprachen.jpg</Thumb>
+			<Group>Informatik</Group>
+		</Classes>
+		<Classes>
+			<Name>Entwicklung verteilter Systeme</Name>
+			<Number>W3WI_110</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/9/9d/Joint_Tactical_Information_Distribution_System_Users,_1990.jpg</Thumb>
+			<Group>Informatik</Group>
+		</Classes>
+		<Classes>
+			<Name>Neue Konzepte</Name>
+			<Number>W3WI_111</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/f/f9/MediaSpaceConceptDrawing1982_w600.jpg</Thumb>
+			<Group>Informatik</Group>
+		</Classes>
+	</Groups>
+	<Groups>
+		<Group-Name>Wirtschaft</Group-Name>
+		<Abbr>B</Abbr>			
+		<Classes>
+			<Name>Betriebswirtschaftliche Standardlösungen</Name>
+			<Number>W3WI_IMBIT_402</Number>
+			<Thumb>http://www.live-karikaturen.ch/wp-content/uploads/2015/07/waiting_ico.png</Thumb>
+			<Group>Wirtschaft</Group>
+		</Classes>
+		<Classes>
+			<Name>Dienstleistungsmanagement</Name>
+			<Number>W3WI_IMBIT_403</Number>
+			<Thumb>./img/thumbs/service.png</Thumb>
+			<Group>Wirtschaft</Group>
+		</Classes>
+		<Classes>
+			<Name>Statistik in der Anwendung</Name>
+			<Number>W3WI_IMBIT_405</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Fubini_Nightmare_foliation_Katok_example.svg/2000px-Fubini_Nightmare_foliation_Katok_example.svg.png</Thumb>
+			<Group>Wirtschaft</Group>
+		</Classes>
+		<Classes>
+			<Name>Methoden der Wirtschaftsinformatik I</Name>
+			<Number>W3WI_101</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/b/b5/Design_Management_in_brief.jpg</Thumb>
+			<Group>Wirtschaft</Group>
+		</Classes>
+		<Classes>
+			<Name>Geschäftsprozesse und deren Umsetzung</Name>
+			<Number>W3WI_106</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brazing_and_soldering_processes_-_AWS_A3.0_2001.svg/491px-Brazing_and_soldering_processes_-_AWS_A3.0_2001.svg.png	</Thumb>
+			<Group>Wirtschaft</Group>
+		</Classes>
+		<Classes>
+			<Name>Grundlagen der Betriebswirtschaftslehre</Name>
+			<Number>W3WI_201</Number>
+			<Thumb>./img/thumbs/bwl.png</Thumb>
+			<Group>Wirtschaft</Group>
+		</Classes>
+		<Classes>
+			<Name>Grundlagen der Rechnungslegung</Name>
+			<Number>W3WI_202</Number>
+			<Thumb>./img/thumbs/acc.png</Thumb>
+			<Group>Wirtschaft</Group>
+		</Classes>
+		<Classes>
+			<Name>Finanzierung und Rechnungswesen</Name>
+			<Number>W3WI_203</Number>
+			<Thumb>./img/thumbs/fin.png</Thumb>
+			<Group>Wirtschaft</Group>
+		</Classes>
+		<Classes>
+			<Name>Volkswirtschaftslehre</Name>
+			<Number>W3WI_505</Number>
+			<Thumb>https://upload.wikimedia.org/wikipedia/commons/2/25/Wpa-done.JPG</Thumb>
+			<Group>Wirtschaft</Group>
+		</Classes>
+		<Classes>
+			<Name>Mathematik</Name>
+			<Number>W3WI_601</Number>
+			<Thumb>./img/thumbs/math.png</Thumb>
+			<Group>Wirtschaft</Group>
+		</Classes>
+	</Groups>
+	<Groups>
+		<Group-Name>Methodische Grundlagen</Group-Name>
+		<Abbr>MG</Abbr>
+		<Classes>
+			<Name>Test</Name>
+			<Number>W3WI_0815</Number>
+			<Thumb></Thumb>
+			<Group>Methodische Grundlagen</Group>
+		</Classes>
+	</Groups>
+	  <NewContentItems>
+		<NewContent_Name>Ökonomisches Prinzip</NewContent_Name>
+		<NewContent_Video>t_y-rFgTRo0</NewContent_Video>
+		<NewContent_Beschreibung>In dem folgenden Video Ökonomisches Prinzipwerden die zwei Ansätze anhand von Beispielen näher erläutert. Auch die Begriffe Effizienz und Effektivität werden behandelt. In einem anschließenden Quiz kann das gelernte Wissen getestet werden.</NewContent_Beschreibung>
+		<jsonFileName>St-Galler-Management-Modell.json</jsonFileName>
+		<ButtonClass>buttonToQuiz4</ButtonClass>
+		<ButtonID>quizOekonomischesPrinzip</ButtonID>
+	</NewContentItems>
+
+  <NewContentItems>
+    <NewContent_Name>Wertkettenmodell</NewContent_Name>
+    <NewContent_Video>stWjGAk0WdA</NewContent_Video>
+    <NewContent_Beschreibung>Das folgende Video handelt von der Value Chain nach Porter. In diesem werden die primären und sekundären Aktivitäten anhand von Beispielen vorgestellt. In einem anschließenden Quiz kann das gelernte Wissen getestet werden. </NewContent_Beschreibung>
+	<jsonFileName>Wertkettenmodell.json</jsonFileName>
+	<ButtonClass>buttonToQuiz1</ButtonClass>
+	<ButtonID>quizWertkettenmodell</ButtonID>
+  </NewContentItems>
+
+  <NewContentItems>
+    <NewContent_Name>St. Galler Management Modell</NewContent_Name>
+    <NewContent_Video>u5MCcP4M0MM</NewContent_Video>
+    <NewContent_Beschreibung>In dem folgenden Video wird das St. Galler Management-Modell anhand eines fiktiven Beispiels erklärt. Bei dem Modell handelt es sich um ein in den 1960er Jahren an der Universität St. Gallen entwickeltes Management-Framework, welches verwendet wird um den Unternehmenskontext zu verstehen.Im Anschluss kann das im Video vermittelteWissen in einem Quizz getestet werden.</NewContent_Beschreibung>
+	<jsonFileName>St-Galler-Management-Modell.json</jsonFileName>
+	<ButtonClass>buttonToQuiz2</ButtonClass>
+	<ButtonID>quizSt-Galler-Management-Modell</ButtonID>
+  </NewContentItems>
+
+  <NewContentItems>
+    <NewContent_Name>Business Model Canvas</NewContent_Name>
+    <NewContent_Video>bB6U_t7ILt4</NewContent_Video>
+    <NewContent_Beschreibung>Das Business Model Canvas ist ein Mittel um das Geschäftsmodell einer StartUp-Idee zu visualisieren und zu testen, ob diese unternehmerisch sinnvoll ist. In diesem Videowerden die Komponenten des Business Models mit einem fiktiven Beispiel detailliertdargestellt. Das vermittelte Wissen kann im nachfolgenden Quiz getestet werden.</NewContent_Beschreibung>
+	<jsonFileName>St-Galler-Management-Modell.json</jsonFileName>
+	<ButtonClass>buttonToQuiz3</ButtonClass>
+	<ButtonID>quizBusinessCanvas</ButtonID>
+  </NewContentItems>
+
+  <NewContentItems>
+    <NewContent_Name>Stakeholder vs. Shareholder</NewContent_Name>
+    <NewContent_Video>BPzhtl0D-M8</NewContent_Video>
+    <NewContent_Beschreibung>In dem folgenden Video Shareholder Value vs. Stakeholder Valuefindet eine Gegenüberstellung beider Ansätze statt und schafft ein Verständnis der Vor-und Nachteile beider Prinzipien. In einem anschließenden Quiz kann das gelernte Wissen getestet werden.</NewContent_Beschreibung>
+	<jsonFileName>St-Galler-Management-Modell.json</jsonFileName>
+	<ButtonClass>buttonToQuiz5</ButtonClass>
+	<ButtonID>quizStakeholderShareholder</ButtonID>
+  </NewContentItems>	
+	
+	  <NewContentItems>
+    <NewContent_Name>BWL SurveyMonkey</NewContent_Name>
+	<jsonFileName>SurveyMonkey_questions.json</jsonFileName>
+	<ButtonClass>buttonToQuiz6</ButtonClass>
+	<ButtonID>quizSurveyMonkey</ButtonID>
+  </NewContentItems>
+</Categories>
