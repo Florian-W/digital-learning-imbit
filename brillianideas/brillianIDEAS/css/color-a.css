@@ -24,7 +24,7 @@ body {
 
 #site.a {
 	background-color: var(--text);
-	color: white;
+	color: var(--background);
 }
 
 #site.b {
@@ -39,6 +39,6 @@ body {
 }
 
 .flipcard .face{
-    background-color: var(--text) !important;
-    color: var(--background) !important;
+    background-color: var(--text);
+    color: var(--background);
 }
