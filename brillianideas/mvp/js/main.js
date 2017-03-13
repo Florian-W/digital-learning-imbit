@@ -18,7 +18,7 @@ $(document).ready(function (event) {
             !(
                 $('#animation_yaxis_top').height() > $('#animation_yaxis_bottom').height()
             ) ? $('#animation_yaxis_bottom').height() : $('#animation_yaxis_top').height()
-        )) * 2) + $('#footer').outerHeight(),
+        )) * 2),
         xoffset: 2 * (
             (
                 $('#animation_xaxis_left').width() > $('#animation_xaxis_right').width()
@@ -33,29 +33,15 @@ $(document).ready(function (event) {
     $display.width = $(window).width() - 2 * $display.xoffset;
     $display.height = $(window).height() - 2 * $display.yoffset;
 
-    $recognition = VoiceRecognition;
-
     //TRIGGER
-    $('#searchField').on('keyup change', function(e){
-        var target = $('#searchField');
-        if (target.val() == ''){
-            $('#overlay').fadeOut().children('.learning').remove();
-        } else {
-            $('#overlay').children('.learning').remove();
-            console.log(target.val());
-            $('.list > .learning:contains("'+target.val() + '")').clone().appendTo('#overlay').fadeIn().parent().fadeIn();
-        }
-    }).parent().on('submit', function(){return false;});
     $('body').click(function (e) {
         var target = $(e.target);
         console.log(e.target);
-        if (target.is('#impressumLink')) {
-            displaySpalsh('Impressum');
-        } else if (target.is('#overlay')) {
-            $('#overlay').fadeOut().children().fadeOut();
-        } else if (target.is(".flipcard .face.front")) {
+        if (target.is(".flipcard .face.front")) {
             target.parent().children('.back').css('display', 'block');
+            	//toggleClass(foo) adds foo as class attribute
             target.parent().toggleClass('flipped');
+            	//toggle() shows/ hides element depending on current state
             $('#backlayer').toggle();
             if(location.hash.indexOf(target.data('target')) != -1){
                 window.location = '#' + window.location.hash.substr(1).split('.').slice(0, -1).join('.');
@@ -77,6 +63,8 @@ $(document).ready(function (event) {
             } else {
                 window.location = '#' + window.location.hash.substr(1).split('.').concat(ltarget.data('target')).join('.');
             }
+		} else if (target.is('button')) {
+            buttonOpenQuiz();			
         } else if (target.is('.face.back')) {
             // Do Nothing
         } else if (target.is('#backlayer')) {
@@ -85,20 +73,7 @@ $(document).ready(function (event) {
             $('.flipped').removeClass('flipped');
             window.location = '#';
             target.fadeOut();
-        } else if (target.is('#voiceSearch img')) {
-            if ($recognition.isRecording) $recognition.stopDictation(); else $recognition.startDictation($('#searchField'), {
-                continous: true,
-                interimResults: true,
-                maxAlternatives: 1
-            });
-        } else if(target.is('#homeButton, #homeButton *')){
-            var event = jQuery.Event('click');
-            event.target = $('#overlay')[0];
-            $('body').trigger(event);
-            var event2 = jQuery.Event('click');
-            event2.target = $('#backlayer')[0];
-            $('#body').trigger(event2);
-        }
+        } 
     });
 
     // Start Animation
@@ -125,25 +100,25 @@ $.fn.center = function () {
     );
     return this;
 };
-/**
- *
- * @param id
- */
-var displaySpalsh = function displaySpalsh(id) {
-    $("#overlay").fadeIn();
-    $("#" + id).fadeIn().center();
-};
 
-var walkToPath = function waltToPath(){
+/**
+ * should be used for back and forth browser functions
+ * should use URL to open/ close next/last (DOM) element
+ */
+var walkToPath = function walkToPath(){
     $newPosition = window.location.length > 1 ?
         window.location.hash.substr(1).split('.') : [];
     if ($currentPosition.length > $newPosition.length){
         //go in
     } else {
         // go out
+    	// should enable back and forth browser functions
     }
 };
 
+/**
+ * opens (DOM) element or element chain according to URL
+ */
 var openPath = function openPath(){
     var path = window.location.hash.substr(1).split('.');
     if (path.length > 0){
@@ -155,4 +130,40 @@ var openPath = function openPath(){
             $('body').trigger(event);
         }
     }
+};
+
+/**
+ * 
+ */
+var buttonOpenQuiz =function buttonOpenQuiz() {
+		event = event || window.event;
+		event.target = event.target || event.srcElement;
+
+		var element = event.target;
+		var idOfButtonClicked;
+
+		if (element.nodeName === "BUTTON" && /buttonToQuiz/.test(element.className)) {
+			// The user clicked on a <button> or clicked on an element inside a <button>
+			idOfButtonClicked = element.id;
+		}
+
+		// element = element.parentNode;
+		// console.log(element)
+		openQuiz(idOfButtonClicked);
+	}
+
+	// die Methode openQuiz holt sich den Namen des jeweiligen JSON und hängt diesen an die URL der Spiele HTML Seite
+	// in der index.html wird dann die controller.js geladen und der Parameter ausgelesen
+	function openQuiz(idOfButtonClicked) {
+
+		 if(idOfButtonClicked== "quizWertkettenmodell" || idOfButtonClicked== "quizSt-Galler-Management-Modell" || idOfButtonClicked == "quizBusinessCanvas" || idOfButtonClicked == "quizOekonomischesPrinzip" || idOfButtonClicked == "quizStakeholderShareholder" || idOfButtonClicked == "quizSurveyMonkey" ) {
+			var jsonFileName = $('#'+idOfButtonClicked).attr('jsonFileName')
+			console.log("jsonFileName: " + jsonFileName);
+			window.location = "miniGames.html?jsonFileName=" + jsonFileName;
+		}
+
+
+
+	
+
 };
