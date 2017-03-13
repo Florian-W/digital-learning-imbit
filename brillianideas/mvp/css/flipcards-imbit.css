@@ -36,6 +36,7 @@ button:hover {
     border-radius: 30px;
 }
 
+/* TODO: später übernehmen wenn benötigt */
 .gruppe > .vorlesung {
 	opacity: 1 !important;
 	position: static !important;

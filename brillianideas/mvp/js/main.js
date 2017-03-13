@@ -63,6 +63,8 @@ $(document).ready(function (event) {
             } else {
                 window.location = '#' + window.location.hash.substr(1).split('.').concat(ltarget.data('target')).join('.');
             }
+		} else if (target.is('button')) {
+            buttonOpenQuiz();			
         } else if (target.is('.face.back')) {
             // Do Nothing
         } else if (target.is('#backlayer')) {
@@ -128,4 +130,40 @@ var openPath = function openPath(){
             $('body').trigger(event);
         }
     }
+};
+
+/**
+ * 
+ */
+var buttonOpenQuiz =function buttonOpenQuiz() {
+		event = event || window.event;
+		event.target = event.target || event.srcElement;
+
+		var element = event.target;
+		var idOfButtonClicked;
+
+		if (element.nodeName === "BUTTON" && /buttonToQuiz/.test(element.className)) {
+			// The user clicked on a <button> or clicked on an element inside a <button>
+			idOfButtonClicked = element.id;
+		}
+
+		// element = element.parentNode;
+		// console.log(element)
+		openQuiz(idOfButtonClicked);
+	}
+
+	// die Methode openQuiz holt sich den Namen des jeweiligen JSON und hängt diesen an die URL der Spiele HTML Seite
+	// in der index.html wird dann die controller.js geladen und der Parameter ausgelesen
+	function openQuiz(idOfButtonClicked) {
+
+		 if(idOfButtonClicked== "quizWertkettenmodell" || idOfButtonClicked== "quizSt-Galler-Management-Modell" || idOfButtonClicked == "quizBusinessCanvas" || idOfButtonClicked == "quizOekonomischesPrinzip" || idOfButtonClicked == "quizStakeholderShareholder" || idOfButtonClicked == "quizSurveyMonkey" ) {
+			var jsonFileName = $('#'+idOfButtonClicked).attr('jsonFileName')
+			console.log("jsonFileName: " + jsonFileName);
+			window.location = "miniGames.html?jsonFileName=" + jsonFileName;
+		}
+
+
+
+	
+
 };

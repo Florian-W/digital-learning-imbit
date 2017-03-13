@@ -45,50 +45,6 @@
 
 		});
 	</script>
-	
-	<script>
-		window.onload = function(){
-
-	//Füge alle Buttons auf der Seite dem EventListener hinzu
-	// Jeder Click auf einen button wird vom EventListener abgefangen und bearbeitet
-	$('button').on('click tap', handleClick);
-
-	// Wenn ein Button angeklickt wird, gebe die ID des Buttons an die Methode openQuiz weiter
-	function handleClick() {
-		console.log("button clicked: " + $( this ).id);
-		event = event || window.event;
-		event.target = event.target || event.srcElement;
-
-		var element = event.target;
-		var idOfButtonClicked;
-
-		if (element.nodeName === "BUTTON" && /buttonToQuiz/.test(element.className)) {
-			// The user clicked on a <button> or clicked on an element inside a <button>
-			// with a class name called "foo"
-			console.log("button clicked: " + element.id)
-			idOfButtonClicked = element.id;
-		}
-
-		// element = element.parentNode;
-		// console.log(element)
-		openQuiz(idOfButtonClicked);
-	}
-
-	// die Methode openQuiz holt sich den Namen des jeweiligen JSON und hängt diesen an die URL der Spiele HTML Seite
-	// in der index.html wird dann die controller.js geladen und der Parameter ausgelesen
-	function openQuiz(idOfButtonClicked) {
-
-		if(idOfButtonClicked== "clickMe") {
-			var jsonFileName = $('#'+idOfButtonClicked).attr('jsonFileName')
-			window.location = "quiz.html?jsonFileName=json/" + jsonFileName;
-		}
-
-
-
-	
-
-}		};
-</script>
 
 </head>
 <body>
@@ -108,7 +64,7 @@
 <br>
 <br>
 Es handelt sich bei dieser Seite um Lerninhalte zu den Kernthemen der BWL,
-die vom IMBIT-14C Jahrgang für euch zusammen gestellt wurden.
+die vom WIMBIT14C Kurs für euch zusammen gestellt wurden.
 Hier findet ihr viele interessante Möglichkeiten euer BWL-Wissen interaktiv
 mittels kurzer Intro-Videos und angehängter Minispiele zu testen.
 Wer also auf der Suche nach praktischen Beispielen im BWL-Kontext ist, der sollte
@@ -116,7 +72,7 @@ hier weiter stöbern.<br>
 Wir wünschen euch viel Spaß beim Ausprobieren!
 <br>
 <br>
-Euer IMBIT-14C Jahrgang
+Euer WIMBIT14C Kurs
 
 		</div>
 

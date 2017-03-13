@@ -1,114 +1,13 @@
-html {
-    font-size: 100%;
-}
-
-body {
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-	background-color: #990133; /*ToDo: sollte als var gesetzt werden*/
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width:100%;
+  background-color: #990133;
 	color: white;
-	font-family: 'Tinos';
-}
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Caveat Brush';
-	text-align: center;
-}
 
-button:hover {
-	cursor:pointer;
-}
-
-.flipcard {
-    opacity: 0;
-    perspective: 800;
-    -moz-perspective: 800;
-    -webkit-perspective: 800;
-    margin: 0;
-    //*border: solid 0.3em;*//
-	border: none;
-    transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    transition: 1s;
-    -moz-transition: 1s;
-    -webkit-transition: 1s;
-    cursor: pointer;
-    position: relative;
-	width: 220px;
-    height: 80px;
-}
-
-.flipcard:not(.flipped) {
-    margin: 2.5%;
-    z-index: 2;
-	float: left;
-}
-
-.flipcard, .flipcard .face {
-    /*border-radius: 50%;
-    background-color: transparent;*/
-}
-
-.flipcard.flipped .face {
-    border-radius: 0.5em;
-}
-
-.flipcard.flipped {
-    width: inherit;
-    height: inherit;
-    border-radius: 1em;
-    position: absolute;
-    left: 104px !important;
-    top: 33px !important;
-    perspective: 1600;
-    -moz-perspective: 1600;
-    -webkit-perspective: 1600;
-    transform: rotatey(-180deg);
-    -moz-transform: rotatey(-180deg);
-    -webkit-transform: rotatey(-180deg);
-    z-index: 4;
-	transform: translate3d(0px, 0px, 4px);
-    cursor: auto;
-}
-
-.flipcard .face {
-    padding: 1em;
-    text-align: center;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    transition: 1s;
-    -moz-transition: 1s;
-    -webkit-transition: 1s;
-    overflow: hidden;
-}
-
-.flipcard .face *, .flipcard .face {
-    backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-}
-
-.flipcard .front {
-    color: white;
-}
-
-.flipcard .front:hover{
-    font-weight: bold;
-}
-
-.flipcard.flipped .front {
-}
-
-.flipcard .back {
-    transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-    overflow: auto;
-	transform: translate3d(0px, 0px, 4px);
-}
+	    }
 
 
 #navContent{
@@ -124,7 +23,7 @@ margin:auto;
 width:100%;
 height:400px;
 right:0px;
-/*position:absolute;*/
+position:absolute;
 }
 
 #game2{
@@ -132,9 +31,9 @@ margin:auto;
 width:100%;
 height:400px;
 right:-100%;
-/*position:absolute;*/
+position:absolute;
 }
-.buttonToQuiz1, .buttonToQuiz2, .buttonToQuiz3, .buttonToQuiz4, .buttonToQuiz5 , .buttonToQuiz6{
+.buttonToQuiz1, .buttonToQuiz2, .buttonToQuiz3, .buttonToQuiz4, .buttonToQuiz5 {
 	border:2px solid #ccc;
 	background-color: rgb(153,27,51);
 	color: white;
@@ -152,6 +51,51 @@ border:#e53f5f solid 2px;
 color:#e53f5f;
 }
 
+
+.buttonToQuiz1 {
+
+	width:300px;
+	height:100px;
+	display:inline-block;
+
+
+  margin-left: 20%;
+	  margin-top: 8%;
+
+
+
+}
+
+
+.buttonToQuiz2 {
+	width:300px;
+	height:100px;
+	display:inline-block;
+	margin-top: 5%;
+}
+
+.buttonToQuiz3 {
+	width:300px;
+	height:100px;
+	display:inline-block;
+	margin-left: 20%;
+	margin-top: 1%;
+}
+
+.buttonToQuiz4 {
+	width:300px;
+	height:100px;
+	display:inline-block;
+}
+
+.buttonToQuiz5{
+	width:300px;
+	height:100px;
+	display:inline-block;
+	margin-left: 35%;
+	margin-top: 1%;
+}
+
 #gameDescription {
 
 font-size:18px;
@@ -164,12 +108,14 @@ font-size:18px;
 .questionText{
 font-size:27px;
 color:#FFF;
+font-family: 'Tinos';
 }
 
 .option{width:400px;
 height:30px;
 margin:15px;
-font-size:18px;
+font-size:22px;
+line-height: 20px;
 color:#FFFFFF;
 padding:2px;
 padding-left:10px;
@@ -194,7 +140,7 @@ color:#e53f5f;
 margin:auto;
 margin-top:25px;
 color:#FFF;
-font-size:30px;
+font-size:40px;
 /*font-family:Arial, Helvetica, sans-serif;*/
 width:80%;
 border-bottom:solid white 1px;
@@ -276,6 +222,7 @@ background-color:#FFFFCC;
 
 * {
     box-sizing: border-box;
+	font-family: 'Caveat Brush';
 	font-size:20px;
 
 
@@ -413,10 +360,12 @@ p{
 .drag{
 			/*width:25%;*/
 			/*box-sizing: border-box;*/
-			white-space:nowrap;
+			white-space: nowrap;
+			overflow-x:   hidden;
 			/*height:10%;*/
 			padding:1.5%;
-			font-size: 16px;
+			font-size: 20px;
+			font-family: 'Tinos';
 			text-align: center;
 			vertical-align: center;
 			margin:5px;
@@ -428,10 +377,14 @@ p{
 
 #gameTitle	{
 			margin-bottom: 12px;
+			font-family: 'Tinos';
+			font-size: 24px;
 		}
 
 #gameDescription	{
 					margin-bottom: 12px;
+					font-family: 'Tinos';
+
 				}
 .dp{
 			opacity:0.8;
@@ -453,29 +406,48 @@ p{
 
 		#left {
 			width: 40%;
-			margin: 2.5%;
 
 		}
 
 		#left img{
 			height: 100%;
 			width: 100%;
-			bottom: 5%;
-			max-height: 250px;
-			max-width: 250px;
-			display: block;
-			margin-left: auto;
-			margin-right: auto
+			margin-bottom: 1%;
 
 		}
 
+
 		#right {
 			width: 60%;
-			margin: 2.5%;
+			margin-left: 1%;
 		}
 
 		#container2 {
 			height: 40% ;
 			text-align:center;
 
+		}
+
+		.bob {
+			margin-left: 50%;
+			margin-top: 15%;
+		}
+
+		.bobTrafficLight {
+			 height: 100%;
+			 width: 100%;
+		}
+
+		.background{
+			height: 100%;
+			width: 100%;
+			/*background: url(images/bg.jpg) no-repeat center center fixed;*/
+ 		-webkit-background-size: cover;
+ 		-moz-background-size: cover;
+ 		-o-background-size: cover;
+ 		background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*z-index: -100;
 		}
