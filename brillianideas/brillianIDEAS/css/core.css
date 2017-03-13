@@ -1,0 +1,334 @@
+/*general stuff*/
+
+:root{
+    --color-pink: rgb(229, 63, 95);
+    --color-bordeaux: rgb(153, 27, 51);
+    --color-dark-bordeaux: rgb(108, 19, 46);
+    --color-gray: rgb(148, 148, 148);
+    --color-green: rgb(133,186, 28);
+    --color-yellow: rgb(205, 145, 25);
+
+    --background: white;
+    --background-highlight: var(--color-yellow);
+    /*"text" variable testen - warum nicht white, 
+    wenn Text überall weiß sein soll? */
+    --text: var(--color-bordeaux);
+    --link: var(--color-gray);
+    --link-visited: var(--color-green);
+    --border: var(--color-gray);
+
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    background-repeat: no-repeat;
+    background-position-y: -40px;
+  
+	/*taken over from former core-a.css:*/
+    padding: 0;
+    margin: 10px; /*to fix ios page movement */
+    left:-10px; /* same */
+    top:-10px;/* same */
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    position:fixed;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Caveat Brush';
+}
+
+.flipcard {
+    opacity: 0;
+    perspective: 800px;
+    -moz-perspective: 800px;
+    -webkit-perspective: 800px;
+    margin: 0;
+	border: none;
+    font-family: 'Caveat Brush';
+    transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 30px;
+}
+
+.flipcard .face{
+    background-color: var(--text) !important;
+    color: var(--background) !important;
+}	
+
+.flipcard .front:hover{
+    font-weight: bold;
+}
+
+.flipcard .front {
+	color: white; /*color sets color of text only*/
+    border-radius: inherit;
+    position: absolute;
+}
+
+.flipcard .back {
+    transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    overflow: auto;
+    background: inherit;
+}
+
+.flipcard:not(.flipped) {
+	transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.flipcard.flipped {
+    width: inherit;
+    height: inherit;
+    cursor: auto;
+    background-color: var(--background-highlight);
+    position: absolute;
+    left: -8px !important;
+    top: -8px !important;
+    perspective: 1600;
+    -moz-perspective: 1600;
+    -webkit-perspective: 1600;
+    transform: rotatey(-180deg);
+    -moz-transform: rotatey(-180deg);
+    -webkit-transform: rotatey(-180deg);
+    z-index: 4;
+}
+
+img.thumb {
+    max-height: 35vh;
+    max-width: 35vh;
+    float: left;
+    margin: 2.5px;
+}
+
+.list{
+    display: flex;
+    flex-flow: row wrap;
+    float: left;
+    width: 100%;
+}
+
+.list img.thumbnail {
+    max-width: 248px !important;
+    max-height: 100px !important;
+}
+
+.list > div {
+    display: flex;
+    text-align: left;
+    flex-grow: 1;
+    height: 100px;
+    font-size: 12pt;
+    margin: 10px;
+    width: 500px;
+}
+
+.list > div > div  > h2, .list > div > div > p {
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.list > div > a {
+    width: 248px;
+    display: flex;
+    justify-content: center;
+}
+
+.learning > img.thumbnail, .learning > a >img.thumbnail {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+#backlayer {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    display: none;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    /*cursor: pointer makes element clickable on iOS/ Safari - DO NOT REMOVE */
+    cursor: pointer;
+}
+
+#grid > .flipcard {
+/*enables line breaks out of XML using &#13;&#10; as Carriage Return Line Feed*/
+	white-space: pre-line;
+}
+
+/**page specific stuff**/
+
+/****** styles for digitalLearning.html ******/
+#site.digitallearning {
+	background-color: var(--text);
+	color: white;
+}
+
+#site.digitalLearning .selectionbody {
+	padding: 1em;
+}
+
+.axis {
+    border: 0px solid;
+}
+
+.axis.x {
+    height: 0px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.axis.y {
+    width: 0px;
+}
+
+.axistext {
+	font-family: 'Tinos';
+}
+
+/* Start Animation */
+#site.digitalLearning > * {
+    opacity: 0;
+    position: absolute;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+
+}
+#animation_xaxis_left {
+    float: left;
+    transform: translate(-150%, -50%);
+}
+
+#animation_xaxis_right {
+    float: right;
+    transform: translate(150%, -50%);
+}
+
+#animation_yaxis_top {
+    top: 0px;
+    position: absolute;
+    transform: translate(-50%, -150%);
+    text-align: center;
+}
+
+#animation_yaxis_bottom {
+    bottom: 0px;
+    position: absolute;
+    transform: translate(-50%, 150%);
+    text-align:center;
+}
+
+#animation_l, #animation_welcome {
+    z-index: 1;
+    font-family: 'Caveat Brush';
+    font-size: 50pt;
+    text-shadow: 0px 0px 20px black;
+}
+#animation_l{
+    left: 75vw !important;
+    top: 75vh !important;
+}
+
+#site.digitalLearning .flipcard {
+	opacity: 0;
+    margin: 0;
+	border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Caveat Brush';
+    position: absolute;
+    height: 50pt;
+    width: 50pt;
+   	overflow: hidden;
+
+    transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    perspective: 800px;
+    -moz-perspective: 800px;
+    -webkit-perspective: 800px;
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+}
+
+#site.digitalLearning .flipcard .face {
+    height: inherit;
+    position: absolute;
+    width: inherit;
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    overflow: hidden;
+    text-align: center;
+}
+
+#site.digitalLearning .flipcard.flipped .face *, #site.digitalLearning .flipcard.flipped .face {
+    backface-visibility: visible;
+    -moz-backface-visibility: visible;
+    -webkit-backface-visibility: visible;
+}
+
+/****** styles for imbit.html ******/
+#site.imbit {
+    font-family: 'Caveat Brush';
+    background-color: var(--background);
+    color: var(--text);
+    background-image: url('../img/brillainIDEAS_UX_20170227_Oktopus-Kopf_Arme.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#site.imbit .flipcard {
+	width: 175pt;
+    height: 100pt;
+    background-color: var(--color-bordeaux) !important;
+    font-size: 150%;
+}
+
+#site.imbit .flipcard .face {
+	border-radius: 30px;
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    overflow: hidden;
+    display: flex;
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    /*centering content only for front? -> move these styles to front*/
+}
+
+/****** styles for newContent.html ******/
+#animation_newContent{
+    left: 50vw !important;
+    top: 50vh !important;
+}
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+    body {
+        position: absolute;
+        left: -10px;
+        top: -32px;
+    }
+
+}
