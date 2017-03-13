@@ -330,7 +330,7 @@ Quelle: https://wiki.zum.de/wiki/Wikis_in_der_Schule</Description>
 		<NewContent_Name>Ökonomisches Prinzip</NewContent_Name>
 		<NewContent_Video>t_y-rFgTRo0</NewContent_Video>
 		<NewContent_Beschreibung>In dem folgenden Video Ökonomisches Prinzipwerden die zwei Ansätze anhand von Beispielen näher erläutert. Auch die Begriffe Effizienz und Effektivität werden behandelt. In einem anschließenden Quiz kann das gelernte Wissen getestet werden.</NewContent_Beschreibung>
-		<jsonFileName>St-Galler-Management-Modell.json</jsonFileName>
+		<jsonFileName>Oekonomisches-Prinzip.json</jsonFileName>
 		<ButtonClass>buttonToQuiz4</ButtonClass>
 		<ButtonID>quizOekonomischesPrinzip</ButtonID>
 	</NewContentItems>
@@ -357,7 +357,7 @@ Quelle: https://wiki.zum.de/wiki/Wikis_in_der_Schule</Description>
     <NewContent_Name>Business Model Canvas</NewContent_Name>
     <NewContent_Video>bB6U_t7ILt4</NewContent_Video>
     <NewContent_Beschreibung>Das Business Model Canvas ist ein Mittel um das Geschäftsmodell einer StartUp-Idee zu visualisieren und zu testen, ob diese unternehmerisch sinnvoll ist. In diesem Videowerden die Komponenten des Business Models mit einem fiktiven Beispiel detailliertdargestellt. Das vermittelte Wissen kann im nachfolgenden Quiz getestet werden.</NewContent_Beschreibung>
-	<jsonFileName>St-Galler-Management-Modell.json</jsonFileName>
+	<jsonFileName>Business-Canvas.json</jsonFileName>
 	<ButtonClass>buttonToQuiz3</ButtonClass>
 	<ButtonID>quizBusinessCanvas</ButtonID>
   </NewContentItems>
@@ -366,7 +366,7 @@ Quelle: https://wiki.zum.de/wiki/Wikis_in_der_Schule</Description>
     <NewContent_Name>Stakeholder vs. Shareholder</NewContent_Name>
     <NewContent_Video>BPzhtl0D-M8</NewContent_Video>
     <NewContent_Beschreibung>In dem folgenden Video Shareholder Value vs. Stakeholder Valuefindet eine Gegenüberstellung beider Ansätze statt und schafft ein Verständnis der Vor-und Nachteile beider Prinzipien. In einem anschließenden Quiz kann das gelernte Wissen getestet werden.</NewContent_Beschreibung>
-	<jsonFileName>St-Galler-Management-Modell.json</jsonFileName>
+	<jsonFileName>Shareholder-Stakeholder-Ansatz.json</jsonFileName>
 	<ButtonClass>buttonToQuiz5</ButtonClass>
 	<ButtonID>quizStakeholderShareholder</ButtonID>
   </NewContentItems>	
