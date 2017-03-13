@@ -1,0 +1,30 @@
+:root{
+    --color-pink: rgb(229, 63, 95);
+    --color-bordeaux: rgb(153, 27, 51);
+    --color-dark-bordeaux: rgb(108, 19, 46);
+    --color-gray: rgb(148, 148, 148);
+    --color-green: rgb(133,186, 28);
+    --color-yellow: rgb(205, 145, 25);
+
+    --background: var(--color-gray);
+    --background-highlight: var(--color-dark-bordeauch);
+    --text: white;
+    --link: var(--color-gray);
+    --link-visited: var(--color-green);
+    --border: var(--color-gray);
+
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    background-image: url('../img/brillainIDEAS_UX_20170202_Oktopus-Tentakel6_F.png');
+    background-repeat: no-repeat;
+    background-position-y: calc(100vh - 200px);
+    background-size: 140px;
+    background-position-x: calc(100vw - 200px);
+}
+
+.flipcard .face{
+    background-color: var(--background-highlight);
+}
