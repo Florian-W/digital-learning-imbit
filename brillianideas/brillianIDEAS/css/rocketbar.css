@@ -6,6 +6,7 @@ left:0; /*horizontally center bar in window*/
 visibility:hidden;
 background: transparent;
 z-index: 10000;
+transform: translateZ(1000px);
 width:auto; /*set width of bar to width of entire window*/
 font-weight:bold;
 }
