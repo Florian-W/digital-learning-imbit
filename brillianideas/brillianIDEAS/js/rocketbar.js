@@ -44,9 +44,9 @@ expstickybar.prototype={
 		thisbar.$stickybar.finish().animate(	positioncss, anim ? thisbar.setting.speed : 0);
 		
 		
-		jQuery('#container').finish().animate({
+		/*jQuery('#container').finish().animate({
 				top: (keyword=="show"?'-':'+') + '=' + barSize + 'px'
-			}, thisbar.setting.speed);
+			}, thisbar.setting.speed);*/
 		
 		thisbar.currentstate=keyword
 	},
