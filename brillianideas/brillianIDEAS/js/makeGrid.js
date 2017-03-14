@@ -1,13 +1,13 @@
 /**
- * @file builds the grid with the flipcards, spreads the learnings across the grid
+ * @file Erstellt das Koordinatensystem und die IMBIT-Darstellung
  * @author Nick London <nick.london94@gmail.com>
  */
 
 /**
- * Holds the configuration for tile positioning (x, y on a scale of 0 to 1) and order of appearance fot the digitalLearning view
+ * Konfiguration für das Koordnatensystem inkl. X-Y-Koordinaten und die Anzeigereihenfolge
  * @contant {Array} digitalLearningArray
  */
-var digitalLearningArray = [
+const digitalLearningArray = [
 	['mooc', 0.49034749 , 0.16136364 ,1],
 		['3dwelt', 0.5997426 , 0.05681818 ,2],
 		['chat', 0.615118662 , 0.25909091 ,3],
@@ -35,120 +35,139 @@ var digitalLearningArray = [
 
 
 /**
- * Collets the dimensions and position of a flipcard (required since it takes the 'front'-classed element for width declaration)
+ * Sammelklasse für die Außendimensionen von Elementen des Koordinatensystems. Alle Koordinaten sind berechnet von der oberen linken Ecke des Dokuments.
  * @class rectOutlines
- * @param $div { Object } the flippcard div as a jQuery collection
+ * @param $div { Object } Die Flipcard (Koordinatensystem-Element), dessen Dimensionen berechnet werden sollen.
  * @author Nick London <nick.london94@gmail.com>
  */
-function rectOutlines($div){
-	// uses css selectors (left and top) because jQuery.position() does not update fast enough
-	// uses .front child of flipcard, because some browsers recognize divs with no set size as 0x0
+class rectOutlines{
+	constructor($div) {
+		// uses css selectors (left and top) because jQuery.position() does not update fast enough
+		// uses .front child of flipcard, because some browsers recognize divs with no set size as 0x0
+		/**
+		 * @member {Number} rectOutlines#left 
+		 */
+		this.left = parseInt($div.css('left').replace(/^\D+/g, ''));
+		if (isNaN(this.left))
+			this.left = parseInt($div.css('left'));
+		/**
+		 * @member {Number} rectOutlines#top 
+		 */
+		this.top = parseInt($div.css('top').replace(/^\D+/g, ''));
+		if (isNaN(this.top))
+			this.top = parseInt($div.css('top'));
+		/**
+		 * @member {Number} rectOutlines#width 
+		 */
+		this.width = parseInt($div.css('width').replace(/^\D+/g, '')) + 20;
+		/**
+		 * @member {Number} rectOutlines#height 
+		 */
+		this.height = parseInt($div.css('height').replace(/^\D+/g, '')) + 20;
+		/**
+		 * @member {Number} rectOutlines#right 
+		 */
+		this.right = this.left + this.width;
+		/**
+		 * @member {Number} rectOutlines#bottom 
+		 */
+		this.bottom = this.top + this.height;
+	}
 	/**
-	 * @var {Number} rectOutlines.left The horizontal distance from the left edge to the achor
+	 * @function rectOutlines#overlapsWidth
+	 * @param {rectOutlines} target Zweites Objekt des selben Typen
+	 * @returns {boolean} Wahr, wenn das Vergleichsobjekt dieses Objekt überlappt
 	 */
-	this.left = $div.css('left');
+	overlapsWith(target){
+		return rectOutlines.overlaps(this, target);
+	}
 	/**
-	 * @var {Number} rectOutlines.top The vertical distance from the top edge to the achor
+	 * @function rectOutlines.overlaps
+	 * @param {rectOutlines} obj1 Vergleichsobjekt
+	 * @param {rectOutlines} obj2 Vergleichsobjekt
+	 * @returns {boolean} Wahr, wenn die Vergleichsobjekte sich überlappen
 	 */
-	this.top = $div.css('top');
-	/**
-	 * @var {Number} rectOutlines.width The horizontal distance from the left edge to the right edge
-	 */
-	this.width = $div.find('.front').outerWidth();
-	/**
-	 * @var {Number} rectOutlines.height The vertical distance from the top edge to the bottom edge
-	 */
-	this.height = $div.find('.front').outerHeight();
-	/**
-	 * @var {Number} rectOutlines.right The horizontal distance from the right edge to the achor
-	 */
-	this.right = this.top + this.width;
-	/**
-	 * @var {Number} rectOutlines.bottom The vertical distance from the bottom edge to the achor
-	 */
-	this.bottom = this.left + this.height;
+	static overlaps(obj1, obj2){
+		return !(obj1.bottom <= obj2.top || obj2.bottom <= obj1.top || obj1.right <= obj2.left || obj2.right <= obj1.left ); 
+	}
 };
 /**
- * @function noOVerlayGrid
- * @param id {String} Id of the Flipcard to position
- * @param x {Number} Left position of Card 0 < x < 1
- * @param y {Number} Left position of Card 0 < x < 1
- * @param count {String | Number} order of appearance
- * @return {undefined}
+ * Verschiebt alle Elemente im Koordinatensystem, sodass sie sich nicht überschneiden.
+ * @function noOverlayInGrid
+ * @param id {String} ID des HTML-DOM-Node
+ * @param x {Number} Ziel-X-Position des Elements 0 < x < 1
+ * @param y {Number} Ziel-Y-Position des Elements 0 < y < 1
+ * @param count {String | Number} Position in der Reihenfolge des Erscheinens
+ * @param key {Number} Position im Konfigurationsarray
  * @author Nick London <nick.london94@gmail.com>
  */
-function noOVerlayGrid(id, x, y, count){
+function noOverlayInGrid(id, x, y, count, key){
 	/**
-	 * Get target element for quicker access
+	 * Setze lokale Variablen
 	 */ 
+	var loop;
 	var $card = $('#' + id);
+	var arr = digitalLearningArray.slice(0, key);
+	var e_position;
+	var card_position;
+	
+	$front= $card.find('.front');
 	/**
-	 * Set initial values for x and y coordinate
+	 * Zeilenumbrüche verhindern
 	 */
-	$card.css('left', Math.floor(x * $display.width)).css('top', Math.floor(y * $display.height));
+	$front.html($front.html().replace(' ', '&nbsp;').replace('-','&#8209;'));
 	/**
-	 * loop until overlays with no other div of same class
-	 */	
+	 * Initiale Positionierung
+	 */
+	$card.css({
+		width: $front.outerWidth(true),
+		height: $front.outerHeight(true),
+		left: Math.floor(x * $display.width) - $card.outerWidth(true) / 2,
+		top: Math.floor(y * $display.height) - $card.outerHeight(true) / 2
+	});
+
+	card_position = new rectOutlines($card);
+	
 	do {
 		/**
-		 * get left, right, top and bottom position of elemen (relative to achors top left position)
+		 * Setze Schleifenvariablen für äußere Schleife
 		 */
-		var card_position = new rectOutlines($card);
-		/**
-		 * set loop variable to exit value
-		 */
-		var allGood = true;
-		/**
-		 * select all elements of the same class (same class means every single class is lookef for, not the exact combination)
-		 * iterate through all of them
-		 */
-		$('.' + $card.attr('class').split(" ").join(", .")).each(function(i, e){
+		loop = false;
+		
+		$.each(arr, function(k, value){
 			/**
-			 * Get target element for quicker access
+			 * Setze Schleifenvariablen für innere Schleife (Value [0] entspricht der ID Position im Array
 			 */
-			$e = $(e);
+			e_position = new rectOutlines($('#' + value[0]));
+			
 			/**
-			 * the element will always overlay with itself
+			 * check if both divs intersect
 			 */
-			if(!$e.is('#'+id)){
+			if(rectOutlines.overlaps(e_position, card_position)){
+				card_position.left = ((card_position.left <= e_position.left)?e_position.left - card_position.width:e_position.right);
+				card_position.top = ((card_position.top <= e_position.top)? e_position.top - card_position.height : e_position.bottom);
+
+				card_position.bottom = card_position.top + card_position.height;
+				card_position.right = card_position.left + card_position.width;
+				
+				$card.css({
+					left: card_position.left + "px",
+					top:  card_position.top + "px"
+				});
+				
 				/**
-				 * get left, right, top and bottom position of elemen (relative to achors top left position)
+				 * ensure loop continues and reset iteration through divs
 				 */
-				e_position = new rectOutlines($e)
-				/**
-				 * check if both divs intersect
-				 */
-				if(!(card_position.left >= e_position.right || card_position.right <= e_position.left ||
-						card_position.top >= e_position.bottom || card_position.bottom <= e_position.top) ){
-					/**
-					 * either move left or right of the other div (depending on which is more to the left)
-					 */
-					if(card_position.left < e_position.left){
-						$card.css('left', e_position.left - card_position.width);
-					} else {
-						$card.css('left', e_position.right);
-					}
-					/**
-					 * do the same for vertival positioning
-					 */
-					if(card_position.top < e_position.top){
-						$card.css('top', e_position.top - card_position.height);
-					} else {
-						$card.css('top', e_position.bottom);
-					}
-					/**
-					 * ensure loop continues and reset iteration through divs
-					 */
-					allGood = false;
-					return false;
-				}
+				loop = true;
+				return false;
 			}
+			return true;
 		})
-	} while(!allGood);
+	} while(loop);
 	/**
 	 * set data value for orde of appearance
 	 */
-	$card.attr('data-sid', ((typeof count == typeof "")? count: String.valueOf(count)));
+	$card.attr('data-sid', "" + count);
 };
 
 /**
@@ -170,7 +189,9 @@ var makeGrid = function makeGrid(view){
         	 */
             $('#grid').css('cursor', 'pointer');
             $('.flipcard, .flipcard .face').css('pointer-events', 'none').css('cursor', 'default');
-            
+            /**
+             * loads all tiles and displays the heading
+             */
             $.when(
                 $.ajax('xml/index.php?base=grid&type=learning').done(function (data) {
                     $('#site').append(data);
@@ -180,47 +201,39 @@ var makeGrid = function makeGrid(view){
                 $('#animation_welcome').animate({opacity: 1}, {duration: 1000})
             ).done(function () {
                 $.when(
-                    $('#xaxis').animate({opacity: 1, width: $display.width}, {duration: 1000})
+                    $('#xaxis').animate({opacity: 1, width: $display.width}, {duration: 1000}),
+                    $('#yaxis').animate({opacity: 1, height: $display.height}, {duration: 1000})
                 ).done(function () {
                     $.when(
-                        $('#yaxis').animate({opacity: 1, height: $display.height}, {duration: 1000})
+                		$('#animation_welcome').animate({left: 50 + $('#animation_welcome').outerWidth() / 2, top: 50}, {duration: 1000}),
+                        $('#grid').css('opacity', 1),
+                        $.each(digitalLearningArray, function(key, value){
+                        	var v = value.slice();
+                        	v.push(key);
+                        	noOverlayInGrid.apply({}, v); // {@link noOverlayInGrid}
+                        })
                     ).done(function () {
-                        $.when(
-                            $.each(digitalLearningArray, function(key, value){
-                            	noOVerlayGrid.apply(this, value); // {@link noOVerlayGrid}
-                            }),
-                            
-                            $.when(
-                            		$('#animation_welcome').animate({opacity: 0}, {duration: 1000})
-                            ).done(function(){
-                            	 $('#animation_welcome').css('display', 'none');
-                            }),
-                            $('#grid').css('opacity', 1) /*,
-                            $('#yaxis').animate({opacity: 0}, {duration: 1000}),
-                            $('#xaxis').animate({opacity: 0}, {duration: 1000})*/
-                        ).done(function () {
-                            var deferredArray = [];
-                            $('#grid').children('.flipcard').sort(function (a, b) {
-                                return (($(a).data('sid') > $(b).data('sid')) ? 1 : -1);
-                            }).each(function (index, element) {
-                                deferredArray.push($(element).delay(index * 500).children('.back').css('display', 'none').delay(0).parent().animate({opacity: 1}, {duration: 500}));
-                                deferredArray.push($.ajax('xml/index.php?base=categories&type=learning&detail=true&filter=' + $(element).attr("id")).done(function (data) {
-                                    $(element).children('.back').append(data);
-                                    deferredArray.push($.ajax('xml/index.php?base=learning&withLink=false&type=' + $(element).attr('id')).done(function (data2) {
-                                        $(element).find('.list').append(data2);
-                                        $(element).find('.list').children().each(function (index1, element1) {
-                                            deferredArray.push($.ajax('xml/index.php?base=learning&withLink=true&detail=true&guid=' + $(element1).data('target')).done(function (data3) {
-                                                $(element).find('.list').parent().append(data3).children('.learning').fadeOut();
-                                            }))
-                                        });
-                                    }))
+                        var deferredArray = [];
+                        $('#grid').children('.flipcard').sort(function (a, b) {
+                            return (($(a).data('sid') > $(b).data('sid')) ? 1 : -1);
+                        }).each(function (index, element) {
+                            deferredArray.push($(element).delay(index * 500).children('.back').css('display', 'none').delay(0).parent().animate({opacity: 1}, {duration: 500}));
+                            deferredArray.push($.ajax('xml/index.php?base=categories&type=learning&detail=true&filter=' + $(element).attr("id")).done(function (data) {
+                                $(element).children('.back').append(data);
+                                deferredArray.push($.ajax('xml/index.php?base=learning&withLink=false&type=' + $(element).attr('id')).done(function (data2) {
+                                    $(element).find('.list').append(data2);
+                                    $(element).find('.list').children().each(function (index1, element1) {
+                                        deferredArray.push($.ajax('xml/index.php?base=learning&withLink=true&detail=true&guid=' + $(element1).data('target')).done(function (data3) {
+                                            $(element).find('.list').parent().append(data3).children('.learning').fadeOut();
+                                        }))
+                                    });
                                 }))
-                            });
-                            $.when.apply($, deferredArray).done(function () {
-                            	$('#grid').css('cursor', 'default'),
-                                $('.flipcard, .flipcard .face').css('pointer-events', 'auto').css('cursor', 'pointer'),
-                                openPath();
-                            });
+                            }))
+                        });
+                        $.when.apply($, deferredArray).done(function () {
+                        	$('#grid').css('cursor', 'default'),
+                            $('.flipcard, .flipcard .face').css('pointer-events', 'auto').css('cursor', 'pointer'),
+                            openPath();
                         });
                     });
                 });
