@@ -48,13 +48,13 @@ class rectOutlines{
 		 * @member {Number} rectOutlines#left 
 		 */
 		this.left = parseInt($div.css('left').replace(/^\D+/g, ''));
-		if (isNan(this.left))
+		if (isNaN(this.left))
 			this.left = parseInt($div.css('left'));
 		/**
 		 * @member {Number} rectOutlines#top 
 		 */
 		this.top = parseInt($div.css('top').replace(/^\D+/g, ''));
-		if (isNan(this.top))
+		if (isNaN(this.top))
 			this.top = parseInt($div.css('top'));
 		/**
 		 * @member {Number} rectOutlines#width 
