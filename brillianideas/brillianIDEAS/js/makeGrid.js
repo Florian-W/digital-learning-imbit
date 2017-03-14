@@ -55,11 +55,11 @@ class rectOutlines{
 		/**
 		 * @member {Number} rectOutlines#width 
 		 */
-		this.width = parseInt($div.css('width').repace(/^\D+/g, '')) + 20;
+		this.width = parseInt($div.css('width').replace(/^\D+/g, '')) + 20;
 		/**
 		 * @member {Number} rectOutlines#height 
 		 */
-		this.height = parseInt($div.css('height').repace(/^\D+/g, '')) + 20;
+		this.height = parseInt($div.css('height').replace(/^\D+/g, '')) + 20;
 		/**
 		 * @member {Number} rectOutlines#right 
 		 */
