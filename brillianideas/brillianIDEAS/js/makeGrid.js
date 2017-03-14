@@ -63,11 +63,11 @@ class rectOutlines{
 		/**
 		 * @member {Number} rectOutlines#right 
 		 */
-		this.right = this.top + this.width;
+		this.right = this.left + this.width;
 		/**
 		 * @member {Number} rectOutlines#bottom 
 		 */
-		this.bottom = this.left + this.height;
+		this.bottom = this.top + this.height;
 	}
 	/**
 	 * @function rectOutlines#overlapsWidth
@@ -104,11 +104,14 @@ function noOverlayInGrid(id, x, y, count, key){
 	var $card = $('#' + id);
 	var arr = digitalLearningArray.slice(key + 1);
 	
+	$front= $card.find('.front');
+	/**
+	 * Zeilenumbrüche verhindern
+	 */
+	$front.html($front.html().replace(' ', '&nbsp;').replace('-','&#8209;'));
 	/**
 	 * Initiale Positionierung
 	 */
-	$front= $card.find('.front');
-	$front.html($front.html().replace(' ', '&nbsp;').replace('-','&#8209;'));
 	$card.css({
 		width: $front.outerWidth(true),
 		height: $front.outerHeight(true),
