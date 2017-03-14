@@ -39,7 +39,7 @@
 										</xsl:attribute>
 										<xsl:element name="img">
 											<xsl:attribute name="src">
-												img/learnings/<xsl:value-of select="Thumb" />
+												<xsl:text>img/learnings/</xsl:text><xsl:value-of select="Thumb" />
 											</xsl:attribute>
 											<xsl:attribute name="alt">
 												<xsl:text>&#160;</xsl:text>
@@ -51,7 +51,7 @@
 								<xsl:otherwise>
 									<xsl:element name="img">
 										<xsl:attribute name="src">
-											img/learnings/<xsl:value-of select="Thumb" />
+											<xsl:text>img/learnings/</:text><xsl:value-of select="Thumb" />
 										</xsl:attribute>
 										<xsl:attribute name="alt">
 											<xsl:text>&#160;</xsl:text>
