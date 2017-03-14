@@ -101,8 +101,11 @@ function noOverlayInGrid(id, x, y, count, key){
 	/**
 	 * Setze lokale Variablen
 	 */ 
+	var loop;
 	var $card = $('#' + id);
-	var arr = digitalLearningArray.slice(key + 1);
+	var arr = digitalLearningArray.slice(0, key);
+	var e_position;
+	var card_position;
 	
 	$front= $card.find('.front');
 	/**
@@ -118,35 +121,43 @@ function noOverlayInGrid(id, x, y, count, key){
 		left: Math.floor(x * $display.width) - $card.outerWidth(true) / 2,
 		top: Math.floor(y * $display.height) - $card.outerHeight(true) / 2
 	});
+
+	card_position = new rectOutlines($card);
+	
 	do {
 		/**
 		 * Setze Schleifenvariablen für äußere Schleife
 		 */
-		var card_position = new rectOutlines($card);
-		var loop = false;
+		loop = false;
 		
-		$.each(arr, function(key, value){
+		$.each(arr, function(k, value){
 			/**
-			 * Setze Schleifenvariablen für innere Schleife
+			 * Setze Schleifenvariablen für innere Schleife (Value [0] entspricht der ID Position im Array
 			 */
-			var e_position = new rectOutlines($('#' + value[0]));
-			
-			if ((count == 18 && value[0] == "spiel")||(count == 16 && value[0] == "sg"))
-				true;
+			e_position = new rectOutlines($('#' + value[0]));
 			
 			/**
 			 * check if both divs intersect
 			 */
 			if(rectOutlines.overlaps(e_position, card_position)){
+				card_position.left = ((card_position.left <= e_position.left)?e_position.left - card_position.width:e_position.right);
+				card_position.top = ((card_position.top <= e_position.top)? e_position.top - card_position.height : e_position.bottom);
 
-				$card.css('left', ((card_position.left <= e_position.left)?e_position.left - card_position.width:e_position.right)).css('top', ((card_position.top <= e_position.top)? e_position.top - card_position.height : e_position.bottom));
-
+				card_position.bottom = card_position.top + card_position.height;
+				card_position.right = card_position.left + card_position.width;
+				
+				$card.css({
+					left: card_position.left + "px",
+					top:  card_position.top + "px"
+				});
+				
 				/**
 				 * ensure loop continues and reset iteration through divs
 				 */
 				loop = true;
 				return false;
 			}
+			return true;
 		})
 	} while(loop);
 	/**
