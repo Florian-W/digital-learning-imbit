@@ -358,3 +358,29 @@ and (max-device-width: 1024px) {
     }
 
 }
+
+
+.background_image{
+	position: absolute;
+    trasform: translateZ(-10px);	
+}
+
+#start_bg_ltr{
+    top: 50%;
+    width: 50vw;
+    transform: translateY(-50%);
+    max-height: 66vh;
+}
+
+#start_bg_rtl{
+	bottom:0px;
+	right: 0px;
+	width: initial;
+	max-width: 75vw;
+    transform: rotateX(45deg);
+    
+}
+
+#dl_bg_rtl{
+	right: 0px;
+}

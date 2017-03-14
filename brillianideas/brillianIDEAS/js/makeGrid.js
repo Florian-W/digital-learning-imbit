@@ -187,7 +187,7 @@ var makeGrid = function makeGrid(view){
                     $('#yaxis').animate({opacity: 1, height: $display.height}, {duration: 1000})
                 ).done(function () {
                     $.when(
-                		$('#animation_welcome').animate({left: 50 + $('#animation_welcome').outerWidth() / 2, top: 50}, {duration: 1000}),
+                		$('#animation_welcome').animate({left: 50 + $('#animation_welcome').outerWidth() / 2, top: 100}, {duration: 1000}),
                         $('#grid').css('opacity', 1),
                         $.each(digitalLearningArray, function(key, value){
                         	var v = value.slice();
