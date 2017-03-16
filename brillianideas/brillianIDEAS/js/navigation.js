@@ -21,6 +21,22 @@ $(window).on('load', function(){
             break;
 		}
 	});
+
+	$('arrowLeft').click(function(e){
+		e.preventDefault();
+		var target = $(e.target);
+
+			mystickybar.toggle();
+			
+			
+			jQuery.ajax({
+				url: target.attr('href')
+			}).done(function(data){
+				jQuery('#content').empty().unbind().append(data);
+			})
+				
+		return false;
+	});
 	
 	$('.dotstyle-fillup li a').click(function(e){
 		e.preventDefault();
@@ -41,6 +57,7 @@ $(window).on('load', function(){
 		}		
 		return false;
 	});
+	
 	
 	dotsspace = $(window).height() - $('#dots').position().top - $('#dots').outerHeight();
 	

@@ -31,6 +31,7 @@ html, body {
     width: 50vw;
     transform: translateY(-50%);
     max-height: 66vh;
+	z-index:-1;
 }
 
 #start_bg_rtl{
@@ -49,4 +50,8 @@ html, body {
 	top: 50vh;
 	left: 1%;
 	position: absolute;
+}
+#arrow{
+	width: 4vw;
+	height: auto;
 }
