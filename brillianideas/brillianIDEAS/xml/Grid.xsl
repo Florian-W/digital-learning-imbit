@@ -67,28 +67,46 @@
                                 <xsl:attribute name="data-bind">
                                     <xsl:value-of select="Abbr"/>
                                 </xsl:attribute>
+                                <xsl:element name="h1">
+									<xsl:value-of select="Group-Name" />
+								</xsl:element>
                                 <xsl:element name="div">
                                 	<xsl:attribute name="class">
-                                		<xsl:text>gruppe</xsl:text>
+                                		<xsl:text>learningWrapper</xsl:text>
                                 	</xsl:attribute>
-                                	<xsl:element name="h1">
-										<xsl:value-of select="Group-Name" />
-									</xsl:element>
-									<xsl:for-each select="Classes">
+                                	<xsl:element name="div">
+                                		<xsl:attribute name="class">
+                                			<xsl:text>learningList</xsl:text>
+                                		</xsl:attribute>
+                                		<xsl:element name="ul">
+										<xsl:for-each select="Classes">
+											<xsl:element name="li">
+												<xsl:attribute name="class">
+													<xsl:text>tab</xsl:text>
+												</xsl:attribute>
+												<xsl:element name="div">
+													<xsl:attribute name="class">
+														<xsl:text>learning</xsl:text>
+													</xsl:attribute>
+													<xsl:attribute name="data-target">
+														<xsl:value-of select="Name"></xsl:value-of>
+													</xsl:attribute>
+													<xsl:value-of select="Name"></xsl:value-of>
+												</xsl:element>
+											</xsl:element>
+										</xsl:for-each>
+                                		</xsl:element>
+                                	</xsl:element>
+                                	<xsl:for-each select="Classes">
 										<xsl:element name="div">
 											<xsl:attribute name="class">
-												<xsl:text>vorlesung</xsl:text>
+												<xsl:text>learningContent hidden list</xsl:text>
 											</xsl:attribute>
-											<xsl:value-of select="Name">
-											</xsl:value-of>
-											<!--
-											<xsl:element name="div">
-												<xsl:attribute name="class">
-		                                   		<xsl:text>face front</xsl:text>
-		                               			</xsl:attribute>
-											</xsl:element>-->
+											<xsl:attribute name="id">
+												<xsl:value-of select="Name"></xsl:value-of>
+											</xsl:attribute>
 										</xsl:element>
-									</xsl:for-each>
+                                	</xsl:for-each>
                                 </xsl:element>
                             </xsl:element>
                         </xsl:element>
