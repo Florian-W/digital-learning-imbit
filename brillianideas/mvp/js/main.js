@@ -73,7 +73,11 @@ $(document).ready(function (event) {
             $('.flipped').removeClass('flipped');
             window.location = '#';
             target.fadeOut();
-        } 
+        } else if (target.is('.learningList .learning')){
+        	$('.learningWrapper > .learningContent').addClass('hidden');
+        	$('#' + target.data('target')).toggleClass('hidden');
+        	console.log(target.text());
+        }
     });
 
     // Start Animation

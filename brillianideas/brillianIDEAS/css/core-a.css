@@ -18,10 +18,6 @@ h1, h2, h3, h4, h5 {
     font-family: 'Caveat Brush';
 }
 
-button:hover {
-	cursor:pointer;
-}
-
 .flipcard {
     position: absolute;
     opacity: 0;
@@ -46,10 +42,12 @@ button:hover {
 
 
 .flipcard.IMBIT_Weg{
-	width: 150pt !important;
-    height: 150pt !important;
+	width: 175pt !important;
+    height: 100pt !important;
     background-color: var(--color-bordeaux);
-    line-height: 150pt; /* must be queal to height for vertical centering */
+    line-height: 150pt; /* must be equal to height for vertical centering */
+    border-radius: 1em;
+    font-size: 150%;
 }
 
 .flipcard:not(.flipped) {
@@ -62,14 +60,9 @@ button:hover {
     transition: opacity 0s ease 1s;
 }
 
-.flipcard, .flipcard .face {
-    /*border-radius: 50%;
-    background-color: transparent;*/
-}
-
 .flipcard.flipped .face {
 	padding: 1em;
-    border-radius: 0.5em;
+    border-radius: 1em;
     height: calc(100% - 2em);
     width: calc(100% - 2em);
 }
@@ -115,8 +108,6 @@ button:hover {
     font-weight: bold;
 }
 
-.flipcard.flipped .front {
-}
 
 .flipcard .back {
     transform: rotateY(180deg);
@@ -215,6 +206,11 @@ img.thumb {
     display: none;
     opacity: 1;
     transform: translate(-50%, -50%);
+}
+
+/*enables line breaks out of XML using &#13;&#10; as Carriage Return Line Feed*/
+#grid > .flipcard {
+	white-space: pre-line;
 }
 
 /**
