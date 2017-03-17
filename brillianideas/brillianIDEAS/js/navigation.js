@@ -35,7 +35,7 @@ $(window).on('load', function(){
 	$('.dotstyle-fillup li a').click(function(e){
 		e.preventDefault();
 		var target = $(e.target);
-		if (!target.is('current')){
+		if (!target.is('.current')){
 			var current = jQuery('.current');
 			
 			if (!(target.parent().hasClass('home') ^ mystickybar.currentstate == "hide"))

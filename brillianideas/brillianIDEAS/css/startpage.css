@@ -21,11 +21,6 @@ html, body {
 	text-transform: uppercase;
 }
 
-.background_image{
-	position: absolute;
-    trasform: translateZ(-10px);	
-}
-
 #start_bg_ltr{
     top: 50%;
     width: 50vw;
