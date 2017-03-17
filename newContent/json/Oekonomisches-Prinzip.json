@@ -1,0 +1,114 @@
+{
+  "DragDropGames": [],
+  "quizGames": [
+    {
+      "quizlist": [
+        {
+          "question": "Unter Minimalprinzip versteht man ein festgelegtes Ziel mit möglichst wenig Einsatz zu erreichen",
+          "optionTrue": "Richtig",
+          "optionFalse": [
+            "Falsch"
+          ]
+        },
+        {
+          "question": "Beim Minimalprinzip ist der Input gegeben und der Output die zu suchende Größe.",
+          "optionTrue": "Falsch",
+          "optionFalse": [
+            "Richtig"
+          ]
+        },
+        {
+          "question": "Unter Maximalprinzip versteht man mit festgelegtem Einsatz ein möglichst gutes Ziel zu erreichen.",
+          "optionTrue": "Richtig",
+          "optionFalse": [
+            "Falsch"
+          ]
+        },
+        {
+          "question": "Beim Maximalprinzip ist der Output gegeben und der Input die zu suchende Größe",
+          "optionTrue": "Falsch",
+          "optionFalse": [
+            "Richtig"
+          ]
+        },
+        {
+          "question": "Um wirtschaftlich optimal zu handeln sollten Einsatz und Ergebnis im optimalen Verhältnis zueinander stehen.",
+          "optionTrue": "Richtig",
+          "optionFalse": [
+            "Falsch"
+          ]
+        },
+        {
+          "question": "Für die Montage eines Autos (Output) sollen möglichst wenige Arbeitsstunden (Aufwand) anfallen.",
+          "optionTrue": "Minimalprinzip",
+          "optionFalse": [
+            "Maximalprinzip"
+          ]
+        },
+        {
+          "question": "Aus 1 ha Ackerfläche soll ein möglichst hoher Output erzeugt werden.",
+          "optionTrue": "Maximalprinzip",
+          "optionFalse": [
+            "Minimalprinzip"
+          ]
+        },
+        {
+          "question": "Der geplante Umsatz eines Unternehmens in Höhe von 10 Mio. Euro soll mit möglichst wenigen Vertriebsmitarbeitern erzielt werden",
+          "optionTrue": "Minimalprinzip",
+          "optionFalse": [
+            "Maximalprinzip"
+          ]
+        },
+        {
+          "question": "Man hat eine definierte Menge an Benzin (Input) und versucht nun, mit dieser Menge die größtmögliche Distanz zu fahren (Output).",
+          "optionTrue": "Maximalprinzip",
+          "optionFalse": [
+            "Minimalprinzip"
+          ]
+        },
+        {
+          "question": "Die Abschlussnote 2,5 soll mit möglichst wenig Lernaufwand erreicht werden.",
+          "optionTrue": "Minimalprinzip",
+          "optionFalse": [
+            "Maximalprinzip"
+          ]
+        },
+        {
+          "question": "Eine Nagelfeile wird verwendet um einen Baum zu fällen.",
+          "optionTrue": "Effektivität",
+          "optionFalse": [
+            "Effizienz"
+          ]
+        },
+        {
+          "question": "Bei der Reise von Mannheim nach München wird ein direkter ICE gebucht.",
+          "optionTrue": "Effizienz",
+          "optionFalse": [
+            "Effektivität"
+          ]
+        },
+        {
+          "question": "Im Rahmen einer Kundenzufriedenheitsbefragung geht ein Mitarbeiter von Haus zu Haus und ermittelt die Zufriedenheit einzeln.",
+          "optionTrue": "Effizienz",
+          "optionFalse": [
+            "Effektivität"
+          ]
+        },
+        {
+          "question": "Um ein kleines Feuer zu löschen werden zwei Liter Champagner verwendet.",
+          "optionTrue": "Effizienz",
+          "optionFalse": [
+            "Effektivität"
+          ]
+        },
+        {
+          "question": "Ein Fahrrad wird nur mit einem Lappen und Wasser geputzt.",
+          "optionTrue": "Effizienz",
+          "optionFalse": [
+            "Effektivität"
+          ]
+        }
+      ]
+    }
+  ]
+}
