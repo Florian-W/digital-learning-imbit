@@ -381,6 +381,7 @@ and (max-device-width: 1024px) {
     
 }
 
-#dl_bg_rtl{
-	right: 0px;
+#dl_bg_ltr{
+	height: 25%;
+	transform: rotateY(180deg);
 }
