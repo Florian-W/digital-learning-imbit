@@ -186,6 +186,7 @@
 						<xsl:attribute name="class">
 								<xsl:text>menuBar</xsl:text>
 						</xsl:attribute>
+						<xsl:for-each select="Learning_Unit">
 							<xsl:element name="div">
 								<xsl:attribute name="class">
 									<xsl:text>menuSubject</xsl:text>
@@ -197,6 +198,7 @@
 							</xsl:element>
 						</xsl:for-each>
 					</xsl:element>
+					<xsl:for-each select="Learning_Unit">
 						<xsl:element name="div">
 							<xsl:attribute name="class">
 								<xsl:text>contentWrapper</xsl:text>
