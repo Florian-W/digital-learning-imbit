@@ -275,7 +275,7 @@ var makeGrid = function makeGrid(view){
                                         $(element).find('.list').append(data2);
                                         $(element).find('.list').children().each(function (index1, element1) {
                                             deferredArray.push($.ajax('xml/index.php?base=learning&withLink=true&detail=true&guid=' + $(element1).data('target')).done(function (data3) {
-                                                $(element).find('.list').parent().append(data3).children('.learning').fadeOut();
+                                                $(element1).find('.list').parent().append(data3).children('.learning').fadeOut();
                                             }))
                                         });
                                     }))
