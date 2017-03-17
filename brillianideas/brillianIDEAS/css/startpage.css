@@ -51,7 +51,7 @@ html, body {
 	left: 1%;
 	position: absolute;
 }
-#arrow{
+.arrow{
 	width: 4vw;
 	height: auto;
 }
