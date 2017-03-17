@@ -91,7 +91,7 @@ function changePage(left){
  	if (behindTarget.length == 0){		
  		$(left ? '#arrowLeft' : '#arrowRight').hide();		
  	} else {		
- 		$('#arrowLeft, #arrowRight'). show();		
+ 		$('#arrowLeft, #arrowRight').show();		
  	}
 	
 	if (!(target.hasClass('home') ^ mystickybar.currentstate == "hide"))
