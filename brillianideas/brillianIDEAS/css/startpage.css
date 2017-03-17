@@ -44,11 +44,15 @@ html, body {
 #arrowRight{
 	top: 50vh;
 	right: 1%;
+	width: 4vw;
+	height: auto;
 	position: absolute;
 }
 #arrowLeft{
 	top: 50vh;
 	left: 1%;
+	width: 4vw;
+	height: auto;
 	position: absolute;
 }
 .arrow{

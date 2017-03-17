@@ -22,19 +22,13 @@ $(window).on('load', function(){
 		}
 	});
 
-	$('arrowLeft').click(function(e){
-		e.preventDefault();
-		var target = $(e.target);
-
-			mystickybar.toggle();
-			
-			
-			jQuery.ajax({
-				url: target.attr('href')
-			}).done(function(data){
-				jQuery('#content').empty().unbind().append(data);
-			})
-				
+	$('#arrowLeft').click(function(){
+		changePage(true);
+		return false;
+	});
+	
+	$('#arrowRight').click(function(){
+		changePage(false);
 		return false;
 	});
 	
