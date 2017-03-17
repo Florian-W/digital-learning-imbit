@@ -231,6 +231,7 @@ var makeGrid = function makeGrid(view){
                             }))
                         });
                         $.when.apply($, deferredArray).done(function () {
+				$('.selectionbody .category h2').each(function(i, e){$(e).html(($(e).html().replace(/\r?\n|\r/g," ")))}),
                         	$('#grid').css('cursor', 'default'),
                             $('.flipcard, .flipcard .face').css('pointer-events', 'auto').css('cursor', 'pointer'),
                             openPath();
