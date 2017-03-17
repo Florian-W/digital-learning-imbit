@@ -23,12 +23,9 @@ button:hover {
 }
 
 .flipcard {
+    position: absolute;
     opacity: 0;
-    perspective: 800;
-    -moz-perspective: 800;
-    -webkit-perspective: 800;
     margin: 0;
-    //*border: solid 0.3em;*//
 	border: none;
     transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
@@ -56,7 +53,6 @@ button:hover {
 }
 
 .flipcard:not(.flipped) {
-    transform: translate(-50%, -50%);
     z-index: 2;
 }
 
@@ -79,15 +75,11 @@ button:hover {
 }
 
 .flipcard.flipped {
-    width: inherit !important;
-    height: inherit !important;
+    width: 100% !important;
+    height: 100% !important;
     border-radius: 1em;
-    position: absolute;
     left: 0 !important;
     top: 0 !important;
-    perspective: 1600;
-    -moz-perspective: 1600;
-    -webkit-perspective: 1600;
     transform: rotatey(-180deg);
     -moz-transform: rotatey(-180deg);
     -webkit-transform: rotatey(-180deg);
@@ -111,6 +103,7 @@ button:hover {
 }
 
 .flipcard .front {
+	font-family: 'Caveat Brush';
     letter-spacing: -0.1px;
     line-height: 0.8em;
     width: inherit;
@@ -131,6 +124,7 @@ button:hover {
     -webkit-transform: rotateY(180deg);
     overflow: auto;
     line-height: normal;
+    background-color: var(--background-highlight) !important;
 }
 
 img.thumb {
@@ -363,4 +357,31 @@ and (max-device-width: 1024px) {
         top: -32px;
     }
 
+}
+
+
+.background_image{
+	position: absolute;
+    trasform: translateZ(-10px);	
+}
+
+#start_bg_ltr{
+    top: 50%;
+    width: 50vw;
+    transform: translateY(-50%);
+    max-height: 66vh;
+}
+
+#start_bg_rtl{
+	bottom:0px;
+	right: 0px;
+	width: initial;
+	max-width: 75vw;
+    transform: rotateX(45deg);
+    
+}
+
+#dl_bg_ltr{
+	height: 25%;
+	transform: rotateY(180deg);
 }
