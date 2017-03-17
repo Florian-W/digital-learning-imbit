@@ -67,13 +67,14 @@
                                 <xsl:attribute name="data-bind">
                                     <xsl:value-of select="Abbr"/>
                                 </xsl:attribute>
-                                <xsl:element name="h1">
-									<xsl:value-of select="Group-Name" />
-								</xsl:element>
                                 <xsl:element name="div">
                                 	<xsl:attribute name="class">
-                                		<xsl:text>learningWrapper</xsl:text>
+                                		<xsl:text>moduleMenu</xsl:text>
                                 	</xsl:attribute>
+                           <!-- 
+                           
+                                	<xsl:for-each select="a">
+                                	</xsl:for-each>
                                 	<xsl:element name="div">
                                 		<xsl:attribute name="class">
                                 			<xsl:text>learningList</xsl:text>
@@ -107,6 +108,9 @@
 											</xsl:attribute>
 										</xsl:element>
                                 	</xsl:for-each>
+                      	 -->
+                                	
+                                	
                                 </xsl:element>
                             </xsl:element>
                         </xsl:element>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"
+xmlns:set="http://exslt.org/sets" extension-element-prefixes="set">
+<xsl:import href="set.xsl"/>
 	
 	<xsl:output method="html" indent="yes" />
 	<xsl:param name="guid" select="''" />
@@ -8,8 +10,59 @@
 	<xsl:param name="detail" select="'false'" />
 	<xsl:param name="type" select="''" />
 	<xsl:param name="class" select="''" />
+	<xsl:param name="area" select="''" />
+	<xsl:param name="learningsFile" select="document('Learnings.xml')"/>
+	<xsl:variable name="distinctLearnings" select="set:distinct($learningsFile/@learning_Unit)"/>
+	<xsl:variable name="distinctArea" select="set:distinct($learningsFile/@Are)"/>
 	
 	<xsl:template match="/">
+	<xsl:choose>
+		<xsl:when test="$type='a'">
+		</xsl:when>
+		<xsl:when test="$type='b'">
+			<xsl:for-each select="$distinctArea">
+				<xsl:choose>
+					<xsl:when test="$area='.'">
+					</xsl:when>
+				</xsl:choose>
+			</xsl:for-each>
+			<xsl:element name="div">
+				<xsl:attribute name="class">
+					<xsl:text>menuBar</xsl:text>
+				</xsl:attribute>
+				<xsl:for-each select="$distinctLearnings">
+					<xsl:element name="div">
+						<xsl:attribute name="class">
+							<xsl:text>menuSubject</xsl:text>
+						</xsl:attribute>
+						<xsl:attribute name="id">
+							<xsl:value-of select="."/>
+						</xsl:attribute>
+						<xsl:value-of select="."/>
+					</xsl:element>
+				</xsl:for-each>
+			</xsl:element>
+			<xsl:for-each select="$distinctLearnings">
+				<xsl:element name="div">
+					<xsl:attribute name="class">
+						<xsl:text>contentWrapper</xsl:text>
+					</xsl:attribute>
+					<xsl:element name="div">
+						<xsl:attribute name="class">
+							<xsl:text>detailTop</xsl:text>
+						</xsl:attribute>
+						<xsl:text>Here is a flagX</xsl:text>
+					</xsl:element>
+					<xsl:element name="div">
+						<xsl:attribute name="class">
+							<xsl:text>detailBottom</xsl:text>
+						</xsl:attribute>
+						<xsl:text>Here is a flagY</xsl:text>
+					</xsl:element>
+				</xsl:element>
+			</xsl:for-each>
+		</xsl:when>
+	</xsl:choose>
 		<xsl:for-each select="/Learnings/Learning/GUID[contains(text(),$guid)]/../Number[contains(text(), $class)]/../Type[contains(text(), $type)]/..">
 			<xsl:element name="div">
 				<xsl:choose>
