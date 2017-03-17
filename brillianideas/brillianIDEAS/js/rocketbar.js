@@ -36,22 +36,17 @@ expstickybar.prototype={
 	 */
 	showhide:function(keyword, anim){
 		
-		
 		var thisbar=this;
 		$=jQuery;
-		
-		if(thisbar.currentstate == keyword)
-			return;
-		
 		var barSize= jQuery('.content').outerHeight();
 		var finalpx=(keyword=="show")? 0 : - barSize;
 		var positioncss=(thisbar.setting.position=="bottom")? {bottom:finalpx} : {top:finalpx};
 		thisbar.$stickybar.finish().animate(	positioncss, anim ? thisbar.setting.speed : 0);
 		
 		
-		jQuery('#dots').finish().animate({
+		/*jQuery('#container').finish().animate({
 				top: (keyword=="show"?'-':'+') + '=' + barSize + 'px'
-			}, thisbar.setting.speed);
+			}, thisbar.setting.speed);*/
 		
 		thisbar.currentstate=keyword
 	},
@@ -103,23 +98,6 @@ expstickybar.prototype={
 				jQuery('.content').css('background-color','#991b33');
 				break;
 		}
-		
-		
-		/**
-		 * Make Navigation Trigger
-		 */
-		$('.navLink, .navLink *').click(function(e){
-			e.preventDefault();
-			var target = $(e.target);
-			
-			if(!target.is('a'))
-				target = target.parent();
-			
-			var targetURL = target.attr('href');
-			var clickTarget = $('.dotstyle-fillup a[href="' + targetURL + '"]');
-			clickTarget.trigger('click');
-			return false;
-		});
 	}
 }
 

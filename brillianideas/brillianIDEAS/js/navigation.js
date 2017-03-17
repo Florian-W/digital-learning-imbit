@@ -21,21 +21,11 @@ $(window).on('load', function(){
             break;
 		}
 	});
-
-	$('#arrowLeft').click(function(){
-		changePage(true);
-		return false;
-	});
-	
-	$('#arrowRight').click(function(){
-		changePage(false);
-		return false;
-	});
 	
 	$('.dotstyle-fillup li a').click(function(e){
 		e.preventDefault();
 		var target = $(e.target);
-		if (!target.is('.current')){
+		if (!target.is('current')){
 			var current = jQuery('.current');
 			
 			if (!(target.parent().hasClass('home') ^ mystickybar.currentstate == "hide"))
@@ -52,7 +42,6 @@ $(window).on('load', function(){
 		return false;
 	});
 	
-	
 	dotsspace = $(window).height() - $('#dots').position().top - $('#dots').outerHeight();
 	
 	jQuery.ajax({
@@ -62,14 +51,6 @@ $(window).on('load', function(){
 	});
 	
 	
-});
-
-
-
-$(document).ready(function(){
-	$('#dots').css({
-		top: $('#dots').position().top
-	});
 });
 
 /**
@@ -88,15 +69,6 @@ function changePage(left){
 	if (target.length == 0){
 		return false;
 	}
-	var behindTarget = left ? target.prev() : target.next();
-	
-	if (behindTarget.length == 0){
-	$(left ? '#arrowLeft' : '#arrowRight').hide();
-	} else {
-	$('#arrowLeft, #arrowRight'). show();
-	}
-
-
 	
 	if (!(target.hasClass('home') ^ mystickybar.currentstate == "hide"))
 		mystickybar.toggle();
