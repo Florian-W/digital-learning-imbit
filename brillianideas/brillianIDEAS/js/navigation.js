@@ -80,6 +80,15 @@ function changePage(left){
 	if (target.length == 0){
 		return false;
 	}
+	var behindTarget = left ? target.prev() : target.next();
+	
+	if (behindTarget.length == 0){
+	$(left ? '#arrowLeft' : '#arrowRight').hide();
+	} else {
+	$('#arrowLeft, #arrowRight'). show();
+	}
+
+
 	
 	if (!(target.hasClass('home') ^ mystickybar.currentstate == "hide"))
 		mystickybar.toggle();
