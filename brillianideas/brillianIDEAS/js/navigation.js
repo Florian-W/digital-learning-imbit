@@ -64,6 +64,14 @@ $(window).on('load', function(){
 	
 });
 
+
+
+$(document).ready(function(){
+	$('#dots').css({
+		top: $('#dots').position().top
+	});
+});
+
 /**
  * 
  * @param left is navigation leftwards
