@@ -40,7 +40,7 @@ expstickybar.prototype={
 		$=jQuery;
 		
 		if(thisbar.currentstate == keyword)		
- -			return;
+ 			return;
 		
 		var barSize= jQuery('.content').outerHeight();
 		var finalpx=(keyword=="show")? 0 : - barSize;
