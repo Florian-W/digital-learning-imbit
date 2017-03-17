@@ -21,5 +21,32 @@ html, body {
 	text-transform: uppercase;
 }
 
+#start_bg_ltr{
+    top: 50%;
+    width: 50vw;
+    transform: translateY(-50%);
+    max-height: 66vh;
+	z-index:-1;
+}
 
-
+#start_bg_rtl{
+	bottom:0px;
+	right: 0px;
+	width: initial;
+	max-width: 75vw;
+    transform: rotateX(45deg);
+}
+#arrowRight{
+	top: 50vh;
+	right: 1%;
+	width: 4vw;
+	height: auto;
+	position: absolute;
+}
+#arrowLeft{
+	top: 50vh;
+	left: 1%;
+	width: 4vw;
+	height: auto;
+	position: absolute;
+}
