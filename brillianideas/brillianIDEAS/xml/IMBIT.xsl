@@ -118,6 +118,9 @@ media-type="text/xml"/>
 				<xsl:element name="Recommended">
 					<xsl:value-of select="./Recommended" />
 				</xsl:element>
+				<xsl:element name="Abbreviation">
+					<xsl:value-of select="./Abbreviation" />
+				</xsl:element>
 			</xsl:element>
 		</xsl:for-each>
 	</xsl:template>
