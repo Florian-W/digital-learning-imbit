@@ -100,7 +100,7 @@ function transformCategorie($base, $type, $detail = 'false'){
         'filter' => $filter
     );
 
-	if($base == "grid" && $type == "class" && detail== "true"){
+	if($base == "grid" && $type == "class" && $detail == "true"){
 		transformXmlImbit($params);
 	} else {
 	    transformXML(
