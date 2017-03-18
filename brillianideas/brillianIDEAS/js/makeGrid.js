@@ -234,6 +234,9 @@ var makeGrid = function makeGrid(view){
 				$('.selectionbody .category h2').each(function(i, e){$(e).html(($(e).html().replace(/\r?\n|\r/g," ")))}),
                         	$('#grid').css('cursor', 'default'),
                             $('.flipcard, .flipcard .face').css('pointer-events', 'auto').css('cursor', 'pointer'),
+                            $('h1, h2, h3, h4 ,h5, p').each(function(i,e){
+                            	$(e).html(($(e).html().replace(/\s{2,}/g," ")))
+                            }),
                             openPath();
                         });
                     });
@@ -256,6 +259,7 @@ var makeGrid = function makeGrid(view){
                             $('#IT').css('left', Math.floor(0.7 * $display.width)).css('top', Math.floor(0.2 * $display.height)).attr('data-sid', '3'),
                             $('#W').css('left', Math.floor(0.68 * $display.width)).css('top', Math.floor(0.7 * $display.height)).attr('data-sid', '4'),
                             $('#MG').css('left', Math.floor(0.35 * $display.width)).css('top', Math.floor(0.35 * $display.height)).attr('data-sid', '5'),
+                            $('#animation_welcome').animate({left: 50 + $('#animation_welcome').outerWidth() / 2, top: 100}, {duration: 1000}),
                             
                             $('#grid').css('opacity', 1)
                         ).done(function () {

@@ -40,14 +40,18 @@ h1, h2, h3, h4, h5 {
 	margin-top: 5px;
 }
 
-
 .flipcard.IMBIT_Weg{
 	width: 175pt !important;
     height: 100pt !important;
     background-color: var(--color-bordeaux);
-    line-height: 150pt; /* must be equal to height for vertical centering */
+    line-height: 100pt; /* must be equal to height for vertical centering */
     border-radius: 1em;
     font-size: 150%;
+}
+
+.flipcard.IMBIT_Weg .face {
+	background-color: var(--color-bordeaux) !important;
+	border-radius: 1em;
 }
 
 .flipcard:not(.flipped) {
@@ -116,6 +120,7 @@ h1, h2, h3, h4, h5 {
     overflow: auto;
     line-height: normal;
     background-color: var(--background-highlight) !important;
+    text-align: justify;
 }
 
 img.thumb {
@@ -159,8 +164,8 @@ img.thumb {
 }
 
 .learning > img.thumbnail, .learning > a >img.thumbnail {
-    max-width: 500px;
-    max-height: 500px;
+	max-width: 350px;
+	max-height: 350px;
 }
 
 
@@ -385,14 +390,17 @@ and (max-device-width: 1024px) {
 .menuBar, .menuBar > * {
 	display: inline-block;
 	margin: auto;
-	display: inline-block;
 	margin-left: 60px !important;
 	overflow-x: auto !important;
 	cursor: pointer;
 }
 
+.menuSubject {
+	padding: 0.2em;
+}
+
 .menuSubject.active {
 	font-weight: bold;
-	background-color: blue;
+	background-color: ;
 }
 
