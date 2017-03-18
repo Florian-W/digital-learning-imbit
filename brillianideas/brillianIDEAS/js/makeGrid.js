@@ -251,35 +251,21 @@ var makeGrid = function makeGrid(view){
                 })
             ).done(function () {
                         $.when(
-                            $('#animation_l, #animation_im, #animation_b, #animation_it, #animation_mg').animate({opacity: 0}),
-                            $('#animation_l, #animation_im, #animation_b, #animation_it, #animation_mg').css('display', 'none'),
-
-                            $('#IM').css('left', Math.floor(0.2 * $display.width)).css('top', Math.floor(0.1 * $display.height)).attr('data-sid', '1'),
-                            $('#S').css('left', Math.floor(0.25 * $display.width)).css('top', Math.floor(0.65 * $display.height)).attr('data-sid', '2'),
+                            $('#WI').css('left', Math.floor(0.2 * $display.width)).css('top', Math.floor(0.1 * $display.height)).attr('data-sid', '1'),
+                            $('#I').css('left', Math.floor(0.25 * $display.width)).css('top', Math.floor(0.65 * $display.height)).attr('data-sid', '2'),
                             $('#IT').css('left', Math.floor(0.7 * $display.width)).css('top', Math.floor(0.2 * $display.height)).attr('data-sid', '3'),
-                            $('#B').css('left', Math.floor(0.68 * $display.width)).css('top', Math.floor(0.7 * $display.height)).attr('data-sid', '4'),
+                            $('#W').css('left', Math.floor(0.68 * $display.width)).css('top', Math.floor(0.7 * $display.height)).attr('data-sid', '4'),
                             $('#MG').css('left', Math.floor(0.35 * $display.width)).css('top', Math.floor(0.35 * $display.height)).attr('data-sid', '5'),
-                            //$('#W3WI_IMBIT_305').css('left', Math.floor(0.7 * $display.width)).css('top', Math.floor(0.8 * $display.height)).attr('data-sid', '5'),
-                      
-							
-
+                            
                             $('#grid').css('opacity', 1)
                         ).done(function () {
                             var deferredArray = [];
                             $('#grid').children('.flipcard').sort(function (a, b) {
                                 return (($(a).data('sid') > $(b).data('sid')) ? 1 : -1);
                             }).each(function (index, element) {
-                                deferredArray.push($(element).delay(index * 500).children('.back').css('display', 'none').delay(0).parent().animate({opacity: 1}, {duration: 1000}));
-                                deferredArray.push($.ajax('xml/index.php?base=categories&type=class&detail=true&filter=' + $(element).attr("id")).done(function (data) {
+                                deferredArray.push($(element).delay(index * 500).children('.back').css('display', 'none').delay(0).parent().animate({opacity: 1}, {duration: 500}));
+                                deferredArray.push($.ajax('xml/index.php?base=grid&type=class&detail=true&filter=' + $(element).children('.front').text())).done(function (data) {
                                     $(element).children('.back').append(data);
-                                    deferredArray.push($.ajax('xml/index.php?base=learning&withLink=false&class=' + $(element).attr('id')).done(function (data2) {
-                                        $(element).find('.list').append(data2);
-                                        $(element).find('.list').children().each(function (index1, element1) {
-                                            deferredArray.push($.ajax('xml/index.php?base=learning&withLink=true&detail=true&guid=' + $(element1).data('target')).done(function (data3) {
-                                                $(element1).find('.list').parent().append(data3).children('.learning').fadeOut();
-                                            }))
-                                        });
-                                    }))
                                 }))
                             });
                             $.when.apply($, deferredArray).done(function () {
