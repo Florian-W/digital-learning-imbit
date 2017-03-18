@@ -145,7 +145,7 @@
 <xsl:attribute name="jsonFileName"><xsl:value-of select="jsonFileName"/></xsl:attribute>
 <xsl:attribute name="type">button</xsl:attribute>
 <xsl:attribute name="class"><xsl:value-of select="ButtonClass"/></xsl:attribute>
-<xsl:attribute name="id">clickMe</xsl:attribute>
+<xsl:attribute name="id"><xsl:value-of select="ButtonID"/></xsl:attribute>
 Quiz
 </xsl:element>
 </xsl:element>
