@@ -71,46 +71,6 @@
                                 	<xsl:attribute name="class">
                                 		<xsl:text>moduleMenu</xsl:text>
                                 	</xsl:attribute>
-                           <!-- 
-                           
-                                	<xsl:for-each select="a">
-                                	</xsl:for-each>
-                                	<xsl:element name="div">
-                                		<xsl:attribute name="class">
-                                			<xsl:text>learningList</xsl:text>
-                                		</xsl:attribute>
-                                		<xsl:element name="ul">
-										<xsl:for-each select="Classes">
-											<xsl:element name="li">
-												<xsl:attribute name="class">
-													<xsl:text>tab</xsl:text>
-												</xsl:attribute>
-												<xsl:element name="div">
-													<xsl:attribute name="class">
-														<xsl:text>learning</xsl:text>
-													</xsl:attribute>
-													<xsl:attribute name="data-target">
-														<xsl:value-of select="Name"></xsl:value-of>
-													</xsl:attribute>
-													<xsl:value-of select="Name"></xsl:value-of>
-												</xsl:element>
-											</xsl:element>
-										</xsl:for-each>
-                                		</xsl:element>
-                                	</xsl:element>
-                                	<xsl:for-each select="Classes">
-										<xsl:element name="div">
-											<xsl:attribute name="class">
-												<xsl:text>learningContent hidden list</xsl:text>
-											</xsl:attribute>
-											<xsl:attribute name="id">
-												<xsl:value-of select="Name"></xsl:value-of>
-											</xsl:attribute>
-										</xsl:element>
-                                	</xsl:for-each>
-                      	 -->
-                                	
-                                	
                                 </xsl:element>
                             </xsl:element>
                         </xsl:element>

@@ -77,10 +77,10 @@ var digitalLearning = function (file) {
         } else if (target.is('#grid')){ // skips startup animation if grid is clicked
         	// two times finish to stop both animation queues
         	$('#site').find('*').finish().finish();
-        } else if (target.is('.learningList .learning')){
-        	$('.learningWrapper > .learningContent').addClass('hidden');
-        	$('#' + target.data('target').replace(/\s/g, "&nbsp;")).toggleClass('hidden');
-        	console.log(target.text());
+        } else if (target.is('.menuSubject')){
+        	$('.contentWrapper').hide().filter('[data-bind="' + target.data('target') + '"]').show();
+        	$('.menuSubject').removeClass('active');
+        	target.addClass('active');
         }
     });
 

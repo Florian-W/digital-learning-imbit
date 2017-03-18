@@ -185,19 +185,19 @@ Quelle: https://wiki.zum.de/wiki/Wikis_in_der_Schule</Description>
 		</Classes>
 	</Groups>
 	<Groups>
-		<Group-Name>International</Group-Name>
+		<Group-Name>Internationales</Group-Name>
 		<Abbr>I</Abbr>
 		<Classes>
 			<Name>Spanisch</Name>
 			<Number>W3WI_IMBIT_305</Number>
 			<Thumb>https://c1.staticflickr.com/9/8318/7915744438_71b937a80d_b.jpg</Thumb>
-			<Group>International</Group>
+			<Group>Internationales</Group>
 		</Classes>
 		<Classes>
 			<Name>Chinesisch</Name>
 			<Number>Sprachschule</Number>
 			<Thumb>https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Chinese_Character_zhao1_cai2_jin4_bao3_Song_style.svg/2000px-Chinese_Character_zhao1_cai2_jin4_bao3_Song_style.svg.png</Thumb>
-			<Group>International</Group>
+			<Group>Internationales</Group>
 		</Classes>
 	</Groups>
 	<Groups>

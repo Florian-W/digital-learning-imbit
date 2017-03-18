@@ -381,3 +381,18 @@ and (max-device-width: 1024px) {
 	height: 25%;
 	transform: rotateY(180deg);
 }
+
+.menuBar, .menuBar > * {
+	display: inline-block;
+	margin: auto;
+	display: inline-block;
+	margin-left: 60px !important;
+	overflow-x: auto !important;
+	cursor: pointer;
+}
+
+.menuSubject.active {
+	font-weight: bold;
+	background-color: blue;
+}
+
