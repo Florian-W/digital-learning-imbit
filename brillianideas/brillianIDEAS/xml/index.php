@@ -100,7 +100,7 @@ function transformCategorie($base, $type, $detail = 'false'){
         'filter' => $filter
     );
 
-	if($base == "grid" && $type == "class"){
+	if($base == "grid" && $type == "class" && detail== "true"){
 		transformXmlImbit($params);
 	} else {
 	    transformXML(
@@ -148,7 +148,7 @@ function transformXmlImbit($params){
     $proc = new XSLTProcessor();
     $proc->importStylesheet($xsl);
 
-	$proc2 = newXSLTProcessor();
+	$proc2 = new XSLTProcessor();
 	$proc2->importStylesheet($xsl2);
 
     foreach ($params as $name => $value){
