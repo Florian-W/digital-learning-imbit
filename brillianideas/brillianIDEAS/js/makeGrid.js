@@ -266,7 +266,7 @@ var makeGrid = function makeGrid(view){
                                 deferredArray.push($(element).delay(index * 500).children('.back').css('display', 'none').delay(0).parent().animate({opacity: 1}, {duration: 500}));
                                 deferredArray.push($.ajax('xml/index.php?base=grid&type=class&detail=true&filter=' + $(element).children('.front').text())).done(function (data) {
                                     $(element).children('.back').append(data);
-                                }))
+                                })
                             });
                             $.when.apply($, deferredArray).done(function () {
                                 openPath();
