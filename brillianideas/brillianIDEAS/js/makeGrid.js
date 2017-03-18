@@ -268,6 +268,7 @@ var makeGrid = function makeGrid(view){
                                 	url: 'xml/index.php?base=grid&type=class&detail=true&filter=' + $(element).children('.front').text()
                                 }).done(function (data) {
                                     $(element).children('.back').append(data);
+                                    $(element).find('.contentWrapper').hide();
                                 }));
                             });
                             $.when.apply($, deferredArray).done(function () {
