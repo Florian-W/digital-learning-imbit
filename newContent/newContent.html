@@ -27,18 +27,9 @@
 	
     <!-- jQuery Mobile -->
     <script src="lib/jQuery/Mobile/jquery.mobile.custom.js"></script>
+	<script src="js/newContent.js"></script>
 
     <meta name="viewport" content="user-scalable=no, width=device-width, height=device-height" />
-
-	<script>
-		jQuery(document).ready(function() {
-			jQuery.ajax('xml/index.php?base=grid&type=newcontent').done(function (data) {
-                    jQuery('#site').append(data);
-				});
-		});
-	</script>
-	
-	
 	
 </head>
 <body>
@@ -50,9 +41,6 @@
 <div id="site" class="">
 </div>
 <ul id ="dots" class="dotstyle dotstyle-fillup">
-	<li><a href="content/digitalLearning.html"></a></li>
-	<li class="current home"><a href="./content/startpage.htm"></a></li>
-	<li><a href="content/imbit.html"></a></li>
 </ul>
 </body>  
 </html>
