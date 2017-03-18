@@ -53,8 +53,18 @@ function doTransformation(){
 function prepareTransformCategorie($base){
     if (isset($_GET['type'])){
         switch ($_GET['type']){
-            case 'class':
-                transformCategorie($base, 'class');
+            case 'class': 
+            	if(isset($_GET['detail'])){
+                    switch ($_GET['detail']){
+                        case 'true':
+                            transformCategorie($base,'class', 'true');
+                            break;
+                        default:
+                            transformCategorie($base, 'class');
+                    }
+                } else {
+                    transformCategorie($base, 'class');
+                }
                 break;
 			case 'newcontent':
                 transformCategorie($base, 'newcontent');
@@ -90,12 +100,15 @@ function transformCategorie($base, $type, $detail = 'false'){
         'filter' => $filter
     );
 
-    transformXML(
-        $GLOBALS['files']['categories_xml'],
-        $GLOBALS['files'][$base . '_xsl'],
-        $params
-    );
-    //transformXML('./categories.xml', './selection.xsl', $params);
+	if($base == "grid" && $type == "class" && $detail == "true"){
+		transformXmlImbit($params);
+	} else {
+	    transformXML(
+	        $GLOBALS['files']['categories_xml'],
+	        $GLOBALS['files'][$base . '_xsl'],
+	        $params
+	    );
+	}
 }
 
 /**
@@ -118,6 +131,31 @@ function transformXML($xmlFile, $xslFile, $params){
     }
 
     $result = $proc->transformToDoc($xml);
+
+    echo $result->saveHTML();
+}
+
+function transformXmlImbit($params){
+ 	$xsl = new DOMDocument();
+    $xsl->load('IMBIT.xsl');
+
+	$xsl2 = new DOMDocument();
+	$xsl2->load('Learning.xsl');
+
+    $xml = new DOMDocument();
+    $xml->load('Learnings.xml');
+
+    $proc = new XSLTProcessor();
+    $proc->importStylesheet($xsl);
+
+	$proc2 = new XSLTProcessor();
+	$proc2->importStylesheet($xsl2);
+
+    foreach ($params as $name => $value){
+        $proc2->setParameter('', $name, $value);
+    }
+
+    $result = $proc2->transformToDoc($proc->transformToDoc($xml));
 
     echo $result->saveHTML();
 }

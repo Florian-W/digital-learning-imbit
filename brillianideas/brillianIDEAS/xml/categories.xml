@@ -140,7 +140,7 @@ Quelle: https://wiki.zum.de/wiki/Wikis_in_der_Schule</Description>
 	</LearningType>
 	<Groups>
 		<Group-Name>Wirtschaftsinformatik</Group-Name>
-		<Abbr>IM</Abbr>
+		<Abbr>WI</Abbr>
 		<Classes>
 			<Name>Intercultural Management</Name>
 			<Number>W3WI_IMBIT_301</Number>
@@ -186,7 +186,7 @@ Quelle: https://wiki.zum.de/wiki/Wikis_in_der_Schule</Description>
 	</Groups>
 	<Groups>
 		<Group-Name>International</Group-Name>
-		<Abbr>S</Abbr>
+		<Abbr>I</Abbr>
 		<Classes>
 			<Name>Spanisch</Name>
 			<Number>W3WI_IMBIT_305</Number>
@@ -254,7 +254,7 @@ Quelle: https://wiki.zum.de/wiki/Wikis_in_der_Schule</Description>
 	</Groups>
 	<Groups>
 		<Group-Name>Wirtschaft</Group-Name>
-		<Abbr>B</Abbr>			
+		<Abbr>W</Abbr>			
 		<Classes>
 			<Name>Betriebswirtschaftliche Standardlösungen</Name>
 			<Number>W3WI_IMBIT_402</Number>

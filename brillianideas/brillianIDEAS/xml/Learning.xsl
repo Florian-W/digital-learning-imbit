@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0" xmlns:set="http://exslt.org/sets">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 	
 	<xsl:output method="html" indent="yes" />
 	<xsl:param name="guid" select="''" />
@@ -12,12 +12,6 @@
 	<xsl:param name="test" select="''" />
 	
 	<xsl:template match="/">
-		<xsl:choose>
-			<xsl:when test="$test='a'">
-				<!-- for digitalLearning way? -->
-		
-				<!-- old code -->
-				
 				<xsl:for-each select="/Learnings/Learning/GUID[contains(text(),$guid)]/../Number[contains(text(), $class)]/../Type[contains(text(), $type)]/..">
 					<xsl:element name="div">
 						<xsl:choose>
@@ -174,14 +168,11 @@
 						</xsl:element>
 					</xsl:element>
 				</xsl:for-each>
-			</xsl:when>
-			
-			<!-- new code -->
+
+			<!-- 		
 			<xsl:when test="$test='b'">
-				<!-- for IMBIT way? -->
-				<!-- instead of for-each Area select Area through JS, a variable and a choose/ if -->
 				
-				<xsl:for-each select="Area">
+				<xsl:for-each select="//Area">
 					<xsl:element name="div">
 						<xsl:attribute name="class">
 								<xsl:text>menuBar</xsl:text>
@@ -218,7 +209,6 @@
 						</xsl:element>
 					</xsl:for-each>
 				</xsl:for-each>
-			</xsl:when>
-		</xsl:choose>
+ -->	
 	</xsl:template>
 </xsl:stylesheet> 
