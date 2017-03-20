@@ -7,6 +7,19 @@
 var dotsspace;
 
 $(window).on('load', function(){
+	/**
+	* Added hash to navigate page
+	*/
+	var nameHash = window.location.hash;
+	switch(nameHash) {
+		case "#imbit":
+			changePage(false);
+			break;
+		case "#digitalLearning":
+			changePage(true);
+			break;
+	}
+	
 	jQuery(document).on("swiperight",function(){
 		changePage(true);
 	}).on("swipeleft",function(){
