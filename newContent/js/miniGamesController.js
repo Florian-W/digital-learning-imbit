@@ -334,6 +334,17 @@
 
 	function displayDragAndDropGame(numberOfCurrentDragDropGame) {
 
+		// füge das neutrale Bob Gesicht hinzu, falls es nicht schon da ist
+		//
+		//
+		if (!$(".background").find(".BobTentacleRight").length > 0) {
+			$('.background')
+				.append(
+					'<img src="img/tentakel_right_MiniGames.png" id ="BobTentacleRightId" class="BobTentacleRight" style="object-fit: contain">'
+				);
+		}
+
+
 		var counter = 0;
 
 		console.log("STage is: " + stage)
@@ -437,9 +448,9 @@
 				.append(
 					'<div id="gameTitle"><strong></strong></div>' +
 					'<div id="gameDescription"></div>' +
-					'<div class="container"><div id="source"></div>' +
-					'<div id="target1"></div>' +
-					'<div id="target2"></div>' +
+					'<div class="container"><div id="source" style="width:30%"></div>' +
+					'<div id="target1" style="width:30%"></div>' +
+					'<div id="target2" style="width:30%"></div>' +
 					'</div>' +
 					'<div style="clear:both"></div>' +
 					'<div id="button"><button id= "checkInputButton" class ="button" onclick="checkInput()">Eingabe prüfen</button></div>'
@@ -484,7 +495,7 @@
 		}
 
 		if (numberOfTargetsOfCurrentGame == 3) {
-	
+
 			stage = '#game1';
 
 			if (numberOfTargetsOfPreviuosGame == 2) {
@@ -540,10 +551,10 @@
 				.append(
 					'<div id="gameTitle"><strong></strong></div>' +
 					'<div id="gameDescription"></div>' +
-					'<div class="container"><div id="source"></div>' +
-					'<div id="target1"></div>' +
-					'<div id="target2"></div>' +
-					'<div id="target3"></div>' +
+					'<div class="container"><div id="source" style="width:25%"></div>' +
+					'<div id="target1" style="width:25%"></div>' +
+					'<div id="target2" style="width:25%"></div>' +
+					'<div id="target3" style="width:25%"></div>' +
 					'</div>' +
 					'<div style="clear:both"></div>' +
 					'<div id="button"><button id= "checkInputButton" class ="button" onclick="checkInput()">Eingabe prüfen</button></div>'
@@ -660,11 +671,11 @@
 				.append(
 					'<div id="gameTitle"><strong></strong></div>' +
 					'<div id="gameDescription"></div>' +
-					'<div class="container"><div id="source"></div>' +
-					'<div id="target1"></div>' +
-					'<div id="target2"></div>' +
-					'<div id="target3"></div>' +
-					'<div id="target4"></div>' +
+					'<div class="container"><div id="source" style="width:20%"></div>' +
+					'<div id="target1" style="width:20%"></div>' +
+					'<div id="target2" style="width:20%"></div>' +
+					'<div id="target3" style="width:20%"></div>' +
+					'<div id="target4" style="width:20%"></div>' +
 					'</div>' +
 					'<div style="clear:both"></div>' +
 					'<div id="button"><button id= "checkInputButton" class ="button" onclick="checkInput()">Eingabe prüfen</button></div>'
@@ -1109,6 +1120,8 @@
 	var optionsCounter;
 
 	function displayQuizListQuestion(numberOfDragAndDropGamesPlayed) {
+
+		$('.BobTentacleRight').remove();
 
 		// drag and drop spiele werden immer im #game1 angezeigt, dementsprechend wird die erste Quizfrage im zweiten gezeigt
 		if (numberOfDragAndDropGamesPlayed > 0) {
