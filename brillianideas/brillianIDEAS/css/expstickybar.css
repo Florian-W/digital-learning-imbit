@@ -19,7 +19,7 @@ dotstyle ul {
 	cursor: default;
 }
 #dots{
-	bottom: 5%;
+	bottom: 1.25em;
 	margin: 0 auto;
 	margin-bottom:5px;
 	position: absolute;
@@ -32,6 +32,7 @@ dotstyle ul {
     width: 100vw;
     justify-content: center;
 }
+
 .dotstyle li {
 	position: relative;
 	display: block;
