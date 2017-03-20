@@ -209,12 +209,13 @@ var makeGrid = function makeGrid(view){
         case 'digitalLearning':
 			var animationPromises = new Array();
 			
-			var enableClicking = function(){
+			var cleanUp = function(){
 				$('#grid').css('cursor', 'default');
 				$('.flipcard, .flipcard .face').css('pointer-events', 'auto').css('cursor', 'pointer');
 				$('h1, h2, h3, h4 ,h5, p').each(function(i,e){
 					$(e).html(($(e).html().replace(/\s{2,}/g," ")));
 				});
+				$('.flipcard').css({width: 'initial', height: 'initial'});
 			}
 			
 			var sortTiles = function (a, b) {
@@ -260,7 +261,7 @@ var makeGrid = function makeGrid(view){
 				animateTile($flipcards.first());
 				
 				
-				$.when(animationPromises).done(enableClicking)
+				$.when(animationPromises).done(cleanUp)
 			
 			}
 			

@@ -7,9 +7,11 @@
 var dotsspace;
 
 $(window).on('load', function(){
-	jQuery(document).on("swiperight",function(){
+	jQuery(document).on("swiperight",function(e){
+		if($(e.target).is('p,a,img,h1,h2,h3,h4,h5,span')) return false;	
 		changePage(true);
-	}).on("swipeleft",function(){
+	}).on("swipeleft",function(e){
+		if($(e.target).is('p,a,img,h1,h2,h3,h4,h5,span')) return false;	
 		changePage(false);
 	}).on("keydown", function(e){
 		switch (e.keyCode) {
@@ -22,12 +24,12 @@ $(window).on('load', function(){
 		}
 	});
 			
-	$('#arrowLeft').click(function(){		
+	$('#arrowLeft').click(function(){
 		changePage(true);		
 		return false;		
 	});		
 			
-	$('#arrowRight').click(function(){		
+	$('#arrowRight').click(function(){	
 		changePage(false);		
 		return false;		
 	});
