@@ -131,6 +131,8 @@ h1, h2, h3, h4, h5 {
 }
 
 img.thumb {
+	margin-right: 1.5em;
+	margin-bottom: 1.5em;
     max-height: 35vh;
     max-width: 35vh;
     float: left;
