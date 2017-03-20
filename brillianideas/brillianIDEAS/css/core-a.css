@@ -18,8 +18,12 @@ h1, h2, h3, h4, h5 {
     font-family: 'Caveat Brush';
 }
 
-button:hover {
-	cursor:pointer;
+#title_imbit {
+	position: absolute;
+    z-index: 1;
+    font-family: 'Caveat Brush';
+    font-size: 50pt;
+    text-shadow: 0px 0px 20px black;
 }
 
 .flipcard {
@@ -34,7 +38,6 @@ button:hover {
     -moz-transition: 1s;
     -webkit-transition: 1s;
     cursor: pointer;
-    position: absolute;
 }
 
 .gruppe > .vorlesung {
@@ -44,12 +47,18 @@ button:hover {
 	margin-top: 5px;
 }
 
-
 .flipcard.IMBIT_Weg{
-	width: 150pt !important;
-    height: 150pt !important;
+	width: 175pt !important;
+    height: 100pt !important;
     background-color: var(--color-bordeaux);
-    line-height: 150pt; /* must be queal to height for vertical centering */
+    line-height: 100pt; /* must be equal to height for vertical centering */
+    border-radius: 1em;
+    font-size: 150%;
+}
+
+.flipcard.IMBIT_Weg .face {
+	background-color: var(--color-bordeaux) !important;
+	border-radius: 1em;
 }
 
 .flipcard:not(.flipped) {
@@ -62,14 +71,9 @@ button:hover {
     transition: opacity 0s ease 1s;
 }
 
-.flipcard, .flipcard .face {
-    /*border-radius: 50%;
-    background-color: transparent;*/
-}
-
 .flipcard.flipped .face {
 	padding: 1em;
-    border-radius: 0.5em;
+    border-radius: 1em;
     height: calc(100% - 2em);
     width: calc(100% - 2em);
 }
@@ -115,8 +119,6 @@ button:hover {
     font-weight: bold;
 }
 
-.flipcard.flipped .front {
-}
 
 .flipcard .back {
     transform: rotateY(180deg);
@@ -125,6 +127,7 @@ button:hover {
     overflow: auto;
     line-height: normal;
     background-color: var(--background-highlight) !important;
+    text-align: justify;
 }
 
 img.thumb {
@@ -168,8 +171,8 @@ img.thumb {
 }
 
 .learning > img.thumbnail, .learning > a >img.thumbnail {
-    max-width: 500px;
-    max-height: 500px;
+	max-width: 350px;
+	max-height: 350px;
 }
 
 
@@ -215,6 +218,11 @@ img.thumb {
     display: none;
     opacity: 1;
     transform: translate(-50%, -50%);
+}
+
+/*enables line breaks out of XML using &#13;&#10; as Carriage Return Line Feed*/
+#grid > .flipcard {
+	white-space: pre-line;
 }
 
 /**
@@ -384,4 +392,47 @@ and (max-device-width: 1024px) {
 #dl_bg_ltr{
 	height: 25%;
 	transform: rotateY(180deg);
+}
+
+.menubar {
+	/*	position: sticky;
+	position: -webkit-sticky;
+	position: -moz-sticky;
+  	position: -ms-sticky;
+  	position: -o-sticky; 
+  	*/
+	margin: auto;
+}
+
+.menuSubject {
+	padding: 0.2em;
+	display: inline-block;
+	margin-left: 60px !important;
+	overflow: auto !important;
+	cursor: pointer;
+}
+
+.menuSubject.active {
+	font-weight: bold;
+	background-color: grey;
+    border-radius: 0.3em;
+}
+
+.scroll {
+	position: sticky;
+	position: -webkit-sticky;
+	position: -moz-sticky;
+  	position: -ms-sticky;
+  	position: -o-sticky;
+    top: 50%;
+    margin-left: 97%;
+    z-index: 5;
+}
+
+.scroll_item {
+    border: 3px solid #FFF;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 10px;
 }
