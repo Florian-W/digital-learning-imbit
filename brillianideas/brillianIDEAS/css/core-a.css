@@ -18,17 +18,18 @@ h1, h2, h3, h4, h5 {
     font-family: 'Caveat Brush';
 }
 
-button:hover {
-	cursor:pointer;
+#title_imbit {
+	position: absolute;
+    z-index: 1;
+    font-family: 'Caveat Brush';
+    font-size: 50pt;
+    text-shadow: 0px 0px 20px black;
 }
 
 .flipcard {
+    position: absolute;
     opacity: 0;
-    perspective: 800;
-    -moz-perspective: 800;
-    -webkit-perspective: 800;
     margin: 0;
-    //*border: solid 0.3em;*//
 	border: none;
     transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
@@ -37,7 +38,6 @@ button:hover {
     -moz-transition: 1s;
     -webkit-transition: 1s;
     cursor: pointer;
-    position: absolute;
 }
 
 .gruppe > .vorlesung {
@@ -47,16 +47,21 @@ button:hover {
 	margin-top: 5px;
 }
 
-
 .flipcard.IMBIT_Weg{
-	width: 150pt !important;
-    height: 150pt !important;
+	width: 175pt !important;
+    height: 100pt !important;
     background-color: var(--color-bordeaux);
-    line-height: 150pt; /* must be queal to height for vertical centering */
+    line-height: 100pt; /* must be equal to height for vertical centering */
+    border-radius: 1em;
+    font-size: 150%;
+}
+
+.flipcard.IMBIT_Weg .face {
+	background-color: var(--color-bordeaux) !important;
+	border-radius: 1em;
 }
 
 .flipcard:not(.flipped) {
-    transform: translate(-50%, -50%);
     z-index: 2;
 }
 
@@ -66,28 +71,19 @@ button:hover {
     transition: opacity 0s ease 1s;
 }
 
-.flipcard, .flipcard .face {
-    /*border-radius: 50%;
-    background-color: transparent;*/
-}
-
 .flipcard.flipped .face {
 	padding: 1em;
-    border-radius: 0.5em;
+    border-radius: 1em;
     height: calc(100% - 2em);
     width: calc(100% - 2em);
 }
 
 .flipcard.flipped {
-    width: inherit !important;
-    height: inherit !important;
+    width: 100% !important;
+    height: 100% !important;
     border-radius: 1em;
-    position: absolute;
     left: 0 !important;
     top: 0 !important;
-    perspective: 1600;
-    -moz-perspective: 1600;
-    -webkit-perspective: 1600;
     transform: rotatey(-180deg);
     -moz-transform: rotatey(-180deg);
     -webkit-transform: rotatey(-180deg);
@@ -111,6 +107,7 @@ button:hover {
 }
 
 .flipcard .front {
+	font-family: 'Caveat Brush';
     letter-spacing: -0.1px;
     line-height: 0.8em;
     width: inherit;
@@ -122,8 +119,6 @@ button:hover {
     font-weight: bold;
 }
 
-.flipcard.flipped .front {
-}
 
 .flipcard .back {
     transform: rotateY(180deg);
@@ -131,6 +126,8 @@ button:hover {
     -webkit-transform: rotateY(180deg);
     overflow: auto;
     line-height: normal;
+    background-color: var(--background-highlight) !important;
+    text-align: justify;
 }
 
 img.thumb {
@@ -174,8 +171,8 @@ img.thumb {
 }
 
 .learning > img.thumbnail, .learning > a >img.thumbnail {
-    max-width: 500px;
-    max-height: 500px;
+	max-width: 350px;
+	max-height: 350px;
 }
 
 
@@ -221,6 +218,11 @@ img.thumb {
     display: none;
     opacity: 1;
     transform: translate(-50%, -50%);
+}
+
+/*enables line breaks out of XML using &#13;&#10; as Carriage Return Line Feed*/
+#grid > .flipcard {
+	white-space: pre-line;
 }
 
 /**
@@ -363,4 +365,74 @@ and (max-device-width: 1024px) {
         top: -32px;
     }
 
+}
+
+
+.background_image{
+	position: absolute;
+    trasform: translateZ(-10px);	
+}
+
+#start_bg_ltr{
+    top: 50%;
+    width: 50vw;
+    transform: translateY(-50%);
+    max-height: 66vh;
+}
+
+#start_bg_rtl{
+	bottom:0px;
+	right: 0px;
+	width: initial;
+	max-width: 75vw;
+    transform: rotateX(45deg);
+    
+}
+
+#dl_bg_ltr{
+	height: 25%;
+	transform: rotateY(180deg);
+}
+
+.menubar {
+	/*	position: sticky;
+	position: -webkit-sticky;
+	position: -moz-sticky;
+  	position: -ms-sticky;
+  	position: -o-sticky; 
+  	*/
+	margin: auto;
+}
+
+.menuSubject {
+	padding: 0.2em;
+	display: inline-block;
+	margin-left: 60px !important;
+	overflow: auto !important;
+	cursor: pointer;
+}
+
+.menuSubject.active {
+	font-weight: bold;
+	background-color: grey;
+    border-radius: 0.3em;
+}
+
+.scroll {
+	position: sticky;
+	position: -webkit-sticky;
+	position: -moz-sticky;
+  	position: -ms-sticky;
+  	position: -o-sticky;
+    top: 50%;
+    margin-left: 97%;
+    z-index: 5;
+}
+
+.scroll_item {
+    border: 3px solid #FFF;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 10px;
 }

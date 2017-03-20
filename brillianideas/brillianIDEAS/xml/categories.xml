@@ -37,7 +37,7 @@
 		<Thumb>https://upload.wikimedia.org/wikipedia/commons/6/60/Forum_Romanum_(16640231981).jpg</Thumb>
 	</LearningType>
 	<LearningType>
-		<Medium>Social Networks</Medium>
+		<Medium>Social&#13;&#10;Networks</Medium>
 		<Abbr>sn</Abbr>
 		<Description>Ein sogenanntes Social Network stellt Online-Communities einen virtuellen Raum zur Verügung, in dem Mitglieder auf verschiedene Art und Weise interagieren können. Insofern fungieren sie auch als Forum, in dem Fragen beantwortet werden und gemeinsame Diskussionen zur Wissensbildung führen können. Außerdem können über Social Media schnell und für einen großen Empfängerkreis Informationen bereitgestellt werden: Zeitungen und Zeitschriften besitzen beispielsweise Profile, über die sie aktuelle Artikel und Neuigkeiten verbreiten. Außerdem können Firmen über Produkte und Dienstleistungen informieren. Profilen die mit eigenen Interessen und Informationsbedarf übereinstimmen können verfolgt oder 'geliked' werden, sodass Neuigkeiten automatisch übermittelt werden.Je nach Quelle und bereitstellendem Profil ist allerdings zu beachten, dass die veröffentlichen Informationen oft als subjektiv eingefärbt einzustufen sind.</Description>
 		<Thumb>https://upload.wikimedia.org/wikipedia/commons/7/70/Social_Red.jpg</Thumb>
@@ -55,7 +55,7 @@
 		<Thumb>https://c1.staticflickr.com/9/8167/7704609288_14d335dd87_b.jpg</Thumb>
 	</LearningType>
 	<LearningType>
-		<Medium>Serious Games</Medium>
+		<Medium>Serious&#13;&#10;Games</Medium>
 		<Abbr>sg</Abbr>
 		<Description>Serious Games sind digitale Spiele bzw. spielähnliche Anwendungen die nicht ausschließlich auf Unterhaltung abzielen, sondern auch ernsthafte Wissensvermittlung und Weiterbildung zum Ziel haben. An den Spieler werden im Verlauf des Spiels Informationen, Fähigkeiten und Handlungsempfehlungen weitergegeben, die Anwendung in realen Lebenssituationen finden können und sollen. Im Unterschied zum klassischen Lernspiel sind bei Serious Games Entertainment- und Bildungsaspekte in sehr ausgewogenem Maße vorhanden und so eng miteinander verwoben, sodass das Spiel nicht auf Phasen der direkten Übermittlung des Lernstoffs folgt sondern im Gegenteil das Lernen zu jedem Zeitpunkt im Spiel ermöglicht wird.</Description>
 		<Thumb>https://c1.staticflickr.com/7/6169/6222514089_9c9545f088_z.jpg</Thumb>
@@ -140,7 +140,7 @@ Quelle: https://wiki.zum.de/wiki/Wikis_in_der_Schule</Description>
 	</LearningType>
 	<Groups>
 		<Group-Name>Wirtschaftsinformatik</Group-Name>
-		<Abbr>IM</Abbr>
+		<Abbr>WI</Abbr>
 		<Classes>
 			<Name>Intercultural Management</Name>
 			<Number>W3WI_IMBIT_301</Number>
@@ -185,19 +185,19 @@ Quelle: https://wiki.zum.de/wiki/Wikis_in_der_Schule</Description>
 		</Classes>
 	</Groups>
 	<Groups>
-		<Group-Name>International</Group-Name>
-		<Abbr>S</Abbr>
+		<Group-Name>Internationales</Group-Name>
+		<Abbr>I</Abbr>
 		<Classes>
 			<Name>Spanisch</Name>
 			<Number>W3WI_IMBIT_305</Number>
 			<Thumb>https://c1.staticflickr.com/9/8318/7915744438_71b937a80d_b.jpg</Thumb>
-			<Group>International</Group>
+			<Group>Internationales</Group>
 		</Classes>
 		<Classes>
 			<Name>Chinesisch</Name>
 			<Number>Sprachschule</Number>
 			<Thumb>https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Chinese_Character_zhao1_cai2_jin4_bao3_Song_style.svg/2000px-Chinese_Character_zhao1_cai2_jin4_bao3_Song_style.svg.png</Thumb>
-			<Group>International</Group>
+			<Group>Internationales</Group>
 		</Classes>
 	</Groups>
 	<Groups>
@@ -254,7 +254,7 @@ Quelle: https://wiki.zum.de/wiki/Wikis_in_der_Schule</Description>
 	</Groups>
 	<Groups>
 		<Group-Name>Wirtschaft</Group-Name>
-		<Abbr>B</Abbr>			
+		<Abbr>W</Abbr>			
 		<Classes>
 			<Name>Betriebswirtschaftliche Standardlösungen</Name>
 			<Number>W3WI_IMBIT_402</Number>

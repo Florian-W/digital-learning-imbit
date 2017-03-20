@@ -67,29 +67,6 @@
                                 <xsl:attribute name="data-bind">
                                     <xsl:value-of select="Abbr"/>
                                 </xsl:attribute>
-                                <xsl:element name="div">
-                                	<xsl:attribute name="class">
-                                		<xsl:text>gruppe</xsl:text>
-                                	</xsl:attribute>
-                                	<xsl:element name="h1">
-										<xsl:value-of select="Group-Name" />
-									</xsl:element>
-									<xsl:for-each select="Classes">
-										<xsl:element name="div">
-											<xsl:attribute name="class">
-												<xsl:text>vorlesung</xsl:text>
-											</xsl:attribute>
-											<xsl:value-of select="Name">
-											</xsl:value-of>
-											<!--
-											<xsl:element name="div">
-												<xsl:attribute name="class">
-		                                   		<xsl:text>face front</xsl:text>
-		                               			</xsl:attribute>
-											</xsl:element>-->
-										</xsl:element>
-									</xsl:for-each>
-                                </xsl:element>
                             </xsl:element>
                         </xsl:element>
                     </xsl:for-each>
