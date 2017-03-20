@@ -33,6 +33,15 @@ const digitalLearningArray = [
 		['iw', 0.35521236 , 0.075 ,23]
 		];
 
+var i;
+var j;
+var movedInCombo = new Array();
+for (i = 0; i < digitalLearningArray.length; i++){
+	movedInCombo[digitalLearningArray[i][0]] = new Array();
+	for (j = 0; j < digitalLearningArray.length; j++){
+		movedInCombo[digitalLearningArray[i][0]][digitalLearningArray[0][j]] = false;
+	}
+}
 
 /**
  * Sammelklasse für die Außendimensionen von Elementen des Koordinatensystems. Alle Koordinaten sind berechnet von der oberen linken Ecke des Dokuments.
@@ -144,17 +153,31 @@ function noOverlayInGrid(id, x, y, count, key){
 			 * check if both divs intersect
 			 */
 			if(rectOutlines.overlaps(e_position, card_position)){
-				card_position.left = ((card_position.left <= e_position.left)?e_position.left - card_position.width:e_position.right);
-				card_position.top = ((card_position.top <= e_position.top)? e_position.top - card_position.height : e_position.bottom);
+				if (movedInCombo[value[0]][id]){
+					card_position.left = ((card_position.left <= e_position.left)?e_position.right:e_position.left - card_position.width);
+					card_position.top = ((card_position.top <= e_position.top)? e_position.bottom : e_position.top - card_position.height);
 
-				card_position.bottom = card_position.top + card_position.height;
-				card_position.right = card_position.left + card_position.width;
-				
-				$card.css({
-					left: card_position.left + "px",
-					top:  card_position.top + "px"
-				});
-				
+					card_position.bottom = card_position.top + card_position.height;
+					card_position.right = card_position.left + card_position.width;
+					
+					$card.css({
+						left: card_position.left + "px",
+						top:  card_position.top + "px"
+					});
+					
+				} else {
+					card_position.left = ((card_position.left <= e_position.left)?e_position.left - card_position.width:e_position.right);
+					card_position.top = ((card_position.top <= e_position.top)? e_position.top - card_position.height : e_position.bottom);
+
+					card_position.bottom = card_position.top + card_position.height;
+					card_position.right = card_position.left + card_position.width;
+					
+					$card.css({
+						left: card_position.left + "px",
+						top:  card_position.top + "px"
+					});
+					movedInCombo[value[0]][id] = true;
+				}
 				/**
 				 * ensure loop continues and reset iteration through divs
 				 */
@@ -196,7 +219,6 @@ var makeGrid = function makeGrid(view){
                 $.ajax('xml/index.php?base=grid&type=learning').done(function (data) {
                     $('#site').append(data);
                     $('#grid').css("width", $display.width).css("height", $display.height).append('<div id="backlayer"></div>');
-
                 }),
                 $('#animation_welcome').animate({opacity: 1}, {duration: 1000})
             ).done(function () {
@@ -234,6 +256,9 @@ var makeGrid = function makeGrid(view){
 				$('.selectionbody .category h2').each(function(i, e){$(e).html(($(e).html().replace(/\r?\n|\r/g," ")))}),
                         	$('#grid').css('cursor', 'default'),
                             $('.flipcard, .flipcard .face').css('pointer-events', 'auto').css('cursor', 'pointer'),
+                            $('h1, h2, h3, h4 ,h5, p').each(function(i,e){
+                            	$(e).html(($(e).html().replace(/\s{2,}/g," ")))
+                            }),
                             openPath();
                         });
                     });
@@ -248,7 +273,8 @@ var makeGrid = function makeGrid(view){
                 $.ajax('xml/index.php?base=grid&type=class').done(function (data) {
                     $('#site').append(data);
                     $('#grid').css("width", $display.width).css("height", $display.height).append('<div id="backlayer"></div>');
-                })
+                }),
+                $('#title_imbit').animate({opacity: 1}, {duration: 1000})
             ).done(function () {
                         $.when(
                             $('#WI').css('left', Math.floor(0.2 * $display.width)).css('top', Math.floor(0.1 * $display.height)).attr('data-sid', '1'),
@@ -256,6 +282,7 @@ var makeGrid = function makeGrid(view){
                             $('#IT').css('left', Math.floor(0.7 * $display.width)).css('top', Math.floor(0.2 * $display.height)).attr('data-sid', '3'),
                             $('#W').css('left', Math.floor(0.68 * $display.width)).css('top', Math.floor(0.7 * $display.height)).attr('data-sid', '4'),
                             $('#MG').css('left', Math.floor(0.35 * $display.width)).css('top', Math.floor(0.35 * $display.height)).attr('data-sid', '5'),
+                            $('#title_imbit').animate({left: $display.width - $('#title_imbit').outerWidth() / 2 - 50, top: 0}, {duration: 1000}),
                             
                             $('#grid').css('opacity', 1)
                         ).done(function () {
@@ -264,9 +291,12 @@ var makeGrid = function makeGrid(view){
                                 return (($(a).data('sid') > $(b).data('sid')) ? 1 : -1);
                             }).each(function (index, element) {
                                 deferredArray.push($(element).delay(index * 500).children('.back').css('display', 'none').delay(0).parent().animate({opacity: 1}, {duration: 500}));
-                                deferredArray.push($.ajax('xml/index.php?base=grid&type=class&detail=true&filter=' + $(element).children('.front').text())).done(function (data) {
+                                deferredArray.push($.ajax({
+                                	url: 'xml/index.php?base=grid&type=class&detail=true&filter=' + $(element).children('.front').text()
+                                }).done(function (data) {
                                     $(element).children('.back').append(data);
-                                })
+                                    $(element).find('.contentWrapper').hide();
+                                }));
                             });
                             $.when.apply($, deferredArray).done(function () {
                                 openPath();

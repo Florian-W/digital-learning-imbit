@@ -184,6 +184,23 @@ text-align:center;
 float: right;
 }
 
+#checkInputButton {
+	padding:10px;
+		padding-left:15px;
+		padding-right: 15px;
+	font-size:30px;
+	color:#FFFFCC;
+	background-color:#6c132e;
+	/*font-family:Arial, Helvetica, sans-serif;*/
+	border:white solid 2px;
+	text-align:center;
+}
+
+#checkInputButton:hover{
+color:#6c132e;
+background-color:#FFFFCC;
+}
+
 .backToQuizOverview{
 width:150px;
 padding:5px;
@@ -304,7 +321,7 @@ p{
 
 }
 #source{
-	 border:1px solid #ccc;
+	 /*border:1px solid #ccc;*/
 	 width:30%;
 
 	 height:auto;
@@ -312,36 +329,44 @@ p{
 	 /*margin-left:75px;*/
 }
 #target1{
+	margin: 1%;
 	 border:1px solid #ccc;
-	 width:30%;
+	 /*width:30%;*/
 	 min-height:200px;
 	 /*height:auto;*/
 	 float:left;
+	 text-align:center;
 
 }
 #target2{
+	margin: 1%;
 	 border:1px solid #ccc;
-	 width:30%;
+	 /*width:30%;*/
 	 min-height:200px;
 	 /*height:auto;*/
 	 float:left;
+	 text-align:center;
 
 }
 
 #target3{
+	margin: 1%;
 	 border:1px solid #ccc;
-	 width:30%;
+	 /*width:30%;*/
 	 min-height:200px;
 	 /*height:auto;*/
 	 float:left;
+	 text-align:center;
 
 }
 #target4{
 	 border:1px solid #ccc;
-	 width:30%;
+	 /*width:30%;*/
 	 min-height:200px;
 	 /*height:auto;*/
 	 float:left;
+	 text-align:center;
+	 margin: 1%;
 
 }
 
@@ -436,6 +461,12 @@ p{
 		.bobTrafficLight {
 			 height: 100%;
 			 width: 100%;
+		}
+
+		.BobTentacleRight {
+			bottom:0;
+			right:0;
+			position: absolute;
 		}
 
 		.background{
