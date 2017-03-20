@@ -67,11 +67,6 @@
                                 <xsl:attribute name="data-bind">
                                     <xsl:value-of select="Abbr"/>
                                 </xsl:attribute>
-                                <xsl:element name="div">
-                                	<xsl:attribute name="class">
-                                		<xsl:text>moduleMenu</xsl:text>
-                                	</xsl:attribute>
-                                </xsl:element>
                             </xsl:element>
                         </xsl:element>
                     </xsl:for-each>

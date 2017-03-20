@@ -18,6 +18,14 @@ h1, h2, h3, h4, h5 {
     font-family: 'Caveat Brush';
 }
 
+#title_imbit {
+	position: absolute;
+    z-index: 1;
+    font-family: 'Caveat Brush';
+    font-size: 50pt;
+    text-shadow: 0px 0px 20px black;
+}
+
 .flipcard {
     position: absolute;
     opacity: 0;
@@ -30,7 +38,6 @@ h1, h2, h3, h4, h5 {
     -moz-transition: 1s;
     -webkit-transition: 1s;
     cursor: pointer;
-    position: absolute;
 }
 
 .gruppe > .vorlesung {
@@ -387,16 +394,22 @@ and (max-device-width: 1024px) {
 	transform: rotateY(180deg);
 }
 
-.menuBar, .menuBar > * {
-	display: inline-block;
+.menubar {
+	/*	position: sticky;
+	position: -webkit-sticky;
+	position: -moz-sticky;
+  	position: -ms-sticky;
+  	position: -o-sticky; 
+  	*/
 	margin: auto;
-	margin-left: 60px !important;
-	overflow-x: auto !important;
-	cursor: pointer;
 }
 
 .menuSubject {
 	padding: 0.2em;
+	display: inline-block;
+	margin-left: 60px !important;
+	overflow: auto !important;
+	cursor: pointer;
 }
 
 .menuSubject.active {
@@ -405,3 +418,21 @@ and (max-device-width: 1024px) {
     border-radius: 0.3em;
 }
 
+.scroll {
+	position: sticky;
+	position: -webkit-sticky;
+	position: -moz-sticky;
+  	position: -ms-sticky;
+  	position: -o-sticky;
+    top: 50%;
+    margin-left: 97%;
+    z-index: 5;
+}
+
+.scroll_item {
+    border: 3px solid #FFF;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
