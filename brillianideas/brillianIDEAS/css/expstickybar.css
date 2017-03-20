@@ -32,6 +32,7 @@ dotstyle ul {
     width: 100vw;
     justify-content: center;
 }
+
 .dotstyle li {
 	position: relative;
 	display: block;
