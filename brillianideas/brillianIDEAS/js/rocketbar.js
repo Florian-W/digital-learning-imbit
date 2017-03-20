@@ -1,12 +1,30 @@
+/**
+ * @file Erzeugt die 'rocketbar', eine aus-/einklappbare Leiste am unteren Bildschirmrand.
+ * rocketbar.css enthält den Style für die rocketbar
+ * rocketbarcontent.htm enthält den kompletten Inhalt der rocketbar (Links, IMGs) und wird hier über Ajax in die Seite eingebunden
+ * Zum Einbinden der rocketbar muss diese rocketbar.js in der entsprechenden Webseite im <script>-Tag aufgerufen werden
+ * @author Dominik Stößel <dominikstoessel@gmail.com>
+ */
+
 jQuery.noConflict()
 
+/**
+	 * Erzeugt die rocketbar mit untenstehenden Parametern
+	 * @function expstickybar
+	 * @param {String} id: ID des rocketbar DIV in content file oder id des inline DIV
+	 * @param {String} position: 'top' oder 'bottom'
+	 * @param {String} revealtype: 'mouseover' oder 'manual' um rocketbar ausschließlich über Klick auf das img zu togglen
+	 * @param {Integer} peekamount: Anzahl an Pixeln die bei geschlossener Rocketbar sichtbar sein sollen. Bei den aktuell 48 wird genau das img und der transparente Teil der rocketbar gezeigt.
+	 * @param {String} externalcontent: (relativer) Pfad zur rocketbar content file auf dem Server oder "" wenn Inhalt inline auf der Seite definiert werden soll.
+	 * @param {Integer} speed: Dauer der toggle-Animation (in millisecs)
+*/
 function expstickybar(usersetting){
 	var setting=jQuery.extend({position:'bottom', peekamount:30, revealtype:'mouseover', speed:200}, usersetting)
 	var thisbar=this
 	var cssfixedsupport=!document.all || document.all && document.compatMode=="CSS1Compat" && window.XMLHttpRequest //check for CSS fixed support
 	if (!cssfixedsupport || window.opera)
 		return
-	jQuery(function($){ //on document.ready
+	jQuery(function($){
 		if (setting.externalcontent){
 			thisbar.$ajaxstickydiv=$('<div id="ajaxstickydiv_'+setting.id+'"></div>').appendTo(document.body) //create blank div to house sticky bar DIV
 			thisbar.loadcontent($, setting)
@@ -22,7 +40,7 @@ expstickybar.prototype={
 	loadcontent:function($, setting){
 		var thisbar=this
 		$.ajax({
-			url: setting.externalcontent //path to external content
+			url: setting.externalcontent
 		}).done(function(content){
 			thisbar.$ajaxstickydiv.html(content)
 			thisbar.init($, setting)
@@ -30,9 +48,10 @@ expstickybar.prototype={
 
 	},
 	/**
-	 * Displays or hides the rocketbar
-	 * @param keyword {"show" | "hide"} target state
-	 * @param aim {boolean} If true fades with the set speed
+	 * Zeigt oder versteckt die rocketbar
+	 * @function showhide
+	 * @param {String} keyword: "show" oder "hide", je nach gewünschtem Zielstatus
+	 * @param {Boolean} anim: Wenn true wird mit der eingestellten Geschwindigkeit ein-/ausgeblendet
 	 */
 	showhide:function(keyword, anim){
 		
@@ -92,19 +111,8 @@ expstickybar.prototype={
 			return false
 		});
 		
-		/* Color */
-		var colorSwitch = Cookies.get('color');
-		switch(colorSwitch) {
-			case "red":
-				jQuery('.content').css('background-color','#949494');
-				break;
-			case "grey":
-				jQuery('.content').css('background-color','#991b33');
-				break;
-		}
-		
 		/**		
- 		 * Make Navigation Trigger		
+ 		 * Navigations Trigger für Navigation auf in "targetURL" spezifizierte Unterseite
  		 */		
  		$('.navLink, .navLink *').click(function(e){		
  			e.preventDefault();		
@@ -123,10 +131,10 @@ expstickybar.prototype={
 
 
 var mystickybar=new expstickybar({
-	id: "rocketbar", //id of sticky bar DIV
-	position:'bottom', //'top' or 'bottom'
-	revealtype:'manual', //'mouseover' or 'manual'
-	peekamount:48, //number of pixels to reveal when sticky bar is closed
-	externalcontent:'./content/rocketbarcontent.htm', //path to sticky bar content file on your server, or "" if content is defined inline on the page
-	speed:500 //duration of animation (in millisecs)
+	id: "rocketbar", //id des rocketbar DIV in content file oder id des inline DIV
+	position:'bottom', //'top' oder 'bottom'
+	revealtype:'manual', //'mouseover' oder 'manual' um rocketbar ausschließlich über Klick auf das img zu togglen
+	peekamount:48, //Anzahl an Pixeln die bei geschlossener Rocketbar sichtbar sein sollen. Bei den aktuell 48 wird genau das img und der transparente Teil der rocketbar gezeigt.
+	externalcontent:'./content/rocketbarcontent.htm', //Pfad zur rocketbar content file auf dem Server oder "" wenn Inhalt inline auf der Seite definiert werden soll.
+	speed:500 //Dauer der toggle-Animation (in millisecs)
 })
