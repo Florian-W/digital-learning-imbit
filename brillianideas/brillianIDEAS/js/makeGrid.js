@@ -222,7 +222,7 @@ var makeGrid = function makeGrid(view){
 				};
 			
 			var animateTile = function(obj){
-				$obj = $(obj);
+				var $obj = $(obj);
 				animationPromises.push($obj.animate({opacity: 1}, {
 					duration: 500, 
 					done: (($obj.next().length == 0) ? undefined : function(){
@@ -265,24 +265,27 @@ var makeGrid = function makeGrid(view){
 			}
 			
 			var loadLearnings = function(obj){
-				$obj = $(obj);
-				$.ajax('xml/index.php?base=learning&withLink=false&type=' + $obj.attr('id'), function (data) {
-					$obj.find('.list').append(data);
-					$obj.find('.list').children().each(function (index, element) {
-						$.ajax({
-							url: 'xml/index.php?base=learning&withLink=true&detail=true&guid=' + $(element).data('target'), 
-							complete: function (learningData) {
-								$newElement = $obj.find('.list').parent().append(learningData).children('.learning');
-								$newElement.fadeOut();
-								$newElement.html(($newElement.html().replace(/(?:\r\n|\r|\n)/g," ")))
+				var $obj = $(obj);
+				$.ajax({
+					url: 'xml/index.php?base=learning&withLink=false&type=' + $obj.attr('id'), 
+					complete: function (data) {
+						$obj.find('.list').append(data.responseText);
+						$obj.find('.list').children().each(function (index, element) {
+							$.ajax({
+								url: 'xml/index.php?base=learning&withLink=true&detail=true&guid=' + $(element).data('target'), 
+								complete: function (learningData) {
+									$newElement = $obj.find('.list').parent().append(learningData.responseText).children('.learning');
+									$newElement.fadeOut();
+									$newElement.html(($newElement.html().replace(/(?:\r\n|\r|\n)/g," ")))
 								}
+							});
 						});
-					});
+					}
 				});
 			}
 			
 			var fillTile = function(i, obj){
-				$obj = $(obj);
+				var $obj = $(obj);
 				$.ajax({
 					url: 'xml/index.php?base=categories&type=learning&detail=true&filter=' + $obj.attr("id"),
 					complete: function(data){
