@@ -33,6 +33,15 @@ const digitalLearningArray = [
 		['iw', 0.35521236 , 0.075 ,23]
 		];
 
+var i;
+var j;
+var movedInCombo = new Array();
+for (i = 0; i < digitalLearningArray.length; i++){
+	movedInCombo[digitalLearningArray[i][0]] = new Array();
+	for (j = 0; j < digitalLearningArray.length; j++){
+		movedInCombo[digitalLearningArray[i][0]][digitalLearningArray[0][j]] = false;
+	}
+}
 
 /**
  * Sammelklasse für die Außendimensionen von Elementen des Koordinatensystems. Alle Koordinaten sind berechnet von der oberen linken Ecke des Dokuments.
@@ -144,17 +153,31 @@ function noOverlayInGrid(id, x, y, count, key){
 			 * check if both divs intersect
 			 */
 			if(rectOutlines.overlaps(e_position, card_position)){
-				card_position.left = ((card_position.left <= e_position.left)?e_position.left - card_position.width:e_position.right);
-				card_position.top = ((card_position.top <= e_position.top)? e_position.top - card_position.height : e_position.bottom);
+				if (movedInCombo[value[0]][id]){
+					card_position.left = ((card_position.left <= e_position.left)?e_position.right:e_position.left - card_position.width);
+					card_position.top = ((card_position.top <= e_position.top)? e_position.bottom : e_position.top - card_position.height);
 
-				card_position.bottom = card_position.top + card_position.height;
-				card_position.right = card_position.left + card_position.width;
-				
-				$card.css({
-					left: card_position.left + "px",
-					top:  card_position.top + "px"
-				});
-				
+					card_position.bottom = card_position.top + card_position.height;
+					card_position.right = card_position.left + card_position.width;
+					
+					$card.css({
+						left: card_position.left + "px",
+						top:  card_position.top + "px"
+					});
+					
+				} else {
+					card_position.left = ((card_position.left <= e_position.left)?e_position.left - card_position.width:e_position.right);
+					card_position.top = ((card_position.top <= e_position.top)? e_position.top - card_position.height : e_position.bottom);
+
+					card_position.bottom = card_position.top + card_position.height;
+					card_position.right = card_position.left + card_position.width;
+					
+					$card.css({
+						left: card_position.left + "px",
+						top:  card_position.top + "px"
+					});
+					movedInCombo[value[0]][id] = true;
+				}
 				/**
 				 * ensure loop continues and reset iteration through divs
 				 */
