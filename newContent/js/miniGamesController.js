@@ -38,9 +38,12 @@
 		.ready(
 			function() {
 
-
-
-				// Lese Parameter (Name des benötigten JSON Files) aus und speichere ihn in der variable jsonFileName, welche dann an die $getJSON methode weitergegeben wird
+				/**
+				 * @function getUrlParameter - Lese Parameter (Name des benötigten JSON Files) aus und speichere ihn in der variable jsonFileName, welche dann an die $getJSON methode weitergegeben wird
+				 *
+				 * @param  {String} sParam Name des URL Parameters indem der .json Dateiname spezifiziert ist
+				 * @return {String}        .json Dateiname
+				 */
 				var getUrlParameter = function getUrlParameter(sParam) {
 					var sPageURL = decodeURIComponent(window.location.search.substring(1)),
 						sURLVariables = sPageURL.split('&'),
@@ -56,40 +59,48 @@
 				};
 
 
-
-				// hole Namen des Json files in dem alle Inhalte für dieses Spiel gespeichert sind
+				/**
+				 * 	liest den Namen des Json files in dem alle Inhalte für dieses Spiel gespeichert sind aus der URL aus
+				 */
 				var jsonFileName = getUrlParameter('jsonFileName');
 				var jsonFilePath = "json/" + jsonFileName;
 
 				console.log("json in use: " + jsonFileName)
 
 
+				/**
+				 * @function getJSON - Liest alle benötigten Daten für DragAndDropGames & Quizlisten aus der .json datei eines bestimmten Spiels aus
+				 * 					 Die Daten werden dann in zweidimensionalen Arrays für spätere Nutzung gespeichert
+				 * 					 Achtung: Es können im .json mehere verschieden DragAndDropGames hinzugefügt werden, aber nur eine Quizliste in der alle Quizfragen gespeichert werden müssen
+				 *
+				 * @param {String} jsonFilePath  Dateipfad der benötigten .json Datei
+				 *
+				 */
 				$.getJSON(jsonFilePath, function(data) {
 
 					numberOfQuizLists = data.quizGames.length;
 					numberOfDragAndDropGames = data.DragDropGames.length;
 
-
-					console.log("Anzahl quizlists:" + numberOfQuizLists)
-					console.log("Anzahl drgdrop:" + numberOfDragAndDropGames)
-
-					// if quizGames exist
 					if (numberOfQuizLists > 0) {
 
-						// Momentan gibt es nur eine quizlist!!!!!!!!!!!!!
 						for (var z = 0; z < numberOfQuizLists; z++) {
 
-							// Alle fragen und antwortmöglichkeiten der quizlist im json werden durchlaufen und in einem 2dimensionalen array gespeichert
+							/**
+							 * Alle fragen und antwortmöglichkeiten der quizlist im json werden durchlaufen und in einem 2dimensionalen array gespeichert
+							 */
 							for (i = 0; i < data.quizGames[z].quizlist.length; i++) {
 								questionBank[i] = new Array();
 
-								//Die Frage und die richtige Antwort werden in einem zweidimensionalen Array gespeichert
+								/**
+								 * 	Die Frage und die richtige Antwort werden an Position 0 und 1 im zweidimensionalen Array gespeichert
+								 */
 								questionBank[i][0] = data.quizGames[z].quizlist[i].question;
 								questionBank[i][1] = data.quizGames[z].quizlist[i].optionTrue;
 
 
-
-								// Es werden entweder mehrere falsche (SingleChoice Minispiel) oder nur eine Antwortmöglichkeit (Yes/No Minispiele) zum Array hinzugefügt
+								/**
+								 * 		Es werden entweder mehrere falsche (SingleChoice Minispiel) oder nur eine Antwortmöglichkeit (Yes/No Minispiele) zum Array hinzugefügt
+								 */
 								for (j = 0; j < data.quizGames[z].quizlist[i].optionFalse.length; j++) {
 									questionBank[i][j + 2] = data.quizGames[z].quizlist[i].optionFalse[j];
 								}
@@ -104,33 +115,28 @@
 						} //for(var z=0;z<numberOfQuizLists;z++) {
 					}
 
-					//if drag and drop games exist lade alle in die dragAndDropBank
 					if (numberOfDragAndDropGames > 0) {
 
-						//
+						/**
+						 * 	Die Schleife wird so oft durchlaufen wie es DragDropGames gibt
+						 */
 						for (var k = 0; k < numberOfDragAndDropGames; k++) {
 
 							console.log("k ist: " + k)
 							console.log("Anzahl dragdropGames: " + numberOfDragAndDropGames)
 
 
-							// code unten überflüssig
-							var obj = new Array(); //speichert den Inhalt der JSON-Datei
-							var elementid = 0; // speichert die ID des div Elements
-
-							var nameOfdragAndDropBankArray = "dragAndDropBank" + k;
-
 							var tempDragAndDropBankFirstDimension = new Array();
 
+							//
 
-							// Die Schleife wird so oft durchlaufen, wie das Spiel "IndianCuisine" Elemente hat.
+							/**
+							 * 	Die Schleife wird so oft durchlaufen, wie das jeweilige DragDropGame Elemente hat
+							 */
 							for (var i = 0; i < data.DragDropGames[k].DragAndDropList.length; i++) {
 
-								/* für jedes Element der JSON-Datei wird ein neues div-Element innerhalb des divs mit der ID "source" angelegt. Aus dem Befehl ergibt sich folgende Struktur:
-								<div id="d1" class = "drag" title="target1" style=""></div>	*/
 
 								tempDragAndDropBank[i] = new Array();
-								// dragAndDropBank[k][i] = new Array();
 
 								tempDragAndDropBank[i][0] = data.DragDropGames[k].DragAndDropList[i].id;
 								console.log("Array Stelle " + "[" + i + "]" + "[" + 0 + "] " +
@@ -147,11 +153,11 @@
 									.elementtext +
 									" gelegt")
 
-								// $('#source').append($('<div/>',{id:data.DragDropGames[k].DragAndDropList[i].id, 'class':"drag", title:data.DragDropGames[k].DragAndDropList[i].target}));
 
-								// Lese game title, description, sowie targettitle aus dem ersten Unterelment im json aus
-								// un speichere es im Array
-								if (data.DragDropGames[k].DragAndDropList[i].id == 'd0') {
+								/**
+								 * 		Lese game title, description, sowie targettitle aus dem ersten Unterelment im json aus und speichere es im Array an vordefinierter Stelle
+								 */
+								 if (data.DragDropGames[k].DragAndDropList[i].id == 'd0') {
 									console.log("heere")
 									console.log("Title: " + data.DragDropGames[k].DragAndDropList[i].title)
 									dragAndDropGameTitle = data.DragDropGames[k].DragAndDropList[i].title;
@@ -165,24 +171,14 @@
 									tempDragAndDropBank[i][4] = dragAndDropGameDescription;
 									tempDragAndDropBank[i][5] = numberOfTargets;
 
-									// // var positionIntempDragAndDropBank =6;
-									// // for(var z=0;z<numberOfTargets;z++){
-									//
-									// 	//dragAndDropGameTarget4Title
-									// 	var tempVariable = "dragAndDropGameTarget"+(z+1)+"Title";
-									// 	console.log("tempVariable "+ tempVariable)
-									// 	//
-									// 	var jsonstring = "titleTarget"+(z+1);
-									// // 	console.log("jsonstring "+jsonstring)
-									//
-									// 	// TodO here, vllt einfach wieder mit if==4
-									// 	tempVariable = data.DragDropGames[k].DragAndDropList[i].;
-									// 	tempDragAndDropBank[i][6+z]= tempVariable;
-									// 	console.log("tempDragAndDropBank"+tempDragAndDropBank)
 
+
+									/**
+									 * Je wie viele Zielkasten definiert sind, werden die verschiedenen Titel im Array an bestimmten Stellen gespeichert
+									 */
 									if (numberOfTargets == 2) {
 
-										// Add title of targets
+
 										tempDragAndDropBank[i][6] = data.DragDropGames[k].DragAndDropList[i]
 											.titleTarget1;
 										tempDragAndDropBank[i][7] = data.DragDropGames[k].DragAndDropList[i]
@@ -192,7 +188,7 @@
 
 									if (numberOfTargets == 3) {
 
-										// Add title of targets
+
 										tempDragAndDropBank[i][6] = data.DragDropGames[k].DragAndDropList[i]
 											.titleTarget1;
 										tempDragAndDropBank[i][7] = data.DragDropGames[k].DragAndDropList[i]
@@ -204,7 +200,7 @@
 
 									if (numberOfTargets == 4) {
 
-										// Add title of targets
+
 										tempDragAndDropBank[i][6] = data.DragDropGames[k].DragAndDropList[i]
 											.titleTarget1;
 										tempDragAndDropBank[i][7] = data.DragDropGames[k].DragAndDropList[i]
@@ -218,7 +214,7 @@
 
 
 
-									// }
+
 
 
 
@@ -232,8 +228,10 @@
 
 							}
 
-							console.log("Em Ende von Durchlauf " + "[" + k + "]" +
-								"kommt folgendes Array raus: " + tempDragAndDropBankFirstDimension)
+
+							/**
+							 * Speichere für jedes DragDropGame die Daten in einem separatem Array. Damit wird das Benutzen eines 3 dimensionalen Array umgangen
+							 */
 							if (k == 0) {
 								dragAndDropBank1 = tempDragAndDropBankFirstDimension;
 							}
@@ -245,98 +243,67 @@
 							if (k == 2) {
 								dragAndDropBank3 = tempDragAndDropBankFirstDimension;
 							}
-							console.log("Array in globaler variable: " + dragAndDropBank1)
 
 						}
 
 
 
-					}
-
-
-					// console.log("Länge"+ data.quizGames.length)
-					//
-					// for (var j=0; j<data.quizGames.length;j++) {
-					// 	console.log("Länge"+ data.quizGames.length)
-					// }
-					//
-					//
-					// // Alle fragen und antwortmöglichkeiten im json werden durchlaufen
-					// for (i = 0; i < data.quizGames.quizlist1.length; i++) {
-					// 	questionBank[i] = new Array();
-					// 	//Die Frage und die richtige Antwort werden in einem zweidimensionalen Array gespeichert
-					// 	questionBank[i][0] = data.quizGames.quizlist1[i].question;
-					// 	questionBank[i][1] = data.quizGames.quizlist1[i].optionTrue;
-					//
-					//
-					//
-					// 	// Es werden entweder mehrere falsche (SingleChoice Minispiel) oder nur eine Antwortmöglichkeit (Yes/No Minispiele) zum Array hinzugefügt
-					// 		for (j = 0; j < data.quizGames.quizlist1[i].optionFalse.length; j++) {
-					// 		questionBank[i][j+2] = data.quizGames.quizlist1[i].optionFalse[j];
-					// 		}
-					//
-					// 		// Anzahl der Optionen die falsch sind wird nochmal extra in einer globalen variable für späteren Nutzen gespeichert
-					// 		numberOfFalseOptions =data.quizGames.quizlist1[i].optionFalse.length
-					//
-					// }
-
+					} // if (numberOfDragAndDropGames > 0)
 
 
 					numberOfQuestions = questionBank.length;
 
-					console.log(
-						"------------------------------------------------------------- Number of wuestions: " +
-						numberOfQuestions)
-
-					// entferne '.json' vom String
+					/**
+					 * 	 entferne '.json' vom String und setze den Spielenamen in den Browsertab und als Überschrift in die MiniGames.html
+					 */
 					var trimmedFileName = jsonFileName.replace('.json', '');
 					//Setze SpieleNamen in <div> element mit id=navbar und in html <title> element
 					$('#topbar').text(trimmedFileName)
 					$(document).find("title").text(trimmedFileName + " Quiz")
-					console.log("page title: " + $(document).find("title").text(
-						trimmedFileName + " Quiz"))
 
-					// if (data.quizGames.quizlist1.length>0){
-					// 	displayQuestion();
-					// };
-					console.log(
-						"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
-					)
 					executeGameLogic();
 				}); // gtjson
 
-				console.log("After gtjson stage is :" + stage)
 
-				// Spielelogik
+
+
+				/**
+				 * @function executeGameLogic
+				 *
+				 * Je nachdem wie viele DragAnddropGames und Quizlisten es gibt, werden wenn vorhanden zunächst alle DragAnddropGames und danach alle QUizfragen
+				 *
+				 */
 				function executeGameLogic() {
 
-					// Gibt es ein DragAnddropGame vor dem normalen Quiz?
+
 					if (numberOfDragAndDropGames > 0) {
-
-						// zeige einzelnes DragandDropGame an
 						displayDragAndDropGame(0);
-
 					}
-					// Wenn nicht prüfe ob es eine Quizlist gibt und zeige sie an
 					else {
 						if (numberOfQuizLists > 0) {
 							displayQuizListQuestion(0);
 						};
 					}
 
-
-
 				} // executeGameLogic
-
-
 
 			}); // doc ready
 
+
+	/**
+	 * @function displayDragAndDropGame
+	 * Lädt alle relaventen Daten (DragAndDrop Elemente, Zieltargets, checkInput button, etc) und zeigt sie in der MiniGames.html an
+	 * Außerdem wird ein TentakelArm von Bob angezeigt
+	 * Achtung: Alle DragAnddropGames werden im div #game1 angezeigt. Dementsprechend müssen wenn das nächste DragAnddropGame angeziegt wird alle Elemente erst entfernt werden
+	 * 					und dann die neuen Elemente hinzugefügt
+	 *
+	 * @param  {int} numberOfCurrentDragDropGame Nummer des DragAnddropGame, das gerade angezeigt werden soll
+	 */
 	function displayDragAndDropGame(numberOfCurrentDragDropGame) {
 
-		// füge das neutrale Bob Gesicht hinzu, falls es nicht schon da ist
-		//
-		//
+		/**
+		 * 		füge das neutrale Bob Gesicht hinzu, falls es nicht schon da ist
+		 */
 		if (!$(".background").find(".BobTentacleRight").length > 0) {
 			$('.background')
 				.append(
@@ -346,20 +313,13 @@
 
 
 		var counter = 0;
-
-		console.log("STage is: " + stage)
-
-		console.log("numberOfCurrentDragDropGame ist: " + numberOfCurrentDragDropGame)
-
-		console.log("1 DragandDropGame")
-		console.log("fühe elemente hnzu")
-			// Füge DragAndDrop ELemente zum div #game1 hinzu
-		var numberOfTargetsOfPreviuosGame;
-
-
-		// beim ersten Game ist numberOfCurrentDragDropGame = 0
-		// beim zweiten Game ist numberOfCurrentDragDropGame = 1 usw.
 		var tempArray = new Array();
+
+
+		/**
+		 * Lade die benötigten Daten für das aktuelle DragAndDropGame
+		 */
+
 		if (numberOfCurrentDragDropGame == 0) {
 			tempArray = dragAndDropBank1;
 		}
@@ -385,19 +345,15 @@
 			tempArray = dragAndDropBank5;
 		}
 
-		// Wenn das erste dragAndDropGame angeziegt wird, füge die benötigten Elemente hinzu
-		// if (numberOfCurrentDragDropGame==0) {
-
-		// für jedes quiz füge bestimmte Anzahl an targets hinzu
-
+		/**
+		 * 		Je nachdem wie viele Zielkästen es gibt, entferne zunächst alle gerade existierenden Elemente aus der MiniGames.html und zeige die neuen an
+		 */
 		numberOfTargetsOfCurrentGame = tempArray[0][5];
-		console.log("numberOfTargetsOfCurrentGame " + numberOfTargetsOfCurrentGame)
-
+		var numberOfTargetsOfPreviuosGame;
 		if (numberOfTargetsOfCurrentGame == 2) {
 			stage = '#game1';
 
 			if (numberOfTargetsOfPreviuosGame == 2) {
-
 				// remove breaks
 				$('#game1').find('br').remove();
 
@@ -457,9 +413,10 @@
 
 				);
 
-			// Nachfolgende Funktionen sind Bestandteil von JQuery EasyUi und definieren die Eigenschaften der Zielcontainer für die Elemente
+			/**
+			 * Nachfolgende Funktionen sind Bestandteil von JQuery EasyUi und definieren die Eigenschaften, Design und Verhalten der Zielcontainer für die Elemente
+			 */
 			$('#target1').droppable({
-				//accept:'#d1,#d3, #d2',
 				onDragEnter: function(e, source) {
 					$(source).draggable('options').cursor = 'auto';
 					$(source).draggable('proxy').css('border', '1px solid');
@@ -754,48 +711,33 @@
 			});
 		}
 
-
-		// }
-
-		// Wenn es mehr als ein DragdraopGame gibt, lösche die draggable divs vom letzten Spiel
-		// numberOfCurrentDragDropGame startet bei 0
+		/**
+		 * Gab es bereits ein DragandDropGame entferne auch noch die draggable div Elemente. Außerdem wird immer der goToNextQuiz Button entfernt
+		 */
 		if (numberOfCurrentDragDropGame > 0) {
 
-			// stage ='#game2';
-			console.log("----------------------------------------------")
-				// remove all existing draggable elements in #game1
 			for (var i = 0; i < dragAndDropBank1.length; i++) {
 				var currentId = "#d" + i;
 				console.log("currentId" + currentId)
 				$(currentId).remove();
 			}
 
-			// Außerdem wird immer der goToNextQuiz entfernt
 			$('#goToNextQuiz').remove();
 
 		}
 
-
-		// füge die draggable div Elemente hinzu und setze die Daten hinein
 		console.log("Länge von Array" + tempArray.length)
 		console.log("Inhalt von Array " + numberOfCurrentDragDropGame + " " +
 			tempArray)
 
+		/**
+		 * füge die neuen draggable div Elemente hinzu, sowie den Spieletitel und Beschreibung und setze die Daten hinein
+		 */
 		for (var i = 0; i < tempArray.length; i++) {
 
-			// hole den Namen des Spiels sowie den Titel aus dem Array des ersten Element der Quizlist
 			if (tempArray[i][0] == "d0") {
 				$('#gameTitle').text(tempArray[i][3]);
 				$('#gameDescription').text(tempArray[i][4]);
-
-				// var positionIntempDragAndDropBank =6;
-				// for(var z=0;z<numberOfTargets;z++){
-				//
-				// 	var tempVariable= "#target"+z;
-				// 	$('tempVariable').text(tempArray[i][positionIntempDragAndDropBank]);
-				//
-				// }
-
 
 				if (numberOfTargetsOfCurrentGame == 2) {
 					$('#target1').text(tempArray[i][6]);
@@ -818,33 +760,35 @@
 
 			}
 
-			console.log("id des temporären Elements: " + tempArray[i][0])
-				// console.log(questionBank.toString())
-
-			// Füge die neuen draggable Elemente hinzu
-			// $('#source').append($('<div/>',{id:data.DragDropGames[k].DragAndDropList[i].id, 'class':"drag", title:data.DragDropGames[k].DragAndDropList[i].target}))
-			// <div id="d1" class = "drag" title="target1" style=""></div>	*/
+			/**
+			 * 	Füge die neuen draggable Elemente hinzu nach dieser Beispielstruktur <div id="d1" class = "drag" title="target1"></div>
+			 */
 			$('#source').append($('<div/>', {
 				id: tempArray[i][0],
 				'class': "drag",
 				target: tempArray[i][1]
 			}));
 
-			//Mit Hilfe der ID wird das Element aufgerufen und der Text übergeben, der angezeigt werden soll
-			console.log("i" + i)
+			/**
+			 * 	Mit Hilfe der ID wird das Element aufgerufen und der Text übergeben, der angezeigt werden soll
+			 */
 			document.getElementById(tempArray[i][0]).innerHTML = tempArray[i][2];
 
-			//Counts draganddropelements now for two games
 			counter++;
 
 		}
 
-		// hier wird die anzahl der draganddropelements des gerade ausgeführten Drag and drop Games gepseichert
-		// in der checkInput methode wird sie dann dazu benutzt zu überprüfen ob alle Elemente zugeordnet wurden
+
+		/**
+		 * 		hier wird die anzahl der draganddropelements des gerade ausgeführten Drag and drop Games gepseichert
+		 *    in der checkInput methode wird sie dann dazu benutzt zu überprüfen ob alle Elemente zugeordnet wurden
+		 */
 		currentNumberOfDragAndDropElements = counter;
 
-		//Mache Elemente draggable/droppable
-		// folgende Funktion ist Bestandteil von JQuery EasyUi und sorgt dafür, dass die Elemente eine Drag n Drop Funktion haben
+
+		/**
+		 * @function - Macht Elemente draggable & droppable mittels jquery
+		 */
 		$(function() {
 			$('.drag').draggable({
 				proxy: 'clone',
@@ -866,51 +810,32 @@
 
 	}
 
-	// checkInput überprüft, ob sich die Elemente an der richtigen Stelle befinden. Wenn alle Daten korrekt in der JSON-Datei angeben wurden, ist hier keine Anpassung notwendig
+
+	/**
+	 * @function checkInput
+	 * Überprüft, ob sich die Elemente an der richtigen Stelle befinden.
+	 * Die richtige Stelle wird im json definiert
+	 */
 	function checkInput() {
 
-
-
-		console.log("currentNumberOfDragAndDropElements" +
-			currentNumberOfDragAndDropElements)
-
-
-		// zuerst wird geprüft, ob sich im Ausgangscontainer noch Elemente befinden
+		/**
+		 * 	Zuerst wird geprüft, ob sich im Ausgangscontainer noch Elemente befinden
+		 */
 		if ($('#source').children().length == 0) {
 			var wrongElement = 0;
-			//Wenn der Ausgangscontainer leer ist wird die Schleife sooft durchlaufen, wie das Minispiel Elemente hat. Dazu wird die oben deklarierte und verwendete Variable "counter" benutzt
+
+			/**
+			 * 	Wenn der Ausgangscontainer leer ist wird die Schleife sooft durchlaufen, wie das Minispiel Elemente hat und überorüft ob sich alle Elemente im richtigen Target befinden
+			 *  Wenn das Element sich nicht in dem richtigen Container befindet, wird der Hintergrund rot
+			 */
 			for (var i = 0; i < currentNumberOfDragAndDropElements; i++) {
-
-				/*
-				 Wenn ein Element mit dem Title "target1" vorliegt, wird geprüft, ob sich das Element in dem Container mit der ID "target1" befindet
-				 Wenn ja, wird die Hintergrundfarbe auf die Ausgangsfarbe gesetzt. Dieses erneute Setzen der Farbe ist notwendig, sollte das Element zuvor
-				 falsch eingeordnet und jetzt an die richtige Position bewegt worden sein.
-				 Wenn das Element sich nicht in dem richtigen Container befindet, wird der Hintergrund rot
-				*/
-
-				// console.log("show me the stage: "+$(stage))
-				// var currentId="#d"+i;
-				// console.log($("#target1").text())
-				// console.log($.contains( "#target1", '#d0'))
-				//
-				// console.log("jquery "+ $('#d0'))
-				// console.log("document.getElementById: "+document.getElementById("d0"))
-				// console.log("jquery title is: "+$('#d0').title)
-				// console.log("document.getElementById(d+i).title is: "+document.getElementById("d0").title)
-				// // console.log("counter is: "+counter)
 
 				if (numberOfTargetsOfCurrentGame == 2) {
 
-
 					var currentid = "#d" + i;
-					console.log("currentElement: " + "d" + i)
-					console.log("parentOfcurrentElement" + $("d" + i).parent().text())
-					console.log("$('d'+i).target " + $(currentid).attr('target'))
 
 					if ($(currentid).attr('target') == "target1") {
-						console.log(
-							"dfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
-						)
+
 						console.log("parentOfcurrentElement" + $("d" + i).parent())
 
 						if ($(document.getElementById("d" + i)).parents("#target1").length == 1) {
@@ -1042,10 +967,15 @@
 
 
 			console.log("wrongElement just before if: " + wrongElement)
-				// wenn alle ELemente richtig zugeordnet werden zeige einen "Weiter" button an
+
+			/**
+			 * Wenn alle ELemente richtig zugeordnet werden zeige einen "Weiter" button an und ein pop-up
+			 */
 			if (wrongElement == 0) {
 
-				// Falls es den button schon gibt (User klickt zum zweiten Mal auf den Button), füge ihn nicht nochmal hinzu
+				/**
+				 * 	Falls es den button schon gibt (User klickt zum zweiten Mal auf den Button), füge ihn nicht nochmal hinzu
+				 */
 				if ($('#goToNextQuiz').length > 0) {
 					$('#button').remove();
 					alert("Glückwunsch, Sie haben alle Elemente richtig zugeordnet!");
@@ -1057,41 +987,28 @@
 							'<div id="goToNextQuiz" class="next">Weiter</div>');
 				}
 
+
+				/**
+				 * @function goToNextQuiz
+				 * 	Wenn der Button geklickt wird, wird gepürft ob es noch ein weiteres dragAndDropGame gibt und falls ja wird es angezeigt, wenn nicht wird die erste Quizfrage der Quizlist
+				 */
 				$("#goToNextQuiz").click(function() {
 					numberOfDragAndDropGamesPlayed++;
 					console.log("In goToNextQuiz stage is :" + stage)
 
-
-
-					// console.log("numberOfDragAndDropGamesPlayed"+ numberOfDragAndDropGamesPlayed)
-
-					// Existieren weitere dragAndDropGames
 					if (numberOfDragAndDropGames > 1) {
 
-						// Prüfe wie viele dragAndDropGames schon gespielt wurden
-						// Wenn es dragAndDropGames gibt die noch nicht gespielt wurde, zeige diese an
-						console.log("numberOfDragAndDropGamesPlayed" +
-							numberOfDragAndDropGamesPlayed)
 						if (numberOfDragAndDropGames > numberOfDragAndDropGamesPlayed) {
-							// Wenn ein weiteres Drag and drop spiel existiert, lade die Elemente
-							// for (var i=0;i<numberOfDragAndDropGames;i++){
-							console.log(
-								"wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
-							)
+
 							changeDragAndDropGame(numberOfDragAndDropGamesPlayed);
-							// }
 
 						}
-						// Wenn nicht gehe direkt zum normalen Quiz
 						else {
 							changeQuestion(numberOfDragAndDropGamesPlayed);
 						}
 
 					}
-					// wenn nicht gehe direkt zum normalen Quiz
 					else {
-						console.log("test")
-
 						changeQuestion(numberOfDragAndDropGamesPlayed);
 					}
 
@@ -1102,28 +1019,39 @@
 
 
 		}
-		//Sollten nicht alle Elemente bewegt worden sein, erscheint ein Alert
 		else {
 			alert("Es wurden nicht alle Elemente verwendet!");
 		}
 
+
+	/**
+	 * Zähler wird wieder auf null gesetzt, falls noch weiteree dragAndDropGames teil des jsons sind
+	 */
 		if (wrongElement == 0) {
-			// Zähler wird wieder auf null gesetzt, falls noch weiteree dragAndDropGames teil des jsons sind
 			currentNumberOfDragAndDropElements = 0;
 		}
 
-
-
 	} // checkinput
-
 
 	var optionsCounter;
 
+
+
+	/**
+	 * @function displayQuizListQuestion
+	 *  Zeige nacheinander die Fragen der Quizliste an
+	 *  Achtung: Es gibt #game1 und #game2 um den Animationseffekt zu ermöglichen
+	 * 					 dragAndDropGames werden alle in #game1 angezeigt, und die erste Quizfrage dann in #game2
+	 *
+	 * @param  {int} numberOfDragAndDropGamesPlayed Anzahl der bisher gespielten dragAndDropGames
+	 */
 	function displayQuizListQuestion(numberOfDragAndDropGamesPlayed) {
 
+		/**
+		 * Entferne den TentakelArm von Bob der bei den dragAndDropGames angezeigt wird
+		 */
 		$('.BobTentacleRight').remove();
 
-		// drag and drop spiele werden immer im #game1 angezeigt, dementsprechend wird die erste Quizfrage im zweiten gezeigt
 		if (numberOfDragAndDropGamesPlayed > 0) {
 			stage = '#game2';
 		}
@@ -1132,7 +1060,9 @@
 		var q = new Array();
 		var contentArray = new Array();
 
-		//Füge die Frage hinzu
+		/**
+		 * 	Füge die Frage hinzu
+		 */
 		$(stage).append(
 			'<div class="questionText">' +
 			questionBank[questionNumber][0] +
@@ -1141,35 +1071,29 @@
 		console.log("questionBank is: " + JSON.stringify(questionBank))
 
 		// Speichere alle Antworten in einem separatem array "q", welches dann geshuffelt wird
+
+		/**
+		 * 	Wenn es mehr als 2 Antwortmöglichkeiten gibt, werden Sie in eine zufällige Reihenfolge gebracht
+		 */
 		for (i = 1; i < questionBank[questionNumber].length; i++) {
 			q[i - 1] = questionBank[questionNumber][i];
-
-
 			contentArray[i - 1] = '<div id=' + i +
 				' class="option" tabindex="1">' + q[i - 1] + '</div>';
-
 			optionsCounter++;
 
 		}
-
-		console.log("cententArray is: " + JSON.stringify(contentArray))
-
-		console.log("Anzahl Optionen" + optionsCounter)
-
-		// wenn es mehr als 2 Antwortmöglichkeiten gibt, werden Sie in eine zufällige Reihenfolge gebracht...
 		if (optionsCounter > 2) {
 			console.log("shufffffffffffffffline")
 			shuffle(contentArray);
-
-			// füge das neutrale Bob Gesicht hinzu, falls es nicht schon da ist
+			/**
+			 * 	füge das neutrale Bob Gesicht hinzu, falls es nicht schon da ist
+			 */
 			if (!$("#navContent").find(".bob").length > 0) {
 				$('#navContent')
 					.append(
 						'<img src="img/brillainIDEAS_UX_20170202_Oktopus-Kopf3.2_F.png" id ="bobId"class="bob" style="object-fit: contain">'
 					);
 			}
-
-
 
 			// ...und dann angezeigt
 			for (i = 0; i < contentArray.length; i++) {
@@ -1178,10 +1102,13 @@
 			}
 
 		}
-		// wenn es nur zwei Antwortmöglichkeiten gibt, wird die Option "Ja" immer zuerst angezeigt
+		/**
+		 * wenn es nur zwei Antwortmöglichkeiten gibt, und es die Option "Richtig" und "Falsch" gibt wird "Richtig" immer zuerst angezeigt, ansonsten ist die Reihenfolge zufällig
+		 */
 		else {
-
-			// füge das neutrale Bob Gesicht hinzu, falls es nicht schon da ist
+			/**
+			 * 	füge das neutrale Bob Gesicht hinzu, falls es nicht schon da ist
+			 */
 			if (!$("#navContent").find(".bob").length > 0) {
 				$('#navContent')
 					.append(
@@ -1189,12 +1116,6 @@
 					);
 			}
 
-
-			// // ist die erste Antwortmöglichkeit nicht "Richtig" oder "Falsch", bringe die zwei Antwortmöglichkeiten in eine zufällige Reihenfolge
-			// if (q[0] != "Richtig" | q[0] != "Falsch" ) {
-			// 	console.log("ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss")
-			// 	shuffle(contentArray);
-			// }
 			var firstOptionIsAlreadySet = false;
 			var secondOptionIsAlreadySet = false;
 			for (i = 0; i < contentArray.length; i++) {
@@ -1236,7 +1157,9 @@
 			.click(
 				function() {
 
-					// markiere ausgewählte Antwortmöglichkeit weiterhin, auch wenn irgendwo anders auf der Seite geklickt wird
+					/**
+					 * Markiere ausgewählte Antwortmöglichkeit weiterhin, auch wenn irgendwo anders auf der Seite geklickt wird
+					 */
 					var styles = {
 						border: "#e53f5f solid 2px",
 
@@ -1244,6 +1167,10 @@
 					};
 					$(this).css(styles);
 
+
+					/**
+					 * Je nachdem ob der User die richtige oder die falsche auswählt wird ein zusätzliches Banner angezeigt und bob reagiert mit einem positiven oder traurigen Gesicht
+					 */
 					if (questionLock == false) {
 						questionLock = true;
 						// correct answer
@@ -1258,7 +1185,6 @@
 							} else if (randomNumber == 2) {
 								changeBobImage('img/brillainIDEAS_UX_20170202_Oktopus-Kopf3.1_F.png');
 							}
-
 
 							$(stage)
 								.append(
@@ -1282,8 +1208,6 @@
 								changeBobImage('img/brillainIDEAS_UX_20170202_Oktopus-Kopf3.3_F.png');
 							}
 
-
-
 							$(stage)
 								.append(
 									'<div class="feedback2">Falsch</div>');
@@ -1295,7 +1219,9 @@
 							.append(
 								'<div class="next">Weiter</div>');
 
-						//wenn eine Antwortmöglichkeit ausgewählt wurde kann keine andere mehr selektiert werden
+						/**
+						 * wenn eine Antwortmöglichkeit ausgewählt wurde kann keine andere mehr selektiert werden
+						 */
 						$(".option").css("pointer-events", "none");
 
 						$('.next').click(function() {
@@ -1309,6 +1235,12 @@
 		questionNumber++;
 	} // display question
 
+
+	/**
+	 * @function displayFinalSlide
+	 * Wenn alle Quizfragen beantwortet wurden, zeige den final Slide an, dort gibt bob dann dem user eine bewertung seiner Leistung
+	 *
+	 */
 	function displayFinalSlide() {
 
 		//remove normal bob img
@@ -1374,13 +1306,17 @@
 
 	} // display final slide
 
-	// ToDO im Moment wird die erste question übersprungen!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+	/**
+	 * @function changeQuestion
+	 * Definiert den Animationseffekt zwischen den einzelnen Quizfragen
+	 *
+	 * @param  {int} numberOfDragAndDropGamesPlayed Anzahl der bisher gespielten dragAndDropGames
+	 *
+	 */
 	function changeQuestion(numberOfDragAndDropGamesPlayed) {
 		console.log("QuestionNUmber:" + questionNumber)
 
-
-
-		// if (previousQuizExists==false) {
 		if (stage == "#game1") {
 			stage2 = "#game1";
 			stage = "#game2";
@@ -1388,12 +1324,6 @@
 			stage2 = "#game2";
 			stage = "#game1";
 		}
-		// // } else if (previousQuizExists==true) {
-		//
-		// 	stage = "#game1";
-		// 	stage2 = "#game2";
-		// }
-
 
 		if (questionNumber < numberOfQuestions) {
 
@@ -1417,43 +1347,20 @@
 	} // change question
 
 
+	/**
+	 * @function changeDragAndDropGame
+	 * Regelt wechsel zu neuen DragandDropGame
+	 *
+	 * @param  {type} numberOfDragAndDropGamesPlayed description
+	 */
 	function changeDragAndDropGame(numberOfDragAndDropGamesPlayed) {
-
-
-
-		console.log("in changeDragAndDropGame stage is: " + stage)
-			// if (stage == "#game1") {
-			// 	console.log("ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd")
-			// 	stage2 = "#game1";
-			// 	stage = "#game2";
-			// } else {
-			// 	stage2 = "#game2";
-			// 	stage = "#game1";
-			// }
-			// // } else if (previousQuizExists==true) {
-			//
-			// 	stage = "#game1";
-			// 	stage2 = "#game2";
-			// }
-
 
 		displayDragAndDropGame(numberOfDragAndDropGamesPlayed);
 
-		// $(stage2).animate({
-		// 	"right" : "+=100%"
-		// }, "slow", function() {
-		// 	$(stage2).css('right', '-100%');
-		// 	$(stage2).empty();
-		// });
-		// $(stage).animate({
-		// 	"right" : "+=100%"
-		// }, "slow", function() {
-		// 	questionLock = false;
-		// });
 	} // change dragdropGame
 
 	/**
-	 * Shuffles array in place.
+	 * @function Shuffles array in place.
 	 *
 	 * @param {Array}
 	 *            a items The array containing the items.
@@ -1468,6 +1375,13 @@
 		}
 	}
 
+
+	/**
+	 * @function changeBobImage
+	 * Regelt den Wechsel der verschiedene Bob bilder in der Quizlisten
+	 *
+ 	 * @param  {String} a Dateipfad zum Bobbild
+	 */
 	function changeBobImage(a) {
 		console.log("picture is: " + a)
 		console.log("Element selected: " + $('.bob'))
