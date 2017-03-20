@@ -7,8 +7,9 @@ jQuery(function(){
 		
 		jQuery('button').on('click tap', function(){
 			console.log("try");
-			buttonOpenQuiz();
-		});
+			buttonID = $(this).attr('id');
+			openQuiz(buttonID);
+			});
 		
 		$($(".slidecard")[0]).addClass('active');
 	
@@ -42,26 +43,7 @@ jQuery(function(){
 		targetDot.toggleClass('current');
 	}
 	
-});
-
-/**		
-	* 		
-	*/		
-	var buttonOpenQuiz = function buttonOpenQuiz() {		
-		event = event || window.event;		
-		event.target = event.target || event.srcElement;		
-		
-		var element = event.target;		
-		var idOfButtonClicked;		
-		
-		if (element.nodeName === "BUTTON" && /buttonToQuiz/.test(element.className)) {		
-			// The user clicked on a <button> or clicked on an element inside a  button>		
-		idOfButtonClicked = element.id;		
-		}		
-		
-		console.log(idOfButtonClicked);	
-		openQuiz(idOfButtonClicked);		
-	}		
+});		
 		
 	// die Methode openQuiz holt sich den Namen des jeweiligen JSON und hängt diesen an die URL der Spiele HTML Seite		
 	// in der index.html wird dann die controller.js geladen und der Parameter ausgelesen		
