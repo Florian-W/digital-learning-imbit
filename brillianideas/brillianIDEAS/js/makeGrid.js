@@ -266,18 +266,21 @@ var makeGrid = function makeGrid(view){
 			
 			var loadLearnings = function(obj){
 				var $obj = $(obj);
-				$.ajax('xml/index.php?base=learning&withLink=false&type=' + $obj.attr('id'), function (data) {
-					$obj.find('.list').append(data.responseText);
-					$obj.find('.list').children().each(function (index, element) {
-						$.ajax({
-							url: 'xml/index.php?base=learning&withLink=true&detail=true&guid=' + $(element).data('target'), 
-							complete: function (learningData) {
-								$newElement = $obj.find('.list').parent().append(learningData.responseText).children('.learning');
-								$newElement.fadeOut();
-								$newElement.html(($newElement.html().replace(/(?:\r\n|\r|\n)/g," ")))
+				$.ajax({
+					url: 'xml/index.php?base=learning&withLink=false&type=' + $obj.attr('id'), 
+					complete: function (data) {
+						$obj.find('.list').append(data.responseText);
+						$obj.find('.list').children().each(function (index, element) {
+							$.ajax({
+								url: 'xml/index.php?base=learning&withLink=true&detail=true&guid=' + $(element).data('target'), 
+								complete: function (learningData) {
+									$newElement = $obj.find('.list').parent().append(learningData.responseText).children('.learning');
+									$newElement.fadeOut();
+									$newElement.html(($newElement.html().replace(/(?:\r\n|\r|\n)/g," ")))
 								}
+							});
 						});
-					});
+					}
 				});
 			}
 			
