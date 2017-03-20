@@ -215,7 +215,7 @@ var makeGrid = function makeGrid(view){
 				$('h1, h2, h3, h4 ,h5, p').each(function(i,e){
 					$(e).html(($(e).html().replace(/\s{2,}/g," ")));
 				});
-				$('.flipcard').css({width: 'initial', height: 'initial'});
+				$('.flipcard').each(function(i,e){$(e).css({width: $(e).children('.front').outerWidth(true) +1, height: $(e).children('.front').outerHeight(true)+1})})
 			}
 			
 			var sortTiles = function (a, b) {
