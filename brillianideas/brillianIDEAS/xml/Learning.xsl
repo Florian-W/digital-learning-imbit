@@ -36,13 +36,16 @@
 						</xsl:attribute>
 						<xsl:attribute name="data-bind">
 							<xsl:value-of select="@id"></xsl:value-of>
-						</xsl:attribute>						
+						</xsl:attribute>					
 						<xsl:for-each select="./Learning">
 							<xsl:element name="div">
 								<xsl:attribute name="class">
 									<xsl:text>learning</xsl:text>
 								</xsl:attribute>
-									<xsl:choose>
+								<xsl:attribute name="id">
+									<xsl:value-of select="Titel"></xsl:value-of>
+								</xsl:attribute>
+								<xsl:choose>
 									<xsl:when test="Thumb[not(text()=null or normalize-space(text())='')]">
 										<xsl:choose>
 											<xsl:when test="src[not(text()=null or normalize-space(text())='')]">
@@ -122,7 +125,7 @@
 											</xsl:otherwise>
 										</xsl:choose>
 									</xsl:when>
-								</xsl:choose>
+							</xsl:choose>
 							<xsl:element name="div">
 								<xsl:element name="h2">
 									<xsl:value-of select="Titel" />
@@ -186,6 +189,21 @@
 								</xsl:element>
 							</xsl:element>
 						</xsl:for-each>
+						
+						<!-- 
+						<xsl:element name="div">
+							<xsl:attribute name="class">
+								<xsl:text>scroll</xsl:text>
+							</xsl:attribute>
+							<xsl:for-each select="./Learning">
+								<xsl:element name="div">
+									<xsl:attribute name="class">
+										<xsl:text>scroll_item </xsl:text>
+										<xsl:value-of select="Titel"></xsl:value-of>
+									</xsl:attribute>
+								</xsl:element>
+							</xsl:for-each>
+						</xsl:element>	-->
 					</xsl:element>
 				</xsl:for-each>
 			</xsl:when>
