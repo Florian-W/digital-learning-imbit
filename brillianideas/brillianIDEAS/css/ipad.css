@@ -1,0 +1,28 @@
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){ 
+	#dots{
+		bottom: 5% !important;
+	}
+	
+	#animation_xaxis_left {
+		transform: translate(-100%, -50%);
+	}
+
+	#animation_xaxis_right {
+		float: right;
+		transform: translate(100%, -50%);
+	}
+
+	#animation_yaxis_top {
+		top: 0px;
+		position: absolute;
+		transform: translate(-50%, -100%);
+		text-align: center;
+	}
+
+	#animation_yaxis_bottom {
+		bottom: 0px;
+		position: absolute;
+		transform: translate(-50%, 100%);
+		text-align:center;
+	}
+}

@@ -215,25 +215,25 @@ var makeGrid = function makeGrid(view){
             /**
              * loads all tiles and displays the heading
              */
-            $.when(
-                $.ajax('xml/index.php?base=grid&type=learning').done(function (data) {
+			 $.ajax('xml/index.php?base=grid&type=learning').done(function (data) {
                     $('#site').append(data);
                     $('#grid').css("width", $display.width).css("height", $display.height).append('<div id="backlayer"></div>');
-                }),
+                });
+            $.when(
                 $('#animation_welcome').animate({opacity: 1}, {duration: 1000})
             ).done(function () {
                 $.when(
                     $('#xaxis').animate({opacity: 1, width: $display.width}, {duration: 1000}),
                     $('#yaxis').animate({opacity: 1, height: $display.height}, {duration: 1000})
                 ).done(function () {
-                    $.when(
-                		$('#animation_welcome').animate({left: 50 + $('#animation_welcome').outerWidth() / 2, top: 100}, {duration: 1000}),
-                        $('#grid').css('opacity', 1),
-                        $.each(digitalLearningArray, function(key, value){
-                        	var v = value.slice();
-                        	v.push(key);
-                        	noOverlayInGrid.apply({}, v); // {@link noOverlayInGrid}
-                        })
+					$.each(digitalLearningArray, function(key, value){
+						var v = value.slice();
+						v.push(key);
+						noOverlayInGrid.apply({}, v); // {@link noOverlayInGrid}
+					});
+					$('#grid').css('opacity', 1);
+					$.when(
+                		$('#animation_welcome').animate({left: 50 + $('#animation_welcome').outerWidth() / 2, top: 100}, {duration: 1000})
                     ).done(function () {
                         var deferredArray = [];
                         $('#grid').children('.flipcard').sort(function (a, b) {
