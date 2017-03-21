@@ -175,6 +175,10 @@ img.thumb {
 	max-height: 350px;
 }
 
+.contentWrapper > .learning {
+	margin-top: 50px;
+}
+
 
 #overlay {
     display: none;
@@ -414,6 +418,11 @@ and (max-device-width: 1024px) {
 
 .menuSubject.active {
 	font-weight: bold;
+	background-color: grey;
+    border-radius: 0.3em;
+}
+
+.menuSubject:hover {
 	background-color: grey;
     border-radius: 0.3em;
 }
