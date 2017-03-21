@@ -131,6 +131,8 @@ h1, h2, h3, h4, h5 {
 }
 
 img.thumb {
+	margin-right: 1.5em;
+	margin-bottom: 1.5em;
     max-height: 35vh;
     max-width: 35vh;
     float: left;
@@ -307,25 +309,25 @@ img.thumb {
 
 #animation_xaxis_left {
     float: left;
-    transform: translate(-150%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 #animation_xaxis_right {
     float: right;
-    transform: translate(150%, -50%);
+    transform: translate(50%, -50%);
 }
 
 #animation_yaxis_top {
     top: 0px;
     position: absolute;
-    transform: translate(-50%, -150%);
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
 #animation_yaxis_bottom {
     bottom: 0px;
     position: absolute;
-    transform: translate(-50%, 150%);
+    transform: translate(-50%, 50%);
     text-align:center;
 }
 

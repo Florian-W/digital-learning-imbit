@@ -33,6 +33,15 @@ const digitalLearningArray = [
 		['iw', 0.35521236 , 0.075 ,23]
 		];
 
+var i;
+var j;
+var movedInCombo = new Array();
+for (i = 0; i < digitalLearningArray.length; i++){
+	movedInCombo[digitalLearningArray[i][0]] = new Array();
+	for (j = 0; j < digitalLearningArray.length; j++){
+		movedInCombo[digitalLearningArray[i][0]][digitalLearningArray[0][j]] = false;
+	}
+}
 
 /**
  * Sammelklasse für die Außendimensionen von Elementen des Koordinatensystems. Alle Koordinaten sind berechnet von der oberen linken Ecke des Dokuments.
@@ -144,17 +153,31 @@ function noOverlayInGrid(id, x, y, count, key){
 			 * check if both divs intersect
 			 */
 			if(rectOutlines.overlaps(e_position, card_position)){
-				card_position.left = ((card_position.left <= e_position.left)?e_position.left - card_position.width:e_position.right);
-				card_position.top = ((card_position.top <= e_position.top)? e_position.top - card_position.height : e_position.bottom);
+				if (movedInCombo[value[0]][id]){
+					card_position.left = ((card_position.left <= e_position.left)?e_position.right:e_position.left - card_position.width);
+					card_position.top = ((card_position.top <= e_position.top)? e_position.bottom : e_position.top - card_position.height);
 
-				card_position.bottom = card_position.top + card_position.height;
-				card_position.right = card_position.left + card_position.width;
-				
-				$card.css({
-					left: card_position.left + "px",
-					top:  card_position.top + "px"
-				});
-				
+					card_position.bottom = card_position.top + card_position.height;
+					card_position.right = card_position.left + card_position.width;
+					
+					$card.css({
+						left: card_position.left + "px",
+						top:  card_position.top + "px"
+					});
+					
+				} else {
+					card_position.left = ((card_position.left <= e_position.left)?e_position.left - card_position.width:e_position.right);
+					card_position.top = ((card_position.top <= e_position.top)? e_position.top - card_position.height : e_position.bottom);
+
+					card_position.bottom = card_position.top + card_position.height;
+					card_position.right = card_position.left + card_position.width;
+					
+					$card.css({
+						left: card_position.left + "px",
+						top:  card_position.top + "px"
+					});
+					movedInCombo[value[0]][id] = true;
+				}
 				/**
 				 * ensure loop continues and reset iteration through divs
 				 */
@@ -168,6 +191,7 @@ function noOverlayInGrid(id, x, y, count, key){
 	 * set data value for orde of appearance
 	 */
 	$card.attr('data-sid', "" + count);
+	return $.Deferred().promise();
 };
 
 /**
@@ -183,64 +207,117 @@ var makeGrid = function makeGrid(view){
 	 */
     switch (view){
         case 'digitalLearning':
-
-        	/**
-        	 * disables the tiles and enables the back layer
-        	 */
-            $('#grid').css('cursor', 'pointer');
-            $('.flipcard, .flipcard .face').css('pointer-events', 'none').css('cursor', 'default');
+			var animationPromises = new Array();
+			
+			var enableClicking = function(){
+				$('#grid').css('cursor', 'default');
+				$('.flipcard, .flipcard .face').css('pointer-events', 'auto').css('cursor', 'pointer');
+				$('h1, h2, h3, h4 ,h5, p').each(function(i,e){
+					$(e).html(($(e).html().replace(/\s{2,}/g," ")));
+				});
+			}
+			
+			var sortTiles = function (a, b) {
+					return (($(a).data('sid') > $(b).data('sid')) ? 1 : -1);
+				};
+			
+			var animateTile = function(obj){
+				var $obj = $(obj);
+				animationPromises.push($obj.animate({opacity: 1}, {
+					duration: 500, 
+					done: (($obj.next().length == 0) ? undefined : function(){
+						animateTile($obj.next());
+					})
+				}));
+			}
+			
+			var animateTiles = function () {
+				
+				/**
+				 * disables the tiles and enables the back layer
+				 */
+				$('#grid').css('cursor', 'pointer');
+				$('.flipcard, .flipcard .face').css('pointer-events', 'none').css('cursor', 'default');
+				$('#grid').css("width", $display.width).css("height", $display.height);
+				$('#grid').css('opacity', 1);
+				$('#animation_welcome').animate({left: 50 + $('#animation_welcome').outerWidth() / 2, top: 100}, {duration: 1000})
+				$('#xaxis').animate({opacity: 1, width: $display.width}, {duration: 1000});
+				$('#yaxis').animate({opacity: 1, height: $display.height}, {duration: 1000});
+				
+				
+				$.each(digitalLearningArray, function(key, value){
+					var v = value.slice();
+					v.push(key);
+					noOverlayInGrid.apply({}, v); // {@link noOverlayInGrid}
+				});
+				
+				
+				var $flipcards = $('#grid').children('.flipcard');
+				$flipcards.detach();
+				$flipcards.sort(sortTiles);
+				$('#grid').html($flipcards).append('<div id="backlayer"></div>');
+				$flipcards = $('#grid').children('.flipcard');
+				animateTile($flipcards.first());
+				
+				
+				$.when(animationPromises).done(enableClicking)
+			
+			}
+			
+			var loadLearnings = function(obj){
+				var $obj = $(obj);
+				$.ajax({
+					url: 'xml/index.php?base=learning&withLink=false&type=' + $obj.attr('id'), 
+					complete: function (data) {
+						$obj.find('.list').append(data.responseText);
+						$obj.find('.list').children().each(function (index, element) {
+							$.ajax({
+								url: 'xml/index.php?base=learning&withLink=true&detail=true&guid=' + $(element).data('target'), 
+								complete: function (learningData) {
+									$newElement = $obj.find('.list').parent().append(learningData.responseText).children('.learning');
+									$newElement.fadeOut();
+									$newElement.html(($newElement.html().replace(/(?:\r\n|\r|\n)/g," ")))
+								}
+							});
+						});
+					}
+				});
+			}
+			
+			var fillTile = function(i, obj){
+				var $obj = $(obj);
+				$.ajax({
+					url: 'xml/index.php?base=categories&type=learning&detail=true&filter=' + $obj.attr("id"),
+					complete: function(data){
+						$obj.children('.back').append(data.responseText);
+						loadLearnings($obj);
+					}
+				});
+			}
+			
+			var fillTiles = function(){
+				$(document).ajaxStop(function() {
+					animateTiles();
+					 $(this).unbind("ajaxStop");
+				});
+				$('#grid').children('.flipcard').each(fillTile);
+			}	      
+						
             /**
              * loads all tiles and displays the heading
              */
-            $.when(
-                $.ajax('xml/index.php?base=grid&type=learning').done(function (data) {
-                    $('#site').append(data);
-                    $('#grid').css("width", $display.width).css("height", $display.height).append('<div id="backlayer"></div>');
-                }),
-                $('#animation_welcome').animate({opacity: 1}, {duration: 1000})
-            ).done(function () {
-                $.when(
-                    $('#xaxis').animate({opacity: 1, width: $display.width}, {duration: 1000}),
-                    $('#yaxis').animate({opacity: 1, height: $display.height}, {duration: 1000})
-                ).done(function () {
-                    $.when(
-                		$('#animation_welcome').animate({left: 50 + $('#animation_welcome').outerWidth() / 2, top: 100}, {duration: 1000}),
-                        $('#grid').css('opacity', 1),
-                        $.each(digitalLearningArray, function(key, value){
-                        	var v = value.slice();
-                        	v.push(key);
-                        	noOverlayInGrid.apply({}, v); // {@link noOverlayInGrid}
-                        })
-                    ).done(function () {
-                        var deferredArray = [];
-                        $('#grid').children('.flipcard').sort(function (a, b) {
-                            return (($(a).data('sid') > $(b).data('sid')) ? 1 : -1);
-                        }).each(function (index, element) {
-                            deferredArray.push($(element).delay(index * 500).children('.back').css('display', 'none').delay(0).parent().animate({opacity: 1}, {duration: 500}));
-                            deferredArray.push($.ajax('xml/index.php?base=categories&type=learning&detail=true&filter=' + $(element).attr("id")).done(function (data) {
-                                $(element).children('.back').append(data);
-                                deferredArray.push($.ajax('xml/index.php?base=learning&withLink=false&type=' + $(element).attr('id')).done(function (data2) {
-                                    $(element).find('.list').append(data2);
-                                    $(element).find('.list').children().each(function (index1, element1) {
-                                        deferredArray.push($.ajax('xml/index.php?base=learning&withLink=true&detail=true&guid=' + $(element1).data('target')).done(function (data3) {
-                                            $(element).find('.list').parent().append(data3).children('.learning').fadeOut();
-                                        }))
-                                    });
-                                }))
-                            }))
-                        });
-                        $.when.apply($, deferredArray).done(function () {
-				$('.selectionbody .category h2').each(function(i, e){$(e).html(($(e).html().replace(/\r?\n|\r/g," ")))}),
-                        	$('#grid').css('cursor', 'default'),
-                            $('.flipcard, .flipcard .face').css('pointer-events', 'auto').css('cursor', 'pointer'),
-                            $('h1, h2, h3, h4 ,h5, p').each(function(i,e){
-                            	$(e).html(($(e).html().replace(/\s{2,}/g," ")))
-                            }),
-                            openPath();
-                        });
-                    });
-                });
-            });
+			 
+			$('#animation_welcome').animate({opacity: 1}, {duration: 1000}),
+			$.ajax({
+				url:'xml/index.php?base=grid&type=learning',
+				complete: function (data) {
+					if(data.status == 200){
+						$.when($('#site').append(data.responseText)).done(fillTiles);
+					} else {
+						alert('Something went wrong. Please reload this page later. If this keeps occuring, please contact the mail stated in the imprint.');
+					}
+				}
+			});
             break;
         case 'imbit':
 		//This case is used for the IMBIT Way
@@ -329,4 +406,5 @@ var makeGrid = function makeGrid(view){
                 });
             break;
     }
+	
 }
