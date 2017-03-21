@@ -209,12 +209,14 @@ var makeGrid = function makeGrid(view){
         case 'digitalLearning':
 			var animationPromises = new Array();
 			
-			var enableClicking = function(){
+			var cleanUp = function(){
 				$('#grid').css('cursor', 'default');
 				$('.flipcard, .flipcard .face').css('pointer-events', 'auto').css('cursor', 'pointer');
 				$('h1, h2, h3, h4 ,h5, p').each(function(i,e){
 					$(e).html(($(e).html().replace(/\s{2,}/g," ")));
 				});
+				$('.flipcard').each(function(i,e){$(e).css({width: $(e).children('.front').outerWidth(true) +1, height: $(e).children('.front').outerHeight(true)+1})})
+				$('.flipcard').each(function(i,e){$(e).css({minWidth: $(e).children('.front').outerWidth(true) +1, minHeight: $(e).children('.front').outerHeight(true)+1})})
 			}
 			
 			var sortTiles = function (a, b) {
@@ -260,7 +262,7 @@ var makeGrid = function makeGrid(view){
 				animateTile($flipcards.first());
 				
 				
-				$.when(animationPromises).done(enableClicking)
+				$.when(animationPromises).done(cleanUp)
 			
 			}
 			
@@ -274,9 +276,9 @@ var makeGrid = function makeGrid(view){
 							$.ajax({
 								url: 'xml/index.php?base=learning&withLink=true&detail=true&guid=' + $(element).data('target'), 
 								complete: function (learningData) {
-									$newElement = $obj.find('.list').parent().append(learningData.responseText).children('.learning');
+									var $newElement = $obj.find('.list').parent().append(learningData.responseText).children('.learning');
 									$newElement.fadeOut();
-									$newElement.html(($newElement.html().replace(/(?:\r\n|\r|\n)/g," ")))
+									$newElement.html($newElement.html().replace(/(?:\r\n|\r|\n)/g," "));
 								}
 							});
 						});
