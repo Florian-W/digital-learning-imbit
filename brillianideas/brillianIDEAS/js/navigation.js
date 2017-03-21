@@ -7,8 +7,25 @@
 var dotsspace;
 
 $(window).on('load', function(){
+<<<<<<< HEAD
 	jQuery(document).on("swiperight",function(e){
 		if($(e.target).is('p,a,img,h1,h2,h3,h4,h5,span')) return false;	
+=======
+	/**
+	* Added hash to navigate page
+	*/
+	var nameHash = window.location.hash;
+	switch(nameHash) {
+		case "#imbit":
+			changePage(false);
+			break;
+		case "#digitalLearning":
+			changePage(true);
+			break;
+	}
+	
+	jQuery(document).on("swiperight",function(){
+>>>>>>> refs/remotes/origin/master
 		changePage(true);
 	}).on("swipeleft",function(e){
 		if($(e.target).is('p,a,img,h1,h2,h3,h4,h5,span')) return false;	
