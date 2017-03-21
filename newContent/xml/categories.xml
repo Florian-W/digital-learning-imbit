@@ -330,7 +330,7 @@ Quelle: https://wiki.zum.de/wiki/Wikis_in_der_Schule</Description>
 		<NewContent_Name>Ökonomisches Prinzip</NewContent_Name>
 		<NewContent_Video>axlpq-CMoI4</NewContent_Video>
 		<NewContent_Beschreibung>In dem folgenden Video Ökonomisches Prinzipwerden die zwei Ansätze anhand von Beispielen näher erläutert. Auch die Begriffe Effizienz und Effektivität werden behandelt. In einem anschließenden Quiz kann das gelernte Wissen getestet werden.</NewContent_Beschreibung>
-		<jsonFileName>St-Galler-Management-Modell.json</jsonFileName>
+		<jsonFileName>Oekonomisches-Prinzip.json</jsonFileName>
 		<ButtonClass>buttonToQuiz4</ButtonClass>
 		<ButtonID>quizOekonomischesPrinzip</ButtonID>
 	</NewContentItems>
