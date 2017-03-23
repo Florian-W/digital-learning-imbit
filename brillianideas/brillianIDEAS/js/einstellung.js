@@ -11,7 +11,7 @@
 * @param {String} value - Wert des Cookies
 * @param {Integer} days - Tage bis zum Ablauf der Cookeis
 */
-function erstelleCookie(name, value, days) {
+function writeCookie(name, value, days) {
 	/**
 	* Setzt Tage für den Ablauf des Cookies
 	*/
@@ -33,7 +33,7 @@ function erstelleCookie(name, value, days) {
 * @param {String} name - Name des Cookies
 * @return {String} Wert des Cookies
 */
-function leseCookie(name) {
+function readCookie(name) {
 	var nameEQ = name + "=";
 	var cookieArray = document.cookie.split(';');
 	for(var i = 0; i < cookieArray.length; i++) {
@@ -53,14 +53,14 @@ function leseCookie(name) {
 */
 function initSettings() {
 	/**
-	* @param {Integer} expireDate - Gibt Dauer des Cookies an: 1 Jahr
+	* Setzt Dauer des Cookies auf 1 Jahr
 	*/
 	var expireDate = 365;
 	
 	/**
-	* @param {String} soundSwitch - Cookie 'Sound' wird gelesen
+	* Liest Cookie 'Sound'
 	*/
-	var soundSwitch = leseCookie('sound');
+	var soundSwitch = readCookie('sound');
 	
 	/**
 	* Switch Statement - benutzt den Inhalt des Cookies 'Sound'
@@ -94,7 +94,7 @@ function initSettings() {
 		* Zudem wird das Audio abgespielt.
 		*/
 		if (this.checked) {
-			erstelleCookie('sound','true', expireDate);
+			writeCookie('sound','true', expireDate);
 			$('audio').each(function(){ this.play(); });
 		} 
 		/**
@@ -102,7 +102,7 @@ function initSettings() {
 		* Zudem wird das Audio gestoppt.
 		*/
 		else {
-			erstelleCookie('sound','false', expireDate);
+			writeCookie('sound','false', expireDate);
 			$('audio').each(function() { this.pause(); });
 		}
 	});
