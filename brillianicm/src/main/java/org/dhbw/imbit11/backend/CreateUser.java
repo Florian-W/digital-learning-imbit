@@ -63,12 +63,10 @@ import javax.servlet.http.HttpServletResponse;
 		
 		String groupnumber = request.getParameter("groupnumber");
 
-		//System.out.println(groupnumber);
 
 		String url = "/Registration?g=" + groupnumber;
 
 		String role = request.getParameter("role");
-		// //System.out.println(role);
 		String email = request.getParameter("email");
 		String lastname = request.getParameter("lastname");
 		String firstname = request.getParameter("firstname");
