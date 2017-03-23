@@ -385,46 +385,5 @@ var makeGrid = function makeGrid(view){
                         });
                 });
             break;
-			 case 'newContent':
-		//This case is used for the New Content Page
-            $display.width = $display.width - 208;
-            $display.height = $display.height - 66;
-            $.when(
-                $.ajax('xml/index.php?base=grid&type=newcontent').done(function (data) {
-                    $('#site').append(data);
-					$('#grid').css("width", $display.width).css("height", $display.height).append('<div id="backlayer"></div>');
-					}),
-                $('#animation_newContent').animate({opacity: 1}, {duration: 1000})
-            ).done(function () {
-                        $.when(
-                            $('#animation_newContent').animate({opacity: 0}),
-                            $('#animation_newContent').css('display', 'none'),
-
-                            $('#grid').css('opacity', 1)
-                        ).done(function () {
-                            var deferredArray = [];
-                            $('#grid').children('.flipcard').sort(function (a, b) {
-                                return (($(a).data('sid') > $(b).data('sid')) ? 1 : -1);
-                            }).each(function (index, element) {
-                                deferredArray.push($(element).delay(index * 500).children('.back').css('display', 'none').delay(0).parent().animate({opacity: 1}, {duration: 1000}));
-                                deferredArray.push($.ajax('xml/index.php?base=categories&type=class&detail=true&filter=' + $(element).attr("id")).done(function (data) {
-                                    $(element).children('.back').append(data);
-                                    deferredArray.push($.ajax('xml/index.php?base=learning&withLink=false&class=' + $(element).attr('id')).done(function (data2) {
-                                        $(element).find('.list').append(data2);
-                                        $(element).find('.list').children().each(function (index1, element1) {
-                                            deferredArray.push($.ajax('xml/index.php?base=learning&withLink=true&detail=true&guid=' + $(element1).data('target')).done(function (data3) {
-                                                $(element).find('.list').parent().append(data3).children('.learning').fadeOut();
-                                            }))
-                                        });
-                                    }))
-                                }))
-                            });
-                            $.when.apply($, deferredArray).done(function () {
-                                openPath();
-                            });
-                        });
-                });
-            break;
     }
-	
 }
