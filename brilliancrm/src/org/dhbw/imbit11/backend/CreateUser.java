@@ -63,12 +63,9 @@ import javax.servlet.http.HttpServletResponse;
 		
 		String groupnumber = request.getParameter("groupnumber");
 
-		// //System.out.println(groupnumber);
-
 		String url = "/Registration?g=" + groupnumber;
 
 		String role = request.getParameter("role");
-		// //System.out.println(role);
 		String email = request.getParameter("email");
 		String lastname = request.getParameter("lastname");
 		String firstname = request.getParameter("firstname");
@@ -97,9 +94,6 @@ import javax.servlet.http.HttpServletResponse;
 			}
 		}
 
-		// //System.out.println("Der User " + firstname +" " + lastname +
-		// " wird registriert. Gender: " + gender + " "+genderValue );
-
 		String password = request.getParameter("password");
 		String password_repeat = request.getParameter("password_repeat");
 
@@ -110,10 +104,6 @@ import javax.servlet.http.HttpServletResponse;
 		request.setAttribute("lastname", lastname);
 		request.setAttribute("gender", gender);
 		UserRealm realm = new UserRealm();
-		// System.out.println(email);
-		// System.out.println(firstname);
-		// System.out.println(lastname);
-		// System.out.println(gender);
 
 		try {
 
@@ -261,7 +251,6 @@ import javax.servlet.http.HttpServletResponse;
 		
 		try{
 			realm.createNewUser(email, lastname, firstname, encryptedPassword, "professor", null, gender);			
-						
 						
 			//attributes not needed anymore after successful registration
 			request.removeAttribute("email");

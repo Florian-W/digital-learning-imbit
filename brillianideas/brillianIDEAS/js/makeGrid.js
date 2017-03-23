@@ -348,7 +348,7 @@ var makeGrid = function makeGrid(view){
                             }).each(function (index, element) {
                                 deferredArray.push($(element).delay(index * 500).children('.back').css('display', 'none').delay(0).parent().animate({opacity: 1}, {duration: 500}));
                                 deferredArray.push($.ajax({
-                                	url: 'xml/index.php?base=grid&type=class&detail=true&filter=' + $(element).children('.front').text()
+                                	url: 'xml/index.php?base=grid&type=class&detail=true&withLink=true&filter=' + $(element).children('.front').text()
                                 }).done(function (data) {
                                     $(element).children('.back').append(data);
                                     $(element).find('.contentWrapper').hide();
