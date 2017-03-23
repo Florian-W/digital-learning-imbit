@@ -11,7 +11,7 @@
 	<xsl:param name="filter" select="''"/>
 	
 	<xsl:template match="/">
-	<xsl:choose>
+		<xsl:choose>
 			<xsl:when test="$type='class'">
 				<xsl:element name="div">
 					<xsl:attribute name="class">
@@ -56,9 +56,9 @@
 														</xsl:attribute>
 													</xsl:if>
 													<xsl:attribute name="target">
-			                                    <xsl:text>
-			                                        _blank
-			                                    </xsl:text>
+					                                    <xsl:text>
+					                                        _blank
+					                                    </xsl:text>
 													</xsl:attribute>
 													<xsl:element name="img">
 														<xsl:attribute name="src">
@@ -68,6 +68,9 @@
 															<xsl:text>&#160;</xsl:text>
 														</xsl:attribute>
 														<xsl:attribute name="class">thumbnail</xsl:attribute>
+														<xsl:element name="h2">
+															<xsl:value-of select="Titel" />
+														</xsl:element>
 													</xsl:element>
 												</xsl:element>
 											</xsl:when>
@@ -80,6 +83,9 @@
 														<xsl:text>&#160;</xsl:text>
 													</xsl:attribute>
 													<xsl:attribute name="class">thumbnail</xsl:attribute>
+													<xsl:element name="h2">
+														<xsl:value-of select="Titel" />
+													</xsl:element>
 												</xsl:element>
 											</xsl:otherwise>
 										</xsl:choose>
@@ -120,6 +126,9 @@
 															<xsl:text>&#160;</xsl:text>
 														</xsl:attribute>
 														<xsl:attribute name="class">thumbnail</xsl:attribute>
+													</xsl:element>
+													<xsl:element name="h2">
+														<xsl:value-of select="Titel" />
 													</xsl:element>
 												</xsl:element>
 											</xsl:otherwise>
@@ -357,9 +366,11 @@
 								<xsl:element name="br" />
 								<xsl:text>Autor: </xsl:text>
 								<xsl:value-of select="Author" />
-								<xsl:element name="br" />
-								<xsl:text>Dauer: </xsl:text>
-								<xsl:value-of select="Duration" />
+								<xsl:if test="Duration[not(text()=null or normalize-space(text())='')]">
+									<xsl:element name="br" />
+									<xsl:text>Dauer: </xsl:text>
+									<xsl:value-of select="Duration" />
+								</xsl:if>
 							</xsl:element>
 						</xsl:element>
 					</xsl:element>
