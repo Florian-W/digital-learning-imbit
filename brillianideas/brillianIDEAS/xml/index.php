@@ -93,11 +93,16 @@ function prepareTransformCategorie($base){
 function transformCategorie($base, $type, $detail = 'false'){
 
     $filter = ((isset($_GET['filter'])) ? $_GET['filter'] : '');
+    $withLink = 'false';
+    if(isset($_GET['withLink'])){
+        $withLink = $_GET['withLink'];
+    } 
 
     $params = array(
         'type' => $type,
         'detail' => $detail,
-        'filter' => $filter
+        'filter' => $filter,
+        'withLink' => $withLink
     );
 
 	if($base == "grid" && $type == "class" && $detail == "true"){

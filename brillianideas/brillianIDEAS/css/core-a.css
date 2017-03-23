@@ -172,15 +172,28 @@ img.thumb {
     justify-content: center;
 }
 
-.learning > img.thumbnail, .learning > a >img.thumbnail {
+.learning > img.thumbnail, .learning > a > img.thumbnail {
 	max-width: 350px;
 	max-height: 350px;
+}
+
+.contentWrapper img.thumbnail {
+	max-width: 250px !important;
+	max-height: 250px !important;
 }
 
 .contentWrapper > .learning {
 	margin-top: 50px;
 }
 
+.contentWrapper > .learning > div {
+	display: inline;
+}
+
+.contentWrapper > .learning > div > h2 {
+	display: inline;
+	margin-left: 10%;
+}
 
 #overlay {
     display: none;
@@ -447,3 +460,4 @@ and (max-device-width: 1024px) {
     margin: 5px;
     border-radius: 10px;
 }
+
