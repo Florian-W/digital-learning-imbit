@@ -1,4 +1,4 @@
-/**
+﻿/**
  * 
  */
 
@@ -7,7 +7,6 @@
 var dotsspace;
 
 $(window).on('load', function(){
-
 	/**
 	* Added hash to navigate page
 	*/

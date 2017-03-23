@@ -148,11 +148,10 @@ function noOverlayInGrid(id, x, y, count, key){
 			 * Setze Schleifenvariablen für innere Schleife (Value [0] entspricht der ID Position im Array
 			 */
 			e_position = new rectOutlines($('#' + value[0]));
-			
-			/**
-			 * check if both divs intersect
-			 */
 			if(rectOutlines.overlaps(e_position, card_position)){
+				/**
+				* verhindert, dass eine Karte zwischen zwei bereits platzierten hin und her pingt
+				*/
 				if (movedInCombo[value[0]][id]){
 					card_position.left = ((card_position.left <= e_position.left)?e_position.right:e_position.left - card_position.width);
 					card_position.top = ((card_position.top <= e_position.top)? e_position.bottom : e_position.top - card_position.height);
@@ -178,9 +177,6 @@ function noOverlayInGrid(id, x, y, count, key){
 					});
 					movedInCombo[value[0]][id] = true;
 				}
-				/**
-				 * ensure loop continues and reset iteration through divs
-				 */
 				loop = true;
 				return false;
 			}
@@ -188,27 +184,34 @@ function noOverlayInGrid(id, x, y, count, key){
 		})
 	} while(loop);
 	/**
-	 * set data value for orde of appearance
+	 * Daten werden für die Sicherstellung der Reihenfolge des Erscheinens gesetzt
 	 */
 	$card.attr('data-sid', "" + count);
+	/**
+	 * Stellt die Garantie aus, dass die Positionierung abgeschlossen wurde
+	 */
 	return $.Deferred().promise();
 };
 
 /**
- * Does all the start animation an utilizes the position function noOVerlayGrid
+ * Erstellt und animiert die Darstellungen der Lerninhalte
  * @function makeGrid
- * @param {String} decides which view to create (only 'digitalLearning' and 'imbit' are valid)
+ * @param {String} Entscheidungsparameter welche Ansicht erstellt wird
  * @returns {undefined} nothing
  * @author Nick London <nick.london94@gmail.com>
  */
 var makeGrid = function makeGrid(view){
-	/**
-	 * decides the view
-	 */
     switch (view){
         case 'digitalLearning':
+			/**
+			 * speichert alle Animationen um deren Fertigstellung sicherzustellen
+			 */
 			var animationPromises = new Array();
-			
+			/**
+			* Entfernt temporäre Änderungen am DOM und entfernt Zeilenumbrüche, die aus der Erstellungstechnik der Ansicht entstehen.
+			* @function makeGrid~cleanUp();
+			* @memberof makeGrid
+			*/
 			var cleanUp = function(){
 				$('#grid').css('cursor', 'default');
 				$('.flipcard, .flipcard .face').css('pointer-events', 'auto').css('cursor', 'pointer');
@@ -218,11 +221,23 @@ var makeGrid = function makeGrid(view){
 				$('.flipcard').each(function(i,e){$(e).css({width: $(e).children('.front').outerWidth(true) +1, height: $(e).children('.front').outerHeight(true)+1})})
 				$('.flipcard').each(function(i,e){$(e).css({minWidth: $(e).children('.front').outerWidth(true) +1, minHeight: $(e).children('.front').outerHeight(true)+1})})
 			}
-			
+			/**
+			 * Sortiert die einzelnen Lerntypen auf Basis des data-sid Attributes
+			 * @function makeGrid~sortTiles
+			 * @memberof makeGrid
+			 * @param a {jQuery)
+			 * @patam b (jQuery)
+			 * @return {boolean} true wenn A in einer aufsteigenden Sortierung hinter B erscheinen sollte
+			 */
 			var sortTiles = function (a, b) {
 					return (($(a).data('sid') > $(b).data('sid')) ? 1 : -1);
 				};
-			
+			/**
+			 * Blendet das mitgegebene Objekt ein und startet das Einblenden des Folgeobjekts
+			 * @function makeGrid~animateTile 
+			 * @memberof makeGrid
+			 * @param obj {jQuery | Object} Das zu animierende Objekt.
+			 */
 			var animateTile = function(obj){
 				var $obj = $(obj);
 				animationPromises.push($obj.animate({opacity: 1}, {
@@ -232,7 +247,11 @@ var makeGrid = function makeGrid(view){
 					})
 				}));
 			}
-			
+			/**
+			 * Führt die Animationen des Koordinatensystems aus und ruft weitere Subroutinen auf 
+			 * @function makeGrid~animateTiles
+			 * @memberof makeGrid
+			 */
 			var animateTiles = function () {
 				
 				/**
@@ -266,6 +285,11 @@ var makeGrid = function makeGrid(view){
 			
 			}
 			
+			/**
+			 * Läd die einzelnen Lerninhalte eines Lerntypen via AJAX nach
+			 * @function makeGrid~loadLearnings
+			 * @param obj {jQuery | Object } jQuery Collection oder DOM-Element des Lerntypen
+			 */
 			var loadLearnings = function(obj){
 				var $obj = $(obj);
 				$.ajax({
@@ -285,7 +309,13 @@ var makeGrid = function makeGrid(view){
 					}
 				});
 			}
-			
+			/**
+			 * Läd die DOM-Elemente der Lerntypen nach
+			 * @function makeGrid~fillTile
+			 * @memberof makeGrid
+			 * @param i { Number } Zähler der jQuery.each Schleife. In der Funktion nicht genutzt
+			 * @param obj { jQuery | Object } Objekt des entsprechenden Lerntypen
+			 */
 			var fillTile = function(i, obj){
 				var $obj = $(obj);
 				$.ajax({
@@ -296,7 +326,11 @@ var makeGrid = function makeGrid(view){
 					}
 				});
 			}
-			
+			/**
+			 * Lädt das äußere Grid nach
+			 * @function makeGrid~fillTiles
+			 * @memberof makeGrid
+			 */
 			var fillTiles = function(){
 				$(document).ajaxStop(function() {
 					animateTiles();
