@@ -37,7 +37,6 @@ var digitalLearning = function (file) {
     //TRIGGER
     $('#site').click(function (e) {
         var target = $(e.target);
-        console.log(e.target);
         if (target.is(".flipcard .face.front")) {
             target.parent().children('.back').css('display', 'block');
             	//toggleClass(foo) adds foo as class attribute
