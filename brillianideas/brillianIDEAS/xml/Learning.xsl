@@ -366,9 +366,11 @@
 								<xsl:element name="br" />
 								<xsl:text>Autor: </xsl:text>
 								<xsl:value-of select="Author" />
-								<xsl:element name="br" />
-								<xsl:text>Dauer: </xsl:text>
-								<xsl:value-of select="Duration" />
+								<xsl:if test="Duration[not(text()=null or normalize-space(text())='')]">
+									<xsl:element name="br" />
+									<xsl:text>Dauer: </xsl:text>
+									<xsl:value-of select="Duration" />
+								</xsl:if>
 							</xsl:element>
 						</xsl:element>
 					</xsl:element>
