@@ -27,12 +27,12 @@ var digitalLearning = function (file) {
                 $('#animation_xaxis_left').width() :
                 $('#animation_xaxis_right').width()
         ),
-        width: $(window).width() - 2 * this.xoffset,
-        height: $(window).height() - 2 * this.yoffset
+        width: $(window).width() - this.xoffset,
+        height: $(window).height() - this.yoffset
     };
     // [WORKAROUND] does not work in object creation
-    $display.width = $(window).width() - 2 * $display.xoffset;
-    $display.height = $(window).height() - 2 * $display.yoffset;
+    $display.width = $(window).width() - $display.xoffset;
+    $display.height = $(window).height() - $display.yoffset;
 
     //TRIGGER
     $('#site').click(function (e) {
