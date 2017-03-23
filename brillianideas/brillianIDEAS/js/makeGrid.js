@@ -204,10 +204,6 @@ var makeGrid = function makeGrid(view){
     switch (view){
         case 'digitalLearning':
 			/**
-			 * speichert alle Animationen um deren Fertigstellung sicherzustellen
-			 */
-			var animationPromises = new Array();
-			/**
 			* Entfernt temporäre Änderungen am DOM und entfernt Zeilenumbrüche, die aus der Erstellungstechnik der Ansicht entstehen.
 			* @function makeGrid~cleanUp();
 			* @memberof makeGrid
@@ -240,12 +236,12 @@ var makeGrid = function makeGrid(view){
 			 */
 			var animateTile = function(obj){
 				var $obj = $(obj);
-				animationPromises.push($obj.animate({opacity: 1}, {
+				$obj.animate({opacity: 1}, {
 					duration: 500, 
 					done: (($obj.next().length == 0) ? cleanUp : function(){
 						animateTile($obj.next());
 					})
-				}).promise());
+				});
 			}
 			/**
 			 * Führt die Animationen des Koordinatensystems aus und ruft weitere Subroutinen auf 
