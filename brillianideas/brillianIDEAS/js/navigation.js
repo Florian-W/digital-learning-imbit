@@ -7,6 +7,7 @@
 var dotsspace;
 
 $(window).on('load', function(){
+	$ = jQuery;
 	/**
 	* Added hash to navigate page
 	*/
@@ -78,7 +79,8 @@ $(window).on('load', function(){
 	
 });
 
-$(document).ready(function(){		
+$(document).ready(function(){	
+	$ = jQuery;	
  	$('#dots').css({		
  		top: $('#dots').position().top		
  	});		
