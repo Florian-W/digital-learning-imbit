@@ -242,10 +242,10 @@ var makeGrid = function makeGrid(view){
 				var $obj = $(obj);
 				animationPromises.push($obj.animate({opacity: 1}, {
 					duration: 500, 
-					done: (($obj.next().length == 0) ? undefined : function(){
+					done: (($obj.next().length == 0) ? cleanUp : function(){
 						animateTile($obj.next());
 					})
-				}));
+				}).promise());
 			}
 			/**
 			 * Führt die Animationen des Koordinatensystems aus und ruft weitere Subroutinen auf 
@@ -257,11 +257,9 @@ var makeGrid = function makeGrid(view){
 				/**
 				 * disables the tiles and enables the back layer
 				 */
-				$('#grid').css('cursor', 'pointer');
+				$('#grid').css('cursor', 'pointer').css("width", $display.width).css("height", $display.height).css('opacity', 1);
 				$('.flipcard, .flipcard .face').css('pointer-events', 'none').css('cursor', 'default');
-				$('#grid').css("width", $display.width).css("height", $display.height);
-				$('#grid').css('opacity', 1);
-				$('#animation_welcome').animate({left: 50 + $('#animation_welcome').outerWidth() / 2, top: 100}, {duration: 1000})
+				$('#animation_welcome').animate({left: 50 + $('#animation_welcome').outerWidth() / 2, top: 100}, {duration: 1000});
 				$('#xaxis').animate({opacity: 1, width: $display.width}, {duration: 1000});
 				$('#yaxis').animate({opacity: 1, height: $display.height}, {duration: 1000});
 				
@@ -279,9 +277,6 @@ var makeGrid = function makeGrid(view){
 				$('#grid').html($flipcards).append('<div id="backlayer"></div>');
 				$flipcards = $('#grid').children('.flipcard');
 				animateTile($flipcards.first());
-				
-				
-				$.when(animationPromises).done(cleanUp)
 			
 			}
 			
