@@ -3,7 +3,7 @@
 	<Learning>
 		<GUID>389b9fb9-e9e6-4bc0-b3f0-6d29f0674b8b</GUID>
 		<Titel>How to build a start-up?</Titel>
-		<Description>Dieser MOOC stellt die verschiedenen Schritte zur Gründung eines Start-Ups vor. Du erhälst Einblicke in Strategien, wie man eine Idee zu einem erfolgreichen Start-Up entwickeln kann. Mit diesen Vorgehensweisen und Techniken können häufige Fehler bei der Entwicklung eines Start-Ups zu vermieden werden.  Der Kurs ist kostenlos, in englischer Sprache verfügbar und wiederholt die Inhalte der Vorlesung "Einführung in die BWL".</Description>
+		<Description>Dieser MOOC stellt die verschiedenen Schritte zur Gründung eines Start-Ups vor. Du erhälst Einblicke in Strategien, wie man eine Idee zu einem erfolgreichen Start-Up entwickeln kann. Mit diesen Vorgehensweisen und Techniken können häufige Fehler bei der Entwicklung eines Start-Ups vermieden werden.  Der Kurs ist kostenlos, in englischer Sprache verfügbar und wiederholt die Inhalte der Vorlesung "Einführung in die BWL".</Description>
 		<Type>mooc</Type>
 		<Embedded/>
 		<src>https://de.udacity.com/course/how-to-build-a-startup--ep245/</src>
@@ -17,7 +17,7 @@
 		<Prestigious>FALSE</Prestigious>
 		<Duration>4 Wochen</Duration>
 		<Author>Steve Blank; Kathleen Mullaney</Author>
-		<Copyright>Udacity, Inc.</Copyright>
+		<Copyright>Udacity Inc.</Copyright>
 		<Last_Modified>2017</Last_Modified>
 		<Thumb>How_to_build_a_start-up.png</Thumb>
 		<Area>Wirtschaft</Area>
@@ -51,7 +51,7 @@
 		<Last_Modified>2017</Last_Modified>
 		<Thumb>Business_model_canvas_youtube.jpg</Thumb>
 		<Area>Wirtschaft</Area>
-		<Number>W3WI_202</Number>
+		<Number>W3WI_201</Number>
 		<Learning_Unit>Grundlagen der Betriebswirtschaftslehre</Learning_Unit>
 		<Abdeckungsgrad>0.2</Abdeckungsgrad>
 		<Language>EN</Language>
@@ -81,7 +81,7 @@
 		<Last_Modified>2017</Last_Modified>
 		<Thumb>Circular_economy_An_Introduction.png</Thumb>
 		<Area>Wirtschaft</Area>
-		<Number>W3WI_203</Number>
+		<Number>W3WI_201</Number>
 		<Learning_Unit>Grundlagen der Betriebswirtschaftslehre</Learning_Unit>
 		<Abdeckungsgrad>0.1</Abdeckungsgrad>
 		<Language>EN</Language>
@@ -107,11 +107,11 @@
 		<Prestigious>FALSE</Prestigious>
 		<Duration/>
 		<Author>Verlag Franz Vahlen GmbH</Author>
-		<Copyright/>
+		<Copyright>Verlag Franz Vahlen GmbH</Copyright>
 		<Last_Modified>2017</Last_Modified>
-		<Thumb>bwl.jpg</Thumb>
+		<Thumb>Bwl.jpg</Thumb>
 		<Area>Wirtschaft</Area>
-		<Number>W3WI_204</Number>
+		<Number>W3WI_201</Number>
 		<Learning_Unit>Grundlagen der Betriebswirtschaftslehre</Learning_Unit>
 		<Abdeckungsgrad>0.3</Abdeckungsgrad>
 		<Language>DE</Language>
@@ -123,7 +123,7 @@
 	<Learning>
 		<GUID>680161be-b1e0-4808-8794-b012b3ebf017</GUID>
 		<Titel>Umfrage Unternehmensziele</Titel>
-		<Description>Diese Umfrage beschäftigt sich mit Unternehmenszielen. Durch das Ausfüllen der Umfrage sollen die Inhalte der Vorlesung gefestigt werden. Die Umfrage wurde voin Prof. Bendl im Rahmen der Vorlesung "Einführung in die BWL" entwickelt und hilft dir  die verschiedenen Funktionsbereiche im Unternehmen zu verstehen.</Description>
+		<Description>Diese Umfrage beschäftigt sich mit Unternehmenszielen. Durch das Ausfüllen der Umfrage sollen die Inhalte der Vorlesung gefestigt werden. Die Umfrage wurde von Prof. Bendl im Rahmen der Vorlesung "Einführung in die BWL" entwickelt und hilft dir  die verschiedenen Funktionsbereiche im Unternehmen zu verstehen.</Description>
 		<Type>quiz</Type>
 		<Embedded/>
 		<src>https://de.surveymonkey.com/r/G79PZTY</src>
@@ -141,7 +141,7 @@
 		<Last_Modified>2017</Last_Modified>
 		<Thumb>Umfrage_Unternehmensziele.jpg</Thumb>
 		<Area>Wirtschaft</Area>
-		<Number>W3WI_205</Number>
+		<Number>W3WI_201</Number>
 		<Learning_Unit>Grundlagen der Betriebswirtschaftslehre</Learning_Unit>
 		<Abdeckungsgrad>0.3</Abdeckungsgrad>
 		<Language>DE</Language>
@@ -171,7 +171,7 @@
 		<Last_Modified>2017</Last_Modified>
 		<Thumb>Umfrage_Aktiengesellschaft.jpg</Thumb>
 		<Area>Wirtschaft</Area>
-		<Number>W3WI_206</Number>
+		<Number>W3WI_201</Number>
 		<Learning_Unit>Grundlagen der Betriebswirtschaftslehre</Learning_Unit>
 		<Abdeckungsgrad>0.3</Abdeckungsgrad>
 		<Language>DE</Language>
@@ -213,7 +213,7 @@
 	<Learning>
 		<GUID>d10cbe64-6c1e-489a-8451-46be825c4fab</GUID>
 		<Titel>Digital and social media marketing: An introduction </Titel>
-		<Description>Dieser auf Englisch bereitgestellte MOOC beschäftigt sich mit digitalem Marketing. Anhand von Beispielen aus der Industrie erhälst du einen Einblick, wie eine Online-Marketing-Strategie aufgestellt werden kann. Gerade im Hinblick auf die rasante Entwicklung des digitalen Marketing werden verschiedene Strategien und Techniken vorgestellt.</Description>
+		<Description>Dieser auf Englisch bereitgestellte MOOC beschäftigt sich mit digitalem Marketing. Anhand von Beispielen aus der Industrie erhälst du einen Einblick, wie eine Online-Marketing-Strategie aufgestellt werden kann. Gerade im Hinblick auf die rasante Entwicklung des digitalen Marketings werden verschiedene Strategien und Techniken vorgestellt.</Description>
 		<Type>mooc</Type>
 		<Embedded/>
 		<src>https://iversity.org/de/courses/digital-and-social-media-marketing</src>
@@ -259,7 +259,7 @@
 		<Author>Stefan Schweiger</Author>
 		<Copyright>Stefan Schweiger</Copyright>
 		<Last_Modified>2017</Last_Modified>
-		<Thumb>Übungsaufgaben_Rechnungswesen.jpg</Thumb>
+		<Thumb>Uebungsaufgaben_Rechnungswesen.jpg</Thumb>
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_202</Number>
 		<Learning_Unit>Finanzbuchhaltung</Learning_Unit>
@@ -289,7 +289,7 @@
 		<Author>Stefan Schweiger</Author>
 		<Copyright>Stefan Schweiger</Copyright>
 		<Last_Modified>2017</Last_Modified>
-		<Thumb>Übungsaufgaben_Buchungssätze.jpg</Thumb>
+		<Thumb>Uebungsaufgaben_Buchungssaetze.jpg</Thumb>
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_202</Number>
 		<Learning_Unit>Finanzbuchhaltung</Learning_Unit>
@@ -321,17 +321,14 @@
 		<Last_Modified>2013</Last_Modified>
 		<Thumb>Deloitte_E-Learning_IFRS_und_IAS.png</Thumb>
 		<Area>Wirtschaft</Area>
-		<Number>W3WI_202</Number>
-		<Learning_Unit>Kosten- und Leistungsrechnung        
-       
-       
-       </Learning_Unit>
+		<Number>W3WI_203</Number>
+		<Learning_Unit>Investition und Finanzierung</Learning_Unit>
 		<Abdeckungsgrad>1</Abdeckungsgrad>
 		<Language>EN</Language>
 		<Tech_Requirements>Zip</Tech_Requirements>
 		<Semester>2</Semester>
 		<Recommended>FALSE</Recommended>
-		<Abbreviation>KLAR</Abbreviation>
+		<Abbreviation>KLR</Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>1e023e71-2cf3-49f4-bc89-6040d37c52b0</GUID>
@@ -486,7 +483,7 @@
 	<Learning>
 		<GUID>76456246-0d4b-4f78-82bb-9271a53e2015</GUID>
 		<Titel>Planspiel Wein</Titel>
-		<Description>Im Planspiel Wein führst du eine virtuelle Winzerei. Im Laufe des Spiels musst du dich sowohl um den Vertrieb, die Produktion und die Lagerung, als auch das Personalwesen und die Finanzierung kümmern. So vereint das Planspiel viele verschiedene Bereiche des IMBIT-Studiums und hilft dir Erfahrung im Management eines Unternehmens zu sammeln. </Description>
+		<Description>Im Planspiel Wein führst du eine virtuelle Winzerei. Im Laufe des Spiels musst du dich sowohl um den Vertrieb, die Produktion und die Lagerung, als auch um das Personalwesen und die Finanzierung kümmern. So vereint das Planspiel viele verschiedene Bereiche des IMBIT-Studiums und hilft dir Erfahrung im Management eines Unternehmens zu sammeln. </Description>
 		<Type>planspiel</Type>
 		<Embedded/>
 		<src>http://www.planspielw.de/Staff.aspx?token=eiuyuaevlvmjcpzavcnqbluu</src>
@@ -532,7 +529,7 @@ Die abgedeckten Themenbereiche (bei wiederholter und aufmerksamer Spielaktivitä
 		<Duration/>
 		<Author>WIMBIT12C, WIMBIT13C</Author>
 		<Copyright>DHBW Mannheim</Copyright>
-		<Last_Modified>42460</Last_Modified>
+		<Last_Modified>2017</Last_Modified>
 		<Thumb>BrillianICM_seriousgame.PNG</Thumb>
 		<Area>Internationales</Area>
 		<Number>W3WI_IMBIT_301</Number>
@@ -579,7 +576,7 @@ Die GLOBE-Dimensionen sind ein ausgewählter kulturtheoretischer Ansatz, der sow
 	<Learning>
 		<GUID>8b14cf31-17dd-4f8a-acba-b770b4392c80</GUID>
 		<Titel>10 Minutes with Geert Hofstede</Titel>
-		<Description>Geert Hofstede selbst erklärt in kurzen Videos die Unterschiede der von ihm entwickelten Kulturdimensionen. So erhältst du Einblicke in die Gegensätzlichkeiten der Dimensionen-Paare und welche Effekte diese in der Praxis haben.
+		<Description>Geert Hofstede selbst erklärt in kurzen Videos die Unterschiede der von ihm entwickelten Kulturdimensionen. So erhälst du Einblicke in die Gegensätzlichkeiten der Dimensionen-Paare und welche Effekte diese in der Praxis haben.
 Hofstedes Kulturdimensionen vermitteln ein Grundverständnis für den Curriculumsbereich "Fundamentals in Intercultural Management" und geben Aufschluss über Themen wie "Das Phänomen Kultur", "Stereotypisierung" und "Unternehmens- und nationale Kultur".</Description>
 		<Type>video</Type>
 		<Embedded>FALSE</Embedded>
@@ -673,7 +670,7 @@ Folgende Themen des ICM Schwerpunktthemas "International Teams" werden abgedeckt
 		<GUID>991a55a7-2d75-48d2-b720-ba73eae9b53c</GUID>
 		<Titel>Wahrheitstafeltrainer</Titel>
 		<Description>Mithilfe dieser Online-Übung kann die zweiwertige Logik (True/False) anhand des Ausfüllens unterschiedlicher Wahrheitstafeln trainiert werden. Deine Antworten werden sofort korrigiert und du kannst das Schwierigkeitsniveau an deine Lernbedürfnisse anpassen, indem du einzelne Spaltenlösungen vorzeitig aufdeckst.
-Auf spielerische Art und Weise festigst du dein Wissen im Bereich"'Aussageverknüpfungen und Wahrheitstafeln", welches dem Modulteilbereich "Logik und Algebra" des IMBIT-Curriculums unterzuordnen ist.</Description>
+Auf spielerische Art und Weise festigst du dein Wissen im Bereich "Aussageverknüpfungen und Wahrheitstafeln", welches dem Modulteilbereich "Logik und Algebra" des IMBIT-Curriculums unterzuordnen ist.</Description>
 		<Type>website</Type>
 		<Embedded/>
 		<src>http://www.wi.hs-wismar.de/~cleve/vorl/ti2027/wtafeln/index.html</src>
@@ -843,7 +840,7 @@ So findest du heraus, in welchen Bereichen du deine Fähigkeiten noch ausbauen k
 		<Author>DHBW Mannheim; ZeMath Zentrum für mathematisch-naturwissenschaftliches Basiswissen</Author>
 		<Copyright>DHBW Mannheim</Copyright>
 		<Last_Modified>2008</Last_Modified>
-		<Thumb>Einschätzungstest_mathx3_quiz.png</Thumb>
+		<Thumb>Einschaetzungstest_mathx3_quiz.png</Thumb>
 		<Area>Methodische Grundlagen</Area>
 		<Number>W3WI_601</Number>
 		<Learning_Unit>Analysis und lineare Algebra</Learning_Unit>
@@ -888,7 +885,7 @@ Dieser Kurs wird dich weiterbringen, wenn du über grundlegende mathematischen K
 	<Learning>
 		<GUID>a20ffbe9-d077-4a8a-ad6f-adcb44fa1093</GUID>
 		<Titel>Videoplaylist des Mathematikprofessors Jörn Lowiskach</Titel>
-		<Description>Jörn Lowiskach veröffentlicht als Professor der Ingenieurmathematik Videos seiner vergangenen Lehrveranstaltungen. Die "Mathematik 1"-Vorlesungen decken schwerpunktmäßig folgende Themen des IMBIT-Curriculums ab: "Analysis: Funktionen &amp; deren Eigenschaften", "Ableitungen", "Grenzwerte" und "Stetigkeit". "Mathematik 2" behandelt relevante Themen der Linearen Algebra, wie z.B. "Matritzenoperationen", "Determinante", sowie "Lineare Gleichungssysteme".
+		<Description>Jörn Lowiskach veröffentlicht als Professor der Ingenieurmathematik Videos seiner vergangenen Lehrveranstaltungen. Die "Mathematik 1"-Vorlesungen decken schwerpunktmäßig folgende Themen des IMBIT-Curriculums ab: "Analysis: Funktionen &amp; deren Eigenschaften", "Ableitungen", "Grenzwerte" und "Stetigkeit". "Mathematik 2" behandelt relevante Themen der Linearen Algebra, wie z.B. "Matrizenoperationen", "Determinante", sowie "Lineare Gleichungssysteme".
 Über die Suchfunktion der Website kannst du schnell und unkompliziert Videos zu konkreten Themen und Stichworten finden, zu denen du zusätzliche Erklärungen und Vertiefungen benötigst.</Description>
 		<Type>video</Type>
 		<Embedded/>
@@ -905,7 +902,7 @@ Dieser Kurs wird dich weiterbringen, wenn du über grundlegende mathematischen K
 		<Author>Prof. Dr. Jörn Loviscach</Author>
 		<Copyright>Prof. Dr. Jörn Loviscach</Copyright>
 		<Last_Modified>2016</Last_Modified>
-		<Thumb>Videoplaylist_Jörn_Loviscach_video.jpg</Thumb>
+		<Thumb>Videoplaylist_Joern_Loviscach_video.jpg</Thumb>
 		<Area>Methodische Grundlagen</Area>
 		<Number>W3WI_601</Number>
 		<Learning_Unit>Analysis und lineare Algebra</Learning_Unit>
@@ -932,9 +929,7 @@ Dieser Kurs wird dich weiterbringen, wenn du über grundlegende mathematischen K
 		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
 		<Duration/>
-		<Author>Douglas A. Lind, 
-William G. Marchal, 
-Samuel A. Wathen</Author>
+		<Author>Douglas A. Lind, William G. Marchal, Samuel A. Wathen</Author>
 		<Copyright>McGraw-Hill Global Education Holdings, LLC.</Copyright>
 		<Last_Modified>2017</Last_Modified>
 		<Thumb>Statistical_Techniques_website.png</Thumb>
@@ -951,7 +946,7 @@ Samuel A. Wathen</Author>
 	<Learning>
 		<GUID>a2d7d46a-eee6-4bdb-8f86-44442617884b</GUID>
 		<Titel>Wolfram Statistics Course Assistant</Titel>
-		<Description>Diese auf den Statistik-Funktionalitäten von WolframAlpha basierende App ist ein zuverlässiger Unterstützer für den Bereich der deskriptiven Statistik und Wahrscheinlichkeitsrechnung, sowohl für IOS- als auch für Android-User! Hier kannst du zweidimensionale Daten auf unterschiedliche Weise darstellen und veranschaulichen, Aufgaben zur Normal- und Binomialverteilung lösen und Zufallzahlen erzeugen. Dies alles hilft dir dabei, Statistik-Aufgaben besser zu Lösen und verringert zusätzlich den Zeichenaufwand.</Description>
+		<Description>Diese auf den Statistik-Funktionalitäten von WolframAlpha basierende App ist ein zuverlässiger Unterstützer für den Bereich der deskriptiven Statistik und Wahrscheinlichkeitsrechnung, sowohl für IOS- als auch für Android-User! Hier kannst du zweidimensionale Daten auf unterschiedliche Weise darstellen und veranschaulichen, Aufgaben zur Normal- und Binomialverteilung lösen und Zufallzahlen erzeugen. Dies alles hilft dir dabei, Statistik-Aufgaben besser zu lösen und verringert zusätzlich den Zeichenaufwand.</Description>
 		<Type>app</Type>
 		<Embedded/>
 		<src/>
@@ -1196,7 +1191,7 @@ In diesem Online-Kurs wird die lineare Optimierung/Programmierung gelehrt, um Te
 	<Learning>
 		<GUID>3a23de4d-617f-4d98-b2c6-ca19d0fe6e53</GUID>
 		<Titel>Greedy Algorithms, Minimum Spanning Trees, and Dynamic Programming</Titel>
-		<Description>Fokus des MOOCs sind Algorithmen, die im Umfeld der Operations Research Anwendung finden: Zum einen werden Greedy Algorithmen (z.B Prims und Kruskals Algoritmus für minimale Spannbäume) behandelt, zum anderen verschiedene Ansätze der dynamischen Programmierung (z.B. das Rucksack Problem und das Branch-and-Bound-Verfahren). Für dich als IMBIT-Student ist insbesondere der Stoff der ersten zwei Kurswochen relevant, da mit Prims und Kruskals Algoritmus Teile des Curriculumthemas "Graphentheorie" abgedeckt werden. Das Wissen im Bereich der Greedy-Algoritmen kannst du zusätzlich in den folgenden zwei Kurswochen noch vertiefen.</Description>
+		<Description>Fokus des MOOCs sind Algorithmen, die im Umfeld der Operations Research Anwendung finden: Zum einen werden Greedy Algorithmen (z.B Prims und Kruskals Algorithmus für minimale Spannbäume) behandelt, zum anderen verschiedene Ansätze der dynamischen Programmierung (z.B. das Rucksack Problem und das Branch-and-Bound-Verfahren). Für dich als IMBIT-Student ist insbesondere der Stoff der ersten zwei Kurswochen relevant, da mit Prims und Kruskals Algoritmus Teile des Curriculumthemas "Graphentheorie" abgedeckt werden. Das Wissen im Bereich der Greedy-Algoritmen kannst du zusätzlich in den folgenden zwei Kurswochen noch vertiefen.</Description>
 		<Type>mooc</Type>
 		<Embedded/>
 		<src>https://www.coursera.org/learn/algorithms-greedy#pricing</src>
@@ -1346,7 +1341,7 @@ In diesem Online-Kurs wird die lineare Optimierung/Programmierung gelehrt, um Te
 	<Learning>
 		<GUID>90ed26b4-32f5-49ff-be37-5f997e2f35f5</GUID>
 		<Titel>Vorlesung zu Communication Systems</Titel>
-		<Description>Diese Webseite zeigt alle Skripte aus der Vorlesung "Communication Systems" von Herrn Welter aus 2015. Hier lernst du die Grundlagen der Datenübertragung kennen und findest nützliche Links zu weiterführenden Lerninhalten im Themenbereich wie beispielsweise ein Tool zur Kalkulation von IP, Subnetz und Ranges. </Description>
+		<Description>Diese Webseite zeigt alle Skripte aus der Vorlesung "Communication Systems" von Herrn Welter aus 2015. Hier lernst du die Grundlagen der Datenübertragung kennen und findest nützliche Links zu weiterführenden Lerninhalten im Themenbereich wie beispielsweise ein Tool zur Kalkulation von IP-Adressen, Subnetz und Ranges. </Description>
 		<Type>website</Type>
 		<Embedded/>
 		<src>http://dhbw.welter.ws/</src>
@@ -1784,7 +1779,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Author>Prof. Dr. Michael Beurskens</Author>
 		<Copyright>Rheinische Friedrich-Wilhelms-Universität Bonn</Copyright>
 		<Last_Modified>2016</Last_Modified>
-		<Thumb>Schuldrecht_Vertragsschuldverhältnisse.jpg</Thumb>
+		<Thumb>Schuldrecht_Vertragsschuldverhaeltnisse.jpg</Thumb>
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_506</Number>
 		<Learning_Unit>Recht</Learning_Unit>
@@ -1814,7 +1809,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Author>Prof. Dr. Michael Beurskens</Author>
 		<Copyright>Rheinische Friedrich-Wilhelms-Universität Bonn</Copyright>
 		<Last_Modified>2016</Last_Modified>
-		<Thumb>Grundzüge_des_Handelsrechts.jpg</Thumb>
+		<Thumb>Grundzuege_des_Handelsrechts.jpg</Thumb>
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_506</Number>
 		<Learning_Unit>Recht</Learning_Unit>
@@ -1844,7 +1839,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Author>Mankiw and Taylor</Author>
 		<Copyright>Cengage Learning Inc.</Copyright>
 		<Last_Modified>2015</Last_Modified>
-		<Thumb>Economics_Students_Resources_accompanying_the_book_from_N_Gregory_Mankiw_and_Mark_P_Taylor.jpg</Thumb>
+		<Thumb>economics_mankiew.jpeg</Thumb>
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_505</Number>
 		<Learning_Unit>VWL</Learning_Unit>
@@ -2054,7 +2049,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Author>WITTENSTEIN SE</Author>
 		<Copyright>WITTENSTEIN SE</Copyright>
 		<Last_Modified>2012</Last_Modified>
-		<Thumb>Industrie_4_0_Die_technische_Revolution_geht_weiter.jpg</Thumb>
+		<Thumb/>
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Produktion und Materialwirtschaft</Learning_Unit>
@@ -2084,7 +2079,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Author>iTiZZiMO</Author>
 		<Copyright>iTiZZiMO</Copyright>
 		<Last_Modified>2013</Last_Modified>
-		<Thumb>Connect_Smart_Glasses_and_SAP_with_the_Simplifier.jpg</Thumb>
+		<Thumb/>
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Produktion und Materialwirtschaft</Learning_Unit>
@@ -2114,7 +2109,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Author>Daimler AG</Author>
 		<Copyright>Daimler AG</Copyright>
 		<Last_Modified>2015</Last_Modified>
-		<Thumb>Busproduktion_bei_der_EvoBus_GmbH.png</Thumb>
+		<Thumb/>
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Produktion und Materialwirtschaft</Learning_Unit>
@@ -2144,7 +2139,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Author>Fischer System-Mechanik</Author>
 		<Copyright>Fischer System-Mechanik</Copyright>
 		<Last_Modified>2011</Last_Modified>
-		<Thumb>Das_Synchrone_Produktionssystem_von_Fischer_Systemmechanik.jpg </Thumb>
+		<Thumb/>
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Produktion und Materialwirtschaft</Learning_Unit>
@@ -2158,7 +2153,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 	<Learning>
 		<GUID>a223aeb2-9270-4ebb-9f7a-72d967073ccf</GUID>
 		<Titel>ERP-Projektcheck</Titel>
-		<Description>Dieses Video ist das erste von 2 weiteren, in denen dir viele Fragen rund um das Thema ERP System beantwortet werden. Die Vorteile sowie der Nutzen eines solchen Systems für das Unternehmen werden aufgezeigt. Diese Video-Reihe bietet eine kompakte Zusammenfassung.</Description>
+		<Description>Dieses Video ist das erste von zwei weiteren, in denen dir viele Fragen rund um das Thema ERP System beantwortet werden. Die Vorteile sowie der Nutzen eines solchen Systems für das Unternehmen werden aufgezeigt. Diese Video-Reihe bietet eine kompakte Zusammenfassung.</Description>
 		<Type>youtube</Type>
 		<Embedded>TRUE</Embedded>
 		<src>https://www.youtube.com/watch?v=xnMnadTdKDE</src>
@@ -2174,7 +2169,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Author>SageGermany</Author>
 		<Copyright>SageGermany</Copyright>
 		<Last_Modified>2012</Last_Modified>
-		<Thumb>ERP_Projektcheck.png</Thumb>
+		<Thumb/>
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Produktion und Materialwirtschaft</Learning_Unit>
@@ -2204,7 +2199,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Author>ABB</Author>
 		<Copyright>ABB</Copyright>
 		<Last_Modified>2014</Last_Modified>
-		<Thumb>Industrie_4_0_Die_nächste_Revolution.jpg</Thumb>
+		<Thumb/>
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Produktion und Materialwirtschaft</Learning_Unit>
@@ -2234,7 +2229,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Author>VDMAonline</Author>
 		<Copyright>VDMAonline</Copyright>
 		<Last_Modified>2014</Last_Modified>
-		<Thumb>Industrie_4_0_Next_Steps_VDMA_online.png</Thumb>
+		<Thumb/>
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Produktion und Materialwirtschaft</Learning_Unit>
@@ -2264,7 +2259,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Author>DW (Deutsch)</Author>
 		<Copyright>DW (Deutsch)</Copyright>
 		<Last_Modified>2014</Last_Modified>
-		<Thumb>Industrie_4_0_Risiken_der_vernetzten_Produktion.jpg</Thumb>
+		<Thumb/>
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Produktion und Materialwirtschaft</Learning_Unit>
@@ -2294,7 +2289,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Author>Prof. Dr. Jörn Schlingensiepen</Author>
 		<Copyright>Prof. Dr. Jörn Schlingensiepen</Copyright>
 		<Last_Modified>2012</Last_Modified>
-		<Thumb>Stücklisten.png</Thumb>
+		<Thumb/>
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Produktion und Materialwirtschaft</Learning_Unit>
@@ -2324,7 +2319,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Author>Professor Frank Piller</Author>
 		<Copyright>RWTH Aachen TIM Group</Copyright>
 		<Last_Modified>2015</Last_Modified>
-		<Thumb>Geschäftsmodelle_für_Industrie_4_0.png</Thumb>
+		<Thumb/>
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Produktion und Materialwirtschaft</Learning_Unit>
@@ -2354,7 +2349,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Author>TheSimpleEconomics</Author>
 		<Copyright>TheSimpleEconomics</Copyright>
 		<Last_Modified>2016</Last_Modified>
-		<Thumb>Werkstattproduktion_Produktionstypen_einfach_erklärt.jpg</Thumb>
+		<Thumb/>
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Produktion und Materialwirtschaft</Learning_Unit>
@@ -2384,7 +2379,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Author>easyFOSBOS</Author>
 		<Copyright>easyFOSBOS</Copyright>
 		<Last_Modified>2013</Last_Modified>
-		<Thumb>Einführung_in_die_Materialwirtschaft.png</Thumb>
+		<Thumb/>
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Produktion und Materialwirtschaft</Learning_Unit>
@@ -2444,7 +2439,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Author>Massachusetts Institute of Technology </Author>
 		<Copyright>edX Inc.</Copyright>
 		<Last_Modified>2017</Last_Modified>
-		<Thumb>SCM.png</Thumb>
+		<Thumb>Scm.png</Thumb>
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Supply Chain Management</Learning_Unit>
@@ -2534,7 +2529,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Author>Ángel Calleja</Author>
 		<Copyright>Centro Garrigues</Copyright>
 		<Last_Modified>2014</Last_Modified>
-		<Thumb>International_Business_Law_Podcast_Part_1.jpg</Thumb>
+		<Thumb/>
 		<Area>Internationales</Area>
 		<Number>W3WI_IMBIT_303</Number>
 		<Learning_Unit>International Business Law and International Organizations</Learning_Unit>
@@ -2564,7 +2559,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Author>Allume International</Author>
 		<Copyright>Allume International</Copyright>
 		<Last_Modified>2015</Last_Modified>
-		<Thumb>International_Business_Law.png</Thumb>
+		<Thumb/>
 		<Area>Internationales</Area>
 		<Number>W3WI_IMBIT_303</Number>
 		<Learning_Unit>International Business Law and International Organizations</Learning_Unit>
@@ -2594,7 +2589,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Author>Europäische Union </Author>
 		<Copyright>dejure.org Rechtsinformationssysteme GmbH</Copyright>
 		<Last_Modified>2016</Last_Modified>
-		<Thumb>Gesetzesübersicht.jpg</Thumb>
+		<Thumb>Gesetzesuebersicht.jpg</Thumb>
 		<Area>Internationales</Area>
 		<Number>W3WI_IMBIT_303</Number>
 		<Learning_Unit>International Business Law and International Organizations</Learning_Unit>
@@ -2681,7 +2676,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
 		<Duration/>
-		<Author>Bundesministeriums der Justiz und für Verbraucherschutz</Author>
+		<Author>Bundesministerium der Justiz und für Verbraucherschutz</Author>
 		<Copyright>juris GmbH </Copyright>
 		<Last_Modified>2016</Last_Modified>
 		<Thumb>Gesetze_im_Internet.jpg</Thumb>
@@ -3092,7 +3087,7 @@ In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifik
 	<Learning>
 		<GUID>3c4f6fbe-ca42-4c47-bc64-8fd8b85bcd48</GUID>
 		<Titel>SAP APPHAUS - eine kreative Woche mit Design Thinking</Titel>
-		<Description>Im Rahmen des Moduls "Grundlagen Human Machine Interactions" haben wir das SAP APPHAUS in Heidelberg besucht und einen Grundlagenkurs in Designthinking absolviert. Fun fact: Auch Personen wie Dieter Zetsche, CEO von Daimler, haben an einem Kurs im APPHAUS teilgenommen! Hier findest du ein Video dazu.</Description>
+		<Description>Im Rahmen des Moduls "Grundlagen Human Machine Interactions" haben wir das SAP APPHAUS in Heidelberg besucht und einen Grundlagenkurs in Design Thinking absolviert. Fun fact: Auch Personen wie Dieter Zetsche, CEO von Daimler, haben an einem Kurs im APPHAUS teilgenommen! Hier findest du ein Video dazu.</Description>
 		<Type>website</Type>
 		<Embedded/>
 		<src>https://www.sap-tv.com/video/#/7682/app-haus-a-creative-workplace</src>
@@ -3256,7 +3251,7 @@ Für mehr Info's schau dir unser Teaser-Video an!: https://vimeo.com/96179581</D
 		<Fixed_StartDate/>
 		<Certificate/>
 		<Certificate_Costs/>
-		<Prestigious/>
+		<Prestigious>FALSE</Prestigious>
 		<Duration/>
 		<Author>WIMBIT12C, WIMBIT13C</Author>
 		<Copyright>DHBW Mannheim</Copyright>
@@ -3273,12 +3268,12 @@ Für mehr Info's schau dir unser Teaser-Video an!: https://vimeo.com/96179581</D
 		<Abbreviation>Projektmanagement</Abbreviation>
 	</Learning>
 	<Learning>
-		<GUID/>
-		<Titel/>
-		<Description/>
-		<Type/>
+		<GUID>10801cc9-2af7-4394-bc8c-18a2778a5ef7</GUID>
+		<Titel>Formelsammlung Statistik</Titel>
+		<Description>Diese Webseite beinhaltet eine kommentierte Formelsammlung der deskriptiven und induktiven Statistik und eignet sich besonders für dich als Wirtschaftswissenschaftler. Weitere Übungsaufgaben findest du auf der Webseite von Frau Prof. Dr. Irene Rößler.</Description>
+		<Type>website</Type>
 		<Embedded/>
-		<src/>
+		<src>http://prof-roessler.de/Dateien/Statistik/formelsammlung.pdf</src>
 		<Youtube_ID/>
 		<IOS_ID/>
 		<Android_ID/>
@@ -3286,410 +3281,171 @@ Für mehr Info's schau dir unser Teaser-Video an!: https://vimeo.com/96179581</D
 		<Fixed_StartDate/>
 		<Certificate/>
 		<Certificate_Costs/>
-		<Prestigious/>
+		<Prestigious>FALSE</Prestigious>
 		<Duration/>
-		<Author/>
-		<Copyright/>
-		<Last_Modified/>
-		<Thumb/>
-		<Area/>
-		<Number/>
-		<Learning_Unit/>
-		<Abdeckungsgrad/>
-		<Language/>
+		<Author>Prof. Dr. Irene Rößler</Author>
+		<Copyright>Prof. Dr. Irene Rößler</Copyright>
+		<Last_Modified>2017</Last_Modified>
+		<Thumb>Statistik.png</Thumb>
+		<Area>Methodische Grundlagen</Area>
+		<Number>W3WI_602)</Number>
+		<Learning_Unit>Statistik</Learning_Unit>
+		<Abdeckungsgrad>0.3</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Tech_Requirements/>
-		<Semester/>
-		<Recommended/>
-		<Abbreviation/>
+		<Semester>3</Semester>
+		<Recommended>TRUE</Recommended>
+		<Abbreviation>Statistik</Abbreviation>
 	</Learning>
 	<Learning>
-		<GUID/>
-		<Titel/>
-		<Description/>
-		<Type/>
-		<Embedded/>
+		<GUID>320a210f-d787-4457-9981-c51d55c7098c</GUID>
+		<Titel>brillianIDEAS: Ökonomisches Prinzip</Titel>
+		<Description>In dem Video "Ökonomisches Prinzip" werden dir die zwei Ansätze anhand von Beispielen näher erläutert. Auch die Begriffe Effizienz und Effektivität werden behandelt. In einem anschließenden Quiz kannst du das gelernte Wissen anwenden.
+</Description>
+		<Type>youtube</Type>
+		<Embedded>TRUE</Embedded>
 		<src/>
-		<Youtube_ID/>
+		<Youtube_ID>axlpq-CMoI4</Youtube_ID>
 		<IOS_ID/>
 		<Android_ID/>
 		<Free_of_charge/>
 		<Fixed_StartDate/>
 		<Certificate/>
 		<Certificate_Costs/>
-		<Prestigious/>
+		<Prestigious>FALSE</Prestigious>
 		<Duration/>
-		<Author/>
-		<Copyright/>
-		<Last_Modified/>
+		<Author>WIMBIT14C</Author>
+		<Copyright>DHBW Mannheim</Copyright>
+		<Last_Modified>2017</Last_Modified>
 		<Thumb/>
-		<Area/>
-		<Number/>
-		<Learning_Unit/>
-		<Abdeckungsgrad/>
+		<Area>Wirtschaft</Area>
+		<Number>W3WI_201</Number>
+		<Learning_Unit>Grundlagen der Betriebswirtschaftslehre</Learning_Unit>
+		<Abdeckungsgrad>0.1</Abdeckungsgrad>
 		<Language/>
 		<Tech_Requirements/>
-		<Semester/>
-		<Recommended/>
-		<Abbreviation/>
+		<Semester>1</Semester>
+		<Recommended>TRUE</Recommended>
+		<Abbreviation>BWL</Abbreviation>
 	</Learning>
 	<Learning>
-		<GUID/>
-		<Titel/>
-		<Description/>
-		<Type/>
-		<Embedded/>
+		<GUID>14df89c4-c7a1-4020-b06e-a200a15a8bea</GUID>
+		<Titel>brillianIDEAS: Business Model Canvas</Titel>
+		<Description>Das Business Model Canvas ist ein Mittel um das Geschäftsmodell einer Start Up-Idee zu visualisieren und zu testen, ob diese unternehmerisch sinnvoll ist. In diesem Video werden dir die Komponenten des Business Models mit einem fiktiven Beispiel detailliert vorgestellt. Das vermittelte Wissen kannst du im nachfolgenden Quiz testen.</Description>
+		<Type>youtube</Type>
+		<Embedded>TRUE</Embedded>
 		<src/>
-		<Youtube_ID/>
+		<Youtube_ID>SBS-4v7Xmys</Youtube_ID>
 		<IOS_ID/>
 		<Android_ID/>
 		<Free_of_charge/>
 		<Fixed_StartDate/>
 		<Certificate/>
 		<Certificate_Costs/>
-		<Prestigious/>
+		<Prestigious>FALSE</Prestigious>
 		<Duration/>
-		<Author/>
-		<Copyright/>
-		<Last_Modified/>
+		<Author>WIMBIT14C</Author>
+		<Copyright>DHBW Mannheim</Copyright>
+		<Last_Modified>2017</Last_Modified>
 		<Thumb/>
-		<Area/>
-		<Number/>
-		<Learning_Unit/>
-		<Abdeckungsgrad/>
+		<Area>Wirtschaft</Area>
+		<Number>W3WI_201</Number>
+		<Learning_Unit>Grundlagen der Betriebswirtschaftslehre</Learning_Unit>
+		<Abdeckungsgrad>0.1</Abdeckungsgrad>
 		<Language/>
 		<Tech_Requirements/>
-		<Semester/>
-		<Recommended/>
-		<Abbreviation/>
+		<Semester>1</Semester>
+		<Recommended>TRUE</Recommended>
+		<Abbreviation>BWL</Abbreviation>
 	</Learning>
 	<Learning>
-		<GUID/>
-		<Titel/>
-		<Description/>
-		<Type/>
-		<Embedded/>
+		<GUID>78547530-e963-462c-ad8a-49bf22bdea1d</GUID>
+		<Titel>brillianIDEAS: Stakeholder vs. Shareholder</Titel>
+		<Description>In dem Video "Shareholder Value vs. Stakeholder Value" findet eine Gegenüberstellung beider Ansätze statt. Es soll dir helfen die Unterschiede beider Prinzipien zu verstehen. In einem anschließenden Quiz kannst du das gelernte Wissen überprüfen.</Description>
+		<Type>youtube</Type>
+		<Embedded>TRUE</Embedded>
 		<src/>
-		<Youtube_ID/>
+		<Youtube_ID>XBymMDVMPoQ</Youtube_ID>
 		<IOS_ID/>
 		<Android_ID/>
 		<Free_of_charge/>
 		<Fixed_StartDate/>
 		<Certificate/>
 		<Certificate_Costs/>
-		<Prestigious/>
+		<Prestigious>FALSE</Prestigious>
 		<Duration/>
-		<Author/>
-		<Copyright/>
-		<Last_Modified/>
+		<Author>WIMBIT14C</Author>
+		<Copyright>DHBW Mannheim</Copyright>
+		<Last_Modified>2017</Last_Modified>
 		<Thumb/>
-		<Area/>
-		<Number/>
-		<Learning_Unit/>
-		<Abdeckungsgrad/>
+		<Area>Wirtschaft</Area>
+		<Number>W3WI_201</Number>
+		<Learning_Unit>Grundlagen der Betriebswirtschaftslehre</Learning_Unit>
+		<Abdeckungsgrad>0.1</Abdeckungsgrad>
 		<Language/>
 		<Tech_Requirements/>
-		<Semester/>
-		<Recommended/>
-		<Abbreviation/>
+		<Semester>1</Semester>
+		<Recommended>TRUE</Recommended>
+		<Abbreviation>BWL</Abbreviation>
 	</Learning>
 	<Learning>
-		<GUID/>
-		<Titel/>
-		<Description/>
-		<Type/>
-		<Embedded/>
+		<GUID>303ef95a-6c6f-4bd1-b816-c81de171e9f8</GUID>
+		<Titel>brillianIDEAS: St. Galler Management Modell</Titel>
+		<Description>In dem folgenden Video wird dir das St. Galler Management Modell anhand eines fiktiven Beispiels erklärt. Bei dem Modell handelt es sich um ein in den 1960er Jahren an der Universität St. Gallen entwickeltes Management Framework, welches verwendet wird um den Unternehmenskontext zu verstehen. Im Anschluss kannst du dein erlerntes Wissen in einem Quiz testen.</Description>
+		<Type>youtube</Type>
+		<Embedded>TRUE</Embedded>
 		<src/>
-		<Youtube_ID/>
+		<Youtube_ID>7uyBnuyF4Po</Youtube_ID>
 		<IOS_ID/>
 		<Android_ID/>
 		<Free_of_charge/>
 		<Fixed_StartDate/>
 		<Certificate/>
 		<Certificate_Costs/>
-		<Prestigious/>
+		<Prestigious>FALSE</Prestigious>
 		<Duration/>
-		<Author/>
-		<Copyright/>
-		<Last_Modified/>
+		<Author>WIMBIT14C</Author>
+		<Copyright>DHBW Mannheim</Copyright>
+		<Last_Modified>2017</Last_Modified>
 		<Thumb/>
-		<Area/>
-		<Number/>
-		<Learning_Unit/>
-		<Abdeckungsgrad/>
+		<Area>Wirtschaft</Area>
+		<Number>W3WI_201</Number>
+		<Learning_Unit>Grundlagen der Betriebswirtschaftslehre</Learning_Unit>
+		<Abdeckungsgrad>0.1</Abdeckungsgrad>
 		<Language/>
 		<Tech_Requirements/>
-		<Semester/>
-		<Recommended/>
-		<Abbreviation/>
+		<Semester>1</Semester>
+		<Recommended>TRUE</Recommended>
+		<Abbreviation>BWL</Abbreviation>
 	</Learning>
 	<Learning>
-		<GUID/>
-		<Titel/>
-		<Description/>
-		<Type/>
-		<Embedded/>
+		<GUID>54bc7442-ade5-4e64-b412-7c3c81a8c60e</GUID>
+		<Titel>brillianIDEAS: Wertkettenmodell nach Porter</Titel>
+		<Description>Das folgende Video handelt von dem Wertkettenmodell nach Porter. In diesem werden dir die primären und sekundären Aktivitäten anhand von Beispielen vorgestellt. In einem anschließenden Quiz kannst du das gelernte Wissen überprüfen.</Description>
+		<Type>youtube</Type>
+		<Embedded>TRUE</Embedded>
 		<src/>
-		<Youtube_ID/>
+		<Youtube_ID>ecnSWeLi5Ok</Youtube_ID>
 		<IOS_ID/>
 		<Android_ID/>
 		<Free_of_charge/>
 		<Fixed_StartDate/>
 		<Certificate/>
 		<Certificate_Costs/>
-		<Prestigious/>
+		<Prestigious>FALSE</Prestigious>
 		<Duration/>
-		<Author/>
-		<Copyright/>
-		<Last_Modified/>
+		<Author>WIMBIT14C</Author>
+		<Copyright>DHBW Mannheim</Copyright>
+		<Last_Modified>2017</Last_Modified>
 		<Thumb/>
-		<Area/>
-		<Number/>
-		<Learning_Unit/>
-		<Abdeckungsgrad/>
+		<Area>Wirtschaft</Area>
+		<Number>W3WI_201</Number>
+		<Learning_Unit>Grundlagen der Betriebswirtschaftslehre</Learning_Unit>
+		<Abdeckungsgrad>0.1</Abdeckungsgrad>
 		<Language/>
 		<Tech_Requirements/>
-		<Semester/>
-		<Recommended/>
-		<Abbreviation/>
-	</Learning>
-	<Learning>
-		<GUID/>
-		<Titel/>
-		<Description/>
-		<Type/>
-		<Embedded/>
-		<src/>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
-		<Prestigious/>
-		<Duration/>
-		<Author/>
-		<Copyright/>
-		<Last_Modified/>
-		<Thumb/>
-		<Area/>
-		<Number/>
-		<Learning_Unit/>
-		<Abdeckungsgrad/>
-		<Language/>
-		<Tech_Requirements/>
-		<Semester/>
-		<Recommended/>
-		<Abbreviation/>
-	</Learning>
-	<Learning>
-		<GUID/>
-		<Titel/>
-		<Description/>
-		<Type/>
-		<Embedded/>
-		<src/>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
-		<Prestigious/>
-		<Duration/>
-		<Author/>
-		<Copyright/>
-		<Last_Modified/>
-		<Thumb/>
-		<Area/>
-		<Number/>
-		<Learning_Unit/>
-		<Abdeckungsgrad/>
-		<Language/>
-		<Tech_Requirements/>
-		<Semester/>
-		<Recommended/>
-		<Abbreviation/>
-	</Learning>
-	<Learning>
-		<GUID/>
-		<Titel/>
-		<Description/>
-		<Type/>
-		<Embedded/>
-		<src/>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
-		<Prestigious/>
-		<Duration/>
-		<Author/>
-		<Copyright/>
-		<Last_Modified/>
-		<Thumb/>
-		<Area/>
-		<Number/>
-		<Learning_Unit/>
-		<Abdeckungsgrad/>
-		<Language/>
-		<Tech_Requirements/>
-		<Semester/>
-		<Recommended/>
-		<Abbreviation/>
-	</Learning>
-	<Learning>
-		<GUID/>
-		<Titel/>
-		<Description/>
-		<Type/>
-		<Embedded/>
-		<src/>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
-		<Prestigious/>
-		<Duration/>
-		<Author/>
-		<Copyright/>
-		<Last_Modified/>
-		<Thumb/>
-		<Area/>
-		<Number/>
-		<Learning_Unit/>
-		<Abdeckungsgrad/>
-		<Language/>
-		<Tech_Requirements/>
-		<Semester/>
-		<Recommended/>
-		<Abbreviation/>
-	</Learning>
-	<Learning>
-		<GUID/>
-		<Titel/>
-		<Description/>
-		<Type/>
-		<Embedded/>
-		<src/>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
-		<Prestigious/>
-		<Duration/>
-		<Author/>
-		<Copyright/>
-		<Last_Modified/>
-		<Thumb/>
-		<Area/>
-		<Number/>
-		<Learning_Unit/>
-		<Abdeckungsgrad/>
-		<Language/>
-		<Tech_Requirements/>
-		<Semester/>
-		<Recommended/>
-		<Abbreviation/>
-	</Learning>
-	<Learning>
-		<GUID/>
-		<Titel/>
-		<Description/>
-		<Type/>
-		<Embedded/>
-		<src/>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
-		<Prestigious/>
-		<Duration/>
-		<Author/>
-		<Copyright/>
-		<Last_Modified/>
-		<Thumb/>
-		<Area/>
-		<Number/>
-		<Learning_Unit/>
-		<Abdeckungsgrad/>
-		<Language/>
-		<Tech_Requirements/>
-		<Semester/>
-		<Recommended/>
-		<Abbreviation/>
-	</Learning>
-	<Learning>
-		<GUID/>
-		<Titel/>
-		<Description/>
-		<Type/>
-		<Embedded/>
-		<src/>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
-		<Prestigious/>
-		<Duration/>
-		<Author/>
-		<Copyright/>
-		<Last_Modified/>
-		<Thumb/>
-		<Area/>
-		<Number/>
-		<Learning_Unit/>
-		<Abdeckungsgrad/>
-		<Language/>
-		<Tech_Requirements/>
-		<Semester/>
-		<Recommended/>
-		<Abbreviation/>
-	</Learning>
-	<Learning>
-		<GUID/>
-		<Titel/>
-		<Description/>
-		<Type/>
-		<Embedded/>
-		<src/>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
-		<Prestigious/>
-		<Duration/>
-		<Author/>
-		<Copyright/>
-		<Last_Modified/>
-		<Thumb/>
-		<Area/>
-		<Number/>
-		<Learning_Unit/>
-		<Abdeckungsgrad/>
-		<Language/>
-		<Tech_Requirements/>
-		<Semester/>
-		<Recommended/>
-		<Abbreviation/>
+		<Semester>1</Semester>
+		<Recommended>TRUE</Recommended>
+		<Abbreviation>BWL</Abbreviation>
 	</Learning>
 </Learnings>
