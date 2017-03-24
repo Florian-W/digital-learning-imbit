@@ -151,7 +151,6 @@ img.thumb {
 }
 
 .list > div {
-    display: flex;
     text-align: left;
     flex-grow: 1;
     height: 100px;
@@ -170,6 +169,7 @@ img.thumb {
     width: 248px;
     display: flex;
     justify-content: center;
+	float: left;
 }
 
 .learning > img.thumbnail, .learning > a > img.thumbnail {
