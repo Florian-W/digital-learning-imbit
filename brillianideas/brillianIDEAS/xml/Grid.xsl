@@ -83,34 +83,29 @@
 							<xsl:attribute name="data-bind">
                                 <xsl:value-of select="NewContent_Video"/>
                             </xsl:attribute>
-
-									<xsl:element name="iframe">
-									<xsl:attribute name="width">560</xsl:attribute>
-									<xsl:attribute name="height">315</xsl:attribute>
-									<xsl:attribute name="src">https://www.youtube.com/embed/<xsl:value-of select="NewContent_Video"/></xsl:attribute>
-									<xsl:attribute name="frameborder">0</xsl:attribute>
-									<xsl:attribute name="allowfullscreen">allowfullscreen</xsl:attribute>
-									</xsl:element>
-
-
-<xsl:element name="div">
-<xsl:attribute name="class">beschreibung</xsl:attribute>
-  <xsl:element name="p"><xsl:value-of select="NewContent_Beschreibung"/>
-  </xsl:element>
-</xsl:element>
-
-<xsl:element name="div">
-<xsl:element name="button">
-<xsl:attribute name="jsonFileName"><xsl:value-of select="jsonFileName"/></xsl:attribute>
-<xsl:attribute name="type">button</xsl:attribute>
-<xsl:attribute name="class"><xsl:value-of select="ButtonClass"/></xsl:attribute>
-<xsl:attribute name="id"><xsl:value-of select="ButtonID"/></xsl:attribute>
-Quiz
-</xsl:element>
-</xsl:element>
-
-                            </xsl:element>
-                       
+							<xsl:element name="iframe">
+								<xsl:attribute name="width">560</xsl:attribute>
+								<xsl:attribute name="height">315</xsl:attribute>
+								<xsl:attribute name="src">https://www.youtube.com/embed/<xsl:value-of select="NewContent_Video"/></xsl:attribute>
+								<xsl:attribute name="frameborder">0</xsl:attribute>
+								<xsl:attribute name="allowfullscreen">allowfullscreen</xsl:attribute>
+							</xsl:element>
+							<xsl:element name="div">
+								<xsl:attribute name="class">beschreibung</xsl:attribute>
+							 	<xsl:element name="p">
+							 		<xsl:value-of select="NewContent_Beschreibung"/>
+								</xsl:element>
+							</xsl:element>
+							<xsl:element name="div">
+								<xsl:element name="button">
+									<xsl:attribute name="jsonFileName"><xsl:value-of select="jsonFileName"/></xsl:attribute>
+									<xsl:attribute name="type">button</xsl:attribute>
+									<xsl:attribute name="class"><xsl:value-of select="ButtonClass"/></xsl:attribute>
+									<xsl:attribute name="id"><xsl:value-of select="ButtonID"/></xsl:attribute>
+									Quiz
+								</xsl:element>
+							</xsl:element>
+                    	</xsl:element>
                     </xsl:for-each>
                 </xsl:when>
             </xsl:choose>
