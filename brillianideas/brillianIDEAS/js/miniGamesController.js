@@ -307,7 +307,7 @@
 		if (!$(".background").find(".BobTentacleRight").length > 0) {
 			$('.background')
 				.append(
-					'<img src="img/tentakel_right_MiniGames.png" id ="BobTentacleRightId" class="BobTentacleRight" style="object-fit: contain">'
+					'<img src="img/miniGames/tentakel_right_MiniGames.png" id ="BobTentacleRightId" class="BobTentacleRight" style="object-fit: contain">'
 				);
 		}
 
@@ -1091,7 +1091,7 @@
 			if (!$("#navContent").find(".bob").length > 0) {
 				$('#navContent')
 					.append(
-						'<img src="img/brillainIDEAS_UX_20170202_Oktopus-Kopf3.2_F.png" id ="bobId"class="bob" style="object-fit: contain">'
+						'<img src="img/miniGames/brillainIDEAS_UX_20170202_Oktopus-Kopf3.2_F.png" id ="bobId"class="bob" style="object-fit: contain">'
 					);
 			}
 
@@ -1112,7 +1112,7 @@
 			if (!$("#navContent").find(".bob").length > 0) {
 				$('#navContent')
 					.append(
-						'<img src="img/brillainIDEAS_UX_20170202_Oktopus-Kopf3.2_F.png" id ="bobId"class="bob" style="object-fit: contain">'
+						'<img src="img/miniGames/brillainIDEAS_UX_20170202_Oktopus-Kopf3.2_F.png" id ="bobId"class="bob" style="object-fit: contain">'
 					);
 			}
 
@@ -1181,9 +1181,9 @@
 
 							// Ersetze neutralen Bob mit einem der zwei positiven Bob
 							if (randomNumber == 1) {
-								changeBobImage('img/brillainIDEAS_UX_20170202_Oktopus-Kopf3_F.png');
+								changeBobImage('img/miniGames/brillainIDEAS_UX_20170202_Oktopus-Kopf3_F.png');
 							} else if (randomNumber == 2) {
-								changeBobImage('img/brillainIDEAS_UX_20170202_Oktopus-Kopf3.1_F.png');
+								changeBobImage('img/miniGames/brillainIDEAS_UX_20170202_Oktopus-Kopf3.1_F.png');
 							}
 
 							$(stage)
@@ -1203,9 +1203,9 @@
 
 							// Ersetze neutralen Bob mit einem der zwei negativen Bob
 							if (randomNumber == 1) {
-								changeBobImage('img/brillainIDEAS_UX_20170202_Oktopus-Kopf3.4_F.png');
+								changeBobImage('img/miniGames/brillainIDEAS_UX_20170202_Oktopus-Kopf3.4_F.png');
 							} else if (randomNumber == 2) {
-								changeBobImage('img/brillainIDEAS_UX_20170202_Oktopus-Kopf3.3_F.png');
+								changeBobImage('img/miniGames/brillainIDEAS_UX_20170202_Oktopus-Kopf3.3_F.png');
 							}
 
 							$(stage)
@@ -1226,7 +1226,7 @@
 
 						$('.next').click(function() {
 							// setze Bob zurück auf neutral
-							changeBobImage('img/brillainIDEAS_UX_20170202_Oktopus-Kopf3.2_F.png');
+							changeBobImage('img/miniGames/brillainIDEAS_UX_20170202_Oktopus-Kopf3.2_F.png');
 							changeQuestion(0);
 						});
 					}
@@ -1253,7 +1253,7 @@
 			var styles = {
 
 				background:
-					'url("img/brillainIDEAS_UX_20170202_Oktopus-Ampel-gruen.png") no-repeat',
+					'url("img/miniGames/brillainIDEAS_UX_20170202_Oktopus-Ampel-gruen.png") no-repeat',
 
 			};
 
@@ -1265,7 +1265,7 @@
 			var styles = {
 
 				background:
-					'url("img/brillainIDEAS_UX_20170202_Oktopus-Ampel-rot.png") no-repeat',
+					'url("img/miniGames/brillainIDEAS_UX_20170202_Oktopus-Ampel-rot.png") no-repeat',
 
 			};
 
@@ -1276,7 +1276,7 @@
 			var styles = {
 
 				background:
-					'url("img/brillainIDEAS_UX_20170202_Oktopus-Ampel-gelb.png") no-repeat',
+					'url("img/miniGames/brillainIDEAS_UX_20170202_Oktopus-Ampel-gelb.png") no-repeat',
 
 			};
 
