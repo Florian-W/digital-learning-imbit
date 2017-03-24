@@ -1,4 +1,12 @@
-	var currentNumberOfDragAndDropElements = 0; // zählt die Anzahl der Elemente der JSON-Datei
+
+/**
+ * @file Liest Spieledaten aus .json Dateien und baut daraus die Minispiele auf
+ * miniGames.css enthält den Style für die Minispiele
+ *
+ * @author Julian Bürkle <jbuerkle@live.de>
+ */
+
+var currentNumberOfDragAndDropElements = 0; // zählt die Anzahl der Elemente der JSON-Datei
 
 	var questionNumber = 0;
 	var questionBank = new Array();
