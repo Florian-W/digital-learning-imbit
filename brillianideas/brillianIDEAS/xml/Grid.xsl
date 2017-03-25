@@ -41,11 +41,15 @@
                         </xsl:element>
                     </xsl:for-each>
                 </xsl:when>
+                <!-- 
+                Die Zuweisung von Werten über "./Learning_Unit/Learning/Area_Abbreviation" ist eher ein 'Quick and Dirty' Ansatz.
+                Besser wäre in der IMBIT.xsl dem Area Element ein Attribut oder direktes Child zuzuweisen, dass den Area_Abbreviation Wert enthält.io
+                -->
                 <xsl:when test="$type='class'">
-                    <xsl:for-each select="Categories/Groups">
+                    <xsl:for-each select="//Area">
                         <xsl:element name="div">
                             <xsl:attribute name="id">
-                                <xsl:value-of select="Abbr"/>
+                                <xsl:value-of select="./Learning_Unit/Learning/Area_Abbreviation"/>
                             </xsl:attribute>
                             <xsl:attribute name="class">
                                 <xsl:text>flipcard IMBIT_Weg</xsl:text>
@@ -55,9 +59,9 @@
                                     <xsl:text>face front</xsl:text>
                                 </xsl:attribute>
                                 <xsl:attribute name="data-target">
-                                    <xsl:value-of select="Abbr"/>
+                                    <xsl:value-of select="./Learning_Unit/Learning/Area_Abbreviation"/>
                                 </xsl:attribute>
-                                <xsl:value-of select="Group-Name">
+                               		<xsl:value-of select="@id">
 								</xsl:value-of>
                             </xsl:element>
                             <xsl:element name="div">
@@ -65,7 +69,7 @@
                                     <xsl:text>face back</xsl:text>
                                 </xsl:attribute>
                                 <xsl:attribute name="data-bind">
-                                    <xsl:value-of select="Abbr"/>
+                                    <xsl:value-of select="./Learning_Unit/Learning/Area_Abbreviation"/>
                                 </xsl:attribute>
                             </xsl:element>
                         </xsl:element>
