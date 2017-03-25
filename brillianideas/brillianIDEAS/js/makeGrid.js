@@ -291,9 +291,10 @@ var makeGrid = function makeGrid(view){
 							$.ajax({
 								url: 'xml/index.php?base=learning&withLink=true&detail=true&guid=' + $(element).data('target'), 
 								complete: function (learningData) {
-									var $newElement = $obj.find('.list').parent().append(learningData.responseText).children('.learning');
+									var $newElement = $obj.find('.list').parent().append(
+										learningData.responseText.replace(/(?:\r\n|\r|\n)/g," ").replace(/<(br|BR)[ \/]{0,2}>/g, " ")
+									).children('.learning');
 									$newElement.fadeOut();
-									$newElement.html($newElement.html().replace(/(?:\r\n|\r|\n)/g," "));
 								}
 							});
 						});
