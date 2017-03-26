@@ -55,6 +55,9 @@ media-type="text/xml"/>
 				<xsl:element name="Description">
 					<xsl:value-of select="./Description" />
 				</xsl:element>
+				<xsl:element name="Type">
+					<xsl:value-of select="./Type" />
+				</xsl:element>
 				<xsl:element name="Embedded">
 					<xsl:value-of select="./Embedded" />
 				</xsl:element>
