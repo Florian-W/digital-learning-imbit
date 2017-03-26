@@ -90,7 +90,7 @@
 							<xsl:element name="iframe">
 								<xsl:attribute name="width">560</xsl:attribute>
 								<xsl:attribute name="height">315</xsl:attribute>
-								<xsl:attribute name="src">https://www.youtube.com/embed/<xsl:value-of select="NewContent_Video"/></xsl:attribute>
+								<xsl:attribute name="src">https://www.youtube.com/embed/<xsl:value-of select="NewContent_Video"/><xsl:text>?rel=0&amp;controls=0&amp;showinfo=0</xsl:text></xsl:attribute>
 								<xsl:attribute name="frameborder">0</xsl:attribute>
 								<xsl:attribute name="allowfullscreen">allowfullscreen</xsl:attribute>
 							</xsl:element>
