@@ -197,7 +197,7 @@ img.thumb {
 	margin-right: 5%;
 }
 
-.contentWrapper > .learning > p {
+.contentWrapper > .learning p {
 	overflow: hidden;
 	font-family: 'Tinos';
 	font-size: 120%;
