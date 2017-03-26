@@ -87,6 +87,7 @@
 							<xsl:attribute name="data-bind">
                                 <xsl:value-of select="NewContent_Video"/>
                             </xsl:attribute>
+							<xsl:choose>
 							<xsl:when test="NewContent_Video[not(text()=null or normalize-space(text())='')]">
 							<xsl:element name="iframe">
 								<xsl:attribute name="width">560</xsl:attribute>
@@ -96,6 +97,10 @@
 								<xsl:attribute name="allowfullscreen">allowfullscreen</xsl:attribute>
 							</xsl:element>
 							</xsl:when>
+							<xsl:otherwise>
+								
+							</xsl:otherwise>
+							</xsl:choose>
 							<xsl:element name="div">
 								<xsl:attribute name="class">beschreibung</xsl:attribute>
 							 	<xsl:element name="p">
