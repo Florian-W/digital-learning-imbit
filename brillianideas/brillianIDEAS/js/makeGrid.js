@@ -171,10 +171,7 @@ function noOverlayInGrid(id, x, y, count, key){
 					card_position.bottom = card_position.top + card_position.height;
 					card_position.right = card_position.left + card_position.width;
 					
-					$card.css({
-						left: card_position.left + "px",
-						top:  card_position.top + "px"
-					});
+					
 					movedInCombo[value[0]][id] = true;
 				}
 				loop = true;
@@ -190,6 +187,10 @@ function noOverlayInGrid(id, x, y, count, key){
 	/**
 	 * Stellt die Garantie aus, dass die Positionierung abgeschlossen wurde
 	 */
+	 $card.css({
+		left: card_position.left + "px",
+		top:  card_position.top + "px"
+	});
 	return $.Deferred().promise();
 };
 
