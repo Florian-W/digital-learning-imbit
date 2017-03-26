@@ -68,9 +68,16 @@
 															<xsl:text>&#160;</xsl:text>
 														</xsl:attribute>
 														<xsl:attribute name="class">thumbnail</xsl:attribute>
-														<xsl:element name="h2">
+													</xsl:element>
+												</xsl:element>
+												<xsl:element name="h2">
+													<xsl:element name="a">
+														<xsl:if test="$withLink = 'true'">
+															<xsl:attribute name="href">
+																<xsl:value-of select="src" />
+															</xsl:attribute>
 															<xsl:value-of select="Titel" />
-														</xsl:element>
+														</xsl:if>
 													</xsl:element>
 												</xsl:element>
 											</xsl:when>
@@ -135,49 +142,48 @@
 										</xsl:choose>
 									</xsl:when>
 							</xsl:choose>
-							<xsl:element name="div">
-								<xsl:element name="h2">
-									<xsl:value-of select="Titel" />
-								</xsl:element>
 								<xsl:if test="Android_ID[not(text()=null or normalize-space(text())='')] and $withLink = 'true'">
 									<xsl:element name="a">
-											<xsl:attribute name="href">
-												<xsl:text>https://play.google.com/store/apps/details?id=</xsl:text>
-												<xsl:value-of select="Android_ID" />
-											</xsl:attribute>
-											<xsl:attribute name="target">
-			                            <xsl:text>
-			                                _blank
-			                            </xsl:text>
-											</xsl:attribute>
-											<xsl:element name="img">
-												<xsl:attribute name="src">./../img/AppStores/google.png</xsl:attribute>
-												<xsl:attribute name="alt">Jetzt bei Play Store</xsl:attribute>
-												<xsl:attribute name="class">AppStoreBadge</xsl:attribute>
-											</xsl:element>
+										<xsl:attribute name="href">
+											<xsl:text>https://play.google.com/store/apps/details?id=</xsl:text>
+											<xsl:value-of select="Android_ID" />
+										</xsl:attribute>
+										<xsl:attribute name="target">
+				                            <xsl:text>
+				                                _blank
+				                            </xsl:text>
+										</xsl:attribute>
+										<xsl:element name="img">
+											<xsl:attribute name="src">./../img/AppStores/google.png</xsl:attribute>
+											<xsl:attribute name="alt">Jetzt im Play Store</xsl:attribute>
+											<xsl:attribute name="class">AppStoreBadge</xsl:attribute>
 										</xsl:element>
-									</xsl:if>
-									<xsl:if test="IOS_ID[not(text()=null or normalize-space(text())='')] and $withLink = 'true'">
-										<xsl:element name="a">
-											<xsl:attribute name="href">
-			                            <xsl:text>
-			                                https://itunes.apple.com/us/app/id
-			                            </xsl:text>
-												<xsl:value-of select="IOS_ID" />
-											</xsl:attribute>
-											<xsl:attribute name="target">
-			                            <xsl:text>
-			                                _blank
-			                            </xsl:text>
-											</xsl:attribute>
-											<xsl:element name="img">
-												<xsl:attribute name="src">./../img/AppStores/Apple.svg</xsl:attribute>
-												<xsl:attribute name="alt">Download on the AppStore</xsl:attribute>
-												<xsl:attribute name="class">AppStoreBadge</xsl:attribute>
-											</xsl:element>
+										<xsl:element name="h2">
+											<xsl:value-of select="Titel" />
 										</xsl:element>
-									</xsl:if>
-									<xsl:element name="p">
+									</xsl:element>
+								</xsl:if>
+								<xsl:if test="IOS_ID[not(text()=null or normalize-space(text())='')] and $withLink = 'true'">
+									<xsl:element name="a">
+										<xsl:attribute name="href">
+		                            <xsl:text>
+		                                https://itunes.apple.com/us/app/id
+		                            </xsl:text>
+											<xsl:value-of select="IOS_ID" />
+										</xsl:attribute>
+										<xsl:attribute name="target">
+		                            <xsl:text>
+		                                _blank
+		                            </xsl:text>
+										</xsl:attribute>
+										<xsl:element name="img">
+											<xsl:attribute name="src">./../img/AppStores/Apple.svg</xsl:attribute>
+											<xsl:attribute name="alt">Im AppStore herunterladen</xsl:attribute>
+											<xsl:attribute name="class">AppStoreBadge</xsl:attribute>
+										</xsl:element>
+									</xsl:element>
+								</xsl:if>
+								<xsl:element name="p">
 									<xsl:if test="$detail='true'">
 										<xsl:value-of select="Description" />
 										<xsl:element name="br" />
@@ -187,14 +193,41 @@
 									<xsl:text>
 			                   			 &#169;
 				                	</xsl:text>
-										<xsl:value-of select="Copyright" />
-										<xsl:element name="br" />
-										<xsl:text>Autor: </xsl:text>
-										<xsl:value-of select="Author" />
+									<xsl:value-of select="Copyright" />
+									<xsl:element name="br" />
+									<xsl:text>Autor: </xsl:text>
+									<xsl:value-of select="Author" />
+									<xsl:if test="Duration[not(text()=null or normalize-space(text())='')]">
 										<xsl:element name="br" />
 										<xsl:text>Dauer: </xsl:text>
 										<xsl:value-of select="Duration" />
-									</xsl:element>
+									</xsl:if>
+									<xsl:element name="br" />
+									<xsl:if test="Abdeckungsgrad[not(text()=null or normalize-space(text())='')]">
+										<xsl:text>Abdeckungsgrad </xsl:text>
+										<xsl:value-of select="Abdeckungsgrad" />
+										<xsl:element name="br" />
+									</xsl:if>
+									<xsl:if test="Recommended='true'">
+										<xsl:text>Dieses Lernmedium "brillianideas/brillianIDEAS/xml/Learning.xsl"wurde von einem DHBW Dozenten oder Professor dieser Vorlesung empfohlen</xsl:text>
+										<xsl:element name="br" />
+									</xsl:if>
+									<xsl:if test="Prestigious='true'">
+										<xsl:text>Es handelt sich hierbei um eine renommierte Institution</xsl:text>
+										<xsl:element name="br" />
+									</xsl:if>
+									<xsl:if test="Free_of_charge='true'">
+										<xsl:text>Kosten: Dieser MOOC ist kostenfrei</xsl:text>
+										<xsl:element name="br" />
+									</xsl:if>
+									<xsl:if test="Free_of_charge='false'">
+										<xsl:text>Kosten: Die kosten für diesen MOOC erfährst du auf der Webseite des Anbieters</xsl:text>
+										<xsl:element name="br" />
+									</xsl:if>
+									<xsl:if test="Certificate='true'">
+										<xsl:text>Nach erfolgreichem Beenden des MOOC erhältst du ein Zertifikat</xsl:text>
+										<xsl:element name="br" />
+									</xsl:if>
 								</xsl:element>
 							</xsl:element>
 						</xsl:for-each>
@@ -212,7 +245,8 @@
 									</xsl:attribute>
 								</xsl:element>
 							</xsl:for-each>
-						</xsl:element>	-->
+						</xsl:element> -->
+						
 					</xsl:element>
 				</xsl:for-each>
 			</xsl:when>
@@ -310,24 +344,20 @@
 									</xsl:choose>
 								</xsl:when>
 							</xsl:choose>
-						<xsl:element name="div">
-							<xsl:element name="h2">
-								<xsl:value-of select="Titel" />
-							</xsl:element>
 							<xsl:if test="Android_ID[not(text()=null or normalize-space(text())='')] and $withLink = 'true'">
 								<xsl:element name="a">
 										<xsl:attribute name="href">
-											<xsl:text>https://play.google.com/store/apps/details?id=</xsl:text>
+											<xsl:text>https://Jetzt im Play Store.google.com/store/apps/details?id=</xsl:text>
 											<xsl:value-of select="Android_ID" />
 										</xsl:attribute>
 										<xsl:attribute name="target">
-		                            <xsl:text>
-		                                _blank
-		                            </xsl:text>
+				                            <xsl:text>
+				                                _blank
+				                            </xsl:text>
 										</xsl:attribute>
 										<xsl:element name="img">
 											<xsl:attribute name="src">./../img/AppStores/google.png</xsl:attribute>
-											<xsl:attribute name="alt">Jetzt bei Play Store</xsl:attribute>
+											<xsl:attribute name="alt">Jetzt im Play Store</xsl:attribute>
 											<xsl:attribute name="class">AppStoreBadge</xsl:attribute>
 										</xsl:element>
 									</xsl:element>
@@ -347,7 +377,7 @@
 										</xsl:attribute>
 										<xsl:element name="img">
 											<xsl:attribute name="src">./../img/AppStores/Apple.svg</xsl:attribute>
-											<xsl:attribute name="alt">Download on the AppStore</xsl:attribute>
+											<xsl:attribute name="alt">Im AppStore herunterladen</xsl:attribute>
 											<xsl:attribute name="class">AppStoreBadge</xsl:attribute>
 										</xsl:element>
 									</xsl:element>
@@ -372,7 +402,6 @@
 									<xsl:value-of select="Duration" />
 								</xsl:if>
 							</xsl:element>
-						</xsl:element>
 					</xsl:element>
 				</xsl:for-each>
 			</xsl:otherwise>		

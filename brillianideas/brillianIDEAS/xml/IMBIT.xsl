@@ -121,6 +121,9 @@ media-type="text/xml"/>
 				<xsl:element name="Abbreviation">
 					<xsl:value-of select="./Abbreviation" />
 				</xsl:element>
+				<xsl:element name="Area_Abbreviation">
+					<xsl:value-of select="./Area_Abbreviation" />
+				</xsl:element>
 			</xsl:element>
 		</xsl:for-each>
 	</xsl:template>
