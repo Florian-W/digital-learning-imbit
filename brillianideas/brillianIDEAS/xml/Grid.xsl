@@ -87,7 +87,7 @@
 							<xsl:attribute name="data-bind">
                                 <xsl:value-of select="NewContent_Video"/>
                             </xsl:attribute>
-							<xsl:when test="NewContent_Video[not(text()=null or normalize-space(text())='')]">
+							<xsl:if test="NewContent_Video[not(text()=null or normalize-space(text())='')]">
 							<xsl:element name="iframe">
 								<xsl:attribute name="width">560</xsl:attribute>
 								<xsl:attribute name="height">315</xsl:attribute>
