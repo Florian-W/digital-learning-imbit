@@ -325,7 +325,7 @@ var makeGrid = function makeGrid(view){
 			 */
 			var fillTiles = function(){
 				$(document).ajaxStop(function() {
-					animateTiles();
+					$('#site').waitForImages().done(animateTiles);
 					 $(this).unbind("ajaxStop");
 				});
 				$('#grid').children('.flipcard').each(fillTile);
