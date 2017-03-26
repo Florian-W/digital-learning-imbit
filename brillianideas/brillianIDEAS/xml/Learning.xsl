@@ -84,7 +84,7 @@
 											</xsl:otherwise>
 										</xsl:choose>
 									</xsl:when>
-									<xsl:when test="Type[text()='youtube'] and Youtube_ID[not(text()=null or normalize-space(text())='')]">
+									<xsl:when test="Youtube_ID[not(text()=null or normalize-space(text())='')]">
 										<xsl:choose>
 											<xsl:when test="Embedded = 'true' and $withLink = 'true'">
 												<xsl:element name="iframe">
@@ -228,23 +228,7 @@
 									</xsl:element>
 								</xsl:element>
 							</xsl:element>
-						</xsl:for-each>
-						
-						<!-- 
-						<xsl:element name="div">
-							<xsl:attribute name="class">
-								<xsl:text>scroll</xsl:text>
-							</xsl:attribute>
-							<xsl:for-each select="./Learning">
-								<xsl:element name="div">
-									<xsl:attribute name="class">
-										<xsl:text>scroll_item </xsl:text>
-										<xsl:value-of select="Titel"></xsl:value-of>
-									</xsl:attribute>
-								</xsl:element>
-							</xsl:for-each>
-						</xsl:element> -->
-						
+						</xsl:for-each>						
 					</xsl:element>
 				</xsl:for-each>
 			</xsl:when>
