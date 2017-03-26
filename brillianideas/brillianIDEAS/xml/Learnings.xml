@@ -2258,7 +2258,7 @@ In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifik
 		<Titel>Projektmanagement MOOC </Titel>
 		<Description>Dies ist ein MOOC von der Indian Institute of Technology Kanpur bereitgestellt auf Class Central. Es soll Projektmanagement-Basiswissen vermitteln und eignet sich zum Wiederholen einiger Teilaspekte des Projektmanagements.</Description>
 		<Type>mooc</Type>
-		<src>https://www.class-central.com/Mooc/7912/nptel-project-management</src>
+		<src>https://www.class-central.com/mooc/7912/nptel-project-management</src>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>TRUE</Fixed_StartDate>
 		<Certificate>TRUE</Certificate>
