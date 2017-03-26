@@ -126,7 +126,8 @@ h1, h2, h3, h4, h5 {
     -webkit-transform: rotateY(180deg);
     overflow: auto;
     line-height: normal;
-    background-color: var(--background-highlight) !important;
+    background-color: var(--color-gray) !important;
+    color: black !important;
     text-align: justify;
 }
 
