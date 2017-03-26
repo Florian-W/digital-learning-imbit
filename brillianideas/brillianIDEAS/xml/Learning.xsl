@@ -56,9 +56,7 @@
 														</xsl:attribute>
 													</xsl:if>
 													<xsl:attribute name="target">
-					                                    <xsl:text>
-					                                        _blank
-					                                    </xsl:text>
+					                                    					<xsl:text>_blank</xsl:text>
 													</xsl:attribute>
 													<xsl:element name="img">
 														<xsl:attribute name="src">
@@ -84,7 +82,7 @@
 											</xsl:otherwise>
 										</xsl:choose>
 									</xsl:when>
-									<xsl:when test="Type[text()='youtube'] and Youtube_ID[not(text()=null or normalize-space(text())='')]">
+									<xsl:when test="Youtube_ID[not(text()=null or normalize-space(text())='')]">
 										<xsl:choose>
 											<xsl:when test="Embedded = 'true' and $withLink = 'true'">
 												<xsl:element name="iframe">
@@ -154,7 +152,7 @@
 					                            </xsl:text>
 											</xsl:attribute>
 											<xsl:element name="img">
-												<xsl:attribute name="src">./../img/AppStores/google.png</xsl:attribute>
+												<xsl:attribute name="src">img/AppStores/google.png</xsl:attribute>
 												<xsl:attribute name="alt">Im PlayStore herunterladen</xsl:attribute>
 												<xsl:attribute name="class">AppStoreBadge</xsl:attribute>
 											</xsl:element>
@@ -174,7 +172,7 @@
 			                            </xsl:text>
 											</xsl:attribute>
 											<xsl:element name="img">
-												<xsl:attribute name="src">./../img/AppStores/Apple.svg</xsl:attribute>
+												<xsl:attribute name="src">img/AppStores/Apple.svg</xsl:attribute>
 												<xsl:attribute name="alt">Im AppStore herunterladen</xsl:attribute>
 												<xsl:attribute name="class">AppStoreBadge</xsl:attribute>
 											</xsl:element>
@@ -228,23 +226,7 @@
 									</xsl:element>
 								</xsl:element>
 							</xsl:element>
-						</xsl:for-each>
-						
-						<!-- 
-						<xsl:element name="div">
-							<xsl:attribute name="class">
-								<xsl:text>scroll</xsl:text>
-							</xsl:attribute>
-							<xsl:for-each select="./Learning">
-								<xsl:element name="div">
-									<xsl:attribute name="class">
-										<xsl:text>scroll_item </xsl:text>
-										<xsl:value-of select="Titel"></xsl:value-of>
-									</xsl:attribute>
-								</xsl:element>
-							</xsl:for-each>
-						</xsl:element> -->
-						
+						</xsl:for-each>						
 					</xsl:element>
 				</xsl:for-each>
 			</xsl:when>
@@ -300,18 +282,14 @@
 										</xsl:otherwise>
 									</xsl:choose>
 								</xsl:when>
-								<xsl:when test="Type[text()='youtube']/../Youtube_ID[not(text()=null or normalize-space(text())='')]">
+								<xsl:when test="Youtube_ID[not(text()=null or normalize-space(text())='')]">
 									<xsl:choose>
 										<xsl:when test="Embedded = 'true' and $withLink = 'true'">
 											<xsl:element name="iframe">
 												<xsl:attribute name="src">
-											<xsl:text>
-												https://www.youtube.com/embed/
-											</xsl:text>
+													<xsl:text>https://www.youtube.com/embed/</xsl:text>
 													<xsl:value-of select="Youtube_ID"/>
-													<xsl:text>
-												?rel=0&amp;controls=0&amp;showinfo=0
-											</xsl:text>
+													<xsl:text>?rel=0&amp;controls=0&amp;showinfo=0</xsl:text>
 												</xsl:attribute>
 												<xsl:attribute name="width">500</xsl:attribute>
 												<xsl:attribute name="height">295</xsl:attribute>
@@ -354,7 +332,7 @@
 				                            </xsl:text>
 										</xsl:attribute>
 										<xsl:element name="img">
-											<xsl:attribute name="src">./../img/AppStores/google.png</xsl:attribute>
+											<xsl:attribute name="src">img/AppStores/google.png</xsl:attribute>
 											<xsl:attribute name="alt">Im PlayStore herunterladen</xsl:attribute>
 											<xsl:attribute name="class">AppStoreBadge</xsl:attribute>
 										</xsl:element>
