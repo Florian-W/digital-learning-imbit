@@ -126,7 +126,8 @@ h1, h2, h3, h4, h5 {
     -webkit-transform: rotateY(180deg);
     overflow: auto;
     line-height: normal;
-    background-color: var(--background-highlight) !important;
+    background-color: var(--color-gray) !important;
+    color: black !important;
     text-align: justify;
 }
 
@@ -186,7 +187,7 @@ img.thumb {
 	margin-top: 50px;
 }	
 
-.contentWrapper > .learning a{
+.contentWrapper > .learning a {
 	color:inherit;
     text-decoration:none;
 }
@@ -198,7 +199,8 @@ img.thumb {
 
 .contentWrapper > .learning > p {
 	overflow: hidden;
-	font: Tinos;
+	font-family: 'Tinos';
+	font-size: 120%;
 }
 
 #overlay {
