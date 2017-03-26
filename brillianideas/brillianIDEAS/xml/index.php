@@ -106,7 +106,9 @@ function transformCategorie($base, $type, $detail = 'false'){
     );
 
 	if($base == "grid" && $type == "class" && $detail == "true"){
-		transformXmlImbit($params);
+		transformXmlImbit($params, $GLOBALS['files']['learnings_xsl']);
+	} else if($base == "grid" && $type == "class" && !(isset($_GET['detail']))) {
+	    transformXmlImbit($params, $GLOBALS['files']['grid_xsl']);
 	} else {
 	    transformXML(
 	        $GLOBALS['files']['categories_xml'],
@@ -140,12 +142,12 @@ function transformXML($xmlFile, $xslFile, $params){
     echo $result->saveHTML();
 }
 
-function transformXmlImbit($params){
+function transformXmlImbit($params, $xsl2_file){
  	$xsl = new DOMDocument();
     $xsl->load('IMBIT.xsl');
 
 	$xsl2 = new DOMDocument();
-	$xsl2->load('Learning.xsl');
+	$xsl2->load(($xsl2_file));
 
     $xml = new DOMDocument();
     $xml->load('Learnings.xml');
@@ -164,6 +166,8 @@ function transformXmlImbit($params){
 
     echo $result->saveHTML();
 }
+
+
 
 function prepareTransformLearning(){
     $guid = '';

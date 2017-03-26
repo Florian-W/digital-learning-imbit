@@ -2,8 +2,8 @@
 <Learnings>
 	<Learning>
 		<GUID>389b9fb9-e9e6-4bc0-b3f0-6d29f0674b8b</GUID>
-		<Titel>How to build a start-up?</Titel>
-		<Description>Dieser MOOC stellt die verschiedenen Schritte zur Gründung eines Start-Ups vor. Du erhälst Einblicke in Strategien, wie man eine Idee zu einem erfolgreichen Start-Up entwickeln kann. Mit diesen Vorgehensweisen und Techniken können häufige Fehler bei der Entwicklung eines Start-Ups zu vermieden werden.  Der Kurs ist kostenlos, in englischer Sprache verfügbar und wiederholt die Inhalte der Vorlesung "Einführung in die BWL".</Description>
+		<Titel>How to Build a Start-Up?</Titel>
+		<Description>Dieser MOOC stellt die verschiedenen Schritte zur Gründung eines Start-Ups vor. Du erhälst Einblicke in Strategien, wie man eine Idee zu einem erfolgreichen Start-Up entwickeln kann. Mit diesen Vorgehensweisen und Techniken können häufige Fehler bei der Entwicklung eines Start-Ups vermieden werden.  Der Kurs ist kostenlos, in englischer Sprache verfügbar und wiederholt die Inhalte der Vorlesung "Einführung in die BWL".</Description>
 		<Type>mooc</Type>
 		<Embedded/>
 		<src>https://de.udacity.com/course/how-to-build-a-startup--ep245/</src>
@@ -17,7 +17,7 @@
 		<Prestigious>FALSE</Prestigious>
 		<Duration>4 Wochen</Duration>
 		<Author>Steve Blank; Kathleen Mullaney</Author>
-		<Copyright>Udacity, Inc.</Copyright>
+		<Copyright>Udacity Inc.</Copyright>
 		<Last_Modified>2017</Last_Modified>
 		<Thumb>How_to_build_a_start-up.png</Thumb>
 		<Area>Wirtschaft</Area>
@@ -29,10 +29,11 @@
 		<Semester>1</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>BWL</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>05f3c650-7bcb-47b0-a03c-47ea8773c4c2</GUID>
-		<Titel>Business canvas modelling</Titel>
+		<Titel>Business Canvas Modelling</Titel>
 		<Description>In diesem online bereitgestellten Tool kannst du einen Business Canvas erstellen. Das Planungstool kann dich bei der Entwicklung und Überarbeitung von komplexen Geschäftsideen unterstützen. So hast du immer einen Überblick über die Schlüsselfaktoren deines Geschäftsmodells.</Description>
 		<Type>website</Type>
 		<Embedded/>
@@ -59,10 +60,11 @@
 		<Semester>1</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>BWL</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>e8ad8779-af37-4c96-a4ff-f6963af42186</GUID>
-		<Titel>Circular economy: An Introduction </Titel>
+		<Titel>Circular Economy: An Introduction </Titel>
 		<Description>In diesem MOOC erfährst du, wie ein nachhaltiges Wirtschaftssystem funktionieren kann. Dabei geht es um das Wiederverwenden und Wiederverwerten von Produkten und wie daraus Vorteile für das Unternehmen entstehen können. Dieses Thema baut auf dem Bereich Nachhaltigkeit auf, welcher in der Vorlesung "Einführung in die BWL" behandelt wird. </Description>
 		<Type>mooc</Type>
 		<Embedded/>
@@ -89,6 +91,7 @@
 		<Semester>1</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>BWL</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>ec412af1-4c3e-43ef-8750-95768f239d6e</GUID>
@@ -107,9 +110,9 @@
 		<Prestigious>FALSE</Prestigious>
 		<Duration/>
 		<Author>Verlag Franz Vahlen GmbH</Author>
-		<Copyright/>
+		<Copyright>Verlag Franz Vahlen GmbH</Copyright>
 		<Last_Modified>2017</Last_Modified>
-		<Thumb>bwl.jpg</Thumb>
+		<Thumb>Bwl.jpg</Thumb>
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_204</Number>
 		<Learning_Unit>Grundlagen der Betriebswirtschaftslehre</Learning_Unit>
@@ -119,11 +122,12 @@
 		<Semester>1</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>BWL</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>680161be-b1e0-4808-8794-b012b3ebf017</GUID>
 		<Titel>Umfrage Unternehmensziele</Titel>
-		<Description>Diese Umfrage beschäftigt sich mit Unternehmenszielen. Durch das Ausfüllen der Umfrage sollen die Inhalte der Vorlesung gefestigt werden. Die Umfrage wurde voin Prof. Bendl im Rahmen der Vorlesung "Einführung in die BWL" entwickelt und hilft dir  die verschiedenen Funktionsbereiche im Unternehmen zu verstehen.</Description>
+		<Description>Diese Umfrage beschäftigt sich mit Unternehmenszielen. Durch das Ausfüllen der Umfrage sollen die Inhalte der Vorlesung gefestigt werden. Die Umfrage wurde von Prof. Bendl im Rahmen der Vorlesung "Einführung in die BWL" entwickelt und hilft dir  die verschiedenen Funktionsbereiche im Unternehmen zu verstehen.</Description>
 		<Type>quiz</Type>
 		<Embedded/>
 		<src>https://de.surveymonkey.com/r/G79PZTY</src>
@@ -149,6 +153,7 @@
 		<Semester>1</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>BWL</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>38daf4d6-207c-4b7d-8e0b-0b28fb92c957</GUID>
@@ -179,6 +184,7 @@
 		<Semester>1</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>BWL</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>55ff1ec6-63c4-499d-9bdd-85d2e0db6f44</GUID>
@@ -209,11 +215,12 @@
 		<Semester>1</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Marketing</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>d10cbe64-6c1e-489a-8451-46be825c4fab</GUID>
-		<Titel>Digital and social media marketing: An introduction </Titel>
-		<Description>Dieser auf Englisch bereitgestellte MOOC beschäftigt sich mit digitalem Marketing. Anhand von Beispielen aus der Industrie erhälst du einen Einblick, wie eine Online-Marketing-Strategie aufgestellt werden kann. Gerade im Hinblick auf die rasante Entwicklung des digitalen Marketing werden verschiedene Strategien und Techniken vorgestellt.</Description>
+		<Titel>Digital and Social Media Marketing: An Introduction </Titel>
+		<Description>Dieser auf Englisch bereitgestellte MOOC beschäftigt sich mit digitalem Marketing. Anhand von Beispielen aus der Industrie erhälst du einen Einblick, wie eine Online-Marketing-Strategie aufgestellt werden kann. Gerade im Hinblick auf die rasante Entwicklung des digitalen Marketings werden verschiedene Strategien und Techniken vorgestellt.</Description>
 		<Type>mooc</Type>
 		<Embedded/>
 		<src>https://iversity.org/de/courses/digital-and-social-media-marketing</src>
@@ -239,6 +246,7 @@
 		<Semester>1</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Marketing</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>e26689d7-0ab8-46aa-8a65-02719c26225c</GUID>
@@ -259,7 +267,7 @@
 		<Author>Stefan Schweiger</Author>
 		<Copyright>Stefan Schweiger</Copyright>
 		<Last_Modified>2017</Last_Modified>
-		<Thumb>Übungsaufgaben_Rechnungswesen.jpg</Thumb>
+		<Thumb>Uebungsaufgaben_Rechnungswesen.jpg</Thumb>
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_202</Number>
 		<Learning_Unit>Finanzbuchhaltung</Learning_Unit>
@@ -269,6 +277,7 @@
 		<Semester>2</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>FiBu</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>aff568bc-ad66-4f97-8dcb-4cb9b90b5c01</GUID>
@@ -289,7 +298,7 @@
 		<Author>Stefan Schweiger</Author>
 		<Copyright>Stefan Schweiger</Copyright>
 		<Last_Modified>2017</Last_Modified>
-		<Thumb>Übungsaufgaben_Buchungssätze.jpg</Thumb>
+		<Thumb>Uebungsaufgaben_Buchungssaetze.jpg</Thumb>
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_202</Number>
 		<Learning_Unit>Finanzbuchhaltung</Learning_Unit>
@@ -299,6 +308,7 @@
 		<Semester>3</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>FiBu</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>8edf8312-a978-4f72-884b-67f543cb40f3</GUID>
@@ -321,17 +331,15 @@
 		<Last_Modified>2013</Last_Modified>
 		<Thumb>Deloitte_E-Learning_IFRS_und_IAS.png</Thumb>
 		<Area>Wirtschaft</Area>
-		<Number>W3WI_202</Number>
-		<Learning_Unit>Kosten- und Leistungsrechnung        
-       
-       
-       </Learning_Unit>
+		<Number>W3WI_203</Number>
+		<Learning_Unit>Investition und Finanzierung</Learning_Unit>
 		<Abdeckungsgrad>1</Abdeckungsgrad>
 		<Language>EN</Language>
 		<Tech_Requirements>Zip</Tech_Requirements>
 		<Semester>2</Semester>
 		<Recommended>FALSE</Recommended>
-		<Abbreviation>KLAR</Abbreviation>
+		<Abbreviation>KLR</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>1e023e71-2cf3-49f4-bc89-6040d37c52b0</GUID>
@@ -362,6 +370,7 @@
 		<Semester>6</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Management</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>c376fb35-7c84-4ef4-9d46-877928716d68</GUID>
@@ -392,6 +401,7 @@
 		<Semester>6</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Management</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>892edf11-c839-4cf5-a4fa-89ceeb6d0a74</GUID>
@@ -422,6 +432,7 @@
 		<Semester>6</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Management</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>af161d5a-1f5f-480b-b82f-56485195368e</GUID>
@@ -452,6 +463,7 @@
 		<Semester>3</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Investition &amp; Finanzierung</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>00a30060-1c33-47a8-aa8b-5d710ce0bf1d</GUID>
@@ -482,6 +494,7 @@
 		<Semester>6</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>FiBu</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>76456246-0d4b-4f78-82bb-9271a53e2015</GUID>
@@ -512,6 +525,7 @@
 		<Semester>5</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Controlling</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>b0dda20b-c3ab-48a3-adcd-f5f1db80219b</GUID>
@@ -532,7 +546,7 @@ Die abgedeckten Themenbereiche (bei wiederholter und aufmerksamer Spielaktivitä
 		<Duration/>
 		<Author>WIMBIT12C, WIMBIT13C</Author>
 		<Copyright>DHBW Mannheim</Copyright>
-		<Last_Modified>42460</Last_Modified>
+		<Last_Modified>2017</Last_Modified>
 		<Thumb>BrillianICM_seriousgame.PNG</Thumb>
 		<Area>Internationales</Area>
 		<Number>W3WI_IMBIT_301</Number>
@@ -543,6 +557,7 @@ Die abgedeckten Themenbereiche (bei wiederholter und aufmerksamer Spielaktivitä
 		<Semester>1+2</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>ICM</Abbreviation>
+		<Area_Abbreviation>I</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>b82da83a-9b73-49c1-933b-2350fee0edd5</GUID>
@@ -575,11 +590,12 @@ Die GLOBE-Dimensionen sind ein ausgewählter kulturtheoretischer Ansatz, der sow
 		<Semester>1</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>ICM</Abbreviation>
+		<Area_Abbreviation>I</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>8b14cf31-17dd-4f8a-acba-b770b4392c80</GUID>
 		<Titel>10 Minutes with Geert Hofstede</Titel>
-		<Description>Geert Hofstede selbst erklärt in kurzen Videos die Unterschiede der von ihm entwickelten Kulturdimensionen. So erhältst du Einblicke in die Gegensätzlichkeiten der Dimensionen-Paare und welche Effekte diese in der Praxis haben.
+		<Description>Geert Hofstede selbst erklärt in kurzen Videos die Unterschiede der von ihm entwickelten Kulturdimensionen. So erhälst du Einblicke in die Gegensätzlichkeiten der Dimensionen-Paare und welche Effekte diese in der Praxis haben.
 Hofstedes Kulturdimensionen vermitteln ein Grundverständnis für den Curriculumsbereich "Fundamentals in Intercultural Management" und geben Aufschluss über Themen wie "Das Phänomen Kultur", "Stereotypisierung" und "Unternehmens- und nationale Kultur".</Description>
 		<Type>video</Type>
 		<Embedded>FALSE</Embedded>
@@ -606,6 +622,7 @@ Hofstedes Kulturdimensionen vermitteln ein Grundverständnis für den Curriculum
 		<Semester>1</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>ICM</Abbreviation>
+		<Area_Abbreviation>I</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>68d0b889-b09e-4d6d-9959-a4845fea33d7</GUID>
@@ -637,6 +654,7 @@ Der Kurs deckt somit Themenbereiche des ICM Schwerpunktthemas "International Tea
 		<Semester>2</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>ICM</Abbreviation>
+		<Area_Abbreviation>I</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>9c6edb7d-f674-4ca3-835f-44f308f888aa</GUID>
@@ -668,12 +686,13 @@ Folgende Themen des ICM Schwerpunktthemas "International Teams" werden abgedeckt
 		<Semester>2</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>ICM</Abbreviation>
+		<Area_Abbreviation>I</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>991a55a7-2d75-48d2-b720-ba73eae9b53c</GUID>
 		<Titel>Wahrheitstafeltrainer</Titel>
 		<Description>Mithilfe dieser Online-Übung kann die zweiwertige Logik (True/False) anhand des Ausfüllens unterschiedlicher Wahrheitstafeln trainiert werden. Deine Antworten werden sofort korrigiert und du kannst das Schwierigkeitsniveau an deine Lernbedürfnisse anpassen, indem du einzelne Spaltenlösungen vorzeitig aufdeckst.
-Auf spielerische Art und Weise festigst du dein Wissen im Bereich"'Aussageverknüpfungen und Wahrheitstafeln", welches dem Modulteilbereich "Logik und Algebra" des IMBIT-Curriculums unterzuordnen ist.</Description>
+Auf spielerische Art und Weise festigst du dein Wissen im Bereich "Aussageverknüpfungen und Wahrheitstafeln", welches dem Modulteilbereich "Logik und Algebra" des IMBIT-Curriculums unterzuordnen ist.</Description>
 		<Type>website</Type>
 		<Embedded/>
 		<src>http://www.wi.hs-wismar.de/~cleve/vorl/ti2027/wtafeln/index.html</src>
@@ -699,6 +718,7 @@ Auf spielerische Art und Weise festigst du dein Wissen im Bereich"'Aussageverkn�
 		<Semester>2</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Logik &amp; Algebra</Abbreviation>
+		<Area_Abbreviation>MG</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>7b7bf75a-e1f5-4375-95a7-41efda80dac1</GUID>
@@ -730,10 +750,11 @@ So vermittelt der Kurs schwerpunktmäßig Kenntnisse im Logik &amp; Algebra Them
 		<Semester>2</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Logik &amp; Algebra</Abbreviation>
+		<Area_Abbreviation>MG</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>194f1c1b-d38a-4725-acbb-53e97ec1b2b9</GUID>
-		<Titel>Introduction to logic</Titel>
+		<Titel>Introduction to Logic</Titel>
 		<Description>Dieser MOOC bietet einen Einstieg in die Logik im Umfeld der rechnergestützen Informationsverarbeitung und stellt deren Anwendungsfelder vor. Zu den Kompetenzen, die dir im Rahmen der Kursteilnahme vermittelt werden, zählt das Formulieren von logischen Sätzen bzw. logischen Formeln und es wird darauf eingegegangen, wie aus dieser Darstellung von Informationen eine logische Beweisführung möglich wird. Der Kursstoff wird dabei hauptsächlich mithilfe von anschaulichen Informationstexten und Übungsaufgaben übermittelt. Folgende Themenbereiche des Logik &amp; Algebra Stoffes des IMBIT-Curriculums werden abgedeckt: "Logische Gesetzmäßigkeiten", "Normalformen", "Äquivalenz- und Ordnungsrelationen".</Description>
 		<Type>mooc</Type>
 		<Embedded/>
@@ -760,6 +781,7 @@ So vermittelt der Kurs schwerpunktmäßig Kenntnisse im Logik &amp; Algebra Them
 		<Semester>2</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Logik &amp; Algebra</Abbreviation>
+		<Area_Abbreviation>MG</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>f5368710-6d71-41e6-942e-ba1175fc684d</GUID>
@@ -791,6 +813,7 @@ Insofern wirkt dieses Onlinetool unterstützend beim Vertiefen des Wissens im Th
 		<Semester>1</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>lineare Algebra</Abbreviation>
+		<Area_Abbreviation>MG</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>02cfdc0e-eb4a-4812-bc50-8d5f05602ee6</GUID>
@@ -822,6 +845,7 @@ So erhältst du nicht nur die Lösung, sondern auch ein besseres Verständnis de
 		<Semester>1</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>lineare Algebra</Abbreviation>
+		<Area_Abbreviation>MG</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>6193a879-8fb0-42b3-bb4b-f1848407c0a6</GUID>
@@ -843,7 +867,7 @@ So findest du heraus, in welchen Bereichen du deine Fähigkeiten noch ausbauen k
 		<Author>DHBW Mannheim; ZeMath Zentrum für mathematisch-naturwissenschaftliches Basiswissen</Author>
 		<Copyright>DHBW Mannheim</Copyright>
 		<Last_Modified>2008</Last_Modified>
-		<Thumb>Einschätzungstest_mathx3_quiz.png</Thumb>
+		<Thumb>Einschaetzungstest_mathx3_quiz.png</Thumb>
 		<Area>Methodische Grundlagen</Area>
 		<Number>W3WI_601</Number>
 		<Learning_Unit>Analysis und lineare Algebra</Learning_Unit>
@@ -853,6 +877,7 @@ So findest du heraus, in welchen Bereichen du deine Fähigkeiten noch ausbauen k
 		<Semester>1</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>lineare Algebra</Abbreviation>
+		<Area_Abbreviation>MG</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>4fcb2597-ebf3-4d4d-aca6-7973154e7fd2</GUID>
@@ -884,11 +909,12 @@ Dieser Kurs wird dich weiterbringen, wenn du über grundlegende mathematischen K
 		<Semester/>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation/>
+		<Area_Abbreviation/>
 	</Learning>
 	<Learning>
 		<GUID>a20ffbe9-d077-4a8a-ad6f-adcb44fa1093</GUID>
 		<Titel>Videoplaylist des Mathematikprofessors Jörn Lowiskach</Titel>
-		<Description>Jörn Lowiskach veröffentlicht als Professor der Ingenieurmathematik Videos seiner vergangenen Lehrveranstaltungen. Die "Mathematik 1"-Vorlesungen decken schwerpunktmäßig folgende Themen des IMBIT-Curriculums ab: "Analysis: Funktionen &amp; deren Eigenschaften", "Ableitungen", "Grenzwerte" und "Stetigkeit". "Mathematik 2" behandelt relevante Themen der Linearen Algebra, wie z.B. "Matritzenoperationen", "Determinante", sowie "Lineare Gleichungssysteme".
+		<Description>Jörn Lowiskach veröffentlicht als Professor der Ingenieurmathematik Videos seiner vergangenen Lehrveranstaltungen. Die "Mathematik 1"-Vorlesungen decken schwerpunktmäßig folgende Themen des IMBIT-Curriculums ab: "Analysis: Funktionen &amp; deren Eigenschaften", "Ableitungen", "Grenzwerte" und "Stetigkeit". "Mathematik 2" behandelt relevante Themen der Linearen Algebra, wie z.B. "Matrizenoperationen", "Determinante", sowie "Lineare Gleichungssysteme".
 Über die Suchfunktion der Website kannst du schnell und unkompliziert Videos zu konkreten Themen und Stichworten finden, zu denen du zusätzliche Erklärungen und Vertiefungen benötigst.</Description>
 		<Type>video</Type>
 		<Embedded/>
@@ -905,7 +931,7 @@ Dieser Kurs wird dich weiterbringen, wenn du über grundlegende mathematischen K
 		<Author>Prof. Dr. Jörn Loviscach</Author>
 		<Copyright>Prof. Dr. Jörn Loviscach</Copyright>
 		<Last_Modified>2016</Last_Modified>
-		<Thumb>Videoplaylist_Jörn_Loviscach_video.jpg</Thumb>
+		<Thumb>Videoplaylist_Joern_Loviscach_video.jpg</Thumb>
 		<Area>Methodische Grundlagen</Area>
 		<Number>W3WI_601</Number>
 		<Learning_Unit>Analysis und lineare Algebra</Learning_Unit>
@@ -915,6 +941,7 @@ Dieser Kurs wird dich weiterbringen, wenn du über grundlegende mathematischen K
 		<Semester>1</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>lineare Algebra</Abbreviation>
+		<Area_Abbreviation>MG</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>5f4049ab-f333-4fd9-8af7-12b34fd8d743</GUID>
@@ -932,9 +959,7 @@ Dieser Kurs wird dich weiterbringen, wenn du über grundlegende mathematischen K
 		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
 		<Duration/>
-		<Author>Douglas A. Lind, 
-William G. Marchal, 
-Samuel A. Wathen</Author>
+		<Author>Douglas A. Lind, William G. Marchal, Samuel A. Wathen</Author>
 		<Copyright>McGraw-Hill Global Education Holdings, LLC.</Copyright>
 		<Last_Modified>2017</Last_Modified>
 		<Thumb>Statistical_Techniques_website.png</Thumb>
@@ -947,11 +972,12 @@ Samuel A. Wathen</Author>
 		<Semester>3</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Statistik</Abbreviation>
+		<Area_Abbreviation>MG</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>a2d7d46a-eee6-4bdb-8f86-44442617884b</GUID>
 		<Titel>Wolfram Statistics Course Assistant</Titel>
-		<Description>Diese auf den Statistik-Funktionalitäten von WolframAlpha basierende App ist ein zuverlässiger Unterstützer für den Bereich der deskriptiven Statistik und Wahrscheinlichkeitsrechnung, sowohl für IOS- als auch für Android-User! Hier kannst du zweidimensionale Daten auf unterschiedliche Weise darstellen und veranschaulichen, Aufgaben zur Normal- und Binomialverteilung lösen und Zufallzahlen erzeugen. Dies alles hilft dir dabei, Statistik-Aufgaben besser zu Lösen und verringert zusätzlich den Zeichenaufwand.</Description>
+		<Description>Diese auf den Statistik-Funktionalitäten von WolframAlpha basierende App ist ein zuverlässiger Unterstützer für den Bereich der deskriptiven Statistik und Wahrscheinlichkeitsrechnung, sowohl für IOS- als auch für Android-User! Hier kannst du zweidimensionale Daten auf unterschiedliche Weise darstellen und veranschaulichen, Aufgaben zur Normal- und Binomialverteilung lösen und Zufallzahlen erzeugen. Dies alles hilft dir dabei, Statistik-Aufgaben besser zu lösen und verringert zusätzlich den Zeichenaufwand.</Description>
 		<Type>app</Type>
 		<Embedded/>
 		<src/>
@@ -977,6 +1003,7 @@ Samuel A. Wathen</Author>
 		<Semester>3</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Statistik</Abbreviation>
+		<Area_Abbreviation>MG</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>b3e7857e-03d8-471d-91cd-46464ca85ccb</GUID>
@@ -1007,6 +1034,7 @@ Samuel A. Wathen</Author>
 		<Semester>3</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Statistik</Abbreviation>
+		<Area_Abbreviation>MG</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>8647deac-3b28-4671-ab0b-7b5d7512bdb5</GUID>
@@ -1037,6 +1065,7 @@ Samuel A. Wathen</Author>
 		<Semester>3</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Statistik</Abbreviation>
+		<Area_Abbreviation>MG</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>63ca5a9f-b7fa-4c90-bbad-63287f2a9249</GUID>
@@ -1069,6 +1098,7 @@ Das Videomaterial wird von einer Lehrbuchbeschreibung begleitet, die dir bei der
 		<Semester>3</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Statistik</Abbreviation>
+		<Area_Abbreviation>MG</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>5047f7a1-db93-4f54-a752-6e287c21ec12</GUID>
@@ -1100,6 +1130,7 @@ Zentrale Themengebiete sind die Basics der deskriptiven Statistik, sowie Wahrsch
 		<Semester>3</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Statistik</Abbreviation>
+		<Area_Abbreviation>MG</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>71cf0ba3-0204-4d26-93b7-6eaab3c3fb32</GUID>
@@ -1130,6 +1161,7 @@ Zentrale Themengebiete sind die Basics der deskriptiven Statistik, sowie Wahrsch
 		<Semester>4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Operations Research</Abbreviation>
+		<Area_Abbreviation>MG</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>e26faea1-c526-4101-b71e-1658dc4fa948</GUID>
@@ -1161,6 +1193,7 @@ In diesem Online-Kurs wird die lineare Optimierung/Programmierung gelehrt, um Te
 		<Semester>4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Operations Research</Abbreviation>
+		<Area_Abbreviation>MG</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>24967dfa-791e-4596-bcfd-de928dda8e3c</GUID>
@@ -1192,11 +1225,12 @@ In diesem Online-Kurs wird die lineare Optimierung/Programmierung gelehrt, um Te
 		<Semester>4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Operations Research</Abbreviation>
+		<Area_Abbreviation>MG</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>3a23de4d-617f-4d98-b2c6-ca19d0fe6e53</GUID>
 		<Titel>Greedy Algorithms, Minimum Spanning Trees, and Dynamic Programming</Titel>
-		<Description>Fokus des MOOCs sind Algorithmen, die im Umfeld der Operations Research Anwendung finden: Zum einen werden Greedy Algorithmen (z.B Prims und Kruskals Algoritmus für minimale Spannbäume) behandelt, zum anderen verschiedene Ansätze der dynamischen Programmierung (z.B. das Rucksack Problem und das Branch-and-Bound-Verfahren). Für dich als IMBIT-Student ist insbesondere der Stoff der ersten zwei Kurswochen relevant, da mit Prims und Kruskals Algoritmus Teile des Curriculumthemas "Graphentheorie" abgedeckt werden. Das Wissen im Bereich der Greedy-Algoritmen kannst du zusätzlich in den folgenden zwei Kurswochen noch vertiefen.</Description>
+		<Description>Fokus des MOOCs sind Algorithmen, die im Umfeld der Operations Research Anwendung finden: Zum einen werden Greedy Algorithmen (z.B Prims und Kruskals Algorithmus für minimale Spannbäume) behandelt, zum anderen verschiedene Ansätze der dynamischen Programmierung (z.B. das Rucksack Problem und das Branch-and-Bound-Verfahren). Für dich als IMBIT-Student ist insbesondere der Stoff der ersten zwei Kurswochen relevant, da mit Prims und Kruskals Algoritmus Teile des Curriculumthemas "Graphentheorie" abgedeckt werden. Das Wissen im Bereich der Greedy-Algoritmen kannst du zusätzlich in den folgenden zwei Kurswochen noch vertiefen.</Description>
 		<Type>mooc</Type>
 		<Embedded/>
 		<src>https://www.coursera.org/learn/algorithms-greedy#pricing</src>
@@ -1222,6 +1256,7 @@ In diesem Online-Kurs wird die lineare Optimierung/Programmierung gelehrt, um Te
 		<Semester>4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Operations Research</Abbreviation>
+		<Area_Abbreviation>MG</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>b8384699-84d7-4251-9161-0b911487f5ac</GUID>
@@ -1252,6 +1287,7 @@ In diesem Online-Kurs wird die lineare Optimierung/Programmierung gelehrt, um Te
 		<Semester>2</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Betriebssysteme</Abbreviation>
+		<Area_Abbreviation>IT</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>c5aa8c91-165b-42f7-afb2-70eaffb8329a</GUID>
@@ -1282,6 +1318,7 @@ In diesem Online-Kurs wird die lineare Optimierung/Programmierung gelehrt, um Te
 		<Semester>3+4</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Datenbanken</Abbreviation>
+		<Area_Abbreviation>IT</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>de43f091-e142-48f6-84c6-fc34df9cbf3a</GUID>
@@ -1312,6 +1349,7 @@ In diesem Online-Kurs wird die lineare Optimierung/Programmierung gelehrt, um Te
 		<Semester>1</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>IT</Abbreviation>
+		<Area_Abbreviation>IT</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>cf9d1cd7-8862-4a9f-b359-83630c98a885</GUID>
@@ -1342,11 +1380,12 @@ In diesem Online-Kurs wird die lineare Optimierung/Programmierung gelehrt, um Te
 		<Semester>3+4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Betriebssysteme</Abbreviation>
+		<Area_Abbreviation>IT</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>90ed26b4-32f5-49ff-be37-5f997e2f35f5</GUID>
 		<Titel>Vorlesung zu Communication Systems</Titel>
-		<Description>Diese Webseite zeigt alle Skripte aus der Vorlesung "Communication Systems" von Herrn Welter aus 2015. Hier lernst du die Grundlagen der Datenübertragung kennen und findest nützliche Links zu weiterführenden Lerninhalten im Themenbereich wie beispielsweise ein Tool zur Kalkulation von IP, Subnetz und Ranges. </Description>
+		<Description>Diese Webseite zeigt alle Skripte aus der Vorlesung "Communication Systems" von Herrn Welter aus 2015. Hier lernst du die Grundlagen der Datenübertragung kennen und findest nützliche Links zu weiterführenden Lerninhalten im Themenbereich wie beispielsweise ein Tool zur Kalkulation von IP-Adressen, Subnetz und Ranges. </Description>
 		<Type>website</Type>
 		<Embedded/>
 		<src>http://dhbw.welter.ws/</src>
@@ -1372,6 +1411,7 @@ In diesem Online-Kurs wird die lineare Optimierung/Programmierung gelehrt, um Te
 		<Semester>3+4</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Betriebssysteme</Abbreviation>
+		<Area_Abbreviation>IT</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>9e042663-0298-4cae-8d5e-e37c13d9b38b</GUID>
@@ -1402,6 +1442,7 @@ In diesem Online-Kurs wird die lineare Optimierung/Programmierung gelehrt, um Te
 		<Semester>3+4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Betriebssysteme</Abbreviation>
+		<Area_Abbreviation>IT</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>104e01dc-3db7-45b0-9a54-b30d49431934</GUID>
@@ -1433,6 +1474,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>1+2</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Programmierung</Abbreviation>
+		<Area_Abbreviation>IT</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>8fb0fa69-cef0-4571-b06b-03fd7e2bfad0</GUID>
@@ -1451,7 +1493,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Prestigious>FALSE</Prestigious>
 		<Duration/>
 		<Author>Frauke Mörike</Author>
-		<Copyright>Institut für Ethnologie der Universität Heidelber</Copyright>
+		<Copyright>Institut für Ethnologie der Universität Heidelberg</Copyright>
 		<Last_Modified>2017</Last_Modified>
 		<Thumb>Business_Anthropology.jpg</Thumb>
 		<Area/>
@@ -1463,6 +1505,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester/>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation/>
+		<Area_Abbreviation/>
 	</Learning>
 	<Learning>
 		<GUID>bde190f5-45af-43e7-87b2-3d3418840d49</GUID>
@@ -1493,6 +1536,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>3+4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Betriebssysteme</Abbreviation>
+		<Area_Abbreviation>IT</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>d1d78ad7-bc10-4a57-bb77-45f9d546d7fe</GUID>
@@ -1523,6 +1567,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>3+4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Webprogrammierung</Abbreviation>
+		<Area_Abbreviation>IT</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>807e7500-8e70-4f22-853e-a966ec591b6c</GUID>
@@ -1553,6 +1598,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>1+2</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>IT</Abbreviation>
+		<Area_Abbreviation>IT</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>e4edb758-d5ef-4730-b3cb-3dfeff6f8d06</GUID>
@@ -1583,6 +1629,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>3+4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Betriebssysteme</Abbreviation>
+		<Area_Abbreviation>IT</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>90975a6e-5270-4ba4-a702-e1acd14bfa74</GUID>
@@ -1613,6 +1660,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>3+4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Datenbanken</Abbreviation>
+		<Area_Abbreviation>IT</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>de14b272-897f-4d43-ab62-cf4fe10dc436</GUID>
@@ -1644,6 +1692,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>3+4</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Datenbanken</Abbreviation>
+		<Area_Abbreviation>IT</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>ace2ad44-8ef1-4f91-a4c8-79023e0f12e2</GUID>
@@ -1674,6 +1723,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>1+2</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Programmierung</Abbreviation>
+		<Area_Abbreviation>IT</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>a7d69151-cf2b-416d-8bec-522642e90b3e</GUID>
@@ -1704,6 +1754,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>3+4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Webprogrammierung</Abbreviation>
+		<Area_Abbreviation>IT</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>383d9cc1-2e57-4925-beac-483f6dc73dd6</GUID>
@@ -1734,6 +1785,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>3+4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Webprogrammierung</Abbreviation>
+		<Area_Abbreviation>IT</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>776adb74-3a43-4f61-a5d7-decffbf86a98</GUID>
@@ -1764,6 +1816,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>1+2</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Recht</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>75a8498b-9969-4059-8046-4e7e1aad55fe</GUID>
@@ -1784,7 +1837,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Author>Prof. Dr. Michael Beurskens</Author>
 		<Copyright>Rheinische Friedrich-Wilhelms-Universität Bonn</Copyright>
 		<Last_Modified>2016</Last_Modified>
-		<Thumb>Schuldrecht_Vertragsschuldverhältnisse.jpg</Thumb>
+		<Thumb>Schuldrecht_Vertragsschuldverhaeltnisse.jpg</Thumb>
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_506</Number>
 		<Learning_Unit>Recht</Learning_Unit>
@@ -1794,6 +1847,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>1+2</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Recht</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>f9f05a75-cb61-4139-a1ab-d7da42c1d0eb</GUID>
@@ -1814,7 +1868,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Author>Prof. Dr. Michael Beurskens</Author>
 		<Copyright>Rheinische Friedrich-Wilhelms-Universität Bonn</Copyright>
 		<Last_Modified>2016</Last_Modified>
-		<Thumb>Grundzüge_des_Handelsrechts.jpg</Thumb>
+		<Thumb>Grundzuege_des_Handelsrechts.jpg</Thumb>
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_506</Number>
 		<Learning_Unit>Recht</Learning_Unit>
@@ -1824,6 +1878,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>1+2</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Recht</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>16ceea23-3c4e-47b9-9053-dd5828eeac1c</GUID>
@@ -1854,6 +1909,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>3+4</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>VWL</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>ed37a874-b6a8-47aa-a81c-a2c57e7269e0</GUID>
@@ -1884,6 +1940,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>3+4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>VWL</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>5ff5394a-eb79-4217-9540-74f538cccc0f</GUID>
@@ -1914,6 +1971,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>3+4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>VWL</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>c0f2edcb-ddc4-4482-a49f-b7cb36b7faea</GUID>
@@ -1944,6 +2002,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>3+4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>VWL</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>c46782ca-3c02-4360-a166-1156cb3df3e6</GUID>
@@ -1974,6 +2033,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>3+4+5+6</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Spanisch</Abbreviation>
+		<Area_Abbreviation>I</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>9e773d4e-823a-44a1-9181-b464aa0c2d09</GUID>
@@ -2004,6 +2064,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>3+4+5+6</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Spanisch</Abbreviation>
+		<Area_Abbreviation>I</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>30b8b3ef-b8ca-428f-b18e-621add7a8ab4</GUID>
@@ -2034,6 +2095,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>3+4+5+6</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Spanisch</Abbreviation>
+		<Area_Abbreviation>I</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>9992ba03-ee69-4ce8-803a-cfe37ed09e91</GUID>
@@ -2064,6 +2126,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Produktion und Materialwirtschaft</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>1f24f9af-3a13-43cf-93e7-61c78b0946d2</GUID>
@@ -2094,6 +2157,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Produktion und Materialwirtschaft</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>9ebcebeb-81ee-42e5-adbb-fd1aa70e754f</GUID>
@@ -2124,10 +2188,11 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Produktion und Materialwirtschaft</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>cb0dc3d2-f249-4b99-8e62-cd4d25dc79c4</GUID>
-		<Titel>Das Synchrone Produktionssystem von Fischer Systemmechanik </Titel>
+		<Titel>Das synchrone Produktionssystem von Fischer Systemmechanik </Titel>
 		<Description>Was bedeutet synchrones Produktionssystem? Was sind die Ziele und wie bauen Unternehmen eine synchrone Fertigung auf? Das Video von Fischer System-Automatik gibt dir Antworten auf diese Fragen. Verschiedene Fertigungsprinzipien werden in der Vorlesung von Hr. Fraas thematisiert. Dieses Video dient also der Ergänzung. </Description>
 		<Type>youtube</Type>
 		<Embedded>TRUE</Embedded>
@@ -2154,6 +2219,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Produktion und Materialwirtschaft</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>a223aeb2-9270-4ebb-9f7a-72d967073ccf</GUID>
@@ -2184,6 +2250,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Produktion und Materialwirtschaft</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>d7052081-f9e1-4859-85c0-786d20152b52</GUID>
@@ -2204,7 +2271,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Author>ABB</Author>
 		<Copyright>ABB</Copyright>
 		<Last_Modified>2014</Last_Modified>
-		<Thumb>Industrie_4_0_Die_nächste_Revolution.jpg</Thumb>
+		<Thumb>Industrie_4_0_Die_naechste_Revolution.jpg</Thumb>
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Produktion und Materialwirtschaft</Learning_Unit>
@@ -2214,6 +2281,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Produktion und Materialwirtschaft</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>ad33da99-cce9-40d4-8a2e-5232fee2c3d4</GUID>
@@ -2244,6 +2312,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Produktion und Materialwirtschaft</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>2eafe386-6356-4e64-a2e9-41d71959432c</GUID>
@@ -2274,6 +2343,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Produktion und Materialwirtschaft</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>8132a8e0-0bcb-42e9-9af9-9f9182c0f89c</GUID>
@@ -2294,7 +2364,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Author>Prof. Dr. Jörn Schlingensiepen</Author>
 		<Copyright>Prof. Dr. Jörn Schlingensiepen</Copyright>
 		<Last_Modified>2012</Last_Modified>
-		<Thumb>Stücklisten.png</Thumb>
+		<Thumb>Stuecklisten.png</Thumb>
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Produktion und Materialwirtschaft</Learning_Unit>
@@ -2304,6 +2374,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Produktion und Materialwirtschaft</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>138386a2-731a-47f1-9511-a8ff941edd08</GUID>
@@ -2324,7 +2395,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Author>Professor Frank Piller</Author>
 		<Copyright>RWTH Aachen TIM Group</Copyright>
 		<Last_Modified>2015</Last_Modified>
-		<Thumb>Geschäftsmodelle_für_Industrie_4_0.png</Thumb>
+		<Thumb>Geschaeftsmodelle_für_Industrie_4_0.png</Thumb>
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Produktion und Materialwirtschaft</Learning_Unit>
@@ -2334,6 +2405,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Produktion und Materialwirtschaft</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>9801320b-2fe7-4500-bd54-429913ba1abb</GUID>
@@ -2354,7 +2426,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Author>TheSimpleEconomics</Author>
 		<Copyright>TheSimpleEconomics</Copyright>
 		<Last_Modified>2016</Last_Modified>
-		<Thumb>Werkstattproduktion_Produktionstypen_einfach_erklärt.jpg</Thumb>
+		<Thumb>Werkstattproduktion_Produktionstypen_einfach_erklaert.jpg</Thumb>
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Produktion und Materialwirtschaft</Learning_Unit>
@@ -2364,6 +2436,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Produktion und Materialwirtschaft</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>98634824-fe56-4cd6-bf49-098d70090e5d</GUID>
@@ -2384,7 +2457,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Author>easyFOSBOS</Author>
 		<Copyright>easyFOSBOS</Copyright>
 		<Last_Modified>2013</Last_Modified>
-		<Thumb>Einführung_in_die_Materialwirtschaft.png</Thumb>
+		<Thumb>Einfuehrung_in_die_Materialwirtschaft.png</Thumb>
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Produktion und Materialwirtschaft</Learning_Unit>
@@ -2394,6 +2467,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>5</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Produktion und Materialwirtschaft</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>1f89e300-baf6-4ab0-8c24-0e3c7f7993e2</GUID>
@@ -2424,6 +2498,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>6</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Supply Chain Management</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>e95be232-83a0-45b3-bc8a-4f589f06ffa4</GUID>
@@ -2444,7 +2519,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Author>Massachusetts Institute of Technology </Author>
 		<Copyright>edX Inc.</Copyright>
 		<Last_Modified>2017</Last_Modified>
-		<Thumb>SCM.png</Thumb>
+		<Thumb>Scm.png</Thumb>
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Supply Chain Management</Learning_Unit>
@@ -2454,6 +2529,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>6</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Supply Chain Management</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>86b2bd22-2ea5-46db-9607-b4349c51e2c1</GUID>
@@ -2484,6 +2560,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>6</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Supply Chain Management</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>b59be964-3f3b-4df2-a664-b9f01c3cd987</GUID>
@@ -2514,6 +2591,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>5</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>International Business Law</Abbreviation>
+		<Area_Abbreviation>I</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>570f61dc-3ff9-4876-acb0-518c0e5e358d</GUID>
@@ -2544,6 +2622,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>5</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>International Business Law</Abbreviation>
+		<Area_Abbreviation>I</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>3235204c-aeec-44c3-b51e-124e6729b330</GUID>
@@ -2574,6 +2653,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>5</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>International Business Law</Abbreviation>
+		<Area_Abbreviation>I</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>cd062bcf-a00a-405c-888e-514558ca0b87</GUID>
@@ -2594,7 +2674,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Author>Europäische Union </Author>
 		<Copyright>dejure.org Rechtsinformationssysteme GmbH</Copyright>
 		<Last_Modified>2016</Last_Modified>
-		<Thumb>Gesetzesübersicht.jpg</Thumb>
+		<Thumb>Gesetzesuebersicht.jpg</Thumb>
 		<Area>Internationales</Area>
 		<Number>W3WI_IMBIT_303</Number>
 		<Learning_Unit>International Business Law and International Organizations</Learning_Unit>
@@ -2604,10 +2684,11 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>International Business Law</Abbreviation>
+		<Area_Abbreviation>I</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>7ecebe73-83f5-4a8f-a04a-c329e34c3eae</GUID>
-		<Titel>The European Union: 500 million people - 28 countries</Titel>
+		<Titel>The European Union: 500 Million People - 28 Countries</Titel>
 		<Description>Diese Webseite zeigt dir eine Präsentation über die Europäische Union, deren Gründung, Geschichte und Entwicklung. Es wird deutlich, welche Potentiale ein derartiger Zusammenschluss mit sich bringt und wie man diese, gemeinsam mit allen Mitgliedsstaaten, versucht zu nutzen. Die angesprochenen Themen und Aspekte der Präsentation spielen auch eine wichtige Rolle in der Vorlesung von Prof. Dr. Büchner.</Description>
 		<Type>website</Type>
 		<Embedded/>
@@ -2634,6 +2715,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>International Business Law</Abbreviation>
+		<Area_Abbreviation>I</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>6c646b2e-22bd-4d25-a7db-c99914995e31</GUID>
@@ -2664,6 +2746,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>International Business Law</Abbreviation>
+		<Area_Abbreviation>I</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>0da296bf-40fd-423b-bb11-8d60660cbe5d</GUID>
@@ -2681,7 +2764,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
 		<Duration/>
-		<Author>Bundesministeriums der Justiz und für Verbraucherschutz</Author>
+		<Author>Bundesministerium der Justiz und für Verbraucherschutz</Author>
 		<Copyright>juris GmbH </Copyright>
 		<Last_Modified>2016</Last_Modified>
 		<Thumb>Gesetze_im_Internet.jpg</Thumb>
@@ -2694,6 +2777,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>International Business Law</Abbreviation>
+		<Area_Abbreviation>I</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>6207d2aa-e592-4c45-972a-132fd551473e</GUID>
@@ -2724,6 +2808,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>International Business Law</Abbreviation>
+		<Area_Abbreviation>I</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>d956ab61-545e-442e-bf43-337c40cddaca</GUID>
@@ -2754,6 +2839,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>International Business Law</Abbreviation>
+		<Area_Abbreviation>I</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>4890db31-6a76-4d36-92ff-31bc5b1dfe20</GUID>
@@ -2784,10 +2870,11 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>International Business Law</Abbreviation>
+		<Area_Abbreviation>I</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>8ed8e126-e9cd-4a56-bef9-2717420b8ffb</GUID>
-		<Titel>The IMF and the World Bank - How Do They Differ?</Titel>
+		<Titel>The IMF and the World Bank - How do they Differ?</Titel>
 		<Description>Diese Webseite enthält einen Artikel über den Unterschied zwischen dem International Monetary Fund und der Weltbank. Beide Organisationen werden erklärt und anschließend voneinander abgegrenzt. Dies ist ein sehr geeignetes Paper, um das grundlegende Verständnis über die Weltbank und den IMF zu fördern und dir die Unterschiede zwischen den beiden klarzumachen.</Description>
 		<Type>website</Type>
 		<Embedded/>
@@ -2814,6 +2901,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>International Business Law</Abbreviation>
+		<Area_Abbreviation>I</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>985e6fe3-ea6f-4f88-931c-e16b0d7242bc</GUID>
@@ -2844,6 +2932,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Semester>5</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>International Business Law</Abbreviation>
+		<Area_Abbreviation>I</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>d21a1287-1be0-41ba-9b8c-0cdc01764fd4</GUID>
@@ -2877,6 +2966,7 @@ In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifik
 		<Semester>1+2</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Systemanalyse</Abbreviation>
+		<Area_Abbreviation>WI</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>8c622743-9829-4a25-98e4-b2b1273a2fe7</GUID>
@@ -2907,6 +2997,7 @@ In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifik
 		<Semester>1+2</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Wirtschaftsinformatik</Abbreviation>
+		<Area_Abbreviation>WI</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>00ca0619-8467-4072-a3af-fd175c2ee368</GUID>
@@ -2937,6 +3028,7 @@ In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifik
 		<Semester>1+2</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Systemanalyse</Abbreviation>
+		<Area_Abbreviation>WI</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>d74cc8e4-e1b5-4aae-ac21-d1c29db5a235</GUID>
@@ -2967,6 +3059,7 @@ In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifik
 		<Semester>3+4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Projektmanagement</Abbreviation>
+		<Area_Abbreviation>MG</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>d1039009-9f87-4b8b-ac3c-f0b11b8d8647</GUID>
@@ -2997,6 +3090,7 @@ In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifik
 		<Semester>3+4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Projektmanagement</Abbreviation>
+		<Area_Abbreviation>MG</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>ceb18c48-b679-4717-afdb-5ae68aac6f61</GUID>
@@ -3027,6 +3121,7 @@ In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifik
 		<Semester>3+4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Projektmanagement</Abbreviation>
+		<Area_Abbreviation>MG</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>6fb916e5-c10a-44f0-a389-c9c6919ed564</GUID>
@@ -3048,7 +3143,7 @@ In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifik
 		<Copyright>Dr. Brandi-Dohrn, Prof. Czychowski</Copyright>
 		<Last_Modified>2016</Last_Modified>
 		<Thumb>IT-Recht_für_Software-Entwickler.jpg</Thumb>
-		<Area>Wirtschaft </Area>
+		<Area>Wirtschaft</Area>
 		<Number>W3WI_506</Number>
 		<Learning_Unit>IT-Recht</Learning_Unit>
 		<Abdeckungsgrad>0.6</Abdeckungsgrad>
@@ -3057,6 +3152,7 @@ In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifik
 		<Semester>5</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>IT-Recht</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>9e7d9c39-ffbf-45d5-b9c9-ca31cebac672</GUID>
@@ -3088,11 +3184,12 @@ In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifik
 		<Semester>5+6</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>IT-Management</Abbreviation>
+		<Area_Abbreviation>WI</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>3c4f6fbe-ca42-4c47-bc64-8fd8b85bcd48</GUID>
 		<Titel>SAP APPHAUS - eine kreative Woche mit Design Thinking</Titel>
-		<Description>Im Rahmen des Moduls "Grundlagen Human Machine Interactions" haben wir das SAP APPHAUS in Heidelberg besucht und einen Grundlagenkurs in Designthinking absolviert. Fun fact: Auch Personen wie Dieter Zetsche, CEO von Daimler, haben an einem Kurs im APPHAUS teilgenommen! Hier findest du ein Video dazu.</Description>
+		<Description>Im Rahmen des Moduls "Grundlagen Human Machine Interactions" haben wir das SAP APPHAUS in Heidelberg besucht und einen Grundlagenkurs in Design Thinking absolviert. Fun fact: Auch Personen wie Dieter Zetsche, CEO von Daimler, haben an einem Kurs im APPHAUS teilgenommen! Hier findest du ein Video dazu.</Description>
 		<Type>website</Type>
 		<Embedded/>
 		<src>https://www.sap-tv.com/video/#/7682/app-haus-a-creative-workplace</src>
@@ -3118,10 +3215,11 @@ In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifik
 		<Semester>4+5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Design Thinking</Abbreviation>
+		<Area_Abbreviation>WI</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>afaf5cfa-5353-4cf6-b74e-8058f6974498</GUID>
-		<Titel>Developing international Software</Titel>
+		<Titel>Developing International Software</Titel>
 		<Description>Als IMBIT-Student wirst du in der Arbeitswelt innerhalb internationaler Firmen an der Entwicklung von komplexen Computerprogrammen beteiligt sein. Dieser Kurs versucht, dich darauf bestmöglichst vorzubereiten.
 Er besteht aus folgenden drei Teilen: dem Business Case, dem Design und der Entwicklung. Während man die Teile eins und zwei ohne Programmierkenntnisse durchführen kann, erfordert der dritte Teil Programmiererfahrung. </Description>
 		<Type>mooc</Type>
@@ -3140,7 +3238,7 @@ Er besteht aus folgenden drei Teilen: dem Business Case, dem Design und der Entw
 		<Copyright>Microsoft</Copyright>
 		<Last_Modified>2017</Last_Modified>
 		<Thumb>Developing_international_Software.png</Thumb>
-		<Area>Wirtschaft</Area>
+		<Area>Wirtschaftsinformatik</Area>
 		<Number>W3WI_101</Number>
 		<Learning_Unit>Systemanalyse</Learning_Unit>
 		<Abdeckungsgrad>0.2</Abdeckungsgrad>
@@ -3149,6 +3247,7 @@ Er besteht aus folgenden drei Teilen: dem Business Case, dem Design und der Entw
 		<Semester>1+2</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Systemanalyse</Abbreviation>
+		<Area_Abbreviation>WI</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>43c98d79-b8d1-4ffa-acc0-1abc7437e320</GUID>
@@ -3179,10 +3278,11 @@ Er besteht aus folgenden drei Teilen: dem Business Case, dem Design und der Entw
 		<Semester>1+2</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Systemanalyse</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>9c8852e9-8495-4e75-bd8f-06f8811dee5f</GUID>
-		<Titel>Business Process Management - Learn how to manage a process</Titel>
+		<Titel>Business Process Management - Learn How to Manage a Process</Titel>
 		<Description>Dieser Kurs befasst sich, neben den Grundlagen der Modellierung, mit den Themen Analyse, Verbesserung und Veränderung von Geschäftsprozessen. Bei Geschäftsprozessveränderungen sind sowohl die organisatorische als auch die IT-technische Umsetzung relevant. Das Wissen wird dir von erfahrenen Dozenten der Wirtschaftsinformatik von diversen Universitäten (u.a. der Universitäten Saarbrücken, Münster, München und Hamburg) und Dozenten aus der Wirtschaft  beigebracht.</Description>
 		<Type>mooc</Type>
 		<Embedded/>
@@ -3209,10 +3309,11 @@ Er besteht aus folgenden drei Teilen: dem Business Case, dem Design und der Entw
 		<Semester>5+6</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Geschäftsprozesse</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>0f24023c-11b9-47cc-a838-a2ad1b388449</GUID>
-		<Titel>Business Process Management: an Introduction to Process Thinking</Titel>
+		<Titel>Business Process Management: An Introduction to Process Thinking</Titel>
 		<Description>Dieser MOOC gibt dir eine Einführung in das Geschäftsprozessmanagement. Er wurde erstellt an der Queensland University of Technology, einer führenden australischen Universität, die sich unter den besten 2% der Universitäten weltweit befindet. </Description>
 		<Type>mooc</Type>
 		<Embedded/>
@@ -3239,6 +3340,7 @@ Er besteht aus folgenden drei Teilen: dem Business Case, dem Design und der Entw
 		<Semester>5+6</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Geschäftsprozesse</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>b8aaa1e5-fb48-4e00-9810-ddf1a9396346</GUID>
@@ -3256,7 +3358,7 @@ Für mehr Info's schau dir unser Teaser-Video an!: https://vimeo.com/96179581</D
 		<Fixed_StartDate/>
 		<Certificate/>
 		<Certificate_Costs/>
-		<Prestigious/>
+		<Prestigious>FALSE</Prestigious>
 		<Duration/>
 		<Author>WIMBIT12C, WIMBIT13C</Author>
 		<Copyright>DHBW Mannheim</Copyright>
@@ -3271,6 +3373,100 @@ Für mehr Info's schau dir unser Teaser-Video an!: https://vimeo.com/96179581</D
 		<Semester>4+5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Projektmanagement</Abbreviation>
+		<Area_Abbreviation>MG</Area_Abbreviation>
+	</Learning>
+	<Learning>
+		<GUID>10801cc9-2af7-4394-bc8c-18a2778a5ef7</GUID>
+		<Titel>Formelsammlung Statistik</Titel>
+		<Description>Diese Webseite beinhaltet eine kommentierte Formelsammlung der deskriptiven und induktiven Statistik und eignet sich besonders für dich als Wirtschaftswissenschaftler. Weitere Übungsaufgaben findest du auf der Webseite von Frau Prof. Dr. Irene Rößler.</Description>
+		<Type>website</Type>
+		<Embedded/>
+		<src>http://prof-roessler.de/Dateien/Statistik/formelsammlung.pdf</src>
+		<Youtube_ID/>
+		<IOS_ID/>
+		<Android_ID/>
+		<Free_of_charge/>
+		<Fixed_StartDate/>
+		<Certificate/>
+		<Certificate_Costs/>
+		<Prestigious>FALSE</Prestigious>
+		<Duration/>
+		<Author>Prof. Dr. Irene Rößler</Author>
+		<Copyright>Prof. Dr. Irene Rößler</Copyright>
+		<Last_Modified>2017</Last_Modified>
+		<Thumb>Statistik.png</Thumb>
+		<Area>Methodische Grundlagen</Area>
+		<Number>W3WI_602</Number>
+		<Learning_Unit>Statistik</Learning_Unit>
+		<Abdeckungsgrad>0.3</Abdeckungsgrad>
+		<Language>DE</Language>
+		<Tech_Requirements/>
+		<Semester>3</Semester>
+		<Recommended>TRUE</Recommended>
+		<Abbreviation>Statistik</Abbreviation>
+		<Area_Abbreviation>MG</Area_Abbreviation>
+	</Learning>
+	<Learning>
+		<GUID>b9730d1a-60a7-4cd7-80b4-88f16e768c42</GUID>
+		<Titel>Cloud Wiki</Titel>
+		<Description>Dieses Wiki erklärt zahlreiche Begriffe rund um das Thema "Cloud Computing" und wurde von dem WIBI09-Kurs im Jahr 2012 erstellt. Es ist bestens zur Wiederholung der Cloud Computing Vorlesung im 5. Semester geeignet. Darüber hinaus findest du hier auch weiterführende Informationen.</Description>
+		<Type>wiki</Type>
+		<Embedded/>
+		<src>http://wiki.brillianideas.com/index.php/Hauptseite</src>
+		<Youtube_ID/>
+		<IOS_ID/>
+		<Android_ID/>
+		<Free_of_charge/>
+		<Fixed_StartDate/>
+		<Certificate/>
+		<Certificate_Costs/>
+		<Prestigious>FALSE</Prestigious>
+		<Duration/>
+		<Author>WIBI09</Author>
+		<Copyright>WIBI09</Copyright>
+		<Last_Modified>2017</Last_Modified>
+		<Thumb>Wiki.png</Thumb>
+		<Area>Informatik</Area>
+		<Number>W3WI_111</Number>
+		<Learning_Unit>Neue Konzepte</Learning_Unit>
+		<Abdeckungsgrad>0.4</Abdeckungsgrad>
+		<Language>DE</Language>
+		<Tech_Requirements/>
+		<Semester>5</Semester>
+		<Recommended>TRUE</Recommended>
+		<Abbreviation>Neue Konzepte</Abbreviation>
+		<Area_Abbreviation>IT</Area_Abbreviation>
+	</Learning>
+	<Learning>
+		<GUID>7b2e9df6-715b-4491-ac6d-a175d72b3be6</GUID>
+		<Titel>TOPSIM Planspiel General Management</Titel>
+		<Description>Das kompetitive Industrieplanspiel TOPSIM – General Management ist eine anspruchsvolle Management Simulation, welche die komplexen Zusammenhänge eines produzierenden mittelständischen Unternehmens in der Drucker- und Kopierer Branche abbildet. In der Rolle der Geschäftsführung triffst du als Teilnehmer strategische und operative Entscheidungen in den Unternehmensbereichen Marketing, Vertrieb, Forschung und Entwicklung, Einkauf, Fertigung, Personal und Verwaltung. Dabei erlernst du, strukturiert mit großen Informationsmengen umzugehen und die Reichweite deiner Entscheidungen abzuschätzen. </Description>
+		<Type>planspiel</Type>
+		<Embedded/>
+		<src>http://www.topsim.com/de/startseite/startseite.html</src>
+		<Youtube_ID/>
+		<IOS_ID/>
+		<Android_ID/>
+		<Free_of_charge/>
+		<Fixed_StartDate/>
+		<Certificate/>
+		<Certificate_Costs/>
+		<Prestigious>FALSE</Prestigious>
+		<Duration/>
+		<Author>TATA Interactive Systems GmbH</Author>
+		<Copyright>TATA Interactive Systems GmbH</Copyright>
+		<Last_Modified>2017</Last_Modified>
+		<Thumb>Planspiel.jpg</Thumb>
+		<Area>Wirtschaft</Area>
+		<Number>W3WI_204</Number>
+		<Learning_Unit>Unternehmensführung und Controlling</Learning_Unit>
+		<Abdeckungsgrad>0.25</Abdeckungsgrad>
+		<Language>DE</Language>
+		<Tech_Requirements/>
+		<Semester>5</Semester>
+		<Recommended>TRUE</Recommended>
+		<Abbreviation>Controlling</Abbreviation>
+		<Area_Abbreviation>W</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID/>
@@ -3301,6 +3497,7 @@ Für mehr Info's schau dir unser Teaser-Video an!: https://vimeo.com/96179581</D
 		<Semester/>
 		<Recommended/>
 		<Abbreviation/>
+		<Area_Abbreviation/>
 	</Learning>
 	<Learning>
 		<GUID/>
@@ -3331,6 +3528,7 @@ Für mehr Info's schau dir unser Teaser-Video an!: https://vimeo.com/96179581</D
 		<Semester/>
 		<Recommended/>
 		<Abbreviation/>
+		<Area_Abbreviation/>
 	</Learning>
 	<Learning>
 		<GUID/>
@@ -3361,6 +3559,7 @@ Für mehr Info's schau dir unser Teaser-Video an!: https://vimeo.com/96179581</D
 		<Semester/>
 		<Recommended/>
 		<Abbreviation/>
+		<Area_Abbreviation/>
 	</Learning>
 	<Learning>
 		<GUID/>
@@ -3391,6 +3590,7 @@ Für mehr Info's schau dir unser Teaser-Video an!: https://vimeo.com/96179581</D
 		<Semester/>
 		<Recommended/>
 		<Abbreviation/>
+		<Area_Abbreviation/>
 	</Learning>
 	<Learning>
 		<GUID/>
@@ -3421,6 +3621,7 @@ Für mehr Info's schau dir unser Teaser-Video an!: https://vimeo.com/96179581</D
 		<Semester/>
 		<Recommended/>
 		<Abbreviation/>
+		<Area_Abbreviation/>
 	</Learning>
 	<Learning>
 		<GUID/>
@@ -3451,6 +3652,7 @@ Für mehr Info's schau dir unser Teaser-Video an!: https://vimeo.com/96179581</D
 		<Semester/>
 		<Recommended/>
 		<Abbreviation/>
+		<Area_Abbreviation/>
 	</Learning>
 	<Learning>
 		<GUID/>
@@ -3481,6 +3683,7 @@ Für mehr Info's schau dir unser Teaser-Video an!: https://vimeo.com/96179581</D
 		<Semester/>
 		<Recommended/>
 		<Abbreviation/>
+		<Area_Abbreviation/>
 	</Learning>
 	<Learning>
 		<GUID/>
@@ -3511,6 +3714,7 @@ Für mehr Info's schau dir unser Teaser-Video an!: https://vimeo.com/96179581</D
 		<Semester/>
 		<Recommended/>
 		<Abbreviation/>
+		<Area_Abbreviation/>
 	</Learning>
 	<Learning>
 		<GUID/>
@@ -3541,6 +3745,7 @@ Für mehr Info's schau dir unser Teaser-Video an!: https://vimeo.com/96179581</D
 		<Semester/>
 		<Recommended/>
 		<Abbreviation/>
+		<Area_Abbreviation/>
 	</Learning>
 	<Learning>
 		<GUID/>
@@ -3571,6 +3776,7 @@ Für mehr Info's schau dir unser Teaser-Video an!: https://vimeo.com/96179581</D
 		<Semester/>
 		<Recommended/>
 		<Abbreviation/>
+		<Area_Abbreviation/>
 	</Learning>
 	<Learning>
 		<GUID/>
@@ -3601,95 +3807,6 @@ Für mehr Info's schau dir unser Teaser-Video an!: https://vimeo.com/96179581</D
 		<Semester/>
 		<Recommended/>
 		<Abbreviation/>
-	</Learning>
-	<Learning>
-		<GUID/>
-		<Titel/>
-		<Description/>
-		<Type/>
-		<Embedded/>
-		<src/>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
-		<Prestigious/>
-		<Duration/>
-		<Author/>
-		<Copyright/>
-		<Last_Modified/>
-		<Thumb/>
-		<Area/>
-		<Number/>
-		<Learning_Unit/>
-		<Abdeckungsgrad/>
-		<Language/>
-		<Tech_Requirements/>
-		<Semester/>
-		<Recommended/>
-		<Abbreviation/>
-	</Learning>
-	<Learning>
-		<GUID/>
-		<Titel/>
-		<Description/>
-		<Type/>
-		<Embedded/>
-		<src/>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
-		<Prestigious/>
-		<Duration/>
-		<Author/>
-		<Copyright/>
-		<Last_Modified/>
-		<Thumb/>
-		<Area/>
-		<Number/>
-		<Learning_Unit/>
-		<Abdeckungsgrad/>
-		<Language/>
-		<Tech_Requirements/>
-		<Semester/>
-		<Recommended/>
-		<Abbreviation/>
-	</Learning>
-	<Learning>
-		<GUID/>
-		<Titel/>
-		<Description/>
-		<Type/>
-		<Embedded/>
-		<src/>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
-		<Prestigious/>
-		<Duration/>
-		<Author/>
-		<Copyright/>
-		<Last_Modified/>
-		<Thumb/>
-		<Area/>
-		<Number/>
-		<Learning_Unit/>
-		<Abdeckungsgrad/>
-		<Language/>
-		<Tech_Requirements/>
-		<Semester/>
-		<Recommended/>
-		<Abbreviation/>
+		<Area_Abbreviation/>
 	</Learning>
 </Learnings>

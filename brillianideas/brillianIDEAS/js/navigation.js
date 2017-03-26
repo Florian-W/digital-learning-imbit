@@ -7,6 +7,7 @@
 var dotsspace;
 
 $(window).on('load', function(){
+	$ = jQuery;
 	/**
 	* Added hash to navigate page
 	*/
@@ -20,7 +21,7 @@ $(window).on('load', function(){
 			break;
 	}
 	
-	jQuery(document).on("swiperight",function(){
+	jQuery(document).on("swiperight",function(e){
 		if($(e.target).is('p,a,img,h1,h2,h3,h4,h5,span')) return false;	
 		changePage(true);
 	}).on("swipeleft",function(e){
@@ -78,7 +79,8 @@ $(window).on('load', function(){
 	
 });
 
-$(document).ready(function(){		
+$(document).ready(function(){	
+	$ = jQuery;	
  	$('#dots').css({		
  		top: $('#dots').position().top		
  	});		

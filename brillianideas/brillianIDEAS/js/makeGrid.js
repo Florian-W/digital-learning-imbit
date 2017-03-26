@@ -5,7 +5,7 @@
 
 /**
  * Konfiguration für das Koordnatensystem inkl. X-Y-Koordinaten und die Anzeigereihenfolge
- * @contant {Array} digitalLearningArray
+ * @constant {Array} digitalLearningArray
  */
 const digitalLearningArray = [
 	['mooc', 0.49034749 , 0.16136364 ,1],
@@ -291,9 +291,10 @@ var makeGrid = function makeGrid(view){
 							$.ajax({
 								url: 'xml/index.php?base=learning&withLink=true&detail=true&guid=' + $(element).data('target'), 
 								complete: function (learningData) {
-									var $newElement = $obj.find('.list').parent().append(learningData.responseText).children('.learning');
+									var $newElement = $obj.find('.list').parent().append(
+										learningData.responseText.replace(/(?:\r\n|\r|\n)/g," ").replace(/<(br|BR)[ \/]{0,2}>/g, " ")
+									).children('.learning');
 									$newElement.fadeOut();
-									$newElement.html($newElement.html().replace(/(?:\r\n|\r|\n)/g," "));
 								}
 							});
 						});
@@ -348,8 +349,12 @@ var makeGrid = function makeGrid(view){
             break;
         case 'imbit':
 		//This case is used for the IMBIT Way
+        //TODO: diesen case auf den Aufbau des digitalLearning case anpassen
             $display.width = $display.width - 208;
             $display.height = $display.height - 66;
+            /**
+             * Läd initiales Grid mit den Flipcards, zeigt Titel
+             */
             $.when(
                 $.ajax('xml/index.php?base=grid&type=class').done(function (data) {
                     $('#site').append(data);
@@ -358,6 +363,9 @@ var makeGrid = function makeGrid(view){
                 $('#title_imbit').animate({opacity: 1}, {duration: 1000})
             ).done(function () {
                         $.when(
+                        		/**
+                        		 * Positionierung der Flipcards im Grid, verschieben des Titel nach oben rechts im Bild
+                        		 */
                             $('#WI').css('left', Math.floor(0.2 * $display.width)).css('top', Math.floor(0.1 * $display.height)).attr('data-sid', '1'),
                             $('#I').css('left', Math.floor(0.25 * $display.width)).css('top', Math.floor(0.65 * $display.height)).attr('data-sid', '2'),
                             $('#IT').css('left', Math.floor(0.7 * $display.width)).css('top', Math.floor(0.2 * $display.height)).attr('data-sid', '3'),
@@ -368,15 +376,22 @@ var makeGrid = function makeGrid(view){
                             $('#grid').css('opacity', 1)
                         ).done(function () {
                             var deferredArray = [];
+                            /**
+                             * Sortierung der Flipcards nach ihrer sid
+                             */
                             $('#grid').children('.flipcard').sort(function (a, b) {
                                 return (($(a).data('sid') > $(b).data('sid')) ? 1 : -1);
                             }).each(function (index, element) {
+                            	/**
+                            	 * Fügt via ajax jeder Flipcard die Rückseite mit ihren Modulen und den entsprechenden Learnings hinzu
+                            	 */
                                 deferredArray.push($(element).delay(index * 500).children('.back').css('display', 'none').delay(0).parent().animate({opacity: 1}, {duration: 500}));
                                 deferredArray.push($.ajax({
                                 	url: 'xml/index.php?base=grid&type=class&detail=true&withLink=true&filter=' + $(element).children('.front').text()
                                 }).done(function (data) {
                                     $(element).children('.back').append(data);
                                     $(element).find('.contentWrapper').hide();
+                                    $(element).html($(element).html().replace(/(?:\r\n|\r|\n)/g," "));
                                 }));
                             });
                             $.when.apply($, deferredArray).done(function () {
@@ -385,53 +400,5 @@ var makeGrid = function makeGrid(view){
                         });
                 });
             break;
-			 case 'newContent':
-		//This case is used for the New Content Page
-            $display.width = $display.width - 208;
-            $display.height = $display.height - 66;
-            $.when(
-                $.ajax('xml/index.php?base=grid&type=newcontent').done(function (data) {
-                    $('#site').append(data);
-					$('#grid').css("width", $display.width).css("height", $display.height).append('<div id="backlayer"></div>');
-					}),
-                $('#animation_newContent').animate({opacity: 1}, {duration: 1000})
-            ).done(function () {
-                        $.when(
-                            $('#animation_newContent').animate({opacity: 0}),
-                            $('#animation_newContent').css('display', 'none'),
-
-                            $('#BusinessCanvas').css('left', Math.floor(0.2 * $display.width)).css('top', Math.floor(0.1 * $display.height)).attr('data-sid', '1'),
-                            $('#OekonomischesPrinzip').css('left', Math.floor(0.3 * $display.width)).css('top', Math.floor(0.65 * $display.height)).attr('data-sid', '2'),
-                            $('#ShareholderStakeholder').css('left', Math.floor(0.7 * $display.width)).css('top', Math.floor(0.2 * $display.height)).attr('data-sid', '3'),
-                            $('#ManagementModell').css('left', Math.floor(0.6 * $display.width)).css('top', Math.floor(0.7 * $display.height)).attr('data-sid', '4'),
-                            $('#Wertkettenmodell').css('left', Math.floor(0.5 * $display.width)).css('top', Math.floor(0.5 * $display.height)).attr('data-sid', '5'),                  
-							
-
-                            $('#grid').css('opacity', 1)
-                        ).done(function () {
-                            var deferredArray = [];
-                            $('#grid').children('.flipcard').sort(function (a, b) {
-                                return (($(a).data('sid') > $(b).data('sid')) ? 1 : -1);
-                            }).each(function (index, element) {
-                                deferredArray.push($(element).delay(index * 500).children('.back').css('display', 'none').delay(0).parent().animate({opacity: 1}, {duration: 1000}));
-                                deferredArray.push($.ajax('xml/index.php?base=categories&type=class&detail=true&filter=' + $(element).attr("id")).done(function (data) {
-                                    $(element).children('.back').append(data);
-                                    deferredArray.push($.ajax('xml/index.php?base=learning&withLink=false&class=' + $(element).attr('id')).done(function (data2) {
-                                        $(element).find('.list').append(data2);
-                                        $(element).find('.list').children().each(function (index1, element1) {
-                                            deferredArray.push($.ajax('xml/index.php?base=learning&withLink=true&detail=true&guid=' + $(element1).data('target')).done(function (data3) {
-                                                $(element).find('.list').parent().append(data3).children('.learning').fadeOut();
-                                            }))
-                                        });
-                                    }))
-                                }))
-                            });
-                            $.when.apply($, deferredArray).done(function () {
-                                openPath();
-                            });
-                        });
-                });
-            break;
     }
-	
 }

@@ -111,4 +111,4 @@ function initSettings() {
 /**
 * On Document.Ready wird die Initialisierungsfunktion aufgerufen
 */ 
-$(document).ready(initSettings);
+jQuery(document).ready(initSettings);
