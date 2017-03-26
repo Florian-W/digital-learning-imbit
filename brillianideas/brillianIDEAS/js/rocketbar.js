@@ -60,10 +60,10 @@ expstickybar.prototype={
 		var barSize= $('.content').outerHeight();
 		var finalpx=(keyword=="show")? 0 : - barSize;
 		var positioncss={bottom:finalpx};
-		thisbar.$stickybar.finish().animate(	positioncss, anim ? thisbar.setting.speed : 0);
+		thisbar.$stickybar.velocity("finish").velocity(	positioncss, anim ? thisbar.setting.speed : 0);
 		
 		
-		$('#dots').finish().animate({
+		$('#dots').velocity("finish").velocity({
 				bottom: finalpx + barSize
 			}, anim ? thisbar.setting.speed : 0);
 		
@@ -84,7 +84,7 @@ expstickybar.prototype={
 		
 		this.$stickybar.waitForImages().done(function(){
 			thisbar.$stickybar.css('visibility', 'visible');
-			thisbar.$stickybar.animate({ bottom: '-' + thisbar.$stickybar.outerHeight() }, 0).animate({
+			thisbar.$stickybar.velocity({ bottom: '-' + thisbar.$stickybar.outerHeight() }, 0).velocity({
 				bottom: '-' + $('.content').outerHeight()
 			}, thisbar.setting.speed * (thisbar.$stickybar.outerHeight() / $('.content').outerHeight() - 1), "swing", ($('.current').hasClass('home')) ? (thisbar.toggle).bind(thisbar) : undefined);
 		});
