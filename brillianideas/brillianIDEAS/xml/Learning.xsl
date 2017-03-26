@@ -287,9 +287,7 @@
 										<xsl:when test="Embedded = 'true' and $withLink = 'true'">
 											<xsl:element name="iframe">
 												<xsl:attribute name="src">
-											<xsl:text>
-												https://www.youtube.com/embed/
-											</xsl:text>
+													<xsl:text>https://www.youtube.com/embed/</xsl:text>
 													<xsl:value-of select="Youtube_ID"/>
 													<xsl:text>?rel=0&amp;controls=0&amp;showinfo=0</xsl:text>
 												</xsl:attribute>
