@@ -1321,7 +1321,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 	<Learning>
 		<GUID>383d9cc1-2e57-4925-beac-483f6dc73dd6</GUID>
 		<Titel>Webtechnologien</Titel>
-		<Description>Das World Wide Web hat die Welt auf unvorstellbare Weise verändert. Es hat eine neue digitale Welt geschaffen, die eng mit unserer echten Welt verflochten ist. Dadurch ist möglich geworden, was lange undenkbar schien: Weltweite Kommunikation innerhalb von Sekunden, Filme schauen auf dem Smartphone, mit weit entfernten Menschen gemeinsam Spiele spielen oder Fotos ansehen und Einkäufe oder Bankgeschäfte von Zuhause aus erledigen. In diesem Mooc lernst du, wie das alles funktioniert. </Description>
+		<Description>Das World Wide Web hat die Welt auf unvorstellbare Weise verändert. Es hat eine neue digitale Welt geschaffen, die eng mit unserer echten Welt verflochten ist. Dadurch ist möglich geworden, was lange undenkbar schien: Weltweite Kommunikation innerhalb von Sekunden, Filme schauen auf dem Smartphone, mit weit entfernten Menschen gemeinsam Spiele spielen oder Fotos ansehen und Einkäufe oder Bankgeschäfte von Zuhause aus erledigen. In diesem MOOC lernst du, wie das alles funktioniert. </Description>
 		<Type>mooc</Type>
 		<src>https://open.hpi.de/courses/webtech2017</src>
 		<Free_of_charge>TRUE</Free_of_charge>
@@ -2255,7 +2255,7 @@ In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifik
 	</Learning>
 	<Learning>
 		<GUID>d74cc8e4-e1b5-4aae-ac21-d1c29db5a235</GUID>
-		<Titel>Projektmanagement Mooc </Titel>
+		<Titel>Projektmanagement MOOC </Titel>
 		<Description>Dies ist ein MOOC von der Indian Institute of Technology Kanpur bereitgestellt auf Class Central. Es soll Projektmanagement-Basiswissen vermitteln und eignet sich zum Wiederholen einiger Teilaspekte des Projektmanagements.</Description>
 		<Type>mooc</Type>
 		<src>https://www.class-central.com/Mooc/7912/nptel-project-management</src>
@@ -2282,7 +2282,7 @@ In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifik
 	<Learning>
 		<GUID>d1039009-9f87-4b8b-ac3c-f0b11b8d8647</GUID>
 		<Titel>Grundlagen des Projektmanagement</Titel>
-		<Description>Prof. Marc Opresnik, Professor an der Universität Sankt Gallen, hat in Zusammenarbeit mit der Hochschule Lübeck diesen Mooc entwickelt. Hier werden die Grundlagen des Projektmanagements vermittelt. Inhalte sind: "Einführung in das Projektmanagement", "Projektorganisation","Projektphasen" und "Kommunikation - Fachübergreifende Softskills". Für alle Kursaktivitäten sollten ca. 2 Stunden pro Woche eingeplant werden. Zum Abschluss gibt es eine Teilnahmebescheinigung und ein Zertifikat.</Description>
+		<Description>Prof. Marc Opresnik, Professor an der Universität Sankt Gallen, hat in Zusammenarbeit mit der Hochschule Lübeck diesen MOOC entwickelt. Hier werden die Grundlagen des Projektmanagements vermittelt. Inhalte sind: "Einführung in das Projektmanagement", "Projektorganisation","Projektphasen" und "Kommunikation - Fachübergreifende Softskills". Für alle Kursaktivitäten sollten ca. 2 Stunden pro Woche eingeplant werden. Zum Abschluss gibt es eine Teilnahmebescheinigung und ein Zertifikat.</Description>
 		<Type>mooc</Type>
 		<src>https://mooin.oncampus.de/mod/page/view.php?id=224</src>
 		<Free_of_charge>TRUE</Free_of_charge>
