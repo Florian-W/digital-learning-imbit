@@ -5,11 +5,7 @@
 		<Titel>How to Build a Start-Up?</Titel>
 		<Description>Dieser MOOC stellt die verschiedenen Schritte zur Gründung eines Start-Ups vor. Du erhälst Einblicke in Strategien, wie man eine Idee zu einem erfolgreichen Start-Up entwickeln kann. Mit diesen Vorgehensweisen und Techniken können häufige Fehler bei der Entwicklung eines Start-Ups vermieden werden.  Der Kurs ist kostenlos, in englischer Sprache verfügbar und wiederholt die Inhalte der Vorlesung "Einführung in die BWL".</Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://de.udacity.com/course/how-to-build-a-startup--ep245/</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>FALSE</Fixed_StartDate>
 		<Certificate>FALSE</Certificate>
@@ -36,17 +32,8 @@
 		<Titel>Business Canvas Modelling</Titel>
 		<Description>In diesem online bereitgestellten Tool kannst du einen Business Canvas erstellen. Das Planungstool kann dich bei der Entwicklung und Überarbeitung von komplexen Geschäftsideen unterstützen. So hast du immer einen Überblick über die Schlüsselfaktoren deines Geschäftsmodells.</Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>https://canvanizer.com/new/business-model-canvas</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Stefan Roos</Author>
 		<Copyright>Proud Sourcing GmbH</Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -54,7 +41,7 @@
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_202</Number>
 		<Learning_Unit>Grundlagen der Betriebswirtschaftslehre</Learning_Unit>
-		<Abdeckungsgrad>0.2</Abdeckungsgrad>
+		<Abdeckungsgrad>20%</Abdeckungsgrad>
 		<Language>EN</Language>
 		<Tech_Requirements>Flash</Tech_Requirements>
 		<Semester>1</Semester>
@@ -67,11 +54,7 @@
 		<Titel>Circular Economy: An Introduction </Titel>
 		<Description>In diesem MOOC erfährst du, wie ein nachhaltiges Wirtschaftssystem funktionieren kann. Dabei geht es um das Wiederverwenden und Wiederverwerten von Produkten und wie daraus Vorteile für das Unternehmen entstehen können. Dieses Thema baut auf dem Bereich Nachhaltigkeit auf, welcher in der Vorlesung "Einführung in die BWL" behandelt wird. </Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://www.edx.org/course/circular-economy-introduction-delftx-circularx-2</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>FALSE</Fixed_StartDate>
 		<Certificate>TRUE</Certificate>
@@ -85,7 +68,7 @@
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_203</Number>
 		<Learning_Unit>Grundlagen der Betriebswirtschaftslehre</Learning_Unit>
-		<Abdeckungsgrad>0.1</Abdeckungsgrad>
+		<Abdeckungsgrad>10%</Abdeckungsgrad>
 		<Language>EN</Language>
 		<Tech_Requirements>Flash</Tech_Requirements>
 		<Semester>1</Semester>
@@ -98,17 +81,10 @@
 		<Titel>BWL Trainer</Titel>
 		<Description>Mit dieser App kannst du mithilfe von Lernkarten dein BWL-Wissen trainieren und erweitern. Im Prüfungsmodus kannst du dich auf die BWL-Klausur vorbereiten. Die App steht sowohl für IOS als auch für Android zur Verfügung und ist einfach zu benutzen. </Description>
 		<Type>app</Type>
-		<Embedded/>
-		<src/>
-		<Youtube_ID/>
 		<IOS_ID>id665793747</IOS_ID>
 		<Android_ID>id665793747</Android_ID>
 		<Free_of_charge>TRUE</Free_of_charge>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Verlag Franz Vahlen GmbH</Author>
 		<Copyright>Verlag Franz Vahlen GmbH</Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -116,7 +92,7 @@
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_204</Number>
 		<Learning_Unit>Grundlagen der Betriebswirtschaftslehre</Learning_Unit>
-		<Abdeckungsgrad>0.3</Abdeckungsgrad>
+		<Abdeckungsgrad>30%</Abdeckungsgrad>
 		<Language>DE</Language>
 		<Tech_Requirements>iOS; Android</Tech_Requirements>
 		<Semester>1</Semester>
@@ -129,17 +105,8 @@
 		<Titel>Umfrage Unternehmensziele</Titel>
 		<Description>Diese Umfrage beschäftigt sich mit Unternehmenszielen. Durch das Ausfüllen der Umfrage sollen die Inhalte der Vorlesung gefestigt werden. Die Umfrage wurde von Prof. Bendl im Rahmen der Vorlesung "Einführung in die BWL" entwickelt und hilft dir  die verschiedenen Funktionsbereiche im Unternehmen zu verstehen.</Description>
 		<Type>quiz</Type>
-		<Embedded/>
 		<src>https://de.surveymonkey.com/r/G79PZTY</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Dr. Harald Bendl</Author>
 		<Copyright>Dr. Harald Bendl</Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -147,9 +114,8 @@
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_205</Number>
 		<Learning_Unit>Grundlagen der Betriebswirtschaftslehre</Learning_Unit>
-		<Abdeckungsgrad>0.3</Abdeckungsgrad>
+		<Abdeckungsgrad>30%</Abdeckungsgrad>
 		<Language>DE</Language>
-		<Tech_Requirements/>
 		<Semester>1</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>BWL</Abbreviation>
@@ -160,17 +126,8 @@
 		<Titel>Umfrage Aktiengesellschaft</Titel>
 		<Description>Die Umfrage "Aktiengesellschaft" beschäftigt sich mit Aktienkursen, Bilanzposten und vielen anderen Themen und soll die in der Vorlesung gelernten Inhalte wiedergeben. Sie wurde im Rahmen der Vorlesung "Einführung in die BWL" von Prof. Bendl entwickelt und unterstützt dich beim Lernen.</Description>
 		<Type>quiz</Type>
-		<Embedded/>
 		<src>https://de.surveymonkey.com/r/HJ6BSWB</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Dr. Harald Bendl</Author>
 		<Copyright>Dr. Harald Bendl</Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -178,9 +135,8 @@
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_206</Number>
 		<Learning_Unit>Grundlagen der Betriebswirtschaftslehre</Learning_Unit>
-		<Abdeckungsgrad>0.3</Abdeckungsgrad>
+		<Abdeckungsgrad>30%</Abdeckungsgrad>
 		<Language>DE</Language>
-		<Tech_Requirements/>
 		<Semester>1</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>BWL</Abbreviation>
@@ -190,18 +146,11 @@
 		<GUID>55ff1ec6-63c4-499d-9bdd-85d2e0db6f44</GUID>
 		<Titel>Grundlagen des Marketing </Titel>
 		<Description>Mithilfe dieser auf Youtube bereitgestellten Videoserie erhälst du einen Einblick in die Grundlagen des Marketing. In den 33 Videos erklärt Prof. Marc Osprenik von der Fachhochschule Lübeck grundlegende Methoden und Werkzeuge des Marketing. Unter anderem wird die SWOT-Analyse und der Produktlebenszyklus vorgestellt. Die in der Vorlesung behandelten Themen können mithilfe der Videos wiederholt werden. </Description>
-		<Type>youtube</Type>
+		<Type>film</Type>
 		<Embedded>TRUE</Embedded>
 		<src>https://www.youtube.com/watch?v=svJuMRBPzQY&amp;index=1&amp;list=PLj6b2AKsdkaA-Akkwdbnhe_5X2flsOlOa</src>
 		<Youtube_ID>v=svJuMRBPzQY&amp;index=1&amp;list=PLj6b2AKsdkaA-Akkwdbnhe_5X2flsOlOa</Youtube_ID>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Prof. Marc Ospresnik</Author>
 		<Copyright>Luebeck University of Applied Sciences</Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -209,7 +158,7 @@
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_207</Number>
 		<Learning_Unit>Marketing</Learning_Unit>
-		<Abdeckungsgrad>1</Abdeckungsgrad>
+		<Abdeckungsgrad>100%</Abdeckungsgrad>
 		<Language>DE</Language>
 		<Tech_Requirements>Flash</Tech_Requirements>
 		<Semester>1</Semester>
@@ -222,11 +171,7 @@
 		<Titel>Digital and Social Media Marketing: An Introduction </Titel>
 		<Description>Dieser auf Englisch bereitgestellte MOOC beschäftigt sich mit digitalem Marketing. Anhand von Beispielen aus der Industrie erhälst du einen Einblick, wie eine Online-Marketing-Strategie aufgestellt werden kann. Gerade im Hinblick auf die rasante Entwicklung des digitalen Marketings werden verschiedene Strategien und Techniken vorgestellt.</Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://iversity.org/de/courses/digital-and-social-media-marketing</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>FALSE</Fixed_StartDate>
 		<Certificate>TRUE</Certificate>
@@ -240,7 +185,7 @@
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_208</Number>
 		<Learning_Unit>Marketing</Learning_Unit>
-		<Abdeckungsgrad>0.2</Abdeckungsgrad>
+		<Abdeckungsgrad>20%</Abdeckungsgrad>
 		<Language>EN</Language>
 		<Tech_Requirements>Flash</Tech_Requirements>
 		<Semester>1</Semester>
@@ -253,17 +198,8 @@
 		<Titel>Übungsaufgaben Rechnungswesen</Titel>
 		<Description>Diese Webseite stellt Aufgaben zu T-Konten, Inventar und Bilanz, sowie Geschäftsfälle mit Lösungen zur Verfügung. Die Aufgabentypen sind dabei angelehnt an IMBIT Vorlesungen und Klausuraufgaben der Finanzbuchhaltung. So kannst du dich gut auf eine Prüfung vorbereiten.</Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>http://www.uebungs-aufgaben.de/lernmodule/rechnungswesen/index.php</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Stefan Schweiger</Author>
 		<Copyright>Stefan Schweiger</Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -271,9 +207,8 @@
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_202</Number>
 		<Learning_Unit>Finanzbuchhaltung</Learning_Unit>
-		<Abdeckungsgrad>0.5</Abdeckungsgrad>
+		<Abdeckungsgrad>50%</Abdeckungsgrad>
 		<Language>DE</Language>
-		<Tech_Requirements/>
 		<Semester>2</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>FiBu</Abbreviation>
@@ -284,17 +219,8 @@
 		<Titel>Übungsaufgaben Buchungssätze </Titel>
 		<Description>Auf dieser Website kannst du mit interkativen Übungen die Aufstellung von Buchungssätzen lernen. Außerdem lernst du, wie man Skonti und Abschreibungen berechnet. Diese Aufgaben helfen dir, die im Unterricht vorgestellten Themen noch einmal zu wiederholen. </Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>http://www.rechnungswesen-verstehen.de/uebungen/finanzbuchhaltung-uebungen.php</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Stefan Schweiger</Author>
 		<Copyright>Stefan Schweiger</Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -302,9 +228,8 @@
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_202</Number>
 		<Learning_Unit>Finanzbuchhaltung</Learning_Unit>
-		<Abdeckungsgrad>1.5</Abdeckungsgrad>
+		<Abdeckungsgrad>100%</Abdeckungsgrad>
 		<Language>DE</Language>
-		<Tech_Requirements/>
 		<Semester>3</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>FiBu</Abbreviation>
@@ -315,17 +240,8 @@
 		<Titel>Deloitte E-Learning IFRS und IAS</Titel>
 		<Description>Dieses Lernspiel beschäftigt sich mit den Rechnungslegungsvorschriften IFRS und IAS . Die Module behandeln jeweils ein eigenes Fachgebiet, z.B. die Abrechnung von Einkommen oder Einkommensbesteuerung. Bereitgestellt wird das Spiel über Zip-Pakete, die man downloaden muss. Nach dem Entpacken kannst du über den Launcher das Modul starten. Dieses Medium eignet sich für das Nachbehandeln der IMBIT Summer School Themen. </Description>
 		<Type>seriousgame</Type>
-		<Embedded/>
 		<src>http://www.deloitteifrslearning.com/registration.asp</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Deloitte</Author>
 		<Copyright>Deloitte</Copyright>
 		<Last_Modified>2013</Last_Modified>
@@ -333,7 +249,7 @@
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_203</Number>
 		<Learning_Unit>Investition und Finanzierung</Learning_Unit>
-		<Abdeckungsgrad>1</Abdeckungsgrad>
+		<Abdeckungsgrad>100%</Abdeckungsgrad>
 		<Language>EN</Language>
 		<Tech_Requirements>Zip</Tech_Requirements>
 		<Semester>2</Semester>
@@ -346,15 +262,10 @@
 		<Titel>Human Resources</Titel>
 		<Description>In diesem MOOC erfährst du mehr über die verschiedenen Bereiche des Personalmanagements. In die verschiedenen Module sind kurze Quizes integriert, die den Lernfortschritt dokumentieren. Die in englischer Sprache verfügbaren Vorträge behandeln beispielsweise den Umgang mit virtuellen Teams und Recruitment. Der MOOC ist für Studierende geeignet, die eine Beschäftigung im Personalwesen planen und vertieft die Vorlesung "Ausgewählte Aspekte des Managements" im 6. Semester. </Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://www.open2study.com/courses/human-resources-090215?utm_source=Mooc-list</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>TRUE</Fixed_StartDate>
 		<Certificate>FALSE</Certificate>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
 		<Duration>4 Wochen</Duration>
 		<Author>Christina Dahdal</Author>
@@ -364,9 +275,8 @@
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_204</Number>
 		<Learning_Unit>Ausgewählte Aspekte des Managements</Learning_Unit>
-		<Abdeckungsgrad>0.15</Abdeckungsgrad>
+		<Abdeckungsgrad>15%</Abdeckungsgrad>
 		<Language>EN</Language>
-		<Tech_Requirements/>
 		<Semester>6</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Management</Abbreviation>
@@ -377,15 +287,10 @@
 		<Titel>Entrepreneurship and Family Business</Titel>
 		<Description>Dieser MOOC der australischen RMIT Universität behandelt das Thema Unternehmertum. Du erhälst Einblicke in Führungsverantwortlichkeit, Business Pläne und viele weitere Themen. Anhand dieser Videoserie kannst du Teile der Vorlesung "Ausgewählte Aspekte des Managements" wiederholen. </Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://www.open2study.com/courses/entrepreneurship-and-family-business</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>TRUE</Fixed_StartDate>
 		<Certificate>FALSE</Certificate>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
 		<Duration>4 Wochen </Duration>
 		<Author>Leon Levin</Author>
@@ -397,7 +302,6 @@
 		<Learning_Unit>Ausgewählte Aspekte des Managements</Learning_Unit>
 		<Abdeckungsgrad>15%</Abdeckungsgrad>
 		<Language>EN</Language>
-		<Tech_Requirements/>
 		<Semester>6</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Management</Abbreviation>
@@ -408,17 +312,12 @@
 		<Titel>Human Resources Management </Titel>
 		<Description>Dieser MOOC beschäftigt sich mit dem Human Resource Management. Unter anderem werden die Bereiche Recruiting, Einstellung und die Gehaltstsrategien untersucht. Anhand dieser Videos kannst du die Inhalte der Management-Vorlesung nochmals wiederholen. </Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://www.coursera.org/specializations/human-resource-management</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>FALSE</Free_of_charge>
 		<Fixed_StartDate>FALSE</Fixed_StartDate>
 		<Certificate>TRUE</Certificate>
 		<Certificate_Costs>TRUE</Certificate_Costs>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>University of Minnesota</Author>
 		<Copyright>Coursera</Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -426,9 +325,8 @@
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_204</Number>
 		<Learning_Unit>Ausgewählte Aspekte des Managements</Learning_Unit>
-		<Abdeckungsgrad>0.15</Abdeckungsgrad>
+		<Abdeckungsgrad>15%</Abdeckungsgrad>
 		<Language>EN</Language>
-		<Tech_Requirements/>
 		<Semester>6</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Management</Abbreviation>
@@ -438,18 +336,11 @@
 		<GUID>af161d5a-1f5f-480b-b82f-56485195368e</GUID>
 		<Titel>Investitionsrechnung</Titel>
 		<Description>Diese 5-teilige Videoserie behandelt die verschiedenen Gebiete der Investitionsrechnung. Du erhälst einen Überblick über die verschiedenen Arten und Methoden, eine Investition zu berechnen und einzuschätzen. Anhand dieser Videos kannst du Inhalte der Vorlesung "Investition und Finanzierung" wiederholen. </Description>
-		<Type>youtube</Type>
+		<Type>film</Type>
 		<Embedded>TRUE</Embedded>
 		<src>https://www.youtube.com/watch?v=Mtk8Nz7dO-g</src>
 		<Youtube_ID>Mtk8Nz7dO</Youtube_ID>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Prof. Dr Opresnik</Author>
 		<Copyright>Prof. Dr. Opresnik Management Consulting </Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -457,9 +348,8 @@
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_203</Number>
 		<Learning_Unit>Investition und Finanzierung</Learning_Unit>
-		<Abdeckungsgrad>0.7</Abdeckungsgrad>
+		<Abdeckungsgrad>70%</Abdeckungsgrad>
 		<Language>DE</Language>
-		<Tech_Requirements/>
 		<Semester>3</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Investition &amp; Finanzierung</Abbreviation>
@@ -470,17 +360,8 @@
 		<Titel>Buchhaltung-Lernen</Titel>
 		<Description>Auf dieser Website findest du Informationen zur Erstellung einer Bilanz. Du kannst dir Videos über die verschiedenen Bereiche der Bilanz ansehen und erhälst viele kostenlose Vorlagen zur Aufstellung einer Bilanz. Die Professoren der Hochschule Bad-Honnef helfen dir, die Inhalte der Vorlesung "Bilanzierung" zu wiederholen.</Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>http://buchhaltung-lernen.com/</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Michael Schröder</Author>
 		<Copyright>Buchhaltung-lernen.com</Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -490,7 +371,6 @@
 		<Learning_Unit>Finanzbuchhaltung</Learning_Unit>
 		<Abdeckungsgrad>30%</Abdeckungsgrad>
 		<Language>DE</Language>
-		<Tech_Requirements/>
 		<Semester>6</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>FiBu</Abbreviation>
@@ -501,17 +381,8 @@
 		<Titel>Planspiel Wein</Titel>
 		<Description>Im Planspiel Wein führst du eine virtuelle Winzerei. Im Laufe des Spiels musst du dich sowohl um den Vertrieb, die Produktion und die Lagerung, als auch das Personalwesen und die Finanzierung kümmern. So vereint das Planspiel viele verschiedene Bereiche des IMBIT-Studiums und hilft dir Erfahrung im Management eines Unternehmens zu sammeln. </Description>
 		<Type>planspiel</Type>
-		<Embedded/>
 		<src>http://www.planspielw.de/Staff.aspx?token=eiuyuaevlvmjcpzavcnqbluu</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Dr. Martin Brodeck</Author>
 		<Copyright>Dr. Martin Brodeck</Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -519,9 +390,8 @@
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_204</Number>
 		<Learning_Unit>Unternehmensführung und Controlling</Learning_Unit>
-		<Abdeckungsgrad>0.4</Abdeckungsgrad>
+		<Abdeckungsgrad>40%</Abdeckungsgrad>
 		<Language>DE</Language>
-		<Tech_Requirements/>
 		<Semester>5</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Controlling</Abbreviation>
@@ -533,17 +403,9 @@
 		<Description>BrillianICM ist ein interaktives Lernspiel, welches Wissen quer zu allen ICM Schwerpunktthemen abfragt und vertieft. Im Spielverlauf schlüpfst du in die Rolle eines Mitarbeiters im internationalen Umfeld und wirst mit Situationen konfrontiert, in denen du dein erworbenes Wissen über kulturelle Unterschiede und Besonderheiten anwenden musst, um eine erfolgreiche Zusammenarbeit über Ländergrenzen hinweg zu erreichen.
 Die abgedeckten Themenbereiche (bei wiederholter und aufmerksamer Spielaktivität) sind u.a: "Interkulturelle Zusammenarbeit und Kommunikation", "Das Phänomen Kultur", "Unternehmenskultur und nationale Kultur", sowie die "Zusammenarbeit in internationalen Teams". Dieses Serious Game wurde im Jahr 2015 von IMBIT-Studenten im Rahmen eines IT-Projekts entwickelt. </Description>
 		<Type>seriousgame</Type>
-		<Embedded/>
 		<src>http://ec2-35-156-215-223.eu-central-1.compute.amazonaws.com:8080/brillianICM/</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
 		<Certificate>TRUE</Certificate>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>WIMBIT12C, WIMBIT13C</Author>
 		<Copyright>DHBW Mannheim</Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -551,9 +413,8 @@ Die abgedeckten Themenbereiche (bei wiederholter und aufmerksamer Spielaktivitä
 		<Area>Internationales</Area>
 		<Number>W3WI_IMBIT_301</Number>
 		<Learning_Unit>Intercultural Management</Learning_Unit>
-		<Abdeckungsgrad>0.7</Abdeckungsgrad>
-		<Language>D  </Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>70%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Semester>1+2</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>ICM</Abbreviation>
@@ -565,17 +426,8 @@ Die abgedeckten Themenbereiche (bei wiederholter und aufmerksamer Spielaktivitä
 		<Description>Anhand der Navigation in einer interaktiven Lernkarte kannst du mit diesem Tool erfahren, welche Ausprägungen die einzelnen Länder in diversen kulturellen Dimensionen aufweisen, nach denen die Untersuchungen des GLOBE-Projekts durchgeführt wurden. Das gewonnene Wissen hilft dir dabei, Case Studies im internationalen Kontext aus verschiedenen Blickwinkeln heraus zu bearbeiten und zu vielschichtigen Ergebnissen zu kommen.
 Die GLOBE-Dimensionen sind ein ausgewählter kulturtheoretischer Ansatz, der sowohl Aufschluss über nationale Kultur als auch über Unternehmenskultur der von der Studie erfassten Länder gibt. </Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>http://globe.bus.sfu.ca/results/countries/DEU?menu=country</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Global Leadership &amp; Organizational Behavior Effectiveness
  </Author>
 		<Copyright>GLOBE</Copyright>
@@ -584,9 +436,8 @@ Die GLOBE-Dimensionen sind ein ausgewählter kulturtheoretischer Ansatz, der sow
 		<Area>Internationales</Area>
 		<Number>W3WI_IMBIT_301</Number>
 		<Learning_Unit>Intercultural Management</Learning_Unit>
-		<Abdeckungsgrad>0.15</Abdeckungsgrad>
-		<Language>E</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>15%</Abdeckungsgrad>
+		<Language>EN</Language>
 		<Semester>1</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>ICM</Abbreviation>
@@ -597,18 +448,11 @@ Die GLOBE-Dimensionen sind ein ausgewählter kulturtheoretischer Ansatz, der sow
 		<Titel>10 Minutes with Geert Hofstede</Titel>
 		<Description>Geert Hofstede selbst erklärt in kurzen Videos die Unterschiede der von ihm entwickelten Kulturdimensionen. So erhälst du Einblicke in die Gegensätzlichkeiten der Dimensionen-Paare und welche Effekte diese in der Praxis haben.
 Hofstedes Kulturdimensionen vermitteln ein Grundverständnis für den Curriculumsbereich "Fundamentals in Intercultural Management" und geben Aufschluss über Themen wie "Das Phänomen Kultur", "Stereotypisierung" und "Unternehmens- und nationale Kultur".</Description>
-		<Type>video</Type>
+		<Type>film</Type>
 		<Embedded>FALSE</Embedded>
 		<src>https://www.youtube.com/channel/UCC5EEtqfF3lbJ7KzrtXGtfg</src>
 		<Youtube_ID>H8ygYIGsIQ4</Youtube_ID>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Geert Hofstede</Author>
 		<Copyright>10 minutes with</Copyright>
 		<Last_Modified>2014/ 2015</Last_Modified>
@@ -616,9 +460,8 @@ Hofstedes Kulturdimensionen vermitteln ein Grundverständnis für den Curriculum
 		<Area>Internationales</Area>
 		<Number>W3WI_IMBIT_301</Number>
 		<Learning_Unit>Intercultural Management</Learning_Unit>
-		<Abdeckungsgrad>0.1</Abdeckungsgrad>
-		<Language>E</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>10%</Abdeckungsgrad>
+		<Language>EN</Language>
 		<Semester>1</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>ICM</Abbreviation>
@@ -630,11 +473,8 @@ Hofstedes Kulturdimensionen vermitteln ein Grundverständnis für den Curriculum
 		<Description>Dieser MOOC gibt dir Einblicke in die Struktur und den Lifecycle von Teams, sowie in die Rolle des einzelnen Teammitglieds. Des Weiteren werden dir als Kursteilnehmer Werkzeuge und Systeme für eine effektive Zusammenarbeit im Team und für den Umgang mit Konflikten an die Hand gegeben.
 Der Kurs deckt somit Themenbereiche des ICM Schwerpunktthemas "International Teamwork" ab. </Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://www.edx.org/course/working-teams-practical-guide-uqx-teams101x-0</src>
 		<Youtube_ID>PqFFQB64JS8</Youtube_ID>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>FALSE</Fixed_StartDate>
 		<Certificate>TRUE</Certificate>
@@ -648,9 +488,8 @@ Der Kurs deckt somit Themenbereiche des ICM Schwerpunktthemas "International Tea
 		<Area>Internationales</Area>
 		<Number>W3WI_IMBIT_301</Number>
 		<Learning_Unit>Intercultural Management</Learning_Unit>
-		<Abdeckungsgrad>0.15</Abdeckungsgrad>
-		<Language>E</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>15%</Abdeckungsgrad>
+		<Language>EN</Language>
 		<Semester>2</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>ICM</Abbreviation>
@@ -662,11 +501,7 @@ Der Kurs deckt somit Themenbereiche des ICM Schwerpunktthemas "International Tea
 		<Description>In diesem MOOC lernst du den Begriff "Diversity" kennen. Darauf aufbauend wirst du dazu befähigt, die Vorteile von diversen Teams zu erkennen und bestmöglich zu nutzen, um gute Perfomance, kreatives Arbeiten und Innovation zu erzielen. Auch auf die Herausforderungen innerhalb diverser Teams wird eingegangen und es werden Konfliktbewältigungsstrategien vorgestellt, um diesen erfolgreich zu begegnen.
 Folgende Themen des ICM Schwerpunktthemas "International Teams" werden abgedeckt: "Zusammenarbeit in internationalen Teams", "Interkulturelle Kompetenz" und "Diversitätsmanagement".</Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://www.coursera.org/learn/diverse-teams</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>TRUE</Fixed_StartDate>
 		<Certificate>TRUE</Certificate>
@@ -680,9 +515,8 @@ Folgende Themen des ICM Schwerpunktthemas "International Teams" werden abgedeckt
 		<Area>Internationales</Area>
 		<Number>W3WI_IMBIT_301</Number>
 		<Learning_Unit>Intercultural Management</Learning_Unit>
-		<Abdeckungsgrad>0.2</Abdeckungsgrad>
-		<Language>E</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>20%</Abdeckungsgrad>
+		<Language>EN</Language>
 		<Semester>2</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>ICM</Abbreviation>
@@ -694,17 +528,8 @@ Folgende Themen des ICM Schwerpunktthemas "International Teams" werden abgedeckt
 		<Description>Mithilfe dieser Online-Übung kann die zweiwertige Logik (True/False) anhand des Ausfüllens unterschiedlicher Wahrheitstafeln trainiert werden. Deine Antworten werden sofort korrigiert und du kannst das Schwierigkeitsniveau an deine Lernbedürfnisse anpassen, indem du einzelne Spaltenlösungen vorzeitig aufdeckst.
 Auf spielerische Art und Weise festigst du dein Wissen im Bereich "Aussageverknüpfungen und Wahrheitstafeln", welches dem Modulteilbereich "Logik und Algebra" des IMBIT-Curriculums unterzuordnen ist.</Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>http://www.wi.hs-wismar.de/~cleve/vorl/ti2027/wtafeln/index.html</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Jan Schreiber</Author>
 		<Copyright>Hochschule Wismar</Copyright>
 		<Last_Modified>2006</Last_Modified>
@@ -712,9 +537,8 @@ Auf spielerische Art und Weise festigst du dein Wissen im Bereich "Aussageverkn�
 		<Area>Methodische Grundlagen</Area>
 		<Number>W3WI_601</Number>
 		<Learning_Unit>Logik &amp; Algebra</Learning_Unit>
-		<Abdeckungsgrad>0.1</Abdeckungsgrad>
-		<Language>D</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>10%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Semester>2</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Logik &amp; Algebra</Abbreviation>
@@ -726,17 +550,8 @@ Auf spielerische Art und Weise festigst du dein Wissen im Bereich "Aussageverkn�
 		<Description>Das allgemeine Wissen über Logik ist dir noch nicht genug und du möchtest tiefer in die logische Programmierung einsteigen? Dann ist dieser textbasierter Prolog-Kurs, der in 12 Kapiteln verschiedene Bereiche der logischen Prolog-Programmierung behandelt, genau das richtige für dich. Jedes Kapitel umschließt sowohl Übungen, die auf Papier durchgeführt werden können, als auch Praxisübungen, die das Installieren eines Prolog-Interpreters erfordern.
 So vermittelt der Kurs schwerpunktmäßig Kenntnisse im Logik &amp; Algebra Themenbereich "Prädikatenlogik und logisches Programmieren", geht dabei aber noch mehr in die Tiefe als im Curriculum vorgesehen.</Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>http://lpn.swi-prolog.org/lpnpage.php?pageid=online</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Patrick Blackburn, Johan Bos, Kristina Striegnitz</Author>
 		<Copyright>Patrick Blackburn, Johan Bos, Kristina Striegnitz</Copyright>
 		<Last_Modified>2012</Last_Modified>
@@ -744,9 +559,8 @@ So vermittelt der Kurs schwerpunktmäßig Kenntnisse im Logik &amp; Algebra Them
 		<Area>Methodische Grundlagen</Area>
 		<Number>W3WI_601</Number>
 		<Learning_Unit>Logik &amp; Algebra</Learning_Unit>
-		<Abdeckungsgrad>0.1</Abdeckungsgrad>
-		<Language>E</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>10%</Abdeckungsgrad>
+		<Language>EN</Language>
 		<Semester>2</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Logik &amp; Algebra</Abbreviation>
@@ -757,11 +571,7 @@ So vermittelt der Kurs schwerpunktmäßig Kenntnisse im Logik &amp; Algebra Them
 		<Titel>Introduction to Logic</Titel>
 		<Description>Dieser MOOC bietet einen Einstieg in die Logik im Umfeld der rechnergestützen Informationsverarbeitung und stellt deren Anwendungsfelder vor. Zu den Kompetenzen, die dir im Rahmen der Kursteilnahme vermittelt werden, zählt das Formulieren von logischen Sätzen bzw. logischen Formeln und es wird darauf eingegegangen, wie aus dieser Darstellung von Informationen eine logische Beweisführung möglich wird. Der Kursstoff wird dabei hauptsächlich mithilfe von anschaulichen Informationstexten und Übungsaufgaben übermittelt. Folgende Themenbereiche des Logik &amp; Algebra Stoffes des IMBIT-Curriculums werden abgedeckt: "Logische Gesetzmäßigkeiten", "Normalformen", "Äquivalenz- und Ordnungsrelationen".</Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://www.coursera.org/learn/logic-introduction?siteID=.GqSdLGGurk-X7XX_Or6pFbYMQ_i.RRpeg&amp;utm_content=10&amp;utm_medium=partners&amp;utm_source=linkshare&amp;utm_campaign=*GqSdLGGurk</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>TRUE</Fixed_StartDate>
 		<Certificate>TRUE</Certificate>
@@ -775,9 +585,8 @@ So vermittelt der Kurs schwerpunktmäßig Kenntnisse im Logik &amp; Algebra Them
 		<Area>Methodische Grundlagen</Area>
 		<Number>W3WI_601</Number>
 		<Learning_Unit>Logik &amp; Algebra</Learning_Unit>
-		<Abdeckungsgrad>0.5</Abdeckungsgrad>
-		<Language>E</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>50%</Abdeckungsgrad>
+		<Language>EN</Language>
 		<Semester>2</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Logik &amp; Algebra</Abbreviation>
@@ -789,17 +598,9 @@ So vermittelt der Kurs schwerpunktmäßig Kenntnisse im Logik &amp; Algebra Them
 		<Description>WolframAlpha ist eine intelligente Suchmaschine, die die unterschiedlichsten Themenfelder abdeckt. Im Bereich Mathematik steht dir WolframAlpha als graphischer Taschenrechner mit großem Funktionsumfang zur Seite. Dieser hilft dir somit bei der Bearbeitung von Kurvendiskussionen, die auch bei wirtschaftlichen Problemstellungen Aufschluss geben können. 
 Insofern wirkt dieses Onlinetool unterstützend beim Vertiefen des Wissens im Themenbereich "Analysis" als Teil des IMBIT-Moduls "Analysis und lineare Algebra".</Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>http://www.wolframalpha.com/</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Stephen Wolfram </Author>
 		<Copyright>Wolfram Alpha LLC</Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -807,9 +608,8 @@ Insofern wirkt dieses Onlinetool unterstützend beim Vertiefen des Wissens im Th
 		<Area>Methodische Grundlagen</Area>
 		<Number>W3WI_601</Number>
 		<Learning_Unit>Analysis und lineare Algebra</Learning_Unit>
-		<Abdeckungsgrad/>
-		<Language>E</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>30%</Abdeckungsgrad>
+		<Language>EN</Language>
 		<Semester>1</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>lineare Algebra</Abbreviation>
@@ -821,17 +621,10 @@ Insofern wirkt dieses Onlinetool unterstützend beim Vertiefen des Wissens im Th
 		<Description>Photomath kann (noch) nicht digitalisierte Aufgaben ganz einfach und unkompliziert lösen. Nimm mit dem Handy ein Foto von der Aufgabe auf, die dich beim Lösungsversuch zum Verzweifeln bringt, und lasse dir in Sekundenschnelle den ausführlichen Schritt-für-Schritt Lösungsweg anzeigen! 
 So erhältst du nicht nur die Lösung, sondern auch ein besseres Verständnis der einzelnen Rechenschritte und kannst zukünftig Aufgaben des Themenbereichs "Analysis und lineare Algebra" eigenständig besser bearbeiten.</Description>
 		<Type>app</Type>
-		<Embedded/>
-		<src/>
-		<Youtube_ID/>
 		<IOS_ID>919087726?mt=8</IOS_ID>
 		<Android_ID>com.microblink.photomath</Android_ID>
 		<Free_of_charge>TRUE</Free_of_charge>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Photomath Inc.</Author>
 		<Copyright>Photomath Inc.</Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -839,9 +632,8 @@ So erhältst du nicht nur die Lösung, sondern auch ein besseres Verständnis de
 		<Area>Methodische Grundlagen</Area>
 		<Number>W3WI_601</Number>
 		<Learning_Unit>Analysis und lineare Algebra</Learning_Unit>
-		<Abdeckungsgrad/>
-		<Language>D</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>30%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Semester>1</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>lineare Algebra</Abbreviation>
@@ -853,17 +645,8 @@ So erhältst du nicht nur die Lösung, sondern auch ein besseres Verständnis de
 		<Description>Vor allem als IMBIT-Neuankömmling kann das Online Quiz MathX³ interessant für dich sein. In ca. 10 Minuten testest du deinen persönlichen Wissensstand der Klassenstufen 8 - 11, wobei in vielen Aufgabenstellungen ein technischer oder praktischer Bezug hergestellt wird. 
 So findest du heraus, in welchen Bereichen du deine Fähigkeiten noch ausbauen kannst, um optimal auf die IMBIT-Mathematikvorlesungen vorbereitet zu sein.</Description>
 		<Type>quiz</Type>
-		<Embedded/>
 		<src>http://www.mathx3.de/quiz/home</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>DHBW Mannheim; ZeMath Zentrum für mathematisch-naturwissenschaftliches Basiswissen</Author>
 		<Copyright>DHBW Mannheim</Copyright>
 		<Last_Modified>2008</Last_Modified>
@@ -871,8 +654,8 @@ So findest du heraus, in welchen Bereichen du deine Fähigkeiten noch ausbauen k
 		<Area>Methodische Grundlagen</Area>
 		<Number>W3WI_601</Number>
 		<Learning_Unit>Analysis und lineare Algebra</Learning_Unit>
-		<Abdeckungsgrad/>
-		<Language>D</Language>
+		<Abdeckungsgrad>30%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Tech_Requirements>Flash Player</Tech_Requirements>
 		<Semester>1</Semester>
 		<Recommended>TRUE</Recommended>
@@ -885,11 +668,7 @@ So findest du heraus, in welchen Bereichen du deine Fähigkeiten noch ausbauen k
 		<Description>Maschinelles Lernen ist die Wissenschaft, Computer beizubringen zu handeln, ohne diese Reaktionen und Handlungen explizit zu programmieren (z.B automatische Gesichtserkennung, Google-Suchvorschläge etc.). Dieser MOOC vermittelt die effektivste Maschine-Learn-Techniken und du kannst sofort Praxiswissen sammeln indem du diese selbst implementierst. So wird nicht nur auf die theoretischen Grundlagen eingegangen, sondern auch aufgezeigt wie die Techniken effektiv auf konkrete Problemstellungen angewandt werden können.
 Dieser Kurs wird dich weiterbringen, wenn du über grundlegende mathematischen Kozepte hinausgehen willst und mit deinen Mathekenntnissen einen weiteren Bogen zur Informationstechnik spannen möchtest - Vielleicht ja sogar im Rahmen einer Praxis- oder Bachelorarbeit?</Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://www.coursera.org/learn/machine-learning</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>FALSE</Fixed_StartDate>
 		<Certificate>TRUE</Certificate>
@@ -900,34 +679,23 @@ Dieser Kurs wird dich weiterbringen, wenn du über grundlegende mathematischen K
 		<Copyright>Coursera Inc.</Copyright>
 		<Last_Modified>2017</Last_Modified>
 		<Thumb>Machine_Learning_mooc.jpg</Thumb>
-		<Area/>
-		<Number/>
-		<Learning_Unit/>
-		<Abdeckungsgrad/>
+		<Area>Informatik</Area>
+		<Number>W3WI_108</Number>
+		<Learning_Unit>Einführung in die Programmierung</Learning_Unit>
+		<Abdeckungsgrad>30%</Abdeckungsgrad>
 		<Language>EN</Language>
-		<Tech_Requirements/>
-		<Semester/>
 		<Recommended>TRUE</Recommended>
-		<Abbreviation/>
-		<Area_Abbreviation/>
+		<Abbreviation>IT</Abbreviation>
+		<Area_Abbreviation>IT</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>a20ffbe9-d077-4a8a-ad6f-adcb44fa1093</GUID>
 		<Titel>Videoplaylist des Mathematikprofessors Jörn Lowiskach</Titel>
 		<Description>Jörn Lowiskach veröffentlicht als Professor der Ingenieurmathematik Videos seiner vergangenen Lehrveranstaltungen. Die "Mathematik 1"-Vorlesungen decken schwerpunktmäßig folgende Themen des IMBIT-Curriculums ab: "Analysis: Funktionen &amp; deren Eigenschaften", "Ableitungen", "Grenzwerte" und "Stetigkeit". "Mathematik 2" behandelt relevante Themen der Linearen Algebra, wie z.B. "Matrizenoperationen", "Determinante", sowie "Lineare Gleichungssysteme".
 Über die Suchfunktion der Website kannst du schnell und unkompliziert Videos zu konkreten Themen und Stichworten finden, zu denen du zusätzliche Erklärungen und Vertiefungen benötigst.</Description>
-		<Type>video</Type>
-		<Embedded/>
+		<Type>film</Type>
 		<src>http://www.j3l7h.de/videos.html</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Prof. Dr. Jörn Loviscach</Author>
 		<Copyright>Prof. Dr. Jörn Loviscach</Copyright>
 		<Last_Modified>2016</Last_Modified>
@@ -935,9 +703,8 @@ Dieser Kurs wird dich weiterbringen, wenn du über grundlegende mathematischen K
 		<Area>Methodische Grundlagen</Area>
 		<Number>W3WI_601</Number>
 		<Learning_Unit>Analysis und lineare Algebra</Learning_Unit>
-		<Abdeckungsgrad>0.9</Abdeckungsgrad>
-		<Language>D</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>90%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Semester>1</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>lineare Algebra</Abbreviation>
@@ -948,17 +715,8 @@ Dieser Kurs wird dich weiterbringen, wenn du über grundlegende mathematischen K
 		<Titel>Statistical Techniques in Business and Economics</Titel>
 		<Description>Die Website gibt eine Einführung in die Statistik, wobei Inhalte von der deskriptiven bis zur induktiven Statistik reichen. Die einzelnen Themengebiete werden in insgesamt 20 Kapiteln abgedeckt, zu denen jeweils PowerPoint-Präsentationen mit kompakten Erklärungen unter dem Writer "More Resources" verfügbar sind. Nach dem Bearbeiten der textbasierten Lernmaterialien kannst du das gewonnene Wissen zu den einzelnen Themen in kapitelgerechten Quizes überprüfen!</Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>http://highered.mheducation.com/sites/0073401765/student_view0/index.html</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Douglas A. Lind, William G. Marchal, Samuel A. Wathen</Author>
 		<Copyright>McGraw-Hill Global Education Holdings, LLC.</Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -966,9 +724,8 @@ Dieser Kurs wird dich weiterbringen, wenn du über grundlegende mathematischen K
 		<Area>Methodische Grundlagen</Area>
 		<Number>W3WI_602)</Number>
 		<Learning_Unit>Statistik</Learning_Unit>
-		<Abdeckungsgrad>0.8</Abdeckungsgrad>
+		<Abdeckungsgrad>80%</Abdeckungsgrad>
 		<Language>EN</Language>
-		<Tech_Requirements/>
 		<Semester>3</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Statistik</Abbreviation>
@@ -979,17 +736,10 @@ Dieser Kurs wird dich weiterbringen, wenn du über grundlegende mathematischen K
 		<Titel>Wolfram Statistics Course Assistant</Titel>
 		<Description>Diese auf den Statistik-Funktionalitäten von WolframAlpha basierende App ist ein zuverlässiger Unterstützer für den Bereich der deskriptiven Statistik und Wahrscheinlichkeitsrechnung, sowohl für IOS- als auch für Android-User! Hier kannst du zweidimensionale Daten auf unterschiedliche Weise darstellen und veranschaulichen, Aufgaben zur Normal- und Binomialverteilung lösen und Zufallzahlen erzeugen. Dies alles hilft dir dabei, Statistik-Aufgaben besser zu lösen und verringert zusätzlich den Zeichenaufwand.</Description>
 		<Type>app</Type>
-		<Embedded/>
-		<src/>
-		<Youtube_ID/>
 		<IOS_ID>439249983?mt=8</IOS_ID>
 		<Android_ID>com.wolfram.android.statistics&amp;hl=de</Android_ID>
 		<Free_of_charge>FALSE</Free_of_charge>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Wolfram Group LLC</Author>
 		<Copyright>Wolfram Group LLC</Copyright>
 		<Last_Modified>2015</Last_Modified>
@@ -997,8 +747,8 @@ Dieser Kurs wird dich weiterbringen, wenn du über grundlegende mathematischen K
 		<Area>Methodische Grundlagen</Area>
 		<Number>W3WI_602)</Number>
 		<Learning_Unit>Statistik</Learning_Unit>
-		<Abdeckungsgrad>0.3</Abdeckungsgrad>
-		<Language/>
+		<Abdeckungsgrad>30%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Tech_Requirements>iOS 7.0 oder neuer bzw. Android Version 2.1 oder höher </Tech_Requirements>
 		<Semester>3</Semester>
 		<Recommended>TRUE</Recommended>
@@ -1010,17 +760,10 @@ Dieser Kurs wird dich weiterbringen, wenn du über grundlegende mathematischen K
 		<Titel>Statistik Formeln &amp; Tabellen</Titel>
 		<Description>Diese Statistik-App ist ein nützliches Helferlein für die Bearbeitung von Aufgaben ohne Statistik-Software. Sie stellt dir eine umfangreiche Sammlung von statistischen Formeln, sowie die benötigten Werte-Tabellen zur Interpretation der Ergebnisse zur Verfügung, sodass dich kein zeitaufwendiges Bättern im Statistikbuch bei der Bearbeitung von Aufgaben aufhält.</Description>
 		<Type>app</Type>
-		<Embedded/>
 		<src>https://play.google.com/store/apps/details?id=b.piskernik.statisticsmanually&amp;hl=de</src>
-		<Youtube_ID/>
-		<IOS_ID/>
 		<Android_ID>b.piskernik.statisticsmanually&amp;hl=de</Android_ID>
 		<Free_of_charge>TRUE</Free_of_charge>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>B. Piskernik</Author>
 		<Copyright>B. Piskernik</Copyright>
 		<Last_Modified>2015</Last_Modified>
@@ -1028,7 +771,7 @@ Dieser Kurs wird dich weiterbringen, wenn du über grundlegende mathematischen K
 		<Area>Methodische Grundlagen</Area>
 		<Number>W3WI_602)</Number>
 		<Learning_Unit>Statistik</Learning_Unit>
-		<Abdeckungsgrad/>
+		<Abdeckungsgrad>30%</Abdeckungsgrad>
 		<Language>DE</Language>
 		<Tech_Requirements>Android Version 4.2 oder höher </Tech_Requirements>
 		<Semester>3</Semester>
@@ -1041,15 +784,10 @@ Dieser Kurs wird dich weiterbringen, wenn du über grundlegende mathematischen K
 		<Titel>Einstieg in die Statistik - Making Decisions Based on Data</Titel>
 		<Description>Gerade als Statistik-Anfänger bringt dir dieser MOOC grundlegende Methoden für den versändinsvollen Umgang mit Daten und deren Auswertung näher. Der Fokus liegt sowohl auf Themen der deskriptiven Statistik, wie zum Beispiel "Visualisierung von Daten" und "Maße statistischer Verteilungen", wie auch aus der schließenden Statistik mit Lerneinheiten zur Wahrscheinlichkeitsverteilung, Normalverteilung und Hypothesentests.</Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://de.udacity.com/course/intro-to-statistics--st101/</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>FALSE</Fixed_StartDate>
 		<Certificate>FALSE</Certificate>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
 		<Duration>8 Wochen </Duration>
 		<Author>Sebastian Thrun</Author>
@@ -1059,9 +797,8 @@ Dieser Kurs wird dich weiterbringen, wenn du über grundlegende mathematischen K
 		<Area>Methodische Grundlagen</Area>
 		<Number>W3WI_602)</Number>
 		<Learning_Unit>Statistik</Learning_Unit>
-		<Abdeckungsgrad>0.6</Abdeckungsgrad>
+		<Abdeckungsgrad>60%</Abdeckungsgrad>
 		<Language>EN</Language>
-		<Tech_Requirements/>
 		<Semester>3</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Statistik</Abbreviation>
@@ -1074,11 +811,7 @@ Dieser Kurs wird dich weiterbringen, wenn du über grundlegende mathematischen K
 "Erforschung zufälliger Phänomene", sowie "Statistische Inferenz (Schätzung von Parametern und Hypothesentests)".
 Das Videomaterial wird von einer Lehrbuchbeschreibung begleitet, die dir bei der Vor- und Nacharbeit hilft und zur Veranschaulichung dient.</Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://www.edx.org/course/preparing-ap-statistics-exam-tennessee-board-regents-statx-0</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>FALSE</Fixed_StartDate>
 		<Certificate>TRUE</Certificate>
@@ -1092,9 +825,8 @@ Das Videomaterial wird von einer Lehrbuchbeschreibung begleitet, die dir bei der
 		<Area>Methodische Grundlagen</Area>
 		<Number>W3WI_602)</Number>
 		<Learning_Unit>Statistik</Learning_Unit>
-		<Abdeckungsgrad>0.9</Abdeckungsgrad>
+		<Abdeckungsgrad>90%</Abdeckungsgrad>
 		<Language>EN</Language>
-		<Tech_Requirements/>
 		<Semester>3</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Statistik</Abbreviation>
@@ -1106,17 +838,11 @@ Das Videomaterial wird von einer Lehrbuchbeschreibung begleitet, die dir bei der
 		<Description>Dieser Standford MOOC vermittelt den Stoff von einem Semester Statistik mithilfe von anschaulichen Lehrtexten inkl. Grafiken, Beispielen und Multiple-Choice-Quizes, mit denen du dein Verständnis zu umittelbar zuvor vermitteltem Lernstoff überprüfen kannst.   
 Zentrale Themengebiete sind die Basics der deskriptiven Statistik, sowie Wahrscheinlichkeit und Inferenz (Punkt- und Intervallschätzungen &amp; Hypothesentests). </Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://lagunita.stanford.edu/courses/OLI/ProbStat/Open/about</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>FALSE</Fixed_StartDate>
 		<Certificate>FALSE</Certificate>
-		<Certificate_Costs/>
 		<Prestigious>TRUE</Prestigious>
-		<Duration/>
 		<Author>Stanford University</Author>
 		<Copyright>Stanford University</Copyright>
 		<Last_Modified>2015</Last_Modified>
@@ -1124,9 +850,8 @@ Zentrale Themengebiete sind die Basics der deskriptiven Statistik, sowie Wahrsch
 		<Area>Methodische Grundlagen</Area>
 		<Number>W3WI_602)</Number>
 		<Learning_Unit>Statistik</Learning_Unit>
-		<Abdeckungsgrad>0.8</Abdeckungsgrad>
+		<Abdeckungsgrad>80%</Abdeckungsgrad>
 		<Language>EN</Language>
-		<Tech_Requirements/>
 		<Semester>3</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Statistik</Abbreviation>
@@ -1137,17 +862,8 @@ Zentrale Themengebiete sind die Basics der deskriptiven Statistik, sowie Wahrsch
 		<Titel>Operations Research - Online Script</Titel>
 		<Description>Diese digitale Einführung in "Operations Research" stellt ausgewählte Modelle und Algorithmen zur Entscheidungsunterstützung im betriebswirtschaftlichen Sinne vor. Behandelt werden zum Beispiel das Simplexverfahren und die Graphentheorie, sowie Rucksack- und Transportprobleme. Die schrittweise Lösung derartiger Problemstellungen wird anhand von konkreten Beispielen demonstriert, die dir auch konkrete betriebliche Anwendungsfälle näherbringen. Durch die Bearbeitung weiterer Übungsaufgaben kannst du die Verfahren weiter verinnerlichen, zumal ausführliche Lösungen zur Selbstkontrolle bereitgestellt werden.</Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>https://os.updog.co/dhbw/or/</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>O. Stuhr</Author>
 		<Copyright>O.Stuhr</Copyright>
 		<Last_Modified>2016</Last_Modified>
@@ -1155,9 +871,8 @@ Zentrale Themengebiete sind die Basics der deskriptiven Statistik, sowie Wahrsch
 		<Area>Methodische Grundlagen</Area>
 		<Number>W3WI_602)</Number>
 		<Learning_Unit>Operations Research</Learning_Unit>
-		<Abdeckungsgrad>0.8</Abdeckungsgrad>
+		<Abdeckungsgrad>80%</Abdeckungsgrad>
 		<Language>DE</Language>
-		<Tech_Requirements/>
 		<Semester>4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Operations Research</Abbreviation>
@@ -1169,17 +884,12 @@ Zentrale Themengebiete sind die Basics der deskriptiven Statistik, sowie Wahrsch
 		<Description>Operations Research (OR) ist geprägt durch die Zusammenführung von mathematischen Verfahren, Wirtschaftswissenschaften und Informatik zum Zwecke der Entscheidungsfindung.
 In diesem Online-Kurs wird die lineare Optimierung/Programmierung gelehrt, um Teilnehmer zum Lösen von Maximierungs- und Minimierungsproblemen zu befähigen. Kursmaterialien umfassen zahlreiche Dokumente, Übungen und 18 Lernvideos, von denen du auch einige kostenlos über den Youtube-Kanal des Anbieters abrufen kannst.</Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://www.wiwiweb.de/online-kurs/bwl-operations-research</src>
 		<Youtube_ID>https://www.youtube.com/playlist?list=PLazgGX0yYQMrXh0FgkSrLkNNcBsuC9tS3</Youtube_ID>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>FALSE</Free_of_charge>
 		<Fixed_StartDate>FALSE</Fixed_StartDate>
 		<Certificate>FALSE</Certificate>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Daniel Lambert, wiwiweb.de</Author>
 		<Copyright>examio GmbH</Copyright>
 		<Last_Modified>2014</Last_Modified>
@@ -1187,9 +897,8 @@ In diesem Online-Kurs wird die lineare Optimierung/Programmierung gelehrt, um Te
 		<Area>Methodische Grundlagen</Area>
 		<Number>W3WI_602)</Number>
 		<Learning_Unit>Operations Research</Learning_Unit>
-		<Abdeckungsgrad>0.6</Abdeckungsgrad>
+		<Abdeckungsgrad>60%</Abdeckungsgrad>
 		<Language>DE</Language>
-		<Tech_Requirements/>
 		<Semester>4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Operations Research</Abbreviation>
@@ -1201,11 +910,7 @@ In diesem Online-Kurs wird die lineare Optimierung/Programmierung gelehrt, um Te
 		<Description>Diskrete Optimierung ist eine Alternativbezeichnung für lineare ganzzahlige Optimierung, welche ein zentrales Thema des "Operations Research"-Moduls bei IMBIT darstellt. Anhand der Bearbeitung von betrieblichen Fragestellungen in den Bereichen Planung, Fahrzeug-Routing und Ressourcenzuteilung lernst du grundlegende Konzepte und Algorithmen der Constraint-Programmierung, lokalen Suche und ganzzahligen Programmierung. Besonders relevant für dich als IMBIT-Student sind dabei die Kurswochen 5 &amp; 6, welche "Lineare Programmierung" mit Fokus auf das Simplexverfahren und "Gemischt-ganzzahlige Programmierung" behandeln.
 </Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://www.coursera.org/learn/discrete-optimization</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>FALSE</Fixed_StartDate>
 		<Certificate>TRUE</Certificate>
@@ -1219,9 +924,8 @@ In diesem Online-Kurs wird die lineare Optimierung/Programmierung gelehrt, um Te
 		<Area>Methodische Grundlagen</Area>
 		<Number>W3WI_602)</Number>
 		<Learning_Unit>Operations Research</Learning_Unit>
-		<Abdeckungsgrad>0.5</Abdeckungsgrad>
+		<Abdeckungsgrad>50%</Abdeckungsgrad>
 		<Language>EN</Language>
-		<Tech_Requirements/>
 		<Semester>4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Operations Research</Abbreviation>
@@ -1232,11 +936,7 @@ In diesem Online-Kurs wird die lineare Optimierung/Programmierung gelehrt, um Te
 		<Titel>Greedy Algorithms, Minimum Spanning Trees, and Dynamic Programming</Titel>
 		<Description>Fokus des MOOCs sind Algorithmen, die im Umfeld der Operations Research Anwendung finden: Zum einen werden Greedy Algorithmen (z.B Prims und Kruskals Algorithmus für minimale Spannbäume) behandelt, zum anderen verschiedene Ansätze der dynamischen Programmierung (z.B. das Rucksack Problem und das Branch-and-Bound-Verfahren). Für dich als IMBIT-Student ist insbesondere der Stoff der ersten zwei Kurswochen relevant, da mit Prims und Kruskals Algoritmus Teile des Curriculumthemas "Graphentheorie" abgedeckt werden. Das Wissen im Bereich der Greedy-Algoritmen kannst du zusätzlich in den folgenden zwei Kurswochen noch vertiefen.</Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://www.coursera.org/learn/algorithms-greedy#pricing</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>FALSE</Fixed_StartDate>
 		<Certificate>TRUE</Certificate>
@@ -1250,9 +950,8 @@ In diesem Online-Kurs wird die lineare Optimierung/Programmierung gelehrt, um Te
 		<Area>Methodische Grundlagen</Area>
 		<Number>W3WI_602)</Number>
 		<Learning_Unit>Operations Research</Learning_Unit>
-		<Abdeckungsgrad>0.5</Abdeckungsgrad>
+		<Abdeckungsgrad>50%</Abdeckungsgrad>
 		<Language>EN</Language>
-		<Tech_Requirements/>
 		<Semester>4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Operations Research</Abbreviation>
@@ -1263,11 +962,7 @@ In diesem Online-Kurs wird die lineare Optimierung/Programmierung gelehrt, um Te
 		<Titel>Internetworking mit TCP/IP</Titel>
 		<Description>Dieser Kurs bringt dir die technologischen Grundlagen des Internets näher. Er behandelt die physikalischen Grundlagen der Datenübertragung basierend auf funktionalen Prinzipien und Technologien von Local Area Networks (LANs) und Wide Area Networks (WANs). Außerdem lernst du das TCP/IP Reference Model - das Herz des Internets - kennen und steigst somit in die komplexe Welt der Internettechnologien ein. </Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://open.hpi.de/courses/internetworking2014</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>FALSE</Fixed_StartDate>
 		<Certificate>FALSE</Certificate>
@@ -1282,7 +977,7 @@ In diesem Online-Kurs wird die lineare Optimierung/Programmierung gelehrt, um Te
 		<Number>W3WI_104</Number>
 		<Learning_Unit>Kommunikations- und Betriebssysteme</Learning_Unit>
 		<Abdeckungsgrad>40%</Abdeckungsgrad>
-		<Language>ENG</Language>
+		<Language>EN</Language>
 		<Tech_Requirements>Flash</Tech_Requirements>
 		<Semester>2</Semester>
 		<Recommended>FALSE</Recommended>
@@ -1294,17 +989,9 @@ In diesem Online-Kurs wird die lineare Optimierung/Programmierung gelehrt, um Te
 		<Titel>AmazingSQL</Titel>
 		<Description>Amazing SQL ist eine kostenlose Software, mit der du SQL-Abfragen in verschiedenen Schwierigkeitsstufen üben kannst. Die Software eignet sich sowohl für Anfänger als auch für Fortgeschrittene. </Description>
 		<Type>software</Type>
-		<Embedded/>
 		<src>http://amazing-sql.com/</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>TRUE</Prestigious>
-		<Duration/>
 		<Author>Andreas Palosi und Jan Freidinger</Author>
 		<Copyright>AmazingSQL</Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -1312,9 +999,8 @@ In diesem Online-Kurs wird die lineare Optimierung/Programmierung gelehrt, um Te
 		<Area>Informatik</Area>
 		<Number>W3WI_105</Number>
 		<Learning_Unit>Datenbanken</Learning_Unit>
-		<Abdeckungsgrad>0.4</Abdeckungsgrad>
+		<Abdeckungsgrad>40%</Abdeckungsgrad>
 		<Language>DE</Language>
-		<Tech_Requirements/>
 		<Semester>3+4</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Datenbanken</Abbreviation>
@@ -1324,59 +1010,41 @@ In diesem Online-Kurs wird die lineare Optimierung/Programmierung gelehrt, um Te
 		<GUID>de43f091-e142-48f6-84c6-fc34df9cbf3a</GUID>
 		<Titel>Komponenten eines Computers - Einführung</Titel>
 		<Description>Was sind die Grundbestandteile eines Computers? Aus welchen Komponenten ist das Computersystem aufgebaut? Beim Aufbau des Computers unterscheidet man in Hardware und Software, also Betriebssystem und Anwendersoftware. Und was ist ein Motherboard? Hier lernst du die wichtigsten IT-Grundlagen. Auf geht's! </Description>
-		<Type>youtube</Type>
+		<Type>film</Type>
 		<Embedded>TRUE</Embedded>
 		<src>https://www.youtube.com/watch?v=59dYVTNjWG4</src>
 		<Youtube_ID>59dYVTNjWG4</Youtube_ID>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>TRUE</Prestigious>
-		<Duration/>
 		<Author>Alexander Giesecke und Nicolai Schork</Author>
 		<Copyright>Alexander Giesecke und Nicolai Schork</Copyright>
 		<Last_Modified>2017</Last_Modified>
-		<Thumb/>
 		<Area>Informatik</Area>
 		<Number>W3WI_104</Number>
 		<Learning_Unit>Grundlagen der IT</Learning_Unit>
-		<Abdeckungsgrad>0.4</Abdeckungsgrad>
+		<Abdeckungsgrad>50%</Abdeckungsgrad>
 		<Language>DE</Language>
-		<Tech_Requirements/>
 		<Semester>1</Semester>
 		<Recommended>FALSE</Recommended>
-		<Abbreviation>IT</Abbreviation>
+		<Abbreviation>Programmierung</Abbreviation>
 		<Area_Abbreviation>IT</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>cf9d1cd7-8862-4a9f-b359-83630c98a885</GUID>
 		<Titel>UDP and TCP: Comparison of Transport Protocols</Titel>
 		<Description>Dieses Lernvideo erklärt die Grundlagen von Transportprotokollen und vergleicht zwei verschiedene Arten von Protokollen: UDP und TCP. Dies hilft dir bei der Wiederholung der Vorlesung "Communication Systems". </Description>
-		<Type>youtube</Type>
+		<Type>film</Type>
 		<Embedded>TRUE</Embedded>
 		<src>https://www.youtube.com/watch?v=Vdc8TCESIg8</src>
 		<Youtube_ID>Vdc8TCESIg8</Youtube_ID>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Pieter Decker</Author>
 		<Copyright>PieterExplainsTech</Copyright>
 		<Last_Modified>2013</Last_Modified>
-		<Thumb/>
 		<Area>Informatik</Area>
 		<Number>W3WI_104</Number>
 		<Learning_Unit>Kommunikations- und Betriebssysteme</Learning_Unit>
-		<Abdeckungsgrad>0.3</Abdeckungsgrad>
-		<Language>ENG</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>30%</Abdeckungsgrad>
+		<Language>EN</Language>
 		<Semester>3+4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Betriebssysteme</Abbreviation>
@@ -1387,17 +1055,8 @@ In diesem Online-Kurs wird die lineare Optimierung/Programmierung gelehrt, um Te
 		<Titel>Vorlesung zu Communication Systems</Titel>
 		<Description>Diese Webseite zeigt alle Skripte aus der Vorlesung "Communication Systems" von Herrn Welter aus 2015. Hier lernst du die Grundlagen der Datenübertragung kennen und findest nützliche Links zu weiterführenden Lerninhalten im Themenbereich wie beispielsweise ein Tool zur Kalkulation von IP-Adressen, Subnetz und Ranges. </Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>http://dhbw.welter.ws/</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Prof. Welter</Author>
 		<Copyright>Prof. Welter</Copyright>
 		<Last_Modified>2015</Last_Modified>
@@ -1405,9 +1064,8 @@ In diesem Online-Kurs wird die lineare Optimierung/Programmierung gelehrt, um Te
 		<Area>Informatik</Area>
 		<Number>W3WI_104</Number>
 		<Learning_Unit>Kommunikations- und Betriebssysteme</Learning_Unit>
-		<Abdeckungsgrad>1</Abdeckungsgrad>
-		<Language>ENG</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>100%</Abdeckungsgrad>
+		<Language>EN</Language>
 		<Semester>3+4</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Betriebssysteme</Abbreviation>
@@ -1417,28 +1075,19 @@ In diesem Online-Kurs wird die lineare Optimierung/Programmierung gelehrt, um Te
 		<GUID>9e042663-0298-4cae-8d5e-e37c13d9b38b</GUID>
 		<Titel>ISO/OSI Modell</Titel>
 		<Description>Dieses Video erklärt das ISO/OSI Schichtenmodell anhand verschiedener Beispiele. Es wurde erstellt von Studenten der DHBW Villingen-Schwellingen. Es hilft dir nicht nur im Rahmen der Vorlesung "Communication Systems", sondern auch bei mündlichen Prüfungen.</Description>
-		<Type>video</Type>
+		<Type>film</Type>
 		<Embedded>TRUE</Embedded>
 		<src>https://www.youtube.com/watch?v=HRHQvTO9GZU</src>
 		<Youtube_ID>HRHQvTO9GZU</Youtube_ID>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Valerie Neff, Julia Hartung, Alexander Meixner, Jonathan Beißwenger</Author>
 		<Copyright>DHBW Villingen-Schwellingen</Copyright>
 		<Last_Modified>2014</Last_Modified>
-		<Thumb/>
 		<Area>Informatik</Area>
 		<Number>W3WI_104</Number>
 		<Learning_Unit>Kommunikations- und Betriebssysteme</Learning_Unit>
-		<Abdeckungsgrad>0.4</Abdeckungsgrad>
+		<Abdeckungsgrad>40%</Abdeckungsgrad>
 		<Language>DE</Language>
-		<Tech_Requirements/>
 		<Semester>3+4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Betriebssysteme</Abbreviation>
@@ -1450,17 +1099,8 @@ In diesem Online-Kurs wird die lineare Optimierung/Programmierung gelehrt, um Te
 		<Description>Dies ist ein Einführungskurs in die Programmiersprache Java. Er behandelt die grundlegenden Konzepte des Programmierens und der Informatik. Den größten Nutzen hast du von dem Kurs, wenn du die Aufzeichnungen interaktiv durchgehst, über die Fragen am Ende einer jeden Seite nachdenkst und sie beantwortest. 
 Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt für Schritt näher bringen. Als Programmieranfänger braucht man ca. einen Monat, um alle Aufzeichnungen durchzugehen. </Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>http://gailer-net.de/tutorials/java/index.html</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Bradley Kjell</Author>
 		<Copyright>Central Connecticut State University</Copyright>
 		<Last_Modified>2016</Last_Modified>
@@ -1468,7 +1108,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Informatik</Area>
 		<Number>W3WI_108</Number>
 		<Learning_Unit>Einführung in die Programmierung</Learning_Unit>
-		<Abdeckungsgrad>0.8</Abdeckungsgrad>
+		<Abdeckungsgrad>80%</Abdeckungsgrad>
 		<Language>DE</Language>
 		<Tech_Requirements>Java Entwicklungsumgebung (JDK) Version 5.0 oder höher, Texteditor(z.B Notepad)</Tech_Requirements>
 		<Semester>1+2</Semester>
@@ -1481,46 +1121,30 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Titel>Business Anthropology</Titel>
 		<Description>Diese Seite wurde im Rahmen des Seminars “Business Anthropology” am Institut für Ethnologie der Universität Heidelberg erstellt und gibt dir aus studentischer Sicht einen Einblick in den spannenden Anwendungsbereich des Fachs Ethnologie. Die hier erworbenen Kenntnisse können dein Wissen im Bereich "Intercultural Management" erweitern. </Description>
 		<Type>podcast</Type>
-		<Embedded/>
 		<src>http://biz-anthro.com/index.php/podcasts/</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Frauke Mörike</Author>
 		<Copyright>Institut für Ethnologie der Universität Heidelberg</Copyright>
 		<Last_Modified>2017</Last_Modified>
 		<Thumb>Business_Anthropology.jpg</Thumb>
-		<Area/>
-		<Number/>
-		<Learning_Unit/>
-		<Abdeckungsgrad/>
+		<Area>Internationales</Area>
+		<Number>W3WI_IMBIT_301</Number>
+		<Learning_Unit>Intercultural Management</Learning_Unit>
+		<Abdeckungsgrad>30%</Abdeckungsgrad>
 		<Language>DE</Language>
-		<Tech_Requirements/>
-		<Semester/>
 		<Recommended>TRUE</Recommended>
-		<Abbreviation/>
-		<Area_Abbreviation/>
+		<Abbreviation>ICM</Abbreviation>
+		<Area_Abbreviation>I</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>bde190f5-45af-43e7-87b2-3d3418840d49</GUID>
 		<Titel>Introduction to Operating Systems</Titel>
 		<Description>Dies ist ein Einführungskurs in die Thematik "Operating Systems". Er vermittelt dir die grundlegenden Betriebssystem-Abstraktionen, -Mechanismen und deren Implementierungen. Der Kern des Kurses ist die gleichzeitige Programmierung (Threads und Synchronisation), Interprozesskommunikation und eine Einführung in verteilte Betriebssysteme. Der Kurs ist in vier Abschnitte aufgeteilt: (1) Einleitung, (2) Prozess- und Threadmanagement, (3) Ressourcenmanagement und Kommunikation und (4) Verteilte Systeme.</Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://www.udacity.com/course/introduction-to-operating-systems--ud923</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>FALSE</Fixed_StartDate>
 		<Certificate>FALSE</Certificate>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
 		<Duration>8 Wochen </Duration>
 		<Author>Udacity</Author>
@@ -1530,9 +1154,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Informatik</Area>
 		<Number>W3WI_104</Number>
 		<Learning_Unit>Kommunikations- und Betriebssysteme</Learning_Unit>
-		<Abdeckungsgrad>0.6</Abdeckungsgrad>
-		<Language>ENG</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>60%</Abdeckungsgrad>
+		<Language>EN</Language>
 		<Semester>3+4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Betriebssysteme</Abbreviation>
@@ -1542,28 +1165,19 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<GUID>d1d78ad7-bc10-4a57-bb77-45f9d546d7fe</GUID>
 		<Titel>JavaScript Tutorial </Titel>
 		<Description>In diesem Tutorial lernst du grundlegende Konzepte der Webprogrammierung in JavaScript kennen. Dieses Video ist der erste Teil einer Lernreihe und beinhaltet eine Einführung, eine Integration mit HTML und eine "Hello World"- Programmierung. Viel Spaß!</Description>
-		<Type>youtube</Type>
+		<Type>film</Type>
 		<Embedded>TRUE</Embedded>
 		<src>https://www.youtube.com/watch?v=5WqO5u2at-A</src>
 		<Youtube_ID>5WqO5u2at-A</Youtube_ID>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>listenwhatisayoh</Author>
 		<Copyright>listenwhatisayoh</Copyright>
 		<Last_Modified>2017</Last_Modified>
-		<Thumb/>
 		<Area>Informatik</Area>
 		<Number>W3WI_110</Number>
 		<Learning_Unit>Webprogrammierung</Learning_Unit>
-		<Abdeckungsgrad>0.3</Abdeckungsgrad>
+		<Abdeckungsgrad>30%</Abdeckungsgrad>
 		<Language>DE</Language>
-		<Tech_Requirements/>
 		<Semester>3+4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Webprogrammierung</Abbreviation>
@@ -1574,17 +1188,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Titel>Binär-Dezimal-Hexadezimal Umrechner</Titel>
 		<Description>Auf dieser Webseite kannst du die Umrechnung von Zahlen ins Binär-, Dezimal- und Hexadezimalsystem üben. Die in diese Webseite integrierte Applikation gibt dir zu jeder beliebigen Zahl in einem Zahlensystem die entsprechende Zahl in einem anderen Zahlensystem aus. Den größten Lernerfolg hast du, wenn du dir Zahlenbeispiele ausdenkst, diese selbst umwandelst und dann dein Ergebnis mit der richtigen Lösung vergleichst.</Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>http://binaer-dezimal-hexadezimal-umrechner.miniwebapps.de/</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Matthäus Liß</Author>
 		<Copyright>LISSWORX</Copyright>
 		<Last_Modified>2012</Last_Modified>
@@ -1592,9 +1197,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Informatik</Area>
 		<Number>W3WI_104</Number>
 		<Learning_Unit>Grundlagen der IT</Learning_Unit>
-		<Abdeckungsgrad>0.1</Abdeckungsgrad>
+		<Abdeckungsgrad>10%</Abdeckungsgrad>
 		<Language>DE</Language>
-		<Tech_Requirements/>
 		<Semester>1+2</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>IT</Abbreviation>
@@ -1605,17 +1209,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Titel>Operating Systems Tutorial</Titel>
 		<Description>Dieses Tutorial zum Thema Betriebssysteme wurde für Informatikstudenten konzipiert und hilft dir dabei, grundlegende und fortgeschrittene Konzepte von Betriebssystemen zu verstehen. Es deckt den Großteil der IMBIT-Vorlesung "Operating Systems" ab und behandelt Themen wie Asynchronität, Ereignissteuerung, Koordinierung paralleler Aktivitäten, Prozesse, I/O - Systeme und Virtualisierung.</Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>https://www.tutorialspoint.com/operating_system/index.htm</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Tutorialspoint</Author>
 		<Copyright>Tutorialspoint</Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -1623,9 +1218,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Informatik</Area>
 		<Number>W3WI_104</Number>
 		<Learning_Unit>Kommunikations- und Betriebssysteme</Learning_Unit>
-		<Abdeckungsgrad>1</Abdeckungsgrad>
-		<Language>ENG</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>100%</Abdeckungsgrad>
+		<Language>EN</Language>
 		<Semester>3+4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Betriebssysteme</Abbreviation>
@@ -1636,15 +1230,10 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Titel>Datenmanagement mit SQL</Titel>
 		<Description>Im openHPI Kurs "Datenmanagement mit SQL" lernst du die Grundlagen von modernen Datenbanksystemen kennen. Zuerst untersuchst du ihren Aufbau, planst den Entwurf von Datenbanken und schließlich lernst du die weltweit dominierende Abfragesprache SQL kennen. Zum Schluss kannst du in einem kleinen Test das Gelernte überprüfen. Los geht´s!</Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://open.hpi.de/courses/sql</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>FALSE</Fixed_StartDate>
 		<Certificate>FALSE</Certificate>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
 		<Duration>8 Wochen </Duration>
 		<Author>Prof. Dr. Felix Naumann</Author>
@@ -1654,9 +1243,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Informatik</Area>
 		<Number>W3WI_105</Number>
 		<Learning_Unit>Datenbanken</Learning_Unit>
-		<Abdeckungsgrad>0.6</Abdeckungsgrad>
+		<Abdeckungsgrad>60%</Abdeckungsgrad>
 		<Language>DE</Language>
-		<Tech_Requirements/>
 		<Semester>3+4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Datenbanken</Abbreviation>
@@ -1668,17 +1256,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Description>Auf dieser Webseite lernst du, wie man SQL benutzen kann, um auf bestimmte Daten in einer Datenbank zuzugreifen und/oder diese zu verändern. Abschließend kannst du dein Wissen in einem SQL Quiz testen. Die Tutorials eignen sich sehr gut als Klausurvorbereitung, gehen jedoch teilweise über den Inhalt der IMBIT-Vorlesung "Datenbanken" hinaus. 
 </Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>https://www.w3schools.com/sql/</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>w3schools</Author>
 		<Copyright>w3schools</Copyright>
 		<Last_Modified>2013</Last_Modified>
@@ -1686,9 +1265,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Informatik</Area>
 		<Number>W3WI_106</Number>
 		<Learning_Unit>Datenbanken</Learning_Unit>
-		<Abdeckungsgrad>1</Abdeckungsgrad>
-		<Language>ENG</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>100%</Abdeckungsgrad>
+		<Language>EN</Language>
 		<Semester>3+4</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Datenbanken</Abbreviation>
@@ -1699,15 +1277,10 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Titel>Objektorientierte Programmierung in Java</Titel>
 		<Description>In diesem openHPI Einsteigerkurs lernst du die Grundlagen der objektorientierten Programmierung kennen und löst gemeinsam mit Detektiv Duke einen mysteriösen Entführungsfall. Voraussetzungen für diesen Kurs sind ein Interesse an Programmierung und ein Computer mit Internetzugang. Vorhergehende Programmiererfahrung ist hilfreich, aber nicht notwendig. Also löse den Fall!</Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://open.hpi.de/courses/javaeinstieg2017</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>FALSE</Fixed_StartDate>
 		<Certificate>FALSE</Certificate>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
 		<Duration>3 Wochen </Duration>
 		<Author>OpenHPI</Author>
@@ -1717,9 +1290,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Informatik</Area>
 		<Number>W3WI_108</Number>
 		<Learning_Unit>Einführung in die Programmierung</Learning_Unit>
-		<Abdeckungsgrad>0.8</Abdeckungsgrad>
+		<Abdeckungsgrad>80%</Abdeckungsgrad>
 		<Language>DE</Language>
-		<Tech_Requirements/>
 		<Semester>1+2</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Programmierung</Abbreviation>
@@ -1730,17 +1302,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Titel>HTML und Javascript Tutorial</Titel>
 		<Description>Auf dieser Webseite findest du Tutorials zu HTML und JavaScript. Die Tutorials enthalten eine Vielzahl an Beispielen, mit denen du die Grundprinzipien von HTML und JavaScript lernen kannst. Außerdem kannst du mit dem Online HTML Editor eine HTML Seite erstellen und dir das Ergebnis anzeigen lassen. Insgesamt bietet die Webseite eine gute Grundlage für die Klausur zur IMBIT-Vorlesung "Webprogrammierung".</Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>https://www.w3schools.com/html/</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>w3schools</Author>
 		<Copyright>w3schools</Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -1748,9 +1311,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Informatik</Area>
 		<Number>W3WI_110</Number>
 		<Learning_Unit>Webprogrammierung</Learning_Unit>
-		<Abdeckungsgrad>0.7</Abdeckungsgrad>
-		<Language>ENG</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>70%</Abdeckungsgrad>
+		<Language>EN</Language>
 		<Semester>3+4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Webprogrammierung</Abbreviation>
@@ -1761,15 +1323,10 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Titel>Webtechnologien</Titel>
 		<Description>Das World Wide Web hat die Welt auf unvorstellbare Weise verändert. Es hat eine neue digitale Welt geschaffen, die eng mit unserer echten Welt verflochten ist. Dadurch ist möglich geworden, was lange undenkbar schien: Weltweite Kommunikation innerhalb von Sekunden, Filme schauen auf dem Smartphone, mit weit entfernten Menschen gemeinsam Spiele spielen oder Fotos ansehen und Einkäufe oder Bankgeschäfte von Zuhause aus erledigen. In diesem Mooc lernst du, wie das alles funktioniert. </Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://open.hpi.de/courses/webtech2017</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>FALSE</Fixed_StartDate>
 		<Certificate>FALSE</Certificate>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
 		<Duration>8 Wochen </Duration>
 		<Author>OpenHPI</Author>
@@ -1779,9 +1336,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Informatik</Area>
 		<Number>W3WI_110</Number>
 		<Learning_Unit>Webprogrammierung</Learning_Unit>
-		<Abdeckungsgrad>0.3</Abdeckungsgrad>
+		<Abdeckungsgrad>30%</Abdeckungsgrad>
 		<Language>DE</Language>
-		<Tech_Requirements/>
 		<Semester>3+4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Webprogrammierung</Abbreviation>
@@ -1792,17 +1348,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Titel>Gesetzbücher online</Titel>
 		<Description>Hier findest du Gesetzestexte des Handelsgesetzbuchs, des Bürgerlichen Gesetzbuchs und viele mehr zum Nachschlagen online. Diese Webseite eignet sich hervorragend, um während der Vorlesung einzelne Gesetze schnell nachzuschlagen oder nachzulesen. </Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>http://www.gesetze-im-internet.de</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Bundesministerium der Justiz und für Verbraucherschutz</Author>
 		<Copyright>juris GmbH</Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -1810,9 +1357,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_506</Number>
 		<Learning_Unit>Recht</Learning_Unit>
-		<Abdeckungsgrad>0.4</Abdeckungsgrad>
-		<Language>D</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>40%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Semester>1+2</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Recht</Abbreviation>
@@ -1822,16 +1368,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<GUID>75a8498b-9969-4059-8046-4e7e1aad55fe</GUID>
 		<Titel>Schuldrecht - Vertragsschuldverhältnisse</Titel>
 		<Description>Diese Online-Vorlesung der Universität Bonn gibt dir eine Einführung in das Schuldrecht und die Vertragsschuldverhältnisse. Es wird erläutert, welche Pflichten durch Verträge begründet werden, wie und wann diese erlöschen und welche Folgen eine Nichterfüllung von Verträgen hat. Das Schuld- und Vertragsrecht sind wesentliche Bestandteile der Rechtsvorlesung und tauchen auch in der abschließenden Klausur wieder auf.</Description>
-		<Type>video</Type>
-		<Embedded/>
+		<Type>film</Type>
 		<src>https://mediaserver.uni-bonn.de/channels/#schuldrecht-i-vertragsschuldverhaltnisse______</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
 		<Duration>50 Stunden</Duration>
 		<Author>Prof. Dr. Michael Beurskens</Author>
@@ -1841,9 +1379,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_506</Number>
 		<Learning_Unit>Recht</Learning_Unit>
-		<Abdeckungsgrad>0.3</Abdeckungsgrad>
-		<Language>D</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>30%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Semester>1+2</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Recht</Abbreviation>
@@ -1853,16 +1390,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<GUID>f9f05a75-cb61-4139-a1ab-d7da42c1d0eb</GUID>
 		<Titel>Grundzüge des Handelsrechts</Titel>
 		<Description>Diese Online-Vorlesung gibt dir eine Einführung in das Handelsrecht. Behandelt werden u.a. Themen und Begriffe wie Unternehmer, Kaufmann, Handelsregister, Verträge, Vertragsschluss, Stellvertretung, Prokura, Handlungsvollmacht, Firma, Name und Haftung. Viele dieser Begriffe werden ebenfalls in den Vorlesungen angesprochen. Es lohnt sich also in jedem Fall, sich mit diesen Begriffen im Vorfeld oder auch im Anschluss an die Vorlesung vertraut zu machen.</Description>
-		<Type>video</Type>
-		<Embedded/>
+		<Type>film</Type>
 		<src>https://mediaserver.uni-bonn.de/channels/#grundzuge-des-handelsrechts_</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
 		<Duration>21 Stunden</Duration>
 		<Author>Prof. Dr. Michael Beurskens</Author>
@@ -1872,9 +1401,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_506</Number>
 		<Learning_Unit>Recht</Learning_Unit>
-		<Abdeckungsgrad>0.3</Abdeckungsgrad>
-		<Language>D</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>30%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Semester>1+2</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Recht</Abbreviation>
@@ -1885,17 +1413,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Titel>Economics - Students' Resources accompanying the book from N. Gregory Mankiw and Mark P. Taylor</Titel>
 		<Description>Diese Webseite stellt für dich Lernhilfen zu dem Buch "Economics" von N. Gregory Mankiw und Mark P. Taylor in Form von Übungsaufgaben, Multiple-Choice Fragen und Case Studies für die einzelnen Kapitel und Themenbereiche bereit. Die VWL-Vorlesung bei Prof. Dr. Schuster basiert auf diesem Buch. Daher ist es ratsam, sich die Materialien auf dieser Webseite anzuschauen und zu bearbeiten. Gerade im Hinblick auf die Klausur kann dir dies bei der Vorbereitung und Lernkontrolle helfen.</Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>http://cws.cengage.co.uk/mankiw_taylor2/students/stu_title.htm</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Mankiw and Taylor</Author>
 		<Copyright>Cengage Learning Inc.</Copyright>
 		<Last_Modified>2015</Last_Modified>
@@ -1903,8 +1422,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_505</Number>
 		<Learning_Unit>VWL</Learning_Unit>
-		<Abdeckungsgrad>0.8</Abdeckungsgrad>
-		<Language>E</Language>
+		<Abdeckungsgrad>80%</Abdeckungsgrad>
+		<Language>EN</Language>
 		<Tech_Requirements>Adobe Reader</Tech_Requirements>
 		<Semester>3+4</Semester>
 		<Recommended>TRUE</Recommended>
@@ -1916,15 +1435,10 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Titel>Introduction to Economics: Macroeconomics</Titel>
 		<Description>Dieser Kurs ist ein Einführungskurs auf der elementarsten Ebene, sodass keine Vorkenntnisse der Ökonomie erforderlich sind. In diesem Wirtschaftskurs lernst du die Hauptkonzepte der Makroökonomie, wie Bruttoinlandsprodukt, Preislevel, Inflation, Arbeitslosigkeit, wirtschaftliches Wachstum und Zahlungsbilanz kennen. Zudem lernst du, wie das Markt Equilibrium und die Equilibrium Menge aus den Angebots- und Nachfragekurven bestimmt werden. Gerade zu den Themen Markt Equilibrium, Equilibrium Menge und Inflation werden gerne Klausurfragen gestellt. </Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://www.edx.org/course/introduction-economics-macroeconomics-snux-snu044-088-2x</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>FALSE</Fixed_StartDate>
 		<Certificate>FALSE</Certificate>
-		<Certificate_Costs/>
 		<Prestigious>TRUE</Prestigious>
 		<Duration>6 Wochen</Duration>
 		<Author>Seoul National University</Author>
@@ -1934,9 +1448,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_505</Number>
 		<Learning_Unit>VWL</Learning_Unit>
-		<Abdeckungsgrad>0.2</Abdeckungsgrad>
-		<Language>E</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>20%</Abdeckungsgrad>
+		<Language>EN</Language>
 		<Semester>3+4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>VWL</Abbreviation>
@@ -1947,17 +1460,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Titel>European Central Bank</Titel>
 		<Description>Auf dieser Webseite der Europäischen Zentralbank (EZB) findest du hilfreiche Artikel zu Themen wie Mindestreservepflicht, Nominal- und Realzinssatz, sowie Währungspolitik. Anhand von Fallbeispielen und erklärenden Abbildungen werden dir die theoretischen Grundlagen nähergebracht. Auch gibt dir diese Seite Aufschluss über die Aufgaben und die Bedeutung der EZB als währungspolitisches Organ. In den VWL-Vorlesungen von Prof. Dr. Schuster ist die EZB ein wichtiges Thema und Grundwissen über diese Einrichtung wird für die Klausur vorausgesetzt.</Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>https://www.ecb.europa.eu/explainers/tell-me/html/index.en.html</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>European Central Bank</Author>
 		<Copyright>European Central Bank</Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -1965,9 +1469,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_505</Number>
 		<Learning_Unit>VWL</Learning_Unit>
-		<Abdeckungsgrad>0.2</Abdeckungsgrad>
-		<Language>E</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>20%</Abdeckungsgrad>
+		<Language>EN</Language>
 		<Semester>3+4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>VWL</Abbreviation>
@@ -1978,15 +1481,10 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Titel>Public Economics</Titel>
 		<Description>Ziel dieses einführenden Kurses ist es, die zentralen Themen der Ökonomie und verwandter Disziplinen aus der Vogelperspektive zu betrachten und Konzepte, Logiken und Ideen zu vermitteln. Das Schwerpunktthema dieses Kurses ist die Rolle der Regierung als Ressourcenallokator, der die Märkte korrigiert, ergänzt und verstärkt. Zudem geht es um Themen wie Besteuerung, Regulierung und Politik der öffentlichen Ökonomie. Das durch diesen MOOC vermittelte Wissen findet sowohl in den VWL-Vorlesungen, als auch im 5. und 6. Semester im Rahmen der Vorlesung "International Business Law and International Organizations" Anwendung. </Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://www.coursera.org/learn/public-economics</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>FALSE</Free_of_charge>
 		<Fixed_StartDate>TRUE</Fixed_StartDate>
 		<Certificate>TRUE</Certificate>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
 		<Duration>6 Wochen</Duration>
 		<Author>National Research University Higher School of Economics</Author>
@@ -1996,9 +1494,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_505</Number>
 		<Learning_Unit>VWL</Learning_Unit>
-		<Abdeckungsgrad>0.05</Abdeckungsgrad>
-		<Language>E</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>5%</Abdeckungsgrad>
+		<Language>EN</Language>
 		<Semester>3+4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>VWL</Abbreviation>
@@ -2009,17 +1506,9 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Titel>Memrise</Titel>
 		<Description>Die "Memrise" App stellt ein online Lerntool mit Karteikarten dar, welches hauptsächlich Sprachkurse, aber auch Kurse für andere akademische und nicht-akademische Fächer wie Wissenschaft, Musik, Geschichte, Philosophie oder Kultur anbietet. Sie eignet sich hervorragend zum Vokabellernen und zur Klausurvorbereitung. Auf spielerische Art und Weise erweiterst du deine Vokabelkenntnisse und kannst diese durch Abfragen überprüfen. Besonders empfehlenswert ist diese App, da du die Vokabeln je nach Lehrbuch auswählen kannst und somit genau die Vokabeln lernst, die du in der Vorlesung und zur Arbeit mit dem Buch benötigst. </Description>
 		<Type>app</Type>
-		<Embedded/>
-		<src/>
-		<Youtube_ID/>
 		<IOS_ID>635966718?mt=8</IOS_ID>
 		<Android_ID>com.memrise.android.memrisecompanion&amp;hl=de</Android_ID>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Memrise Ltd.</Author>
 		<Copyright>Memrise Ltd.</Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -2027,9 +1516,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Internationales</Area>
 		<Number>W3WI_IMBIT_305, W3WI_IMBIT_306</Number>
 		<Learning_Unit>Spanisch</Learning_Unit>
-		<Abdeckungsgrad>0.5</Abdeckungsgrad>
-		<Language>D</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>50%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Semester>3+4+5+6</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Spanisch</Abbreviation>
@@ -2040,17 +1528,9 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Titel>Quizlet</Titel>
 		<Description>Mithilfe dieser App kannst du personalisierte Lernsets erstellen, zu denen du eine beliebige Anzahl an Karteikarten hinzufügen kannst. Die so erstellten virtuellen Karteikarten erleichtern dir das Vokabeln lernen und motivieren dich gleichzeitig dazu, die Rechtschreibung der Wörter zu üben. Ein weiterer großer Vorteil dieser App ist es, dass du die selbst erstellten Vokabellisten mit mehreren Leuten teilen kannst. Dies ist besonders nützlich, wenn du bereits erstellte Vokabellisten innerhalb deines Kurses allen Mitstudierenden zur Verfügung stellen möchtest. </Description>
 		<Type>app</Type>
-		<Embedded/>
-		<src/>
-		<Youtube_ID/>
 		<IOS_ID>546473125?mt=8</IOS_ID>
 		<Android_ID>com.quizlet.quizletandroid&amp;hl=de</Android_ID>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Quizlet Inc.</Author>
 		<Copyright>Quizlet Inc.</Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -2058,9 +1538,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Internationales</Area>
 		<Number>W3WI_IMBIT_305, W3WI_IMBIT_306</Number>
 		<Learning_Unit>Spanisch</Learning_Unit>
-		<Abdeckungsgrad>0.5</Abdeckungsgrad>
-		<Language>D</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>50%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Semester>3+4+5+6</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Spanisch</Abbreviation>
@@ -2071,17 +1550,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Titel>Spanisch Lernen online</Titel>
 		<Description>Auf dieser Webseite findest du online Materialien zum Spanisch Lernen, die für Anfänger und Fortgeschrittene geeignet sind. Die Übungen auf dieser Webseite richten sich nach dem europäischen Referenzrahmen und entsprechen je nach Bedarf den Niveaus A1, A2 (Anfänger), B1, B2 (Mittelstufe) und C1, C2 (Fortgeschrittene). Es werden dir Möglichkeiten geboten, die Grammatikregeln zu wiederholen und deren Anwendung mithilfe von Lückentexten, wie sie ähnlich auch in den Vorlesungen vorkommen, zu üben. </Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>http://www.vitalingua.de/spanisch-lernen-kostenlos.html</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>José Delgado</Author>
 		<Copyright>vitalingua</Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -2089,9 +1559,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Internationales</Area>
 		<Number>W3WI_IMBIT_305, W3WI_IMBIT_306</Number>
 		<Learning_Unit>Spanisch</Learning_Unit>
-		<Abdeckungsgrad>0.4</Abdeckungsgrad>
-		<Language>ESP</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>40%</Abdeckungsgrad>
+		<Language>ES</Language>
 		<Semester>3+4+5+6</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Spanisch</Abbreviation>
@@ -2101,18 +1570,11 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<GUID>9992ba03-ee69-4ce8-803a-cfe37ed09e91</GUID>
 		<Titel>Industrie 4.0 - Die technische Revolution geht weiter! </Titel>
 		<Description>Dieses Video erklärt den Begriff "Industrie 4.0" und seine Potenziale. Gerade im Zusammenhang mit der Vorlesung Produktions- und Materialwirtschaft ist die 4. industrielle Revolution ein Thema von hoher aktueller Relevanz. </Description>
-		<Type>youtube</Type>
+		<Type>film</Type>
 		<Embedded>TRUE</Embedded>
 		<src>https://www.youtube.com/watch?v=TTQxfElnlN0</src>
 		<Youtube_ID>TTQxfElnlN0</Youtube_ID>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>WITTENSTEIN SE</Author>
 		<Copyright>WITTENSTEIN SE</Copyright>
 		<Last_Modified>2012</Last_Modified>
@@ -2120,9 +1582,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Produktion und Materialwirtschaft</Learning_Unit>
-		<Abdeckungsgrad>0.15</Abdeckungsgrad>
-		<Language>D</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>15%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Produktion und Materialwirtschaft</Abbreviation>
@@ -2132,18 +1593,11 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<GUID>1f24f9af-3a13-43cf-93e7-61c78b0946d2</GUID>
 		<Titel>Connect Smart Glasses and SAP with the Simplifier </Titel>
 		<Description>Dieses Video zeigt die moderne Augmented Reality Lösung der Smart Glasses am Beispiel eines Gabelstablerfahrers in einer Lagerhalle. Dir wird ein Eindruck vermittelt, wie die Arbeit in der Materialwirtschaft mit Smart Glasses funktioniert und was für eine enorme Effizienssteigerung diese Entwicklung mit sich bringt. Es lohnt sich, das Video anzuschauen, um ein Gefühl für die aktuellen technologischen Möglichkeiten in der Materialwirtschaft zu bekommen. </Description>
-		<Type>youtube</Type>
+		<Type>film</Type>
 		<Embedded>TRUE</Embedded>
 		<src>https://www.youtube.com/watch?v=ZWsBHISOqjA</src>
 		<Youtube_ID>ZWsBHISOqjA</Youtube_ID>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>iTiZZiMO</Author>
 		<Copyright>iTiZZiMO</Copyright>
 		<Last_Modified>2013</Last_Modified>
@@ -2151,9 +1605,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Produktion und Materialwirtschaft</Learning_Unit>
-		<Abdeckungsgrad>0.05</Abdeckungsgrad>
-		<Language>D</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>5%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Produktion und Materialwirtschaft</Abbreviation>
@@ -2163,18 +1616,11 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<GUID>9ebcebeb-81ee-42e5-adbb-fd1aa70e754f</GUID>
 		<Titel>Busproduktion bei der EvoBus GmbH</Titel>
 		<Description>Dieser Film gibt dir einen Einblick in die EvoBus Produktionshallen in Mannheim und Neu-Ulm. Mit rund 10.000 Mitarbeitern ist die EvoBus GmbH das größte europäische Tochterunternehmen der Daimler AG und mit den Marken Mercedes-Benz und Setra der führende Full-Line-Anbieter im Bussegment - auch dank einer hochflexiblen Produktion. Themen wie Produktionsstrategie oder Produktionsablauf werden gerne in der Klausur abgefragt, daher ist es sinnvoll, sich mit dem Beispiel aus diesem Video zu beschäftigen.</Description>
-		<Type>youtube</Type>
+		<Type>film</Type>
 		<Embedded>TRUE</Embedded>
 		<src>https://www.youtube.com/watch?v=WH4NOQYmDJk</src>
 		<Youtube_ID>WH4NOQYmDJk</Youtube_ID>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Daimler AG</Author>
 		<Copyright>Daimler AG</Copyright>
 		<Last_Modified>2015</Last_Modified>
@@ -2182,9 +1628,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Produktion und Materialwirtschaft</Learning_Unit>
-		<Abdeckungsgrad>0.1</Abdeckungsgrad>
-		<Language>D</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>10%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Produktion und Materialwirtschaft</Abbreviation>
@@ -2194,18 +1639,11 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<GUID>cb0dc3d2-f249-4b99-8e62-cd4d25dc79c4</GUID>
 		<Titel>Das synchrone Produktionssystem von Fischer Systemmechanik </Titel>
 		<Description>Was bedeutet synchrones Produktionssystem? Was sind die Ziele und wie bauen Unternehmen eine synchrone Fertigung auf? Das Video von Fischer System-Automatik gibt dir Antworten auf diese Fragen. Verschiedene Fertigungsprinzipien werden in der Vorlesung von Hr. Fraas thematisiert. Dieses Video dient also der Ergänzung. </Description>
-		<Type>youtube</Type>
+		<Type>film</Type>
 		<Embedded>TRUE</Embedded>
 		<src>https://www.youtube.com/watch?v=gO3tAa4Wd98</src>
 		<Youtube_ID>gO3tAa4Wd98</Youtube_ID>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Fischer System-Mechanik</Author>
 		<Copyright>Fischer System-Mechanik</Copyright>
 		<Last_Modified>2011</Last_Modified>
@@ -2213,9 +1651,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Produktion und Materialwirtschaft</Learning_Unit>
-		<Abdeckungsgrad>0.1</Abdeckungsgrad>
-		<Language>D</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>10%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Produktion und Materialwirtschaft</Abbreviation>
@@ -2225,18 +1662,11 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<GUID>a223aeb2-9270-4ebb-9f7a-72d967073ccf</GUID>
 		<Titel>ERP-Projektcheck</Titel>
 		<Description>Dieses Video ist das erste von 2 weiteren, in denen dir viele Fragen rund um das Thema ERP System beantwortet werden. Die Vorteile sowie der Nutzen eines solchen Systems für das Unternehmen werden aufgezeigt. Diese Video-Reihe bietet eine kompakte Zusammenfassung.</Description>
-		<Type>youtube</Type>
+		<Type>film</Type>
 		<Embedded>TRUE</Embedded>
 		<src>https://www.youtube.com/watch?v=xnMnadTdKDE</src>
 		<Youtube_ID>xnMnadTdKDE</Youtube_ID>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>SageGermany</Author>
 		<Copyright>SageGermany</Copyright>
 		<Last_Modified>2012</Last_Modified>
@@ -2244,9 +1674,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Produktion und Materialwirtschaft</Learning_Unit>
-		<Abdeckungsgrad>0.1</Abdeckungsgrad>
-		<Language>D</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>10%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Produktion und Materialwirtschaft</Abbreviation>
@@ -2256,18 +1685,11 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<GUID>d7052081-f9e1-4859-85c0-786d20152b52</GUID>
 		<Titel>Industrie 4.0 - Die nächste Revolution</Titel>
 		<Description>Dieses Video von ABB zeigt in Kürze die Eigenschaften und Funktionen einer intelligenten Fabrik. Es stellt eine gute Zusammenfassung dar. </Description>
-		<Type>youtube</Type>
+		<Type>film</Type>
 		<Embedded>TRUE</Embedded>
 		<src>https://www.youtube.com/watch?v=RVsK0RCjGkw</src>
 		<Youtube_ID>RVsK0RCjGkw</Youtube_ID>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>ABB</Author>
 		<Copyright>ABB</Copyright>
 		<Last_Modified>2014</Last_Modified>
@@ -2275,9 +1697,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Produktion und Materialwirtschaft</Learning_Unit>
-		<Abdeckungsgrad>0.15</Abdeckungsgrad>
-		<Language>D</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>15%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Produktion und Materialwirtschaft</Abbreviation>
@@ -2287,18 +1708,11 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<GUID>ad33da99-cce9-40d4-8a2e-5232fee2c3d4</GUID>
 		<Titel>Industrie 4.0 - Next Steps VDMA online</Titel>
 		<Description>In diesem Video wird die Entwicklung zur Industie 4.0 thematisiert und erleutert. Es stellt sich die Frage, ob wir mit dem Sprung zur Industrie 4.0 wirklich eine Revolution erleben. Dieses Video liefert dir fundierte Antworten auf diese und viele weitere Fragen, daher eignet es sich besonders gut zur allgemeinen Einführung in das Thema. </Description>
-		<Type>youtube</Type>
+		<Type>film</Type>
 		<Embedded>TRUE</Embedded>
 		<src>https://www.youtube.com/watch?v=iDYH-UqAiqA</src>
 		<Youtube_ID>iDYH-UqAiqA</Youtube_ID>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>VDMAonline</Author>
 		<Copyright>VDMAonline</Copyright>
 		<Last_Modified>2014</Last_Modified>
@@ -2306,9 +1720,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Produktion und Materialwirtschaft</Learning_Unit>
-		<Abdeckungsgrad>0.1</Abdeckungsgrad>
-		<Language>D</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>10%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Produktion und Materialwirtschaft</Abbreviation>
@@ -2318,18 +1731,11 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<GUID>2eafe386-6356-4e64-a2e9-41d71959432c</GUID>
 		<Titel>Industrie 4.0 - Risiken der vernetzten Produktion</Titel>
 		<Description>Schafft sie Arbeitsplätze oder kostet sie Jobs? Und wie steht es um den Datenschutz, wenn Maschinen und Prozesse direkt miteinander kommunizieren? Produktpiraterie und Sabotage - das ist die Kehrseite der Industrie 4.0. Dieses Video zeigt dir die Risiken der vernetzten Produktion, welche es sich lohnt zu kennen.</Description>
-		<Type>youtube</Type>
+		<Type>film</Type>
 		<Embedded>TRUE</Embedded>
 		<src>https://www.youtube.com/watch?v=oGq337Kz7No</src>
 		<Youtube_ID>oGq337Kz7No</Youtube_ID>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>DW (Deutsch)</Author>
 		<Copyright>DW (Deutsch)</Copyright>
 		<Last_Modified>2014</Last_Modified>
@@ -2337,9 +1743,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Produktion und Materialwirtschaft</Learning_Unit>
-		<Abdeckungsgrad>0.1</Abdeckungsgrad>
-		<Language>D</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>10%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Produktion und Materialwirtschaft</Abbreviation>
@@ -2349,18 +1754,11 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<GUID>8132a8e0-0bcb-42e9-9af9-9f9182c0f89c</GUID>
 		<Titel>Stücklisten</Titel>
 		<Description>Dieses Video zeigt die Folien einer Vorlesung am Labor für Ingenieurinformatik und computergestützte Mathematik. Hauptsächlich geht es in dieser Vorlesung um das Thema Stücklisten, welches auch in der Vorlesung von Hr. Fraas eine Rolle spielt und Teil des Klausurstoffs ist. </Description>
-		<Type>youtube</Type>
+		<Type>film</Type>
 		<Embedded>TRUE</Embedded>
 		<src>https://www.youtube.com/watch?v=HvwSWOMv_4E</src>
 		<Youtube_ID>HvwSWOMv_4E</Youtube_ID>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Prof. Dr. Jörn Schlingensiepen</Author>
 		<Copyright>Prof. Dr. Jörn Schlingensiepen</Copyright>
 		<Last_Modified>2012</Last_Modified>
@@ -2368,9 +1766,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Produktion und Materialwirtschaft</Learning_Unit>
-		<Abdeckungsgrad>0.1</Abdeckungsgrad>
-		<Language>D</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>10%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Produktion und Materialwirtschaft</Abbreviation>
@@ -2380,18 +1777,11 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<GUID>138386a2-731a-47f1-9511-a8ff941edd08</GUID>
 		<Titel>Geschäftsmodelle für Industrie 4.0</Titel>
 		<Description>In diesem Vortrag an der RWTH Aachen spricht Prof. Frank Piller über moderne Geschäftsmodelle für Industrie 4.0 und andere Entwicklungen wie beispielsweise den Supercomputer Watson. Dieses Video stellt einen interessanten Beitrag für IMBIT Studierende dar. </Description>
-		<Type>youtube</Type>
+		<Type>film</Type>
 		<Embedded>TRUE</Embedded>
 		<src>https://www.youtube.com/watch?v=YICjv90QtKo</src>
 		<Youtube_ID>YICjv90QtKo</Youtube_ID>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>TRUE</Prestigious>
-		<Duration/>
 		<Author>Professor Frank Piller</Author>
 		<Copyright>RWTH Aachen TIM Group</Copyright>
 		<Last_Modified>2015</Last_Modified>
@@ -2399,9 +1789,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Produktion und Materialwirtschaft</Learning_Unit>
-		<Abdeckungsgrad>0.05</Abdeckungsgrad>
-		<Language>D</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>5%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Produktion und Materialwirtschaft</Abbreviation>
@@ -2411,18 +1800,11 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<GUID>9801320b-2fe7-4500-bd54-429913ba1abb</GUID>
 		<Titel>Werkstattproduktion - Produktionstypen einfach erklärt</Titel>
 		<Description>In dieser Videoreihe werden die verschiedenen Produktionstypen erklärt, mit denen eine Produktion organisiert werden kann. Dies sind die Werkstattproduktion nach dem Funktionsprinzip, und die Reihen- und Fließproduktion nach dem Objektprinzip. Die Typen der Produktionsorganisation sind klausurrelevant und diese Videoreihe für dich somit sehenswert.</Description>
-		<Type>youtube</Type>
+		<Type>film</Type>
 		<Embedded>TRUE</Embedded>
 		<src>https://www.youtube.com/watch?v=P8USAdYMBYg&amp;index=1&amp;list=PLrClginNzxmPYOfRvLjU9ObHXQAmJRIGv</src>
 		<Youtube_ID>P8USAdYMBYg</Youtube_ID>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>TheSimpleEconomics</Author>
 		<Copyright>TheSimpleEconomics</Copyright>
 		<Last_Modified>2016</Last_Modified>
@@ -2430,9 +1812,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Produktion und Materialwirtschaft</Learning_Unit>
-		<Abdeckungsgrad>0.15</Abdeckungsgrad>
-		<Language>D</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>15%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Produktion und Materialwirtschaft</Abbreviation>
@@ -2442,18 +1823,11 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<GUID>98634824-fe56-4cd6-bf49-098d70090e5d</GUID>
 		<Titel>Einführung in die Materialwirtschaft</Titel>
 		<Description>Dieses kurze Video erklärt die Ziele, Zielkonflikte und wichtigen Bereiche der Materialwirtschaft. Es gibt einen guten Überblick über das Thema und dient der Wiederholung und Klausurvorbereitung. </Description>
-		<Type>youtube</Type>
+		<Type>film</Type>
 		<Embedded>TRUE</Embedded>
 		<src>https://www.youtube.com/watch?v=JPG6ps1blKs</src>
 		<Youtube_ID>JPG6ps1blKs</Youtube_ID>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>easyFOSBOS</Author>
 		<Copyright>easyFOSBOS</Copyright>
 		<Last_Modified>2013</Last_Modified>
@@ -2461,9 +1835,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Produktion und Materialwirtschaft</Learning_Unit>
-		<Abdeckungsgrad>0.2</Abdeckungsgrad>
-		<Language>D</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>20%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Semester>5</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Produktion und Materialwirtschaft</Abbreviation>
@@ -2474,11 +1847,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Titel>Supply Chain Management</Titel>
 		<Description>Diese Kurssammlung bietet dir eine Einführung in die faszinierende Welt des Supply Chain Managements. Wenn du diese Supply Chain Management Kurse abgeschlossen hast, wirst du ein besseres Verständnis für die Komplexität haben, mit der die Unternehmen in der heutigen global vernetzten Wirtschaft konfrontiert sind. Die Kurssammlung besteht aus vier grundlegenden Kursen in Logistik, Betrieb, Planung und Beschaffung, gefolgt von einem Capstone-Kurs in Supply Chain Management-Strategie, in dem du echte Business Cases löst und Gelerntes anwendest. Es ist auch möglich, die Kurse jeweils einzeln zu absolvieren. </Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://www.coursera.org/specializations/supply-chain-management</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>FALSE</Free_of_charge>
 		<Fixed_StartDate>TRUE</Fixed_StartDate>
 		<Certificate>TRUE</Certificate>
@@ -2492,9 +1861,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Supply Chain Management</Learning_Unit>
-		<Abdeckungsgrad>0.2</Abdeckungsgrad>
-		<Language>E</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>20%</Abdeckungsgrad>
+		<Language>EN</Language>
 		<Semester>6</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Supply Chain Management</Abbreviation>
@@ -2505,11 +1873,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Titel>SCM</Titel>
 		<Description>Mit dieser Kurssammlung gewinnst du Fachkompetenzen im wachsenden Bereich des Supply Chain Managements durch ein innovatives Online-Programm bestehend aus fünf Kursen und einer Capstone-Prüfung am Ende. Diese Kurse fördern dein Verständnis für Supply-Chain-Analytik, Design, Technologie, Dynamik und End-to-End-Supply-Chain-Management. Der Umfang dieser Kurse geht deutlich über das in der Vorlesung benötigte Wissen hinaus. Die Kursreihe ist dennoch sehr empfehlenswert für interessierte Studenten auf diesem Gebiet. </Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://www.edx.org/micromasters/mitx-supply-chain-management</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>FALSE</Free_of_charge>
 		<Fixed_StartDate>TRUE</Fixed_StartDate>
 		<Certificate>FALSE</Certificate>
@@ -2523,9 +1887,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Supply Chain Management</Learning_Unit>
-		<Abdeckungsgrad>0.2</Abdeckungsgrad>
-		<Language>E</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>20%</Abdeckungsgrad>
+		<Language>EN</Language>
 		<Semester>6</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Supply Chain Management</Abbreviation>
@@ -2535,18 +1898,9 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<GUID>86b2bd22-2ea5-46db-9607-b4349c51e2c1</GUID>
 		<Titel>Supply Chain Management Video Lecture</Titel>
 		<Description>In dieser Online-Vorlesung spricht der Dozent über die Definition von Supply Chain Management, dessen  Komponenten sowie den Schlüsselvoraussetzungen, die benötigt werden, um die Performance des SCMs zu verbessern. Du kannst diese Online-Vorlesung der Michigan State University sehr gut als Wiederholung oder Ergänzung zu dem bereits in der Vorlesung vermittelten Stoff ansehen. </Description>
-		<Type>video</Type>
-		<Embedded/>
+		<Type>film</Type>
 		<src>https://www.michiganstateuniversityonline.com/resources/preview-courses/supply-chain-management-video-lecture/#.WKGO33qNGXc</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>TRUE</Prestigious>
-		<Duration/>
 		<Author>David Closs - Michigan State University</Author>
 		<Copyright>Bisk Education</Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -2554,9 +1908,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_IMBIT_402</Number>
 		<Learning_Unit>Supply Chain Management</Learning_Unit>
-		<Abdeckungsgrad>0.1</Abdeckungsgrad>
-		<Language>E</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>10%</Abdeckungsgrad>
+		<Language>EN</Language>
 		<Semester>6</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Supply Chain Management</Abbreviation>
@@ -2567,11 +1920,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Titel>International Law</Titel>
 		<Description>Dieser MOOC vermittelt, wie und wer das internationale Recht aufsetzt, von wem es geachtet werden muss und wo es seine Anwendung findet. Außerdem beantwortet dieser Kurs die Frage, was passiert, wenn bindende Regeln gebrochen werden und inwieweit es möglich ist, Gerechtigkeit in dieser Welt durchzusetzen. Als Ergänzung zur Vorlesung von Prof. Dr. Büchner und zur Klausurvorbereitung ist er sehr zu empfehlen. </Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://www.edx.org/course/international-law-louvainx-louv5x-2</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>FALSE</Fixed_StartDate>
 		<Certificate>TRUE</Certificate>
@@ -2585,9 +1934,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Internationales</Area>
 		<Number>W3WI_IMBIT_303</Number>
 		<Learning_Unit>International Business Law and International Organizations</Learning_Unit>
-		<Abdeckungsgrad>0.2</Abdeckungsgrad>
-		<Language>E</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>20%</Abdeckungsgrad>
+		<Language>EN</Language>
 		<Semester>5</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>International Business Law</Abbreviation>
@@ -2597,18 +1945,11 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<GUID>570f61dc-3ff9-4876-acb0-518c0e5e358d</GUID>
 		<Titel>International Business Law - Podcast Part 1</Titel>
 		<Description>Dieses Video beinhaltet eine Diskussion über die praktische Anwendung von globalem Recht, die Systeme, die dahinter stecken und die Herausforderungen, welche das internationale Recht in Bezug auf grenzübergreifende Firmengeschäfte mit sich bringen. Wer sich für die rechtlichen Aspekte des Wirtschaftens interessiert, der sollte sich dieses Video ansehen. </Description>
-		<Type>youtube</Type>
+		<Type>film</Type>
 		<Embedded>TRUE</Embedded>
 		<src>https://www.youtube.com/watch?v=oKqPk2mDxO0</src>
 		<Youtube_ID>oKqPk2mDxO0</Youtube_ID>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Ángel Calleja</Author>
 		<Copyright>Centro Garrigues</Copyright>
 		<Last_Modified>2014</Last_Modified>
@@ -2616,9 +1957,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Internationales</Area>
 		<Number>W3WI_IMBIT_303</Number>
 		<Learning_Unit>International Business Law and International Organizations</Learning_Unit>
-		<Abdeckungsgrad>0.1</Abdeckungsgrad>
-		<Language>E</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>10%</Abdeckungsgrad>
+		<Language>EN</Language>
 		<Semester>5</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>International Business Law</Abbreviation>
@@ -2628,18 +1968,11 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<GUID>3235204c-aeec-44c3-b51e-124e6729b330</GUID>
 		<Titel>International Business Law</Titel>
 		<Description>In diesem Kurzvideo erzählt ein erfahrener Rechtsanwalt von seinen Einsätzen in internationalen Unternehmen. Er stellt die Wichtigkeit der Beachtung von internationalem Wirtschaftsrecht für global expandierende Unternehmen deutlich heraus und untermauert seine These mit aussagekräftigen Argumenten. Alles in allem ist dies ein informatives Video, das zur Erweiterung des Grundwissens über internationales Wirtschaftsrecht für jeden IMBIT-Studenten zu empfehlen ist. </Description>
-		<Type>youtube</Type>
+		<Type>film</Type>
 		<Embedded>TRUE</Embedded>
 		<src>https://www.youtube.com/watch?v=q4y3DOsaVzc</src>
 		<Youtube_ID>q4y3DOsaVzc</Youtube_ID>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Allume International</Author>
 		<Copyright>Allume International</Copyright>
 		<Last_Modified>2015</Last_Modified>
@@ -2647,9 +1980,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Internationales</Area>
 		<Number>W3WI_IMBIT_303</Number>
 		<Learning_Unit>International Business Law and International Organizations</Learning_Unit>
-		<Abdeckungsgrad>0.05</Abdeckungsgrad>
-		<Language>E</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>5%</Abdeckungsgrad>
+		<Language>EN</Language>
 		<Semester>5</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>International Business Law</Abbreviation>
@@ -2660,17 +1992,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Titel>Gesetzesübersicht</Titel>
 		<Description>Auf dieser Webseite findest du eine alphabetische Gesetzessammlung, sowie verschiedene Bundesgesetzblätter und aktuelle Rechtsprechungen. Besonders interessant für die Vorlesung "International Business Law and International Organizations" sind der EU-Vertrag (Vertrag über die Europäische Union) und der Vertrag über die Arbeitsweise der Europäischen Union. </Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>https://dejure.org/</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Europäische Union </Author>
 		<Copyright>dejure.org Rechtsinformationssysteme GmbH</Copyright>
 		<Last_Modified>2016</Last_Modified>
@@ -2678,9 +2001,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Internationales</Area>
 		<Number>W3WI_IMBIT_303</Number>
 		<Learning_Unit>International Business Law and International Organizations</Learning_Unit>
-		<Abdeckungsgrad>0.1</Abdeckungsgrad>
-		<Language>D</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>10%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>International Business Law</Abbreviation>
@@ -2691,17 +2013,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Titel>The European Union: 500 Million People - 28 Countries</Titel>
 		<Description>Diese Webseite zeigt dir eine Präsentation über die Europäische Union, deren Gründung, Geschichte und Entwicklung. Es wird deutlich, welche Potentiale ein derartiger Zusammenschluss mit sich bringt und wie man diese, gemeinsam mit allen Mitgliedsstaaten, versucht zu nutzen. Die angesprochenen Themen und Aspekte der Präsentation spielen auch eine wichtige Rolle in der Vorlesung von Prof. Dr. Büchner.</Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>https://europa.eu/european-union/sites/europaeu/files/docs/body/eu_in_slides_en.pdf</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Europe direct</Author>
 		<Copyright>European Union</Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -2709,9 +2022,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Internationales</Area>
 		<Number>W3WI_IMBIT_303</Number>
 		<Learning_Unit>International Business Law and International Organizations</Learning_Unit>
-		<Abdeckungsgrad>0.1</Abdeckungsgrad>
-		<Language>D</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>10%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>International Business Law</Abbreviation>
@@ -2722,17 +2034,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Titel>BDI Leitfaden Kartellrecht</Titel>
 		<Description>Auf dieser Webseite findest du einen Leitfaden, der dir eine Einführung in den aktuellen Stand des Kartellrechts gibt. Der Leitfaden ermöglicht dir einen ersten Überblick über die wesentlichen Grundlagen dieses wichtigen Rechtsbereichs. Dieser erklärt dir das Kartellverbot und gibt Aufschluss darüber, wie im Falle eines Verstoßes gegen das Kartellgesetz rechtlich verfahren wird.</Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>http://bdi.eu/media/themenfelder/wettbewerb/publikationen/201510_Leitfaden-Kartellrecht.pdf</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Gleiss Lutz</Author>
 		<Copyright>Bundesverband der Deutschen Industrie e.V. (BDI)</Copyright>
 		<Last_Modified>2015</Last_Modified>
@@ -2740,9 +2043,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Internationales</Area>
 		<Number>W3WI_IMBIT_303</Number>
 		<Learning_Unit>International Business Law and International Organizations</Learning_Unit>
-		<Abdeckungsgrad>0.05</Abdeckungsgrad>
-		<Language>D</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>5%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>International Business Law</Abbreviation>
@@ -2753,17 +2055,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Titel>Gesetze im Internet</Titel>
 		<Description>Hier findest du Gesetzestexte des Handelsgesetzbuchs, des Bürgerlichen Gesetzbuchs und viele mehr zum Nachschlagen online. Diese Webseite eignet sich hervorragend, um während der Vorlesung einzelne Gesetze schnell nachzuschlagen oder nachzulesen. Besonders nützlich für die Vorlesung "International Business Law &amp; International Organizations" sind das Gesetz gegen den unlauteren Wettbewerb (UWG), sowie das Gesetz gegen Wettbewerbsbeschränkungen (GWB).</Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>http://www.gesetze-im-internet.de/index.html</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Bundesministerium der Justiz und für Verbraucherschutz</Author>
 		<Copyright>juris GmbH </Copyright>
 		<Last_Modified>2016</Last_Modified>
@@ -2771,9 +2064,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Internationales</Area>
 		<Number>W3WI_IMBIT_303</Number>
 		<Learning_Unit>International Business Law and International Organizations</Learning_Unit>
-		<Abdeckungsgrad>0.1</Abdeckungsgrad>
-		<Language>D</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>10%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>International Business Law</Abbreviation>
@@ -2784,17 +2076,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Titel>Wettbewerbsrecht von A-Z</Titel>
 		<Description>Diese Webseite zeigt dir eine Übersicht von Themen und Schlagworten zum Wettbewerbsrecht. Auch zu anderen Rechtsgebieten bündelt diese Webseite Erläuterungen zu verschiedenen Schlagworten. Sie eignet sich sehr gut als Nachschlagewerk und zum Erkennen von Zusammenhängen innerhalb der jeweiligen Rechtsbereiche.</Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>http://www.frankfurt-main.ihk.de/recht/themen/wettbewerbsrecht/a-z/index.html</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>IHK Frankfurt am Main</Author>
 		<Copyright>IHK Frankfurt am Main</Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -2802,9 +2085,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Internationales</Area>
 		<Number>W3WI_IMBIT_303</Number>
 		<Learning_Unit>International Business Law and International Organizations</Learning_Unit>
-		<Abdeckungsgrad>0.05</Abdeckungsgrad>
-		<Language>D</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>5%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>International Business Law</Abbreviation>
@@ -2815,17 +2097,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Titel>Aufbau der UNO</Titel>
 		<Description>Diese Webseite stellt dir Informationen über die UNO, ihren Aufbau und ihre Aufgaben bereit. Zu jedem Thema findest du weiterführende Informationen, Links zu Gesetzestexten oder sonstigen hilfreichen Quellen. Diese Internetseite ist überaus geeignet, um über diese Organisation mehr zu erfahren und sich über ihre Arbeit ein fundiertes Gesamtbild zu verschaffen. </Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>http://www.unric.org/de/aufbau-der-uno</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Regionales Informationszentrum der Vereinten Nationen für Westeuropa (UNRIC) </Author>
 		<Copyright>UNITED NATIONS</Copyright>
 		<Last_Modified>2016</Last_Modified>
@@ -2833,9 +2106,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Internationales</Area>
 		<Number>W3WI_IMBIT_303</Number>
 		<Learning_Unit>International Business Law and International Organizations</Learning_Unit>
-		<Abdeckungsgrad>0.05</Abdeckungsgrad>
-		<Language>D</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>5%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>International Business Law</Abbreviation>
@@ -2846,17 +2118,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Titel>What is the WTO?</Titel>
 		<Description>Hier erfährst du etwas über die WTO, ihre Aufgaben und ihre Werte. Diese Webseite der WTO enthält Zusammenfassungen zu gewissen Themen und du erlangst dadurch schnell einen Einblick in das Arbeiten und Wirken dieser Organisation.</Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>https://www.wto.org/english/thewto_e/whatis_e/whatis_e.htm</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>World Trade Organization</Author>
 		<Copyright>World Trade Organization </Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -2864,9 +2127,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Internationales</Area>
 		<Number>W3WI_IMBIT_303</Number>
 		<Learning_Unit>International Business Law and International Organizations</Learning_Unit>
-		<Abdeckungsgrad>0.05</Abdeckungsgrad>
-		<Language>E</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>5%</Abdeckungsgrad>
+		<Language>EN</Language>
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>International Business Law</Abbreviation>
@@ -2877,17 +2139,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Titel>The IMF and the World Bank - How do they Differ?</Titel>
 		<Description>Diese Webseite enthält einen Artikel über den Unterschied zwischen dem International Monetary Fund und der Weltbank. Beide Organisationen werden erklärt und anschließend voneinander abgegrenzt. Dies ist ein sehr geeignetes Paper, um das grundlegende Verständnis über die Weltbank und den IMF zu fördern und dir die Unterschiede zwischen den beiden klarzumachen.</Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>https://www.imf.org/external/pubs/ft/exrp/differ/differ.htm</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>David D. Driscoll</Author>
 		<Copyright>International Monetary Fund (IMF)</Copyright>
 		<Last_Modified>1996</Last_Modified>
@@ -2895,9 +2148,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Internationales</Area>
 		<Number>W3WI_IMBIT_303</Number>
 		<Learning_Unit>International Business Law and International Organizations</Learning_Unit>
-		<Abdeckungsgrad>0.05</Abdeckungsgrad>
-		<Language>E</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>5%</Abdeckungsgrad>
+		<Language>EN</Language>
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>International Business Law</Abbreviation>
@@ -2908,11 +2160,7 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Titel>European Business Law: Understanding the Fundamentals</Titel>
 		<Description>Dieser Kurs ist der erste von insgesamt drei zusammenhängenden Kursen und gibt dir einen Einblick in das europäische Wirschaftsrecht. Die Kursserie umfasst die Betrachtung von grundlegenden Strukturen und Prinzipien der Europäischen Union sowie die Thematisierung von verschiedenen Fachgebieten in deren Rechtsbereich. Jeder einzelne Kurs vermittelt dir ein Verständnis für die Gesetze und Richtlinien, die den Markt innerhalb der Europäischen Union regeln.</Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://www.coursera.org/learn/eu-law-doing-business</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>TRUE</Fixed_StartDate>
 		<Certificate>TRUE</Certificate>
@@ -2926,9 +2174,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Area>Internationales</Area>
 		<Number>W3WI_IMBIT_303</Number>
 		<Learning_Unit>International Business Law and International Organizations</Learning_Unit>
-		<Abdeckungsgrad>0.15</Abdeckungsgrad>
-		<Language>E</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>10%</Abdeckungsgrad>
+		<Language>EN</Language>
 		<Semester>5</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>International Business Law</Abbreviation>
@@ -2941,12 +2188,8 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 
 In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifikationsdiagramme der "Unified Modeling Language" (UML), mit denen die konzeptionelle Gestaltung eines Systems visuell dargestellt wird. Du lernst alles über UML-Klassendiagramme, da sich dieser Kurs darauf spezialisiert.</Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://www.edx.org/course/uml-class-diagrams-software-engineering-kuleuvenx-umlx
 </src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>TRUE</Fixed_StartDate>
 		<Certificate>TRUE</Certificate>
@@ -2960,9 +2203,8 @@ In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifik
 		<Area>Wirtschaftsinformatik</Area>
 		<Number>W3WI_101</Number>
 		<Learning_Unit>Systemanalyse</Learning_Unit>
-		<Abdeckungsgrad>0.7</Abdeckungsgrad>
-		<Language>E</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>70%</Abdeckungsgrad>
+		<Language>EN</Language>
 		<Semester>1+2</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Systemanalyse</Abbreviation>
@@ -2973,17 +2215,8 @@ In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifik
 		<Titel>Beispielklausur WI Uni-Hagen</Titel>
 		<Description>Dies ist eine Beispielklausur für das Modul "Einführung in die Wirtschaftsinformatik" von der "FernUni Hagen". Es handelt sich hierbei nicht um eine Klausur unserer Hochschule, allerdings ist es hilfreich zu sehen wie eine Klausur aufgebaut sein kann.</Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>https://www.fernuni-hagen.de/wirtschaftswissenschaft/studium/download/pruefungen/31071_0916.pdf</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Fernuni Hagen</Author>
 		<Copyright>Fernuni Hagen</Copyright>
 		<Last_Modified>2016</Last_Modified>
@@ -2991,8 +2224,8 @@ In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifik
 		<Area>Wirtschaftsinformatik</Area>
 		<Number>W3WI_101</Number>
 		<Learning_Unit>Einführung in die Wirtschaftsinformatik</Learning_Unit>
-		<Abdeckungsgrad>0.3</Abdeckungsgrad>
-		<Language>D </Language>
+		<Abdeckungsgrad>30%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Tech_Requirements>PDF Reader</Tech_Requirements>
 		<Semester>1+2</Semester>
 		<Recommended>FALSE</Recommended>
@@ -3003,28 +2236,18 @@ In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifik
 		<GUID>00ca0619-8467-4072-a3af-fd175c2ee368</GUID>
 		<Titel>UML 2.0 Youtube Tutorials</Titel>
 		<Description>Dieses Youtube Tutorial geht über mehrere Videos und umfasst Erklärungen zu verschiedenen UML Diagrammen. UML Basiswissen und die Anwendung von UML wird auf diese Weise trainiert. Das Tutorial ist sehr hilfreich bei der Vorbereitung für die Klausur.</Description>
-		<Type>youtube</Type>
+		<Type>film</Type>
 		<Embedded>TRUE</Embedded>
-		<src/>
 		<Youtube_ID>OkC7HKtiZC0</Youtube_ID>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Derek Banas</Author>
 		<Copyright>Derek Banas</Copyright>
 		<Last_Modified>2012</Last_Modified>
-		<Thumb/>
 		<Area>Wirtschaftsinformatik</Area>
 		<Number>W3WI_101</Number>
 		<Learning_Unit>Systemanalyse</Learning_Unit>
-		<Abdeckungsgrad>0.7</Abdeckungsgrad>
-		<Language>E</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>70%</Abdeckungsgrad>
+		<Language>EN</Language>
 		<Semester>1+2</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Systemanalyse</Abbreviation>
@@ -3035,11 +2258,7 @@ In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifik
 		<Titel>Projektmanagement Mooc </Titel>
 		<Description>Dies ist ein MOOC von der Indian Institute of Technology Kanpur bereitgestellt auf Class Central. Es soll Projektmanagement-Basiswissen vermitteln und eignet sich zum Wiederholen einiger Teilaspekte des Projektmanagements.</Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://www.class-central.com/Mooc/7912/nptel-project-management</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>TRUE</Fixed_StartDate>
 		<Certificate>TRUE</Certificate>
@@ -3053,9 +2272,8 @@ In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifik
 		<Area>Methodische Grundlagen</Area>
 		<Number>W3WI_IMBIT_404</Number>
 		<Learning_Unit>Projektmanagement</Learning_Unit>
-		<Abdeckungsgrad>0.4</Abdeckungsgrad>
-		<Language>E</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>40%</Abdeckungsgrad>
+		<Language>EN</Language>
 		<Semester>3+4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Projektmanagement</Abbreviation>
@@ -3066,11 +2284,7 @@ In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifik
 		<Titel>Grundlagen des Projektmanagement</Titel>
 		<Description>Prof. Marc Opresnik, Professor an der Universität Sankt Gallen, hat in Zusammenarbeit mit der Hochschule Lübeck diesen Mooc entwickelt. Hier werden die Grundlagen des Projektmanagements vermittelt. Inhalte sind: "Einführung in das Projektmanagement", "Projektorganisation","Projektphasen" und "Kommunikation - Fachübergreifende Softskills". Für alle Kursaktivitäten sollten ca. 2 Stunden pro Woche eingeplant werden. Zum Abschluss gibt es eine Teilnahmebescheinigung und ein Zertifikat.</Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://mooin.oncampus.de/mod/page/view.php?id=224</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>FALSE</Fixed_StartDate>
 		<Certificate>TRUE</Certificate>
@@ -3084,8 +2298,8 @@ In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifik
 		<Area>Methodische Grundlagen</Area>
 		<Number>W3WI_IMBIT_404</Number>
 		<Learning_Unit>Projektmanagement</Learning_Unit>
-		<Abdeckungsgrad>0.4</Abdeckungsgrad>
-		<Language>D</Language>
+		<Abdeckungsgrad>40%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Tech_Requirements>Adobe-Flash-Plug-In</Tech_Requirements>
 		<Semester>3+4</Semester>
 		<Recommended>FALSE</Recommended>
@@ -3096,28 +2310,18 @@ In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifik
 		<GUID>ceb18c48-b679-4717-afdb-5ae68aac6f61</GUID>
 		<Titel>Pete der Projektleiter</Titel>
 		<Description>In dieser kurzen und unterhaltsamen Videoreihe werden die Grundlagen des Projektmanagements erklärt. Diese Youtube-Playlist im typischen "Whiteboard-Video"-Stil ist zwar kein Ersatz der Vorlesung, allerdings kann man hier in einer ruhigen Minuten das Gelernte Revue passieren lassen und dabei noch ein oder zwei Dinge lernen.</Description>
-		<Type>youtube</Type>
+		<Type>film</Type>
 		<Embedded>TRUE</Embedded>
-		<src/>
 		<Youtube_ID>nqI19SWZIO8&amp;list=PLpzY6vXE3M9QFU7gE66xQlFu6ll5pj1bh</Youtube_ID>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Jansnetison</Author>
 		<Copyright>Jansnetison</Copyright>
 		<Last_Modified>2014</Last_Modified>
-		<Thumb/>
 		<Area>Methodische Grundlagen</Area>
 		<Number>W3WI_IMBIT_404</Number>
 		<Learning_Unit>Projektmanagement</Learning_Unit>
-		<Abdeckungsgrad>0.3</Abdeckungsgrad>
-		<Language>D</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>30%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Semester>3+4</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Projektmanagement</Abbreviation>
@@ -3128,15 +2332,10 @@ In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifik
 		<Titel>IT-Recht für Software-Entwickler - 9 Themen, die Sie kennen sollten</Titel>
 		<Description>Zukünftig bist du vielleicht Software-Ingenieur, Gründer oder Unternehmer eines IT-Unternehmens. In diesen Positionen begegnet man verschiedenen rechtlichen Themen. Die wichtigsten Themenbereiche sind Verträge, Urheberrecht, Markenrecht, Patentrecht und Datenschutz. Diese werden dir in einem zweiwöchigen Kurs von anerkannten, spezialisierten Rechtsanwälten auf diesem Gebiet nähergebracht.</Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://Mooc.house/courses/it-recht2016</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>TRUE</Fixed_StartDate>
 		<Certificate>FALSE</Certificate>
-		<Certificate_Costs/>
 		<Prestigious>TRUE</Prestigious>
 		<Duration>4 Wochen</Duration>
 		<Author>Dr. Brandi-Dohrn, Prof. Czychowski</Author>
@@ -3146,9 +2345,8 @@ In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifik
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_506</Number>
 		<Learning_Unit>IT-Recht</Learning_Unit>
-		<Abdeckungsgrad>0.6</Abdeckungsgrad>
-		<Language>D</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>60%</Abdeckungsgrad>
+		<Language>DE</Language>
 		<Semester>5</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>IT-Recht</Abbreviation>
@@ -3160,11 +2358,7 @@ In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifik
 		<Description>Die Verwaltung von IT und Innovation erfordert gute Skills in der Entscheidungsfindung. In diesem MOOC lernst du, wie man Entscheidungen im Zusammenhang mit folgenden Themen trifft: Konkurrenz in der IT, Verwaltung von digitalen Netzwerken und Sicherheit, Umgang mit einer immer größer werdenden IT-Landschaft, die Entwicklung von Software, die Verwaltung von Projekten sowie ethische Aspekte der IT. Auf der Lernplattform EDX hat dieser Kurs weitestgehend sehr gute Bewertungen erhalten.
 </Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://www.edx.org/course/innovation-it-management-iimbx-is110x-0</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>TRUE</Fixed_StartDate>
 		<Certificate>TRUE</Certificate>
@@ -3178,9 +2372,8 @@ In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifik
 		<Area>Wirtschaftsinformatik</Area>
 		<Number>W3WI_IMBIT_401</Number>
 		<Learning_Unit>IT-Management</Learning_Unit>
-		<Abdeckungsgrad>0.3</Abdeckungsgrad>
-		<Language>E</Language>
-		<Tech_Requirements/>
+		<Abdeckungsgrad>30%</Abdeckungsgrad>
+		<Language>EN</Language>
 		<Semester>5+6</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>IT-Management</Abbreviation>
@@ -3191,17 +2384,8 @@ In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifik
 		<Titel>SAP APPHAUS - eine kreative Woche mit Design Thinking</Titel>
 		<Description>Im Rahmen des Moduls "Grundlagen Human Machine Interactions" haben wir das SAP APPHAUS in Heidelberg besucht und einen Grundlagenkurs in Design Thinking absolviert. Fun fact: Auch Personen wie Dieter Zetsche, CEO von Daimler, haben an einem Kurs im APPHAUS teilgenommen! Hier findest du ein Video dazu.</Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>https://www.sap-tv.com/video/#/7682/app-haus-a-creative-workplace</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>TRUE</Prestigious>
-		<Duration/>
 		<Author>SAP</Author>
 		<Copyright>SAP</Copyright>
 		<Last_Modified>2015</Last_Modified>
@@ -3209,9 +2393,8 @@ In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifik
 		<Area>Wirtschaftsinformatik</Area>
 		<Number>W3WI_IMBIT_304 </Number>
 		<Learning_Unit>Design Thinking</Learning_Unit>
-		<Abdeckungsgrad>0.1</Abdeckungsgrad>
+		<Abdeckungsgrad>10%</Abdeckungsgrad>
 		<Language>EN</Language>
-		<Tech_Requirements/>
 		<Semester>4+5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Design Thinking</Abbreviation>
@@ -3223,11 +2406,7 @@ In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifik
 		<Description>Als IMBIT-Student wirst du in der Arbeitswelt innerhalb internationaler Firmen an der Entwicklung von komplexen Computerprogrammen beteiligt sein. Dieser Kurs versucht, dich darauf bestmöglichst vorzubereiten.
 Er besteht aus folgenden drei Teilen: dem Business Case, dem Design und der Entwicklung. Während man die Teile eins und zwei ohne Programmierkenntnisse durchführen kann, erfordert der dritte Teil Programmiererfahrung. </Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://www.edx.org/course/developing-international-software-microsoft-dis50x#!</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>FALSE</Fixed_StartDate>
 		<Certificate>TRUE</Certificate>
@@ -3241,9 +2420,8 @@ Er besteht aus folgenden drei Teilen: dem Business Case, dem Design und der Entw
 		<Area>Wirtschaftsinformatik</Area>
 		<Number>W3WI_101</Number>
 		<Learning_Unit>Systemanalyse</Learning_Unit>
-		<Abdeckungsgrad>0.2</Abdeckungsgrad>
+		<Abdeckungsgrad>20%</Abdeckungsgrad>
 		<Language>EN</Language>
-		<Tech_Requirements/>
 		<Semester>1+2</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Systemanalyse</Abbreviation>
@@ -3254,17 +2432,9 @@ Er besteht aus folgenden drei Teilen: dem Business Case, dem Design und der Entw
 		<Titel>astah* UML pad</Titel>
 		<Description>Mit dieser App kannst du das Erstellen von UML's spielerisch mit einem iOS Gerät üben.</Description>
 		<Type>app</Type>
-		<Embedded/>
-		<src/>
-		<Youtube_ID/>
 		<IOS_ID>id409312603</IOS_ID>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Change Vision, Inc.</Author>
 		<Copyright>Change Vision, Inc.</Copyright>
 		<Last_Modified>2014</Last_Modified>
@@ -3272,7 +2442,7 @@ Er besteht aus folgenden drei Teilen: dem Business Case, dem Design und der Entw
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_101</Number>
 		<Learning_Unit>Systemanalyse</Learning_Unit>
-		<Abdeckungsgrad>0.3</Abdeckungsgrad>
+		<Abdeckungsgrad>30%</Abdeckungsgrad>
 		<Language>DE</Language>
 		<Tech_Requirements>iOS</Tech_Requirements>
 		<Semester>1+2</Semester>
@@ -3285,11 +2455,7 @@ Er besteht aus folgenden drei Teilen: dem Business Case, dem Design und der Entw
 		<Titel>Business Process Management - Learn How to Manage a Process</Titel>
 		<Description>Dieser Kurs befasst sich, neben den Grundlagen der Modellierung, mit den Themen Analyse, Verbesserung und Veränderung von Geschäftsprozessen. Bei Geschäftsprozessveränderungen sind sowohl die organisatorische als auch die IT-technische Umsetzung relevant. Das Wissen wird dir von erfahrenen Dozenten der Wirtschaftsinformatik von diversen Universitäten (u.a. der Universitäten Saarbrücken, Münster, München und Hamburg) und Dozenten aus der Wirtschaft  beigebracht.</Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://www.opencourseworld.de/pages/coursedescription.jsf?courseId=486671</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>FALSE</Fixed_StartDate>
 		<Certificate>TRUE</Certificate>
@@ -3303,9 +2469,8 @@ Er besteht aus folgenden drei Teilen: dem Business Case, dem Design und der Entw
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_106 </Number>
 		<Learning_Unit>Geschäftsprozessmanagement</Learning_Unit>
-		<Abdeckungsgrad>0.6</Abdeckungsgrad>
+		<Abdeckungsgrad>60%</Abdeckungsgrad>
 		<Language>DE</Language>
-		<Tech_Requirements/>
 		<Semester>5+6</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Geschäftsprozesse</Abbreviation>
@@ -3316,11 +2481,7 @@ Er besteht aus folgenden drei Teilen: dem Business Case, dem Design und der Entw
 		<Titel>Business Process Management: An Introduction to Process Thinking</Titel>
 		<Description>Dieser MOOC gibt dir eine Einführung in das Geschäftsprozessmanagement. Er wurde erstellt an der Queensland University of Technology, einer führenden australischen Universität, die sich unter den besten 2% der Universitäten weltweit befindet. </Description>
 		<Type>mooc</Type>
-		<Embedded/>
 		<src>https://www.futurelearn.com/courses/business-process-management</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
 		<Fixed_StartDate>TRUE</Fixed_StartDate>
 		<Certificate>TRUE</Certificate>
@@ -3334,9 +2495,8 @@ Er besteht aus folgenden drei Teilen: dem Business Case, dem Design und der Entw
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_106 </Number>
 		<Learning_Unit>Geschäftsprozessmanagement</Learning_Unit>
-		<Abdeckungsgrad>0.3</Abdeckungsgrad>
+		<Abdeckungsgrad>30%</Abdeckungsgrad>
 		<Language>EN</Language>
-		<Tech_Requirements/>
 		<Semester>5+6</Semester>
 		<Recommended>FALSE</Recommended>
 		<Abbreviation>Geschäftsprozesse</Abbreviation>
@@ -3349,17 +2509,9 @@ Er besteht aus folgenden drei Teilen: dem Business Case, dem Design und der Entw
 Ziel ist es, deine Ausbildung im Bereich Projektmanagement für Informationstechnologie zu bereichern.
 Für mehr Info's schau dir unser Teaser-Video an!: https://vimeo.com/96179581</Description>
 		<Type>seriousgame</Type>
-		<Embedded/>
 		<src>http://www.brilliancrm.com</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
 		<Free_of_charge>TRUE</Free_of_charge>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>WIMBIT12C, WIMBIT13C</Author>
 		<Copyright>DHBW Mannheim</Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -3367,9 +2519,8 @@ Für mehr Info's schau dir unser Teaser-Video an!: https://vimeo.com/96179581</D
 		<Area>Methodische Grundlagen</Area>
 		<Number>W3WI_IMBIT_404</Number>
 		<Learning_Unit>Projektmanagement</Learning_Unit>
-		<Abdeckungsgrad>0.4</Abdeckungsgrad>
+		<Abdeckungsgrad>40%</Abdeckungsgrad>
 		<Language>EN</Language>
-		<Tech_Requirements/>
 		<Semester>4+5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Projektmanagement</Abbreviation>
@@ -3380,17 +2531,8 @@ Für mehr Info's schau dir unser Teaser-Video an!: https://vimeo.com/96179581</D
 		<Titel>Formelsammlung Statistik</Titel>
 		<Description>Diese Webseite beinhaltet eine kommentierte Formelsammlung der deskriptiven und induktiven Statistik und eignet sich besonders für dich als Wirtschaftswissenschaftler. Weitere Übungsaufgaben findest du auf der Webseite von Frau Prof. Dr. Irene Rößler.</Description>
 		<Type>website</Type>
-		<Embedded/>
 		<src>http://prof-roessler.de/Dateien/Statistik/formelsammlung.pdf</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>Prof. Dr. Irene Rößler</Author>
 		<Copyright>Prof. Dr. Irene Rößler</Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -3398,9 +2540,8 @@ Für mehr Info's schau dir unser Teaser-Video an!: https://vimeo.com/96179581</D
 		<Area>Methodische Grundlagen</Area>
 		<Number>W3WI_602</Number>
 		<Learning_Unit>Statistik</Learning_Unit>
-		<Abdeckungsgrad>0.3</Abdeckungsgrad>
+		<Abdeckungsgrad>30%</Abdeckungsgrad>
 		<Language>DE</Language>
-		<Tech_Requirements/>
 		<Semester>3</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Statistik</Abbreviation>
@@ -3411,17 +2552,8 @@ Für mehr Info's schau dir unser Teaser-Video an!: https://vimeo.com/96179581</D
 		<Titel>Cloud Wiki</Titel>
 		<Description>Dieses Wiki erklärt zahlreiche Begriffe rund um das Thema "Cloud Computing" und wurde von dem WIBI09-Kurs im Jahr 2012 erstellt. Es ist bestens zur Wiederholung der Cloud Computing Vorlesung im 5. Semester geeignet. Darüber hinaus findest du hier auch weiterführende Informationen.</Description>
 		<Type>wiki</Type>
-		<Embedded/>
 		<src>http://wiki.brillianideas.com/index.php/Hauptseite</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>WIBI09</Author>
 		<Copyright>WIBI09</Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -3429,9 +2561,8 @@ Für mehr Info's schau dir unser Teaser-Video an!: https://vimeo.com/96179581</D
 		<Area>Informatik</Area>
 		<Number>W3WI_111</Number>
 		<Learning_Unit>Neue Konzepte</Learning_Unit>
-		<Abdeckungsgrad>0.4</Abdeckungsgrad>
+		<Abdeckungsgrad>40%</Abdeckungsgrad>
 		<Language>DE</Language>
-		<Tech_Requirements/>
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Neue Konzepte</Abbreviation>
@@ -3442,17 +2573,8 @@ Für mehr Info's schau dir unser Teaser-Video an!: https://vimeo.com/96179581</D
 		<Titel>TOPSIM Planspiel General Management</Titel>
 		<Description>Das kompetitive Industrieplanspiel TOPSIM – General Management ist eine anspruchsvolle Management Simulation, welche die komplexen Zusammenhänge eines produzierenden mittelständischen Unternehmens in der Drucker- und Kopierer Branche abbildet. In der Rolle der Geschäftsführung triffst du als Teilnehmer strategische und operative Entscheidungen in den Unternehmensbereichen Marketing, Vertrieb, Forschung und Entwicklung, Einkauf, Fertigung, Personal und Verwaltung. Dabei erlernst du, strukturiert mit großen Informationsmengen umzugehen und die Reichweite deiner Entscheidungen abzuschätzen. </Description>
 		<Type>planspiel</Type>
-		<Embedded/>
 		<src>http://www.topsim.com/de/startseite/startseite.html</src>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
 		<Prestigious>FALSE</Prestigious>
-		<Duration/>
 		<Author>TATA Interactive Systems GmbH</Author>
 		<Copyright>TATA Interactive Systems GmbH</Copyright>
 		<Last_Modified>2017</Last_Modified>
@@ -3460,353 +2582,11 @@ Für mehr Info's schau dir unser Teaser-Video an!: https://vimeo.com/96179581</D
 		<Area>Wirtschaft</Area>
 		<Number>W3WI_204</Number>
 		<Learning_Unit>Unternehmensführung und Controlling</Learning_Unit>
-		<Abdeckungsgrad>0.25</Abdeckungsgrad>
+		<Abdeckungsgrad>25%</Abdeckungsgrad>
 		<Language>DE</Language>
-		<Tech_Requirements/>
 		<Semester>5</Semester>
 		<Recommended>TRUE</Recommended>
 		<Abbreviation>Controlling</Abbreviation>
 		<Area_Abbreviation>W</Area_Abbreviation>
-	</Learning>
-	<Learning>
-		<GUID/>
-		<Titel/>
-		<Description/>
-		<Type/>
-		<Embedded/>
-		<src/>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
-		<Prestigious/>
-		<Duration/>
-		<Author/>
-		<Copyright/>
-		<Last_Modified/>
-		<Thumb/>
-		<Area/>
-		<Number/>
-		<Learning_Unit/>
-		<Abdeckungsgrad/>
-		<Language/>
-		<Tech_Requirements/>
-		<Semester/>
-		<Recommended/>
-		<Abbreviation/>
-		<Area_Abbreviation/>
-	</Learning>
-	<Learning>
-		<GUID/>
-		<Titel/>
-		<Description/>
-		<Type/>
-		<Embedded/>
-		<src/>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
-		<Prestigious/>
-		<Duration/>
-		<Author/>
-		<Copyright/>
-		<Last_Modified/>
-		<Thumb/>
-		<Area/>
-		<Number/>
-		<Learning_Unit/>
-		<Abdeckungsgrad/>
-		<Language/>
-		<Tech_Requirements/>
-		<Semester/>
-		<Recommended/>
-		<Abbreviation/>
-		<Area_Abbreviation/>
-	</Learning>
-	<Learning>
-		<GUID/>
-		<Titel/>
-		<Description/>
-		<Type/>
-		<Embedded/>
-		<src/>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
-		<Prestigious/>
-		<Duration/>
-		<Author/>
-		<Copyright/>
-		<Last_Modified/>
-		<Thumb/>
-		<Area/>
-		<Number/>
-		<Learning_Unit/>
-		<Abdeckungsgrad/>
-		<Language/>
-		<Tech_Requirements/>
-		<Semester/>
-		<Recommended/>
-		<Abbreviation/>
-		<Area_Abbreviation/>
-	</Learning>
-	<Learning>
-		<GUID/>
-		<Titel/>
-		<Description/>
-		<Type/>
-		<Embedded/>
-		<src/>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
-		<Prestigious/>
-		<Duration/>
-		<Author/>
-		<Copyright/>
-		<Last_Modified/>
-		<Thumb/>
-		<Area/>
-		<Number/>
-		<Learning_Unit/>
-		<Abdeckungsgrad/>
-		<Language/>
-		<Tech_Requirements/>
-		<Semester/>
-		<Recommended/>
-		<Abbreviation/>
-		<Area_Abbreviation/>
-	</Learning>
-	<Learning>
-		<GUID/>
-		<Titel/>
-		<Description/>
-		<Type/>
-		<Embedded/>
-		<src/>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
-		<Prestigious/>
-		<Duration/>
-		<Author/>
-		<Copyright/>
-		<Last_Modified/>
-		<Thumb/>
-		<Area/>
-		<Number/>
-		<Learning_Unit/>
-		<Abdeckungsgrad/>
-		<Language/>
-		<Tech_Requirements/>
-		<Semester/>
-		<Recommended/>
-		<Abbreviation/>
-		<Area_Abbreviation/>
-	</Learning>
-	<Learning>
-		<GUID/>
-		<Titel/>
-		<Description/>
-		<Type/>
-		<Embedded/>
-		<src/>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
-		<Prestigious/>
-		<Duration/>
-		<Author/>
-		<Copyright/>
-		<Last_Modified/>
-		<Thumb/>
-		<Area/>
-		<Number/>
-		<Learning_Unit/>
-		<Abdeckungsgrad/>
-		<Language/>
-		<Tech_Requirements/>
-		<Semester/>
-		<Recommended/>
-		<Abbreviation/>
-		<Area_Abbreviation/>
-	</Learning>
-	<Learning>
-		<GUID/>
-		<Titel/>
-		<Description/>
-		<Type/>
-		<Embedded/>
-		<src/>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
-		<Prestigious/>
-		<Duration/>
-		<Author/>
-		<Copyright/>
-		<Last_Modified/>
-		<Thumb/>
-		<Area/>
-		<Number/>
-		<Learning_Unit/>
-		<Abdeckungsgrad/>
-		<Language/>
-		<Tech_Requirements/>
-		<Semester/>
-		<Recommended/>
-		<Abbreviation/>
-		<Area_Abbreviation/>
-	</Learning>
-	<Learning>
-		<GUID/>
-		<Titel/>
-		<Description/>
-		<Type/>
-		<Embedded/>
-		<src/>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
-		<Prestigious/>
-		<Duration/>
-		<Author/>
-		<Copyright/>
-		<Last_Modified/>
-		<Thumb/>
-		<Area/>
-		<Number/>
-		<Learning_Unit/>
-		<Abdeckungsgrad/>
-		<Language/>
-		<Tech_Requirements/>
-		<Semester/>
-		<Recommended/>
-		<Abbreviation/>
-		<Area_Abbreviation/>
-	</Learning>
-	<Learning>
-		<GUID/>
-		<Titel/>
-		<Description/>
-		<Type/>
-		<Embedded/>
-		<src/>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
-		<Prestigious/>
-		<Duration/>
-		<Author/>
-		<Copyright/>
-		<Last_Modified/>
-		<Thumb/>
-		<Area/>
-		<Number/>
-		<Learning_Unit/>
-		<Abdeckungsgrad/>
-		<Language/>
-		<Tech_Requirements/>
-		<Semester/>
-		<Recommended/>
-		<Abbreviation/>
-		<Area_Abbreviation/>
-	</Learning>
-	<Learning>
-		<GUID/>
-		<Titel/>
-		<Description/>
-		<Type/>
-		<Embedded/>
-		<src/>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
-		<Prestigious/>
-		<Duration/>
-		<Author/>
-		<Copyright/>
-		<Last_Modified/>
-		<Thumb/>
-		<Area/>
-		<Number/>
-		<Learning_Unit/>
-		<Abdeckungsgrad/>
-		<Language/>
-		<Tech_Requirements/>
-		<Semester/>
-		<Recommended/>
-		<Abbreviation/>
-		<Area_Abbreviation/>
-	</Learning>
-	<Learning>
-		<GUID/>
-		<Titel/>
-		<Description/>
-		<Type/>
-		<Embedded/>
-		<src/>
-		<Youtube_ID/>
-		<IOS_ID/>
-		<Android_ID/>
-		<Free_of_charge/>
-		<Fixed_StartDate/>
-		<Certificate/>
-		<Certificate_Costs/>
-		<Prestigious/>
-		<Duration/>
-		<Author/>
-		<Copyright/>
-		<Last_Modified/>
-		<Thumb/>
-		<Area/>
-		<Number/>
-		<Learning_Unit/>
-		<Abdeckungsgrad/>
-		<Language/>
-		<Tech_Requirements/>
-		<Semester/>
-		<Recommended/>
-		<Abbreviation/>
-		<Area_Abbreviation/>
 	</Learning>
 </Learnings>
