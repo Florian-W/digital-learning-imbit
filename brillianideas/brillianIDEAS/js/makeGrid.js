@@ -236,7 +236,7 @@ var makeGrid = function makeGrid(view){
 			 */
 			var animateTile = function(obj){
 				var $obj = $(obj);
-				$obj.animate({opacity: 1}, {
+				$obj.velocity({opacity: 1}, {
 					duration: 500, 
 					done: (($obj.next().length == 0) ? cleanUp : function(){
 						animateTile($obj.next());
@@ -255,9 +255,9 @@ var makeGrid = function makeGrid(view){
 				 */
 				$('#grid').css('cursor', 'pointer').css("width", $display.width).css("height", $display.height).css('opacity', 1);
 				$('.flipcard, .flipcard .face').css('pointer-events', 'none').css('cursor', 'default');
-				$('#animation_welcome').animate({left: 50 + $('#animation_welcome').outerWidth() / 2, top: 100}, {duration: 1000});
-				$('#xaxis').animate({opacity: 1, width: $display.width}, {duration: 1000});
-				$('#yaxis').animate({opacity: 1, height: $display.height}, {duration: 1000});
+				$('#animation_welcome').velocity({left: 50 + $('#animation_welcome').outerWidth() / 2, top: 100}, {duration: 1000});
+				$('#xaxis').velocity({opacity: 1, width: $display.width}, {duration: 1000});
+				$('#yaxis').velocity({opacity: 1, height: $display.height}, {duration: 1000});
 				
 				
 				$.each(digitalLearningArray, function(key, value){
@@ -335,7 +335,7 @@ var makeGrid = function makeGrid(view){
              * loads all tiles and displays the heading
              */
 			 
-			$('#animation_welcome').animate({opacity: 1}, {duration: 1000}),
+			$('#animation_welcome').velocity({opacity: 1}, {duration: 1000}),
 			$.ajax({
 				url:'xml/index.php?base=grid&type=learning',
 				complete: function (data) {
@@ -360,7 +360,7 @@ var makeGrid = function makeGrid(view){
                     $('#site').append(data);
                     $('#grid').css("width", $display.width).css("height", $display.height).append('<div id="backlayer"></div>');
                 }),
-                $('#title_imbit').animate({opacity: 1}, {duration: 1000})
+                $('#title_imbit').velocity({opacity: 1}, {duration: 1000})
             ).done(function () {
 	                $.when(
 	                		/**
@@ -371,7 +371,7 @@ var makeGrid = function makeGrid(view){
 	                    $('#IT').css('left', Math.floor(0.7 * $display.width)).css('top', Math.floor(0.2 * $display.height)).attr('data-sid', '3'),
 	                    $('#W').css('left', Math.floor(0.68 * $display.width)).css('top', Math.floor(0.7 * $display.height)).attr('data-sid', '4'),
 	                    $('#MG').css('left', Math.floor(0.35 * $display.width)).css('top', Math.floor(0.35 * $display.height)).attr('data-sid', '5'),
-	                    $('#title_imbit').animate({left: $display.width - $('#title_imbit').outerWidth() / 2 - 50, top: 0}, {duration: 1000}),
+	                    $('#title_imbit').velocity({left: $display.width - $('#title_imbit').outerWidth() / 2 - 50, top: 0}, {duration: 1000}),
 	                    
 	                    $('#grid').css('opacity', 1)
 	                ).done(function () {
@@ -385,7 +385,7 @@ var makeGrid = function makeGrid(view){
 	                    	/**
 	                    	 * Fügt via ajax jeder Flipcard die Rückseite mit ihren Modulen und den entsprechenden Learnings hinzu
 	                    	 */
-	                        deferredArray.push($(element).delay(index * 500).children('.back').css('display', 'none').delay(0).parent().animate({opacity: 1}, {duration: 500}));
+	                        deferredArray.push($(element).delay(index * 500).children('.back').css('display', 'none').delay(0).parent().velocity({opacity: 1}, {duration: 500}));
 	                        deferredArray.push($.ajax({
 	                        	url: 'xml/index.php?base=grid&type=class&detail=true&withLink=true&filter=' + $(element).children('.front').text()
 	                        }).done(function (data) {
