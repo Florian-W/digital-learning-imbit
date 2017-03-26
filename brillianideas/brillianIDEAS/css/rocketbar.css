@@ -18,8 +18,8 @@ font-weight:bold;
 }
 
 #rb_toggle{
-	background-color: var(--border);
-	height: 48px;
+	/*background-color: var(--border);*/
+	height: 60px;
 	border-top-left-radius: 50px;
 	border-top-right-radius: 50px;
 	position: relative;
