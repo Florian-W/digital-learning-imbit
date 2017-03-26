@@ -70,16 +70,6 @@
 														<xsl:attribute name="class">thumbnail</xsl:attribute>
 													</xsl:element>
 												</xsl:element>
-												<xsl:element name="h2">
-													<xsl:element name="a">
-														<xsl:if test="$withLink = 'true'">
-															<xsl:attribute name="href">
-																<xsl:value-of select="src" />
-															</xsl:attribute>
-															<xsl:value-of select="Titel" />
-														</xsl:if>
-													</xsl:element>
-												</xsl:element>
 											</xsl:when>
 											<xsl:otherwise>
 												<xsl:element name="img">
@@ -90,25 +80,22 @@
 														<xsl:text>&#160;</xsl:text>
 													</xsl:attribute>
 													<xsl:attribute name="class">thumbnail</xsl:attribute>
-													<xsl:element name="h2">
-														<xsl:value-of select="Titel" />
-													</xsl:element>
 												</xsl:element>
 											</xsl:otherwise>
 										</xsl:choose>
 									</xsl:when>
-									<xsl:when test="Type[text()='film']/../Youtube_ID[not(text()=null or normalize-space(text())='')]">
+									<xsl:when test="Type[text()='youtube'] and Youtube_ID[not(text()=null or normalize-space(text())='')]">
 										<xsl:choose>
 											<xsl:when test="Embedded = 'true' and $withLink = 'true'">
 												<xsl:element name="iframe">
 													<xsl:attribute name="src">
-												<xsl:text>
-													https://www.youtube.com/embed/
-												</xsl:text>
+														<xsl:text>
+															https://www.youtube.com/embed/
+														</xsl:text>
 														<xsl:value-of select="Youtube_ID"/>
 														<xsl:text>
-													?rel=0&amp;controls=0&amp;showinfo=0
-												</xsl:text>
+															?rel=0&amp;controls=0&amp;showinfo=0
+														</xsl:text>
 													</xsl:attribute>
 													<xsl:attribute name="width">500</xsl:attribute>
 													<xsl:attribute name="height">295</xsl:attribute>
@@ -134,14 +121,26 @@
 														</xsl:attribute>
 														<xsl:attribute name="class">thumbnail</xsl:attribute>
 													</xsl:element>
-													<xsl:element name="h2">
-														<xsl:value-of select="Titel" />
-													</xsl:element>
 												</xsl:element>
 											</xsl:otherwise>
 										</xsl:choose>
 									</xsl:when>
-							</xsl:choose>
+								</xsl:choose>
+								<xsl:element name="h2">
+									<xsl:choose>
+										<xsl:when test="$withLink='true'">
+											<xsl:element name="a">
+											<xsl:attribute name="href">
+												<xsl:value-of select="src" />
+											</xsl:attribute>
+											<xsl:value-of select="Titel" />
+										</xsl:element>
+										</xsl:when>
+										<xsl:otherwise>
+											<xsl:value-of select="Titel" />
+										</xsl:otherwise>
+									</xsl:choose>
+								</xsl:element>
 								<xsl:if test="Android_ID[not(text()=null or normalize-space(text())='')] and $withLink = 'true'">
 									<xsl:element name="a">
 										<xsl:attribute name="href">
@@ -155,11 +154,8 @@
 										</xsl:attribute>
 										<xsl:element name="img">
 											<xsl:attribute name="src">./../img/AppStores/google.png</xsl:attribute>
-											<xsl:attribute name="alt">Jetzt im Play Store</xsl:attribute>
+											<xsl:attribute name="alt">Im PlayStore herunterladen</xsl:attribute>
 											<xsl:attribute name="class">AppStoreBadge</xsl:attribute>
-										</xsl:element>
-										<xsl:element name="h2">
-											<xsl:value-of select="Titel" />
 										</xsl:element>
 									</xsl:element>
 								</xsl:if>
@@ -302,7 +298,7 @@
 										</xsl:otherwise>
 									</xsl:choose>
 								</xsl:when>
-								<xsl:when test="Type[text()='film']/../Youtube_ID[not(text()=null or normalize-space(text())='')]">
+								<xsl:when test="Type[text()='youtube']/../Youtube_ID[not(text()=null or normalize-space(text())='')]">
 									<xsl:choose>
 										<xsl:when test="Embedded = 'true' and $withLink = 'true'">
 											<xsl:element name="iframe">
@@ -347,7 +343,7 @@
 							<xsl:if test="Android_ID[not(text()=null or normalize-space(text())='')] and $withLink = 'true'">
 								<xsl:element name="a">
 										<xsl:attribute name="href">
-											<xsl:text>https://Jetzt im Play Store.google.com/store/apps/details?id=</xsl:text>
+											<xsl:text>https://play.google.com/store/apps/details?id=</xsl:text>
 											<xsl:value-of select="Android_ID" />
 										</xsl:attribute>
 										<xsl:attribute name="target">
@@ -357,7 +353,7 @@
 										</xsl:attribute>
 										<xsl:element name="img">
 											<xsl:attribute name="src">./../img/AppStores/google.png</xsl:attribute>
-											<xsl:attribute name="alt">Jetzt im Play Store</xsl:attribute>
+											<xsl:attribute name="alt">Im PlayStore herunterladen</xsl:attribute>
 											<xsl:attribute name="class">AppStoreBadge</xsl:attribute>
 										</xsl:element>
 									</xsl:element>
@@ -382,7 +378,7 @@
 										</xsl:element>
 									</xsl:element>
 								</xsl:if>
-							<xsl:element name="p">
+								<xsl:element name="p">
 								<xsl:if test="$detail='true'">
 									<xsl:value-of select="Description" />
 									<xsl:element name="br" />
@@ -390,8 +386,8 @@
 								<xsl:text>Stand: </xsl:text>
 								<xsl:value-of select="Last_Modified" />
 								<xsl:text>
-		                    &#169;
-		                </xsl:text>
+				                    &#169;
+				                </xsl:text>
 								<xsl:value-of select="Copyright" />
 								<xsl:element name="br" />
 								<xsl:text>Autor: </xsl:text>

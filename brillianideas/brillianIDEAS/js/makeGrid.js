@@ -362,42 +362,42 @@ var makeGrid = function makeGrid(view){
                 }),
                 $('#title_imbit').animate({opacity: 1}, {duration: 1000})
             ).done(function () {
-                        $.when(
-                        		/**
-                        		 * Positionierung der Flipcards im Grid, verschieben des Titel nach oben rechts im Bild
-                        		 */
-                            $('#WI').css('left', Math.floor(0.2 * $display.width)).css('top', Math.floor(0.1 * $display.height)).attr('data-sid', '1'),
-                            $('#I').css('left', Math.floor(0.25 * $display.width)).css('top', Math.floor(0.65 * $display.height)).attr('data-sid', '2'),
-                            $('#IT').css('left', Math.floor(0.7 * $display.width)).css('top', Math.floor(0.2 * $display.height)).attr('data-sid', '3'),
-                            $('#W').css('left', Math.floor(0.68 * $display.width)).css('top', Math.floor(0.7 * $display.height)).attr('data-sid', '4'),
-                            $('#MG').css('left', Math.floor(0.35 * $display.width)).css('top', Math.floor(0.35 * $display.height)).attr('data-sid', '5'),
-                            $('#title_imbit').animate({left: $display.width - $('#title_imbit').outerWidth() / 2 - 50, top: 0}, {duration: 1000}),
-                            
-                            $('#grid').css('opacity', 1)
-                        ).done(function () {
-                            var deferredArray = [];
-                            /**
-                             * Sortierung der Flipcards nach ihrer sid
-                             */
-                            $('#grid').children('.flipcard').sort(function (a, b) {
-                                return (($(a).data('sid') > $(b).data('sid')) ? 1 : -1);
-                            }).each(function (index, element) {
-                            	/**
-                            	 * Fügt via ajax jeder Flipcard die Rückseite mit ihren Modulen und den entsprechenden Learnings hinzu
-                            	 */
-                                deferredArray.push($(element).delay(index * 500).children('.back').css('display', 'none').delay(0).parent().animate({opacity: 1}, {duration: 500}));
-                                deferredArray.push($.ajax({
-                                	url: 'xml/index.php?base=grid&type=class&detail=true&withLink=true&filter=' + $(element).children('.front').text()
-                                }).done(function (data) {
-                                    $(element).children('.back').append(data);
-                                    $(element).find('.contentWrapper').hide();
-                                    $(element).html($(element).html().replace(/(?:\r\n|\r|\n)/g," "));
-                                }));
-                            });
-                            $.when.apply($, deferredArray).done(function () {
-                                openPath();
-                            });
-                        });
+	                $.when(
+	                		/**
+	                		 * Positionierung der Flipcards im Grid, verschieben des Titel nach oben rechts im Bild
+	                		 */
+	                    $('#WI').css('left', Math.floor(0.2 * $display.width)).css('top', Math.floor(0.1 * $display.height)).attr('data-sid', '1'),
+	                    $('#I').css('left', Math.floor(0.25 * $display.width)).css('top', Math.floor(0.65 * $display.height)).attr('data-sid', '2'),
+	                    $('#IT').css('left', Math.floor(0.7 * $display.width)).css('top', Math.floor(0.2 * $display.height)).attr('data-sid', '3'),
+	                    $('#W').css('left', Math.floor(0.68 * $display.width)).css('top', Math.floor(0.7 * $display.height)).attr('data-sid', '4'),
+	                    $('#MG').css('left', Math.floor(0.35 * $display.width)).css('top', Math.floor(0.35 * $display.height)).attr('data-sid', '5'),
+	                    $('#title_imbit').animate({left: $display.width - $('#title_imbit').outerWidth() / 2 - 50, top: 0}, {duration: 1000}),
+	                    
+	                    $('#grid').css('opacity', 1)
+	                ).done(function () {
+	                    var deferredArray = [];
+	                    /**
+	                     * Sortierung der Flipcards nach ihrer sid
+	                     */
+	                    $('#grid').children('.flipcard').sort(function (a, b) {
+	                        return (($(a).data('sid') > $(b).data('sid')) ? 1 : -1);
+	                    }).each(function (index, element) {
+	                    	/**
+	                    	 * Fügt via ajax jeder Flipcard die Rückseite mit ihren Modulen und den entsprechenden Learnings hinzu
+	                    	 */
+	                        deferredArray.push($(element).delay(index * 500).children('.back').css('display', 'none').delay(0).parent().animate({opacity: 1}, {duration: 500}));
+	                        deferredArray.push($.ajax({
+	                        	url: 'xml/index.php?base=grid&type=class&detail=true&withLink=true&filter=' + $(element).children('.front').text()
+	                        }).done(function (data) {
+	                            $(element).children('.back').append(data);
+	                            $(element).find('.contentWrapper').hide();
+	                            $(element).html($(element).html().replace(/(?:\r\n|\r|\n)/g," "));
+	                        }));
+	                    });
+	                    $.when.apply($, deferredArray).done(function () {
+	                        openPath();
+	                    });
+	                });
                 });
             break;
     }

@@ -186,7 +186,7 @@ img.thumb {
 	margin-top: 50px;
 }	
 
-.contentWrapper > .learning a{
+.contentWrapper > .learning a {
 	color:inherit;
     text-decoration:none;
 }
@@ -198,7 +198,8 @@ img.thumb {
 
 .contentWrapper > .learning > p {
 	overflow: hidden;
-	font: Tinos;
+	font-family: 'Tinos';
+	font-size: 120%;
 }
 
 #overlay {
