@@ -372,7 +372,8 @@ Quelle: https://wiki.zum.de/wiki/Wikis_in_der_Schule</Description>
   </NewContentItems>	
   
 <NewContentItems>		
-	<NewContent_Name>BWL SurveyMonkey</NewContent_Name>		
+	<NewContent_Name>BWL</NewContent_Name>
+	<NewContent_Beschreibung>Das folgende Modul behandelt weiterführende Fragen zur allgemeinen Betriebswirtschaftslehre. Hier kannst du das übergreifende Wissen aus den anderen BWL-Modulen testen.</NewContent_Beschreibung>	
 	<jsonFileName>SurveyMonkey_questions.json</jsonFileName>		
 	<ButtonClass>buttonToQuiz6</ButtonClass>		
 	<ButtonID>quizSurveyMonkey</ButtonID>		

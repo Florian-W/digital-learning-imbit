@@ -97,8 +97,7 @@
 								<xsl:attribute name="allowfullscreen">allowfullscreen</xsl:attribute>
 							</xsl:element>
 							</xsl:when>
-							<xsl:otherwise>
-								
+							<xsl:otherwise>							
 							</xsl:otherwise>
 							</xsl:choose>
 							<xsl:element name="div">
@@ -113,7 +112,7 @@
 									<xsl:attribute name="type">button</xsl:attribute>
 									<xsl:attribute name="class"><xsl:value-of select="ButtonClass"/></xsl:attribute>
 									<xsl:attribute name="id"><xsl:value-of select="ButtonID"/></xsl:attribute>
-									Quiz
+									Quiz - <xsl:value-of select="NewContent_Name"/>
 								</xsl:element>
 							</xsl:element>
                     	</xsl:element>
