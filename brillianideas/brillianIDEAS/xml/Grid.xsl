@@ -112,7 +112,8 @@
 									<xsl:attribute name="type">button</xsl:attribute>
 									<xsl:attribute name="class"><xsl:value-of select="ButtonClass"/></xsl:attribute>
 									<xsl:attribute name="id"><xsl:value-of select="ButtonID"/></xsl:attribute>
-									Quiz - <xsl:value-of select="NewContent_Name"/>
+										Quiz<xsl:element name="br"></xsl:element>
+										<xsl:value-of select="NewContent_Name"/>
 								</xsl:element>
 							</xsl:element>
                     	</xsl:element>
