@@ -126,9 +126,12 @@ h1, h2, h3, h4, h5 {
     -webkit-transform: rotateY(180deg);
     overflow: auto;
     line-height: normal;
-    background-color: var(--color-gray) !important;
-    color: black !important;
     text-align: justify;
+}
+
+#site.a .flipcard .back {
+	background-color: var(--color-gray) !important;
+    color: black !important;
 }
 
 img.thumb {
@@ -192,15 +195,19 @@ img.thumb {
     text-decoration:none;
 }
 
-.contentWrapper > .learning > a {
+.contentWrapper > .learning > a, .contentWrapper > .learning > img {
 	float: left;
 	margin-right: 5%;
 }
 
-.contentWrapper > .learning > p {
+.contentWrapper > .learning p {
 	overflow: hidden;
 	font-family: 'Tinos';
-	font-size: 120%;
+	font-size: 14pt;
+}
+
+.contentWrapper > .learning > div > a:nth-child(1) {
+    margin-right: 5%;
 }
 
 #overlay {

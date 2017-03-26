@@ -84,7 +84,7 @@
 											</xsl:otherwise>
 										</xsl:choose>
 									</xsl:when>
-									<xsl:when test="Type[text()='youtube'] and Youtube_ID[not(text()=null or normalize-space(text())='')]">
+									<xsl:when test="Youtube_ID[not(text()=null or normalize-space(text())='')]">
 										<xsl:choose>
 											<xsl:when test="Embedded = 'true' and $withLink = 'true'">
 												<xsl:element name="iframe">
@@ -141,108 +141,94 @@
 										</xsl:otherwise>
 									</xsl:choose>
 								</xsl:element>
-								<xsl:if test="Android_ID[not(text()=null or normalize-space(text())='')] and $withLink = 'true'">
-									<xsl:element name="a">
-										<xsl:attribute name="href">
-											<xsl:text>https://play.google.com/store/apps/details?id=</xsl:text>
-											<xsl:value-of select="Android_ID" />
-										</xsl:attribute>
-										<xsl:attribute name="target">
-				                            <xsl:text>
-				                                _blank
-				                            </xsl:text>
-										</xsl:attribute>
-										<xsl:element name="img">
-											<xsl:attribute name="src">img/AppStores/google.png</xsl:attribute>
-											<xsl:attribute name="alt">Im PlayStore herunterladen</xsl:attribute>
-											<xsl:attribute name="class">AppStoreBadge</xsl:attribute>
+								<xsl:element name="div">
+									<xsl:if test="Android_ID[not(text()=null or normalize-space(text())='')] and $withLink = 'true'">
+										<xsl:element name="a">
+											<xsl:attribute name="href">
+												<xsl:text>https://play.google.com/store/apps/details?id=</xsl:text>
+												<xsl:value-of select="Android_ID" />
+											</xsl:attribute>
+											<xsl:attribute name="target">
+					                            <xsl:text>
+					                                _blank
+					                            </xsl:text>
+											</xsl:attribute>
+											<xsl:element name="img">
+												<xsl:attribute name="src">./../img/AppStores/google.png</xsl:attribute>
+												<xsl:attribute name="alt">Im PlayStore herunterladen</xsl:attribute>
+												<xsl:attribute name="class">AppStoreBadge</xsl:attribute>
+											</xsl:element>
 										</xsl:element>
-									</xsl:element>
-								</xsl:if>
-								<xsl:if test="IOS_ID[not(text()=null or normalize-space(text())='')] and $withLink = 'true'">
-									<xsl:element name="a">
-										<xsl:attribute name="href">
-		                            <xsl:text>
-		                                https://itunes.apple.com/us/app/id
-		                            </xsl:text>
-											<xsl:value-of select="IOS_ID" />
-										</xsl:attribute>
-										<xsl:attribute name="target">
-		                            <xsl:text>
-		                                _blank
-		                            </xsl:text>
-										</xsl:attribute>
-										<xsl:element name="img">
-											<xsl:attribute name="src">img/AppStores/Apple.svg</xsl:attribute>
-											<xsl:attribute name="alt">Im AppStore herunterladen</xsl:attribute>
-											<xsl:attribute name="class">AppStoreBadge</xsl:attribute>
+									</xsl:if>
+									<xsl:if test="IOS_ID[not(text()=null or normalize-space(text())='')] and $withLink = 'true'">
+										<xsl:element name="a">
+											<xsl:attribute name="href">
+			                            <xsl:text>
+			                                https://itunes.apple.com/us/app/id
+			                            </xsl:text>
+												<xsl:value-of select="IOS_ID" />
+											</xsl:attribute>
+											<xsl:attribute name="target">
+			                            <xsl:text>
+			                                _blank
+			                            </xsl:text>
+											</xsl:attribute>
+											<xsl:element name="img">
+												<xsl:attribute name="src">./../img/AppStores/Apple.svg</xsl:attribute>
+												<xsl:attribute name="alt">Im AppStore herunterladen</xsl:attribute>
+												<xsl:attribute name="class">AppStoreBadge</xsl:attribute>
+											</xsl:element>
 										</xsl:element>
+									</xsl:if>
+									<xsl:element name="p">
+										<xsl:if test="$detail='true'">
+											<xsl:value-of select="Description" />
+											<xsl:element name="br" />
+										</xsl:if>
+										<xsl:text>Stand: </xsl:text>
+										<xsl:value-of select="Last_Modified" />
+										<xsl:text>
+				                   			 &#169;
+					                	</xsl:text>
+										<xsl:value-of select="Copyright" />
+										<xsl:element name="br" />
+										<xsl:text>Autor: </xsl:text>
+										<xsl:value-of select="Author" />
+										<xsl:if test="Duration[not(text()=null or normalize-space(text())='')]">
+											<xsl:element name="br" />
+											<xsl:text>Dauer: </xsl:text>
+											<xsl:value-of select="Duration" />
+										</xsl:if>
+										<xsl:element name="br" />
+										<xsl:if test="Abdeckungsgrad[not(text()=null or normalize-space(text())='')]">
+											<xsl:text>Abdeckungsgrad </xsl:text>
+											<xsl:value-of select="Abdeckungsgrad" />
+											<xsl:element name="br" />
+										</xsl:if>
+										<xsl:if test="Recommended='true'">
+											<xsl:text>Dieses Lernmedium "brillianideas/brillianIDEAS/xml/Learning.xsl"wurde von einem DHBW Dozenten oder Professor dieser Vorlesung empfohlen</xsl:text>
+											<xsl:element name="br" />
+										</xsl:if>
+										<xsl:if test="Prestigious='true'">
+											<xsl:text>Es handelt sich hierbei um eine renommierte Institution</xsl:text>
+											<xsl:element name="br" />
+										</xsl:if>
+										<xsl:if test="Free_of_charge='true'">
+											<xsl:text>Kosten: Dieser MOOC ist kostenfrei</xsl:text>
+											<xsl:element name="br" />
+										</xsl:if>
+										<xsl:if test="Free_of_charge='false'">
+											<xsl:text>Kosten: Die kosten für diesen MOOC erfährst du auf der Webseite des Anbieters</xsl:text>
+											<xsl:element name="br" />
+										</xsl:if>
+										<xsl:if test="Certificate='true'">
+											<xsl:text>Nach erfolgreichem Beenden des MOOC erhältst du ein Zertifikat</xsl:text>
+											<xsl:element name="br" />
+										</xsl:if>
 									</xsl:element>
-								</xsl:if>
-								<xsl:element name="p">
-									<xsl:if test="$detail='true'">
-										<xsl:value-of select="Description" />
-										<xsl:element name="br" />
-									</xsl:if>
-									<xsl:text>Stand: </xsl:text>
-									<xsl:value-of select="Last_Modified" />
-									<xsl:text>
-			                   			 &#169;
-				                	</xsl:text>
-									<xsl:value-of select="Copyright" />
-									<xsl:element name="br" />
-									<xsl:text>Autor: </xsl:text>
-									<xsl:value-of select="Author" />
-									<xsl:if test="Duration[not(text()=null or normalize-space(text())='')]">
-										<xsl:element name="br" />
-										<xsl:text>Dauer: </xsl:text>
-										<xsl:value-of select="Duration" />
-									</xsl:if>
-									<xsl:element name="br" />
-									<xsl:if test="Abdeckungsgrad[not(text()=null or normalize-space(text())='')]">
-										<xsl:text>Abdeckungsgrad </xsl:text>
-										<xsl:value-of select="Abdeckungsgrad" />
-										<xsl:element name="br" />
-									</xsl:if>
-									<xsl:if test="Recommended='true'">
-										<xsl:text>Dieses Lernmedium "brillianideas/brillianIDEAS/xml/Learning.xsl"wurde von einem DHBW Dozenten oder Professor dieser Vorlesung empfohlen</xsl:text>
-										<xsl:element name="br" />
-									</xsl:if>
-									<xsl:if test="Prestigious='true'">
-										<xsl:text>Es handelt sich hierbei um eine renommierte Institution</xsl:text>
-										<xsl:element name="br" />
-									</xsl:if>
-									<xsl:if test="Free_of_charge='true'">
-										<xsl:text>Kosten: Dieser MOOC ist kostenfrei</xsl:text>
-										<xsl:element name="br" />
-									</xsl:if>
-									<xsl:if test="Free_of_charge='false'">
-										<xsl:text>Kosten: Die kosten für diesen MOOC erfährst du auf der Webseite des Anbieters</xsl:text>
-										<xsl:element name="br" />
-									</xsl:if>
-									<xsl:if test="Certificate='true'">
-										<xsl:text>Nach erfolgreichem Beenden des MOOC erhältst du ein Zertifikat</xsl:text>
-										<xsl:element name="br" />
-									</xsl:if>
 								</xsl:element>
 							</xsl:element>
-						</xsl:for-each>
-						
-						<!-- 
-						<xsl:element name="div">
-							<xsl:attribute name="class">
-								<xsl:text>scroll</xsl:text>
-							</xsl:attribute>
-							<xsl:for-each select="./Learning">
-								<xsl:element name="div">
-									<xsl:attribute name="class">
-										<xsl:text>scroll_item </xsl:text>
-										<xsl:value-of select="Titel"></xsl:value-of>
-									</xsl:attribute>
-								</xsl:element>
-							</xsl:for-each>
-						</xsl:element> -->
-						
+						</xsl:for-each>						
 					</xsl:element>
 				</xsl:for-each>
 			</xsl:when>

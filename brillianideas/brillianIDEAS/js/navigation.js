@@ -36,51 +36,51 @@ $(window).on('load', function(){
 		return false;		
 	});
 	 
-	$('.dotstyle-fillup li a').click(function(e){
+	$('.dotstyle-fillup li a').on('click', function(e){
 		e.preventDefault();
 		var target = $(e.target);
 		if (!target.is('.current')){
 			var current = jQuery('.current');
 			
-			if (!(target.parent().hasClass('home') ^ mystickybar.currentstate == "hide"))
-				mystickybar.toggle();
+			if (!(target.parent().hasClass('home')) && mystickybar.$stickybar != undefined)
+				mystickybar.showhide("hide");
 			current.toggleClass('current');
 			target.parent().toggleClass('current');
+			
+			if(target.parent().prev().length == 0){
+				$('#arrowLeft').hide();
+			} else {
+				$('#arrowLeft').show();
+			}
+			if(target.parent().next().length == 0){
+				$('#arrowRight').hide();
+			} else {
+				$('#arrowRight').show();
+			}
 			
 			jQuery.ajax({
 				url: target.attr('href')
 			}).done(function(data){
-				jQuery('#content').empty().unbind().append(data);
+				jQuery('#content').empty().append(data);
 			})
 		}		
 		return false;
 	});
-	
-	dotsspace = $(window).height() - $('#dots').position().top - $('#dots').outerHeight();
-	
-	jQuery.ajax({
-		url: jQuery('.home').find('a').attr('href')
-	}).done(function(data){
-		jQuery('#content').append(data);
-	});
-	
 	/**
 	* Added hash to navigate page
 	*/
 	var nameHash = window.location.hash;
 	if (nameHash.length > 1){
 		$(nameHash).trigger('click');
-	}
-	
-	
+	} else {
+		jQuery.ajax({
+			url: jQuery('.home').find('a').attr('href')
+		}).done(function(data){
+			jQuery('#content').append(data);
+		});
+	};
+	dotsspace = $(window).height() - $('#dots').position().top - $('#dots').outerHeight();	
 });
-
-$(document).ready(function(){	
-	$ = jQuery;	
- 	$('#dots').css({		
- 		top: $('#dots').position().top		
- 	});		
- });
 
 /**
  * 
@@ -112,6 +112,11 @@ function changePage(left){
 	current.toggleClass('current');
 	target.toggleClass('current');
 	
+	if(target.find('a').attr('id') != undefined){
+		window.location = '#' + target.find('a').attr('id');
+	} else {
+		window.location = '#';
+	}
 	jQuery.ajax({
 		url: target.find('a').attr('href')
 	}).done(function(data){

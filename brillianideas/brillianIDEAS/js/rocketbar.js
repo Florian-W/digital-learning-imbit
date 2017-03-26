@@ -6,8 +6,6 @@
  * @author Dominik Stößel <dominikstoessel@gmail.com>
  */
 
-jQuery.noConflict()
-
 /**
 	 * Erzeugt die rocketbar mit untenstehenden Parametern
 	 * @function expstickybar
@@ -24,26 +22,26 @@ function expstickybar(usersetting){
 	var cssfixedsupport=!document.all || document.all && document.compatMode=="CSS1Compat" && window.XMLHttpRequest //check for CSS fixed support
 	if (!cssfixedsupport || window.opera)
 		return
-	jQuery(function($){
+	$(function(){
 		if (setting.externalcontent){
 			thisbar.$ajaxstickydiv=$('<div id="ajaxstickydiv_'+setting.id+'"></div>').appendTo(document.body) //create blank div to house sticky bar DIV
-			thisbar.loadcontent($, setting)
+			thisbar.loadcontent(setting)
 			}
 		else
-			thisbar.init($, setting)
+			thisbar.init(setting)
 	})
 	
 }
 
 expstickybar.prototype={
 
-	loadcontent:function($, setting){
+	loadcontent:function(setting){
 		var thisbar=this
 		$.ajax({
 			url: setting.externalcontent
 		}).done(function(content){
 			thisbar.$ajaxstickydiv.html(content)
-			thisbar.init($, setting)
+			thisbar.init(setting)
 		})
 
 	},
@@ -54,22 +52,20 @@ expstickybar.prototype={
 	 * @param {Boolean} anim: Wenn true wird mit der eingestellten Geschwindigkeit ein-/ausgeblendet
 	 */
 	showhide:function(keyword, anim){
-		
 		var thisbar=this;
-		$=jQuery;
 		
 		if(thisbar.currentstate == keyword)		
  			return;
 		
-		var barSize= jQuery('.content').outerHeight();
+		var barSize= $('.content').outerHeight();
 		var finalpx=(keyword=="show")? 0 : - barSize;
-		var positioncss=(thisbar.setting.position=="bottom")? {bottom:finalpx} : {top:finalpx};
+		var positioncss={bottom:finalpx};
 		thisbar.$stickybar.finish().animate(	positioncss, anim ? thisbar.setting.speed : 0);
 		
 		
-		jQuery('#dots').finish().animate({
-				top: (keyword=="show"?'-':'+') + '=' + barSize + 'px'
-			}, thisbar.setting.speed);
+		$('#dots').finish().animate({
+				bottom: finalpx + barSize
+			}, anim ? thisbar.setting.speed : 0);
 		
 		thisbar.currentstate=keyword
 	},
@@ -79,18 +75,18 @@ expstickybar.prototype={
 		this.showhide(state, true)
 	},
 
-	init:function($, setting){
+	init:function(setting){
 		
 		var thisbar=this;
-		this.$stickybar=jQuery('#'+setting.id);
+		this.$stickybar=$('#'+setting.id);
 		
 		this.$stickybar.css('visibility', 'hidden');
 		
 		this.$stickybar.waitForImages().done(function(){
 			thisbar.$stickybar.css('visibility', 'visible');
 			thisbar.$stickybar.animate({ bottom: '-' + thisbar.$stickybar.outerHeight() }, 0).animate({
-				bottom: '-' + jQuery('.content').outerHeight()
-			}, thisbar.setting.speed * (thisbar.$stickybar.outerHeight() / jQuery('.content').outerHeight() - 1), "swing", (thisbar.toggle).bind(thisbar));
+				bottom: '-' + $('.content').outerHeight()
+			}, thisbar.setting.speed * (thisbar.$stickybar.outerHeight() / $('.content').outerHeight() - 1), "swing", ($('.current').hasClass('home')) ? (thisbar.toggle).bind(thisbar) : undefined);
 		});
 		
 		this.height = this.$stickybar.outerHeight();
@@ -99,11 +95,6 @@ expstickybar.prototype={
 			
 		setting.peekamount=Math.min(this.height, setting.peekamount);
 		this.setting=setting;
-		
-		if (setting.revealtype=="mouseover")
-			this.$stickybar.bind("mouseclick touchmove swipe mouseenter mouseleave", function(e){
-				thisbar.showhide((e.type == "mouseenter" || e.type == "mouseclick" || e.type == "touchmove")? "show" : "hide", true);
-			});
 		
 		this.$indicators = this.$stickybar.find('img[data-openimage]'); //find images within bar with data-openimage attribute
 		this.$stickybar.find('a[href=togglebar]').click(function(){ //find links within bar with href=#togglebar and assign toggle behavior to them
@@ -121,11 +112,11 @@ expstickybar.prototype={
  			if(!target.is('a'))		
  				target = target.parent();		
  					
- 			var targetURL = target.attr('href');		
- 			var clickTarget = $('.dotstyle-fillup a[href="' + targetURL + '"]');		
+ 			var targetURL = target.attr('href');
+			var targetID = targetURL.substr(targetURL.indexOf('#'), targetURL.length);
+ 			var clickTarget = $(targetID);		
+			window.location = targetID;
  			clickTarget.trigger('click');	
-			if( target.attr('id').length > 0)
-				window.location = '#' + target.attr('id');
  			return false;		
  		});
 	}
@@ -134,9 +125,8 @@ expstickybar.prototype={
 
 var mystickybar=new expstickybar({
 	id: "rocketbar", //id des rocketbar DIV in content file oder id des inline DIV
-	position:'bottom', //'top' oder 'bottom'
 	revealtype:'manual', //'mouseover' oder 'manual' um rocketbar ausschließlich über Klick auf das img zu togglen
 	peekamount:48, //Anzahl an Pixeln die bei geschlossener Rocketbar sichtbar sein sollen. Bei den aktuell 48 wird genau das img und der transparente Teil der rocketbar gezeigt.
 	externalcontent:'./content/rocketbarcontent.htm', //Pfad zur rocketbar content file auf dem Server oder "" wenn Inhalt inline auf der Seite definiert werden soll.
 	speed:500 //Dauer der toggle-Animation (in millisecs)
-})
+});
