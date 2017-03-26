@@ -8,18 +8,6 @@ var dotsspace;
 
 $(window).on('load', function(){
 	$ = jQuery;
-	/**
-	* Added hash to navigate page
-	*/
-	var nameHash = window.location.hash;
-	switch(nameHash) {
-		case "#imbit":
-			changePage(false);
-			break;
-		case "#digitalLearning":
-			changePage(true);
-			break;
-	}
 	
 	jQuery(document).on("swiperight",function(e){
 		if($(e.target).is('p,a,img,h1,h2,h3,h4,h5,span')) return false;	
@@ -75,6 +63,14 @@ $(window).on('load', function(){
 	}).done(function(data){
 		jQuery('#content').append(data);
 	});
+	
+	/**
+	* Added hash to navigate page
+	*/
+	var nameHash = window.location.hash;
+	if (nameHash.length > 1){
+		$(nameHash).trigger('click');
+	}
 	
 	
 });
