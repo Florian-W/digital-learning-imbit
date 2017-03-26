@@ -75,7 +75,7 @@ var digitalLearning = function (file) {
             $('.flipcard:not(.flipped), .axistext').fadeIn();
         } else if (target.is('#grid')){ // skips startup animation if grid is clicked
         	// two times finish to stop both animation queues
-        	$('#site').find('*').finish().finish();
+        	$('#site').find('*').velocity("finish").velocity("finish");
         } else if (target.is('.menuSubject')){
         	$('.contentWrapper').hide().filter('[data-bind="' + target.data('target') + '"]').show();
         	$('.menuSubject').removeClass('active');
