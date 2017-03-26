@@ -56,9 +56,7 @@
 														</xsl:attribute>
 													</xsl:if>
 													<xsl:attribute name="target">
-					                                    <xsl:text>
-					                                        _blank
-					                                    </xsl:text>
+					                                    					<xsl:text>_blank</xsl:text>
 													</xsl:attribute>
 													<xsl:element name="img">
 														<xsl:attribute name="src">
