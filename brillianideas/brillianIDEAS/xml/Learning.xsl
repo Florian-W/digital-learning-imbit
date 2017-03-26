@@ -152,7 +152,7 @@
 					                            </xsl:text>
 											</xsl:attribute>
 											<xsl:element name="img">
-												<xsl:attribute name="src">./../img/AppStores/google.png</xsl:attribute>
+												<xsl:attribute name="src">img/AppStores/google.png</xsl:attribute>
 												<xsl:attribute name="alt">Im PlayStore herunterladen</xsl:attribute>
 												<xsl:attribute name="class">AppStoreBadge</xsl:attribute>
 											</xsl:element>
