@@ -123,7 +123,9 @@ expstickybar.prototype={
  					
  			var targetURL = target.attr('href');		
  			var clickTarget = $('.dotstyle-fillup a[href="' + targetURL + '"]');		
- 			clickTarget.trigger('click');		
+ 			clickTarget.trigger('click');	
+			if( target.attr('id').length > 0)
+				window.location = '#' + target.attr('id');
  			return false;		
  		});
 	}
