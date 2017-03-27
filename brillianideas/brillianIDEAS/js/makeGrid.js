@@ -143,7 +143,10 @@ function noOverlayInGrid(id, x, y, count, key){
 		 */
 		loop = false;
 		
-		$.each(arr, function(k, value){
+		var l = arr.length;
+		for (var i=0;i<l; i++) {
+			var k = i;
+			var value = arr[i];
 			/**
 			 * Setze Schleifenvariablen für innere Schleife (Value [0] entspricht der ID Position im Array
 			 */
@@ -171,17 +174,14 @@ function noOverlayInGrid(id, x, y, count, key){
 					card_position.bottom = card_position.top + card_position.height;
 					card_position.right = card_position.left + card_position.width;
 					
-					$card.css({
-						left: card_position.left + "px",
-						top:  card_position.top + "px"
-					});
+					
 					movedInCombo[value[0]][id] = true;
 				}
 				loop = true;
 				return false;
 			}
 			return true;
-		})
+		}
 	} while(loop);
 	/**
 	 * Daten werden für die Sicherstellung der Reihenfolge des Erscheinens gesetzt
@@ -190,6 +190,10 @@ function noOverlayInGrid(id, x, y, count, key){
 	/**
 	 * Stellt die Garantie aus, dass die Positionierung abgeschlossen wurde
 	 */
+	 $card.css({
+		left: card_position.left + "px",
+		top:  card_position.top + "px"
+	});
 	return $.Deferred().promise();
 };
 
@@ -210,8 +214,8 @@ var makeGrid = function makeGrid(view){
 			*/
 			var cleanUp = function(){
 				$('#grid').css('cursor', 'default');
-				$('.flipcard, .flipcard .face').css('pointer-events', 'auto').css('cursor', 'pointer');
-				$('h1, h2, h3, h4 ,h5, p').each(function(i,e){
+				$('.flipcard, .flipcard .face', '#grid').css('pointer-events', 'auto').css('cursor', 'pointer');
+				$('h1, h2, h3, h4 ,h5, p', '#grid').each(function(i,e){
 					$(e).html(($(e).html().replace(/\s{2,}/g," ")));
 				});
 				$('.flipcard').each(function(i,e){$(e).css({width: $(e).children('.front').outerWidth(true) +1, height: $(e).children('.front').outerHeight(true)+1})})
@@ -259,13 +263,14 @@ var makeGrid = function makeGrid(view){
 				$('#xaxis').velocity({opacity: 1, width: $display.width}, {duration: 1000});
 				$('#yaxis').velocity({opacity: 1, height: $display.height}, {duration: 1000});
 				
-				
-				$.each(digitalLearningArray, function(key, value){
+				var l = digitalLearningArray.length;
+				for (var i=0;i<l; i++) {
+					var key = i;
+					var value = digitalLearningArray[i];
 					var v = value.slice();
 					v.push(key);
 					noOverlayInGrid.apply({}, v); // {@link noOverlayInGrid}
-				});
-				
+				}			
 				
 				var $flipcards = $('#grid').children('.flipcard');
 				$flipcards.detach();
@@ -325,22 +330,23 @@ var makeGrid = function makeGrid(view){
 			 */
 			var fillTiles = function(){
 				$(document).ajaxStop(function() {
+					$('#site').append($ajaxdiv);
 					$('#site').waitForImages().done(animateTiles);
 					 $(this).unbind("ajaxStop");
 				});
-				$('#grid').children('.flipcard').each(fillTile);
+				$ajaxdiv.children('.flipcard').each(fillTile);
 			}	      
 						
             /**
              * loads all tiles and displays the heading
              */
-			 
+			var $ajaxdiv;
 			$('#animation_welcome').velocity({opacity: 1}, {duration: 1000}),
 			$.ajax({
 				url:'xml/index.php?base=grid&type=learning',
 				complete: function (data) {
 					if(data.status == 200){
-						$.when($('#site').append(data.responseText)).done(fillTiles);
+						$.when($ajaxdiv = $(data.responseText)).done(fillTiles);
 					} else {
 						alert('Something went wrong. Please reload this page later. If this keeps occuring, please contact the mail stated in the imprint.');
 					}
