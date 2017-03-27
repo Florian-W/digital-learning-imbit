@@ -80,7 +80,7 @@ expstickybar.prototype={
 		var thisbar=this;
 		this.$stickybar=$('#'+setting.id);
 		
-		this.$stickybar.css('visibility', 'hidden').css('bottom', '-200px');
+		this.$stickybar.css('visibility', 'hidden');
 		
 		this.$stickybar.waitForImages().done(function(){
 			thisbar.$stickybar.css('visibility', 'visible');
