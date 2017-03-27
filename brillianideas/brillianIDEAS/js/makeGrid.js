@@ -115,12 +115,12 @@ function noOverlayInGrid(id, x, y, count, key){
 	 * Setze lokale Variablen
 	 */ 
 	var loop;
-	var $card = $('#' + id);
+	var $card = $('#' + id, '#grid');
 	var arr = digitalLearningArray.slice(0, key);
 	var e_position;
 	var card_position;
 	
-	$front= $card.find('.front');
+	$front= $card.find('.front', '#' + id);
 	/**
 	 * Zeilenumbrüche verhindern
 	 */
@@ -150,7 +150,7 @@ function noOverlayInGrid(id, x, y, count, key){
 			/**
 			 * Setze Schleifenvariablen für innere Schleife (Value [0] entspricht der ID Position im Array
 			 */
-			e_position = new rectOutlines($('#' + value[0]));
+			e_position = new rectOutlines($('#' + value[0], '#grid'));
 			if(rectOutlines.overlaps(e_position, card_position)){
 				/**
 				* verhindert, dass eine Karte zwischen zwei bereits platzierten hin und her pingt
@@ -161,20 +161,14 @@ function noOverlayInGrid(id, x, y, count, key){
 
 					card_position.bottom = card_position.top + card_position.height;
 					card_position.right = card_position.left + card_position.width;
-					
-					$card.css({
-						left: card_position.left + "px",
-						top:  card_position.top + "px"
-					});
-					
+				
 				} else {
 					card_position.left = ((card_position.left <= e_position.left)?e_position.left - card_position.width:e_position.right);
 					card_position.top = ((card_position.top <= e_position.top)? e_position.top - card_position.height : e_position.bottom);
 
 					card_position.bottom = card_position.top + card_position.height;
 					card_position.right = card_position.left + card_position.width;
-					
-					
+
 					movedInCombo[value[0]][id] = true;
 				}
 				loop = true;
