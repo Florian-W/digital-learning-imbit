@@ -94,7 +94,7 @@ expstickybar.prototype={
 		});
 		
 		this.$stickybar.waitForImages().done(function(){
-			thisbar.showhide($('.current').hasClass('home') ? "show" : "hide");
+			thisbar.showhide($('.current').hasClass('home') ? "show" : "hide", true);
 		});
 		
 		/**		
