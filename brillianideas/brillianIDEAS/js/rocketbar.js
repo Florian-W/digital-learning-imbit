@@ -54,18 +54,17 @@ expstickybar.prototype={
 	showhide:function(keyword, anim){
 		var thisbar=this;
 		
+		thisbar.$stickybar.css('visibility', 'visible');
+		
 		var barSize= $('.content').outerHeight();
 		var finalpx=(keyword=="show")? 0 : - barSize;
 		var positioncss={bottom:finalpx};
-		thisbar.$stickybar.velocity("finish").velocity(	positioncss, anim ? thisbar.setting.speed : 0);
+		thisbar.$stickybar.velocity(positioncss, anim ? thisbar.setting.speed : 0);
 		
 		
 		$('#dots').velocity("finish").velocity({
 				bottom: finalpx + barSize
 			}, anim ? thisbar.setting.speed : 0);
-		
-		
-		thisbar.$stickybar.css('visibility', 'visible');
 		
 		thisbar.currentstate=keyword
 	},
