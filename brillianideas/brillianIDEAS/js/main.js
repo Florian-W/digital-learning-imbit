@@ -19,7 +19,7 @@ var digitalLearning = function (file) {
             !(
                 $('#animation_yaxis_top').height() > $('#animation_yaxis_bottom').height()
             ) ? $('#animation_yaxis_bottom').height() : $('#animation_yaxis_top').height()
-        )) * 2 + dotsspace +10),
+        )) * 2 + dotsspace + 30),
         xoffset: 2 * (
             (
                 $('#animation_xaxis_left').width() > $('#animation_xaxis_right').width()
@@ -44,13 +44,6 @@ var digitalLearning = function (file) {
             	//toggle() shows/ hides element depending on current state
             $('#backlayer').toggle();
             $('.flipcard:not(.flipped), .axistext').fadeOut();
-            if(location.hash.indexOf(target.data('target')) != -1){
-                window.location = '#' + window.location.hash.substr(1).split('.').slice(0, -1).join('.');
-            } else {
-                window.location = window.location.hash.length > 1 ?
-                    '#' + window.location.hash.substr(1).split('.').concat(target.data('target')).join('.') :
-                    '#' + target.data('target');
-            }
         } else if (target.is('.list > .learning, .list > .learning *')) {
             var ltarget = target;
             while (!ltarget.is('.list > .learning'))
@@ -59,18 +52,12 @@ var digitalLearning = function (file) {
             ltarget.parent().toggle();
             ltarget.parent().siblings('.category').toggle();
             ltarget.parent().siblings('[data-bind=' + data + ']').toggle();
-            if(location.hash.indexOf(target.data('target')) != -1){
-                window.location = '#' + window.location.hash.substr(1).split('.').slice(0, -1).join('.');
-            } else {
-                window.location = '#' + window.location.hash.substr(1).split('.').concat(ltarget.data('target')).join('.');
-            }
         } else if (target.is('.face.back')) {
             // Do Nothing
         } else if (target.is('#backlayer')) {
             $('.flipped').find('.selectionbody > .learning').hide();
             $('.flipped').find('.list, .category').show();
             $('.flipped').removeClass('flipped');
-            window.location = '#';
             target.fadeOut();
             $('.flipcard:not(.flipped), .axistext').fadeIn();
         } else if (target.is('#grid')){ // skips startup animation if grid is clicked

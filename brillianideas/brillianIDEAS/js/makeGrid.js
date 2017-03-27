@@ -361,7 +361,7 @@ var makeGrid = function makeGrid(view){
 	                    $('#IT').css('left', Math.floor(0.7 * $display.width)).css('top', Math.floor(0.2 * $display.height)).attr('data-sid', '3'),
 	                    $('#W').css('left', Math.floor(0.68 * $display.width)).css('top', Math.floor(0.7 * $display.height)).attr('data-sid', '4'),
 	                    $('#MG').css('left', Math.floor(0.35 * $display.width)).css('top', Math.floor(0.35 * $display.height)).attr('data-sid', '5'),
-	                    $('#title_imbit').velocity({left: $display.width - $('#title_imbit').outerWidth() / 2 - 50, top: 0}, {duration: 1000}),
+	                    $('#title_imbit').attr('style', '').velocity({right: 50, top: 0}, {duration: 1000}),
 	                    
 	                    $('#grid').css('opacity', 1)
 	                ).done(function () {
