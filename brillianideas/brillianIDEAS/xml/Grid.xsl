@@ -34,9 +34,6 @@
                                 <xsl:attribute name="class">
                                     <xsl:text>face back</xsl:text>
                                 </xsl:attribute>
-				<xsl:attribute name="style">
-					    <xsl:text>display: none;</xsl:text>
-				</xsl:attribute>
                                 <xsl:attribute name="data-bind">
                                     <xsl:value-of select="Abbr"/>
                                 </xsl:attribute>
