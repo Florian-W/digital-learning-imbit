@@ -42,6 +42,7 @@ for (i = 0; i < digitalLearningArray.length; i++){
 		movedInCombo[digitalLearningArray[i][0]][digitalLearningArray[0][j]] = false;
 	}
 }
+var card_array = new Array();
 
 /**
  * Sammelklasse für die Außendimensionen von Elementen des Koordinatensystems. Alle Koordinaten sind berechnet von der oberen linken Ecke des Dokuments.
@@ -140,6 +141,7 @@ function noOverlayInGrid(id, x, y, count, key){
 	});
 
 	card_position = new rectOutlines($card);
+	card_array[id] = card_position;
 	
 	do {
 		/**
@@ -154,7 +156,11 @@ function noOverlayInGrid(id, x, y, count, key){
 			/**
 			 * Setze Schleifenvariablen für innere Schleife (Value [0] entspricht der ID Position im Array
 			 */
-			e_position = new rectOutlines($('#' + value[0], '#grid'));
+			 if (card_position[value[0]] == undefined){
+				e_position = new rectOutlines($('#' + value[0], '#grid'));
+			 } else {
+				 e_position = card_position[value[0]];
+			 }
 			if(rectOutlines.overlaps(e_position, card_position)){
 				/**
 				* verhindert, dass eine Karte zwischen zwei bereits platzierten hin und her pingt
@@ -192,7 +198,7 @@ function noOverlayInGrid(id, x, y, count, key){
 		left: card_position.left + "px",
 		top:  card_position.top + "px"
 	});
-	return $.Deferred().promise();
+	card_array[id] = card_position;
 };
 
 /**
