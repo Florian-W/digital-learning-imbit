@@ -359,6 +359,10 @@ img.thumb {
     text-align:center;
 }
 
+#animation_welcome, #title_imbit{
+	transform: none !important;
+}
+
 #animation_l, #animation_im, #animation_b, #animation_it, #animation_mg, #animation_welcome {
     z-index: 1;
     font-family: 'Caveat Brush';
