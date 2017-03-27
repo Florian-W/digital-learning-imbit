@@ -327,8 +327,8 @@ var makeGrid = function makeGrid(view){
 			var $ajaxdiv;
 			$('#animation_welcome').css({
 					transform: 'none',
-					left: window.innerWidth - $('#animation_welcome').outerWidth() / 2,
-					top: window.innerHeight - $('#animation_welcome').outerHeight() / 2					
+					left: (window.innerWidth - $('#animation_welcome').outerWidth()) / 2,
+					top: (window.innerHeight - $('#animation_welcome').outerHeight()) / 2					
 				}).velocity({opacity: 1}, {duration: 1000}),
 			$.ajax({
 				url:'xml/index.php?base=grid&type=learning',
@@ -355,10 +355,10 @@ var makeGrid = function makeGrid(view){
                     $('#grid').css("width", $display.width).css("height", $display.height).append('<div id="backlayer"></div>');
                 }),
                 $('#title_imbit').css({
-					transform: 'initial !important',
+					transform: 'none',
 					left: 'initial !important',
-					right: window.innerWidth - $('#title_imbit').outerWidth() / 2,
-					top: window.innerHeight - $('#title_imbit').outerHeight() / 2					
+					right: (window.innerWidth - $('#title_imbit').outerWidth()) / 2,
+					top: (window.innerHeight - $('#title_imbit').outerHeight()) / 2					
 				}).velocity({opacity: 1}, {duration: 1000})
             ).done(function () {
 	                $.when(
