@@ -283,18 +283,14 @@
 										</xsl:otherwise>
 									</xsl:choose>
 								</xsl:when>
-								<xsl:when test="Type[text()='youtube']/../Youtube_ID[not(text()=null or normalize-space(text())='')]">
+								<xsl:when test="Youtube_ID[not(text()=null or normalize-space(text())='')]">
 									<xsl:choose>
 										<xsl:when test="Embedded = 'true' and $withLink = 'true'">
 											<xsl:element name="iframe">
 												<xsl:attribute name="src">
-											<xsl:text>
-												https://www.youtube.com/embed/
-											</xsl:text>
+													<xsl:text>https://www.youtube.com/embed/</xsl:text>
 													<xsl:value-of select="Youtube_ID"/>
-													<xsl:text>
-												?rel=0&amp;controls=0&amp;showinfo=0
-											</xsl:text>
+													<xsl:text>?rel=0&amp;controls=0&amp;showinfo=0</xsl:text>
 												</xsl:attribute>
 												<xsl:attribute name="width">500</xsl:attribute>
 												<xsl:attribute name="height">295</xsl:attribute>

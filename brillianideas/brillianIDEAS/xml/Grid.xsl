@@ -87,6 +87,8 @@
 							<xsl:attribute name="data-bind">
                                 <xsl:value-of select="NewContent_Video"/>
                             </xsl:attribute>
+							<xsl:choose>
+							<xsl:when test="NewContent_Video[not(text()=null or normalize-space(text())='')]">
 							<xsl:element name="iframe">
 								<xsl:attribute name="width">560</xsl:attribute>
 								<xsl:attribute name="height">315</xsl:attribute>
@@ -94,6 +96,10 @@
 								<xsl:attribute name="frameborder">0</xsl:attribute>
 								<xsl:attribute name="allowfullscreen">allowfullscreen</xsl:attribute>
 							</xsl:element>
+							</xsl:when>
+							<xsl:otherwise>							
+							</xsl:otherwise>
+							</xsl:choose>
 							<xsl:element name="div">
 								<xsl:attribute name="class">beschreibung</xsl:attribute>
 							 	<xsl:element name="p">
@@ -106,7 +112,8 @@
 									<xsl:attribute name="type">button</xsl:attribute>
 									<xsl:attribute name="class"><xsl:value-of select="ButtonClass"/></xsl:attribute>
 									<xsl:attribute name="id"><xsl:value-of select="ButtonID"/></xsl:attribute>
-									Quiz
+										Quiz<xsl:element name="br"></xsl:element>
+										<xsl:value-of select="NewContent_Name"/>
 								</xsl:element>
 							</xsl:element>
                     	</xsl:element>
