@@ -286,7 +286,7 @@ var makeGrid = function makeGrid(view){
 				$.ajax({
 					url: 'xml/index.php?base=learning&type=' + $obj.attr('id'), 
 					complete: function (data) {
-						$obj.find('.back').append(data.responseText.replace(/(?:\r\n|\r|\n)/g," ").replace(/<(br|BR)[ \/]{0,2}>/g, " "));
+						$obj.find('.selectionbody').append(data.responseText.replace(/(?:\r\n|\r|\n)/g," ").replace(/<(br|BR)[ \/]{0,2}>/g, " "));
 					}
 				});
 			}
