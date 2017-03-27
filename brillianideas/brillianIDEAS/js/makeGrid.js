@@ -50,61 +50,60 @@ var card_array = new Array();
  * @param $div { Object } Die Flipcard (Koordinatensystem-Element), dessen Dimensionen berechnet werden sollen.
  * @author Nick London <nick.london94@gmail.com>
  */
-class rectOutlines{
-	constructor($div) {
-		// uses css selectors (left and top) because jQuery.position() does not update fast enough
-		// uses .front child of flipcard, because some browsers recognize divs with no set size as 0x0
-		/**
-		 * @member {Number} rectOutlines#left 
-		 */
-		var $cssLeft = $div.css('left');
-		var $cssTop = $div.css('top');
-		var $cssWidth = $div.css('width');
-		var $cssHeight = $div.css('height');
-		this.left = parseInt($cssLeft.replace(/^\D+/g, ''));
-		if (isNaN(this.left))
-			this.left = parseInt($cssLeft);
-		/**
-		 * @member {Number} rectOutlines#top 
-		 */
-		this.top = parseInt($cssTop.replace(/^\D+/g, ''));
-		if (isNaN(this.top))
-			this.top = parseInt($cssTop);
-		/**
-		 * @member {Number} rectOutlines#width 
-		 */
-		this.width = parseInt($cssWidth.replace(/^\D+/g, '')) + 20;
-		/**
-		 * @member {Number} rectOutlines#height 
-		 */
-		this.height = parseInt($cssHeight.replace(/^\D+/g, '')) + 20;
-		/**
-		 * @member {Number} rectOutlines#right 
-		 */
-		this.right = this.left + this.width;
-		/**
-		 * @member {Number} rectOutlines#bottom 
-		 */
-		this.bottom = this.top + this.height;
-	}
+function rectOutlines($div){
+	// uses css selectors (left and top) because jQuery.position() does not update fast enough
+	// uses .front child of flipcard, because some browsers recognize divs with no set size as 0x0
 	/**
-	 * @function rectOutlines#overlapsWidth
-	 * @param {rectOutlines} target Zweites Objekt des selben Typen
-	 * @returns {boolean} Wahr, wenn das Vergleichsobjekt dieses Objekt überlappt
+	 * @member {Number} rectOutlines#left 
 	 */
-	overlapsWith(target){
-		return rectOutlines.overlaps(this, target);
-	}
+	var $cssLeft = $div.css('left');
+	var $cssTop = $div.css('top');
+	var $cssWidth = $div.css('width');
+	var $cssHeight = $div.css('height');
+	this.left = parseInt($cssLeft.replace(/^\D+/g, ''));
+	if (isNaN(this.left))
+		this.left = parseInt($cssLeft);
 	/**
-	 * @function rectOutlines.overlaps
-	 * @param {rectOutlines} obj1 Vergleichsobjekt
-	 * @param {rectOutlines} obj2 Vergleichsobjekt
-	 * @returns {boolean} Wahr, wenn die Vergleichsobjekte sich überlappen
+	 * @member {Number} rectOutlines#top 
 	 */
-	static overlaps(obj1, obj2){
-		return !(obj1.bottom <= obj2.top || obj2.bottom <= obj1.top || obj1.right <= obj2.left || obj2.right <= obj1.left ); 
-	}
+	this.top = parseInt($cssTop.replace(/^\D+/g, ''));
+	if (isNaN(this.top))
+		this.top = parseInt($cssTop);
+	/**
+	 * @member {Number} rectOutlines#width 
+	 */
+	this.width = parseInt($cssWidth.replace(/^\D+/g, '')) + 20;
+	/**
+	 * @member {Number} rectOutlines#height 
+	 */
+	this.height = parseInt($cssHeight.replace(/^\D+/g, '')) + 20;
+	/**
+	 * @member {Number} rectOutlines#right 
+	 */
+	this.right = this.left + this.width;
+	/**
+	 * @member {Number} rectOutlines#bottom 
+	 */
+	this.bottom = this.top + this.height;
 };
+/**
+ * @function rectOutlines#overlapsWidth
+ * @param {rectOutlines} target Zweites Objekt des selben Typen
+ * @returns {boolean} Wahr, wenn das Vergleichsobjekt dieses Objekt überlappt
+ */
+rectOutlines.prototype.overlapsWith = function(target){
+	return rectOutlines.overlaps(this, target);
+};
+/**
+ * @function rectOutlines.overlaps
+ * @param {rectOutlines} obj1 Vergleichsobjekt
+ * @param {rectOutlines} obj2 Vergleichsobjekt
+ * @returns {boolean} Wahr, wenn die Vergleichsobjekte sich überlappen
+ */
+rectOutlines.prototype.overlaps = function(obj1, obj2){
+	return !(obj1.bottom <= obj2.top || obj2.bottom <= obj1.top || obj1.right <= obj2.left || obj2.right <= obj1.left ); 
+};
+
 /**
  * Verschiebt alle Elemente im Koordinatensystem, sodass sie sich nicht überschneiden.
  * @function noOverlayInGrid
