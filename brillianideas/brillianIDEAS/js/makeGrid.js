@@ -56,23 +56,27 @@ class rectOutlines{
 		/**
 		 * @member {Number} rectOutlines#left 
 		 */
-		this.left = parseInt($div.css('left').replace(/^\D+/g, ''));
+		var $cssLeft = $div.css('left');
+		var $cssTop = $div.css('top');
+		var $cssWidth = $div.css('width');
+		var $cssHeight = $div.css('height');
+		this.left = parseInt($cssLeft.replace(/^\D+/g, ''));
 		if (isNaN(this.left))
-			this.left = parseInt($div.css('left'));
+			this.left = parseInt($cssLeft);
 		/**
 		 * @member {Number} rectOutlines#top 
 		 */
-		this.top = parseInt($div.css('top').replace(/^\D+/g, ''));
+		this.top = parseInt($cssTop.replace(/^\D+/g, ''));
 		if (isNaN(this.top))
-			this.top = parseInt($div.css('top'));
+			this.top = parseInt($cssTop);
 		/**
 		 * @member {Number} rectOutlines#width 
 		 */
-		this.width = parseInt($div.css('width').replace(/^\D+/g, '')) + 20;
+		this.width = parseInt($cssWidth.replace(/^\D+/g, '')) + 20;
 		/**
 		 * @member {Number} rectOutlines#height 
 		 */
-		this.height = parseInt($div.css('height').replace(/^\D+/g, '')) + 20;
+		this.height = parseInt($cssHeight.replace(/^\D+/g, '')) + 20;
 		/**
 		 * @member {Number} rectOutlines#right 
 		 */
@@ -293,7 +297,7 @@ var makeGrid = function makeGrid(view){
 									var $newElement = $obj.find('.list').parent().append(
 										learningData.responseText.replace(/(?:\r\n|\r|\n)/g," ").replace(/<(br|BR)[ \/]{0,2}>/g, " ")
 									).children('.learning');
-									$newElement.fadeOut();
+									$newElement.hide();
 								}
 							});
 						});
