@@ -90,8 +90,6 @@ expstickybar.prototype={
 		});
 		
 		this.height = this.$stickybar.outerHeight();
-		
-		this.currentstate="hide";
 			
 		setting.peekamount=Math.min(this.height, setting.peekamount);
 		this.setting=setting;
