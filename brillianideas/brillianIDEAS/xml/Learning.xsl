@@ -236,6 +236,7 @@
 						<xsl:choose>
 							<xsl:when test="$detail = 'true'">
 								<xsl:attribute name="data-bind"><xsl:value-of select="GUID" /></xsl:attribute>
+								<xsl:attribute name="style"><xsl:text>display: none;</xsl:text></xsl:attribute>
 							</xsl:when>
 							<xsl:otherwise>
 								<xsl:attribute name="data-target"><xsl:value-of select="GUID" /></xsl:attribute>

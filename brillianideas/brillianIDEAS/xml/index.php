@@ -174,14 +174,7 @@ function prepareTransformLearning(){
     if(isset($_GET['guid'])){
         $guid = $_GET['guid'];
     }
-    $detail = 'false';
-    if(isset($_GET['detail'])){
-        $detail = $_GET['detail'];
-    }
-    $withLink = 'false';
-    if(isset($_GET['withLink'])){
-        $withLink = $_GET['withLink'];
-    }
+    
     $class = '';
     if(isset($_GET['class'])){
         $class = $_GET['class'];
@@ -190,14 +183,40 @@ function prepareTransformLearning(){
     if(isset($_GET['type'])){
         $type = $_GET['type'];
     }
-    $params = array(
+	?>
+	<div class="list">
+	<?php
+    $detail = 'false';
+    
+    $withLink = 'false';
+	
+	  $params = array(
         'guid' => $guid,
         'detail' => $detail,
         'class' => $class,
         'type' => $type,
         'withLink' => $withLink
     );
-
+	
+    transformXML(
+        $GLOBALS['files']['learnings_xml'],
+        $GLOBALS['files']['learnings_xsl'],
+        $params
+    );
+	?></div><?php
+	
+	$detail = 'true';
+    
+    $withLink = 'true';
+	
+	  $params = array(
+        'guid' => $guid,
+        'detail' => $detail,
+        'class' => $class,
+        'type' => $type,
+        'withLink' => $withLink
+    );
+	
     transformXML(
         $GLOBALS['files']['learnings_xml'],
         $GLOBALS['files']['learnings_xsl'],
