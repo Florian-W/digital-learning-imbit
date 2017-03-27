@@ -92,7 +92,7 @@ function rectOutlines($div){
  * @returns {boolean} Wahr, wenn das Vergleichsobjekt dieses Objekt überlappt
  */
 rectOutlines.prototype.overlapsWith = function(target){
-	return rectOutlines.overlaps(this, target);
+	return !(this.bottom <= target.top || target.bottom <= this.top || this.right <= target.left || target.right <= this.left ); 
 };
 
 /**
