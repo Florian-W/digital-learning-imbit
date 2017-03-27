@@ -172,15 +172,14 @@ function noOverlayInGrid(id, x, y, count, key){
 					movedInCombo[value[0]][id] = true;
 				}
 				loop = true;
-				return false;
+				break;
 			}
-			return true;
 		}
 	} while(loop);
 	/**
 	 * Daten werden für die Sicherstellung der Reihenfolge des Erscheinens gesetzt
 	 */
-	$card.attr('data-sid', "" + count);
+	$card.data('sid', count);
 	/**
 	 * Stellt die Garantie aus, dass die Positionierung abgeschlossen wurde
 	 */
