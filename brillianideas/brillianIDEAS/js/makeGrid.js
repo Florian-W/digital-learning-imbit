@@ -42,6 +42,7 @@ for (i = 0; i < digitalLearningArray.length; i++){
 		movedInCombo[digitalLearningArray[i][0]][digitalLearningArray[0][j]] = false;
 	}
 }
+var card_array = new Array();
 
 /**
  * Sammelklasse für die Außendimensionen von Elementen des Koordinatensystems. Alle Koordinaten sind berechnet von der oberen linken Ecke des Dokuments.
@@ -49,61 +50,51 @@ for (i = 0; i < digitalLearningArray.length; i++){
  * @param $div { Object } Die Flipcard (Koordinatensystem-Element), dessen Dimensionen berechnet werden sollen.
  * @author Nick London <nick.london94@gmail.com>
  */
-class rectOutlines{
-	constructor($div) {
-		// uses css selectors (left and top) because jQuery.position() does not update fast enough
-		// uses .front child of flipcard, because some browsers recognize divs with no set size as 0x0
-		/**
-		 * @member {Number} rectOutlines#left 
-		 */
-		var $cssLeft = $div.css('left');
-		var $cssTop = $div.css('top');
-		var $cssWidth = $div.css('width');
-		var $cssHeight = $div.css('height');
-		this.left = parseInt($cssLeft.replace(/^\D+/g, ''));
-		if (isNaN(this.left))
-			this.left = parseInt($cssLeft);
-		/**
-		 * @member {Number} rectOutlines#top 
-		 */
-		this.top = parseInt($cssTop.replace(/^\D+/g, ''));
-		if (isNaN(this.top))
-			this.top = parseInt($cssTop);
-		/**
-		 * @member {Number} rectOutlines#width 
-		 */
-		this.width = parseInt($cssWidth.replace(/^\D+/g, '')) + 20;
-		/**
-		 * @member {Number} rectOutlines#height 
-		 */
-		this.height = parseInt($cssHeight.replace(/^\D+/g, '')) + 20;
-		/**
-		 * @member {Number} rectOutlines#right 
-		 */
-		this.right = this.left + this.width;
-		/**
-		 * @member {Number} rectOutlines#bottom 
-		 */
-		this.bottom = this.top + this.height;
-	}
+function rectOutlines($div){
+	// uses css selectors (left and top) because jQuery.position() does not update fast enough
+	// uses .front child of flipcard, because some browsers recognize divs with no set size as 0x0
 	/**
-	 * @function rectOutlines#overlapsWidth
-	 * @param {rectOutlines} target Zweites Objekt des selben Typen
-	 * @returns {boolean} Wahr, wenn das Vergleichsobjekt dieses Objekt überlappt
+	 * @member {Number} rectOutlines#left 
 	 */
-	overlapsWith(target){
-		return rectOutlines.overlaps(this, target);
-	}
+	var $cssLeft = $div.css('left');
+	var $cssTop = $div.css('top');
+	var $cssWidth = $div.css('width');
+	var $cssHeight = $div.css('height');
+	this.left = parseInt($cssLeft.replace(/^\D+/g, ''));
+	if (isNaN(this.left))
+		this.left = parseInt($cssLeft);
 	/**
-	 * @function rectOutlines.overlaps
-	 * @param {rectOutlines} obj1 Vergleichsobjekt
-	 * @param {rectOutlines} obj2 Vergleichsobjekt
-	 * @returns {boolean} Wahr, wenn die Vergleichsobjekte sich überlappen
+	 * @member {Number} rectOutlines#top 
 	 */
-	static overlaps(obj1, obj2){
-		return !(obj1.bottom <= obj2.top || obj2.bottom <= obj1.top || obj1.right <= obj2.left || obj2.right <= obj1.left ); 
-	}
+	this.top = parseInt($cssTop.replace(/^\D+/g, ''));
+	if (isNaN(this.top))
+		this.top = parseInt($cssTop);
+	/**
+	 * @member {Number} rectOutlines#width 
+	 */
+	this.width = parseInt($cssWidth.replace(/^\D+/g, '')) + 20;
+	/**
+	 * @member {Number} rectOutlines#height 
+	 */
+	this.height = parseInt($cssHeight.replace(/^\D+/g, '')) + 20;
+	/**
+	 * @member {Number} rectOutlines#right 
+	 */
+	this.right = this.left + this.width;
+	/**
+	 * @member {Number} rectOutlines#bottom 
+	 */
+	this.bottom = this.top + this.height;
 };
+/**
+ * @function rectOutlines#overlapsWidth
+ * @param {rectOutlines} target Zweites Objekt des selben Typen
+ * @returns {boolean} Wahr, wenn das Vergleichsobjekt dieses Objekt überlappt
+ */
+rectOutlines.prototype.overlapsWith = function(target){
+	return !(this.bottom <= target.top || target.bottom <= this.top || this.right <= target.left || target.right <= this.left ); 
+};
+
 /**
  * Verschiebt alle Elemente im Koordinatensystem, sodass sie sich nicht überschneiden.
  * @function noOverlayInGrid
@@ -140,6 +131,7 @@ function noOverlayInGrid(id, x, y, count, key){
 	});
 
 	card_position = new rectOutlines($card);
+	card_array[id] = card_position;
 	
 	do {
 		/**
@@ -154,8 +146,12 @@ function noOverlayInGrid(id, x, y, count, key){
 			/**
 			 * Setze Schleifenvariablen für innere Schleife (Value [0] entspricht der ID Position im Array
 			 */
-			e_position = new rectOutlines($('#' + value[0], '#grid'));
-			if(rectOutlines.overlaps(e_position, card_position)){
+			 if (card_array[value[0]] == undefined){
+				e_position = new rectOutlines($('#' + value[0], '#grid'));
+			 } else {
+				 e_position = card_array[value[0]];
+			 }
+			if(card_position.overlapsWith(e_position)){
 				/**
 				* verhindert, dass eine Karte zwischen zwei bereits platzierten hin und her pingt
 				*/
@@ -176,15 +172,14 @@ function noOverlayInGrid(id, x, y, count, key){
 					movedInCombo[value[0]][id] = true;
 				}
 				loop = true;
-				return false;
+				break;
 			}
-			return true;
 		}
 	} while(loop);
 	/**
 	 * Daten werden für die Sicherstellung der Reihenfolge des Erscheinens gesetzt
 	 */
-	$card.attr('data-sid', "" + count);
+	$card.data('sid', count);
 	/**
 	 * Stellt die Garantie aus, dass die Positionierung abgeschlossen wurde
 	 */
@@ -192,6 +187,7 @@ function noOverlayInGrid(id, x, y, count, key){
 		left: card_position.left + "px",
 		top:  card_position.top + "px"
 	});
+	card_array[id] = card_position;
 	return $.Deferred().promise();
 };
 
@@ -239,7 +235,7 @@ var makeGrid = function makeGrid(view){
 			var animateTile = function(obj){
 				var $obj = $(obj);
 				$obj.velocity({opacity: 1}, {
-					duration: 500, 
+					duration: 250, 
 					complete: (($obj.next().length == 0) ? cleanUp : function(){
 						animateTile($obj.next());
 					})
@@ -257,26 +253,27 @@ var makeGrid = function makeGrid(view){
 				 */
 				$('#grid').css('cursor', 'pointer').css("width", $display.width).css("height", $display.height).css('opacity', 1);
 				$('.flipcard, .flipcard .face').css('pointer-events', 'none').css('cursor', 'default');
-				$('#animation_welcome').velocity({left: 50 + $('#animation_welcome').outerWidth() / 2, top: 100}, {duration: 1000});
+				$('#animation_welcome').velocity({left: 50 + $('#animation_welcome').outerWidth() / 2, top: 100}, {duration: 500});
 				$('#xaxis').velocity({opacity: 1, width: $display.width}, {duration: 1000});
 				$('#yaxis').velocity({opacity: 1, height: $display.height}, {duration: 1000});
 				
+				var defArr = new Array();
 				var l = digitalLearningArray.length;
 				for (var i=0;i<l; i++) {
 					var key = i;
 					var value = digitalLearningArray[i];
 					var v = value.slice();
 					v.push(key);
-					noOverlayInGrid.apply({}, v); // {@link noOverlayInGrid}
+					defArr.push(noOverlayInGrid.apply({}, v)); // {@link noOverlayInGrid}
 				}			
-				
-				var $flipcards = $('#grid').children('.flipcard');
-				$flipcards.detach();
-				$flipcards.sort(sortTiles);
-				$('#grid').html($flipcards).append('<div id="backlayer"></div>');
-				$flipcards = $('#grid').children('.flipcard');
-				animateTile($flipcards.first());
-			
+				$.when(defArr).done(function(){
+					var $flipcards = $('#grid').children('.flipcard');
+					$flipcards.detach();
+					$flipcards.sort(sortTiles);
+					$('#grid').html($flipcards).append('<div id="backlayer"></div>');
+					$flipcards = $('#grid').children('.flipcard');
+					animateTile($flipcards.first());
+				});
 			}
 			
 			/**
@@ -287,20 +284,9 @@ var makeGrid = function makeGrid(view){
 			var loadLearnings = function(obj){
 				var $obj = $(obj);
 				$.ajax({
-					url: 'xml/index.php?base=learning&withLink=false&type=' + $obj.attr('id'), 
+					url: 'xml/index.php?base=learning&type=' + $obj.attr('id'), 
 					complete: function (data) {
-						$obj.find('.list').append(data.responseText);
-						$obj.find('.list').children().each(function (index, element) {
-							$.ajax({
-								url: 'xml/index.php?base=learning&withLink=true&detail=true&guid=' + $(element).data('target'), 
-								complete: function (learningData) {
-									var $newElement = $obj.find('.list').parent().append(
-										learningData.responseText.replace(/(?:\r\n|\r|\n)/g," ").replace(/<(br|BR)[ \/]{0,2}>/g, " ")
-									).children('.learning');
-									$newElement.hide();
-								}
-							});
-						});
+						$obj.find('.list').append(data.responseText.replace(/(?:\r\n|\r|\n)/g," ").replace(/<(br|BR)[ \/]{0,2}>/g, " "));
 					}
 				});
 			}
