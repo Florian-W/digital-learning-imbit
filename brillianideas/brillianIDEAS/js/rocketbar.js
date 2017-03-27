@@ -67,6 +67,9 @@ expstickybar.prototype={
 				bottom: finalpx + barSize
 			}, anim ? thisbar.setting.speed : 0);
 		
+		
+		thisbar.$stickybar.css('visibility', 'visible');
+		
 		thisbar.currentstate=keyword
 	},
 	
@@ -83,9 +86,8 @@ expstickybar.prototype={
 		this.$stickybar.css('visibility', 'hidden');
 		
 		this.$stickybar.waitForImages().done(function(){
-			thisbar.showhide("hide");
-			thisbar.$stickybar.css('visibility', 'visible');
-			if ($('.current').hasClass('home'))
+			thisbar.showhide("show");
+			if (!$('.current').hasClass('home'))
 				thisbar.toggle();
 		});
 		
