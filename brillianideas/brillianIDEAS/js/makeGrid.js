@@ -235,7 +235,7 @@ var makeGrid = function makeGrid(view){
 			var animateTile = function(obj){
 				var $obj = $(obj);
 				$obj.velocity({opacity: 1}, {
-					duration: 250, 
+					duration: 400, 
 					complete: (($obj.next().length == 0) ? cleanUp : function(){
 						animateTile($obj.next());
 					})
@@ -253,9 +253,9 @@ var makeGrid = function makeGrid(view){
 				 */
 				$('#grid').css('cursor', 'pointer').css("width", $display.width).css("height", $display.height).css('opacity', 1);
 				$('.flipcard, .flipcard .face').css('pointer-events', 'none').css('cursor', 'default');
-				$('#animation_welcome').velocity({left: 50 + $('#animation_welcome').outerWidth() / 2, top: 100}, {duration: 500});
-				$('#xaxis').velocity({opacity: 1, width: $display.width}, {duration: 1000});
-				$('#yaxis').velocity({opacity: 1, height: $display.height}, {duration: 1000});
+				$('#animation_welcome').velocity({left: 50 + $('#animation_welcome').outerWidth() / 2, top: 100}, 1000);
+				$('#xaxis').velocity({opacity: 1, width: $display.width}, 1000);
+				$('#yaxis').velocity({opacity: 1, height: $display.height}, 1000);
 				
 				var defArr = new Array();
 				var l = digitalLearningArray.length;
