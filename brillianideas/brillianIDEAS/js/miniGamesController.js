@@ -73,7 +73,7 @@ var currentNumberOfDragAndDropElements = 0; // zählt die Anzahl der Elemente de
 				var jsonFileName = getUrlParameter('jsonFileName');
 				var jsonFilePath = "json/" + jsonFileName;
 
-				console.log("json in use: " + jsonFileName)
+				
 
 
 				/**
@@ -113,12 +113,10 @@ var currentNumberOfDragAndDropElements = 0; // zählt die Anzahl der Elemente de
 									questionBank[i][j + 2] = data.quizGames[z].quizlist[i].optionFalse[j];
 								}
 
-								console.log(questionBank.toString())
-
 
 
 							}
-							console.log("Questions of quizlist: " + questionBank)
+							
 
 						} //for(var z=0;z<numberOfQuizLists;z++) {
 					}
@@ -130,8 +128,8 @@ var currentNumberOfDragAndDropElements = 0; // zählt die Anzahl der Elemente de
 						 */
 						for (var k = 0; k < numberOfDragAndDropGames; k++) {
 
-							console.log("k ist: " + k)
-							console.log("Anzahl dragdropGames: " + numberOfDragAndDropGames)
+							
+							
 
 
 							var tempDragAndDropBankFirstDimension = new Array();
@@ -147,33 +145,23 @@ var currentNumberOfDragAndDropElements = 0; // zählt die Anzahl der Elemente de
 								tempDragAndDropBank[i] = new Array();
 
 								tempDragAndDropBank[i][0] = data.DragDropGames[k].DragAndDropList[i].id;
-								console.log("Array Stelle " + "[" + i + "]" + "[" + 0 + "] " +
-									"Wird die id: " + data.DragDropGames[k].DragAndDropList[i].id +
-									" gelegt")
 
 								tempDragAndDropBank[i][1] = data.DragDropGames[k].DragAndDropList[i].target;
-								console.log("Array Stelle " + "[" + i + "]" + "[" + 1 + "] " +
-									"Wird das target: " + data.DragDropGames[k].DragAndDropList[i].target +
-									" gelegt")
 								tempDragAndDropBank[i][2] = data.DragDropGames[k].DragAndDropList[i].elementtext;
-								console.log("Array Stelle " + "[" + i + "]" + "[" + 2 + "] " +
-									"Wird der elementtext: " + data.DragDropGames[k].DragAndDropList[i]
-									.elementtext +
-									" gelegt")
 
 
 								/**
 								 * 		Lese game title, description, sowie targettitle aus dem ersten Unterelment im json aus und speichere es im Array an vordefinierter Stelle
 								 */
 								 if (data.DragDropGames[k].DragAndDropList[i].id == 'd0') {
-									console.log("heere")
-									console.log("Title: " + data.DragDropGames[k].DragAndDropList[i].title)
+									
+									
 									dragAndDropGameTitle = data.DragDropGames[k].DragAndDropList[i].title;
 									dragAndDropGameDescription = data.DragDropGames[k].DragAndDropList[i]
 										.description;
 									numberOfTargets = data.DragDropGames[k].DragAndDropList[i].targetNumber;
 
-									console.log("numberOfTargets: " + numberOfTargets)
+									
 
 									tempDragAndDropBank[i][3] = dragAndDropGameTitle;
 									tempDragAndDropBank[i][4] = dragAndDropGameDescription;
@@ -726,17 +714,13 @@ var currentNumberOfDragAndDropElements = 0; // zählt die Anzahl der Elemente de
 
 			for (var i = 0; i < dragAndDropBank1.length; i++) {
 				var currentId = "#d" + i;
-				console.log("currentId" + currentId)
+				
 				$(currentId).remove();
 			}
 
 			$('#goToNextQuiz').remove();
 
 		}
-
-		console.log("Länge von Array" + tempArray.length)
-		console.log("Inhalt von Array " + numberOfCurrentDragDropGame + " " +
-			tempArray)
 
 		/**
 		 * füge die neuen draggable div Elemente hinzu, sowie den Spieletitel und Beschreibung und setze die Daten hinein
@@ -844,14 +828,12 @@ var currentNumberOfDragAndDropElements = 0; // zählt die Anzahl der Elemente de
 
 					if ($(currentid).attr('target') == "target1") {
 
-						console.log("parentOfcurrentElement" + $("d" + i).parent())
-
 						if ($(document.getElementById("d" + i)).parents("#target1").length == 1) {
 							document.getElementById("d" + i).style.backgroundColor =
 								"rgb(153,27,51)";
 						} else {
 							document.getElementById("d" + i).style.backgroundColor = "red";
-							console.log("Test")
+							
 							wrongElement++;
 
 						}
@@ -862,7 +844,7 @@ var currentNumberOfDragAndDropElements = 0; // zählt die Anzahl der Elemente de
 								"rgb(153,27,51)";
 						} else {
 							document.getElementById("d" + i).style.backgroundColor = "red";
-							console.log("Test")
+							
 							wrongElement++;
 						}
 					}
@@ -873,22 +855,15 @@ var currentNumberOfDragAndDropElements = 0; // zählt die Anzahl der Elemente de
 
 
 					var currentid = "#d" + i;
-					console.log("currentElement: " + "d" + i)
-					console.log("parentOfcurrentElement" + $("d" + i).parent().text())
-					console.log("$('d'+i).target " + $(currentid).attr('target'))
 
 					if ($(currentid).attr('target') == "target1") {
-						console.log(
-							"dfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
-						)
-						console.log("parentOfcurrentElement" + $("d" + i).parent())
 
 						if ($(document.getElementById("d" + i)).parents("#target1").length == 1) {
 							document.getElementById("d" + i).style.backgroundColor =
 								"rgb(153,27,51)";
 						} else {
 							document.getElementById("d" + i).style.backgroundColor = "red";
-							console.log("Test")
+							
 							wrongElement++;
 
 						}
@@ -899,7 +874,7 @@ var currentNumberOfDragAndDropElements = 0; // zählt die Anzahl der Elemente de
 								"rgb(153,27,51)";
 						} else {
 							document.getElementById("d" + i).style.backgroundColor = "red";
-							console.log("Test")
+							
 							wrongElement++;
 						}
 					} else if ($(currentid).attr('target') == "target3") {
@@ -908,7 +883,7 @@ var currentNumberOfDragAndDropElements = 0; // zählt die Anzahl der Elemente de
 								"rgb(153,27,51)";
 						} else {
 							document.getElementById("d" + i).style.backgroundColor = "red";
-							console.log("Test")
+							
 							wrongElement++;
 						}
 					}
@@ -918,22 +893,15 @@ var currentNumberOfDragAndDropElements = 0; // zählt die Anzahl der Elemente de
 
 
 					var currentid = "#d" + i;
-					console.log("currentElement: " + "d" + i)
-					console.log("parentOfcurrentElement" + $("d" + i).parent().text())
-					console.log("$('d'+i).target " + $(currentid).attr('target'))
 
 					if ($(currentid).attr('target') == "target1") {
-						console.log(
-							"dfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
-						)
-						console.log("parentOfcurrentElement" + $("d" + i).parent())
 
 						if ($(document.getElementById("d" + i)).parents("#target1").length == 1) {
 							document.getElementById("d" + i).style.backgroundColor =
 								"rgb(153,27,51)";
 						} else {
 							document.getElementById("d" + i).style.backgroundColor = "red";
-							console.log("Test")
+							
 							wrongElement++;
 
 						}
@@ -944,7 +912,7 @@ var currentNumberOfDragAndDropElements = 0; // zählt die Anzahl der Elemente de
 								"rgb(153,27,51)";
 						} else {
 							document.getElementById("d" + i).style.backgroundColor = "red";
-							console.log("Test")
+							
 							wrongElement++;
 						}
 					} else if ($(currentid).attr('target') == "target3") {
@@ -953,7 +921,7 @@ var currentNumberOfDragAndDropElements = 0; // zählt die Anzahl der Elemente de
 								"rgb(153,27,51)";
 						} else {
 							document.getElementById("d" + i).style.backgroundColor = "red";
-							console.log("Test")
+							
 							wrongElement++;
 						}
 					} else if ($(currentid).attr('target') == "target4") {
@@ -962,19 +930,19 @@ var currentNumberOfDragAndDropElements = 0; // zählt die Anzahl der Elemente de
 								"rgb(153,27,51)";
 						} else {
 							document.getElementById("d" + i).style.backgroundColor = "red";
-							console.log("Test")
+							
 							wrongElement++;
 						}
 					}
 				}
 
-				console.log("Wrong Elements:" + wrongElement)
+				
 
 			}
 
 
 
-			console.log("wrongElement just before if: " + wrongElement)
+			
 
 			/**
 			 * Wenn alle ELemente richtig zugeordnet werden zeige einen "Weiter" button an und ein pop-up
@@ -1002,7 +970,7 @@ var currentNumberOfDragAndDropElements = 0; // zählt die Anzahl der Elemente de
 				 */
 				$("#goToNextQuiz").click(function() {
 					numberOfDragAndDropGamesPlayed++;
-					console.log("In goToNextQuiz stage is :" + stage)
+					
 
 					if (numberOfDragAndDropGames > 1) {
 
@@ -1075,8 +1043,6 @@ var currentNumberOfDragAndDropElements = 0; // zählt die Anzahl der Elemente de
 			'<div class="questionText">' +
 			questionBank[questionNumber][0] +
 			'</div>')
-		console.log("questionNumber is: " + questionNumber)
-		console.log("questionBank is: " + JSON.stringify(questionBank))
 
 		// Speichere alle Antworten in einem separatem array "q", welches dann geshuffelt wird
 
@@ -1091,7 +1057,7 @@ var currentNumberOfDragAndDropElements = 0; // zählt die Anzahl der Elemente de
 
 		}
 		if (optionsCounter > 2) {
-			console.log("shufffffffffffffffline")
+			
 			shuffle(contentArray);
 			/**
 			 * 	füge das neutrale Bob Gesicht hinzu, falls es nicht schon da ist
@@ -1105,7 +1071,7 @@ var currentNumberOfDragAndDropElements = 0; // zählt die Anzahl der Elemente de
 
 			// ...und dann angezeigt
 			for (i = 0; i < contentArray.length; i++) {
-				console.log("heeaaaaaaaaaaaaaaaaaa")
+				
 				$(stage).append(contentArray[i]);
 			}
 
@@ -1185,7 +1151,7 @@ var currentNumberOfDragAndDropElements = 0; // zählt die Anzahl der Elemente de
 						if (this.id == 1) {
 
 							var randomNumber = Math.floor(Math.random() * 2) + 1;
-							console.log("randomNumber :" + randomNumber)
+							
 
 							// Ersetze neutralen Bob mit einem der zwei positiven Bob
 							if (randomNumber == 1) {
@@ -1207,7 +1173,7 @@ var currentNumberOfDragAndDropElements = 0; // zählt die Anzahl der Elemente de
 								'#85ba1c');
 
 							var randomNumber = Math.floor(Math.random() * 2) + 1;
-							console.log("randomNumber :" + randomNumber)
+							
 
 							// Ersetze neutralen Bob mit einem der zwei negativen Bob
 							if (randomNumber == 1) {
@@ -1323,7 +1289,7 @@ var currentNumberOfDragAndDropElements = 0; // zählt die Anzahl der Elemente de
 	 *
 	 */
 	function changeQuestion(numberOfDragAndDropGamesPlayed) {
-		console.log("QuestionNUmber:" + questionNumber)
+		
 
 		if (stage == "#game1") {
 			stage2 = "#game1";
@@ -1391,7 +1357,6 @@ var currentNumberOfDragAndDropElements = 0; // zählt die Anzahl der Elemente de
  	 * @param  {String} a Dateipfad zum Bobbild
 	 */
 	function changeBobImage(a) {
-		console.log("picture is: " + a)
-		console.log("Element selected: " + $('.bob'))
+		
 		document.getElementById('bobId').src = a;
 	}
