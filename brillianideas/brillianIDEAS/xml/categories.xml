@@ -133,24 +133,6 @@ Genutzt werden virtuelle Welten unter anderem für Rollenspiele, Gruppenarbeiten
 		<Description>Bei der Lernform Spiel geht es darum, bestimmte Verhaltensweisen und  Entscheidungsmuster von Menschen nachzuvollziehen und den Umgang mit Konflikten zu üben. Somit wird erfahrungsbezogenes Lernen ermöglicht. Mithilfe des Spiels werden Wahrnehmungen erweitert und bestimmte Verhaltensmuster diskutiert und reflektiert. </Description>
 		<Thumb>img/thumbs/typen/spiel.png</Thumb>
 	</LearningType>
-	<LearningType>
-		<Medium>Youtube</Medium>
-		<Abbr>youtube</Abbr>
-		<Description>YouTube ist ein Internet-Videoportal, in dem man unter anderem kostenlose Lernvideos ansehen und hochladen kann. Außerdem können Nutzer jedem Video eine Bewertung geben oder einen Kommentar hinterlassen. Dadurch lässt sich erkennen, wie hoch die Akzeptanz der Lernenden bezüglich des Inhalts und dessen Darstellung ist. Im Vergleich zum Unterricht an der Tafel, wo es keine digitalen Animationen gibt, können Sachverhalte und Zusammenhänge in Lernvideos mit Hilfe von digitalem Text, Grafiken und Animationen besser verdeutlicht werden.</Description>
-		<Thumb>img/thumbs/typen/youtube.png</Thumb>
-	</LearningType>
-	<LearningType>
-		<Medium>App</Medium>
-		<Abbr>app</Abbr>
-		<Description>"Eine App (oder auch mobile App) ist eine Anwendungssoftware für die Nutzung auf mobilen Endgeräten. Apps decken alle möglichen Anwendungsbereiche ab und können somit auch Lernsoftware oder Lernunterstützungs-Tools darstellen, die für den mobilen Gebrauch optimiert sind (z.B Wörterbücher, Quiz-Apps, Formelsammlungen, Rechentrainer uvm.). Der zentrale Vorteil gegenüber mobilen Webseiten zur Lernunterstützung ist, dass Inhalte von Apps in der Regel offline bereitgestellt werden, was ein flexibleres Lernen und Vertiefen möglich macht. Oftmals werden als Motivationsfaktor Elemente des Lernens und Spielens miteinander kombiniert, oder es findet eine Art ""Gamification"" statt, bei der sich App-User in Bestenlisten miteinander messen können."</Description>
-		<Thumb>img/thumbs/typen/app.jpg</Thumb>
-	</LearningType>
-	<LearningType>
-		<Medium>Website</Medium>
-		<Abbr>website</Abbr>
-		<Description>Natürlich ist auch die traditionelle "Webseite" , bzw. das Besuchen dessen, eine digitalen Lernform. Mittels Webseiten kann man allerlei Wissen und Informationen mit der Welt teilen oder sich diese aneignen. Die auf dieser Webseite aufgeführten Wikis, Social Networks etc. pp. sind allesamt verschiedene Arten von Webseiten und sind auch zum Teil als Apps verfügbar.</Description>
-		<Thumb>img/thumbs/typen/website.png</Thumb>
-	</LearningType>
 	<Groups>
 		<Group-Name>Wirtschaftsinformatik</Group-Name>
 		<Abbr>WI</Abbr>
