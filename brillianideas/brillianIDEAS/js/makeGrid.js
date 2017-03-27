@@ -285,18 +285,9 @@ var makeGrid = function makeGrid(view){
 			var loadLearnings = function(obj){
 				var $obj = $(obj);
 				$.ajax({
-					url: 'xml/index.php?base=learning&withLink=false&type=' + $obj.attr('id'), 
+					url: 'xml/index.php?base=learning&type=' + $obj.attr('id'), 
 					complete: function (data) {
-						$obj.find('.list').append(data.responseText);
-					}
-				});
-				$.ajax({
-					url: 'xml/index.php?base=learning&withLink=true&detail=true&type=' + $obj.attr('id'), 
-					complete: function (learningData) {
-						var $newElement = $obj.find('.list').parent().append(
-							learningData.responseText.replace(/(?:\r\n|\r|\n)/g," ").replace(/<(br|BR)[ \/]{0,2}>/g, " ")
-						).children('.learning');
-						$newElement.hide();
+						$obj.find('.list').append(data.responseText.replace(/(?:\r\n|\r|\n)/g," ").replace(/<(br|BR)[ \/]{0,2}>/g, " "));
 					}
 				});
 			}

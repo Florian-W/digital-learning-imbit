@@ -40,9 +40,6 @@
                                 </xsl:element>
                             </xsl:if>
                         </xsl:element>
-                        <xsl:element name="div">
-                            <xsl:attribute name="class"><xsl:text>list</xsl:text></xsl:attribute>
-                        </xsl:element>
                     </xsl:element>
                 </xsl:for-each>
             </xsl:when>
