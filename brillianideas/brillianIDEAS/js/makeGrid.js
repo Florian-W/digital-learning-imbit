@@ -326,7 +326,7 @@ var makeGrid = function makeGrid(view){
              */
 			var $ajaxdiv;
 			$('#animation_welcome').css({
-					transform: 'initial !important',
+					transform: 'none',
 					left: window.innerWidth - $('#animation_welcome').outerWidth() / 2,
 					top: window.innerHeight - $('#animation_welcome').outerHeight() / 2					
 				}).velocity({opacity: 1}, {duration: 1000}),
@@ -372,7 +372,7 @@ var makeGrid = function makeGrid(view){
 	                    $('#MG').css('left', Math.floor(0.35 * $display.width)).css('top', Math.floor(0.35 * $display.height)).attr('data-sid', '5'),
 	                    $('#title_imbit').css({
 							left: 'initial',
-							transform: 'initial'
+							transform: 'none'
 						}).velocity({right: 50, top: 0}, {duration: 1000}),
 	                    
 	                    $('#grid').css('opacity', 1)
