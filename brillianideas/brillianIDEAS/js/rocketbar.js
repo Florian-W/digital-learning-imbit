@@ -105,19 +105,21 @@ expstickybar.prototype={
 		/**		
  		 * Navigations Trigger für Navigation auf in "targetURL" spezifizierte Unterseite
  		 */		
- 		$('.navLink, .navLink *').click(function(e){		
- 			e.preventDefault();		
- 			var target = $(e.target);		
- 					
- 			if(!target.is('a'))		
- 				target = target.parent();		
- 					
- 			var targetURL = target.attr('href');
-			var targetID = targetURL.substr(targetURL.indexOf('#'), targetURL.length);
- 			var clickTarget = $(targetID);		
-			window.location = targetID;
- 			clickTarget.trigger('click');	
- 			return false;		
+ 		$('.navLink, .navLink *').click(function(e){
+			if (!(window.location.pathname.substr(window.location.pathname.lastIndexOf('/'), window.location.pathname.lenth) != 'index.html')){
+				e.preventDefault();
+				var target = $(e.target);		
+
+				if(!target.is('a'))		
+					target = target.parent();		
+
+				var targetURL = target.attr('href');
+				var targetID = targetURL.substr(targetURL.indexOf('#'), targetURL.length);
+				var clickTarget = $(targetID);		
+				window.location = targetID;
+				clickTarget.trigger('click');	
+				return false;	
+			}
  		});
 	}
 }
