@@ -212,8 +212,7 @@ var makeGrid = function makeGrid(view){
 				/*$('h1, h2, h3, h4 ,h5, p', '#grid').each(function(i,e){
 					$(e).html(($(e).html().replace(/\s{2,}/g," ")));
 				});*/
-				$('.flipcard').each(function(i,e){$(e).css({width: $(e).children('.front').outerWidth(true) +1, height: $(e).children('.front').outerHeight(true)+1})})
-				$('.flipcard').each(function(i,e){$(e).css({minWidth: $(e).children('.front').outerWidth(true) +1, minHeight: $(e).children('.front').outerHeight(true)+1})})
+				$('.flipcard').each(function(i,e){$(e).css({width: $(e).children('.front').outerWidth(true) +1, height: $(e).children('.front').outerHeight(true)+1, minWidth: $(e).children('.front').outerWidth(true) +1, minHeight: $(e).children('.front').outerHeight(true)+1})})
 			}
 			/**
 			 * Sortiert die einzelnen Lerntypen auf Basis des data-sid Attributes
