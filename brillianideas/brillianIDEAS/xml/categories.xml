@@ -142,7 +142,7 @@ Genutzt werden virtuelle Welten unter anderem für Rollenspiele, Gruppenarbeiten
 	<LearningType>
 		<Medium>App</Medium>
 		<Abbr>app</Abbr>
-		<Description>"Eine App (oder auch mobile App) ist eine Anwendungssoftware für die Nutzung auf mobilen Endgeräten. Apps decken alle möglichen Anwendungsbereiche ab und können somit auch Lernsoftware oder Lernunterstützungs-Tools darstellen, die für den mobilen Gebrauch optimiert sind (z.B Wörterbücher, Quiz-Apps, Formelsammlungen, Rechentrainer uvm.). Der zentrale Vorteil gegenüber mobilen Webseiten zur Lernunterstützung ist, dass Inhalte von Apps in der Regel offline bereitgestellt werden, was ein flexibleres Lernen und Vertiefen möglich macht. Oftmals werden als Motivationsfaktor Elemente des Lernens & Spielens miteinander kombiniert, oder es findet eine Art ""Gamification"" statt, bei der sich App-User in Bestenlisten miteinander messen können."</Description>
+		<Description>"Eine App (oder auch mobile App) ist eine Anwendungssoftware für die Nutzung auf mobilen Endgeräten. Apps decken alle möglichen Anwendungsbereiche ab und können somit auch Lernsoftware oder Lernunterstützungs-Tools darstellen, die für den mobilen Gebrauch optimiert sind (z.B Wörterbücher, Quiz-Apps, Formelsammlungen, Rechentrainer uvm.). Der zentrale Vorteil gegenüber mobilen Webseiten zur Lernunterstützung ist, dass Inhalte von Apps in der Regel offline bereitgestellt werden, was ein flexibleres Lernen und Vertiefen möglich macht. Oftmals werden als Motivationsfaktor Elemente des Lernens und Spielens miteinander kombiniert, oder es findet eine Art ""Gamification"" statt, bei der sich App-User in Bestenlisten miteinander messen können."</Description>
 		<Thumb>img/thumbs/typen/app.jpg</Thumb>
 	</LearningType>
 	<LearningType>
