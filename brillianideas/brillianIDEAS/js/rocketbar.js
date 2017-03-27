@@ -86,9 +86,7 @@ expstickybar.prototype={
 		this.$stickybar.css('visibility', 'hidden');
 		
 		this.$stickybar.waitForImages().done(function(){
-			thisbar.showhide("show");
-			if (!$('.current').hasClass('home'))
-				thisbar.toggle();
+			thisbar.showhide($('.current').hasClass('home') ? "show" : "hide");
 		});
 		
 		this.height = this.$stickybar.outerHeight();
