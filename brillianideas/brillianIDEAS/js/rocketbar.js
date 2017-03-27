@@ -86,7 +86,7 @@ expstickybar.prototype={
 			thisbar.$stickybar.velocity({
 				bottom: '-' + $('.content').outerHeight() 
 			}, thisbar.setting.speed * (thisbar.$stickybar.outerHeight() / $('.content').outerHeight() - 1), "swing", function(){
-				(thisbar.showhide("hide")).bind(thisbar);
+				thisbar.showhide("hide");
 				thisbar.$stickybar.css('visibility', 'visible');
 				($('.current').hasClass('home')) ? (thisbar.toggle).bind(thisbar) : undefined;
 			});
