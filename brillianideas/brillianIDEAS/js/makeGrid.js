@@ -236,7 +236,9 @@ var makeGrid = function makeGrid(view){
 				var $obj = $(obj);
 				$obj.velocity({opacity: 1}, {
 					duration: 400, 
-					complete: (($obj.next().length == 0) ? cleanUp : function(){
+					complete: (($obj.next().length == 0) ? function(){
+						cleanUp();
+					}: function(){
 						animateTile($obj.next());
 					})
 				});
