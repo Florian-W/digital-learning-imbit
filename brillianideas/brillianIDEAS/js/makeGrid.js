@@ -94,15 +94,6 @@ function rectOutlines($div){
 rectOutlines.prototype.overlapsWith = function(target){
 	return rectOutlines.overlaps(this, target);
 };
-/**
- * @function rectOutlines.overlaps
- * @param {rectOutlines} obj1 Vergleichsobjekt
- * @param {rectOutlines} obj2 Vergleichsobjekt
- * @returns {boolean} Wahr, wenn die Vergleichsobjekte sich überlappen
- */
-rectOutlines.prototype.overlaps = function(obj1, obj2){
-	return !(obj1.bottom <= obj2.top || obj2.bottom <= obj1.top || obj1.right <= obj2.left || obj2.right <= obj1.left ); 
-};
 
 /**
  * Verschiebt alle Elemente im Koordinatensystem, sodass sie sich nicht überschneiden.
@@ -155,12 +146,12 @@ function noOverlayInGrid(id, x, y, count, key){
 			/**
 			 * Setze Schleifenvariablen für innere Schleife (Value [0] entspricht der ID Position im Array
 			 */
-			 if (card_position[value[0]] == undefined){
+			 if (card_array[value[0]] == undefined){
 				e_position = new rectOutlines($('#' + value[0], '#grid'));
 			 } else {
-				 e_position = card_position[value[0]];
+				 e_position = card_array[value[0]];
 			 }
-			if(rectOutlines.overlaps(e_position, card_position)){
+			if(card_position.overlapsWith(e_position)){
 				/**
 				* verhindert, dass eine Karte zwischen zwei bereits platzierten hin und her pingt
 				*/
