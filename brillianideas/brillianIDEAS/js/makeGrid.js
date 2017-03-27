@@ -253,7 +253,7 @@ var makeGrid = function makeGrid(view){
 				 */
 				$('#grid').css('cursor', 'pointer').css("width", $display.width).css("height", $display.height).css('opacity', 1);
 				$('.flipcard, .flipcard .face').css('pointer-events', 'none').css('cursor', 'default');
-				$('#animation_welcome').velocity({left: 50, top: 100}, 1000);
+				$('#animation_welcome').velocity({left: 50, top: 50}, 1000);
 				$('#xaxis').velocity({opacity: 1, width: $display.width}, 1000);
 				$('#yaxis').velocity({opacity: 1, height: $display.height}, 1000);
 				
