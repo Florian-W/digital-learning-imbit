@@ -54,9 +54,6 @@ expstickybar.prototype={
 	showhide:function(keyword, anim){
 		var thisbar=this;
 		
-		if(thisbar.currentstate == keyword)		
- 			return;
-		
 		var barSize= $('.content').outerHeight();
 		var finalpx=(keyword=="show")? 0 : - barSize;
 		var positioncss={bottom:finalpx};
