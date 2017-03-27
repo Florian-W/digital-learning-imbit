@@ -58,11 +58,12 @@ expstickybar.prototype={
 		
 		var barSize= $('.content').outerHeight();
 		var finalpx=(keyword=="show")? 0 : - barSize;
-		var positioncss={bottom:finalpx};
-		thisbar.$stickybar.velocity(positioncss, anim ? thisbar.setting.speed : 0);
+		thisbar.$stickybar.velocity({
+			bottom: finalpx
+		}, anim ? thisbar.setting.speed : 0);
 		
 		
-		$('#dots').velocity("finish").velocity({
+		$('#dots').velocity({
 				bottom: finalpx + barSize
 			}, anim ? thisbar.setting.speed : 0);
 		
