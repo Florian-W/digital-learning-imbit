@@ -231,7 +231,7 @@
 				</xsl:for-each>
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:for-each select="/Learnings/Learning/GUID[contains(text(),$guid)]/../Number[contains(text(), $class)]/../Type[contains(text(), $type)]/..">
+				<xsl:for-each select="/Learnings/Learning/GUID[contains(text(),$guid)]/../Type[contains(text(), $type)]/..">
 					<xsl:element name="div">
 						<xsl:choose>
 							<xsl:when test="$detail = 'true'">

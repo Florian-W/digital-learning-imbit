@@ -286,17 +286,15 @@ var makeGrid = function makeGrid(view){
 					url: 'xml/index.php?base=learning&withLink=false&type=' + $obj.attr('id'), 
 					complete: function (data) {
 						$obj.find('.list').append(data.responseText);
-						$obj.find('.list').children().each(function (index, element) {
-							$.ajax({
-								url: 'xml/index.php?base=learning&withLink=true&detail=true&guid=' + $(element).data('target'), 
-								complete: function (learningData) {
-									var $newElement = $obj.find('.list').parent().append(
-										learningData.responseText.replace(/(?:\r\n|\r|\n)/g," ").replace(/<(br|BR)[ \/]{0,2}>/g, " ")
-									).children('.learning');
-									$newElement.hide();
-								}
-							});
-						});
+					}
+				});
+				$.ajax({
+					url: 'xml/index.php?base=learning&withLink=true&detail=true&type=' + $obj.attr('id'), 
+					complete: function (learningData) {
+						var $newElement = $obj.find('.list').parent().append(
+							learningData.responseText.replace(/(?:\r\n|\r|\n)/g," ").replace(/<(br|BR)[ \/]{0,2}>/g, " ")
+						).children('.learning');
+						$newElement.hide();
 					}
 				});
 			}
