@@ -83,13 +83,9 @@ expstickybar.prototype={
 		this.$stickybar.css('visibility', 'hidden');
 		
 		this.$stickybar.waitForImages().done(function(){
-			thisbar.$stickybar.velocity({
-				bottom: '-' + $('.content').outerHeight() 
-			}, thisbar.setting.speed * (thisbar.$stickybar.outerHeight() / $('.content').outerHeight() - 1), "swing", function(){
-				mystickbar.showhide("hide");
-				mystickbar.$stickybar.css('visibility', 'visible');
-				$('.current').hasClass('home') ? mystickbar.toggle() : undefined;
-			});
+			mystickbar.showhide("hide");
+			mystickbar.$stickybar.css('visibility', 'visible');
+			$('.current').hasClass('home') ? mystickbar.toggle() : undefined;
 		});
 		
 		this.height = this.$stickybar.outerHeight();
