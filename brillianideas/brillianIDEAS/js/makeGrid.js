@@ -189,6 +189,7 @@ function noOverlayInGrid(id, x, y, count, key){
 		top:  card_position.top + "px"
 	});
 	card_array[id] = card_position;
+	return $.Deferred().promise();
 };
 
 /**
@@ -235,7 +236,7 @@ var makeGrid = function makeGrid(view){
 			var animateTile = function(obj){
 				var $obj = $(obj);
 				$obj.velocity({opacity: 1}, {
-					duration: 500, 
+					duration: 250, 
 					complete: (($obj.next().length == 0) ? cleanUp : function(){
 						animateTile($obj.next());
 					})
@@ -253,26 +254,27 @@ var makeGrid = function makeGrid(view){
 				 */
 				$('#grid').css('cursor', 'pointer').css("width", $display.width).css("height", $display.height).css('opacity', 1);
 				$('.flipcard, .flipcard .face').css('pointer-events', 'none').css('cursor', 'default');
-				$('#animation_welcome').velocity({left: 50 + $('#animation_welcome').outerWidth() / 2, top: 100}, {duration: 1000});
+				$('#animation_welcome').velocity({left: 50 + $('#animation_welcome').outerWidth() / 2, top: 100}, {duration: 500});
 				$('#xaxis').velocity({opacity: 1, width: $display.width}, {duration: 1000});
 				$('#yaxis').velocity({opacity: 1, height: $display.height}, {duration: 1000});
 				
+				var defArr = new Array();
 				var l = digitalLearningArray.length;
 				for (var i=0;i<l; i++) {
 					var key = i;
 					var value = digitalLearningArray[i];
 					var v = value.slice();
 					v.push(key);
-					noOverlayInGrid.apply({}, v); // {@link noOverlayInGrid}
+					defArr.push(noOverlayInGrid.apply({}, v)); // {@link noOverlayInGrid}
 				}			
-				
-				var $flipcards = $('#grid').children('.flipcard');
-				$flipcards.detach();
-				$flipcards.sort(sortTiles);
-				$('#grid').html($flipcards).append('<div id="backlayer"></div>');
-				$flipcards = $('#grid').children('.flipcard');
-				animateTile($flipcards.first());
-			
+				$.when(defArr).done(function(){
+					var $flipcards = $('#grid').children('.flipcard');
+					$flipcards.detach();
+					$flipcards.sort(sortTiles);
+					$('#grid').html($flipcards).append('<div id="backlayer"></div>');
+					$flipcards = $('#grid').children('.flipcard');
+					animateTile($flipcards.first());
+				});
 			}
 			
 			/**
