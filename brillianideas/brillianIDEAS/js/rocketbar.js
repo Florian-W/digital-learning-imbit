@@ -85,10 +85,6 @@ expstickybar.prototype={
 		
 		this.$stickybar.css('visibility', 'hidden');
 		
-		this.$stickybar.waitForImages().done(function(){
-			thisbar.showhide($('.current').hasClass('home') ? "show" : "hide");
-		});
-		
 		this.height = this.$stickybar.outerHeight();
 			
 		setting.peekamount=Math.min(this.height, setting.peekamount);
@@ -98,6 +94,10 @@ expstickybar.prototype={
 		this.$stickybar.find('a[href=togglebar]').click(function(){ //find links within bar with href=#togglebar and assign toggle behavior to them
 			thisbar.toggle();
 			return false
+		});
+		
+		this.$stickybar.waitForImages().done(function(){
+			thisbar.showhide($('.current').hasClass('home') ? "show" : "hide");
 		});
 		
 		/**		
