@@ -253,7 +253,7 @@ var makeGrid = function makeGrid(view){
 				 */
 				$('#grid').css('cursor', 'pointer').css("width", $display.width).css("height", $display.height).css('opacity', 1);
 				$('.flipcard, .flipcard .face').css('pointer-events', 'none').css('cursor', 'default');
-				$('#animation_welcome').velocity({left: 50 + $('#animation_welcome').outerWidth() / 2, top: 100}, 1000);
+				$('#animation_welcome').velocity({left: 50, top: 100}, 1000);
 				$('#xaxis').velocity({opacity: 1, width: $display.width}, 1000);
 				$('#yaxis').velocity({opacity: 1, height: $display.height}, 1000);
 				
@@ -325,7 +325,11 @@ var makeGrid = function makeGrid(view){
              * loads all tiles and displays the heading
              */
 			var $ajaxdiv;
-			$('#animation_welcome').velocity({opacity: 1}, {duration: 1000}),
+			$('#animation_welcome').css({
+					transform: 'initial',
+					left: window.innerWidth - $('#animation_welcome').outerWidth() / 2,
+					top: window.innerHeight - $('#animation_welcome').outerHeight() / 2					
+				}).velocity({opacity: 1}, {duration: 1000}),
 			$.ajax({
 				url:'xml/index.php?base=grid&type=learning',
 				complete: function (data) {
