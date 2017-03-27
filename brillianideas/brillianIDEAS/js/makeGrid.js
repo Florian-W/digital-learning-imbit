@@ -209,9 +209,9 @@ var makeGrid = function makeGrid(view){
 			var cleanUp = function(){
 				$('#grid').css('cursor', 'default');
 				$('.flipcard, .flipcard .face', '#grid').css('pointer-events', 'auto').css('cursor', 'pointer');
-				$('h1, h2, h3, h4 ,h5, p', '#grid').each(function(i,e){
+				/*$('h1, h2, h3, h4 ,h5, p', '#grid').each(function(i,e){
 					$(e).html(($(e).html().replace(/\s{2,}/g," ")));
-				});
+				});*/
 				$('.flipcard').each(function(i,e){$(e).css({width: $(e).children('.front').outerWidth(true) +1, height: $(e).children('.front').outerHeight(true)+1})})
 				$('.flipcard').each(function(i,e){$(e).css({minWidth: $(e).children('.front').outerWidth(true) +1, minHeight: $(e).children('.front').outerHeight(true)+1})})
 			}
