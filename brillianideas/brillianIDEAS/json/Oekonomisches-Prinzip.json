@@ -89,23 +89,23 @@
         },
         {
           "question": "Im Rahmen einer Kundenzufriedenheitsbefragung geht ein Mitarbeiter von Haus zu Haus und ermittelt die Zufriedenheit einzeln.",
-          "optionTrue": "Effizienz",
+          "optionTrue": "Effektivität",
           "optionFalse": [
-            "Effektivität"
+            "Effizienz"
           ]
         },
         {
           "question": "Um ein kleines Feuer zu löschen werden zwei Liter Champagner verwendet.",
-          "optionTrue": "Effizienz",
+          "optionTrue": "Effektivität",
           "optionFalse": [
-            "Effektivität"
+            "Effizienz"
           ]
         },
         {
           "question": "Ein Fahrrad wird nur mit einem Lappen und Wasser geputzt.",
-          "optionTrue": "Effizienz",
+          "optionTrue": "Effektivität",
           "optionFalse": [
-            "Effektivität"
+            "Effizienz"
           ]
         }
       ]
