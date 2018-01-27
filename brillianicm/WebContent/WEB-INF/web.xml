@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <display-name>brillianICM</display-name>
+
+    <!-- Backend Servlets start here -->
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+
+
+    <!-- Hier startet der Shiro Config Teil -->
+
+    <filter>
+        <filter-name>ShiroFilter</filter-name>
+        <filter-class>org.apache.shiro.web.servlet.IniShiroFilter</filter-class>
+        <init-param>
+            <param-name>config</param-name>
+            <param-value>
+                [main]
+                # Objects and their properties are defined here, Such as the securityManager, Realms and anything else needed to build the SecurityManager
+
+                realmA= org.dhbw.imbit11.backend.RoleSecurityJdbcRealm
+
+                hashService = org.apache.shiro.crypto.hash.DefaultHashService
+                hashService.hashIterations = 500000
+                hashService.hashAlgorithmName = SHA-256
+                hashService.generatePublicSalt = true
+                # privateSalt needs to be base64-encoded in shiro.ini but not in the Java code
+                hashService.privateSalt = VyFyUyFuZElNQiFUMjAxMSQmJA==
+                passwordMatcher = org.apache.shiro.authc.credential.PasswordMatcher
+
+                passwordService = org.apache.shiro.authc.credential.DefaultPasswordService
+                passwordService.hashService = $hashService
+                passwordMatcher.passwordService = $passwordService
+                realmA.credentialsMatcher = $passwordMatcher
+
+                [users]
+                # The 'users' section is for simple deployments when you only need a small number of statically-defined set of User accounts.
+
+                [roles]
+                # The 'roles' section is for simple deployments when you only need a small number of statically-defined roles.
+
+                [filters]
+                # This application will use all the default filters for example the default login page is /login.jsp users who try to access a page protected by Shiro will be sent to /login.jsp
+
+                [urls]
+                # The 'urls' section is used for url-based security in web applications.
+                /LoginUser = anon
+                /frontend/imprint.jsp = anon
+
+                /Student authc, roles[student]
+                /Main = authc, roles[student]
+                /frontend/* = authc, roles[student]
+                /frontend/imprint.jsp = anon
+
+
+                /Admin = authc, roles[admin]
+                /backend/homepage_admin.jsp = authc, roles[admin]
+                /DeleteProfessor = authc, roles[admin]
+                /index.jsp = authc, roles[admin]
+                /uploadfile.jsp = authc, roles[admin]
+                /viewfile.jsp = authc, roles[admin]
+                /development = authc, roles[admin]
+
+                /Professor = authc, roles[professor]
+                /backend/homepage_professor.jsp = authc, roles[professor]
+                /backend/sendRegistrationLink.jsp = authc, roles[professor]
+                /NewUsergroup = authc, roles[professor]
+                /SendRegistrationLink = authc, roles[professor]
+                /DeleteGroup = authc, roles[professor]
+                /DeleteUser = authc, roles[professor]
+            </param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>ShiroFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+
+    <resource-ref>
+        <description>ICM DB Connection</description>
+        <res-ref-name>jdbc/security</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
+
+    <context-param>
+        <param-name>domain</param-name>
+        <param-value>https://brillianicm.com</param-value>
+    </context-param>
+
+    <!-- Context Parameter for Mail -->
+
+    <context-param>
+        <description>Mail-Server for outgoing mails</description>
+        <param-name>mailserver</param-name>
+        <param-value>smtp.1und1.de</param-value>
+    </context-param>
+
+    <context-param>
+        <description>Mailport for SMTP-Server</description>
+        <param-name>mailport</param-name>
+        <param-value>587</param-value>
+    </context-param>
+
+    <context-param>
+        <description>Mail-User for mailserver</description>
+        <param-name>mailuser</param-name>
+        <param-value>no-reply@brillianICM.com</param-value>
+    </context-param>
+
+    <context-param>
+        <description>Password for Mail-User</description>
+        <param-name>mailpw</param-name>
+        <param-value>mail@wimbit12!</param-value>
+    </context-param>
+
+    <context-param>
+        <description>Setting for SMTP authentification</description>
+        <param-name>smtpauth</param-name>
+        <param-value>true</param-value>
+    </context-param>
+
+    <context-param>
+        <description>Setting for SMTP TLS</description>
+        <param-name>smtptls</param-name>
+        <param-value>true</param-value>
+    </context-param>
+
+    <!--
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>SSL</web-resource-name>
+            <url-pattern>/*</url-pattern>
+        </web-resource-collection>
+        <user-data-constraint>
+            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint>
+    -->
+</web-app>
