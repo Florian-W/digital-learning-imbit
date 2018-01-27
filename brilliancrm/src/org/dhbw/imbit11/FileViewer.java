@@ -22,7 +22,7 @@ import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 
 
-@WebServlet("/FileViewer")
+@WebServlet("/View")
 
 /**
  * Loads master file (needs additional comments)

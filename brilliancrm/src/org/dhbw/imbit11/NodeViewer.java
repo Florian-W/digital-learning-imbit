@@ -32,7 +32,7 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 
-@WebServlet("/NodeViewer")
+@WebServlet("/Node")
 /**
  * Loads masterfile and gives out a specific node defined by level and element(needs addition)
  * @author Mary
