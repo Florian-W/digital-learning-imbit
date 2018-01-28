@@ -1,9 +1,9 @@
 package org.dhbw.imbit11;
 
 import java.io.IOException;
-import java.lang.reflect.Array;
+import java.sql.SQLException;
+import java.util.ArrayList;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -12,9 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.dhbw.imbit11.backend.MailClient;
 import org.dhbw.imbit11.backend.UserRealm;
-
-import java.sql.SQLException;
-import java.util.ArrayList;
 
 @WebServlet({ "/Event", "/event.xml" })
 

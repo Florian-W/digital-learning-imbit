@@ -1,15 +1,12 @@
 package org.dhbw.imbit11.backend;
 
 import java.io.IOException;
-import java.sql.SQLException;
 
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import org.apache.shiro.SecurityUtils;
 
 @WebServlet({"/StudentHomepage"})
  public class StudentHomepage extends javax.servlet.http.HttpServlet implements javax.servlet.Servlet {

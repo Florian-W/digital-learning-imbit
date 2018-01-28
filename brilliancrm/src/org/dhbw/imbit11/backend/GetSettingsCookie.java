@@ -4,15 +4,11 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.subject.Subject;
-import javax.servlet.http.Cookie;
 
 @WebServlet({"/GetSettingsCookie"})
 
@@ -46,11 +42,6 @@ import javax.servlet.http.Cookie;
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-	
-		
-		String url="/login.jsp";		
-				
-			//TODO: Validate and catch Integer to String conversion #403
 			Boolean audio;
 			Boolean video;
 			Boolean tts;

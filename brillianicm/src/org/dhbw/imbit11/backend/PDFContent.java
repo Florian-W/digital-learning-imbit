@@ -1,8 +1,6 @@
 package org.dhbw.imbit11.backend;
 
-import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
 
 /*added by Christopher Krah on 2016-03-03*/
 public class PDFContent extends HttpServlet {

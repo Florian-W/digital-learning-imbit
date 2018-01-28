@@ -1,21 +1,18 @@
 package org.dhbw.imbit11.backend;
 
-import org.apache.shiro.util.JdbcUtils;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.regex.Pattern;
 
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.sql.DataSource;
 
-import java.util.ArrayList;
-
 import org.apache.shiro.realm.jdbc.JdbcRealm;
-
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import org.apache.shiro.util.JdbcUtils;
 
 /**
  * Main class that provides functions to interact with the user database

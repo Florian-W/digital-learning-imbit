@@ -4,9 +4,9 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -69,9 +69,9 @@ import org.apache.shiro.subject.Subject;
 			//TODO: Validate and catch Integer to String conversion #403
 			String lvlId = request.getParameter("lvlId");
 			String group_id = request.getParameter("group_id");
-			int cost = new Integer(request.getParameter("cost"));
-			int time = new Integer(request.getParameter("time"));
-			int quality = new Integer(request.getParameter("quality"));
+			int cost = Integer.parseInt(request.getParameter("cost"));
+			int time = Integer.parseInt(request.getParameter("time"));
+			int quality = Integer.parseInt(request.getParameter("quality"));
 			
 			
 			UserRealm realm = new UserRealm();

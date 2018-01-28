@@ -58,6 +58,7 @@ public class UploadServlet extends HttpServlet {
 		FileItemFactory factory = new DiskFileItemFactory();
 		ServletFileUpload upload = new ServletFileUpload(factory);
 		try {
+			@SuppressWarnings("unchecked")
 			List<FileItem> fields = upload.parseRequest(request);
 			out.println("<b>Number of files: </b>" + fields.size()
 					+ "<br/><br/>");

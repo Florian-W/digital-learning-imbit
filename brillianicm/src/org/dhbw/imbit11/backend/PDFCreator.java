@@ -1,7 +1,5 @@
 package org.dhbw.imbit11.backend;
 
-import java.awt.Desktop;
-
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -11,9 +9,8 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import javax.servlet.ServletContext;
+
 import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
 
 /*added by Christopher Krah on 2016-03-03*/
 public class PDFCreator extends HttpServlet {
