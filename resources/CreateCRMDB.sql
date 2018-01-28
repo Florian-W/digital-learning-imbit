@@ -1,15 +1,16 @@
-/* This Script should be executed by the database admin to create the database for BrillianICM.
- * The command that needs to be executed is
- */
+/* This Script should be executed by the database admin (e.g. root) to create the database for brillianCRM. */
+-- <<Reset database>>
+-- Danger!! if the the following statements are uncommented the database and connection user will be reset. Any exising content is lost! Use this in case you want to start with the initial database.
+-- DROP USER brilliancrm@localhost;
+-- DROP database cake; 
 
 -- <<General Configuration>>
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 -- <<Create database>>
-DROP database icmcake; -- Danger!! if the statement in this line is uncommented the database will be reset. Any exising content is lost!
-CREATE DATABASE icmcake;
-USE icmcake;
+CREATE DATABASE cake;
+USE cake;
 
 
 -- <<Create tables>>
@@ -45,13 +46,6 @@ CREATE TABLE IF NOT EXISTS user_progress (
   QUALITY int(11) NOT NULL,
   TIME int(11) NOT NULL,
   PATH text COLLATE utf8_unicode_ci DEFAULT NULL,
-  L1 boolean NOT NULL,
-  L2 boolean NOT NULL,
-  L3 boolean NOT NULL,
-  L4 boolean NOT NULL,
-  L5 boolean NOT NULL,
-  L6 boolean NOT NULL,
-  L7 boolean NOT NULL,
   PRIMARY KEY (USER_ID),
   KEY USER_ID (USER_ID)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -79,8 +73,8 @@ INSERT INTO user (USER_ID, EMAIL, FIRST_NAME, LAST_NAME, PASSWORD, ROLE, `GROUP`
 (0, 'public@brilliancrm.com', 'Public', 'Public', '$shiro1$SHA-256$500000$DhdIuSNhEvqrvOmyfIfcuw==$AzmajwrcT/UxrYO50+zkTIFxjyazOhiiAY1xsSyPxBI=', 'professor', NULL, '2014-04-21 14:45:32', 1);
 
 -- 'user_progress' content
-INSERT INTO user_progress (USER_ID, COST, QUALITY, TIME, PATH, L1, L2, L3, L4, L5, L6, L7) VALUES
-(18, 0, 0, 0, 'l000e000', false, false, false, false, false, false, false);
+INSERT INTO user_progress (USER_ID, COST, QUALITY, TIME, PATH) VALUES
+(18, 0, 0, 0, 'l000e000');
 
 -- 'settings' content
 INSERT INTO settings (ID, AUDIO, VIDEO, TTS, SUBTITLES) VALUES
@@ -102,7 +96,6 @@ ALTER TABLE user_progress
 
   
 -- <<Create Users>>
-DROP USER brillianicmdbadmin@localhost;
-CREATE USER brillianicmdbadmin@localhost identified by 'brillian!CMP@ss'; -- //TODO remove password
+CREATE USER brilliancrm@localhost identified by 'crm@IMBIT'; -- //TODO remove password
 
-GRANT ALL PRIVILEGES ON icmcake.* TO brillianicmdbadmin@localhost;
+GRANT ALL PRIVILEGES ON cake.* TO brilliancrm@localhost;

@@ -16,7 +16,7 @@
     <!-- Type: a org.apache.tomcat.jdbc.pool.DataSource will be created. -->
 
     <Resource name="jdbc/security" auth="Container" 
-        username="brillianicmdbadmin" password="brillian!CMP@ss"
+        username="brillianicm" password="icm@IMBIT"
         driverClassName="com.mysql.jdbc.Driver" 
         url="jdbc:mysql://localhost:3306/icmcake?autoReconnect=true"
         logAbandoned="true" removeAbandoned="true" 
