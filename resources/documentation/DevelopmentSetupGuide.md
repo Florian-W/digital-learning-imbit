@@ -21,6 +21,17 @@ In order to develop for these projects, it is recommended to install/configure t
 * Maven (if you want to build the project in the command line)
 * XAMPP or LAMP or single installations of Apache HTTP Server, Tomcat, MySQL 
 
+### Java environment variables on macOS
+
+There is no GUI to create or edit environment variables on macOS. One way is by editing ".bash_profile".
+* Open Terminal.app and type `$ open -a TextEdit .bash_profile`
+* Add the following lines to the file and save it (the second path may vary on your installation)
+```
+export JAVA_HOME=$(/usr/libexec/java_home)
+export PATH=$PATH:/Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home
+```
+* restart Terminal.app OR switch back to it and type `$ source .bash_profile`
+* type `$ printenv` to see all environment variables or `$ echo $VARNAME` for a specific one
 
 ## Import GitHub Repository in Eclipse
 
