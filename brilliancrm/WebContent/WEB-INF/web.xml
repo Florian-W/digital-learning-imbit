@@ -20,7 +20,7 @@
 			<param-value>              
                 [main]
                 # Objects and their properties are defined here, Such as the securityManager, Realms and anything else needed to build the SecurityManager
-
+				shiro.loginURL = /index.jsp
                 realmA = org.dhbw.imbit11.backend.RoleSecurityJdbcRealm
                 
                 hashService = org.apache.shiro.crypto.hash.DefaultHashService
