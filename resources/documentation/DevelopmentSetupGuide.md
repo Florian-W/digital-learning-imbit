@@ -10,6 +10,7 @@ The repository consists of three projects:
 * brillianICM
 
 brillianCRM and brillianICM are Serious Games, that are built with Java, Servlets and Java Server Pages and run in a Tomcat container. In order to develop and test these projects, you need the following: Eclipse (or other Dev software), JDK9, Tomcat (8.5 or 9), MySQL database (e.g. 5.7, attention: not MariaDB!!!) and Maven.
+
 brillianIDEAS is built in HMTL, JavaScript and jQuery and runs on an Apache HTTP Server. In order to develop and test this project, you need the following: Eclipse (or other Dev software), Apache HTTP Server and PHP. The latter two are included in XAMPP.
 Unfortunately, XAMPP includes Tomcat7 and MariaDB, 
 
@@ -88,17 +89,15 @@ Deployment of the war files: Stop Tomcat and copy the file to the tomcat/webapps
 
   		
 The following passwords are used in the GitHub files:
-Login to 	User						Passwort
+
 MySQL: brillianicm   icm@IMBIT
+
 MySQL: brilliancrm   crm@IMBIT
+
 public/admin/dozent/student@brillianicm.com:    Hbru
+
 public/admin/dozent/student@brilliancrm.com:	Hbru
 
 Change the passwords afterwards!!! See the CreateCB*.sql files and the context.xml files.
 
 		
-
-
-```
-Give examples
-```
