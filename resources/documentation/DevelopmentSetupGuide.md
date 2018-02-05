@@ -114,3 +114,11 @@ public/admin/dozent/student@brilliancrm.com:	Hbru
 Change the passwords afterwards!!! See the CreateCB*.sql files and the context.xml files.
 
 		
+## Deployment of brillianIDEAS in Apache HTTP Server
+
+Deployment here simply means: copy the folder from your git folder to the folder htdocs, start Apache and go to localhost/foldername:
+* Copy the folder brillianIDEAS from C:/Users/username/git/digital-learning-imbit (or whereever you have your git repository) 
+* Copy to the htdocs folder of Apache (in XAMPP: C:/xampp/htdocs), 
+* start Apache 
+* open localhost/brillianIDEAS in browser
+
