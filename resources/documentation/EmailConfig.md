@@ -1,6 +1,6 @@
 # Configuration for email
 
-Emails are send when a new user is registrates himself or wants a certificate.
+Emails are send when a new user registrates himself or wants a certificate.
 
 ## Parameters that have to be set:
 
