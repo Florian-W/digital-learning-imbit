@@ -23,7 +23,7 @@ PATH: Java/bin
 5. Webmin
 6. Let'sEncrypt
 
-* System Update
+##System Update
 ```
 sudo apt-get update && apt-get upgrade && apt-get autoremove
 ```
@@ -37,24 +37,27 @@ W: Possible missing firmware /lib/firmware/ast_dp501_fw.bin for module ast
 W: mdadm: the array /dev/md1 with UUID 3bae49aa:8a231f11:1f51fb89:78ee93fe
 ```
 ```
-sudo mdadm --detail /dev/md1
-```
-UUID=3bae49aa:8a231f11:1f51fb89:78ee93fe eintragen
-
-sudo mdadm --detail /dev/md3
-
-```
 sudo nano/etc/fstab
 ```
 ```
+sudo mdadm --detail /dev/md1
+```
+Put in UUID = 3bae49aa:8a231f11:1f51fb89:78ee93fe 
+
+```
 sudo nano /etc/mdadm/mdadm.conf
+```
 ```
 ARRAY /dev/md1 level=raid1 num-devices=2 devices=/dev/sda1,/dev/sdb1 UUID=3bae49aa:8a231f11:1f51fb89:78ee93fe
 ARRAY /dev/md3 level=raid1 num-devices=2 devices=/dev/sda3,/dev/sdb3 UUID=19b18012:06ceb27b:1f51fb89:78ee93fe
 #ARRAY /dev/md11 level=raid1 num-devices=2 devices=/dev/sdc1,/dev/sdd1
-
+```
+```
 sudo-get upgrade
-* Webmin: https://wilddiary.com/install-webmin-on-aws-ec2-server/ 
+```
+
+## Webmin
+https://wilddiary.com/install-webmin-on-aws-ec2-server/ 
 
 ```
 sudo nano /etc/apt/sources.list
@@ -64,8 +67,7 @@ insert into sources.list:
 ```
 deb http://download.webmin.com/download/repository sarge contrib
 ```
-strg X Y enter (save)
-Herunterladen von
+Download webmin:
 
 ```
 wget http://www.webmin.com/jcameron-key.asc
@@ -91,23 +93,28 @@ sudo useradd -g sudo webmin
 ```
 sudo passwd webmin
 ```
-webmin: Pw: ****
-Retype new UNIX pw: ****
-Zugriff über: Access webmin via the browser: https://<publicDNS>:10000/ 
+Put in webmin password
+
+Access webmin via the browser: https://<publicDNS>:10000/ 
 	
-* Install LAMP: read: https://wiki.ubuntuusers.de/LAMP/
+## Install LAMP
+read: https://wiki.ubuntuusers.de/LAMP/
 ```
 sudo apt-get install apache2 libapache2-mod-php7.0 php7.0 php7.0-mysql mysql-server
 ```
+```
 sudo apt-get install mysql-server
+```
+```
 mysql -u root
-
+```
   ** MySQL-server: you need to set a password during LAMP installation
 	If you need to reset the root password for the mySQL database follow this: https://coderwall.com/p/j9btlg/reset-the-mysql-5-7-root-password-in-ubuntu-16-04-lts 
 	
 ```
 sudo nano /etc/mysql/my.cnf
 ```
+//SQL übersprungen weil pw nicht gesetzt
 
  hier einfügen:
 [mysqld]
@@ -135,49 +142,84 @@ use cake;
 source ~/cake.sql; 		(.sql file located in home directory of user)
 exit
 ```
-SQL übersprungen weil pw nicht gesetzt
 
 
-##	APACHE: 
-	default document folder is /var/www/html
-	default config folder is /etc/apache2
-	sudo service apache2 start
-cd/etc/apache2/sites-available
-sudo nano brillianCRM.conf // 
-sudo nano brillianICM.conf
-sudo nano brillianIDEAS.conf
-(sudo nano mediawiki.conf)
+
+## APACHE 
+default document folder is /var/www/html
+default config folder is /etc/apache2
 
 
-Dateien öffnen und inhalt ind cmd kopieren
-
-//Create the following .conf files in sites-available:
+Create the following .conf files in sites-available:
 brillianCRM.conf, brillianICM.conf, brillianIDEAS.conf, mediawiki.conf
+with sudo nano brillianCRM.conf and paste the content from GitHub 
+
+// not in GitHub yet
+```
+sudo service apache2 start
+```
+```
+cd/etc/apache2/sites-available
+```
+```
 sudo nano brillianCRM.conf
-paste the content from GitHub //
+```
+paste content from GitHub
+```
+sudo nano brillianICM.conf
+```
+paste content from GitHub
+```
+sudo nano brillianIDEAS.conf
+```
+paste content from GitHub
+```
+(sudo nano mediawiki.conf)
+```
+paste content from GitHub
 
-activate the config by using the following command (it will copy it to sites-enabled)
-ersetzte file mit brillianCRM etc. 
-sudo a2ensite FILE.conf
+activate the config by using the following command (it will copy it to sites-enabled)
+
+```
+sudo a2ensite <FILE>.conf
+```
+```
 sudo service apache2 restart
-
+```
+//Was passiert hier nochmal
+```
 sudo groupadd www
-User für Ubunto anlegen: 
+```
+Create Ubunto User
+```
 sudo adduser www-user --ingroup www
+```
 Passwort eingeben: xxxx
+```
 sudo chgrp -R www /var/www/html
+```
+```
 sudo chmod g+w /var/www/html
+```
+```
 cd/var/www/html
+```
+```
 mkdir brillianIDEAS
+```
+```
 cd brillanIDEAS 
-Kopiere GitHub stand auf Server (z.B. mit winscp oder beliebigen FDP client)
-When adding new content change permissions again
+```
+Copy GitHub status to server (with e.g. winscp or any other FDP client) 
+When adding new content change permissions again:
+```
 sudo chmod g+w -R /var/www/html
+``````
 sudo chgrp -R www /var/www/html
-cd
+```
 
-
-•	Install Tomcat: (read for example: https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-16-04 )
+## Install Tomcat
+(read for example: https://medium.com/@shaaslam/how-to-install-oracle-java-9-in-ubuntu-16-04-671e598f0116 )
 
 1. Open a terminal and add PPA using following command. You need sudo access to this.
 sudo add-apt-repository ppa:webupd8team/java
