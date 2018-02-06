@@ -1,12 +1,12 @@
-#Configuration for email
+# Configuration for email
 
-Emails are send when a new user is registrated or when user wants a certificate.
+Emails are send when a new user is registrates himself or wants a certificate.
 
-##Parameters that have to be set:
+## Parameters that have to be set:
 
 The following settings have to be made in appname/WEB-INF/web.xml
 
-* Domain: this domain will be used within the ConfirmRegistration mail as link to click on (if you want to test it locally keep the below configuration, otherwise change it to your server domain name)
+* Domain: this domain will be used within the ConfirmRegistration mail as a link to click on (if you want to test it locally keep the below configuration, otherwise change it to your server domain name)
 * Mailserver: SMTP URL from the mail provider
 * Mailport: setting by the provider for SMTP
 * Mailuser: email address you like to send the mail with
