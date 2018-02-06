@@ -91,15 +91,24 @@ sudo useradd -g sudo webmin
 ```
 sudo passwd webmin
 ```
-Access webmin via the browser: https://<publicDNS>:10000/ 
+webmin: Pw: ****
+Retype new UNIX pw: ****
+Zugriff über: Access webmin via the browser: https://<publicDNS>:10000/ 
+	
 * Install LAMP: read: https://wiki.ubuntuusers.de/LAMP/
-
+```
 sudo apt-get install apache2 libapache2-mod-php7.0 php7.0 php7.0-mysql mysql-server
 ```
+sudo apt-get install mysql-server
+mysql -u root
+
   ** MySQL-server: you need to set a password during LAMP installation
 	If you need to reset the root password for the mySQL database follow this: https://coderwall.com/p/j9btlg/reset-the-mysql-5-7-root-password-in-ubuntu-16-04-lts 
+	
+```
+sudo nano /etc/mysql/my.cnf
+```
 
-sudo nano /etc/mysql/my.conf
  hier einfügen:
 [mysqld]
 character-set-server=utf8
@@ -125,26 +134,87 @@ mysql -u brilliancrm -p
 use cake;
 source ~/cake.sql; 		(.sql file located in home directory of user)
 exit
+```
+SQL übersprungen weil pw nicht gesetzt
+
 
 ##	APACHE: 
 	default document folder is /var/www/html
 	default config folder is /etc/apache2
 	sudo service apache2 start
-Create the following .conf files in sites-available:
+cd/etc/apache2/sites-available
+sudo nano brillianCRM.conf // 
+sudo nano brillianICM.conf
+sudo nano brillianIDEAS.conf
+(sudo nano mediawiki.conf)
+
+
+Dateien öffnen und inhalt ind cmd kopieren
+
+//Create the following .conf files in sites-available:
 brillianCRM.conf, brillianICM.conf, brillianIDEAS.conf, mediawiki.conf
 sudo nano brillianCRM.conf
-paste the content from GitHub
+paste the content from GitHub //
 
 activate the config by using the following command (it will copy it to sites-enabled)
+ersetzte file mit brillianCRM etc. 
 sudo a2ensite FILE.conf
 sudo service apache2 restart
 
 sudo groupadd www
-sudo adduser www-user www
+User für Ubunto anlegen: 
+sudo adduser www-user --ingroup www
+Passwort eingeben: xxxx
 sudo chgrp -R www /var/www/html
 sudo chmod g+w /var/www/html
+cd/var/www/html
+mkdir brillianIDEAS
+cd brillanIDEAS 
+Kopiere GitHub stand auf Server (z.B. mit winscp oder beliebigen FDP client)
+When adding new content change permissions again
+sudo chmod g+w -R /var/www/html
+sudo chgrp -R www /var/www/html
+cd
+
 
 •	Install Tomcat: (read for example: https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-16-04 )
+
+1. Open a terminal and add PPA using following command. You need sudo access to this.
+sudo add-apt-repository ppa:webupd8team/java
+2. Update package repository using following command.
+sudo apt-get update
+3. Download and Install the installer script.
+sudo apt install oracle-java9-installer
+ok
+yes
+4. Set Oracle JDK9 as default, to set oracle jdk9 as default, install the “oracle-java9-set-default” package. This will automatically set the JAVA env variable.
+
+sudo apt install oracle-java9-set-default
+
+This will complete your installation, you can check you java version by running following command.
+
+javac -version
+JAVA_HOME varable ändern
+rootverzeichnis
+ll
+nano.bashrc
+Umgebungsvariable mit richtigem oath angeben
+JAVA_HOME env
+export JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64
+JRE_HOME env
+export JRE_HOME=/usr/lib/jvm/java-9-openjre-amd64
+CATALINA_HOME env
+export CATALINA_HOME=/opt/tomcat
+CATALINA_BASE env
+export CATALINA_BASE=/opt/tomcat
+sudo update-java-alternatives -l
+
+Test
+echo $JAVA_HOME
+
+
+
+
 sudo apt-get install openjdk-9-jre
 export JAVA_HOME="/usr/lib/jvm/java-9-oracle
 /usr/lib/jvm/java-9-oracle
