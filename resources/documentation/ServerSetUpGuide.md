@@ -108,14 +108,46 @@ sudo apt-get install mysql-server
 ```
 mysql -u root
 ```
-  ** MySQL-server: you need to set a password during LAMP installation
-	If you need to reset the root password for the mySQL database follow this: https://coderwall.com/p/j9btlg/reset-the-mysql-5-7-root-password-in-ubuntu-16-04-lts 
-	
 ```
 sudo nano /etc/mysql/my.cnf
 ```
-//SQL übersprungen weil pw nicht gesetzt
+  ** MySQL-server: you need to set a password during LAMP installation
+	If you need to reset the root password for the mySQL database follow this: https://coderwall.com/p/j9btlg/reset-the-mysql-5-7-root-password-in-ubuntu-16-04-lts 
+	
 
+# Stop MySQL
+sudo service mysql stop
+# Make MySQL service directory.
+sudo mkdir /var/run/mysqld
+# Give MySQL user permission to write to the service directory.
+sudo chown mysql: /var/run/mysqld
+# Start MySQL manually, without permission checks or networking.
+sudo mysqld_safe --skip-grant-tables --skip-networking &
+# Log in without a password.
+mysql -uroot mysql
+
+Update the password for the root user.
+
+UPDATE mysql.user SET authentication_string=PASSWORD('YOURPASSWORD'), plugin='mysql_native_password' WHERE User='root' AND Host='%';
+EXIT;
+
+mysql -u root -p 
+
+# Turn off MySQL.
+sudo mysqladmin -S /var/run/mysqld/mysqld.sock shutdown
+# Start the MySQL service normally.
+sudo service mysql start
+
+mysql -u root -p 
+
+//neu installieren:
+apt-get purge mysql-server
+sudo rm-rf /etc/mysql/var/lib/mysql
+sudo apt-get autoremove
+sudo apt-get autoclean
+
+
+//nicht benutzt
  hier einfügen:
 [mysqld]
 character-set-server=utf8
@@ -155,16 +187,16 @@ brillianCRM.conf, brillianICM.conf, brillianIDEAS.conf, mediawiki.conf
 with sudo nano brillianCRM.conf and paste the content from GitHub 
 
 // not in GitHub yet
-```
-sudo service apache2 start
-```
-```
+
 cd/etc/apache2/sites-available
-```
 ```
 sudo nano brillianCRM.conf
 ```
 paste content from GitHub
+```
+
+
+
 ```
 sudo nano brillianICM.conf
 ```
@@ -234,44 +266,45 @@ yes
 sudo apt install oracle-java9-set-default
 
 This will complete your installation, you can check you java version by running following command.
-
+```
 javac -version
+```
 JAVA_HOME varable ändern
 rootverzeichnis
 ll
 nano.bashrc
 Umgebungsvariable mit richtigem oath angeben
-JAVA_HOME env
-export JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64
-JRE_HOME env
-export JRE_HOME=/usr/lib/jvm/java-9-openjre-amd64
-CATALINA_HOME env
+#JAVA_HOME env
+export JAVA_HOME=/usr/lib/jvm/java-9-oracle
+#JRE_HOME env
+export JRE_HOME=/usr/lib/jvm/java-9-oracle
+#CATALINA_HOME env
 export CATALINA_HOME=/opt/tomcat
-CATALINA_BASE env
+#CATALINA_BASE env
 export CATALINA_BASE=/opt/tomcat
+
 sudo update-java-alternatives -l
 
 Test
 echo $JAVA_HOME
 
-
-
-
-sudo apt-get install openjdk-9-jre
-export JAVA_HOME="/usr/lib/jvm/java-9-oracle
-/usr/lib/jvm/java-9-oracle
 sudo groupadd tomcat
-curl http://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.24/bin/apache-tomcat-8.5.24.tar.gz > tomcat.tar.gz
+Runterladen und in Tomcat target gz speichern
+curl http://apache.mirror.digionline.de/tomcat/tomcat-9/v9.0.4/bin/apache-tomcat-9.0.4.tar.gz > tomcat.tar.gz
 sudo mkdir /opt/tomcat
-sudo tar xzvf /tmp/tomcat.tar.gz -C /opt/tomcat --strip-components=1
+sudo tar xzvf ~/tomcat.tar.gz -C /opt/tomcat --strip-components=1
 cd /opt/tomcat
+Schreib und Ausführrechte
 sudo chgrp -R tomcat /opt/tomcat
 sudo chmod -R g+r conf 
 sudo chmod g+x conf
+sudo adduser tomcat --ingroup tomcat
 sudo chown -R tomcat webapps/ work/ temp/ logs/
-sudo update-java-alternatives -l
-dies gibt den Pfad zu JAVA_HOME
+
+Kreieren von service 
 sudo nano /etc/systemd/system/tomcat.service
+Einfügen von text:
+
 Paste the following: 		(ATTENTION: tomcat loads these variables, not the system variables. If you point Environment=JAVA_HOME to a directory, tomcat will use this for starting)
 [Unit]
 Description=Apache Tomcat Web Application Container
@@ -280,9 +313,9 @@ After=network.target
 [Service]
 Type=forking
 
-Environment=JAVA_HOME=$JAVA_HOME
+Environment=JAVA_HOME=/user/lib/jvm/java-9-oracle
 Environment=CATALINA_PID=/opt/tomcat/temp/tomcat.pid
-Environment=CATALINA_HOME=$CATALINA_HOME
+Environment=CATALINA_HOME=/opt/tomcat
 Environment=CATALINA_BASE=/opt/tomcat
 Environment='CATALINA_OPTS=-Xms512M -Xmx1024M -server -XX:+UseParallelGC'
 Environment='JAVA_OPTS=-Djava.awt.headless=true -Djava.security.egd=file:/dev/./urandom'
@@ -299,9 +332,15 @@ Restart=always
 [Install]
 WantedBy=multi-user.target
 
+```
 sudo systemctl daemon-reload 
+```
 sudo systemctl start tomcat
-sudo systemctl status tomcat
+
+
+sudo systemctl enable tomcat
+
+
 sudo ufw allow 8080
 Add Inbound rule in AWS security groups for port 8080
 sudo systemctl enable tomcat
@@ -309,55 +348,33 @@ sudo nano /opt/tomcat/conf/tomcat-users.xml
   add the line and change password: <user username="admin" password="password" roles="manager-gui,admin-gui"/>
 here: security constraint in order to access GUI securely!
 
-Comment out by adding the yellow letters in the following 2 context.xml:  <!--<Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />-->
-sudo nano /opt/tomcat/webapps/manager/META-INF/context.xml
-sudo nano /opt/tomcat/webapps/host-manager/META-INF/context.xml
-sudo systemctl restart tomcat
 
-Change environment variables:
-sudo nano ~/.bashrc
-Paste at the end:
-#JAVA_HOME env
-export JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64
-#CATALINA_HOME env
-export CATALINA_HOME=/opt/tomcat
-#CATALINA_BASE env
-export CATALINA_BASE=/opt/tomcat
-source ~/.bashrc 		(reload ..bashrc )
-printenv			(shows all environment variables)
+sudo nano /opt/tomcat/webapps/manager/META-INF/context.xml
+Comment out by adding the yellow letters in the following 2 context.xml:  
+<!--<Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />-->
+sudo nano /opt/tomcat/webapps/host-manager/META-INF/context.xml
+Comment out by adding the yellow letters in the following 2 context.xml:  
+<!--<Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />-->
+sudo systemctl restart tomcat
 
 change password for tomcat: sudo passwd tomcat
 
-When uploading a WAR file larger than 50 MB: Change the following in $CATALINA_HOME/webapps/manager/WEB-INF/web.xml
-    <multipart-config>
-      <!—default is 50MB max (value 52428800), new: 1,5GB (value 1500000000) -->
-      <max-file-size>1500000000</max-file-size>
-      <max-request-size>1500000000</max-request-size>
-      <file-size-threshold>0</file-size-threshold>
-    </multipart-config>
-
-o	Access tomcat8 GUI via http://<publicDNS>:8080/manager/html 
-•	MySQL Connector (JDBC) 
-o	CHECK: is it really necessary? It is available as Maven project/ repository
-
-cd /opt/tomcat/lib
-sudo wget https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.45.tar.gz 
-sudo tar xfv mysql-connector-java-5.1.45.tar.gz
-cd mysql-connector-java-5.1.45
-cp mysql-connector-java-5.1.45-bin.jar /opt/tomcat/lib/mysql-connector-java-5.1.45-bin.jar
-sudo rm mysql-connector-java-5.1.45.tar.gz
-
 sudo nano ~/.bashrc
-export CLASSPATH=/usr/lib/jvm/java-9-openjdk-amd64:/opt/tomcat/lib:$CLASSPATH
+export CLASSPATH=/usr/lib/jvm/java-9-oracle:/opt/tomcat/lib:$CLASSPATH
 source ~/.bashrc 
 
-•	SSL certificates for the webapps
-sudo mkdir $CATALINA_HOME/conf 
-sudo $JAVA_HOME/bin/keytool -genkey -alias tomcat -keyalg RSA –keystore 
-$CATALINA_HOME/conf/your-keystore.jks 
+
+## SSL certificates for the webapps
 
 sudo $JAVA_HOME/bin/keytool -genkey -alias tomcat -keyalg RSA  -keypass imbit15 -storepass imbit15 -keystore $CATALINA_HOME/conf/tomcat-keystore.jks
-Add to the server.xml file:
+
+
+Follow instructions and confirm with [yes]
+
+cd /opt/tomcat/conf
+nano server.xml
+Copy and insert: Add to the server.xml file:
+
 
     <Connector port="8443" protocol="HTTP/1.1"
                 SSLEnabled="true" maxThreads="150" scheme="https"
@@ -367,17 +384,20 @@ Add to the server.xml file:
 
 add the following to rc.local:
 sudo nano /etc/rc.local
+vor exit:
 sudo iptables -t nat -I PREROUTING -p tcp --destination-port 443 -j REDIRECT --to-ports 8443 
 sudo service tomcat restart
-
+(
 o	Reverse Proxy: port 8080 auf port 8443 über localhost  anschließend 8080 auf ufw entfernen
-•	Install PHP:
+
+## Install PHP:
 o	sudo apt-get install php7.0-xsl 
 •	Persistent Logging:
 o	mkdir /var/log/journal
 o	systemd-tmpfiles --create --prefix /var/log/journal
 o	systemctl restart systemd-journald
 o	Folgende Rechte für Log-Files wurden geändert von systemd-network zu syslog:
+
 cd /var/log
 sudo chown syslog auth.log
 sudo chown syslog daemon.log
@@ -389,6 +409,8 @@ sudo chown syslog mail.log
 sudo chown syslog syslog
 sudo chown syslog user.log
 sudo chown syslog uucp.log
+
+kopieren:
 •	Enable Ports: Folgende Ports werden für den Zugriff benötigt: Ports 22 (SSH), Port 80 (HTTP-Apache), Port 443 (HTTPS), Port 8080 (Tomcat)
 o	check “sudo netstat -plnt” for active Internet connections
 sudo iptables -P INPUT ACCEPT 
@@ -398,6 +420,7 @@ sudo iptables -I INPUT -p tcp --dport 443 -j ACCEPT
 sudo iptables -I INPUT -p tcp --dport 8080 -j ACCEPT 
 sudo iptables --list
 
+//keine Ahnung
 •	SSL certificates
 o	Nginx: conf.d SSL config: will Nginx be used?????
 server { 
@@ -416,3 +439,7 @@ o	https://www.digitalocean.com/community/tutorials/how-to-encrypt-tomcat-8-conne
 •	ConfirmRegistation:
 o	https://brillianCRM.com/app/ConfirmRegistration?email=c4312551@trbvm.com&ue=28152 brillianCRM.com muss hier dann durch den richtigen Servernamen ersetzt werden.
 •	Repositories hinzufügen??? nginx/mySQL,…
+
+## Start von Deployment
+1. Bei FTP Client anmelden (e.g. winSCP)
+2. Kopiere war files in webapps Ordner / alternativ in temp folder und dann in webapps
