@@ -23,7 +23,7 @@ PATH: Java/bin
 5. Webmin
 6. Let'sEncrypt
 
-##System Update
+## System Update
 ```
 sudo apt-get update && apt-get upgrade && apt-get autoremove
 ```
@@ -115,36 +115,53 @@ sudo nano /etc/mysql/my.cnf
 	If you need to reset the root password for the mySQL database follow this: https://coderwall.com/p/j9btlg/reset-the-mysql-5-7-root-password-in-ubuntu-16-04-lts 
 	
 
-# Stop MySQL
+# MySQL
+#### Stop MySQL
+```
 sudo service mysql stop
-# Make MySQL service directory.
+```
+#### Make MySQL service directory.
+```
 sudo mkdir /var/run/mysqld
-# Give MySQL user permission to write to the service directory.
+```
+#### Give MySQL user permission to write to the service directory.
+```
 sudo chown mysql: /var/run/mysqld
-# Start MySQL manually, without permission checks or networking.
+```
+#### Start MySQL manually, without permission checks or networking.
+```
 sudo mysqld_safe --skip-grant-tables --skip-networking &
-# Log in without a password.
+```
+#### Log in without a password.
+```
 mysql -uroot mysql
-
+```
 Update the password for the root user.
 
 UPDATE mysql.user SET authentication_string=PASSWORD('YOURPASSWORD'), plugin='mysql_native_password' WHERE User='root' AND Host='%';
 EXIT;
-
+```
 mysql -u root -p 
+```
 
-# Turn off MySQL.
+### Turn off MySQL.
+```
 sudo mysqladmin -S /var/run/mysqld/mysqld.sock shutdown
-# Start the MySQL service normally.
-sudo service mysql start
+```
 
+### Start the MySQL service normally.
+```
+sudo service mysql start
 mysql -u root -p 
+```
 
 //neu installieren:
+```
 apt-get purge mysql-server
 sudo rm-rf /etc/mysql/var/lib/mysql
 sudo apt-get autoremove
 sudo apt-get autoclean
+```
 
 
 //nicht benutzt
@@ -154,32 +171,20 @@ character-set-server=utf8
 collation-server=utf8_general_ci
 max_allowed_packet=256M
 check variables in mysql: 
-```
-mysql -u root -p 	then 	show variables like 'char%';
 
+//Download and Upload the following files from GitHub to Home
+```
 mysql -u root -p
-create user brillianicm@localhost identified by 'imbit15';
-create user brilliancrm@localhost identified by 'imbit15';
-create database icmcake;
-create database cake;
-grant all privileges on icmcake.* to brillianicm@localhost;
-grant all privileges on cake.* to brilliancrm@localhost;
-exit
-mysql -u brillianicm -p
-use icmcake;
-source ~/icmcake.sql; 		(.sql file located in home directory of user)
-exit
-mysql -u brilliancrm -p
-use cake;
-source ~/cake.sql; 		(.sql file located in home directory of user)
+source ~/CreateDBbrillianCRM.sql;
+source ~/CreateDBbrillianICM.sql;
+source ~/CreateDBbrillianICM.sql;
 exit
 ```
-
 
 
 ## APACHE 
-default document folder is /var/www/html
-default config folder is /etc/apache2
+* default document folder is /var/www/html
+* default config folder is /etc/apache2
 
 
 Create the following .conf files in sites-available:
@@ -215,6 +220,7 @@ activate the config by using the following command (it will copy it to sites-ena
 ```
 sudo a2ensite <FILE>.conf
 ```
+sudo a2enmod proxy_http
 ```
 sudo service apache2 restart
 ```
@@ -245,10 +251,11 @@ cd brillanIDEAS
 Copy GitHub status to server (with e.g. winscp or any other FDP client) 
 When adding new content change permissions again:
 ```
+```
 sudo chmod g+w -R /var/www/html
-``````
 sudo chgrp -R www /var/www/html
 ```
+
 
 ## Install Tomcat
 (read for example: https://medium.com/@shaaslam/how-to-install-oracle-java-9-in-ubuntu-16-04-671e598f0116 )
@@ -443,3 +450,15 @@ o	https://brillianCRM.com/app/ConfirmRegistration?email=c4312551@trbvm.com&ue=28
 ## Start von Deployment
 1. Bei FTP Client anmelden (e.g. winSCP)
 2. Kopiere war files in webapps Ordner / alternativ in temp folder und dann in webapps
+
+
+## Issues on productive system
+
+the following code needs to be commented on **server.xml**
+java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'null'
+context path in META-INF/context.xml
+<!--        <Context docBase="brillianICM" path="/brillianICM" reloadable="true"
+                        source="org.eclipse.jst.jee.server:brillianICM"/>
+        <Context docBase="brillianCRM" path="/brillianCRM" reloadable="true"
+                        source="org.eclipse.jst.jee.server:brillianCRM"/>
+-->
