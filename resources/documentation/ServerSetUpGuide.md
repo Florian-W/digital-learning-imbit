@@ -27,11 +27,7 @@ sudo nano /etc/apt/sources.list
 * Download Webmin
 ```
 deb http://download.webmin.com/download/repository sarge contrib
-```
-```
 wget http://www.webmin.com/jcameron-key.asc
-```
-```
 sudo apt-key add jcameron-key.asc
 ```
 * Update apt-get
@@ -53,8 +49,6 @@ sudo apt-get --fix-broken install
 * Create Webmin user
 ```
 sudo useradd -g sudo webmin
-```
-```
 sudo passwd webmin
 ```
 * Put in webmin password
@@ -70,11 +64,7 @@ sudo apt-get install apache2 libapache2-mod-php7.0 php7.0 php7.0-mysql mysql-ser
 ## Install MySQL
 ```
 sudo apt-get install mysql-server
-```
-```
 mysql -u root
-```
-```
 sudo nano /etc/mysql/my.cnf
 ```
   ** MySQL-server: you need to set a password during LAMP installation
@@ -193,17 +183,9 @@ sudo adduser www-user --ingroup www
 * Passwort eingeben: xxxx
 ```
 sudo chgrp -R www /var/www/html
-```
-```
 sudo chmod g+w /var/www/html
-```
-```
 cd/var/www/html
-```
-```
 mkdir brillianIDEAS
-```
-```
 cd brillanIDEAS 
 ```
 * Copy GitHub status to server (with e.g. winscp or any other FDP client) 
