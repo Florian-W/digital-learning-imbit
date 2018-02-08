@@ -134,7 +134,7 @@ sudo mysqld_safe --skip-grant-tables --skip-networking &
 ```
 #### Log in without a password.
 ```
-mysql -uroot mysql
+mysql -u root mysql
 ```
 Update the password for the root user.
 
@@ -176,7 +176,6 @@ check variables in mysql:
 ```
 mysql -u root -p
 source ~/CreateDBbrillianCRM.sql;
-source ~/CreateDBbrillianICM.sql;
 source ~/CreateDBbrillianICM.sql;
 exit
 ```
@@ -224,7 +223,7 @@ sudo a2enmod proxy_http
 ```
 sudo service apache2 restart
 ```
-//Was passiert hier nochmal
+//Gruppe www hinzufügen
 ```
 sudo groupadd www
 ```
@@ -254,6 +253,25 @@ When adding new content change permissions again:
 ```
 sudo chmod g+w -R /var/www/html
 sudo chgrp -R www /var/www/html
+```
+// Load PHP Modules:
+Verify PHP Installation and Version:
+```
+apt-cache pkgnames | grep php7.0
+php -v
+```
+```
+sudo nano php.ini
+```
+Change Short_open_tag to On (here is Off)
+```
+a2query -m php7.0
+```
+```
+sudo a2enmod php7.0
+```
+```
+sudo service apache2 restart
 ```
 
 
