@@ -3,8 +3,10 @@
 ## System Update
 ```
 sudo apt-get update && apt-get upgrade && apt-get autoremove
+Yes
 ```
-PAM configuration: *yes*#
+
+
 * Check the warnings during update/ upgrade/ autoremove -
 [Solution for the following:](https://askubuntu.com/questions/457237/mdadm-warning-system-unbootable-from-update-initramfs-mkconfs-suggested-fix)
 ```
@@ -224,7 +226,7 @@ sudo add-apt-repository ppa:webupd8team/java
 ```
 sudo apt-get update
 ```
-* Download and Install the installer script.
+* Download and Install the installer script
 ```
 sudo apt install oracle-java9-installer
 ok
@@ -240,7 +242,6 @@ This will complete your installation, you can check you java version by running 
 javac -version
 ```
 * Change JAVA_HOME variable
-
 ```
 nano.bashrc
 ```
@@ -262,32 +263,50 @@ sudo update-java-alternatives -l
 ```
 echo $JAVA_HOME
 ```
-
+```
 sudo groupadd tomcat
-Runterladen und in Tomcat target gz speichern
+```
+* Download to save in target gz 
+```
 curl http://apache.mirror.digionline.de/tomcat/tomcat-9/v9.0.4/bin/apache-tomcat-9.0.4.tar.gz > tomcat.tar.gz
+```
+```
 sudo mkdir /opt/tomcat
+```
+```
 sudo tar xzvf ~/tomcat.tar.gz -C /opt/tomcat --strip-components=1
+```
+```
 cd /opt/tomcat
-Schreib und Ausführrechte
+```
+* Write and execute rigths
+```
 sudo chgrp -R tomcat /opt/tomcat
+```
+```
 sudo chmod -R g+r conf 
-sudo chmod g+x conf
+```
+* Add User
+```
 sudo adduser tomcat --ingroup tomcat
+```
+```
 sudo chown -R tomcat webapps/ work/ temp/ logs/
+```
 
-Kreieren von service 
+* Create service 
+```
 sudo nano /etc/systemd/system/tomcat.service
-Einfügen von text:
+```
+* Copy and paste the following:
+*(ATTENTION: tomcat loads these variables, not the system variables. If you point Environment=JAVA_HOME to a directory, tomcat will use this for starting)*
 
-Paste the following: 		(ATTENTION: tomcat loads these variables, not the system variables. If you point Environment=JAVA_HOME to a directory, tomcat will use this for starting)
+```
 [Unit]
 Description=Apache Tomcat Web Application Container
 After=network.target
-
 [Service]
 Type=forking
-
 Environment=JAVA_HOME=/user/lib/jvm/java-9-oracle
 Environment=CATALINA_PID=/opt/tomcat/temp/tomcat.pid
 Environment=CATALINA_HOME=/opt/tomcat
@@ -306,38 +325,42 @@ Restart=always
 
 [Install]
 WantedBy=multi-user.target
-
+```
 ```
 sudo systemctl daemon-reload 
-```
 sudo systemctl start tomcat
-
-
 sudo systemctl enable tomcat
-
-
 sudo ufw allow 8080
-Add Inbound rule in AWS security groups for port 8080
+```
+* Add Inbound rule in AWS security groups for port 8080
+```
 sudo systemctl enable tomcat
 sudo nano /opt/tomcat/conf/tomcat-users.xml
-  add the line and change password: <user username="admin" password="password" roles="manager-gui,admin-gui"/>
-here: security constraint in order to access GUI securely!
-
-
+```
+* Add the line and change password: <user username="admin" password="password" roles="manager-gui,admin-gui"/>
+* here: security constraint in order to access GUI securely!
+```
 sudo nano /opt/tomcat/webapps/manager/META-INF/context.xml
-Comment out by adding the yellow letters in the following 2 context.xml:  
+```
+* Comment out by adding the yellow letters in the following 2 context.xml:  
 <!--<Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />-->
+```
 sudo nano /opt/tomcat/webapps/host-manager/META-INF/context.xml
-Comment out by adding the yellow letters in the following 2 context.xml:  
+```
+* Comment out by adding the yellow letters in the following 2 context.xml:  
 <!--<Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />-->
+```
 sudo systemctl restart tomcat
-
-change password for tomcat: sudo passwd tomcat
-
+```
+* change password for tomcat
+```
+sudo passwd tomcat
+```
+```
 sudo nano ~/.bashrc
 export CLASSPATH=/usr/lib/jvm/java-9-oracle:/opt/tomcat/lib:$CLASSPATH
 source ~/.bashrc 
-
+```
 
 ## SSL certificates for the webapps
 
