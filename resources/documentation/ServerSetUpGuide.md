@@ -191,16 +191,13 @@ brillianCRM.conf, brillianICM.conf, brillianIDEAS.conf, mediawiki.conf
 with sudo nano brillianCRM.conf and paste the content from GitHub 
 
 // not in GitHub yet
-
+```
 cd/etc/apache2/sites-available
+```
 ```
 sudo nano brillianCRM.conf
 ```
 paste content from GitHub
-```
-
-
-
 ```
 sudo nano brillianICM.conf
 ```
@@ -249,7 +246,6 @@ cd brillanIDEAS
 ```
 Copy GitHub status to server (with e.g. winscp or any other FDP client) 
 When adding new content change permissions again:
-```
 ```
 sudo chmod g+w -R /var/www/html
 sudo chgrp -R www /var/www/html
