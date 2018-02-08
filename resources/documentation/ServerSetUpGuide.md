@@ -176,7 +176,8 @@ sudo a2ensite <FILE>.conf
 ```
 ```
 sudo a2enmod proxy_http
-``````
+```
+```
 sudo service apache2 restart
 ```
 //Was passiert hier nochmal
@@ -215,27 +216,36 @@ sudo chgrp -R www /var/www/html
 ## Install Tomcat
 [read](https://medium.com/@shaaslam/how-to-install-oracle-java-9-in-ubuntu-16-04-671e598f0116)
 
-1. Open a terminal and add PPA using following command. You need sudo access to this.
+* Open a terminal and add PPA using following command. You need sudo access to this
+```
 sudo add-apt-repository ppa:webupd8team/java
-2. Update package repository using following command.
+```
+* Update package repository using following command
+```
 sudo apt-get update
-3. Download and Install the installer script.
+```
+* Download and Install the installer script.
+```
 sudo apt install oracle-java9-installer
 ok
 yes
-4. Set Oracle JDK9 as default, to set oracle jdk9 as default, install the “oracle-java9-set-default” package. This will automatically set the JAVA env variable.
-
+```
+* Set Oracle JDK9 as default, to set oracle jdk9 as default, install the “oracle-java9-set-default” package. This will automatically set the JAVA env variable
+```
 sudo apt install oracle-java9-set-default
+```
 
-This will complete your installation, you can check you java version by running following command.
+This will complete your installation, you can check you java version by running following command
 ```
 javac -version
 ```
-JAVA_HOME varable ändern
-rootverzeichnis
-ll
+* Change JAVA_HOME variable
+
+```
 nano.bashrc
-Umgebungsvariable mit richtigem oath angeben
+```
+* Set environment variable with correct path
+```
 #JAVA_HOME env
 export JAVA_HOME=/usr/lib/jvm/java-9-oracle
 #JRE_HOME env
@@ -244,11 +254,14 @@ export JRE_HOME=/usr/lib/jvm/java-9-oracle
 export CATALINA_HOME=/opt/tomcat
 #CATALINA_BASE env
 export CATALINA_BASE=/opt/tomcat
-
+```
+```
 sudo update-java-alternatives -l
-
-Test
+```
+* To test
+```
 echo $JAVA_HOME
+```
 
 sudo groupadd tomcat
 Runterladen und in Tomcat target gz speichern
