@@ -1,107 +1,71 @@
 # Server-Initialisierung: Installation and Configuration of brillianIDEAS
-## Need: 
-1. Apache2
-* config files
-* var/www/html
-* Rechte
-2. Tomcat9
-* JDK9
-* opt/tomcat ("Ordner reinschmeißen")
-* env variables:
-JAVA_HOME;
-JRE_HOME;
-CATALINA_HOME;
-(CATALINA_BASE);
-PATH: Java/bin
-* Tomcat-Service (start, stop, restart...)
-* tomcat-users.xml(Manager GUI)
-* context.xml anpassen
-3. MySQL 5.7
-* config UT8
-* createDB
-4. PHP7
-5. Webmin
-6. Let'sEncrypt
 
 ## System Update
 ```
 sudo apt-get update && apt-get upgrade && apt-get autoremove
 ```
-PAM configuration: *yes*
-
-LINK zur Fehlerbehebung kommt noch
+PAM configuration: *yes*#
+* Check the warnings during update/ upgrade/ autoremove -
+[Solution for the following:](https://askubuntu.com/questions/457237/mdadm-warning-system-unbootable-from-update-initramfs-mkconfs-suggested-fix)
 ```
 cryptsetup: WARNING: failed to detect canonical device of /dev/md1
 cryptsetup: WARNING: could not determine root device from /etc/fstab
 W: Possible missing firmware /lib/firmware/ast_dp501_fw.bin for module ast
 W: mdadm: the array /dev/md1 with UUID 3bae49aa:8a231f11:1f51fb89:78ee93fe
 ```
-```
-sudo nano/etc/fstab
-```
-```
-sudo mdadm --detail /dev/md1
-```
-Put in UUID = 3bae49aa:8a231f11:1f51fb89:78ee93fe 
 
-```
-sudo nano /etc/mdadm/mdadm.conf
-```
-```
-ARRAY /dev/md1 level=raid1 num-devices=2 devices=/dev/sda1,/dev/sdb1 UUID=3bae49aa:8a231f11:1f51fb89:78ee93fe
-ARRAY /dev/md3 level=raid1 num-devices=2 devices=/dev/sda3,/dev/sdb3 UUID=19b18012:06ceb27b:1f51fb89:78ee93fe
-#ARRAY /dev/md11 level=raid1 num-devices=2 devices=/dev/sdc1,/dev/sdd1
-```
-```
-sudo-get upgrade
-```
 
-## Webmin
-https://wilddiary.com/install-webmin-on-aws-ec2-server/ 
+## Install Webmin
+[read](https://wilddiary.com/install-webmin-on-aws-ec2-server/)
 
 ```
 sudo nano /etc/apt/sources.list
 ```
-insert into sources.list:
 
+* Download Webmin
 ```
 deb http://download.webmin.com/download/repository sarge contrib
 ```
-Download webmin:
-
 ```
 wget http://www.webmin.com/jcameron-key.asc
 ```
 ```
 sudo apt-key add jcameron-key.asc
 ```
+* Update apt-get
 ```
 sudo apt-get update
 ```
+* Install webmin
 ```
 sudo apt-get install webmin
 ```
+* Install dependencies
 ```
 sudo apt-get install perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions python
 ```
+* Fix install errors
 ```
 sudo apt-get --fix-broken install
 ```
+* Create Webmin user
 ```
 sudo useradd -g sudo webmin
 ```
 ```
 sudo passwd webmin
 ```
-Put in webmin password
-
-Access webmin via the browser: https://<publicDNS>:10000/ 
+* Put in webmin password
+* You can access webmin via the browser: https://<publicDNS>:10000/ 
 	
 ## Install LAMP
-read: https://wiki.ubuntuusers.de/LAMP/
+[read](https://wiki.ubuntuusers.de/LAMP/)
+
+* Install Lamp
 ```
 sudo apt-get install apache2 libapache2-mod-php7.0 php7.0 php7.0-mysql mysql-server
 ```
+## Install MySQL
 ```
 sudo apt-get install mysql-server
 ```
@@ -115,53 +79,48 @@ sudo nano /etc/mysql/my.cnf
 	If you need to reset the root password for the mySQL database follow this: https://coderwall.com/p/j9btlg/reset-the-mysql-5-7-root-password-in-ubuntu-16-04-lts 
 	
 
-# MySQL
-#### Stop MySQL
+* Stop MySQL
 ```
 sudo service mysql stop
 ```
-#### Make MySQL service directory.
+* Make MySQL service directory.
 ```
 sudo mkdir /var/run/mysqld
 ```
-#### Give MySQL user permission to write to the service directory.
+* Give MySQL user permission to write to the service directory.
 ```
 sudo chown mysql: /var/run/mysqld
 ```
-#### Start MySQL manually, without permission checks or networking.
+* Start MySQL manually, without permission checks or networking.
 ```
 sudo mysqld_safe --skip-grant-tables --skip-networking &
 ```
-#### Log in without a password.
+* Log in without a password.
 ```
-mysql -u root mysql
+mysql -uroot mysql
 ```
-Update the password for the root user.
+* Update the password for the root user
 
+```
 UPDATE mysql.user SET authentication_string=PASSWORD('YOURPASSWORD'), plugin='mysql_native_password' WHERE User='root' AND Host='%';
 EXIT;
+```
 ```
 mysql -u root -p 
 ```
 
-### Turn off MySQL.
+* Turn off MySQL.
 ```
 sudo mysqladmin -S /var/run/mysqld/mysqld.sock shutdown
 ```
 
-### Start the MySQL service normally.
+* Start the MySQL service normally.
 ```
 sudo service mysql start
 mysql -u root -p 
 ```
 
-//neu installieren:
-```
-apt-get purge mysql-server
-sudo rm-rf /etc/mysql/var/lib/mysql
-sudo apt-get autoremove
-sudo apt-get autoclean
-```
+
 
 
 //nicht benutzt
@@ -177,6 +136,7 @@ check variables in mysql:
 mysql -u root -p
 source ~/CreateDBbrillianCRM.sql;
 source ~/CreateDBbrillianICM.sql;
+source ~/CreateDBbrillianICM.sql;
 exit
 ```
 
@@ -185,15 +145,13 @@ exit
 * default document folder is /var/www/html
 * default config folder is /etc/apache2
 
-
-Create the following .conf files in sites-available:
+* Create the following .conf files in sites-available:
 brillianCRM.conf, brillianICM.conf, brillianIDEAS.conf, mediawiki.conf
 with sudo nano brillianCRM.conf and paste the content from GitHub 
 
 // not in GitHub yet
-```
+
 cd/etc/apache2/sites-available
-```
 ```
 sudo nano brillianCRM.conf
 ```
@@ -211,24 +169,25 @@ paste content from GitHub
 ```
 paste content from GitHub
 
-activate the config by using the following command (it will copy it to sites-enabled)
+* Activate the config by using the following command (it will copy it to sites-enabled)
 
 ```
 sudo a2ensite <FILE>.conf
 ```
-sudo a2enmod proxy_http
 ```
+sudo a2enmod proxy_http
+``````
 sudo service apache2 restart
 ```
-//Gruppe www hinzufügen
+//Was passiert hier nochmal
 ```
 sudo groupadd www
 ```
-Create Ubunto User
+* Create Ubunto User
 ```
 sudo adduser www-user --ingroup www
 ```
-Passwort eingeben: xxxx
+* Passwort eingeben: xxxx
 ```
 sudo chgrp -R www /var/www/html
 ```
@@ -244,35 +203,17 @@ mkdir brillianIDEAS
 ```
 cd brillanIDEAS 
 ```
-Copy GitHub status to server (with e.g. winscp or any other FDP client) 
+* Copy GitHub status to server (with e.g. winscp or any other FDP client) 
 When adding new content change permissions again:
+
 ```
 sudo chmod g+w -R /var/www/html
 sudo chgrp -R www /var/www/html
 ```
-// Load PHP Modules:
-Verify PHP Installation and Version:
-```
-apt-cache pkgnames | grep php7.0
-php -v
-```
-```
-sudo nano php.ini
-```
-Change Short_open_tag to On (here is Off)
-```
-a2query -m php7.0
-```
-```
-sudo a2enmod php7.0
-```
-```
-sudo service apache2 restart
-```
 
 
 ## Install Tomcat
-(read for example: https://medium.com/@shaaslam/how-to-install-oracle-java-9-in-ubuntu-16-04-671e598f0116 )
+[read](https://medium.com/@shaaslam/how-to-install-oracle-java-9-in-ubuntu-16-04-671e598f0116)
 
 1. Open a terminal and add PPA using following command. You need sudo access to this.
 sudo add-apt-repository ppa:webupd8team/java
