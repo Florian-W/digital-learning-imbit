@@ -14,7 +14,9 @@ The learning platform consists of four distinct systems:
 ## Getting Started
 
 Please find more information in our guides:
-* [DevSetupGuide](https://github.com/MariaBiosciences/digital-learning-imbit/tree/master/resources/documentation/DevelopmentSetupGuide.md) for the explanations regarding the development setup.
+* [DevSetupGuide](https://github.com/MariaBiosciences/digital-learning-imbit/tree/master/resources/documentation/DevelopmentSetupGuide.md)
+* [ServerSetupGuide](https://github.com/MariaBiosciences/digital-learning-imbit/blob/master/resources/documentation/ServerSetUpGuide.md)
+for the explanations regarding the development setup.
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
