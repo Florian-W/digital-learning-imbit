@@ -10,24 +10,23 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet({"/GetGlobalSettings"})
+@WebServlet({"/SetGlobalSettings"})
 
 /**
- * This class is requested, when admin asks for actual global settings at his homepage.
- * It sets 
+ * This class is opened, when admin wants to change global settings. 
  * @author Oliver B.
  * @param boolean audio
  * @param boolean video
  * @param boolean tts
  * @param boolean subtitles
  */
- public class GetGlobalSettings extends javax.servlet.http.HttpServlet implements javax.servlet.Servlet {
+ public class SetGlobalSettings extends javax.servlet.http.HttpServlet implements javax.servlet.Servlet {
    static final long serialVersionUID = 1L;
    
     /**
      * Invokes the constructor of parent class (superclass) javax.servlet.http.HttpServlet
      */
-	public GetGlobalSettings() {
+	public SetGlobalSettings() {
 		super();
 	}   	
 	
@@ -39,10 +38,9 @@ import javax.servlet.http.HttpServletResponse;
 	}  	
 	
 	/**
-	 *function asks for parameters from database
-	 *creates a new userrealm, and requests from database
+	 *function asks for parameters from admin homepage
+	 *creates a new userrealm, and writes to database
 	 *database owns a table for settings only
-	 *Attributes are given back
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -51,53 +49,55 @@ import javax.servlet.http.HttpServletResponse;
 		String url="/backend/homepage_admin.jsp";		
 				
 			//TODO: Validate and catch Integer to String conversion #403
-			Boolean audio=true;
-			Boolean video=true;
-			Boolean tts=true;
-			Boolean subtitles=true;
+		String a = request.getParameter("audio");
+		String b = request.getParameter("video");
+		String c = request.getParameter("tts");
+		String d = request.getParameter("subtitles");
+		Boolean audio=false; 
+		Boolean video=false; 
+		Boolean tts=false; 			
+		Boolean subtitles=false;
+
+		if ("true".equals(a)){
+			audio = true;
+		} else { audio = false;}
+		
+		if ("true".equals(b)){
+			video = true;
+		} else { video = false;}
+		
+		if ("true".equals(c)){
+			tts = true;
+		} else { tts = false;}
+		
+		if ("true".equals(d)){
+			subtitles = true;
+		} else { subtitles = false;}
+			  
 			UserRealm realm = new UserRealm();
 			
 			try{ 
-				ArrayList<Boolean> settings = realm.getSettings();
-
-				audio = settings.get(0);
-				video = settings.get(1);
-				tts = settings.get(2);
-				subtitles = settings.get(3);
+				// ArrayList<Boolean> settings = realm.getSettings();
 				
-	
+				realm.setSettings(audio, video, tts, subtitles);	
+				
+				request.setAttribute("status", "Progress set.");
 				}
 			catch(SQLException e){
 				e.printStackTrace();
 			
 			}
-		String a;
-		String b;
-		String c;
-		String d;
 		
-		if (audio) {
-			a="activated";
-		} else {a="deactivated";}
-		
-		if (video) {
-			b="activated";
-		} else {b="deactivated";}
-		
-		if (tts) {
-			c="activated";
-		} else {c="deactivated";}
-		
-		if (subtitles) {
-			d="activated";
-		} else {d="deactivated";}
-		
-		request.setAttribute("audio", a);
-		request.setAttribute("video", b);
-		request.setAttribute("tts", c);
-		request.setAttribute("subtitles", d);
-		
-		
+			UserRealm userRealm = new UserRealm();
+			;
+			try {
+				ArrayList<ArrayList<String>> professors = userRealm.getProfessors();
+				request.setAttribute("professors", professors);
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+				
+			}		
 	    // forward the request and response to the view
         RequestDispatcher dispatcher =
              getServletContext().getRequestDispatcher(url);
@@ -105,4 +105,5 @@ import javax.servlet.http.HttpServletResponse;
         dispatcher.forward(request, response);
 		
 	}
+	
 }
