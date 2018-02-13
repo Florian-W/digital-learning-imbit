@@ -24,7 +24,7 @@ body {
   grid-area: launchbar;
 }
 
-.content {
+.contentcurriculum {
   /* style for content */
   display: grid;
   height: 100%;
@@ -51,61 +51,50 @@ body {
   border: 1px solid black;
 }
 
-.content-1 {
-  grid-area: content-1;
-  border: 1px solid black;
+.modul{
   color:black;
   font-family: 'Caveat Brush';
   font-size:3vmax;
+}
+
+.modul:hover{
+    cursor:pointer;
+    color:#991B33;
+    font-family: 'Caveat Brush';
+    font-size:4vmax;
+}
+.content-1 {
+  grid-area: content-1;
+  border: 1px solid black;
   text-align: right;
 }
 
 .content-2 {
   grid-area: content-2;
   border: 1px solid black;
-  color:black;
-  font-family: 'Caveat Brush';
-  font-size:3vmax;
   text-align: center;
 }
 
 .content-3 {
   grid-area: content-3;
   border: 1px solid black;
-  color:black;
-  font-family: 'Caveat Brush';
   font-size:3vmax;
 }
 
-.content-3:hover {
-  cursor:pointer;
-  color:#991B33;
-  font-family: 'Caveat Brush';
-  font-size:4vmax;
-}
 
 .content-4 {
   grid-area: content-4;
   border: 1px solid black;
-  color:black;
-  font-family: 'Caveat Brush';
-  font-size:3vmax;
 }
 
 .content-5 {
   grid-area: content-5;
   border: 1px solid black;
-  color:black;
-  font-family: 'Caveat Brush';
-  font-size:3vmax;
 }
 
 .content-6 {
   grid-area: content-6;
   border: 1px solid black;
-  color:black;
-  font-family: 'Caveat Brush';
-  font-size:3vmax;
 }
 
 .footer {
