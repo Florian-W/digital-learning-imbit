@@ -1,0 +1,46 @@
+/* this animation is to compute intensive!
+Significant CPU time required */
+/* @keyframes pulse {
+  0% {font-size: 0.9rem }
+  50% {font-size: 1rem; color:#991B33;}
+  100% {font-size: 0.9rem }
+} */
+
+/* when hovering a learning card it turns
+red and gets a little bigger */
+.type_learning:hover{
+  color:#991B33;
+  font-size: 1.2rem;
+  cursor:pointer;
+}
+
+/* experiment */
+/*
+#tentacle_img_small:hover ~#rocketbar{
+  visibility: visible;
+}
+
+#rocketbar:hover{
+  visibility: visible;
+}
+
+input[type=checkbox] {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+   /* For mobile, it's typically better to position checkbox on top of clickable
+      area and turn opacity to 0 instead. */
+}
+
+label {
+  -webkit-appearance: push-button;
+  -moz-appearance: button;
+  display: inline-block;
+  margin: 0px 0 10px 0;
+  cursor: pointer;
+}
+
+input[type=checkbox]:checked ~ div{
+   visibility: hidden;
+
+} */
