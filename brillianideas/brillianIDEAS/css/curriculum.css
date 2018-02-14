@@ -41,28 +41,41 @@ body {
   grid-template-rows: 100px 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
-      "title title title"
+      "title1 title2 title3"
       "content-1 content-2 content-3"
       "content-4 content-5 content-6";
 }
 
 /* inner grid classes */
-.title {
-  grid-area: title;
+.title1 {
+  grid-area: title1;
   border: 1px solid black;
+  text-align: left;
+}
+
+
+.title2 {
+  grid-area: title3;
+  border: 1px solid black;
+}
+
+.title3 {
+  grid-area: title3;
+  border: 1px solid black;
+  text-align: right;
 }
 
 .modul{
   color:black;
   font-family: 'Caveat Brush';
-  font-size:3vmax;
+  font-size:2.5vmax;
 }
 
 .modul:hover{
     cursor:pointer;
     color:#991B33;
     font-family: 'Caveat Brush';
-    font-size:3.5vmax;
+    font-size:3vmax;
 }
 .content-1 {
   grid-area: content-1;
@@ -131,5 +144,5 @@ body {
   color:#991B33;
   font-family: 'Caveat Brush';
   position: relative;
-  top: -92px;
+  top: 10px;
 }
