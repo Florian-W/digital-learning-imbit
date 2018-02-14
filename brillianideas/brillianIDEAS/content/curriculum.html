@@ -20,75 +20,68 @@
     <img src="img/tentakel_ltr.png"/>
   </div> -->
 
-
-  <div class="contentcurriculum">
+  <!-- HIER BEGINNT Grid1 -->
+  <div class="contentcurriculum" id="Grid1">
     <div class="title1">
-
         <!-- tentakelkopf top of page (Image) -->
         <img id="tentacle_img_large" class="img" src="img/Tintenfisch_Kopf_HOME.png"/>
     </div>
-
     <div class="title3">
+      <!-- Ueberschrift rechte Seite -->
         <div id="titletext">IMBIT-Curriculum</div>
     </div>
-
-
-      <!-- <div class="content"> -->
-      <div class="content-1">
-        <br>
-        <br>
-        <br>
-        <br>
-          <div id="wirtschaftsinformatik" class="modul">Wirtschaftsinformatik</div>
-      </div>
-
-      <div class="content-2">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div id="informatik" class="modul">Informatik</div>
-      </div>
-
-      <div class="content-3">
-        <br>
-        <br>
-        <br>
-        <div id="methodischegrundlagen" class="modul">Methodische Grundlagen</div>
-      </div>
-
-      <div class="content-4">
-        <br>
-        <br>
-        <br>
-        <br>
-        <div id="praxisphase" class="modul">Praxisphase</div>
-      </div>
-
-      <div class="content-5">
-        <br>
-        <br>
-        <br>
-        <div id="wirtschafstwissenschaften" class="modul">Wirtschaftswissenschaften</div>
-      </div>
-
-      <div class="content-6">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div id="interkulturell" class="modul">Internationales Wissen & Management</div>
-      </div>
+    <!-- <div class="content"> -->
+    <div class="content-1">
+        <br> <br> <br> <div id="Wirtschaftsinformatik" class="modul" onclick="changeVisible('Grid1', 'Grid2')">Wirtschaftsinformatik</div>
+    </div>
+    <div class="content-2">
+      <br><br><br><br><br><br><br><br><br><br><div id="informatik" class="modul">Informatik</div>
+    </div>
+    <div class="content-3">
+      <br><br><br><div id="methodischegrundlagen" class="modul">Methodische Grundlagen</div>
+    </div>
+    <div class="content-4">
+      <br><br><br><br><div id="praxisphase" class="modul">Praxisphase</div>
+    </div>
+    <div class="content-5">
+      <br><br><br><div id="wirtschafstwissenschaften" class="modul">Wirtschaftswissenschaften</div>
+    </div>
+    <div class="content-6">
+      <br><br><br><br><br><br><br><div id="interkulturell" class="modul">Internationales Wissen & Management</div>
+    </div>
   </div>
 
+<!-- HIER BEGINNT Grid2 -->
+<div class="contentcurriculum" id="Grid2">
+    <div class="title1">
+        <!-- tentakelkopf top of page (Image) -->
+        <img id="tentacle_img_large" class="img" src="img/Tintenfisch_Kopf_HOME.png"/>
+    </div>
+    <div class="title3">
+      <!-- Ueberschrift rechte Seite -->
+        <div id="titletext">IMBIT-Curriculum</div>
+    </div>
+    <!-- <div class="content"> -->
+    <div class="content-1">
+        <br> <br> <br> <div id="Wirtschaftsinformatik" class="modul" onclick="changeVisible('Grid2', 'Grid1')">Wirtschaftsinformatik</div>
+    </div>
+    <div class="content-2">
+      <br><br><br><br><br><br><br><br><br><br><div id="informatik" class="modul">Informatik</div>
+    </div>
+    <div class="content-3">
+      <div>Hier könnte eine 2. Überschrift stehen</div>
+      <br><br><br><div id="methodischegrundlagen" class="modul">Methodische Grundlagen</div>
+    </div>
+    <div class="content-4">
+      <br><br><br><br><div id="praxisphase" class="modul">Praxisphase</div>
+    </div>
+    <div class="content-5">
+      <br><br><br><div id="wirtschafstwissenschaften" class="modul">Wirtschaftswissenschaften</div>
+    </div>
+    <div class="content-6">
+      <br><br><br><br><br><br><br><div id="interkulturell" class="modul">Internationales Wissen & Management</div>
+    </div>
+  </div>
 
 </body>
 </html>
@@ -97,4 +90,12 @@
 <script type="text/javascript">
 document.title = "IMBIT Curriculum - brillianIDEAS";
 digitalLearning("imbit");
+
+function changeVisible(invisible, visible) {
+    var x = document.getElementById(invisible);
+    var y = document.getElementById(visible);
+    
+    x.style.display = "none";
+    y.style.display = "grid";
+}
 </script>
