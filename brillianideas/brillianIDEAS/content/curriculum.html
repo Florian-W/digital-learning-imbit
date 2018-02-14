@@ -28,7 +28,7 @@
     </div>
     <div class="title3">
       <!-- Ueberschrift rechte Seite -->
-        <div id="titletext">IMBIT-Curriculum</div>
+        <div class ="titletext">IMBIT-Curriculum</div>
     </div>
     <!-- <div class="content"> -->
     <div class="content-1">
@@ -59,17 +59,17 @@
     </div>
     <div class="title3">
       <!-- Ueberschrift rechte Seite -->
-        <div id="titletext">IMBIT-Curriculum</div>
+        <div class="titletext">IMBIT-Curriculum</div>
     </div>
     <!-- <div class="content"> -->
     <div class="content-1">
         <br><br><br><div id="" class="modul" onclick="">Modul1</div>
     </div>
     <div class="content-2">
-        <br><br><br><br><br><br><br><br><br><br><div class="modul">Systemanalyse</div>
+        <br><br><br><br><br><br><br><br><br><br><div class="modul" onclick="changeVisible('Grid2', 'Grid3')">Systemanalyse</div>
     </div>
     <div class="content-3">
-      <div id="subtitletext" class="modul">Wirtschaftsinformatik</div>
+      <div class="subtitletext">Wirtschaftsinformatik</div>
       <div id="" class="modul"></div>
     </div>
     <div class="content-4">
@@ -81,6 +81,25 @@
     <div class="content-6">
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div id="" class="modul">Modul5</div>
     </div>
+
+<!--HIER BEGINNT Grid3 -->
+  <div class="letztesgrid" id="Grid3">
+        <div class="titel1">
+            <!-- tentakelkopf top of page (Image) -->
+            <img id="tentacle_img_large" class="img" src="img/Tintenfisch_Kopf_HOME.png"/>
+        </div>
+        <div class="titel2">
+          <!-- Ueberschrift rechte Seite -->
+            <div class="titletext">IMBIT-Curriculum</div>
+        </div>
+        <!-- <div class="content"> -->
+        <div class="inhalt-1">
+            <!-- Hier kommt die Tabelle von Content-->
+        </div>
+        <div class="inhalt-2">
+            <br><div class="subtitletext">Wirtschaftsinformatik</div>
+            <br><br><br><div class="modultitle">Systemanalyse</div>
+        </div>
   </div>
 
 </body>
@@ -94,7 +113,7 @@ digitalLearning("imbit");
 function changeVisible(invisible, visible) {
     var x = document.getElementById(invisible);
     var y = document.getElementById(visible);
-    
+
     x.style.display = "none";
     y.style.display = "grid";
 }

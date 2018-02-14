@@ -46,6 +46,20 @@ body {
       "content-4 content-5 content-6";
 }
 
+.letztesgrid{
+  display: grid;
+  height: 100%;
+  text-align: right;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  grid-template-rows: 100px 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+      "titel1 titel2 "
+      "inhalt-1 inhalt-2";
+}
+
 /* inner grid classes */
 .title1 {
   grid-area: title1;
@@ -95,7 +109,6 @@ body {
   text-align: center;
   }
 
-
 .content-4 {
   grid-area: content-4;
   border: 1px solid black;
@@ -118,6 +131,7 @@ body {
   grid-area: footer;
 }
 /* tentacle at top of page */
+
 #tentacle_img_large {
   border-width:0px;
   width:auto;
@@ -137,10 +151,29 @@ body {
 } */
 
 /* title */
-#titletext{
+.titletext{
   font-weight:700;
   font-style:normal;
   font-size:4vmax;
+  color:#991B33;
+  font-family: 'Caveat Brush';
+  position: relative;
+  top: 10px;
+}
+.subtitletext{
+  font-weight:700;
+  font-style:normal;
+  font-size:3vmax;
+  color:#991B33;
+  font-family: 'Caveat Brush';
+  position: relative;
+  top: 10px;
+}
+
+.modultitle{
+  font-weight:700;
+  font-style:normal;
+  font-size:2vmax;
   color:#991B33;
   font-family: 'Caveat Brush';
   position: relative;
