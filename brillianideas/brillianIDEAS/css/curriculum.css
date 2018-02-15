@@ -63,19 +63,16 @@ body {
 /* inner grid classes */
 .title1 {
   grid-area: title1;
-  border: 1px solid black;
   text-align: left;
 }
 
 
 .title2 {
   grid-area: title2;
-  border: 1px solid black;
 }
 
 .title3 {
   grid-area: title3;
-  border: 1px solid black;
   text-align: right;
 }
 
@@ -93,37 +90,31 @@ body {
 }
 .content-1 {
   grid-area: content-1;
-  border: 1px solid black;
   text-align: center;
 }
 
 .content-2 {
   grid-area: content-2;
-  border: 1px solid black;
   text-align: center;
 }
 
 .content-3 {
   grid-area: content-3;
-  border: 1px solid black;
   text-align: center;
   }
 
 .content-4 {
   grid-area: content-4;
-  border: 1px solid black;
   text-align: center;
 }
 
 .content-5 {
   grid-area: content-5;
-  border: 1px solid black;
   text-align: center;
 }
 
 .content-6 {
   grid-area: content-6;
-  border: 1px solid black;
   text-align: center;
 }
 
@@ -135,25 +126,21 @@ body {
 
 .titel1 {
   grid-area: titel1;
-  border: 1px solid black;
   text-align: left;
 }
 
 .titel2 {
   grid-area: titel2;
-  border: 1px solid black;
   text-align: right;
 }
 
 .inhalt-1 {
   grid-area: inhalt-1;;
-  border: 1px solid black;
   text-align: center;
 }
 
 .inhalt-2 {
   grid-area: inhalt-2;
-  border: 1px solid black;
   text-align: center;
 }
 
@@ -209,38 +196,49 @@ body {
 
 /* styles for content of lowest level curriculum Grids */
 
- .MOOC_Tabelle {
-      color: blue;
-    }
+.MOOC_Tabelle {
+    color: blue;
+  }
 
-    .Spalte1{
-      width: 15%;
-      align: middle;
-      align: center;
-    }
+.Spalte1{
+  width: 15%;
+  align: middle;
+  align: center;
+}
 
-    .ueberschriftLinks {
-      color: yellow;
-    }
+.ueberschriftLinks {
+  color: yellow;
+}
 
-    a{
-      text-decoration: none !important;
-    }
+a{
+  text-decoration: none !important;
+}
 
-    .bildLinks {
-      color: green;
-    }
+.bildLinks {
+  color: green;
+}
 
-    .textLinks {
-      color: red;
-    }
+.textLinks {
+  color: red;
+}
 
 
-    /* RECHTE SEITE */
-    .ueberschriftRechts {
-      color: purple;
-    }
+/* RECHTE SEITE */
+.ueberschriftRechts {
+  color: purple;
+}
 
-    .textRechts {
-      color: orange;
-    }
+.textRechts {
+  color: orange;
+}
+
+
+
+/* FOR FUTURE CLEAN UP: STYLE CLASSES */
+.bordered {
+  border: 1px solid black;
+}
+
+.pointerOnHover:hover {
+  cursor:pointer
+}
