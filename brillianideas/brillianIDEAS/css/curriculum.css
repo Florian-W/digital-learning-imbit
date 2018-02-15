@@ -28,6 +28,7 @@ body {
   /* style for content */
   display: grid;
   height: 100%;
+  text-align: right;
 
   /* influence the 'padding' of content to each side
   launchbar is not affected by this
@@ -40,93 +41,204 @@ body {
   grid-template-rows: 100px 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
-      "title title title"
+      "title1 title2 title3"
       "content-1 content-2 content-3"
       "content-4 content-5 content-6";
 }
 
+.letztesgrid{
+  display: grid;
+  height: 100%;
+  text-align: right;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  grid-template-rows: 100px 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+      "titel1 titel2 "
+      "inhalt-1 inhalt-2";
+}
+
 /* inner grid classes */
-.title {
-  grid-area: title;
-  border: 1px solid black;
+.title1 {
+  grid-area: title1;
+  text-align: left;
+}
+
+
+.title2 {
+  grid-area: title2;
+}
+
+.title3 {
+  grid-area: title3;
+  text-align: right;
 }
 
 .modul{
   color:black;
   font-family: 'Caveat Brush';
-  font-size:3vmax;
+  font-size:2.5vmax;
 }
 
 .modul:hover{
     cursor:pointer;
     color:#991B33;
     font-family: 'Caveat Brush';
-    font-size:4vmax;
+    font-size:3vmax;
 }
 .content-1 {
   grid-area: content-1;
-  border: 1px solid black;
-  text-align: right;
+  text-align: center;
 }
 
 .content-2 {
   grid-area: content-2;
-  border: 1px solid black;
   text-align: center;
 }
 
 .content-3 {
   grid-area: content-3;
-  border: 1px solid black;
-  font-size:3vmax;
-}
-
+  text-align: center;
+  }
 
 .content-4 {
   grid-area: content-4;
-  border: 1px solid black;
+  text-align: center;
 }
 
 .content-5 {
   grid-area: content-5;
-  border: 1px solid black;
+  text-align: center;
 }
 
 .content-6 {
   grid-area: content-6;
-  border: 1px solid black;
+  text-align: center;
 }
 
 .footer {
   grid-area: footer;
 }
+
+/* inner grid classe of letztesgrid */
+
+.titel1 {
+  grid-area: titel1;
+  text-align: left;
+}
+
+.titel2 {
+  grid-area: titel2;
+  text-align: right;
+}
+
+.inhalt-1 {
+  grid-area: inhalt-1;;
+  text-align: center;
+}
+
+.inhalt-2 {
+  grid-area: inhalt-2;
+  text-align: center;
+}
+
 /* tentacle at top of page */
+
 #tentacle_img_large {
   border-width:0px;
   width:auto;
   height:125%;
   position: relative;
   top: -20;
+  text-align: left;
 }
 
-/* tentacle at bottom of page */
-#tentacle_img_small {
-  border-width:0px;
-  position:relative;
-  left:100px;
-  top:0px;
-  width:48px;
-  height:48px;
-}
+
+/* #tentakelarm_links{
+  border-width: 0px;
+  width:auto;
+  height:150%;
+  position: relative;
+  top:-100;
+} */
 
 /* title */
-#titletext{
+.titletext{
   font-weight:700;
   font-style:normal;
   font-size:4vmax;
   color:#991B33;
   font-family: 'Caveat Brush';
   position: relative;
-  left: 160px;
-  top: -92px;
+  top: 10px;
+}
+.subtitletext{
+  font-weight:700;
+  font-style:normal;
+  font-size:3vmax;
+  color:#991B33;
+  font-family: 'Caveat Brush';
+  position: relative;
+  top: 10px;
+}
+
+.modultitle{
+  font-weight:700;
+  font-style:normal;
+  font-size:2vmax;
+  color:#991B33;
+  font-family: 'Caveat Brush';
+  position: relative;
+  top: 10px;
+}
+
+/* styles for content of lowest level curriculum Grids */
+
+.MOOC_Tabelle {
+    color: blue;
+  }
+
+.Spalte1{
+  width: 15%;
+  align: middle;
+  align: center;
+}
+
+.ueberschriftLinks {
+  color: yellow;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+.bildLinks {
+  color: green;
+}
+
+.textLinks {
+  color: red;
+}
+
+
+/* RECHTE SEITE */
+.ueberschriftRechts {
+  color: purple;
+}
+
+.textRechts {
+  color: orange;
+}
+
+
+
+/* FOR FUTURE CLEAN UP: STYLE CLASSES */
+.bordered {
+  border: 1px solid black;
+}
+
+.pointerOnHover:hover {
+  cursor:pointer
 }
