@@ -41,9 +41,9 @@ body {
   grid-template-rows: 100px 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
-      "title1 title2 title3"
-      "content-1 content-2 content-3"
-      "content-4 content-5 content-6";
+      "g1x1 g1x2 g1x3"
+      "g2x1 g2x2 g2x3"
+      "g3x1 g3x2 g3x3";
 }
 
 .letztesgrid{
@@ -61,18 +61,18 @@ body {
 }
 
 /* inner grid classes */
-.title1 {
-  grid-area: title1;
+.g1x1 {
+  grid-area: g1x1;
   text-align: left;
 }
 
 
-.title2 {
-  grid-area: title2;
+.g1x2 {
+  grid-area: g1x2;
 }
 
-.title3 {
-  grid-area: title3;
+.g1x3 {
+  grid-area: g1x3;
   text-align: right;
 }
 
@@ -88,33 +88,33 @@ body {
     font-family: 'Caveat Brush';
     font-size:3vmax;
 }
-.content-1 {
-  grid-area: content-1;
+.g2x1 {
+  grid-area: g2x1;
   text-align: center;
 }
 
-.content-2 {
-  grid-area: content-2;
+.g2x2 {
+  grid-area: g2x2;
   text-align: center;
 }
 
-.content-3 {
-  grid-area: content-3;
+.g2x3 {
+  grid-area: g2x3;
   text-align: center;
   }
 
-.content-4 {
-  grid-area: content-4;
+.g3x1 {
+  grid-area: g3x1;
   text-align: center;
 }
 
-.content-5 {
-  grid-area: content-5;
+.g3x2 {
+  grid-area: g3x2;
   text-align: center;
 }
 
-.content-6 {
-  grid-area: content-6;
+.g3x3 {
+  grid-area: g3x3;
   text-align: center;
 }
 
