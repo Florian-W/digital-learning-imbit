@@ -244,24 +244,28 @@ a{
 }
 
 /*Fontcolours*/
-.fontblack {
+.font_black {
   color: black;
 }
 
-.fontred {
+.font_red {
   color: #991B33;
 }
 
-/*Backgrounds*/
-.backgroundwhite {
+.font_white{
   color: white;
 }
 
-.backgroundred {
+/*Backgrounds*/
+.background_white {
+  color: white;
+}
+
+.background_red {
   color:#991B33;
 }
 
-.backgroundgrey {
+.background_grey {
   color: #5E5E5E;
 }
 
@@ -284,4 +288,53 @@ a{
 .heading4 {
   font-size:1vmax;
   font-size: 100;
+}
+
+/* Font Family */
+.font_caveat{
+  font-family: 'Caveat Brush';
+}
+
+.font_tinos{
+  font-family: 'Tinos'
+}
+
+/* Font STYLE */
+.style_normal{
+  font-style: normal;
+}
+
+.style_italic{
+  font-style: italic;
+}
+
+.style_oblique{
+  font-style: oblique;
+}
+
+
+/* Text Alignment */
+.alignedright{
+  text-align: right;
+}
+
+.alignedcenter{
+  text-align: center;
+}
+
+.alignedleft{
+  text-align: left;
+}
+
+/* Position */
+.positionabsolute{
+  position: absolute;
+}
+
+.positionrelative{
+  position: relative;
+}
+
+.img_moocs{
+  /* hier größe der Bilder für moocs */
 }
