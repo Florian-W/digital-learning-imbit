@@ -1,0 +1,287 @@
+html{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+body {
+  height:100%;
+  width: 100%;
+  margin: 0px;
+  margin-left: 0px;
+  padding: 0px;
+  justify-content: center;
+
+  /* top level grid */
+  display: grid;
+  grid-template-rows: 1fr 50px;
+  grid-template-columns: 100%;
+  grid-template-areas: "content"
+                        "launchbar";
+}
+
+/* top level grid classes */
+.launchbar{
+  grid-area: launchbar;
+}
+
+.contentgrid {
+
+  width: 90%;
+  height: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+
+/* middle level grid */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 30px 1fr 1fr 30px;
+  grid-template-areas:
+      "title title "
+      "axislabeltop axislabeltop"
+      "content-1 content-2"
+      "content-3 content-4"
+      "axislabelbottom axislabelbottom";
+}
+
+/* middle level grid classes */
+.title {
+  grid-area: title;
+}
+
+.content-1 {
+  grid-area: content-1;
+
+  /* grid in grid */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  /* coordinate-grid line */
+  border-right: 1px solid rgb(204,204,204);
+}
+
+.content-2 {
+  grid-area: content-2;
+
+  /* grid in grid */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.content-3 {
+  grid-area: content-3;
+
+  /* grid in grid */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  /* coordinate-grid lines */
+  border-top: 1px solid rgb(204,204,204);
+  border-right: 1px solid rgb(204,204,204);
+}
+
+.content-4 {
+  grid-area: content-4;
+
+  /* grid in grid */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  /* coordinate-grid lines */
+  border-top: 1px solid rgb(204,204,204);
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.axislabeltop{
+  grid-area: axislabeltop;
+  text-align: center;
+
+}
+
+.axislabelbottom{
+  grid-area: axislabelbottom;
+  text-align: center;
+}
+
+#titletext{
+  font-weight:700;
+  font-style:normal;
+  font-size:4vmax;
+  color:#991B33;
+  font-family: 'Caveat Brush';
+  position: relative;
+  left: -15px;
+  top: -58px;
+  display: inline-block;
+}
+
+/* tentacle at top of page */
+#tentacle_img_large {
+  border-width:0px;
+  width:auto;
+  height:125%;
+  position: relative;
+  top: -20px;
+}
+
+/* tentacle at bottom of page */
+#tentacle_img_small {
+  border-width:0px;
+  position:relative;
+  left:100px;
+  top: 2px;
+  width:48px;
+  height:48px;
+}
+
+/* class for axis labels */
+.label {
+  border-width:0px;
+  position:relative;
+  width:auto;
+  height:auto;
+  font-weight:700;
+  font-style:normal;
+  font-size:1.2rem;
+  color:#991B33;
+  font-family: 'Caveat Brush'
+}
+
+/* axis labels */
+#informell {
+  text-align: right;
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+
+#formell{
+  text-align: left;
+}
+
+
+#individuell{
+
+}
+
+#kollaborativ{
+  vertical-align: bottom;
+}
+
+
+/* class for learning cards */
+.type_learning {
+  white-space: nowrap;
+  line-height: 1;
+  position: relative;
+  text-align: center;
+  font-size: 1rem;
+  display: inline;
+  font-family: 'Caveat Brush';
+
+  animation-name: pulse;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+/* learning cards */
+#interaktive_whiteboards{
+  grid-row: 1/2;
+  grid-column: 3/4;
+  animation-delay: 2s;
+  display: inline;
+
+}
+
+#virtual_classrooms{
+  animation-delay: 4s;
+  animation-duration: 5s;
+
+}
+
+#blended_learning{
+
+}
+
+#planspiele{
+
+}
+
+#serious_games{
+
+}
+
+#virtual_3d{
+
+}
+
+#moocs{
+
+}
+
+#chat{
+
+}
+
+#foren{
+
+}
+
+#social_networks{
+
+}
+
+#microblogging_twitter{
+
+}
+
+#webblogs{
+
+}
+
+#lerntagebuecher{
+
+}
+
+#wiki{
+
+}
+
+#podcasts{
+
+}
+
+#augmented_reality{
+
+}
+
+#learning_demand{
+
+}
+
+#lernfilme{
+
+}
+
+#simulationen{
+
+}
+
+#e_books{
+
+}
+
+#spiel{
+
+}
+
+#cbtwbt{
+
+}
