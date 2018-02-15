@@ -19,7 +19,6 @@ body {
                        "launchbar";
 }
 
-/* Grid Layout Design */
 .launchbar{
   /* style for launchbar */
   grid-area: launchbar;
@@ -157,7 +156,13 @@ body {
 }
 
 
-/* Design von den Texten und Überschriften */
+/* #tentakelarm_links{
+  border-width: 0px;
+  width:auto;
+  height:150%;
+  position: relative;
+  top:-100;
+} */
 
 /* title */
 .titletext{
@@ -218,12 +223,11 @@ a{
 }
 
 
-/* MODULBESCHREIBUNG */
+/* RECHTE SEITE */
 .ueberschriftRechts {
   color: purple;
 }
 
-/* Texte werden vermutlich  */
 .textRechts {
   color: orange;
 }
@@ -239,57 +243,45 @@ a{
   cursor:pointer
 }
 
-/* Position */
-.positionrelative{
-  position: relative;
+/*Fontcolours*/
+.fontblack {
+  color: black;
 }
 
-.positionabsolute{
-  position: absolute;
+.fontred {
+  color: #991B33;
 }
 
-.positionfixed{
-  position: fixed;
+/*Backgrounds*/
+.backgroundwhite {
+  color: white;
 }
 
-
-/* Text Alignment */
-.alignedright{
-  text-align: right;
+.backgroundred {
+  color:#991B33;
 }
 
-.alignedcenter{
-  text-align: center;
+.backgroundgrey {
+  color: #5E5E5E;
 }
 
-.alignleft{
-  text-align: left;
+/*Headings -size and weight maybe readjusted*/
+.heading1 {
+  font-size:4vmax;
+  font-weight:700;
 }
 
-/* Font Style */
-.fontnormal{
-  font-style: normal;
+.heading2 {
+  font-size:3vmax;
+  font-weight: 500;
 }
 
-.fontitalic{
-  font-style: italic;
+.heading3 {
+  font-size:2vmax;
+  font-weight: 300;
 }
 
-.fontoblique{
-  font-style: oblique;
-}
-
-/* Font Family */
-.fontcaveat{
-  font-family: 'Caveat Brush';
-}
-
-.fonttinos{
-  font-family: 'Tinos';
-}
-
-
-/* Design for Images */
-.imgMoocs{
-  /* größe der Bilder für die MooCs einstellen */
+.heading4 {
+  font-size:1vmax;
+  font-size: 100;
 }
