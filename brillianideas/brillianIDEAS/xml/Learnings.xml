@@ -662,32 +662,7 @@ So findest du heraus, in welchen Bereichen du deine Fähigkeiten noch ausbauen k
 		<Abbreviation>lineare Algebra</Abbreviation>
 		<Area_Abbreviation>MG</Area_Abbreviation>
 	</Learning>
-	<Learning>
-		<GUID>4fcb2597-ebf3-4d4d-aca6-7973154e7fd2</GUID>
-		<Titel>Machine Learning</Titel>
-		<Description>Maschinelles Lernen ist die Wissenschaft, Computer beizubringen zu handeln, ohne diese Reaktionen und Handlungen explizit zu programmieren (z.B automatische Gesichtserkennung, Google-Suchvorschläge etc.). Dieser MOOC vermittelt die effektivste Maschine-Learn-Techniken und du kannst sofort Praxiswissen sammeln indem du diese selbst implementierst. So wird nicht nur auf die theoretischen Grundlagen eingegangen, sondern auch aufgezeigt wie die Techniken effektiv auf konkrete Problemstellungen angewandt werden können.
-Dieser Kurs wird dich weiterbringen, wenn du über grundlegende mathematischen Kozepte hinausgehen willst und mit deinen Mathekenntnissen einen weiteren Bogen zur Informationstechnik spannen möchtest - Vielleicht ja sogar im Rahmen einer Praxis- oder Bachelorarbeit?</Description>
-		<Type>mooc</Type>
-		<src>https://www.coursera.org/learn/machine-learning</src>
-		<Free_of_charge>TRUE</Free_of_charge>
-		<Fixed_StartDate>FALSE</Fixed_StartDate>
-		<Certificate>TRUE</Certificate>
-		<Certificate_Costs>TRUE</Certificate_Costs>
-		<Prestigious>TRUE</Prestigious>
-		<Duration>11 Wochen</Duration>
-		<Author>Stanford University</Author>
-		<Copyright>Coursera Inc.</Copyright>
-		<Last_Modified>2017</Last_Modified>
-		<Thumb>Machine_Learning_mooc.jpg</Thumb>
-		<Area>Informatik</Area>
-		<Number>W3WI_108</Number>
-		<Learning_Unit>Einführung in die Programmierung</Learning_Unit>
-		<Abdeckungsgrad>30%</Abdeckungsgrad>
-		<Language>EN</Language>
-		<Recommended>TRUE</Recommended>
-		<Abbreviation>IT</Abbreviation>
-		<Area_Abbreviation>IT</Area_Abbreviation>
-	</Learning>
+	
 	<Learning>
 		<GUID>a20ffbe9-d077-4a8a-ad6f-adcb44fa1093</GUID>
 		<Titel>Videoplaylist des Mathematikprofessors Jörn Lowiskach</Titel>
@@ -755,6 +730,32 @@ Dieser Kurs wird dich weiterbringen, wenn du über grundlegende mathematischen K
 		<Abbreviation>Statistik</Abbreviation>
 		<Area_Abbreviation>MG</Area_Abbreviation>
 	</Learning>
+	<Learning>
+		<GUID>383d9cc1-2e57-4925-beac-483f6dc73dd6</GUID>
+		<Titel>Webtechnologien</Titel>
+		<Description>Das World Wide Web hat die Welt auf unvorstellbare Weise verändert. Es hat eine neue digitale Welt geschaffen, die eng mit unserer echten Welt verflochten ist. Dadurch ist möglich geworden, was lange undenkbar schien: Weltweite Kommunikation innerhalb von Sekunden, Filme schauen auf dem Smartphone, mit weit entfernten Menschen gemeinsam Spiele spielen oder Fotos ansehen und Einkäufe oder Bankgeschäfte von Zuhause aus erledigen. In diesem MOOC lernst du, wie das alles funktioniert. </Description>
+		<Type>mooc</Type>
+		<src>https://open.hpi.de/courses/webtech2017</src>
+		<Free_of_charge>TRUE</Free_of_charge>
+		<Fixed_StartDate>FALSE</Fixed_StartDate>
+		<Certificate>FALSE</Certificate>
+		<Prestigious>FALSE</Prestigious>
+		<Duration>8 Wochen </Duration>
+		<Author>OpenHPI</Author>
+		<Copyright>OpenHPI</Copyright>
+		<Last_Modified>2017</Last_Modified>
+		<Thumb>Webtechnologien.png</Thumb>
+		<Area>Informatik</Area>
+		<Number>W3WI_110</Number>
+		<Learning_Unit>Webprogrammierung</Learning_Unit>
+		<Abdeckungsgrad>30%</Abdeckungsgrad>
+		<Language>DE</Language>
+		<Semester>3+4</Semester>
+		<Recommended>FALSE</Recommended>
+		<Abbreviation>Webprogrammierung</Abbreviation>
+		<Area_Abbreviation>IT</Area_Abbreviation>
+	</Learning>
+	
 	<Learning>
 		<GUID>b3e7857e-03d8-471d-91cd-46464ca85ccb</GUID>
 		<Titel>Statistik Formeln &amp; Tabellen</Titel>
@@ -957,165 +958,13 @@ In diesem Online-Kurs wird die lineare Optimierung/Programmierung gelehrt, um Te
 		<Abbreviation>Operations Research</Abbreviation>
 		<Area_Abbreviation>MG</Area_Abbreviation>
 	</Learning>
-	<Learning>
-		<GUID>b8384699-84d7-4251-9161-0b911487f5ac</GUID>
-		<Titel>Internetworking mit TCP/IP</Titel>
-		<Description>Dieser Kurs bringt dir die technologischen Grundlagen des Internets näher. Er behandelt die physikalischen Grundlagen der Datenübertragung basierend auf funktionalen Prinzipien und Technologien von Local Area Networks (LANs) und Wide Area Networks (WANs). Außerdem lernst du das TCP/IP Reference Model - das Herz des Internets - kennen und steigst somit in die komplexe Welt der Internettechnologien ein. </Description>
-		<Type>mooc</Type>
-		<src>https://open.hpi.de/courses/internetworking2014</src>
-		<Free_of_charge>TRUE</Free_of_charge>
-		<Fixed_StartDate>FALSE</Fixed_StartDate>
-		<Certificate>FALSE</Certificate>
-		<Certificate_Costs>FALSE</Certificate_Costs>
-		<Prestigious>TRUE</Prestigious>
-		<Duration>6 Wochen </Duration>
-		<Author>Prof. Dr. Christoph Meinel</Author>
-		<Copyright>Hasso-Plattner-Institut</Copyright>
-		<Last_Modified>2014</Last_Modified>
-		<Thumb>Internetworking_mit_TCP_IP.jpg</Thumb>
-		<Area>Informatik</Area>
-		<Number>W3WI_104</Number>
-		<Learning_Unit>Kommunikations- und Betriebssysteme</Learning_Unit>
-		<Abdeckungsgrad>40%</Abdeckungsgrad>
-		<Language>EN</Language>
-		<Tech_Requirements>Flash</Tech_Requirements>
-		<Semester>2</Semester>
-		<Recommended>FALSE</Recommended>
-		<Abbreviation>Betriebssysteme</Abbreviation>
-		<Area_Abbreviation>IT</Area_Abbreviation>
-	</Learning>
-	<Learning>
-		<GUID>c5aa8c91-165b-42f7-afb2-70eaffb8329a</GUID>
-		<Titel>AmazingSQL</Titel>
-		<Description>Amazing SQL ist eine kostenlose Software, mit der du SQL-Abfragen in verschiedenen Schwierigkeitsstufen üben kannst. Die Software eignet sich sowohl für Anfänger als auch für Fortgeschrittene. </Description>
-		<Type>software</Type>
-		<src>http://amazing-sql.com/</src>
-		<Free_of_charge>TRUE</Free_of_charge>
-		<Prestigious>TRUE</Prestigious>
-		<Author>Andreas Palosi und Jan Freidinger</Author>
-		<Copyright>AmazingSQL</Copyright>
-		<Last_Modified>2017</Last_Modified>
-		<Thumb>AmazingSQL.png</Thumb>
-		<Area>Informatik</Area>
-		<Number>W3WI_105</Number>
-		<Learning_Unit>Datenbanken</Learning_Unit>
-		<Abdeckungsgrad>40%</Abdeckungsgrad>
-		<Language>DE</Language>
-		<Semester>3+4</Semester>
-		<Recommended>TRUE</Recommended>
-		<Abbreviation>Datenbanken</Abbreviation>
-		<Area_Abbreviation>IT</Area_Abbreviation>
-	</Learning>
-	<Learning>
-		<GUID>de43f091-e142-48f6-84c6-fc34df9cbf3a</GUID>
-		<Titel>Komponenten eines Computers - Einführung</Titel>
-		<Description>Was sind die Grundbestandteile eines Computers? Aus welchen Komponenten ist das Computersystem aufgebaut? Beim Aufbau des Computers unterscheidet man in Hardware und Software, also Betriebssystem und Anwendersoftware. Und was ist ein Motherboard? Hier lernst du die wichtigsten IT-Grundlagen. Auf geht's! </Description>
-		<Type>film</Type>
-		<Embedded>TRUE</Embedded>
-		<src>https://www.youtube.com/watch?v=59dYVTNjWG4</src>
-		<Youtube_ID>59dYVTNjWG4</Youtube_ID>
-		<Prestigious>TRUE</Prestigious>
-		<Author>Alexander Giesecke und Nicolai Schork</Author>
-		<Copyright>Alexander Giesecke und Nicolai Schork</Copyright>
-		<Last_Modified>2017</Last_Modified>
-		<Area>Informatik</Area>
-		<Number>W3WI_104</Number>
-		<Learning_Unit>Grundlagen der IT</Learning_Unit>
-		<Abdeckungsgrad>50%</Abdeckungsgrad>
-		<Language>DE</Language>
-		<Semester>1</Semester>
-		<Recommended>FALSE</Recommended>
-		<Abbreviation>Programmierung</Abbreviation>
-		<Area_Abbreviation>IT</Area_Abbreviation>
-	</Learning>
-	<Learning>
-		<GUID>cf9d1cd7-8862-4a9f-b359-83630c98a885</GUID>
-		<Titel>UDP and TCP: Comparison of Transport Protocols</Titel>
-		<Description>Dieses Lernvideo erklärt die Grundlagen von Transportprotokollen und vergleicht zwei verschiedene Arten von Protokollen: UDP und TCP. Dies hilft dir bei der Wiederholung der Vorlesung "Communication Systems". </Description>
-		<Type>film</Type>
-		<Embedded>TRUE</Embedded>
-		<src>https://www.youtube.com/watch?v=Vdc8TCESIg8</src>
-		<Youtube_ID>Vdc8TCESIg8</Youtube_ID>
-		<Prestigious>FALSE</Prestigious>
-		<Author>Pieter Decker</Author>
-		<Copyright>PieterExplainsTech</Copyright>
-		<Last_Modified>2013</Last_Modified>
-		<Area>Informatik</Area>
-		<Number>W3WI_104</Number>
-		<Learning_Unit>Kommunikations- und Betriebssysteme</Learning_Unit>
-		<Abdeckungsgrad>30%</Abdeckungsgrad>
-		<Language>EN</Language>
-		<Semester>3+4</Semester>
-		<Recommended>FALSE</Recommended>
-		<Abbreviation>Betriebssysteme</Abbreviation>
-		<Area_Abbreviation>IT</Area_Abbreviation>
-	</Learning>
-	<Learning>
-		<GUID>90ed26b4-32f5-49ff-be37-5f997e2f35f5</GUID>
-		<Titel>Vorlesung zu Communication Systems</Titel>
-		<Description>Diese Webseite zeigt alle Skripte aus der Vorlesung "Communication Systems" von Herrn Welter aus 2015. Hier lernst du die Grundlagen der Datenübertragung kennen und findest nützliche Links zu weiterführenden Lerninhalten im Themenbereich wie beispielsweise ein Tool zur Kalkulation von IP-Adressen, Subnetz und Ranges. </Description>
-		<Type>website</Type>
-		<src>http://dhbw.welter.ws/</src>
-		<Prestigious>FALSE</Prestigious>
-		<Author>Prof. Welter</Author>
-		<Copyright>Prof. Welter</Copyright>
-		<Last_Modified>2015</Last_Modified>
-		<Thumb>Vorlesung_zu_Communication_Systems.jpg</Thumb>
-		<Area>Informatik</Area>
-		<Number>W3WI_104</Number>
-		<Learning_Unit>Kommunikations- und Betriebssysteme</Learning_Unit>
-		<Abdeckungsgrad>100%</Abdeckungsgrad>
-		<Language>EN</Language>
-		<Semester>3+4</Semester>
-		<Recommended>TRUE</Recommended>
-		<Abbreviation>Betriebssysteme</Abbreviation>
-		<Area_Abbreviation>IT</Area_Abbreviation>
-	</Learning>
-	<Learning>
-		<GUID>9e042663-0298-4cae-8d5e-e37c13d9b38b</GUID>
-		<Titel>ISO/OSI Modell</Titel>
-		<Description>Dieses Video erklärt das ISO/OSI Schichtenmodell anhand verschiedener Beispiele. Es wurde erstellt von Studenten der DHBW Villingen-Schwellingen. Es hilft dir nicht nur im Rahmen der Vorlesung "Communication Systems", sondern auch bei mündlichen Prüfungen.</Description>
-		<Type>film</Type>
-		<Embedded>TRUE</Embedded>
-		<src>https://www.youtube.com/watch?v=HRHQvTO9GZU</src>
-		<Youtube_ID>HRHQvTO9GZU</Youtube_ID>
-		<Prestigious>FALSE</Prestigious>
-		<Author>Valerie Neff, Julia Hartung, Alexander Meixner, Jonathan Beißwenger</Author>
-		<Copyright>DHBW Villingen-Schwellingen</Copyright>
-		<Last_Modified>2014</Last_Modified>
-		<Area>Informatik</Area>
-		<Number>W3WI_104</Number>
-		<Learning_Unit>Kommunikations- und Betriebssysteme</Learning_Unit>
-		<Abdeckungsgrad>40%</Abdeckungsgrad>
-		<Language>DE</Language>
-		<Semester>3+4</Semester>
-		<Recommended>FALSE</Recommended>
-		<Abbreviation>Betriebssysteme</Abbreviation>
-		<Area_Abbreviation>IT</Area_Abbreviation>
-	</Learning>
-	<Learning>
-		<GUID>104e01dc-3db7-45b0-9a54-b30d49431934</GUID>
-		<Titel>Interaktives Java Tutorial</Titel>
-		<Description>Dies ist ein Einführungskurs in die Programmiersprache Java. Er behandelt die grundlegenden Konzepte des Programmierens und der Informatik. Den größten Nutzen hast du von dem Kurs, wenn du die Aufzeichnungen interaktiv durchgehst, über die Fragen am Ende einer jeden Seite nachdenkst und sie beantwortest. 
-Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt für Schritt näher bringen. Als Programmieranfänger braucht man ca. einen Monat, um alle Aufzeichnungen durchzugehen. </Description>
-		<Type>website</Type>
-		<src>http://gailer-net.de/tutorials/java/index.html</src>
-		<Prestigious>FALSE</Prestigious>
-		<Author>Bradley Kjell</Author>
-		<Copyright>Central Connecticut State University</Copyright>
-		<Last_Modified>2016</Last_Modified>
-		<Thumb>Interaktives_Java_Tutorial.png</Thumb>
-		<Area>Informatik</Area>
-		<Number>W3WI_108</Number>
-		<Learning_Unit>Einführung in die Programmierung</Learning_Unit>
-		<Abdeckungsgrad>80%</Abdeckungsgrad>
-		<Language>DE</Language>
-		<Tech_Requirements>Java Entwicklungsumgebung (JDK) Version 5.0 oder höher, Texteditor(z.B Notepad)</Tech_Requirements>
-		<Semester>1+2</Semester>
-		<Recommended>TRUE</Recommended>
-		<Abbreviation>Programmierung</Abbreviation>
-		<Area_Abbreviation>IT</Area_Abbreviation>
-	</Learning>
+	
+	
+	
+	
+	
+	
+	
 	<Learning>
 		<GUID>8fb0fa69-cef0-4571-b06b-03fd7e2bfad0</GUID>
 		<Titel>Business Anthropology</Titel>
@@ -1136,213 +985,15 @@ Es gibt ungefähr 20 Seiten pro Kapitel, die einem das Programmieren Schritt fü
 		<Abbreviation>ICM</Abbreviation>
 		<Area_Abbreviation>I</Area_Abbreviation>
 	</Learning>
-	<Learning>
-		<GUID>bde190f5-45af-43e7-87b2-3d3418840d49</GUID>
-		<Titel>Introduction to Operating Systems</Titel>
-		<Description>Dies ist ein Einführungskurs in die Thematik "Operating Systems". Er vermittelt dir die grundlegenden Betriebssystem-Abstraktionen, -Mechanismen und deren Implementierungen. Der Kern des Kurses ist die gleichzeitige Programmierung (Threads und Synchronisation), Interprozesskommunikation und eine Einführung in verteilte Betriebssysteme. Der Kurs ist in vier Abschnitte aufgeteilt: (1) Einleitung, (2) Prozess- und Threadmanagement, (3) Ressourcenmanagement und Kommunikation und (4) Verteilte Systeme.</Description>
-		<Type>mooc</Type>
-		<src>https://www.udacity.com/course/introduction-to-operating-systems--ud923</src>
-		<Free_of_charge>TRUE</Free_of_charge>
-		<Fixed_StartDate>FALSE</Fixed_StartDate>
-		<Certificate>FALSE</Certificate>
-		<Prestigious>FALSE</Prestigious>
-		<Duration>8 Wochen </Duration>
-		<Author>Udacity</Author>
-		<Copyright>Georgia Tech</Copyright>
-		<Last_Modified>2017</Last_Modified>
-		<Thumb>Introduction_to_Operating_Systems.png</Thumb>
-		<Area>Informatik</Area>
-		<Number>W3WI_104</Number>
-		<Learning_Unit>Kommunikations- und Betriebssysteme</Learning_Unit>
-		<Abdeckungsgrad>60%</Abdeckungsgrad>
-		<Language>EN</Language>
-		<Semester>3+4</Semester>
-		<Recommended>FALSE</Recommended>
-		<Abbreviation>Betriebssysteme</Abbreviation>
-		<Area_Abbreviation>IT</Area_Abbreviation>
-	</Learning>
-	<Learning>
-		<GUID>d1d78ad7-bc10-4a57-bb77-45f9d546d7fe</GUID>
-		<Titel>JavaScript Tutorial </Titel>
-		<Description>In diesem Tutorial lernst du grundlegende Konzepte der Webprogrammierung in JavaScript kennen. Dieses Video ist der erste Teil einer Lernreihe und beinhaltet eine Einführung, eine Integration mit HTML und eine "Hello World"- Programmierung. Viel Spaß!</Description>
-		<Type>film</Type>
-		<Embedded>TRUE</Embedded>
-		<src>https://www.youtube.com/watch?v=5WqO5u2at-A</src>
-		<Youtube_ID>5WqO5u2at-A</Youtube_ID>
-		<Prestigious>FALSE</Prestigious>
-		<Author>listenwhatisayoh</Author>
-		<Copyright>listenwhatisayoh</Copyright>
-		<Last_Modified>2017</Last_Modified>
-		<Area>Informatik</Area>
-		<Number>W3WI_110</Number>
-		<Learning_Unit>Webprogrammierung</Learning_Unit>
-		<Abdeckungsgrad>30%</Abdeckungsgrad>
-		<Language>DE</Language>
-		<Semester>3+4</Semester>
-		<Recommended>FALSE</Recommended>
-		<Abbreviation>Webprogrammierung</Abbreviation>
-		<Area_Abbreviation>IT</Area_Abbreviation>
-	</Learning>
-	<Learning>
-		<GUID>807e7500-8e70-4f22-853e-a966ec591b6c</GUID>
-		<Titel>Binär-Dezimal-Hexadezimal Umrechner</Titel>
-		<Description>Auf dieser Webseite kannst du die Umrechnung von Zahlen ins Binär-, Dezimal- und Hexadezimalsystem üben. Die in diese Webseite integrierte Applikation gibt dir zu jeder beliebigen Zahl in einem Zahlensystem die entsprechende Zahl in einem anderen Zahlensystem aus. Den größten Lernerfolg hast du, wenn du dir Zahlenbeispiele ausdenkst, diese selbst umwandelst und dann dein Ergebnis mit der richtigen Lösung vergleichst.</Description>
-		<Type>website</Type>
-		<src>http://binaer-dezimal-hexadezimal-umrechner.miniwebapps.de/</src>
-		<Prestigious>FALSE</Prestigious>
-		<Author>Matthäus Liß</Author>
-		<Copyright>LISSWORX</Copyright>
-		<Last_Modified>2012</Last_Modified>
-		<Thumb>Binaer-Dezimal-Hexadezimal_Umrechner.jpg</Thumb>
-		<Area>Informatik</Area>
-		<Number>W3WI_104</Number>
-		<Learning_Unit>Grundlagen der IT</Learning_Unit>
-		<Abdeckungsgrad>10%</Abdeckungsgrad>
-		<Language>DE</Language>
-		<Semester>1+2</Semester>
-		<Recommended>FALSE</Recommended>
-		<Abbreviation>IT</Abbreviation>
-		<Area_Abbreviation>IT</Area_Abbreviation>
-	</Learning>
-	<Learning>
-		<GUID>e4edb758-d5ef-4730-b3cb-3dfeff6f8d06</GUID>
-		<Titel>Operating Systems Tutorial</Titel>
-		<Description>Dieses Tutorial zum Thema Betriebssysteme wurde für Informatikstudenten konzipiert und hilft dir dabei, grundlegende und fortgeschrittene Konzepte von Betriebssystemen zu verstehen. Es deckt den Großteil der IMBIT-Vorlesung "Operating Systems" ab und behandelt Themen wie Asynchronität, Ereignissteuerung, Koordinierung paralleler Aktivitäten, Prozesse, I/O - Systeme und Virtualisierung.</Description>
-		<Type>website</Type>
-		<src>https://www.tutorialspoint.com/operating_system/index.htm</src>
-		<Prestigious>FALSE</Prestigious>
-		<Author>Tutorialspoint</Author>
-		<Copyright>Tutorialspoint</Copyright>
-		<Last_Modified>2017</Last_Modified>
-		<Thumb>Operating_Systems_Tutorial.png</Thumb>
-		<Area>Informatik</Area>
-		<Number>W3WI_104</Number>
-		<Learning_Unit>Kommunikations- und Betriebssysteme</Learning_Unit>
-		<Abdeckungsgrad>100%</Abdeckungsgrad>
-		<Language>EN</Language>
-		<Semester>3+4</Semester>
-		<Recommended>FALSE</Recommended>
-		<Abbreviation>Betriebssysteme</Abbreviation>
-		<Area_Abbreviation>IT</Area_Abbreviation>
-	</Learning>
-	<Learning>
-		<GUID>90975a6e-5270-4ba4-a702-e1acd14bfa74</GUID>
-		<Titel>Datenmanagement mit SQL</Titel>
-		<Description>Im openHPI Kurs "Datenmanagement mit SQL" lernst du die Grundlagen von modernen Datenbanksystemen kennen. Zuerst untersuchst du ihren Aufbau, planst den Entwurf von Datenbanken und schließlich lernst du die weltweit dominierende Abfragesprache SQL kennen. Zum Schluss kannst du in einem kleinen Test das Gelernte überprüfen. Los geht´s!</Description>
-		<Type>mooc</Type>
-		<src>https://open.hpi.de/courses/sql</src>
-		<Free_of_charge>TRUE</Free_of_charge>
-		<Fixed_StartDate>FALSE</Fixed_StartDate>
-		<Certificate>FALSE</Certificate>
-		<Prestigious>FALSE</Prestigious>
-		<Duration>8 Wochen </Duration>
-		<Author>Prof. Dr. Felix Naumann</Author>
-		<Copyright>OpenHPI</Copyright>
-		<Last_Modified>2017</Last_Modified>
-		<Thumb>Datenmanagement_mit_SQL.png</Thumb>
-		<Area>Informatik</Area>
-		<Number>W3WI_105</Number>
-		<Learning_Unit>Datenbanken</Learning_Unit>
-		<Abdeckungsgrad>60%</Abdeckungsgrad>
-		<Language>DE</Language>
-		<Semester>3+4</Semester>
-		<Recommended>FALSE</Recommended>
-		<Abbreviation>Datenbanken</Abbreviation>
-		<Area_Abbreviation>IT</Area_Abbreviation>
-	</Learning>
-	<Learning>
-		<GUID>de14b272-897f-4d43-ab62-cf4fe10dc436</GUID>
-		<Titel>SQL Tutorial</Titel>
-		<Description>Auf dieser Webseite lernst du, wie man SQL benutzen kann, um auf bestimmte Daten in einer Datenbank zuzugreifen und/oder diese zu verändern. Abschließend kannst du dein Wissen in einem SQL Quiz testen. Die Tutorials eignen sich sehr gut als Klausurvorbereitung, gehen jedoch teilweise über den Inhalt der IMBIT-Vorlesung "Datenbanken" hinaus. 
-</Description>
-		<Type>website</Type>
-		<src>https://www.w3schools.com/sql/</src>
-		<Prestigious>FALSE</Prestigious>
-		<Author>w3schools</Author>
-		<Copyright>w3schools</Copyright>
-		<Last_Modified>2013</Last_Modified>
-		<Thumb>SQL_Tutorial.png</Thumb>
-		<Area>Informatik</Area>
-		<Number>W3WI_106</Number>
-		<Learning_Unit>Datenbanken</Learning_Unit>
-		<Abdeckungsgrad>100%</Abdeckungsgrad>
-		<Language>EN</Language>
-		<Semester>3+4</Semester>
-		<Recommended>TRUE</Recommended>
-		<Abbreviation>Datenbanken</Abbreviation>
-		<Area_Abbreviation>IT</Area_Abbreviation>
-	</Learning>
-	<Learning>
-		<GUID>ace2ad44-8ef1-4f91-a4c8-79023e0f12e2</GUID>
-		<Titel>Objektorientierte Programmierung in Java</Titel>
-		<Description>In diesem openHPI Einsteigerkurs lernst du die Grundlagen der objektorientierten Programmierung kennen und löst gemeinsam mit Detektiv Duke einen mysteriösen Entführungsfall. Voraussetzungen für diesen Kurs sind ein Interesse an Programmierung und ein Computer mit Internetzugang. Vorhergehende Programmiererfahrung ist hilfreich, aber nicht notwendig. Also löse den Fall!</Description>
-		<Type>mooc</Type>
-		<src>https://open.hpi.de/courses/javaeinstieg2017</src>
-		<Free_of_charge>TRUE</Free_of_charge>
-		<Fixed_StartDate>FALSE</Fixed_StartDate>
-		<Certificate>FALSE</Certificate>
-		<Prestigious>FALSE</Prestigious>
-		<Duration>3 Wochen </Duration>
-		<Author>OpenHPI</Author>
-		<Copyright>OpenHPI</Copyright>
-		<Last_Modified>2017</Last_Modified>
-		<Thumb>Objektorientierte_Programmierung_in_Java.png</Thumb>
-		<Area>Informatik</Area>
-		<Number>W3WI_108</Number>
-		<Learning_Unit>Einführung in die Programmierung</Learning_Unit>
-		<Abdeckungsgrad>80%</Abdeckungsgrad>
-		<Language>DE</Language>
-		<Semester>1+2</Semester>
-		<Recommended>FALSE</Recommended>
-		<Abbreviation>Programmierung</Abbreviation>
-		<Area_Abbreviation>IT</Area_Abbreviation>
-	</Learning>
-	<Learning>
-		<GUID>a7d69151-cf2b-416d-8bec-522642e90b3e</GUID>
-		<Titel>HTML und Javascript Tutorial</Titel>
-		<Description>Auf dieser Webseite findest du Tutorials zu HTML und JavaScript. Die Tutorials enthalten eine Vielzahl an Beispielen, mit denen du die Grundprinzipien von HTML und JavaScript lernen kannst. Außerdem kannst du mit dem Online HTML Editor eine HTML Seite erstellen und dir das Ergebnis anzeigen lassen. Insgesamt bietet die Webseite eine gute Grundlage für die Klausur zur IMBIT-Vorlesung "Webprogrammierung".</Description>
-		<Type>website</Type>
-		<src>https://www.w3schools.com/html/</src>
-		<Prestigious>FALSE</Prestigious>
-		<Author>w3schools</Author>
-		<Copyright>w3schools</Copyright>
-		<Last_Modified>2017</Last_Modified>
-		<Thumb>HTML_und_Javascript_Tutorial.png</Thumb>
-		<Area>Informatik</Area>
-		<Number>W3WI_110</Number>
-		<Learning_Unit>Webprogrammierung</Learning_Unit>
-		<Abdeckungsgrad>70%</Abdeckungsgrad>
-		<Language>EN</Language>
-		<Semester>3+4</Semester>
-		<Recommended>FALSE</Recommended>
-		<Abbreviation>Webprogrammierung</Abbreviation>
-		<Area_Abbreviation>IT</Area_Abbreviation>
-	</Learning>
-	<Learning>
-		<GUID>383d9cc1-2e57-4925-beac-483f6dc73dd6</GUID>
-		<Titel>Webtechnologien</Titel>
-		<Description>Das World Wide Web hat die Welt auf unvorstellbare Weise verändert. Es hat eine neue digitale Welt geschaffen, die eng mit unserer echten Welt verflochten ist. Dadurch ist möglich geworden, was lange undenkbar schien: Weltweite Kommunikation innerhalb von Sekunden, Filme schauen auf dem Smartphone, mit weit entfernten Menschen gemeinsam Spiele spielen oder Fotos ansehen und Einkäufe oder Bankgeschäfte von Zuhause aus erledigen. In diesem MOOC lernst du, wie das alles funktioniert. </Description>
-		<Type>mooc</Type>
-		<src>https://open.hpi.de/courses/webtech2017</src>
-		<Free_of_charge>TRUE</Free_of_charge>
-		<Fixed_StartDate>FALSE</Fixed_StartDate>
-		<Certificate>FALSE</Certificate>
-		<Prestigious>FALSE</Prestigious>
-		<Duration>8 Wochen </Duration>
-		<Author>OpenHPI</Author>
-		<Copyright>OpenHPI</Copyright>
-		<Last_Modified>2017</Last_Modified>
-		<Thumb>Webtechnologien.png</Thumb>
-		<Area>Informatik</Area>
-		<Number>W3WI_110</Number>
-		<Learning_Unit>Webprogrammierung</Learning_Unit>
-		<Abdeckungsgrad>30%</Abdeckungsgrad>
-		<Language>DE</Language>
-		<Semester>3+4</Semester>
-		<Recommended>FALSE</Recommended>
-		<Abbreviation>Webprogrammierung</Abbreviation>
-		<Area_Abbreviation>IT</Area_Abbreviation>
-	</Learning>
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<Learning>
 		<GUID>776adb74-3a43-4f61-a5d7-decffbf86a98</GUID>
 		<Titel>Gesetzbücher online</Titel>
@@ -2558,15 +2209,15 @@ Für mehr Info's schau dir unser Teaser-Video an!: https://vimeo.com/96179581</D
 		<Copyright>WIBI09</Copyright>
 		<Last_Modified>2017</Last_Modified>
 		<Thumb>Wiki.png</Thumb>
-		<Area>Informatik</Area>
+		<Area>Praxisphase1</Area>
 		<Number>W3WI_111</Number>
-		<Learning_Unit>Neue Konzepte</Learning_Unit>
-		<Abdeckungsgrad>40%</Abdeckungsgrad>
+		<Learning_Unit>Praxisphase2</Learning_Unit>
+		<Abdeckungsgrad>100%</Abdeckungsgrad>
 		<Language>DE</Language>
-		<Semester>5</Semester>
+		<Semester>6</Semester>
 		<Recommended>TRUE</Recommended>
-		<Abbreviation>Neue Konzepte</Abbreviation>
-		<Area_Abbreviation>IT</Area_Abbreviation>
+		<Abbreviation>Praxisphase</Abbreviation>
+		<Area_Abbreviation>Praxisphase</Area_Abbreviation>
 	</Learning>
 	<Learning>
 		<GUID>7b2e9df6-715b-4491-ac6d-a175d72b3be6</GUID>

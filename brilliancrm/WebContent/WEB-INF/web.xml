@@ -1,89 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
-	id="WebApp_ID" version="3.0">
-	<!-- WebApp_ID is NOT related to the version ID it is the servlet version to be used -->
-	<display-name>2.2.4release</display-name>
-	<!-- Backend Servlets start here -->
-
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+	<display-name>brillianCRM</display-name>
 
 	<welcome-file-list>
-		<welcome-file>index.html</welcome-file>
-		<welcome-file>index.htm</welcome-file>
-		<welcome-file>index.jsp</welcome-file>
-		<welcome-file>default.html</welcome-file>
-		<welcome-file>default.htm</welcome-file>
-		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>login.jsp</welcome-file>
 	</welcome-file-list>
 
-	<!-- Servlets und Mapping-->
 
-	<servlet>
-		<servlet-name>uploadfile</servlet-name>
-		<servlet-class>org.dhbw.imbit11.UploadServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>uploadfile</servlet-name>
-		<url-pattern>/Upload</url-pattern>
-	</servlet-mapping>
-	<servlet>
-		<servlet-name>viewfile</servlet-name>
-		<servlet-class>org.dhbw.imbit11.FileViewer</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>viewfile</servlet-name>
-		<url-pattern>/View</url-pattern>
-	</servlet-mapping>
-	<servlet>
-		<servlet-name>viewnode</servlet-name>
-		<servlet-class>org.dhbw.imbit11.NodeViewer</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>viewnode</servlet-name>
-		<url-pattern>/Node</url-pattern>
-	</servlet-mapping>
-
+    <!-- Hier startet der Shiro Config Teil -->
 
 	<filter>
 		<filter-name>ShiroFilter</filter-name>
 		<filter-class>org.apache.shiro.web.servlet.IniShiroFilter</filter-class>
 		<init-param>
 			<param-name>config</param-name>
-			<param-value>
-                #See Shiro API http://shiro.apache.org/static/current/apidocs/org/apache/shiro/web/servlet/IniShiroFilter.html
-                
-                #create an object of the RoleSecurityJdbcRealm
-                #IniShiroFilter will inject that object into the SecurityManager
+			<param-value>              
                 [main]
+                # Objects and their properties are defined here, Such as the securityManager, Realms and anything else needed to build the SecurityManager
+
                 realmA = org.dhbw.imbit11.backend.RoleSecurityJdbcRealm
                 
                 hashService = org.apache.shiro.crypto.hash.DefaultHashService
-hashService.hashIterations = 500000
-hashService.hashAlgorithmName = SHA-256
-hashService.generatePublicSalt = true
-# privateSalt needs to be base64-encoded in shiro.ini but not in the Java code
-hashService.privateSalt = VyFyUyFuZElNQiFUMjAxMSQmJA==
-passwordMatcher = org.apache.shiro.authc.credential.PasswordMatcher
+				hashService.hashIterations = 500000
+				hashService.hashAlgorithmName = SHA-256
+				hashService.generatePublicSalt = true
+                # privateSalt needs to be base64-encoded in shiro.ini but not in the Java code
+				hashService.privateSalt = VyFyUyFuZElNQiFUMjAxMSQmJA==
+				passwordMatcher = org.apache.shiro.authc.credential.PasswordMatcher
+				
+				passwordService = org.apache.shiro.authc.credential.DefaultPasswordService
+				passwordService.hashService = $hashService
+				passwordMatcher.passwordService = $passwordService
+				realmA.credentialsMatcher = $passwordMatcher
 
-passwordService = org.apache.shiro.authc.credential.DefaultPasswordService
-passwordService.hashService = $hashService
-passwordMatcher.passwordService = $passwordService
-realmA.credentialsMatcher = $passwordMatcher
+                [users]
+                # The 'users' section is for simple deployments when you only need a small number of statically-defined set of User accounts.
+
+                [roles]
+                # The 'roles' section is for simple deployments when you only need a small number of statically-defined roles.
                 
-                #this application will use all the default
-                #filters (see link above)
-                #for example the default login page is /login.jsp
-                #users who try to access a page protected by Shiro
-                #will be sent to /login.jsp
                 [filters]
+                # This application will use all the default filters for example the default login page is /login.jsp users who try to access a page protected by Shiro will be sent to /login.jsp
 
-
-                #only let authenticated users
-                #with the appropriate role
-                #view the web pages in the secure
-                #and admin areas
                 [urls]
+                # The 'urls' section is used for url-based security in web applications.
                 /LoginUser = anon
                 /frontend/imprint.jsp = anon
                 
@@ -116,6 +79,7 @@ realmA.credentialsMatcher = $passwordMatcher
 
 
 	<resource-ref>
+        <description>CRM DB Connection</description>
 		<res-ref-name>jdbc/security</res-ref-name>
 		<res-type>javax.sql.DataSource</res-type>
 		<res-auth>Container</res-auth>
@@ -124,7 +88,7 @@ realmA.credentialsMatcher = $passwordMatcher
 
 	<context-param>
 		<param-name>domain</param-name>
-		<param-value>https://ec2-54-213-27-83.us-west-2.compute.amazonaws.com</param-value>
+		<param-value>localhost:8080/brillianCRM</param-value>
 	</context-param>
 	
 	<!-- Context Parameter for Mail -->	
@@ -176,4 +140,5 @@ realmA.credentialsMatcher = $passwordMatcher
 		</user-data-constraint>
 	</security-constraint>
 	-->
+
 </web-app>
