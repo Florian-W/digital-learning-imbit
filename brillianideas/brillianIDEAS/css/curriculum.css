@@ -130,6 +130,33 @@ body {
 .footer {
   grid-area: footer;
 }
+
+/* inner grid classe of letztesgrid */
+
+.titel1 {
+  grid-area: titel1;
+  border: 1px solid black;
+  text-align: left;
+}
+
+.titel2 {
+  grid-area: titel2;
+  border: 1px solid black;
+  text-align: right;
+}
+
+.inhalt-1 {
+  grid-area: inhalt-1;;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.inhalt-2 {
+  grid-area: inhalt-2;
+  border: 1px solid black;
+  text-align: center;
+}
+
 /* tentacle at top of page */
 
 #tentacle_img_large {
@@ -138,7 +165,7 @@ body {
   height:125%;
   position: relative;
   top: -20;
-  align: left;
+  text-align: left;
 }
 
 
@@ -179,3 +206,41 @@ body {
   position: relative;
   top: 10px;
 }
+
+/* styles for content of lowest level curriculum Grids */
+
+ .MOOC_Tabelle {
+      color: blue;
+    }
+
+    .Spalte1{
+      width: 15%;
+      align: middle;
+      align: center;
+    }
+
+    .ueberschriftLinks {
+      color: yellow;
+    }
+
+    a{
+      text-decoration: none !important;
+    }
+
+    .bildLinks {
+      color: green;
+    }
+
+    .textLinks {
+      color: red;
+    }
+
+
+    /* RECHTE SEITE */
+    .ueberschriftRechts {
+      color: purple;
+    }
+
+    .textRechts {
+      color: orange;
+    }
