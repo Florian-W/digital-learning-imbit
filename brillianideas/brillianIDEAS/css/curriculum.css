@@ -19,6 +19,7 @@ body {
                        "launchbar";
 }
 
+/* Grid Layout Design */
 .launchbar{
   /* style for launchbar */
   grid-area: launchbar;
@@ -156,13 +157,7 @@ body {
 }
 
 
-/* #tentakelarm_links{
-  border-width: 0px;
-  width:auto;
-  height:150%;
-  position: relative;
-  top:-100;
-} */
+/* Design von den Texten und Überschriften */
 
 /* title */
 .titletext{
@@ -223,11 +218,12 @@ a{
 }
 
 
-/* RECHTE SEITE */
+/* MODULBESCHREIBUNG */
 .ueberschriftRechts {
   color: purple;
 }
 
+/* Texte werden vermutlich  */
 .textRechts {
   color: orange;
 }
@@ -241,4 +237,59 @@ a{
 
 .pointerOnHover:hover {
   cursor:pointer
+}
+
+/* Position */
+.positionrelative{
+  position: relative;
+}
+
+.positionabsolute{
+  position: absolute;
+}
+
+.positionfixed{
+  position: fixed;
+}
+
+
+/* Text Alignment */
+.alignedright{
+  text-align: right;
+}
+
+.alignedcenter{
+  text-align: center;
+}
+
+.alignleft{
+  text-align: left;
+}
+
+/* Font Style */
+.fontnormal{
+  font-style: normal;
+}
+
+.fontitalic{
+  font-style: italic;
+}
+
+.fontoblique{
+  font-style: oblique;
+}
+
+/* Font Family */
+.fontcaveat{
+  font-family: 'Caveat Brush';
+}
+
+.fonttinos{
+  font-family: 'Tinos';
+}
+
+
+/* Design for Images */
+.imgMoocs{
+  /* größe der Bilder für die MooCs einstellen */
 }
