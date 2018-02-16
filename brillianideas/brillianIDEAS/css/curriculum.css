@@ -242,3 +242,99 @@ a{
 .pointerOnHover:hover {
   cursor:pointer
 }
+
+/*Fontcolours*/
+.font_black {
+  color: black;
+}
+
+.font_red {
+  color: #991B33;
+}
+
+.font_white{
+  color: white;
+}
+
+/*Backgrounds*/
+.background_white {
+  color: white;
+}
+
+.background_red {
+  color:#991B33;
+}
+
+.background_grey {
+  color: #5E5E5E;
+}
+
+/*Headings -size and weight maybe readjusted*/
+.heading1 {
+  font-size:4vmax;
+  font-weight:700;
+}
+
+.heading2 {
+  font-size:3vmax;
+  font-weight: 500;
+}
+
+.heading3 {
+  font-size:2vmax;
+  font-weight: 300;
+}
+
+.heading4 {
+  font-size:1vmax;
+  font-size: 100;
+}
+
+/* Font Family */
+.font_caveat{
+  font-family: 'Caveat Brush';
+}
+
+.font_tinos{
+  font-family: 'Tinos'
+}
+
+/* Font STYLE */
+.style_normal{
+  font-style: normal;
+}
+
+.style_italic{
+  font-style: italic;
+}
+
+.style_oblique{
+  font-style: oblique;
+}
+
+
+/* Text Alignment */
+.alignedright{
+  text-align: right;
+}
+
+.alignedcenter{
+  text-align: center;
+}
+
+.alignedleft{
+  text-align: left;
+}
+
+/* Position */
+.positionabsolute{
+  position: absolute;
+}
+
+.positionrelative{
+  position: relative;
+}
+
+.img_moocs{
+  /* hier größe der Bilder für moocs */
+}
