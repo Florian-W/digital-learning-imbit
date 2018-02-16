@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context>
+<Context path="/brillianICM">
 
 	<!-- some default values for Connection Pool are defined by Tomcat itself
 	for more information lookup https://people.apache.org/~fhanik/jdbc-pool/jdbc-pool.html
-	and
-	https://tomcat.apache.org/tomcat-7.0-doc/jndi-datasource-examples-howto.html 
-	-->
+	and https://tomcat.apache.org/tomcat-7.0-doc/jndi-datasource-examples-howto.html -->
 	
 	<!-- username and password: MySQL username and password  -->
 	<!-- driverClassName: Class name for MySQL is org.apache.derby.jdbc.EmbeddedDriver -->
 	<!-- url: The JDBC connection url for connecting to your MySQL dB. -->
     <!-- logAbandoned="true" removeAbandoned="true" 
-  		=> abandoned connections - usage of SQL without closing the Request will be logged and receovered if necessary
-    -->
+  		=> abandoned connections - usage of SQL without closing the Request will be logged and receovered if necessary -->
     <!-- Type: a org.apache.tomcat.jdbc.pool.DataSource will be created. -->
 
     <Resource name="jdbc/security" auth="Container" 
