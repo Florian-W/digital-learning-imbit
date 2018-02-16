@@ -230,6 +230,25 @@ a{
   color: orange;
 }
 
+/* FUTURE GRID */
+.grid_layout {
+  display: grid;
+  height: 100%;
+  width: 100%;
+
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: 5% repeat(12, 1fr) 5%;
+}
+
+.grid_column_1-6{
+  grid-column: 2 / 8;
+}
+
+.grid_column_7-12{
+  grid-column: 8 / 14; 
+}
+
+.grid 
 
 
 /* FOR FUTURE CLEAN UP: STYLE CLASSES */
