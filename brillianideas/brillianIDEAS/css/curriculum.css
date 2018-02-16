@@ -135,13 +135,11 @@ body {
 }
 
 .inhalt-1 {
-  grid-area: inhalt-1;;
-  text-align: center;
+  grid-area: inhalt-1;
 }
 
 .inhalt-2 {
   grid-area: inhalt-2;
-  text-align: center;
 }
 
 /* tentacle at top of page */
@@ -314,16 +312,20 @@ a{
 
 
 /* Text Alignment */
-.alignedright{
+.aligned_right{
   text-align: right;
 }
 
-.alignedcenter{
+.aligned_center{
   text-align: center;
 }
 
-.alignedleft{
+.aligned_left{
   text-align: left;
+}
+
+.aligned_justify{
+  text-align: justify;
 }
 
 /* Position */
