@@ -256,6 +256,18 @@ body {
   color: white;
 }
 
+.font_onHover_black:hover {
+  color: black;
+}
+
+.font_onHover_red:hover {
+  color: #991B33;
+}
+
+.font_onHover_white:hover {
+  color: white;
+}
+
 /*Backgrounds*/
 .background_white {
   color: white;
