@@ -25,21 +25,6 @@ body {
 }
 
 
-/* FROM OLD STYLE BUT REVISION TBD */
-
-.modul{
-  color:black;
-  font-family: 'Caveat Brush';
-
-}
-
-.modul:hover{
-    cursor:pointer;
-    color:#991B33;
-    font-family: 'Caveat Brush';
-    font-size:3vmax;
-}
-
 /* FUTURE GRID */
 
 .grid_layout {
@@ -120,11 +105,22 @@ body {
   grid-column: 1 / 6;
 }
 
+.grid_column_2_7{
+  grid-column: 2 / 8;
+}
+
+.grid_column_2_8{
+  grid-column: 2 / 9;
+}
+
 .grid_column_6_9 {
   grid-column: 6 / 10;
 }
 .grid_column_7_12 {
   grid-column: 8 / 14;
+}
+.grid_column_4_8 {
+  grid-column: 4 / 9;
 }
 
 .grid_column_4_7{
@@ -143,8 +139,12 @@ body {
   grid-column: 10 / 14;
 }
 
-.grid_column_9_12{
-  grid-column: 9 / 13;
+/* .grid_column_8_13{
+  grid-column: 8 / 14;
+} */
+
+.grid_column_9_13{
+  grid-column: 9 / 14;
 }
 .grid_column_10_14{
   grid-column: 10 / 15;
@@ -173,6 +173,10 @@ body {
 
 .grid_row_7_10 {
   grid-row: 7 / 11;
+}
+
+.grid_row_9_12 {
+  grid-row: 9 / 13;
 }
 
 .grid_row_11_12 {
@@ -374,7 +378,7 @@ align-self: start;
 
 #tentakel_home{
   width:100%;
-  height:auto;
+  height:85%;
 }
 
 #tentacle_img_left{
