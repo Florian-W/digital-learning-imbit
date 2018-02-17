@@ -1,6 +1,7 @@
 {
 	"DragDropGames": [{
-			"DragAndDropList": [{
+
+		"DragAndDropList": [{
 					"title": "Primäraktivitäten - Drag & Drop",
 					"description": "Ziehe alle Elemente in das richtige Feld. Mit \"Eingabe prüfen\"  kannst du überprüfen, ob alle Elemente richtig sind. Falsche Elemente werden rot makiert",
 					"id": "d0",
@@ -12,39 +13,27 @@
 					"titleTarget3": "Outbound Logistics",
 					"titleTarget4": "Marketing"
 
-				},
-
-				{
+				}, {
 					"id": "d1",
 					"elementtext": "Auftragsannahme",
 					"target": "target4"
-				},
-
-				{
+				}, {
 					"id": "d2",
 					"elementtext": "Lagerhaltung Einsatzmaterialien",
 					"target": "target1"
-				},
-
-				{
+				}, {
 					"id": "d3",
 					"elementtext": "Preisverhandlung",
 					"target": "target4"
-				},
-
-				{
+				}, {
 					"id": "d4",
 					"elementtext": "Schweißen, Fräsen",
 					"target": "target2"
-				},
-
-				{
+				}, {
 					"id": "d5",
 					"elementtext": "Montage",
 					"target": "target2"
-				},
-
-				{
+				}, {
 					"id": "d6",
 					"elementtext": "Promotion",
 					"target": "target4"
@@ -74,50 +63,38 @@
 					"target": "target1"
 				}
 			]
-
-
 		},
 
 		{
 
-			"DragAndDropList": [{
+"DragAndDropList": [{
 					"title": " Unterstützungsaktivitäten - Drag & Drop ",
 					"description": "Ziehe alle Elemente in das richtige Feld. Mit \"Eingabe prüfen\"  kannst du überprüfen, ob alle Elemente richtig sind. Falsche Elemente werden rot makiert",
 					"id": "d0",
 					"elementtext": "Produktentwicklung",
 					"target": "target3",
 					"targetNumber": "4",
-					"titleTarget1": "Firm Infrastructure",
+					"titleTarget1": "Company Infrastructure",
 					"titleTarget2": "Human Ressource",
 					"titleTarget3": "Technologydevelopment",
 					"titleTarget4": "Procurement"
-				},
-
-				{
+				}, {
 					"id": "d1",
 					"elementtext": "Buchhandlung",
 					"target": "target1"
-				},
-
-				{
+				}, {
 					"id": "d2",
 					"elementtext": "Preisverhandlung",
 					"target": "target4"
-				},
-
-				{
+				}, {
 					"id": "d3",
 					"elementtext": "Entwicklung Verfahrenstechnik",
 					"target": "target3"
-				},
-
-				{
+				}, {
 					"id": "d4",
 					"elementtext": "Controlling",
 					"target": "target1"
-				},
-
-				{
+				}, {
 					"id": "d5",
 					"elementtext": "Personalbeurteilung",
 					"target": "target2"
@@ -141,55 +118,11 @@
 					"id": "d10",
 					"elementtext": "Mahnwesen",
 					"target": "target1"
-				}
-			]
-		},
 
-		{
+					}]
+			  }],
 
-			"DragAndDropList": [{
-					"title": " df",
-					"description": "Ziehe alle Elemente in das richtige Feld. Mit \"Eingabe prüfen\"  kannst du überprüfen, ob alle Elemente richtig sind. Falsche Elemente werden rot makiert",
-					"id": "d0",
-					"elementtext": "Bread",
-					"target": "target1",
-					"targetNumber": "4",
-					"titleTarget1": "test1",
-					"titleTarget2": "test2",
-					"titleTarget3": "test3",
-					"titleTarget4": "test4"
-				},
-
-				{
-					"id": "d1",
-					"elementtext": "Samosas",
-					"target": "target1"
-				},
-
-				{
-					"id": "d2",
-					"elementtext": "dfdffdfd Thai",
-					"target": "target1"
-				},
-
-				{
-					"id": "d3",
-					"elementtext": "Ravioli",
-					"target": "target2"
-				},
-
-				{
-					"id": "d4",
-					"elementtext": "Haggis",
-					"target": "target2"
-				}
-			]
-		}
-
-	],
-
-
-	"quizGames": [{
+  "quizGames": [{
 
 			"quizlist": [
 
@@ -218,7 +151,7 @@
 					]
 				}, {
 					"question": "Aufgabe der Unternehmensführung ist es: ",
-					"optionTrue": "ie übergeordneten Unternehmensziele zu bestimmen.",
+					"optionTrue": "Die übergeordneten Unternehmensziele zu bestimmen.",
 					"optionFalse": [
 						"Die Einzelpläne der Funktionsbereiche zu erstellen.",
 						"Die Einzelpläne der Funktionsbereiche zielkonform zusammenzufassen",
@@ -228,11 +161,13 @@
 					"question": "Was trifft auf das betriebliche Rechnungswesen zu?",
 					"optionTrue": "Alle der genannten Antworten",
 					"optionFalse": [
-						"Ja"
+						"Es dient der Planung, Steuerung und Kontrolle eines Unternehmens.",
+						"Unternehmen sind verpflichtet, Rechnungswesen zu betreiben.",
+						"Die Dokumentation ist der erste Schritt des betrieblichen Rechnungswesens."
 					]
 				}, {
 					"question": "Welcher der folgenden Prozesse ist nicht Teil der Primären Aktivitäten?",
-					"optionTrue": "Nein",
+					"optionTrue": "Keiner der genannten Prozesse.",
 					"optionFalse": [
 						"Bereitstellung von Informationen für unternehmensinterne Adressaten",
 						"Bereitstellung von Informationen für unternehmensexterne Adressaten",

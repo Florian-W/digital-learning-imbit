@@ -34,7 +34,7 @@ right:-100%;
 position:absolute;
 }
 .buttonToQuiz1, .buttonToQuiz2, .buttonToQuiz3, .buttonToQuiz4, .buttonToQuiz5 {
-	border:2px solid #ccc;
+	border:4px solid #ccc;
 	background-color: rgb(153,27,51);
 	color: white;
 	width:250px;
@@ -110,9 +110,9 @@ font-size:27px;
 color:#FFF;
 font-family: 'Tinos';
 }
-
-.option{width:400px;
-height:30px;
+/* Auswahloptionbutton bei Quizfragen*/
+.option{width:500px;
+height:auto;
 margin:15px;
 font-size:22px;
 line-height: 20px;
