@@ -22,38 +22,46 @@
 
   <!-- HIER BEGINNT Grid1 -->
   <div class="grid_layout" id="Grid1">
-    <div class="grid_column_1_6 grid_row_1_2">
-      <img class="tentakel_left_50" src="img/Tintenfisch_Kopf_HOME.png"/>
+    <div class="grid_column_1_3 grid_row_1_3">
+      <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png"/>
     </div>
 
-    <div class="grid_row_1_2 grid_column_7_12">
+    <div class="grid_column_10_14 grid_row_8_10">
+      <img id="tentacle_img_left" src="img/tentakel_rtl.png"/>
+    </div>
+
+    <div class="grid_column_1_5 grid_row_5_10">
+      <img id="tentacle_img_right" src="img/tentakel_ltr.png"/>
+    </div>
+
+    <div class="grid_row_1_2 grid_column_7_12 gridalign_center">
       <div class ="heading1 aligned_right font_caveat">IMBIT-Curriculum</div>
     </div>
 
-    <div class="grid_row_3_6 grid_column_1_4">
+    <div class="grid_row_4 grid_column_3_4 heading3 gridalign_center size_onHover pointer_onHover">
+      <div id="Informatik" class="modul">Informatik</div>
+    </div>
+    <div class="grid_row_6 grid_column_7_9 heading3 gridalign_center size_onHover pointer_onHover">
       <div id="Wirtschaftsinformatik" class="modul" onclick="changeVisible('Grid1', 'Grid2')">Wirtschaftsinformatik</div>
     </div>
-    <div class="grid_row_3_6 grid_column_5_8">
-      <div id="informatik" class="modul">Informatik</div>
-    </div>
-    <div class="grid_row_3_6 grid_column_9_12">
-      <div id="methodischegrundlagen" class="modul">Methodische Grundlagen</div>
-    </div>
-    <div class="grid_row_7_10 grid_column_1_4">
-      <div id="praxisphase" class="modul">Praxisphase</div>
-    </div>
-    <div class="grid_row_7_10 grid_column_5_8">
+    <div class="grid_row_5 grid_column_10_13 heading3 gridalign_start size_onHover pointer_onHover">
       <div id="wirtschafstwissenschaften" class="modul">Wirtschaftswissenschaften</div>
     </div>
-    <div class="grid_row_7_10 grid_column_9_12">
-      <div id="interkulturell" class="modul">Internationales Wissen & Management</div>
+    <div class="grid_row_10 grid_column_4_7 heading3 gridalign_end size_onHover pointer_onHover">
+      <div id="Interkulturell" class="modul">Interkulturelles Management & Wissen</div>
+    </div>
+    <div class="grid_row_8 grid_column_6_9 heading3 gridalign_start size_onHover pointer_onHover">
+      <div id="methodischegrundlagen" class="modul">Methodische Grundlagen</div>
+    </div>
+    <div class="grid_row_10 grid_column_11_12 heading3 aligned_right gridalign_center size_onHover pointer_onHover">
+      <div id="Praxisphase" class="modul">Praxisphase</div>
     </div>
   </div>
 
 <!-- HIER BEGINNT Grid2 -->
 <div class="grid_layout" id="Grid2">
-    <div class="grid_column_1_6 grid_row_1_2">
-      <img class="tentakel_left_50" src="img/Tintenfisch_Kopf_HOME.png"/>
+    <div class="grid_column_1_3 grid_row_1_3">
+      <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png"/>
     </div>
 
     <div class="grid_row_1_2 grid_column_7_12">
@@ -61,19 +69,19 @@
       <div class="heading2 font_caveat aligned_right">Wirtschaftsinformatik</div>
     </div>
 
-    <div class="grid_column_2 grid_row_3">
+    <div class="grid_column_2 grid_row_3 heading3">
       <div id="" class="modul" onclick="">Modul1</div>
     </div>
-    <div class="grid_column_6 grid_row_6">
+    <div class="grid_column_6 grid_row_6 heading3">
       <div class="modul" onclick="changeVisible('Grid2', 'Grid3')">Modul Wirtschaftsinformatik</div>
     </div>
-    <div class="grid_column_11 grid_row_4">
+    <div class="grid_column_11 grid_row_4 heading3">
       <div id="" class="modul">Modul3</div>
     </div>
-    <div class="grid_column_3 grid_row_9">
+    <div class="grid_column_3 grid_row_9 heading3">
       <div id="" class="modul">Modul4</div>
     </div>
-    <div class="grid_column_8 grid_row_10">
+    <div class="grid_column_8 grid_row_10 heading3">
       <div id="" class="modul">Modul5</div>
     </div>
 </div>
@@ -81,14 +89,14 @@
 <!--HIER BEGINNT Grid3 -->
 <div class="grid_layout" id="Grid3">
 
-  <div class="grid_column_1_6 grid_row_1_2">
-    <img  class="tentakel_left_50" src="img/Tintenfisch_Kopf_HOME.png"/>
+  <div class="grid_column_1_3 grid_row_1_3">
+    <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png"/>
   </div>
 
-  <div class="grid_column_7_12 grid_row_1_2">
+  <div class="grid_column_7_12 grid_row_1_2 gridalign_center">
     <div class="font_black heading1 font_caveat aligned_right pointer_onHover" onclick="changeVisible('Grid3', 'Grid1')">IMBIT-Curriculum</div>
     <div class="font_black heading2 font_caveat aligned_right pointer_onHover" onclick="changeVisible('Grid3', 'Grid2')">Wirtschaftsinformatik</div>
-    <div class="heading3 font_caveat aligned_right">Modul Wirtschaftsinformatik</div>
+    <div class="heading3 font_caveat aligned_right gridalign_center">Modul Wirtschaftsinformatik</div>
   </div>
 
   <div class="grid_column_1_8 grid_row_4_10">
@@ -130,7 +138,7 @@
     <div class="font_black font_tinos aligned_left"><ul>
       <li>Verständnis über Aufgaben und Systeme der Wirtschaftsinformatik</li>
       <li>Fähigkeit reale Informationssysteme in die Taxonomie der Wirtschaftsinformatik einzuordnen und als soziotechnische Systeme zu beschreiben</li>
-    </ul></div> 
+    </ul></div>
     <div class="font_red heading4 font_caveat aligned_justify">Weiterführende Literatur</div>
     <div class="font_black font_tinos aligned_left"><ul>
       <li>Abts, D.; Mülder, W.: Grundkurs Wirtschaftsinformatik, Springer Vieweg, Wiesbaden.</li>
