@@ -29,7 +29,8 @@
 				hashService.generatePublicSalt = true
                 # privateSalt needs to be base64-encoded in shiro.ini but not in the Java code
 				hashService.privateSalt = VyFyUyFuZElNQiFUMjAxMSQmJA==
-				passwordMatcher = org.apache.shiro.authc.credential.PasswordMatcher	
+				passwordMatcher = org.apache.shiro.authc.credential.PasswordMatcher
+				
 				passwordService = org.apache.shiro.authc.credential.DefaultPasswordService
 				passwordService.hashService = $hashService
 				passwordMatcher.passwordService = $passwordService
