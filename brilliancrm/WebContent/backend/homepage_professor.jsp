@@ -82,7 +82,16 @@
 							out.println(groups.get(i).get(1));
 							out.println("</big></td><td>");
 							//send email invitation button
-							out.println("<form action=\"" + request.getContextPath()
+							String webAppPath = new String();
+							if (request.getServerPort() == 8080) {
+								webAppPath = request.getScheme() + "://" + request.getServerName() + ":"
+										+ request.getServerPort() + application.getContextPath();
+							} else {
+								webAppPath = request.getScheme() + "://" + request.getServerName();
+							}
+							// System.out.println(webAppPath);
+
+							out.println("<form action=\"" + webAppPath
 									+ "/SendRegistrationLink\" method=\"get\"><input style=\"display:none\" id=\"invitationbutton"
 									+ i + "\" type=\"submit\" "
 									+ "value=\"Send email invitation\"/><a class= \"easyui-linkbutton\" onclick=\"$('#invitationbutton"
@@ -90,24 +99,21 @@
 							out.println("<input type=\"text\" name=\"link\" value=\"" + groups.get(i).get(2)
 									+ "\" style=\"display:none\"/></form></td><td>");
 							//delete group without members button
-							out.println("<td><form action=\"" + request.getContextPath() 
-									+ "/DeleteGroup\" method=\"post\">"
+							out.println("<td><form action=\"" + webAppPath + "/DeleteGroup\" method=\"post\">"
 									+ "<input style=\"display:none\" id=\"deleteGroupButton" + i
 									+ "\" type=\"submit\" value=\"Delete Group\"/> <a class= \"easyui-linkbutton\" onclick=checker("
 									+ i + ",\"" + groups.get(i).get(1) + "\")>delete group</a>"
 									+ "<input type=\"text\" name=\"group_id\" value=\"" + groups.get(i).get(0)
 									+ "\" style=\"display:none\"/>" + "</form></td><td>");
 							//delete group with all members button
-							out.println("<td><form action=\"" + request.getContextPath()
-									+ "/DeleteGroupMembers\" method=\"post\">"
+							out.println("<td><form action=\"" + webAppPath + "/DeleteGroupMembers\" method=\"post\">"
 									+ "<input style=\"display:none\" id=\"deleteGroupMembersButton" + i
 									+ "\" type=\"submit\" value=\"Delete Group Members\"/> <a class= \"easyui-linkbutton\" onclick=checker("
 									+ i + ",\"" + groups.get(i).get(1) + "\")>delete group with members</a>"
 									+ "<input type=\"text\" name=\"group_id\" value=\"" + groups.get(i).get(0)
 									+ "\" style=\"display:none\"/>" + "</form></td><td>");
 							//set progress dropdown and button with set TCQ progress
-							out.println("<form action=\"" + request.getContextPath() 
-									+ "/SetUserProgress\" method=\"post\">"
+							out.println("<form action=\"" + webAppPath + "/SetUserProgress\" method=\"post\">"
 									+ "<input type=\"text\" name=\"group_id\" value=\"" + groups.get(i).get(0)
 									+ "\" style=\"display:none\"/>"
 									+ "<input type=\"text\" name=\"cost\" value=\"71\" style=\"display:none\"/>"
@@ -163,7 +169,7 @@
 									a++;
 									if (groups.get(i).get(1).equals(row.get(5))) {
 										out.println("<tr><td>");
-										out.println("<form action=\"" + application.getContextPath()
+										out.println("<form action=\"" + webAppPath
 												+ "/DeleteUser\" method=\"post\"><input style=\"display:none\" id=\"deleteUserButton"
 												+ a + "\" type=\"submit\" "
 												+ "value=\"Delete User\"/><a class= \"easyui-linkbutton\" onclick=\"$('#deleteUserButton"
@@ -171,7 +177,7 @@
 										out.println("<input type=\"text\" name=\"delete_email\" value=\"" + row.get(6)
 												+ "\" style=\"display:none\"/></form>");
 										out.println("</td><td>");
-										out.println("<form action=\"" + application.getContextPath()
+										out.println("<form action=\"" + webAppPath
 												+ "/ResetUserProgress\" method=\"post\"><input style=\"display:none\" id=\"resetUserProgressButton"
 												+ a + "\" type=\"submit\" "
 												+ "value=\"Reset User\"/><a class= \"easyui-linkbutton\" onclick=\"$('#resetUserProgressButton"

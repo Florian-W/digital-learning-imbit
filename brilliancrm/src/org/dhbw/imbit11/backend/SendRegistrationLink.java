@@ -68,13 +68,14 @@ public class SendRegistrationLink extends javax.servlet.http.HttpServlet impleme
 		request.setCharacterEncoding("UTF-8");
 		String url = "/backend/sendRegistrationLink.jsp";
 
-		// get the registration link and the recipient of the email from the JSP
+		//get the registration link and the recipient of the email from the JSP
 		String link = request.getParameter("link");
 		String toMail = request.getParameter("email");
 		String username = (String) request.getAttribute("username");
 
 		// email that is sent to the people that are invited to a group by professor
-		String content = "Dear project manager, <br><br> please use the following link to register to your course: " + link
+		String content = "Dear project manager, <br><br> please use the following link to register to your course: <br><br>"
+				+ link
 				+ "<br><br> With best regards, <br><br>"
 				+ "your brillianCRM team <br><br><br> Note that this is a system generated e-mail. Please do not reply.";
 

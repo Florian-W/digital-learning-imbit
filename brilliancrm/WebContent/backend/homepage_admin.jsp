@@ -71,6 +71,14 @@
 			</thead>
 			<tbody>
 				<%
+					String webAppPath = new String();
+					if (request.getServerPort() == 8080) {
+						webAppPath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
+								+ application.getContextPath();
+					} else {
+						webAppPath = request.getScheme() + "://" + request.getServerName();
+					}
+
 					if (request.getAttribute("professors") != null) {
 						@SuppressWarnings("unchecked")
 						ArrayList<ArrayList<String>> professors = (ArrayList<ArrayList<String>>) request
@@ -89,7 +97,7 @@
 							out.println("</td><td>");
 							out.println(row.get(2));
 							out.println("</td><td>");
-							out.println("<form action=\"" + request.getContextPath()
+							out.println("<form action=\"" + webAppPath
 									+ "/DeleteProfessor\" method=\"post\"><input class=\"deleteProfessor\" type=\"submit\" "
 									+ "value=\"Delete\" hidden=\"hidden\"/><a class=\"easyui-linkbutton\" onclick=\"$(this).parent().parent().find('.deleteProfessor').trigger('click');\">Delete</a><input type=\"text\" name=\"delete_professor\" value=\""
 									+ row.get(2) + "\" style=\"display:none\"/></form>");
@@ -115,28 +123,24 @@
 							select</option>
 						<option value="m">Mr.</option>
 						<option value="f">Mrs.</option>
-					</select><br />
-					<br />
+					</select><br /> <br />
 					<div class="formLabel">first name</div>
 					<input type="text" name="firstname" maxlength="50"
-						value="${firstname}" required /><br />
-					<br />
+						value="${firstname}" required /><br /> <br />
 					<div class="formLabel">last name</div>
 					<input type="text" name="lastname" maxlength="50"
-						value="${lastname}" required /><br />
-					<br />
+						value="${lastname}" required /><br /> <br />
 					<div class="formLabel">email</div>
 					<input type="email" name="email" maxlength="50" value="${email}"
-						required /><br />
-					<br />
+						required /><br /> <br />
 					<div class="formLabel">password</div>
 					<input type="password" name="password" maxlength="50" required /><br />
 					<br />
 					<div class="formLabel">repeat password</div>
 					<input type="password" name="password_repeat" maxlength="50"
-						required /><br />
-					<br /> <input id="createUser" type="submit" value="Create now!"
-						hidden="hidden"></input> <a class="easyui-linkbutton"
+						required /><br /> <br /> <input id="createUser" type="submit"
+						value="Create now!" hidden="hidden"></input> <a
+						class="easyui-linkbutton"
 						onclick="$('#createUser').trigger('click')">Create Lecturer</a>
 					<p style="color: green">${success}</p>
 					<p style="color: red">${error}</p>
@@ -147,21 +151,19 @@
 				<p style="color: red; padding-left: 32px;">${error}</p>
 				<form action="ResetPassword" method="post">
 					<input type="text" name="role" maxlength="50" value="admin"
-						style="display: none" /><br />
-					<br />
+						style="display: none" /><br /> <br />
 					<!--  Password check -->
 					<div class="formLabel">Old Password:</div>
 					<input type="password" name="oldpassword" maxlength="50" /><br />
 					<br /> <input type="text" name="role" maxlength="50" value="admin"
 						style="display: none" />
 					<div class="formLabel">Password:</div>
-					<input type="password" name="password" maxlength="50" /><br />
-					<br />
+					<input type="password" name="password" maxlength="50" /><br /> <br />
 					<div class="formLabel">Repeat Password:</div>
 					<input type="password" name="password_repeat" maxlength="50" /><br />
 					<br /> <input id="updatePassword" type="submit"
-						name="updatePassword" value="Update password" hidden="hidden" /> <a
-						class="easyui-linkbutton studentButton"
+						name="updatePassword" value="Update password" hidden="hidden" />
+					<a class="easyui-linkbutton studentButton"
 						onclick=confirmPasswordChange()>Update Password</a>
 				</form>
 			</div>
@@ -175,14 +177,14 @@
 					<div style="width: 120px; float: left;">
 						Audio:<br>
 						<a style="color: blue; padding-left: 32px;">${audio}</a><br>
-							Video:
+							Video: 
 						<br>
 						<a style="color: blue; padding-left: 32px;">${video}</a>
 					</div>
 					<div style="margin-left: 120px;">
 						Text-to-Speech:<br>
 						<a style="color: blue; padding-left: 32px;">${tts}</a><br>
-							Subtitles
+							Subtitles 
 						<br>
 						<a style="color: blue; padding-left: 32px;">${subtitles}</a>
 					</div>
@@ -233,14 +235,12 @@
 	$('#imprint').bind('click', function() {
 		showImprint();
 	});
-	function confirmPasswordChange()
-	{
+	function confirmPasswordChange(){
 		var box = window.confirm("Click OK if you want to change password. You will be logged out. ");
-		if(box)
-		{
-		$('#updatePassword').trigger('click');
-		sessionStorage.removeItem('userid');
-		window.location.href = 'LogoutUser';
+		if(box){
+			$('#updatePassword').trigger('click');
+			sessionStorage.removeItem('userid');
+			window.location.href = 'LogoutUser';
 		}
 	}
 </script>
