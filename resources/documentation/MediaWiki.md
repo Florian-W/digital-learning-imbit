@@ -64,7 +64,7 @@ create database my_wiki;
 grant all privileges on my_wiki.* to Wiki@localhost; 
 exit
 ```
-*Navigate your browser to http://localhost/mediawiki or try http://localhost/mediawiki/config or http://wiki.hostname.com/config instead). If you receive a 404 error then do the following:
+*Navigate your browser to http://localhost/mediawiki or try http://localhost/mediawiki/config or http://wiki.hostname.com/config instead).Localhost is the ip adress e.g. 221.xxx.xxx.xxx. If you receive a 404 error then do the following:
 ```
 cd /var/www/html
 sudo ln -s /var/lib/mediawiki mediawiki
@@ -76,6 +76,6 @@ sudo ln -s /var/lib/mediawiki mediawiki
  sudo phpenmod xml
  sudo systemctl restart apache2.service
 ```
-
+*Try to open http://212.xxx.xxx.xxx/mediawiki/. You should see a welcome screen with the mediawikilogo (a flower), and can now configure the LocalSettings.php by clicking onto the link "set up the wiki"
 
 
