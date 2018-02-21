@@ -178,7 +178,8 @@ wfLoadExtension( 'Cite' );
 
 
 ### Configure the URL
-
+Finally, the mediawiki should not be accessed by its IP, but by a domain name. 
+This can be configured in the conf files located in /etc/apache2/sites-enabled.
 
 
 
