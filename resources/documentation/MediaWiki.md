@@ -58,12 +58,14 @@ rm -R /DownloadMediaWiki/
 ### Configuration
 * Login as Mysql root user and create a user for the mediwiki:
 ```
-mysql -u root -p 
-create user wikiadmin@localhost identified by 'imbit15'; 
-create database mediawiki; 
-grant all privileges on mediawiki.* to wikiadmin@localhost; 
+mysql -u root -p
+create user Wiki@localhost identified by 'yourpassword';
+create database my_wiki; 
+grant all privileges on my_wiki.* to Wiki@localhost; 
 exit
+
 ```
+
 
 
 
