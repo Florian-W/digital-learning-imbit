@@ -208,7 +208,7 @@ sudo nano /etc/apache2/mediawiki.conf
         
 </VirtualHost>
 ```
-*Reboot Apache2 by executing:
+* Reboot Apache2 by executing:
 ```
 sudo service apache2 reload
 ```
