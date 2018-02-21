@@ -185,6 +185,31 @@ This can be configured in the conf files located in /etc/apache2/sites-available
 sudo nano /etc/apache2/mediawiki.conf
 ```
 * Then paste the following content into this file
+```
+
+<VirtualHost *:80>
+        ServerAdmin admin@yourdomain.com
+        DocumentRoot /var/www/html/mediawiki/
+
+        <Directory /var/www/html/mediawiki/>
+                Options FollowSymLinks
+                AllowOverride All
+                Order allow,deny
+                allow from all
+        </Directory>
+
+        ErrorLog /var/log/apache2/wiki.error_log
+        CustomLog /var/log/apache2/wiki-access_log common
+
+
+#        ProxyPreserveHost On
+#        ProxyRequests Off
+        ServerName wiki.digital-learning-imbit.com
+        ServerAlias www.wiki.digital-learning-imbit.com
+
+
+</VirtualHost>
+```
 *Reboot Apache2 by executing:
 ```
 sudo reload apache2
