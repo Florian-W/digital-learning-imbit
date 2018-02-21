@@ -76,6 +76,15 @@ sudo ln -s /var/lib/mediawiki mediawiki
  sudo phpenmod xml
  sudo systemctl restart apache2.service
 ```
-*Try to open http://212.xxx.xxx.xxx/mediawiki/. You should see a welcome screen with the mediawikilogo (a flower), and can now configure the LocalSettings.php by clicking onto the link "set up the wiki"
+*Try to open http://212.xxx.xxx.xxx/mediawiki/. You should see a welcome screen with the mediawikilogo (a flower), and you can now configure the LocalSettings.php by clicking onto the link "set up the wiki".
+* As language choose German twice and press "Weiter".
+* Press "Weiter" (continue)
+* Choose "localhost" (default value) as database server, choose my_wiki as database name and type Wiki as user and fill in the password.
+* Press "weiter", accept the default settings in the next screen, press "weiter" again.
+* In the next section enter "Cloud Computing Workshop" as name, "Admin" as user name and enter the password (cf. Orga-pdf), enter the wimbit google mail address as email address.
+* click on "weiter" until you reach the screen, where you are requested to click on the "Install" button. 
+* Press "install" and then "weiter".
+* Congrats! - The MediaWiki has been installed, and configured!
+
 
 
