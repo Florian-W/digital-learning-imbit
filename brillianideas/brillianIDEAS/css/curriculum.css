@@ -127,6 +127,10 @@ body {
   grid-column: 4 / 9;
 }
 
+.grid_column_4_11{
+  grid-column: 4 / 12;
+}
+
 .grid_column_4_7{
   grid-column: 4 / 8;
 }
@@ -167,7 +171,9 @@ body {
   grid-row: 1 / 4;
 }
 
-
+.grid_row_4_9 {
+  grid-row: 4 / 10;
+}
 .grid_row_5_9 {
   grid-row: 5 / 10;
 }
