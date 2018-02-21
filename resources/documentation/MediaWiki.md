@@ -127,6 +127,9 @@ The images.tar file is also created in the …/htdocs/images folder.
 You can access the folder with your browser:
 http://192.xxx.xxx..xxx/mediawiki/images/ 
 •	Download the tar archive
+* Upload the tar archive onto the ubuntu server with the fresh media wiki installation (as previously you can use filezilla and the transfer directory).
+* Now extract the imaages.tar file in the /root/transfer/ directory by executing:
+```
 
 
 
