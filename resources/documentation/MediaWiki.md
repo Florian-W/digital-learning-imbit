@@ -11,5 +11,17 @@ Moreover, it is shortly described how articles and photos can be transferred fro
 In order to boot the Wiki you neeed a virtual machine. In the instruction, Oracle Virtual Box, VMWare Workstation Player and VmWare Fusion are recommended.
 We recommend the VMWare Workstation Player, as it is free, and easy to configure.
 * Download it from: https://my.vmware.com/de/web/vmware/free#desktop_end_user_computing/vmware_workstation_player/12_0
-* Install the VMWare Workstation Player
-* 
+### VMWare Workstation Player setup
+* Install the VMWare Workstation Player (standard configuration is fine)
+* Open the VMWare Workstation Player and choose "Open A Virtual Machine" from the menu and select the bitnami-mediawiki-1.19.0-0-ubuntu-12.04.vmx in the VM folder of the extracted archive.
+* Then, the virtual machine is created and is displayed in the menu on the right-hand side
+* IMPORTANT: Before starting the VM, click "Edit virtual machine settings" and go to the section "Network Adapter". THe option "Bridged (Automatic) is selected by default. However, only "NAT" has worked for me. Change the setting to "NAT". This way the client can access and use the host ip (localhost), which is needed to access the media wiki by a web browser.
+*Start the virtual machine, by clicking the Play Button
+* In the fist pop-up window choose, "I copied it".
+* The linux system is now booting, once it is ready one can see the ip adress (first line in orange) e.g. http://192.168.170.130
+* Now enter the ip address in the browser bar of your preffered web browser.
+* The MediaWiki launches and it is ready to use.
+* Optional: You can log into the linux system by entering the credential stated in the "Anleitung.pdf" i.e. name = bitnami, password=bitnami. The login will be required later to transfer images and articles.
+
+## Installion of the recent MediaWiki on a Ubuntu/Debian based server
+*
