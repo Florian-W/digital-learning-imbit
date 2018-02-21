@@ -160,6 +160,17 @@ Backup = 192.xxx.xxx.xxx/mediawiki/index.php/Amazon_Web_Services
 New Installation = http://212.xxx.xxx.xxx/mediawiki/index.php/Amazon_Web_Services
 Since the page Amazon_Web_Services does not exist yet, mediawiki asks you to create this page. The edit mode will be opened, when clicking on erstellen/create. All you need to do now is to paste the markup of the back up article. The images are detected automatically, as the name is the same. 
 * Save the article and repeat these steps for all other articles.
+
+### Further tweaks:
+You might have noticed, that articles in the backup mediawiki can be accesed by a sidebar. The sidebar can be configured  by editing the following page: 
+http://212.xxx.xxx.xxx/mediawiki/index.php/MediaWiki:Sidebar
+So you just need to copy the markup content of this page from the backup and paste it to the new installation (same process as creating a new page).
+Hint: You need admin rights to access the Mediawiki:Siderbar page. The backup uses: username: user, pw: bitnami as credentials.
+
+Additionaly, there are some errors with the referencing, because the "Cite" plugin is deactivated by default. In order to activate it edit your LocalSettings.php file by adding wfLoadExtension( 'Cite' ); at the end:
+```
+
+
 ### Configure the URL
 
 
