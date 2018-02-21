@@ -179,7 +179,18 @@ wfLoadExtension( 'Cite' );
 
 ### Configure the URL
 Finally, the mediawiki should not be accessed by its IP, but by a domain name. 
-This can be configured in the conf files located in /etc/apache2/sites-enabled.
+This can be configured in the conf files located in /etc/apache2/sites-available.
+* You need to create a mediawiki.conf file
+```
+sudo nano /etc/apache2/mediawiki.conf
+```
+* Then paste the following content into this file
+*Reboot Apache2 by executing:
+```
+sudo reload apache2
+```
+* Now the page is accesible by wiki.brillianideas.com and www.wiki.brillianideas.com
+
 
 
 
