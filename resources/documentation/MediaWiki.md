@@ -106,9 +106,11 @@ sudo nano \var\lib\mediawiki\LocalSettings.php
 ```
 *Then look for for logo by pressing Strg+W and entering logo.
 Nano will jump to the $wgLogo variable.
-## The URL path to the logo.  Make sure you change this from the default,
-## or else you'll overwrite your logo when you upgrade!
+```
+##The URL path to the logo.  Make sure you change this from the default,
+##or else you'll overwrite your logo when you upgrade!
 $wgLogo = "$wgResourceBasePath/resources/assets/wiki.png";
+```
 Change the default path of wgLogo, to the path of your desired logo.
 If you do not want to use a logo, just change the name of the picture to wiki1.png. Since wiki1.png does not exist (unless you create it :)) the browser will not display a logo.
 
