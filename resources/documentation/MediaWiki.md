@@ -84,7 +84,9 @@ sudo ln -s /var/lib/mediawiki mediawiki
 * In the next section enter "Cloud Computing Workshop" as name, "Admin" as user name and enter the password (cf. Orga-pdf), enter the wimbit google mail address as email address.
 * click on "weiter" until you reach the screen, where you are requested to click on the "Install" button. 
 * Press "install" and then "weiter".
-* Congrats! - The MediaWiki has been installed, and configured!
+* Then the automatic download of the LocalSettings.php is triggered, you need to transfer this localSettings.php from your local pc to the Ubuntu server.
+
+### Upload localSettings.php to the server
 
 
 
