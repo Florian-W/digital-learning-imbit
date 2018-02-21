@@ -139,7 +139,27 @@ sudo php /var/lib/mediawiki/maintenance/importImages.php --search-recursively /r
 * All images should be automatically be imported, and can now be used within the articles.
 
 ### Create articles
+There is an overview page containing all pages. You can access it by going to "Spezialseiten" > "Alle Seiten".
+There should be 12 pages:
+* Amazon Web Services	
+* Arbeitsplatz aus der Cloud	
+* Business Intelligence & Analytics
+* Cloud Orchestration	
+* Customer Relationship Management	
+* Einführung Cloud Computing
+* Google App Engine
+* Hauptseite
+* Main Page
+* Microsoft Azure
+* Microsoft Office 365	
+* SAP Business ByDesign
 
+* Open each page and go to the edit mode in order to copy the markup/xml code from the backup
+* Then create a new page, to do so just copy the url of the backup but replace the ip adress:
+Backup = 192.xxx.xxx.xxx/mediawiki/index.php/Amazon_Web_Services
+New Installation = http://212.xxx.xxx.xxx/mediawiki/index.php/Amazon_Web_Services
+Since the page Amazon_Web_Services does not exist yet, mediawiki asks you to create this page. The edit mode will be opened, when clicking on erstellen/create. All you need to do now is to paste the markup of the back up article. The images are detected automatically, as the name is the same. 
+* Save the article and repeat these steps for all other articles.
 ### Configure the URL
 
 
