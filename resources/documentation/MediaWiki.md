@@ -24,8 +24,14 @@ We recommend the VMWare Workstation Player, as it is free, and easy to configure
 * Optional: You can log into the linux system by entering the credential stated in the "Anleitung.pdf" i.e. name = bitnami, password=bitnami. The login will be required later to transfer images and articles.
 
 ## Installion of the recent MediaWiki on a Ubuntu/Debian based server
-* Log into the server as root user via ssh (see other documentations)
-*
+* Log into the server as root user via ssh (see other documentations) and execute the following commands.
+```
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install apache2 mysql-server php php-mysql libapache2-mod-php php-xml php-mbstring
+sudo apt-get install apache2  libapache2-mod-php php-mbstring
+```
+* The following should already be installed as they are required by the serious game: mysql-server php php-mysql php-xml. If this is not the case, they need to be installed as well.
+* Make a directory for the installation files
+```
+mkdir /DownloadMediaWiki/
+```
