@@ -128,10 +128,19 @@ You can access the folder with your browser:
 http://192.xxx.xxx..xxx/mediawiki/images/ 
 •	Download the tar archive
 * Upload the tar archive onto the ubuntu server with the fresh media wiki installation (as previously you can use filezilla and the transfer directory).
-* Now extract the imaages.tar file in the /root/transfer/ directory by executing:
+* Now extract the images.tar file in the /root/transfer/ directory by executing:
 ```
+tar -xvf /root/transfer/images.tar
+```
+Then we can use a php function to import all images in a directory into the mediawiki:
+```
+sudo php /var/lib/mediawiki/maintenance/importImages.php --search-recursively /root/transfer/images
+```
+* All images should be automatically be imported, and can now be used within the articles.
 
+### Create articles
 
+### Configure the URL
 
 
 
