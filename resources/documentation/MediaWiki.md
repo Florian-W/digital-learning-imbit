@@ -210,14 +210,6 @@ sudo nano /etc/apache2/mediawiki.conf
 ```
 *Reboot Apache2 by executing:
 ```
-sudo reload apache2
+sudo service apache2 reload
 ```
 * Now the page is accesible by wiki.brillianideas.com and www.wiki.brillianideas.com, if you want to use https you have to extend the mediawiki.conf accordingly.
-
-
-
-
-
-
-
-
