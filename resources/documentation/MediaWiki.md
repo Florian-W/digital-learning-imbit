@@ -30,8 +30,14 @@ sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install apache2  libapache2-mod-php php-mbstring
 ```
-* The following should already be installed as they are required by the serious game: mysql-server php php-mysql php-xml. If this is not the case, they need to be installed as well.
+* The following should already be installed as they are required by the serious game: mysql-server php php-mysql php-xml. If this is not the case, they need to be installed as well:
+```
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install apache2 mysql-server php php-mysql libapache2-mod-php php-xml php-mbstring
+```
 * Make a directory for the installation files
 ```
 mkdir /DownloadMediaWiki/
 ```
+
