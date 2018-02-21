@@ -95,9 +95,31 @@ sudo mv /youruploadpath/LocalSettings.php /var/lib/mediawiki/LocalSettings.php
 ```
 * Now go back to your browser and open http://212.xxx.xxx.xxx/mediawiki/ again. You should see the fresh installation and main page of the media wiki, in the next section it will be explained how to transfer the articles and images from the back up to the new installation
 
-## Restoring Articles & images
+## Restoring articles & images
 There is no possibility to copy the content 1:1 from mediawiki A to mediawiki B. 
-Images and Articles need to be transferred manually. 
+images and articles need to be transferred manually. 
+### Change the logo
+The default logo is the mediawiki flower, if you want to change or remove it you need to do the following steps:
+*Open the LocalSettings.php with the nano editor:
+```
+sudo nano \var\lib\mediawiki\LocalSettings.php
+```
+*Then look for for logo by pressing Strg+W and entering logo.
+Nano will jump to the $wgLogo variable.
+## The URL path to the logo.  Make sure you change this from the default,
+## or else you'll overwrite your logo when you upgrade!
+$wgLogo = "$wgResourceBasePath/resources/assets/wiki.png";
+Change the default path of wgLogo, to the path of your desired logo.
+If you do not want to use a logo, just change the name of the picture to wiki1.png. Since wiki1.png does not exist (unless you create it :)) the browser will not display a logo.
+
+### Transfer the images
+Before we can create the articles we first need to restore the images, which will be used in the articles.
+To download all the pictures of the backup:
+
+
+
+
+
 
 
 
