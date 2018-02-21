@@ -87,6 +87,11 @@ sudo ln -s /var/lib/mediawiki mediawiki
 * Then the automatic download of the LocalSettings.php is triggered, you need to transfer this localSettings.php from your local pc to the Ubuntu server.
 
 ### Upload localSettings.php to the server
+* Use a program such as filezilla to upload the LocalSettings.php to upload the file using ftp onto the server
+* Check, that the file name is "LocalSettings.php"
+* The file needs to be stored in /var/lib/mediawiki, if you cannot directly upload it into this directory due to access rights move it by using the following command.
+sudo mv /youruploadpath/LocalSettings.php /var/lib/mediawik/LocalSettings.php
+
 
 
 
