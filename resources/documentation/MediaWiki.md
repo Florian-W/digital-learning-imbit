@@ -25,6 +25,7 @@ We recommend the VMWare Workstation Player, as it is free, and easy to configure
 
 ## Installion of the recent MediaWiki on a Ubuntu/Debian based server
 * Official Installation guide for Debian & Ubuntu: https://www.mediawiki.org/wiki/Manual:Running_MediaWiki_on_Debian_or_Ubuntu
+### Download and Preparation
 * Log into the server as root user via ssh (see other documentations) and execute the following commands.
 ```
 sudo apt-get update
@@ -54,4 +55,15 @@ rm -R  mediawiki-*
 cd /
 rm -R /DownloadMediaWiki/
 ```
+### Configuration
+* Login as Mysql root user and create a user for the mediwiki:
+```
+mysql -u root -p 
+create user wikiadmin@localhost identified by 'imbit15'; 
+create database mediawiki; 
+grant all privileges on mediawiki.* to wikiadmin@localhost; 
+exit
+```
+
+
 
