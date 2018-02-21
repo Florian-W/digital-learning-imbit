@@ -186,7 +186,6 @@ sudo nano /etc/apache2/mediawiki.conf
 ```
 * Then paste the following content into this file
 ```
-
 <VirtualHost *:80>
         ServerAdmin admin@yourdomain.com
         DocumentRoot /var/www/html/mediawiki/
@@ -204,17 +203,16 @@ sudo nano /etc/apache2/mediawiki.conf
 
 #        ProxyPreserveHost On
 #        ProxyRequests Off
-        ServerName wiki.digital-learning-imbit.com
-        ServerAlias www.wiki.digital-learning-imbit.com
-
-
+        ServerName wiki.brillianideas.com
+        ServerAlias www.wiki.brillianideas.com
+        
 </VirtualHost>
 ```
 *Reboot Apache2 by executing:
 ```
 sudo reload apache2
 ```
-* Now the page is accesible by wiki.brillianideas.com and www.wiki.brillianideas.com
+* Now the page is accesible by wiki.brillianideas.com and www.wiki.brillianideas.com, if you want to use https you have to extend the mediawiki.conf accordingly.
 
 
 
