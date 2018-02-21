@@ -37,9 +37,21 @@ sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install apache2 mysql-server php php-mysql libapache2-mod-php php-xml php-mbstring
 ```
-* Make a directory for the installation files
+* Make a directory for the installation files and download them
 ```
 mkdir /DownloadMediaWiki/
+cd /DownloadMediaWiki/
+wget https://releases.wikimedia.org/mediawiki/1.30/mediawiki-1.30.0.tar.gz
 ```
-
+* Extract files and move them to the correct directory
+tar -xvzf /DownloadMediaWiki/mediawiki-*.tar.gz
+sudo mkdir /var/lib/mediawiki
+sudo mv mediawiki-*/* /var/lib/mediawiki
+* Optional: remove installation files:
+```
+cd /DownloadMediaWiki/
+rm -R  mediawiki-*
+cd /
+rm -R /DownloadMediaWiki/
+```
 
