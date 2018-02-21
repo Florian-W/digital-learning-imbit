@@ -113,6 +113,10 @@ body {
   grid-column: 2 / 9;
 }
 
+.grid_column_2_13{
+  grid-column: 2 / 14;
+}
+
 .grid_column_6_9 {
   grid-column: 6 / 10;
 }
@@ -162,6 +166,7 @@ body {
 .grid_row_1_3{
   grid-row: 1 / 4;
 }
+
 
 .grid_row_5_9 {
   grid-row: 5 / 10;
