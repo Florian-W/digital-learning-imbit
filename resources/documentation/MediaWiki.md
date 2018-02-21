@@ -169,6 +169,12 @@ Hint: You need admin rights to access the Mediawiki:Siderbar page. The backup us
 
 Additionaly, there are some errors with the referencing, because the "Cite" plugin is deactivated by default. In order to activate it edit your LocalSettings.php file by adding wfLoadExtension( 'Cite' ); at the end:
 ```
+sudo nano /var/lib/mediawiki/LocalSettings.php
+
+# End of automatically generated settings.
+# Add more configuration options below.
+wfLoadExtension( 'Cite' );
+```
 
 
 ### Configure the URL
