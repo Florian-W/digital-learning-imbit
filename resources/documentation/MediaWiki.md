@@ -87,12 +87,17 @@ sudo ln -s /var/lib/mediawiki mediawiki
 * Then the automatic download of the LocalSettings.php is triggered, you need to transfer this localSettings.php from your local pc to the Ubuntu server.
 
 ### Upload localSettings.php to the server
-* Use a program such as filezilla to upload the LocalSettings.php to upload the file using ftp onto the server
+* Use a program such as filezilla to upload the LocalSettings.php to upload the file using ftp/sftp onto the server
 * Check, that the file name is "LocalSettings.php"
 * The file needs to be stored in /var/lib/mediawiki, if you cannot directly upload it into this directory due to access rights move it by using the following command.
 ```
-sudo mv /youruploadpath/LocalSettings.php /var/lib/mediawik/LocalSettings.php
+sudo mv /youruploadpath/LocalSettings.php /var/lib/mediawiki/LocalSettings.php
 ```
+* Now go back to your browser and open http://212.xxx.xxx.xxx/mediawiki/ again. You should see the fresh installation and main page of the media wiki, in the next section it will be explained how to transfer the articles and images from the back up to the new installation
+
+## Restoring Articles & images
+There is no possibility to copy the content 1:1 from mediawiki A to mediawiki B. 
+Images and Articles need to be transferred manually. 
 
 
 
