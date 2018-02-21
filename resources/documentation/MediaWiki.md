@@ -63,9 +63,18 @@ create user Wiki@localhost identified by 'yourpassword';
 create database my_wiki; 
 grant all privileges on my_wiki.* to Wiki@localhost; 
 exit
-
 ```
-
+*Navigate your browser to http://localhost/mediawiki or try http://localhost/mediawiki/config or http://wiki.hostname.com/config instead). If you receive a 404 error then do the following:
+'''
+cd /var/www/html
+sudo ln -s /var/lib/mediawiki mediawiki
+'''
+* and exute these commands as well:
+'''
+ sudo phpenmod mbstring
+ sudo phpenmod xml
+ sudo systemctl restart apache2.service
+'''
 
 
 
