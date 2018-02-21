@@ -116,7 +116,7 @@ If you do not want to use a logo, just change the name of the picture to wiki1.p
 
 ### Transfer the images
 Before we can create the articles we first need to restore the images, which will be used in the articles.
-To download all the pictures of the backup:
+To download all the pictures of the backup (I have uploaded the images as zip archive on box, so you can skip this step):
 * Log into the virtual machine with the media wiki backup. User and pw are both bitnami.
 All images are located in /opt/bitnami/apps/mediawiki/htdocs/images.
 Create an archive of this images folder by using
