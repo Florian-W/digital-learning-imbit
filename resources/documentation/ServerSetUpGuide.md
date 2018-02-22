@@ -64,7 +64,7 @@ mysql -u root
 sudo nano /etc/mysql/my.cnf
 ```
   ** MySQL-server: you need to set a password during LAMP installation
-	If you need to reset the root password for the mySQL database [follow this](https://coderwall.com/p/j9btlg/reset-the-mysql-5-7-root-password-in-ubuntu-16-04-lts) 
+	If you need to reset the root password for the mySQL database click [here](https://coderwall.com/p/j9btlg/reset-the-mysql-5-7-root-password-in-ubuntu-16-04-lts) 
 	
 
 To Stop MySQL
@@ -108,7 +108,7 @@ sudo service mysql start
 mysql -u root -p 
 ```
 
-//Download and Upload the following files from GitHub to Home
+Download and Upload the following files from GitHub to Home
 ```
 mysql -u root -p
 source ~/CreateDBbrillianCRM.sql;
@@ -150,22 +150,17 @@ Activate the config by using the following command (it will copy it to sites-ena
 
 ```
 sudo a2ensite <FILE>.conf
-```
-```
 sudo a2enmod proxy_http
-```
-```
 sudo service apache2 restart
 ```
-//Was passiert hier nochmal
+Create Ubunto User
 ```
 sudo groupadd www
 ```
-* Create Ubunto User
 ```
 sudo adduser www-user --ingroup www
 ```
-* Passwort eingeben: xxxx
+Enter a password: xxxx
 ```
 sudo chgrp -R www /var/www/html
 sudo chmod g+w /var/www/html
@@ -173,9 +168,8 @@ cd/var/www/html
 mkdir brillianIDEAS
 cd brillanIDEAS 
 ```
-* Copy GitHub status to server (with e.g. winscp or any other FDP client) 
-When adding new content change permissions again:
-
+Copy GitHub status to server (with e.g. winscp or any other FDP client) 
+When adding new content change permissions again
 ```
 sudo chmod g+w -R /var/www/html
 sudo chgrp -R www /var/www/html
@@ -183,23 +177,23 @@ sudo chgrp -R www /var/www/html
 
 
 ## Install Tomcat
-[read](https://medium.com/@shaaslam/how-to-install-oracle-java-9-in-ubuntu-16-04-671e598f0116)
+In this step Tomcat is installed. To see further information click [here](https://medium.com/@shaaslam/how-to-install-oracle-java-9-in-ubuntu-16-04-671e598f0116)
 
-* Open a terminal and add PPA using following command. You need sudo access to this
+Open a terminal and add PPA using following command. You need sudo access to this
 ```
 sudo add-apt-repository ppa:webupd8team/java
 ```
-* Update package repository using following command
+Update package repository using following command
 ```
 sudo apt-get update
 ```
-* Download and Install the installer script
+Download and Install the installer script
 ```
 sudo apt install oracle-java9-installer
 ok
 yes
 ```
-* Set Oracle JDK9 as default, to set oracle jdk9 as default, install the “oracle-java9-set-default” package. This will automatically set the JAVA env variable
+Set Oracle JDK9 as default, to set oracle jdk9 as default, install the “oracle-java9-set-default” package. This will automatically set the JAVA env variable
 ```
 sudo apt install oracle-java9-set-default
 ```
@@ -208,11 +202,11 @@ This will complete your installation, you can check you java version by running 
 ```
 javac -version
 ```
-* Change JAVA_HOME variable
+Change JAVA_HOME variable
 ```
 nano.bashrc
 ```
-* Set environment variable with correct path
+Set environment variable with correct path
 ```
 #JAVA_HOME env
 export JAVA_HOME=/usr/lib/jvm/java-9-oracle
@@ -226,46 +220,38 @@ export CATALINA_BASE=/opt/tomcat
 ```
 sudo update-java-alternatives -l
 ```
-* To test
+To test
 ```
 echo $JAVA_HOME
 ```
 ```
 sudo groupadd tomcat
 ```
-* Download to save in target gz 
+Download to save in target gz 
 ```
 curl http://apache.mirror.digionline.de/tomcat/tomcat-9/v9.0.4/bin/apache-tomcat-9.0.4.tar.gz > tomcat.tar.gz
-```
-```
 sudo mkdir /opt/tomcat
-```
-```
 sudo tar xzvf ~/tomcat.tar.gz -C /opt/tomcat --strip-components=1
-```
-```
 cd /opt/tomcat
 ```
-* Write and execute rigths
+Write and execute rigths
 ```
 sudo chgrp -R tomcat /opt/tomcat
 ```
 ```
 sudo chmod -R g+r conf 
 ```
-* Add User
+Add User
 ```
 sudo adduser tomcat --ingroup tomcat
-```
-```
 sudo chown -R tomcat webapps/ work/ temp/ logs/
 ```
 
-* Create service 
+Create service 
 ```
 sudo nano /etc/systemd/system/tomcat.service
 ```
-* Copy and paste the following:
+Copy and paste the following:
 *(ATTENTION: tomcat loads these variables, not the system variables. If you point Environment=JAVA_HOME to a directory, tomcat will use this for starting)*
 
 ```
