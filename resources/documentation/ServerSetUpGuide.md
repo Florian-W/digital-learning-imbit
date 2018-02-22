@@ -142,7 +142,7 @@ sudo nano brillianIDEAS.conf
 ```
 paste content from GitHub
 ```
-(sudo nano mediawiki.conf)
+sudo nano mediawiki.conf
 ```
 paste content from GitHub
 
@@ -255,10 +255,10 @@ Copy and paste the following:
 *(ATTENTION: tomcat loads these variables, not the system variables. If you point Environment=JAVA_HOME to a directory, tomcat will use this for starting)*
 
 
->[Unit]
+[Unit]
 >Description=Apache Tomcat Web Application Container
 >After=network.target
->[Service]
+[Service]
 >Type=forking
 >Environment=JAVA_HOME=/user/lib/jvm/java-9-oracle
 >Environment=CATALINA_PID=/opt/tomcat/temp/tomcat.pid
@@ -266,17 +266,14 @@ Copy and paste the following:
 >Environment=CATALINA_BASE=/opt/tomcat
 >Environment='CATALINA_OPTS=-Xms512M -Xmx1024M -server -XX:+UseParallelGC'
 >Environment='JAVA_OPTS=-Djava.awt.headless=true -Djava.security.egd=file:/dev/./urandom'
-
 >ExecStart=/opt/tomcat/bin/startup.sh
 >ExecStop=/opt/tomcat/bin/shutdown.sh
-
 >User=tomcat
 >Group=tomcat
 >UMask=0007
 >RestartSec=10
 >Restart=always
-
->[Install]
+[Install]
 >WantedBy=multi-user.target
 
 ```
