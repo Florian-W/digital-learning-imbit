@@ -49,7 +49,7 @@
 <script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
 <script type="text/javascript" src="js/master.js"></script>
 </head>
-<body class="easyui-layout">
+<body class="easyui-layout" style="min-width: 768px">
 	<div class="north" data-options="region:'north',border:false">
 		<div class="div-header window">
 			<a id="logout" class="easyui-linkbutton" data-options="plain:true"
@@ -57,8 +57,9 @@
 			<a id="imprint" class="easyui-linkbutton" data-options="plain:true"><%=ApplicationConstants.IMPRINT_BUTTON_TEXT%></a>
 		</div>
 	</div>
-	<div class="center mainWindow" data-options="region:'center'">
-		<h4>Lecturers</h4>
+	<div class="center mainWindow" data-options="region:'center'" align="center">
+            <div style="margin-top: 25px; padding-bottom: 25px; width: 80%; background-color: white; border-width:1px; border-style:solid; border-color:black; padding-left: 2%; text-align: left">
+                <h4>Lecturers</h4>
 		<table id="students" class="easyui-datagrid" style="width: 600px"
 			data-options="fitColumns:true,singleSelect:true">
 			<thead>
@@ -78,12 +79,10 @@
 					} else {
 						webAppPath = request.getScheme() + "://" + request.getServerName();
 					}
-
 					if (request.getAttribute("professors") != null) {
 						@SuppressWarnings("unchecked")
 						ArrayList<ArrayList<String>> professors = (ArrayList<ArrayList<String>>) request
 								.getAttribute("professors");
-
 						java.util.ArrayList<java.util.ArrayList<String>> professors2 = professors;
 						if (professors.isEmpty()) {
 							out.println("<p style='color: red'>There are currently no lecturers.</p>");
@@ -110,34 +109,33 @@
 			</tbody>
 		</table>
 		<br />
-		<div
-			style="height: 410px; width: 594px; background-color: white; border-width: 1px; border-style: solid; border-color: black; padding: 2px">
-			<div style="width: 300px; float: left;">
-				<h4>New Lecturer</h4>
+		<div style="height: 400px; width: 80%; background-color: white; border-width:1px; border-style:solid; border-color:black; padding-left: 2%; text-align: left; padding-top: 20xp; padding-bottom: 20px">
+                <div style="height: 100%; width: 50%; float: left">
+                    <h4>New Lecturer</h4>
 				<form action="CreateUser" method="post">
 					<input type="text" name="role" maxlength="50" value="professor"
 						style="display: none" />
-					<div class="formLabel">title</div>
-					<select name="gender" id="gender" size="1" required>
+					<div class="formLabel">Title</div>
+					<select name="gender" id="gender" size="1" style="width: 55%" required>
 						<option value="" disabled="disabled" selected="selected">Please
 							select</option>
 						<option value="m">Mr.</option>
 						<option value="f">Mrs.</option>
 					</select><br /> <br />
-					<div class="formLabel">first name</div>
+					<div class="formLabel">First Name</div>
 					<input type="text" name="firstname" maxlength="50"
-						value="${firstname}" required /><br /> <br />
-					<div class="formLabel">last name</div>
+						value="${firstname}" style="width: 55%" required /><br /> <br />
+					<div class="formLabel">Last Name</div>
 					<input type="text" name="lastname" maxlength="50"
-						value="${lastname}" required /><br /> <br />
-					<div class="formLabel">email</div>
+						value="${lastname}" style="width: 55%" required /><br /> <br />
+					<div class="formLabel">Email</div>
 					<input type="email" name="email" maxlength="50" value="${email}"
-						required /><br /> <br />
-					<div class="formLabel">password</div>
-					<input type="password" name="password" maxlength="50" required /><br />
+                    style="width: 55%" required /><br /> <br />
+					<div class="formLabel">Password</div>
+					<input type="password" name="password" maxlength="50" style="width: 55%" required /><br />
 					<br />
-					<div class="formLabel">repeat password</div>
-					<input type="password" name="password_repeat" maxlength="50"
+					<div class="formLabel">Repeat Password</div>
+					<input type="password" name="password_repeat" maxlength="50" style="width: 55%"
 						required /><br /> <br /> <input id="createUser" type="submit"
 						value="Create now!" hidden="hidden"></input> <a
 						class="easyui-linkbutton"
@@ -146,34 +144,33 @@
 					<p style="color: red">${error}</p>
 				</form>
 			</div>
-			<div style="margin-left: 320px;">
+			<div style="margin-left: 50%;">
 				<h4>Change Password</h4>
 				<p style="color: red; padding-left: 32px;">${error}</p>
 				<form action="ResetPassword" method="post">
 					<input type="text" name="role" maxlength="50" value="admin"
-						style="display: none" /><br /> <br />
+						style="display: none; width: 55%" /><br /> <br />
 					<!--  Password check -->
 					<div class="formLabel">Old Password:</div>
-					<input type="password" name="oldpassword" maxlength="50" /><br />
+					<input type="password" name="oldpassword" maxlength="50" style="width: 55%"/><br />
 					<br /> <input type="text" name="role" maxlength="50" value="admin"
-						style="display: none" />
+						style="display: none; width: 50%" />
 					<div class="formLabel">Password:</div>
-					<input type="password" name="password" maxlength="50" /><br /> <br />
+					<input type="password" name="password" maxlength="50" style="width: 55%"/><br /> <br />
 					<div class="formLabel">Repeat Password:</div>
-					<input type="password" name="password_repeat" maxlength="50" /><br />
+					<input type="password" name="password_repeat" maxlength="50" style="width: 55%"/><br />
 					<br /> <input id="updatePassword" type="submit"
 						name="updatePassword" value="Update password" hidden="hidden" />
 					<a class="easyui-linkbutton studentButton"
-						onclick=confirmPasswordChange()>Update Password</a>
+						onclick=confirmPasswordChange() style="width: 50%">Update Password</a>
 				</form>
 			</div>
 		</div>
 		<br>
-		<div
-			style="height: 220px; width: 594px; background-color: white; border-width: 1px; border-style: solid; border-color: black; padding: 2px">
-			<h4>Global Settings</h4>
-			<div style="width: 300px; float: left;">
-				<form action="GetGlobalSettings" method="post">
+		<div style="width: 80%; background-color: white; border-width:1px; border-style:solid; border-color:black; margin-bottom: 25px; padding-left: 2%; text-align: left">			
+                <h4>Global Settings</h4>
+                <div style="width: 50%; height: 100%; float: left; height: 100%; margin-bottom: 25px">
+                    <form action="GetGlobalSettings" method="post">
 					<div style="width: 120px; float: left;">
 						Audio:<br>
 						<a style="color: blue; padding-left: 32px;">${audio}</a><br>
@@ -195,9 +192,9 @@
 						onclick="$('#getSettings').trigger('click')">Get Settings</a>
 				</form>
 			</div>
-			<div style="margin-left: 300px;">
-				<form action="SetGlobalSettings" method="post">
-					<div style="width: 120px; float: left;">
+			<div style="margin-left: 50%; margin-bottom: 25px">
+                    <form action="SetGlobalSettings" method="post">
+                        <div style="width: 120px; float: left;">
 						<input type="text" name="role" maxlength="50" value="admin"
 							style="display: none" /> <input type="radio" name="audio"
 							value="true" checked>Audio Enabled <br>
