@@ -9,7 +9,7 @@ sudo apt-get update && apt-get upgrade && apt-get autoremove
 Yes
 ```
 Check the warnings during update/ upgrade/ autoremove -
-Click [here](https://askubuntu.com/questions/457237/mdadm-warning-system-unbootable-from-update-initramfs-mkconfs-suggested-fix) to see a solution for the following warning
+Click [here](https://askubuntu.com/questions/457237/mdadm-warning-system-unbootable-from-update-initramfs-mkconfs-suggested-fix) to see a solution for the following warnings
 ```
 cryptsetup: WARNING: failed to detect canonical device of /dev/md1
 cryptsetup: WARNING: could not determine root device from /etc/fstab
@@ -234,14 +234,14 @@ sudo mkdir /opt/tomcat
 sudo tar xzvf ~/tomcat.tar.gz -C /opt/tomcat --strip-components=1
 cd /opt/tomcat
 ```
-Write and execute rigths
+Write and execute rights
 ```
 sudo chgrp -R tomcat /opt/tomcat
 ```
 ```
 sudo chmod -R g+r conf 
 ```
-Add User
+Add a new User
 ```
 sudo adduser tomcat --ingroup tomcat
 sudo chown -R tomcat webapps/ work/ temp/ logs/
@@ -254,58 +254,58 @@ sudo nano /etc/systemd/system/tomcat.service
 Copy and paste the following:
 *(ATTENTION: tomcat loads these variables, not the system variables. If you point Environment=JAVA_HOME to a directory, tomcat will use this for starting)*
 
-```
-[Unit]
-Description=Apache Tomcat Web Application Container
-After=network.target
-[Service]
-Type=forking
-Environment=JAVA_HOME=/user/lib/jvm/java-9-oracle
-Environment=CATALINA_PID=/opt/tomcat/temp/tomcat.pid
-Environment=CATALINA_HOME=/opt/tomcat
-Environment=CATALINA_BASE=/opt/tomcat
-Environment='CATALINA_OPTS=-Xms512M -Xmx1024M -server -XX:+UseParallelGC'
-Environment='JAVA_OPTS=-Djava.awt.headless=true -Djava.security.egd=file:/dev/./urandom'
 
-ExecStart=/opt/tomcat/bin/startup.sh
-ExecStop=/opt/tomcat/bin/shutdown.sh
+>[Unit]
+>Description=Apache Tomcat Web Application Container
+>After=network.target
+>[Service]
+>Type=forking
+>Environment=JAVA_HOME=/user/lib/jvm/java-9-oracle
+>Environment=CATALINA_PID=/opt/tomcat/temp/tomcat.pid
+>Environment=CATALINA_HOME=/opt/tomcat
+>Environment=CATALINA_BASE=/opt/tomcat
+>Environment='CATALINA_OPTS=-Xms512M -Xmx1024M -server -XX:+UseParallelGC'
+>Environment='JAVA_OPTS=-Djava.awt.headless=true -Djava.security.egd=file:/dev/./urandom'
 
-User=tomcat
-Group=tomcat
-UMask=0007
-RestartSec=10
-Restart=always
+>ExecStart=/opt/tomcat/bin/startup.sh
+>ExecStop=/opt/tomcat/bin/shutdown.sh
 
-[Install]
-WantedBy=multi-user.target
-```
+>User=tomcat
+>Group=tomcat
+>UMask=0007
+>RestartSec=10
+>Restart=always
+
+>[Install]
+>WantedBy=multi-user.target
+
 ```
 sudo systemctl daemon-reload 
 sudo systemctl start tomcat
 sudo systemctl enable tomcat
 sudo ufw allow 8080
 ```
-* Add Inbound rule in AWS security groups for port 8080
+Add Inbound rule in AWS security groups for port 8080
 ```
 sudo systemctl enable tomcat
 sudo nano /opt/tomcat/conf/tomcat-users.xml
 ```
-* Add the line and change password: <user username="admin" password="password" roles="manager-gui,admin-gui"/>
-* here: security constraint in order to access GUI securely!
+Add the line and change password: <user username="admin" password="password" roles="manager-gui,admin-gui"/>
+here: security constraint in order to access GUI securely!
 ```
 sudo nano /opt/tomcat/webapps/manager/META-INF/context.xml
 ```
-* Comment out by adding the yellow letters in the following 2 context.xml:  
+Comment out by adding the yellow letters in the following 2 context.xml:  
 <!--<Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />-->
 ```
 sudo nano /opt/tomcat/webapps/host-manager/META-INF/context.xml
 ```
-* Comment out by adding the yellow letters in the following 2 context.xml:  
+Comment out by adding the yellow letters in the following 2 context.xml:  
 <!--<Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />-->
 ```
 sudo systemctl restart tomcat
 ```
-* change password for tomcat
+change password for tomcat
 ```
 sudo passwd tomcat
 ```
@@ -315,15 +315,17 @@ export CLASSPATH=/usr/lib/jvm/java-9-oracle:/opt/tomcat/lib:$CLASSPATH
 source ~/.bashrc 
 ```
 
-## SSL certificates for the webapps
+## SSL Certificates for the Webapps
 
+```
 sudo $JAVA_HOME/bin/keytool -genkey -alias tomcat -keyalg RSA  -keypass imbit15 -storepass imbit15 -keystore $CATALINA_HOME/conf/tomcat-keystore.jks
-
+```
 
 Follow instructions and confirm with [yes]
-
+```
 cd /opt/tomcat/conf
 nano server.xml
+```
 Copy and insert: Add to the server.xml file:
 
 
