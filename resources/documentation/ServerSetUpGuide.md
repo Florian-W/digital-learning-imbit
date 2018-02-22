@@ -1,14 +1,15 @@
-# Server-Initialisierung: Installation and Configuration of brillianIDEAS
+# Server Initialization: Server Setup Guide
+
+This guide is optimized for setting up the production server to install and configure brillianIDEAS.com
 
 ## System Update
+First do a system update within the following command
 ```
 sudo apt-get update && apt-get upgrade && apt-get autoremove
 Yes
 ```
-
-
-* Check the warnings during update/ upgrade/ autoremove -
-[Solution for the following:](https://askubuntu.com/questions/457237/mdadm-warning-system-unbootable-from-update-initramfs-mkconfs-suggested-fix)
+Check the warnings during update/ upgrade/ autoremove -
+Click [here](https://askubuntu.com/questions/457237/mdadm-warning-system-unbootable-from-update-initramfs-mkconfs-suggested-fix) to see a solution for the following warning
 ```
 cryptsetup: WARNING: failed to detect canonical device of /dev/md1
 cryptsetup: WARNING: could not determine root device from /etc/fstab
@@ -18,80 +19,75 @@ W: mdadm: the array /dev/md1 with UUID 3bae49aa:8a231f11:1f51fb89:78ee93fe
 
 
 ## Install Webmin
-[read](https://wilddiary.com/install-webmin-on-aws-ec2-server/)
+In this step Webmin is installed. To see further information click [here](https://wilddiary.com/install-webmin-on-aws-ec2-server/)
 
 ```
 sudo nano /etc/apt/sources.list
 ```
 
-* Download Webmin
+To download and install Webmin do the following commands consecutively:
 ```
 deb http://download.webmin.com/download/repository sarge contrib
 wget http://www.webmin.com/jcameron-key.asc
 sudo apt-key add jcameron-key.asc
-```
-* Update apt-get
-```
 sudo apt-get update
-```
-* Install webmin
-```
 sudo apt-get install webmin
 ```
-* Install dependencies
+Install dependencies
 ```
 sudo apt-get install perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions python
 ```
-* Fix install errors
+Fix install errors
 ```
 sudo apt-get --fix-broken install
 ```
-* Create Webmin user
+Create Webmin user
 ```
 sudo useradd -g sudo webmin
 sudo passwd webmin
 ```
-* Put in webmin password
-* You can access webmin via the browser: https://<publicDNS>:10000/ 
+Put in a webmin password
+You can access webmin via the browser: https://<publicDNS>:10000/ 
 	
 ## Install LAMP
-[read](https://wiki.ubuntuusers.de/LAMP/)
+In this step LAMP is installed. To see further information click [here](https://wiki.ubuntuusers.de/LAMP/)
 
-* Install Lamp
+Installing Lamp
 ```
 sudo apt-get install apache2 libapache2-mod-php7.0 php7.0 php7.0-mysql mysql-server
 ```
-## Install MySQL
+## Install MySQL and Give User Permissions
+To install MySql
 ```
 sudo apt-get install mysql-server
 mysql -u root
 sudo nano /etc/mysql/my.cnf
 ```
   ** MySQL-server: you need to set a password during LAMP installation
-	If you need to reset the root password for the mySQL database follow this: https://coderwall.com/p/j9btlg/reset-the-mysql-5-7-root-password-in-ubuntu-16-04-lts 
+	If you need to reset the root password for the mySQL database [follow this](https://coderwall.com/p/j9btlg/reset-the-mysql-5-7-root-password-in-ubuntu-16-04-lts) 
 	
 
-* Stop MySQL
+To Stop MySQL
 ```
 sudo service mysql stop
 ```
-* Make MySQL service directory.
+Make a MySQL service directory.
 ```
 sudo mkdir /var/run/mysqld
 ```
-* Give MySQL user permission to write to the service directory.
+Give MySQL user permission to write to the service directory.
 ```
 sudo chown mysql: /var/run/mysqld
 ```
-* Start MySQL manually, without permission checks or networking.
+Start MySQL manually, without permission checks or networking.
 ```
 sudo mysqld_safe --skip-grant-tables --skip-networking &
 ```
-* Log in without a password.
+Log in without a password.
 ```
 mysql -uroot mysql
 ```
-* Update the password for the root user
+Update the password for the root user
 
 ```
 UPDATE mysql.user SET authentication_string=PASSWORD('YOURPASSWORD'), plugin='mysql_native_password' WHERE User='root' AND Host='%';
@@ -101,27 +97,16 @@ EXIT;
 mysql -u root -p 
 ```
 
-* Turn off MySQL.
+Turn off MySQL.
 ```
 sudo mysqladmin -S /var/run/mysqld/mysqld.sock shutdown
 ```
 
-* Start the MySQL service normally.
+Start the MySQL service normally.
 ```
 sudo service mysql start
 mysql -u root -p 
 ```
-
-
-
-
-//nicht benutzt
- hier einfügen:
-[mysqld]
-character-set-server=utf8
-collation-server=utf8_general_ci
-max_allowed_packet=256M
-check variables in mysql: 
 
 //Download and Upload the following files from GitHub to Home
 ```
@@ -137,7 +122,7 @@ exit
 * default document folder is /var/www/html
 * default config folder is /etc/apache2
 
-* Create the following .conf files in sites-available:
+Create the following .conf files in sites-available:
 brillianCRM.conf, brillianICM.conf, brillianIDEAS.conf, mediawiki.conf
 with sudo nano brillianCRM.conf and paste the content from GitHub 
 
@@ -161,7 +146,7 @@ paste content from GitHub
 ```
 paste content from GitHub
 
-* Activate the config by using the following command (it will copy it to sites-enabled)
+Activate the config by using the following command (it will copy it to sites-enabled)
 
 ```
 sudo a2ensite <FILE>.conf
