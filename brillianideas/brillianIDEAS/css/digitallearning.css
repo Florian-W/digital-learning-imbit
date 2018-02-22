@@ -110,6 +110,44 @@ body {
   text-align: center;
 }
 
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 #titletext{
   font-weight:700;
   font-style:normal;
@@ -154,6 +192,10 @@ body {
   font-family: 'Caveat Brush'
 }
 
+.margin_word {
+  margin-top: 10px;
+}
+
 /* axis labels */
 #informell {
   text-align: right;
@@ -181,14 +223,20 @@ body {
   line-height: 1;
   position: relative;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
   display: inline;
   font-family: 'Caveat Brush';
-
+  color: black;
   animation-name: pulse;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-timing-function: ease;
+}
+
+.type_learning:hover{
+  color:#991B33;
+  font-size: 1.4rem;
+  cursor:pointer;
 }
 
 /* learning cards */
@@ -285,3 +333,16 @@ body {
 #cbtwbt{
 
 }
+
+label {
+  -webkit-appearance: push-button;
+  -moz-appearance: button;
+  display: inline-block;
+  margin: 0px 0 10px 0;
+  cursor: pointer;
+}
+
+input[type=checkbox]:checked ~ div{
+   visibility: hidden;
+
+} */
