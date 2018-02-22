@@ -47,7 +47,7 @@
 <script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
 <script type="text/javascript" src="js/master.js"></script>
 </head>
-<body class="easyui-layout">
+<body class="easyui-layout" style="min-width: 768px">
 	<div class="north" data-options="region:'north',border:false">
 		<div class="div-header window">
 			<a id="logout" class="easyui-linkbutton" data-options="plain:true"
@@ -55,11 +55,13 @@
 			<a id="imprint" class="easyui-linkbutton" data-options="plain:true"><%=ApplicationConstants.IMPRINT_BUTTON_TEXT%></a>
 		</div>
 	</div>
-	<div class="center mainWindow" data-options="region:'center'">
-		<div id="studentsOfProfessor">
+	<div class="center mainWindow" data-options="region:'center'" align="center" style="padding-left: 5%; padding-right: 5%">
+        <div id="studentsOfProfessor">
 			<h1>Lecturer Page</h1>
-			<br />
-			<div id="groupsOfProfessor">
+            <br />
+            <div class="separator-box" style="padding-bottom: 30px">
+            <div style="width: 80%; background-color: white; border-width:1px; border-style:solid; border-color:black; height: 100%">                 
+			<div id="groupsOfProfessor" style="width: 100%; text-align: left; padding-left: 5%; padding-right: 5%">
 				<h4>Groups</h4>
 				Below, all existing groups are listed with their belonging students.
 				<br />
@@ -67,7 +69,6 @@
 				<br /> <br />
 				<%
 					if (request.getAttribute("groups") != null) {
-
 						//students = new String[((String [][]) request.getAttribute("students")).length][request.getAttribute("students")[0].length];
 						@SuppressWarnings("unchecked")
 						ArrayList<ArrayList<String>> groups = (ArrayList<ArrayList<String>>) request.getAttribute("groups");
@@ -90,7 +91,6 @@
 								webAppPath = request.getScheme() + "://" + request.getServerName();
 							}
 							// System.out.println(webAppPath);
-
 							out.println("<form action=\"" + webAppPath
 									+ "/SendRegistrationLink\" method=\"get\"><input style=\"display:none\" id=\"invitationbutton"
 									+ i + "\" type=\"submit\" "
@@ -132,9 +132,7 @@
 									+ "<a class= \"easyui-linkbutton\" onclick=\"$('#setProgress" + i
 									+ "').trigger('click')\")>Set Progress</a></td></form></td><td>");
 							out.println("</td></tr></table> ");
-
 							//add students table beneath group header
-
 							if (request.getAttribute("students") != null) {
 								//students = new String[((String [][]) request.getAttribute("students")).length][request.getAttribute("students")[0].length];
 								@SuppressWarnings("unchecked")
@@ -146,7 +144,6 @@
 										studentsFiltered.add(singleStudent);
 									}
 								}
-
 								if (studentsFiltered.isEmpty()) {
 									out.println(
 											"<p style='color: red'>There are currently no students in this group. Invite students by sending a registration email.</p>");
@@ -209,12 +206,10 @@
 											out.println("<font color=\"red\">Registration not yet confirmed.</font>");
 										}
 										out.println("</td></tr>");
-
 									}
 								}
 								out.println("</tbody></table></div>");
 							}
-
 						}
 						//out.println("</table> ");
 					} else {
@@ -224,10 +219,9 @@
 			</div>
 
 
-			<div
-				style="width: 800px; background-color: white; border-width: 1px; border-style: solid; border-color: black; padding: 2px">
-				<div style="width: 390px; float: left;">
-					<h4>Create New Group</h4>
+            <div style="text-align: left; width: 80%; background-color: white; border-width:1px; border-style:solid; border-color:black; padding-bottom: 2%; height: 100%">
+                    <div style="width: 50%; float: left; padding-left: 5%">
+                        <h4>Create New Group</h4>
 					<form action="NewUsergroup" method="post">
 						<div class="formLabel">name:</div>
 						<input type="text" name="groupname" maxlength="50" required /> <input
@@ -239,17 +233,17 @@
 						<p style="color: red">${error}</p>
 					</form>
 				</div>
-				<div style="margin-left: 410px;">
-					<h4>Change Lecturer Password</h4>
+				<div style="margin-left: 50%; padding-left: 5%">
+                    <h4>Change Lecturer Password</h4>
 					<form action="ResetPassword" method="post">
 						<input type="text" name="username" maxlength="50"
 							value="${username}" style="display: none" /> <input type="text"
 							name="role" maxlength="50" value="professor"
 							style="display: none" />
-						<div class="formLabel">new password:</div>
-						<input type="password" name="password" maxlength="50" /><br /> <br />
-						<div class="formLabel">repeat new password:</div>
-						<input type="password" name="password_repeat" maxlength="50" /><br />
+						<div class="formLabel" style="padding-right: 20px">new password:</div>
+						<input style="width: 200px" type="password" name="password" maxlength="50" /><br /> <br />
+						<div class="formLabel" style="padding-right: 20px">repeat new password:</div>
+						<input style="width: 200px" type="password" name="password_repeat" maxlength="50" /><br />
 						<br /> <input id="updatePassword" type="submit"
 							name="updatePassword" value="Update password" hidden="hidden" />
 						<a class="easyui-linkbutton"
@@ -268,7 +262,6 @@
 	$('#imprint').bind('click', function() {
 		showImprint();
 	});
-
 	function cellStyler(value, row, index) {
 		if (value <= 30) {
 			return 'background:#ffa8a8;';
@@ -278,7 +271,6 @@
 			return 'background:khaki';
 		}
 	}
-
 	function checker(i, groupname) {
 		var box = window.confirm("Click OK if you want to delete group: "
 				+ groupname);
