@@ -6,612 +6,1756 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
-  <link rel="stylesheet" type="text/css" href="css/curriculum.css">
-  <link rel="stylesheet" type="text/css" href="css/animation.css">
-  <link rel="stylesheet" type="text/css" href="css/rocketbar.css">
-  <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Tinos" rel="stylesheet">
-  <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/curriculum.css">
+    <link rel="stylesheet" type="text/css" href="css/animation.css">
+    <link rel="stylesheet" type="text/css" href="css/rocketbar.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tinos" rel="stylesheet">
+    <meta charset="UTF-8">
 </head>
+
 <body>
 
-  <!-- <div id="tentakelarm_links" class="img">
+    <!-- <div id="tentakelarm_links" class="img">
     <img src="img/tentakel_ltr.png"/>
   </div> -->
 
-<!-- EBENE 1: HIER BEGINNT Grid Layer 1 -->
+    <!-- EBENE 1: HIER BEGINNT Grid Layer 1 -->
 
-<!-- HIER BEGINNT Grid 1 -->
-<div class="grid_layout" id="Grid1">
-    <div class="grid_column_1_3 grid_row_1_3">
-      <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png"/>
-    </div>
-
-    <!-- Image Tentakel Left-->
-    <div class="grid_column_10_14 grid_row_8_10">
-      <img id="tentacle_img_left" src="img/tentakel_rtl.png"/>
-    </div>
-
-    <!-- Image Tentakel Right-->
-    <div class="grid_column_1_5 grid_row_5_10">
-      <img id="tentacle_img_right" src="img/tentakel_ltr.png"/>
-    </div>
-
-    <!-- Heading IMBIT Curriculum-->
-    <div class="grid_row_1_2 grid_column_9_13 gridalign_end">
-      <div class ="heading1 aligned_right font_caveat">IMBIT-Curriculum</div>
-    </div>
-
-  <!-- Fächer auf Landingpage-->
-    <!-- informatik-->
-    <div class="grid_row_4 grid_column_3_4 heading3 font_black font_caveat gridalign_center size_onHover pointer_onHover font_onHover_red">
-      <div id="" class="" onclick="changeVisible('Grid1', 'informatik')">Informatik</div>
-    </div>
-
-    <!-- Wirtschaftsinformatik-->
-    <div class="grid_row_6 grid_column_7_9 heading3 font_black font_caveat gridalign_center size_onHover pointer_onHover font_onHover_red">
-      <div id="" class="" onclick="changeVisible('Grid1', 'wirtschaftsinformatik')">Wirtschaftsinformatik</div>
-    </div>
-
-    <!-- Wirtschaftswissenschaften-->
-    <div class="grid_row_5 grid_column_10_13 heading3 font_black font_caveat gridalign_start size_onHover pointer_onHover font_onHover_red">
-      <div id="" onclick="changeVisible('Grid1', 'wirtschaft')" class="">Wirtschaftswissenschaften</div>
-    </div>
-
-    <!-- Interkulturelles -->
-    <div class="grid_row_10 grid_column_4_7 heading3 font_black font_caveat gridalign_end size_onHover pointer_onHover font_onHover_red">
-      <div id="" class="" onclick="changeVisible('Grid1', 'Interkulturell')">Interkulturelles Management & Wissen</div>
-    </div>
-
-    <!-- Methodische Grundlagen -->
-    <div class="grid_row_8 grid_column_6_9 heading3 font_black font_caveat gridalign_start size_onHover pointer_onHover font_onHover_red">
-      <div id="" class="" onclick="changeVisible('Grid1', 'methodischegrundlagen')">Methodische Grundlagen</div>
-    </div>
-
-    <!-- Praxisphasen -->
-    <div class="grid_row_10 grid_column_11_12 heading3 font_black font_caveat aligned_right gridalign_center size_onHover pointer_onHover font_onHover_red">
-      <div id="" class="" onclick="changeVisible('Grid1', 'praxisphasen')">Praxisphasen</div>
-    </div>
-</div>
-
-<!-- EBENE 2: HIER BEGINNT GRID LAYER 2 (insgesamt 6 Grids)-->
-
-<!-- HIER BEGINNT Grid for Wirtschaftsinformatik -->
-  <div class="grid_layout" id="wirtschaftsinformatik">
-
-    <!-- Tentakel Kopf_Home -->
-    <div class="grid_column_1_3 grid_row_1_3">
-        <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png"/>
-      </div>
-
-    <!-- Menü für Grid für Wirtschaftsinformatik -->
-    <div class="grid_row_1_2 grid_column_9_13 gridalign_end">
-        <div class="font_black heading1  font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('Wirtschaftsinformatik', 'Grid1')">IMBIT-Curriculum</div>
-      </div>
-    <div class="grid_row_3 grid_column_9_13 gridalign_start">
-        <div class="heading2 font_caveat aligned_right">Wirtschaftsinformatik</div>
-      </div>
-
-    <!-- Module von Wirtschaftsinformatik -->
-    <!-- bwl. Lösungen -->
-    <div class="grid_column_2 grid_row_3 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-        <div id="" class="" onclick="">Betriebswirtschaftliche Standardlösungen</div>
-      </div>
-    <!-- Wirtschaftsinformatik -->
-    <div class="grid_column_6 grid_row_6 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-        <div class="" onclick="changeVisible('Grid2', 'Grid3')">Wirtschaftsinformatik</div>
-      </div>
-    <!-- Fallstudie -->
-    <div class="grid_column_11 grid_row_4 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-        <div id="" class="">Fallstudie</div>
-      </div>
-    <!-- Integrationsseminar -->
-    <div class="grid_column_3 grid_row_9 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-        <div id="" class="">Integrationsseminar zur ausgewählten Themen der Wirtschaftsinformatik</div>
-      </div>
-    <!-- Neue Konzepte -->
-    <div class="grid_column_8 grid_row_10 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-        <div id="" class="">Neue Konzepte</div>
-      </div>
-    <!-- Projektmanagement -->
-    <div class="grid_column_9 grid_row_10 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-        <div id="" class="">Projektmanagement</div>
-      </div>
-    <!-- Projekt -->
-    <div class="grid_column_4 grid_row_10 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-        <div id="" class="">Projekt</div>
-      </div>
-    <!-- Systemanalyse -->
-    <div class="grid_column_7 grid_row_10 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-        <div id="" class="">Systemanalyse</div>
-      </div>
-
-  </div>
-
-<!-- HIER BEGINNT Grid for Methodische Grundlagen -->
-  <div class="grid_layout" id="methodischegrundlagen">
-
-    <!-- Tentakel Kopf_Home -->
-      <div class="grid_column_1_3 grid_row_1_3">
-          <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png"/>
-        </div>
-
-    <!-- Menü für Grid Methodische Grundlagen -->
-      <div class="grid_row_1_2 grid_column_9_13 gridalign_end">
-          <div class="font_black heading1  font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('methodischegrundlagen', 'Grid1')">IMBIT-Curriculum</div>
-        </div>
-      <div class="grid_row_3 grid_column_9_13 gridalign_start">
-          <div class="heading2 font_caveat aligned_right">Methodische Grundlagen</div>
-        </div>
-
-    <!-- Module von Methodische Grundlagen -->
-    <!-- Mathematik I -->
-    <div class="grid_column_2 grid_row_3 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-        <div id="" class="" onclick="">Mathematik I</div>
-    </div>
-    <!-- Mathematik II -->
-    <div class="grid_column_6 grid_row_6 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-          <div class="" onclick="changeVisible('Grid2', 'Grid3')">Mathematik II</div>
-    </div>
-    <!-- wiss. Arbeiten -->
-    <div class="grid_column_11 grid_row_4 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-        <div id="" class="">Grundlagen des wissenschaftlichen Arbeitens</div>
-    </div>
-    <!-- Präsi & Kommunikationskompetenzen -->
-    <div class="grid_column_3 grid_row_9 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-          <div id="" class="">Präsentations- und Kommunikationskompetenzen</div>
-    </div>
-    <!-- Schlüsselqualifikationen II-->
-    <div class="grid_column_8 grid_row_10 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-          <div id="" class="">Schküsselqualifikationen II</div>
-    </div>
-    <!-- Schlüsselqualifikationen III -->
-    <div class="grid_column_9 grid_row_10 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-          <div id="" class="">Schlüsselqualifikationen III</div>
-    </div>
-    <!--Statistik-->
-    <div class="grid_column_4 grid_row_10 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-          <div id="" class="">Statistik in der Anwendung</div>
-    </div>
-  </div>
-
-<!-- HIER BEGINNT Grid für Wirtschaftswissenschaften -->
-<div class="grid_layout" id="wirtschaft">
-    <!-- Tentakel Kopf_Home -->
-    <div class="grid_column_1_3 grid_row_1_3">
-      <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png"/>
-    </div>
-
-  <!-- Menü Grid Wirtschaftswissenschaften-->
-    <div class="grid_row_1_2 grid_column_9_13 gridalign_end">
-        <div class="font_black heading1  font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaft', 'Grid1')">IMBIT-Curriculum</div>
-      </div>
-    <div class="grid_row_3 grid_column_9_13 gridalign_start">
-        <div class="heading2 font_caveat aligned_right">Wirtschaftswissenschaften</div>
-      </div>
-
-  <!-- Moduls for Wirtschaftswissenschaften-->
-    <!--BWL-->
-    <div class="grid_column_2 grid_row_3 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-        <div id="" class="" onclick="changeVisible('wirtschaft', 'wirtschaft-bwl')">Grundlagen der Betriebswirtschaftslehre</div>
-      </div>
-    <!--DLM-->
-    <div class="grid_column_6 grid_row_6 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-        <div class="" onclick="changeVisible('wirtschaft', 'wirtschaft-dlm')">Dienstleistungsmanagement</div>
-      </div>
-    <!--FiBu-->
-    <div class="grid_column_11 grid_row_4 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-        <div id="" class="" onclick="changeVisible('wirtschaft', 'wirtschaft-fibuundrewe')">Finanzbuchhaltung & Rechnungswesen</div>
-      </div>
-    <!--Geschäftsprozesse-->
-    <div class="grid_column_3 grid_row_9 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-        <div id="" class="" onclick="changeVisible('wirtschaft', 'wirtschaft-geschäftsprozesse')">Geschäftsprozesse & deren Umsetzung</div>
-      </div>
-    <!--Management-->
-    <div class="grid_column_8 grid_row_10 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-        <div id="" class="" onclick="changeVisible('wirtschaft', 'wirtschaft-management')">Management</div>
-      </div>
-    <!--Rechnungslegung-->
-    <div class="grid_column_9 grid_row_10 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-        <div id="" class="" onclick="changeVisible('wirtschaft', 'wirtschaft-grundlagenrechnungslegung')">Grundlagen der Rechnungslegung</div>
-      </div>
-    <!--Recht-->
-    <div class="grid_column_10 grid_row_10 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-        <div id="" class="" onclick="changeVisible('wirtschaft', 'wirtschaft-recht')">Recht</div>
-      </div>
-    <!--VWL-->
-    <div class="grid_column_4 grid_row_10 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-        <div id="" class="" onclick="changeVisible('wirtschaft', 'wirtschaft-vwl')">Volkswirtschaftslehre</div>
-      </div>
-</div>
-
-<!-- HIER BEGINNT Grid für Informatik -->
-<div class="grid_layout" id="informatik">
-
-    <!-- Tentakel Kopf_Home -->
-    <div class="grid_column_1_3 grid_row_1_3">
-      <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png"/>
-    </div>
-
-  <!-- Headings Grid für Informatik-->
-    <div class="grid_row_1_2 grid_column_9_13 gridalign_end">
-      <div class="font_black heading1  font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('informatik', 'Grid1')">IMBIT-Curriculum</div>
-    </div>
-    <div class="grid_row_3 grid_column_9_13 gridalign_start">
-      <div class="heading2 font_caveat aligned_right">Informatik</div>
-    </div>
-
-  <!-- Modules for Informatik-->
-    <!-- Komsys&OS-->
-    <div class="grid_column_2 grid_row_3 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-          <div id="" class="" onclick="changeVisible ('informatik', 'informatik-komsysundos')">Kommunikationssysteme & Betriebssysteme</div>
-<<<<<<< HEAD
-    </div>
-    <!-- DB -->
-    <div class="grid_column_6 grid_row_6 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-      <div class="" onclick="changeVisible ('informatik', 'informatik-datenbanken')">Datenbanken</div>
-    </div>
-    <!-- Verteilte Systeme -->
-    <div class="grid_column_11 grid_row_4 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-        <div id="" class="" onclick="changeVisible ('informatik', 'informatik-verteiltesysteme')">Verteilte Systeme</div>
-    </div>
-    <!-- Grundlagen IT -->
-    <div class="grid_column_3 grid_row_9 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-      <div id="" class="" onclick="changeVisible ('informatik', 'informatik-grundIT')">Grundlagen der IT</div>
-    </div>
-    <!-- Jaba -->
-    <div class="grid_column_8 grid_row_10 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-      <div id="" class="" onclick="changeVisible ('informatik', 'informatik-prog1und2java')">Programmierung I & II - Java</div>
-    </div>
-    <!-- SW Lebenszyklus -->
-    <div class="grid_column_9 grid_row_10 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-      <div id="" class="" onclick="changeVisible ('informatik', 'informatik-swlebenszyklus')">Software Lebenszyklus</div>
-    </div>
-
-</div>
-
-<!-- HIER BEGINNT Grid für Interkulturelles Wissen & Management -->
-<div class="grid_layout" id="interkulturell">
-
-    <!-- Tentakel Kopf_Home -->
-    <div class="grid_column_1_3 grid_row_1_3">
-        <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png"/>
-      </div>
-
-  <!-- Headings Grid für Interkulturelles Wissen & Management-->
-    <div class="grid_row_1_2 grid_column_9_13 gridalign_end">
-              <div class="font_black heading1  font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('interkulturell', 'Grid1')">IMBIT-Curriculum</div>
-            </div>
-    <div class="grid_row_3 grid_column_9_13 gridalign_start">
-              <div class="heading2 font_caveat aligned_right">Interkulturelles Wissen & Management</div>
-            </div>
-
-  <!-- Modules for Interkulturelles Wissen & Management-->
-    <!--  Global Project Management Skills -->
-    <div class="grid_column_2 grid_row_3 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-      <div id="" class="" onclick="changeVisible ('interkulturell', '')">Global Project Management Skills</div>
-    </div>
-    <!--ICM-->
-    <div class="grid_column_6 grid_row_6 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-      <div class="" onclick="changeVisible ('interkulturell', '')">Intercultural Management</div>
-    </div>
-    <!--Spanisch-->
-    <div class="grid_column_11 grid_row_4 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-      <div id="" class="" onclick="changeVisible ('interkulturell', '')">Spanisch</div>
-    </div>
-</div>
-
-<!-- HIER BEGINNT Grid für Praxisphasen -->
-<div class="grid_layout" id="praxisphasen">
-      <div class="grid_column_1_3 grid_row_1_3">
-        <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png"/>
-      </div>
-
-  <!-- Headings Grid für Praxisphasen-->
-      <div class="grid_row_1_2 grid_column_9_13 gridalign_end">
-        <div class="font_black heading1  font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('praxisphasen', 'Grid1')">IMBIT-Curriculum</div>
-      </div>
-      <div class="grid_row_3 grid_column_9_13 gridalign_start">
-        <div class="heading2 font_caveat aligned_right">Interkulturelles Wissen & Management</div>
-      </div>
-
-  <!-- Modules for Praxisphasen-->
-      <div class="grid_column_2 grid_row_3 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-        <div id="" class="" onclick="changeVisible ('praxisphasen', '')"></div>
-      </div>
-</div>
-
-
-<!-- EBENE 3: HIER BEGINNT GRID LAYER 3 (insgesamt 33 Grids)-->
-
-=======
-        </div>
-        <div class="grid_column_6 grid_row_6 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-          <div class="" onclick="changeVisible ('informatik', 'informatik-datenbanken')">Datenbanken</div>
-        </div>
-        <div class="grid_column_11 grid_row_4 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-          <div id="" class="" onclick="changeVisible ('informatik', 'informatik-verteiltesysteme')">Verteilte Systeme</div>
-        </div>
-        <div class="grid_column_3 grid_row_9 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-          <div id="" class="" onclick="changeVisible ('informatik', 'informatik-grundIT')">Grundlagen der IT</div>
-        </div>
-        <div class="grid_column_8 grid_row_10 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-          <div id="" class="" onclick="changeVisible ('informatik', 'informatik-prog1und2java')">Programmierung I & II - Java</div>
-        </div>
-        <div class="grid_column_9 grid_row_10 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
-          <div id="" class="" onclick="changeVisible ('informatik', 'informatik-swlebenszyklus')">Software Lebenszyklus</div>
-        </div>
-      </div>
-
-  <!--HIER BEGINNT Grid 3 informatik-komsysundos-->
-  <div class="grid_layout" id="informatik-komsysundos">
-
-    <div class="grid_column_1_3 grid_row_1_3">
-      <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png"/>
-    </div>
-
-<<<<<<< HEAD
-    <!-- Headings Grid 3 informatik-komsysundos-->
-      <div class="grid_column_9_13 grid_row_1 gridalign_end">
-        <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('informatik-komsysundos', 'Grid1')">IMBIT-Curriculum</div>
-      </div>
-
-      <div class="grid_column_9_13 grid_row_2 gridalign_start">
-        <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('informatik-komsysundos', 'informatik')">Informatik</div>
-      </div>
-
-
-      <div class="grid_column_9_13 grid_row_3 gridalign_start">
-        <div class="heading3 font_caveat aligned_right ">Kommunikationssysteme & Betriebssysteme</div>
-      </div>
-
-<!--Table Start: Content -->
-      <table>
-    <tr>
-    <td>
-        <a target="_blank" href="https://open.hpi.de/courses/internetworking2014"><img src="http://www.brillianideas.com/img/learnings/Internetworking_mit_TCP_IP.jpg" alt="Internetworking mit TCP/IP" class="MOOC_Thumbnail" width="90%"></a>
-    </td>
-    <td>
-        <a target="_blank" href="https://open.hpi.de/courses/internetworking2014"><div class="font_red heading4 font_caveat aligned_justify">Internetworking mit TCP/IP</div></a>
-        <div class="font_black font_tinos aligned_left">Dieser Kurs bringt dir die technologischen Grundlagen des Internets n&auml;her. Er behandelt die physikalischen Grundlagen der Daten&uuml;bertragung basierend auf funktionalen Prinzipien und Technologien von Local Area Networks (LANs) und Wide Area Networks (WANs). Außerdem lernst du das TCP/IP Reference Model &mdash; das Herz des Internets &mdash; kennen und steigst somit in die komplexe Welt der Internettechnologien ein.<br>Stand: 2014 &copy; Hasso-Plattner-Institut<br>Autor: Prof. Dr. Christoph Meinel<br>Dauer: 6 Wochen<br>Abdeckungsgrad 40%</div>
-    </td>
-    </tr>
-    <tr>
-    <td>
-        <a target="_blank" href="https://youtu.be/Vdc8TCESIg8"><img src="https://i.ytimg.com/vi/Vdc8TCESIg8/hqdefault.jpg" alt="UDP and TCP: Comparison of Transport Protocols" class="MOOC_Thumbnail" width="90%"></a>
-    </td>
-    <td>
-        <a target="_blank" href="https://youtu.be/Vdc8TCESIg8"><div class="font_red heading4 font_caveat aligned_justify">UDP and TCP: Comparison of Transport Protocols</div></a>
-        <div class="font_black font_tinos aligned_left">Dieses Lernvideo erkl&auml;rt die Grundlagen von Transportprotokollen und vergleicht zwei verschiedene Arten von Protokollen: UDP und TCP. Dies hilft dir bei der Wiederholung der Vorlesung Kommunikationssysteme.<br>Stand: 2013 &copy; PieterExplainsTech<br>Autor: Pieter Decker<br>Abdeckungsgrad 30% </div>
-    </td>
-    </tr>
-    <tr>
-    <td>
-        <a target="_blank" href="http://dhbw.welter.ws"><img src="http://www.brillianideas.com/img/learnings/Vorlesung_zu_Communication_Systems.jpg"alt="Vorlesung zu Communication Systems" class="MOOC_Thumbnail" width="90%"></a>
-    </td>
-    <td>
-        <a target="_blank" href="http://dhbw.welter.ws"><div class="font_red heading4 font_caveat aligned_justify">Vorlesung zu Communication Systems</div></a>
-        <div class="font_black font_tinos aligned_left">Diese Website zeigt alle Skripte aus der Vorlesung Kommunikationssysteme von Prof. Welter aus dem Jahr 2015. Hier lernst du die Grundlagen der Daten&uuml;bertragung kennen und findest n&uuml;tzliche Links zu weiterf&uuml;hrenden Lerninhalten im Themenbereich wie beispielsweise ein Tool zur Kalkulation von IP-Adressen, Subnetz und Ranges.<br>Stand: 2015 &copy; Prof. Welter<br>Autor: Prof. Welter<br>Abdeckungsgrad 100%</div>
-    </td>
-    </tr>
-    <tr>
-    <td>
-        <a target="_blank" href="https://www.youtube.com/watch?v=HRHQvTO9GZU&feature=youtu.be"><img src="https://i.ytimg.com/vi/HRHQvTO9GZU/hqdefault.jpg"alt="ISO/OSI Modell" class="MOOC_Thumbnail" width="90%"></a>
-    </td>
-    <td>
-        <a target="_blank" href="https://www.youtube.com/watch?v=HRHQvTO9GZU&feature=youtu.be"><div class="font_red heading4 font_caveat aligned_justify">ISO/OSI Modell</div></a>
-        <div class="font_black font_tinos aligned_left">Dieses Video erkl&auml;rt das ISO/OSI Schichtenmodell anhand verschiedener Beispiele. Es wurde erstellt von Studenten der DHBW Villingen-Schwellingen. Es hilft dir nicht nur im Rahmen der Vorlesung  Kommunikationssysteme, sondern auch bei m&uuml;ndlichen Pr&uuml;fungen.<br>Stand: 2014 &copy; DHBW Villingen-Schwellingen<br>Autor: Valerie Neff, Julia Hartung, Alexander Meixner, Jonathan Beißwenger<br>Abdeckungsgrad 40%</div>
-    </td>
-    </tr>
-    <tr>
-    <td>
-        <a target="_blank" href="https://www.udacity.com/course/introduction-to-operating-systems--ud923"><img src="http://www.brillianideas.com/img/learnings/Introduction_to_Operating_Systems.png"alt="Introduction to Operating Systems" class="MOOC_Thumbnail" width="90%"></a>
-    </td>
-    <td>
-        <a target="_blank" href="https://www.udacity.com/course/introduction-to-operating-systems--ud923"><div class="font_red heading4 font_caveat aligned_justify">Introduction to Operating Systems</div></a>
-        <div class="font_black font_tinos aligned_left">Dies ist ein Einf&uuml;hrungskurs in die Thematik Betriebssysteme. Er vermittelt dir die grundlegenden Betriebssystem-Abstraktionen und -Mechanismen sowie deren Implementierungen. Der Kern des Kurses ist die gleichzeitige Programmierung (Threads und Synchronisation), Interprozesskommunikation und eine Einf&uuml;hrung in verteilte Betriebssysteme. Der Kurs ist in vier Abschnitte aufgeteilt: (1) Einleitung, (2) Prozess- und Threadmanagement, (3) Ressourcenmanagement und Kommunikation und (4) Verteilte Systeme.<br>Stand: 2017 &copy; Georgia Tech<br>Autor: Udacity<br>Dauer: 8 Wochen<br>Abdeckungsgrad 60%</div>
-    </td>
-    </tr>
-    <tr>
-    <td>
-        <a target="_blank" href="https://www.tutorialspoint.com/operating_system/index.htm"><img src="http://www.brillianideas.com/img/learnings/Operating_Systems_Tutorial.png"alt="Operating Systems Tutorial" class="MOOC_Thumbnail" width="90%"></a>
-    </td>
-    <td>
-        <a target="_blank" href="https://www.tutorialspoint.com/operating_system/index.htm"><div class="font_red heading4 font_caveat aligned_justify">Operating Systems Tutorial</div></a>
-        <div class="font_black font_tinos aligned_left">Dieses Tutorial zum Thema Betriebssysteme wurde f&uuml;r Informatikstudenten konzipiert und hilft dir dabei, grundlegende und fortgeschrittene Konzepte von Betriebssystemen zu verstehen. Es deckt den Großteil der IMBIT-Vorlesung zu Betriebssystemen ab und behandelt Themen wie Asynchronit&auml;t, Ereignissteuerung, Koordinierung paralleler Aktivit&auml;ten, Prozesse, I/O - Systeme und Virtualisierung.<br>Stand: 2017 &copy; Tutorialspoint<br>Autor: Tutorialspoint<br>Abdeckungsgrad 100%</div></td>
-    </tr>
-</table>
-<div class="font_red heading4 font_caveat aligned_justify">Fachbeschreibung</div>
-<div class="font_black font_tinos aligned_left">Dieses Modul vermittelt Studierenden die Grundstrukturen und Aufgaben von Betriebssystemen sowie die Grundlagen der Datenübertragung. <br> Kernthemen sind beispielsweise Interrupts, Memory Management (OS), Virtualisierung oder das ISO/OSI-Referenzmodell, TCP/IP-Modell, RFCs und Netztopologien.<br></div>
-<div class="font_red heading4 font_caveat aligned_justify">Kompetenzziele</div>
-<div class="font_black font_tinos aligned_left">
-&bullet; Verst&auml;ndnis von Rechnerarchitekturen, Aufgaben und Konzepten von Betriebssystemen, Netzwerktechnologien und Kommunikationsinfrastrukturen
-&bullet; F&auml;higkeit die Wechselwirkung von Betriebssystem und anderen Programmsystemen einzusch&auml;tzen</div>
-<div class="font_red heading4 font_caveat aligned_justify">Weiterf&uuml;hrende Literatur</div>
-<div class="font_black font_tinos aligned_left"><ul>
-  <li>Tanenbaum, A. S.: Computernetzwerke, Pearson Studium, München.</li>
-<li>T&ouml;njes, R.: Mobilkommunikation: Technologien und Anwendungen, in: Informationstechnische Gesellschaft im VDE (Herausgeber): ITG Fachbericht, Nr. 215, VDE Verlag, Berlin und Offenbach.</li>
-<li>Brause, R: Betriebssysteme &mdash; Grundlagen und Konzepte, Springer Verlag, Berlin.</li>
-<li>Tanenbaum, A. S.: Moderne Betriebssysteme, Pearson Studium , M&uuml;nchen, Boston (u.a.).</li>
-</ul></div>
-</div>
-
-
-=======
->>>>>>> 2fe8422e5da41a92eea104694be6c79217c02560
-<!--HIER BEGINNT Grid for Grundlagen BWL -->
-
-
-<!--HIER BEGINNT Grid for Grundlagen BWL -->
-      <div class="grid_layout" id="wirtschaft-bwl">
-
+    <!-- HIER BEGINNT Grid 1 -->
+    <div class="grid_layout" id="Grid1">
         <div class="grid_column_1_3 grid_row_1_3">
-          <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png"/>
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
         </div>
 
-        <!-- Headings Grid 2-->
-          <div class="grid_column_9_13 grid_row_1 gridalign_end">
+        <!-- Image Tentakel Left-->
+        <div class="grid_column_10_14 grid_row_8_10">
+            <img id="tentacle_img_left" src="img/tentakel_rtl.png" />
+        </div>
+
+        <!-- Image Tentakel Right-->
+        <div class="grid_column_1_5 grid_row_5_10">
+            <img id="tentacle_img_right" src="img/tentakel_ltr.png" />
+        </div>
+
+        <!-- Heading IMBIT Curriculum-->
+        <div class="grid_row_1_2 grid_column_9_13 gridalign_end">
+            <div class="heading1 aligned_right font_caveat">IMBIT-Curriculum</div>
+        </div>
+
+        <!-- Fächer auf Landingpage-->
+        <!-- Informatik-->
+        <div class="grid_row_4 grid_column_3_4 heading3 font_black font_caveat gridalign_center size_onHover pointer_onHover font_onHover_red">
+            <div id="informatik" class="">Informatik</div>
+            <div id="" class="" onclick="changeVisible('Grid1', 'informatik')">Informatik</div>
+        </div>
+
+        <!-- Wirtschaftsinformatik-->
+        <div class="grid_row_6 grid_column_7_9 heading3 font_black font_caveat gridalign_center size_onHover pointer_onHover font_onHover_red">
+            <div id="wirtschaftsinformatik" class="" onclick="changeVisible('Grid1', 'Grid2')">Wirtschaftsinformatik</div>
+            <div id="" class="" onclick="changeVisible('Grid1', 'wirtschaftsinformatik')">Wirtschaftsinformatik</div>
+        </div>
+
+        <!-- Wirtschaftswissenschaften-->
+        <div class="grid_row_5 grid_column_10_13 heading3 font_black font_caveat gridalign_start size_onHover pointer_onHover font_onHover_red">
+            <div id="" onclick="changeVisible('Grid1', 'wirtschaft')" class="">Wirtschaftswissenschaften</div>
+        </div>
+
+        <!-- Interkulturelles -->
+        <div class="grid_row_10 grid_column_4_7 heading3 font_black font_caveat gridalign_end size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible('Grid1', 'Interkulturell')">Interkulturelles Management & Wissen</div>
+        </div>
+
+        <!-- Methodische Grundlagen -->
+        <div class="grid_row_8 grid_column_6_9 heading3 font_black font_caveat gridalign_start size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible('Grid1', 'methodischegrundlagen')">Methodische Grundlagen</div>
+        </div>
+
+        <!-- Praxisphasen -->
+        <div class="grid_row_10 grid_column_11_12 heading3 font_black font_caveat aligned_right gridalign_center size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible('Grid1', 'praxisphasen')">Praxisphasen</div>
+        </div>
+    </div>
+
+
+    <!-- EBENE 2: HIER BEGINNT GRID LAYER 2 (insgesamt 6 Grids)-->
+
+    <!-- HIER BEGINNT Ebene 2 for Wirtschaftsinformatik -->
+    <div class="grid_layout" id="wirtschaftsinformatik">
+
+        <!-- Tentakel Kopf_Home -->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Menü für Grid für Wirtschaftsinformatik -->
+        <div class="grid_row_1_2 grid_column_9_13 gridalign_end">
+            <div class="font_black heading1  font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaftsinformatik', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_row_3 grid_column_9_13 gridalign_start">
+            <div class="heading2 font_caveat aligned_right">Wirtschaftsinformatik</div>
+        </div>
+
+        <!-- Module von Wirtschaftsinformatik -->
+        <!-- bwl. Lösungen -->
+        <div class="grid_column_2 grid_row_3 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible('wirtschaftsinformatik', 'wirtschaftsinformatik-bwlstan')">Betriebswirtschaftliche Standardlösungen</div>
+        </div>
+        <!-- Wirtschaftsinformatik -->
+        <div class="grid_column_6 grid_row_6 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div class="" onclick="changeVisible('wirtschaftsinformatik', 'wirtschaftsinformatik-wirtschaftsinformatik')">Wirtschaftsinformatik</div>
+        </div>
+        <!-- Fallstudie -->
+        <div class="grid_column_11 grid_row_4 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible('wirtschaftsinformatik', 'wirtschaftsinformatik-fallstudie')">Fallstudie</div>
+        </div>
+        <!-- Integrationsseminar -->
+        <div class="grid_column_3 grid_row_9 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible('wirtschaftsinformatik', 'wirtschaftsinformatik-integrationsseminar')">Integrationsseminar zur ausgewählten Themen der Wirtschaftsinformatik</div>
+        </div>
+        <!-- Neue Konzepte -->
+        <div class="grid_column_8 grid_row_10 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible('wirtschaftsinformatik', 'wirtschaftsinformatik-neuekonzepte')">Neue Konzepte</div>
+        </div>
+        <!-- Projektmanagement -->
+        <div class="grid_column_9 grid_row_10 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible('wirtschaftsinformatik', 'wirtschaftsinformatik-pm')">Projektmanagement</div>
+        </div>
+        <!-- Projekt -->
+        <div class="grid_column_4 grid_row_10 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible('wirtschaftsinformatik', 'wirtschaftsinformatik-projekt')">Projekt</div>
+        </div>
+        <!-- Systemanalyse -->
+        <div class="grid_column_7 grid_row_10 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible('wirtschaftsinformatik', 'wirtschaftsinformatik-sysan')">Systemanalyse</div>
+        </div>
+
+    </div>
+
+    <!-- HIER BEGINNT Ebene 2 for Methodische Grundlagen -->
+    <div class="grid_layout" id="methodischegrundlagen">
+
+        <!-- Tentakel Kopf_Home -->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Menü für Grid Methodische Grundlagen -->
+        <div class="grid_row_1_2 grid_column_9_13 gridalign_end">
+            <div class="font_black heading1  font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('methodischegrundlagen', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_row_3 grid_column_9_13 gridalign_start">
+            <div class="heading2 font_caveat aligned_right">Methodische Grundlagen</div>
+        </div>
+
+        <!-- Module von Methodische Grundlagen -->
+        <!-- Mathematik I -->
+        <div class="grid_column_2 grid_row_3 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible('methodischegrundlagen', 'methodischegrundlagen-mathematik_1')">Mathematik I</div>
+        </div>
+        <!-- Mathematik II -->
+        <div class="grid_column_6 grid_row_6 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div class="" onclick="changeVisible('methodischegrundlagen', 'methodischegrundlagen-mathII')">Mathematik II</div>
+        </div>
+        <!-- wiss. Arbeiten -->
+        <div class="grid_column_11 grid_row_4 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible('methodischegrundlagen', 'methodischegrundlagen-wissarbeiten')">Grundlagen des wissenschaftlichen Arbeitens</div>
+        </div>
+        <!-- Präsi & Kommunikationskompetenzen -->
+        <div class="grid_column_3 grid_row_9 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible('methodischegrundlagen', 'methodischegrundlagen-präsundkomm')">Präsentations- und Kommunikationskompetenzen</div>
+        </div>
+        <!-- Schlüsselqualifikationen II-->
+        <div class="grid_column_8 grid_row_10 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible('methodischegrundlagen', 'methodischegrundlagen-schlüsselII')">Schküsselqualifikationen II</div>
+        </div>
+        <!-- Schlüsselqualifikationen III -->
+        <div class="grid_column_9 grid_row_10 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible('methodischegrundlagen', 'methodischegrundlagen-schlüsselIII--')">Schlüsselqualifikationen III</div>
+        </div>
+        <!--Statistik-->
+        <div class="grid_column_4 grid_row_10 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible('methodischegrundlagen', 'methodischegrundlagen-statanwendung')">Statistik in der Anwendung</div>
+        </div>
+    </div>
+
+    <!-- HIER BEGINNT Ebene 2 für Wirtschafts -->
+    <div class="grid_layout" id="wirtschaft">
+        <!-- Tentakel Kopf_Home -->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Menü Grid Wirtschaft-->
+        <div class="grid_row_1_2 grid_column_9_13 gridalign_end">
+            <div class="font_black heading1  font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaft', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_row_3 grid_column_8_13 gridalign_start">
+            <div class="heading2 font_caveat aligned_right">Wirtschaft</div>
+        </div>
+
+        <!-- Moduls for Wirtschaft-->
+        <!--BWL-->
+        <div class="grid_column_4_6 grid_row_4 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible('wirtschaft', 'wirtschaft-bwl')">Grundlagen der Betriebswirtschaftslehre</div>
+        </div>
+        <!--DLM-->
+        <div class="grid_column_9_13 grid_row_5 aligned_center heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div class="" onclick="changeVisible('wirtschaft', 'wirtschaft-dlm')">Dienstleistungsmanagement</div>
+        </div>
+        <!--FiBu-->
+        <div class="grid_column_7_10 grid_row_9 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible('wirtschaft', 'wirtschaft-fiundrewe')">Finanzierung & Rechnungswesen</div>
+        </div>
+        <!--Geschäftsprozesse-->
+        <div class="grid_column_2_5 grid_row_7 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible('wirtschaft', 'wirtschaft-geschäftsprozesse')">Geschäftsprozesse & deren Umsetzung</div>
+        </div>
+        <!--Management-->
+        <div class="grid_column_7_8 grid_row_6 gridalign_end heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible('wirtschaft', 'wirtschaft-management')">Management</div>
+        </div>
+        <!--Rechnungslegung-->
+        <div class="grid_column_10_13 grid_row_8 heading3 aligned_center gridalign_center font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible('wirtschaft', 'wirtschaft-grundlagenrechnungslegung')">Grundlagen der Rechnungslegung</div>
+        </div>
+        <!--Recht-->
+        <div class="grid_column_4 grid_row_10 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible('wirtschaft', 'wirtschaft-recht')">Recht</div>
+        </div>
+        <!--VWL-->
+        <div class="grid_column_3_4 grid_row_5_6 gridalign_center heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible('wirtschaft', 'wirtschaft-vwl')">Volkswirtschaftslehre</div>
+        </div>
+    </div>
+
+    <!-- HIER BEGINNT Ebene 2 für Informatik -->
+    <div class="grid_layout" id="informatik">
+
+        <!-- Tentakel Kopf_Home -->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings Grid für Informatik-->
+        <div class="grid_row_1_2 grid_column_9_13 gridalign_end">
+            <div class="font_black heading1  font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('informatik', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_row_3 grid_column_9_13 gridalign_start">
+            <div class="heading2 font_caveat aligned_right">Informatik</div>
+        </div>
+
+        <!-- Modules for Informatik-->
+        <!-- Komsys&OS-->
+        <div class="grid_column_2 grid_row_3 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible ('informatik', 'informatik-komsysundos')">Kommunikationssysteme & Betriebssysteme</div>
+        </div>
+        <!-- DB -->
+        <div class="grid_column_6 grid_row_6 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div class="" onclick="changeVisible ('informatik', 'informatik-datenbanken')">Datenbanken</div>
+        </div>
+        <!-- Verteilte Systeme -->
+        <div class="grid_column_11 grid_row_4 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible ('informatik', 'informatik-verteiltesysteme')">Verteilte Systeme</div>
+        </div>
+        <!-- Grundlagen IT -->
+        <div class="grid_column_3 grid_row_9 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible ('informatik', 'informatik-grundIT')">Grundlagen der IT</div>
+        </div>
+        <!-- Java -->
+        <div class="grid_column_8 grid_row_10 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible ('informatik', 'informatik-prog1und2java')">Programmierung I & II - Java</div>
+        </div>
+        <!-- SW Lebenszyklus -->
+        <div class="grid_column_9 grid_row_10 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible ('informatik', 'informatik-swlebenszyklus')">Software Lebenszyklus</div>
+        </div>
+
+    </div>
+
+    <!-- HIER BEGINNT Ebene 2 für Interkulturelles Wissen & Management -->
+    <div class="grid_layout" id="interkulturell">
+
+        <!-- Tentakel Kopf_Home -->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings Grid für Interkulturelles Wissen & Management-->
+        <div class="grid_row_1_2 grid_column_9_13 gridalign_end">
+            <div class="font_black heading1  font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('interkulturell', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_row_3 grid_column_9_13 gridalign_start">
+            <div class="heading2 font_caveat aligned_right">Interkulturelles Wissen & Management</div>
+        </div>
+
+        <!-- Modules for Interkulturelles Wissen & Management-->
+        <!--  Global Project Management Skills -->
+        <div class="grid_column_2 grid_row_3 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible ('interkulturell', 'interkulturell-globalpm')">Global Project Management Skills</div>
+        </div>
+        <!--ICM-->
+        <div class="grid_column_6 grid_row_6 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div class="" onclick="changeVisible ('interkulturell', 'interkulturell-icm')">Intercultural Management</div>
+        </div>
+        <!--Spanisch-->
+        <div class="grid_column_11 grid_row_4 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible ('interkulturell', 'interkulturell-icm')">Spanisch</div>
+        </div>
+    </div>
+
+    <!-- HIER BEGINNT Ebene 2 für Praxisphasen -->
+    <div class="grid_layout" id="praxisphasen">
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings Grid für Praxisphasen-->
+        <div class="grid_row_1_2 grid_column_9_13 gridalign_end">
+            <div class="font_black heading1  font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('praxisphasen', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_row_3 grid_column_9_13 gridalign_start">
+            <div class="heading2 font_caveat aligned_right">Praxisphasen</div>
+        </div>
+
+        <!-- Modules for Praxisphasen-->
+        <div class="grid_column_2 grid_row_3 heading3 font_black font_caveat size_onHover pointer_onHover font_onHover_red">
+            <div id="" class="" onclick="changeVisible ('praxisphasen', '')"></div>
+        </div>
+    </div>
+
+
+    <!-- EBENE 3: HIER BEGINNT GRID LAYER 3 (insgesamt 33 Grids)-->
+
+    <!-- HIER BEGINNT EBENE 3 für Wirtschaftfinformatik-->
+
+    <!-- Grid 3 für wirtschaftsinformatik-bwlstan-->
+    <div class="grid_layout" id="wirtschaftsinformatik-bwlstan">
+
+        <!-- Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings Grid 3-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaftsinformatik-bwlstan', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaftsinformatik-bwlstan', 'wirtschaftsinformatik')">Wirtschaftsinformatik</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">Betriebswirtschaftliche Standardlösungen</div>
+        </div>
+
+        <!-- Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+        </div>
+
+        <!-- Module Description: Content -->
+
+    </div>
+
+    <!-- Grid 3 für wirtschaftsinformatik-fallstudie-->
+    <div class="grid_layout" id="wirtschaftsinformatik-fallstudie">
+
+        <!-- Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings Grid 3-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaftsinformatik-fallstudie', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaftsinformatik-fallstudie', 'wirtschaftsinformatik')">Wirtschaftsinformatik</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">Fallstudie</div>
+        </div>
+
+        <!-- Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+        </div>
+
+        <!-- Module Description: Content -->
+
+    </div>
+
+    <!-- Grid 3 für wirtschaftsinformatik-grundhumanmachineinteraction-->
+    <div class="grid_layout" id="wirtschaftsinformatik-grundhumanmachineinteraction">
+
+        <!-- Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings Grid 3-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaftsinformatik-grundhumanmachineinteraction', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaftsinformatik-grundhumanmachineinteraction', 'wirtschaftsinformatik')">Wirtschaftsinformatik</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">Grundlagen Humand Machine Interaction</div>
+        </div>
+
+        <!-- Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+        </div>
+
+        <!-- Module Description: Content -->
+
+    </div>
+
+    <!-- Grid 3 für wirtschaftsinformatik-integrationsseminar-->
+    <div class="grid_layout" id="wirtschaftsinformatik-integrationsseminar">
+
+        <!-- Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings Grid 3-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaftsinformatik-integrationsseminar', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaftsinformatik-integrationsseminar', 'wirtschaftsinformatik')">Wirtschaftsinformatik</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">Integrationsseminar</div>
+        </div>
+
+        <!-- Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+        </div>
+
+        <!-- Module Description: Content -->
+
+    </div>
+
+    <!-- Grid 3 für wirtschaftsinformatik-neuekonzepte-->
+    <div class="grid_layout" id="wirtschaftsinformatik-neuekonzepte">
+
+        <!-- Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings Grid 3-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaftsinformatik-neuekonzepte', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaftsinformatik-neuekonzepte', 'wirtschaftsinformatik')">Wirtschaftsinformatik</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">Neue Konzepte</div>
+        </div>
+
+        <!-- Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+        </div>
+
+        <!-- Module Description: Content -->
+
+    </div>
+
+    <!-- Grid 3 für wirtschaftsinformatik-pm-->
+    <div class="grid_layout" id="wirtschaftsinformatik-pm">
+
+        <!-- Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings Grid 3-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaftsinformatik-pm', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaftsinformatik-pm', 'wirtschaftsinformatik')">Wirtschaftsinformatik</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">Projektmanagement</div>
+        </div>
+
+        <!-- Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+        </div>
+
+        <!-- Module Description: Content -->
+
+    </div>
+
+    <!-- Grid 3 für wirtschaftsinformatik-projekt-->
+    <div class="grid_layout" id="wirtschaftsinformatik-projekt">
+
+        <!-- Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings Grid 3-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaftsinformatik-projekt', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaftsinformatik-projekt', 'wirtschaftsinformatik')">Wirtschaftsinformatik</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">Projekt</div>
+        </div>
+
+        <!-- Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+        </div>
+
+        <!-- Module Description: Content -->
+
+    </div>
+
+    <!-- Grid 3 für wirtschaftsinformatik-sysan-->
+    <div class="grid_layout" id="wirtschaftsinformatik-sysan">
+
+        <!-- Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings Grid 3-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaftsinformatik-sysan', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaftsinformatik-sysan', 'wirtschaftsinformatik')">Wirtschaftsinformatik</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">Systemanalyse</div>
+        </div>
+
+        <!-- Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+        </div>
+
+        <!-- Module Description: Content -->
+
+    </div>
+
+    <!-- Grid 3 für wirtschaftsinformatik-wi-->
+    <div class="grid_layout" id="wirtschaftsinformatik-wirtschaftsinformatik">
+
+        <!-- Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings Grid 3-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaftsinformatik-wirtschaftsinformatik', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaftsinformatik-wirtschaftsinformatik', 'wirtschaftsinformatik')">Wirtschaftsinformatik</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">Wirtschaftsinformatik</div>
+        </div>
+
+        <!-- Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+        </div>
+
+        <!-- Module Description: Content -->
+
+    </div>
+
+    <!-- HIER BEGINNT EBENE 3 für Methodische Grundlagen-->
+
+    <!--Grid 3 methodische_grundlagen-mathematik_1 -->
+    <div class="grid_layout" id="methodischegrundlagen-mathematik_1">
+
+        <!-- Tintenfisch Kopf_HOME-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+        <!-- Grid 3 Headings-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('methodischegrundlagen-mathematik_1', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('methodischegrundlagen-mathematik_1', 'methodischegrundlagen')">Methodische Grundlagen</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">Mathematik I</div>
+        </div>
+
+        <!-- Table Start: Content-->
+        <div class="grid_column_2_13 grid_row_4_10">
+            <table>
+                <tr>
+                    <td>
+                        <a target="_blank" href="http://www.wolframalpha.com"><img src="http://www.brillianideas.com/img/learnings/WolframAlpha_Taschenrechner_website.jpg" alt="WolframAlpha - Taschenrechner des Internets" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="http://www.wolframalpha.com">
+                            <div class="font_red heading4 font_caveat aligned_justify">WolframAlpha - Taschenrechner des Internets</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">WolframAlpha ist eine intelligente Suchmaschine, die die unterschiedlichsten Themenfelder abdeckt. Im Bereich Mathematik steht dir WolframAlpha als grafischer Taschenrechner mit gro&szlig;em Funktionsumfang zur Seite. Dieser hilft
+                            dir somit bei der Bearbeitung von Kurvendiskussionen, die auch bei wirtschaftlichen Problemstellungen Aufschluss geben k&ouml;nnen. Insofern wirkt dieses Onlinetool unterst&uuml;tzend beim Vertiefen des Wissens im Themenbereich
+                            &raquo;Analysis&laquo; als Teil des IMBIT-Moduls &raquo;Analysis und lineare Algebra&laquo;.<br>Stand: 2017 &copy; Wolfram Alpha LLC<br>Autor: Stephen Wolfram<br>Abdeckungsgrad 30%</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="https://photomath.net/en/"><img src="http://www.brillianideas.com/img/learnings/Photomath_app.jpg" alt="Photomath" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="https://photomath.net/en/">
+                            <div class="font_red heading4 font_caveat aligned_justify">Photomath</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">Photomath kann (noch) nicht digitalisierte Aufgaben ganz einfach und unkompliziert l&ouml;sen. Nimm mit dem Handy ein Foto von der Aufgabe auf, die dich beim L&ouml;sungsversuch zum Verzweifeln bringt, und lasse dir in Sekundenschnelle
+                            den ausf&uuml;hrlichen Schritt-f&uuml;r-Schritt L&ouml;sungsweg anzeigen! So erh&auml;ltst du nicht nur die L&ouml;sung, sondern auch ein besseres Verst&auml;ndnis der einzelnen Rechenschritte und kannst zuk&uuml;nftig Aufgaben
+                            des Themenbereichs &raquo;Analysis und lineare Algebra&laquo; eigenst&auml;ndig besser bearbeiten.<br>Stand: 2017 &copy; Photomath Inc.<br>Autor: Photomath Inc.<br>Abdeckungsgrad 30%</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="https://studyup.dhbw-mannheim.de/quiz/home"><img src="http://www.brillianideas.com/img/learnings/Einschaetzungstest_mathx3_quiz.png" alt="MathX³ - Mathe Einsch&auml;tzungstest" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="https://studyup.dhbw-mannheim.de/quiz/home">
+                            <div class="font_red heading4 font_caveat aligned_justify">MathX<sup>3</sup> - Mathe Einsch&auml;tzungstest</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">Vor allem als IMBIT-Neuank&ouml;mmling kann das Online Quiz MathX<sup>3</sup> interessant f&uuml;r dich sein. In ca. 10 Minuten testest du deinen pers&ouml;nlichen Wissensstand der Klassenstufen 8 - 11, wobei in vielen Aufgabenstellungen
+                            ein technischer oder praktischer Bezug hergestellt wird. So findest du heraus, in welchen Bereichen du deine F&auml;higkeiten noch ausbauen kannst, um optimal auf die IMBIT-Mathematikvorlesungen vorbereitet zu sein.<br> Stand:
+                            2008 &copy; DHBW Mannheim<br>Autor: DHBW Mannheim; ZeMath Zentrum f&uuml;r mathematisch-naturwissenschaftliches Basiswissen<br>Abdeckungsgrad 30%</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="http://www.j3l7h.de/videos.html"><img src="http://www.brillianideas.com/img/learnings/Videoplaylist_Joern_Loviscach_video.jpg" alt="Videoplaylist des Mathematikprofessors J&ouml;rn Lowiskach" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="http://www.j3l7h.de/videos.html">
+                            <div class="font_red heading4 font_caveat aligned_justify">Videoplaylist des Mathematikprofessors J&ouml;rn Lowiskach</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">J&ouml;rn Lowiskach ver&ouml;ffentlicht als Professor der Ingenieurmathematik Videos seiner vergangenen Lehrveranstaltungen. Die &raquo;Mathematik 1&laquo;-Vorlesungen decken schwerpunktm&auml;&szlig;ig folgende Themen des IMBIT-Curriculums
+                            ab: &raquo;Analysis: Funktionen & deren Eigenschaften&laquo;, &raquo;Ableitungen&laquo;, &raquo;Grenzwerte&laquo; und &raquo;Stetigkeit&laquo;. &raquo;Mathematik 2&laquo; behandelt relevante Themen der Linearen Algebra, wie
+                            z.B. &raquo;Matrizenoperationen&laquo;, &raquo;Determinante&laquo;, sowie &raquo;Lineare Gleichungssysteme&laquo;. &uuml;ber die Suchfunktion der Website kannst du schnell und unkompliziert Videos zu konkreten Themen und Stichworten
+                            finden, zu denen du zus&auml;tzliche Erkl&auml;rungen und Vertiefungen ben&ouml;tigst.<br>Stand: 2016 &copy; Prof. Dr. J&ouml;rn Loviscach<br>Autor: Prof. Dr. J&ouml;rn Loviscach<br>Abdeckungsgrad 90%</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="http://www.wi.hs-wismar.de/~cleve/vorl/ti2027/wtafeln/index.html"><img src="http://www.brillianideas.com/img/learnings/Wahrheitstafeltrainer_website.png" alt="Wahrheitstafeltrainer" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="http://www.wi.hs-wismar.de/~cleve/vorl/ti2027/wtafeln/index.html">
+                            <div class="font_red heading4 font_caveat aligned_justify">Wahrheitstafeltrainer</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">Mithilfe dieser Online-&uuml;bung kann die zweiwertige Logik (True/False) anhand des Ausf&uuml;llens unterschiedlicher Wahrheitstafeln trainiert werden. Deine Antworten werden sofort korrigiert und du kannst das Schwierigkeitsniveau
+                            an deine Lernbed&uuml;rfnisse anpassen, indem du einzelne Spaltenl&ouml;sungen vorzeitig aufdeckst. Auf spielerische Art und Weise festigst du dein Wissen im Bereich &raquo;Aussageverkn&uuml;pfungen und Wahrheitstafeln&laquo;,
+                            welches dem Modulteilbereich &raquo;Logik und Algebra&laquo; des IMBIT-Curriculums unterzuordnen ist.<br>Stand: 2006 &copy; Hochschule Wismar<br>Autor: Jan Schreiber<br>Abdeckungsgrad 10%</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="http://lpn.swi-prolog.org/lpnpage.php?pageid=online"><img src="http://www.brillianideas.com/img/learnings/Learn_Prolog_Now_website.jpg" alt="Learn Prolog Now! Online-Kurs" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="http://lpn.swi-prolog.org/lpnpage.php?pageid=online">
+                            <div class="font_red heading4 font_caveat aligned_justify">Learn Prolog Now! Online-Kurs</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">Das allgemeine Wissen &uuml;ber Logik ist dir noch nicht genug und du m&ouml;chtest tiefer in die logische Programmierung einsteigen? Dann ist dieser textbasierter Prolog-Kurs, der in 12 Kapiteln verschiedene Bereiche der logischen
+                            Prolog-Programmierung behandelt, genau das Richtige f&uuml;r dich. Jedes Kapitel umschlie&szlig;t sowohl &uuml;bungen, die auf Papier durchgef&uuml;hrt werden k&ouml;nnen, als auch Praxis&uuml;bungen, die das Installieren eines
+                            Prolog-Interpreters erfordern. So vermittelt der Kurs schwerpunktm&auml;&szlig;ig Kenntnisse im Logik & Algebra Themenbereich &raquo;Pr&auml;dikatenlogik und logisches Programmieren&laquo;, geht dabei aber noch mehr in die
+                            Tiefe als im Curriculum vorgesehen.<br> Stand: 2012 &copy; Patrick Blackburn, Johan Bos, Kristina Striegnitz<br>Autor: Patrick Blackburn, Johan Bos, Kristina Striegnitz<br>Abdeckungsgrad 10%</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="https://www.coursera.org/learn/logic-introduction?siteID=.GqSdLGGurk-X7XX_Or6pFbYMQ_i.RRpeg&utm_content=10&utm_medium=partners&utm_source=linkshare&utm_campaign=*GqSdLGGurk"><img src="http://www.brillianideas.com/img/learnings/Introduction_to_Logic_mooc.png" alt="Introduction to Logic" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="https://www.coursera.org/learn/logic-introduction?siteID=.GqSdLGGurk-X7XX_Or6pFbYMQ_i.RRpeg&utm_content=10&utm_medium=partners&utm_source=linkshare&utm_campaign=*GqSdLGGurk">
+                            <div class="font_red heading4 font_caveat aligned_justify">Introduction to Logic</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">Dieser MOOC bietet einen Einstieg in die Logik im Umfeld der rechnergest&uuml;tzen Informationsverarbeitung und stellt deren Anwendungsfelder vor. Zu den Kompetenzen, die dir im Rahmen der Kursteilnahme vermittelt werden, z&auml;hlt
+                            das Formulieren von logischen S&auml;tzen bzw. logischen Formeln und es wird darauf eingegegangen, wie aus dieser Darstellung von Informationen eine logische Beweisf&uuml;hrung m&ouml;glich wird. Der Kursstoff wird dabei haupts&auml;chlich
+                            mithilfe von anschaulichen Informationstexten und &uuml;bungsaufgaben &uuml;bermittelt. Folgende Themenbereiche des Logik & Algebra Stoffes des IMBIT-Curriculums werden abgedeckt: &raquo;Logische Gesetzm&auml;&szlig;igkeiten&laquo;,
+                            &raquo;Normalformen&laquo;, &raquo;&auml;quivalenz- und Ordnungsrelationen&laquo;.<br>Stand: 2016 &copy; Coursera Inc<br>Autor: Stanford University<br>Dauer: 10 Wochen<br>Abdeckungsgrad 50%</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="http://www.3blue1brown.com"><img src="img/AnimierteMathematik.jpg" alt="Animierte Mathematik" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="http://www.3blue1brown.com">
+                            <div class="font_red heading4 font_caveat aligned_justify">Animierte Mathematik</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">3Blue1Brown ist eine Seite mit Videos animierter Mathematik.<br>Stand: 2018 &copy; Grant Sanderson<br>Autor: Grant Sanderson<br> Abdeckungsgrad 10%</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="https://www.youtube.com/channel/UC05_iIGvXue0sR01JNpRHzw"><img src="img/TheSimpleMaths.jpg" alt="TheSimpleMaths" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="https://www.youtube.com/channel/UC05_iIGvXue0sR01JNpRHzw">
+                            <div class="font_red heading4 font_caveat aligned_justify">TheSimpleMaths</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">Hier auf TheSimpleMaths findest du Mathe-Nachhilfe-Videos.<br>Stand: 2018 &copy; TheSimpleMaths<br>Autor: TheSimpleMaths<br>Abdeckungsgrad 20%</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Module Description -->
+        <div class="grid_column_10_13 grid_row_4_10">
+            <div class="font_red heading4 font_caveat aligned_justify">Fachbeschreibung</div>
+            <div class="font_black font_tinos aligned_left">Im Modul Mathematik I werden am Beispiel &ouml;konomischer Fragestellungen der Analysis und linearen Algebra sowie der Logik und Algebra vermittelt.<br></div>
+            <div class="font_red heading4 font_caveat aligned_justify">Kompetenzziele</div>
+            <div class="font_black font_tinos aligned_left">
+                &bullet; Grundrechenmethoden und Analysewerkzeuge der Wirtschaftswissenschaften &bullet; logische Gesetzm&auml;&szlig;igkeiten und Zusammenh&auml;nge &bullet; algebraische Strukturen
+            </div>
+            <div class="font_red heading4 font_caveat aligned_justify">Weiterf&uuml;hrende Literatur</div>
+            <div class="font_black font_tinos aligned_left">
+                <ul>
+                    <li>Ehrig, H.: Mathematisch-strukturelle Grundlagen der Informatik, Springer, Berlin.</li>
+                    <li>Heinrich, G..: Basiswissen Mathematik, Statistik und Operations Research f&uuml;r Wirtschaftswissenschaftler, De Gruyter Oldenbourg, M&uuml;nchen.</li>
+                    <li>Heinrich, G. und Severin, T.: Training Mathematik, Oldenbourg Verlag, M&uuml;nchen, Wien: Band 1, Grundlagen, Band 2, Analysis, Band 3, Lineare Algebra.</li>
+                    <li>Staab, F.: Logik und Algebra, De Gruyter Oldenbourg, M&uuml;nchen.</li>
+                    <li>Tietze, J.: Einf&uuml;hrung in die Finanzmathematik, Springer Spektrum, Wiesbaden.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Grid 3 für methodischegrundlagen-mathII-->
+    <div class="grid_layout" id="methodischegrundlagen-mathII">
+
+        <!-- Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings Grid 3-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('methodischegrundlagen-mathII', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('methodischegrundlagen-mathII', 'methodischegrundlagen')">Methodische Grundlagen</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">Mathematik II</div>
+        </div>
+
+        <!-- Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+            <table>
+                <tr>
+                    <td>
+                        <a target="_blank" href="http://highered.mheducation.com/sites/0073401765/student_view0/index.html"><img src="http://www.brillianideas.com/img/learnings/Statistical_Techniques_website.png" alt="Statistical Techniques in Business and Economics" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="http://highered.mheducation.com/sites/0073401765/student_view0/index.html">
+                            <div class="font_red heading4 font_caveat aligned_justify">Statistical Techniques in Business and Economics</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">Die Website gibt eine Einf&uuml;hrung in die Statistik, wobei die Inhalte von der deskriptiven bis zur induktiven Statistik reichen. Die einzelnen Themengebiete werden in insgesamt 20 Kapiteln abgedeckt, zu denen jeweils PowerPoint-Pr&auml;sentationen
+                            mit kompakten Erkl&auml;rungen unter dem Reiter &raquo;More Resources&laquo; verf&uuml;gbar sind. Nach dem Bearbeiten der textbasierten Lernmaterialien kannst du das gewonnene Wissen zu den einzelnen Themen in kapitelgerechten
+                            Quizes &uuml;berpr&uuml;fen!<br>Stand: 2017 &copy; McGraw-Hill Global Education Holdings, LLC.<br>Autor: Douglas A. Lind, William G. Marchal, Samuel A. Wathen<br>Abdeckungsgrad 80%</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="http://products.wolframalpha.com/courseassistants/statistics.html"><img src="http://www.brillianideas.com/img/learnings/Wolfram_Statistics_Assistant_app.png" alt="Wolfram Statistics Course Assistant" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="http://products.wolframalpha.com/courseassistants/statistics.html">
+                            <div class="font_red heading4 font_caveat aligned_justify">Wolfram Statistics Course Assistant</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">Diese auf den Statistik-Funktionalit&auml;ten von WolframAlpha basierende App ist ein zuverl&auml;ssiger Unterst&uuml;tzer f&uuml;r den Bereich der deskriptiven Statistik und Wahrscheinlichkeitsrechnung, sowohl f&uuml;r iOS- als
+                            auch f&uuml;r Android-User! Hier kannst du zweidimensionale Daten auf unterschiedliche Weise darstellen und veranschaulichen, Aufgaben zur Normal- und Binomialverteilung l&ouml;sen und Zufallszahlen erzeugen. Dies alles hilft
+                            dir dabei Statistik-Aufgaben besser zu l&ouml;sen und verringert zus&auml;tzlich den Zeichenaufwand.<br>Stand: 2015 &copy; Wolfram Group LLC<br>Autor: Wolfram Group LLC<br>Abdeckungsgrad 30%</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="https://play.google.com/store/apps/details?id=b.piskernik.statisticsmanually&hl=de"><img src="http://www.brillianideas.com/img/learnings/Statistik_Formeln_Tabellen_app.png" alt="Statistik Formeln & Tabellen" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="https://play.google.com/store/apps/details?id=b.piskernik.statisticsmanually&hl=de">
+                            <div class="font_red heading4 font_caveat aligned_justify">Statistik Formeln & Tabellen</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">Diese Statistik-App ist ein n&uuml;tzliches Helferlein f&uuml;r die Bearbeitung von Aufgaben ohne Statistik-Software. Sie stellt dir eine umfangreiche Sammlung von statistischen Formeln, sowie die ben&ouml;tigten Werte-Tabellen
+                            zur Interpretation der Ergebnisse zur Verf&uuml;gung, sodass dich kein zeitaufwendiges Bl&auml;ttern im Statistikbuch bei der Bearbeitung von Aufgaben aufh&auml;lt.<br>Stand: 2015 &copy; B. Piskernik<br>Autor: B. Piskernik<br>Abdeckungsgrad
+                            30%
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="https://de.udacity.com/course/intro-to-statistics--st101"><img src="http://www.brillianideas.com/img/learnings/Decisions_based_on_data_mooc.jpg" alt="Einstieg in die Statistik - Making Decisions Based on Data" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="https://de.udacity.com/course/intro-to-statistics--st101">
+                            <div class="font_red heading4 font_caveat aligned_justify">Einstieg in die Statistik - Making Decisions Based on Data</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">Gerade als Statistik-Anf&auml;nger bringt dir dieser MOOC grundlegende Methoden f&uuml;r den Umgang mit Daten und deren Auswertung n&auml;her. Der Fokus liegt sowohl auf Themen der deskriptiven Statistik, wie zum Beispiel &raquo;Visualisierung
+                            von Daten&laquo; und &raquo;Ma&szlig;e statistischer Verteilungen&laquo; mit Lerneinheiten zur Wahrscheinlichkeitsverteilung, Normalverteilung und zu Hypothesentests.<br>Stand: 2016 &copy; Udacity, Inc.<br>Autor: Sebastian
+                            Thrun
+                            <br>Dauer: 8 Wochen<br>Abdeckungsgrad 60%</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="https://www.edx.org/course/preparing-ap-statistics-exam-tennessee-board-regents-statx-0"><img src="http://www.brillianideas.com/img/learnings/Preparing_for_Statistics_Exam_mooc.jpg" alt="STATx Preparing for the AP Statistics Exam" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="https://www.edx.org/course/preparing-ap-statistics-exam-tennessee-board-regents-statx-0">
+                            <div class="font_red heading4 font_caveat aligned_justify">STATx Preparing for the AP Statistics Exam</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">Dieser Online-Kurs stellt dir die wichtigsten Konzepte und Werkzeuge f&uuml;r das Sammeln, Darstellen und Analysieren von Daten vor. Das Lernangebot ist dabei in die folgenden vier gro&szlig;en konzeptionellen Themen geteilt: &raquo;Beschreiben
+                            von Mustern und Abweichungen in Datens&auml;tzen&laquo;, &raquo;Durchf&uuml;hrung von Studien&laquo;, &raquo;Erforschung zuf&auml;lliger Ph&auml;nomene&laquo;, sowie &raquo;Statistische Inferenz (Sch&auml;tzung von Parametern
+                            und Hypothesentests)&laquo;. Das Videomaterial wird von einer Lehrbuchbeschreibung begleitet, die dir bei der Vor- und Nacharbeit hilft und zur Veranschaulichung dient.<br>Stand: 2016 &copy; edX Inc.<br>Autor: Tennessee Board
+                            of Regents<br>Dauer: 35 Wochen<br>Abdeckungsgrad 90%</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="https://lagunita.stanford.edu/courses/OLI/ProbStat/Open/about"><img src="http://www.brillianideas.com/img/learnings/Probability_and_Statistics_mooc.jpg" alt="Probability and Statistics" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="https://lagunita.stanford.edu/courses/OLI/ProbStat/Open/about">
+                            <div class="font_red heading4 font_caveat aligned_justify">Probability and Statistics</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">Dieser Stanford MOOC vermittelt den Stoff von einem Semester Statistik mithilfe von anschaulichen Lehrtexten inkl. Grafiken, Beispielen und Multiple-Choice-Quizes, mit denen du dein Verst&auml;ndnis &uuml;ber unmittelbar zuvor
+                            vermittelte Inhalte &uuml;berpr&uuml;fen kannst. Zentrale Themengebiete sind die Basics der deskriptiven Statistik sowie Wahrscheinlichkeit und Inferenz (Punkt- und Intervallsch&auml;tzungen & Hypothesentests).<br>Stand: 2015
+                            &copy; Stanford University<br>Autor: Stanford University<br>Abdeckungsgrad 80%</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="http://prof-roessler.de/Dateien/Statistik/formelsammlung.pdf"><img src="http://www.brillianideas.com/img/learnings/Statistik.png" alt="Formelsammlung Statistik" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="http://prof-roessler.de/Dateien/Statistik/formelsammlung.pdf">
+                            <div class="font_red heading4 font_caveat aligned_justify">Formelsammlung Statistik</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">Diese Website beinhaltet eine kommentierte Formelsammlung der deskriptiven und induktiven Statistik und eignet sich besonders f&uuml;r dich als Wirtschaftswissenschaftler. Weitere &uuml;bungsaufgaben findest du auf der Website
+                            von Frau Prof. Dr. Irene R&ouml;&szlig;ler.<br>Stand: 2017 &copy; Prof. Dr. Irene R&ouml;&szlig;ler<br>Autor: Prof. Dr. Irene R&ouml;&szlig;ler<br> Abdeckungsgrad 30%</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="https://os.updog.co/dhbw/or/"><img src="http://www.brillianideas.com/img/learnings/OR_Online_Script_website.jpg" alt="Operations Research - Online Script" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="https://os.updog.co/dhbw/or/">
+                            <div class="font_red heading4 font_caveat aligned_justify">Operations Research - Online Script</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">Diese digitale Einf&uuml;hrung in &raquo;Operations Research&laquo; stellt ausgew&auml;hlte Modelle und Algorithmen zur Entscheidungsunterst&uuml;tzung im betriebswirtschaftlichen Sinne vor. Behandelt werden zum Beispiel das Simplexverfahren
+                            und die Graphentheorie, sowie Rucksack- und Transportprobleme. Die schrittweise L&ouml;sung derartiger Problemstellungen wird anhand von Beispielen demonstriert, die dir konkrete betriebliche Anwendungsf&auml;lle n&auml;herbringen.
+                            Durch die Bearbeitung weiterer &uuml;bungsaufgaben kannst du die Verfahren weiter verinnerlichen, zumal ausf&uuml;hrliche L&ouml;sungen zur Selbstkontrolle bereitgestellt werden.<br>Stand: 2016 &copy; O. Stuhr<br>Autor: O.
+                            Stuhr
+                            <br>Abdeckungsgrad 80%</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="https://www.wiwiweb.de/online-kurs/bwl-operations-research"><img src="http://www.brillianideas.com/img/learnings/OR_online_lernen_mooc.png" alt="Operations Research online lernen" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="https://www.wiwiweb.de/online-kurs/bwl-operations-research">
+                            <div class="font_red heading4 font_caveat aligned_justify">Operations Research online lernen</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">Operations Research (OR) ist gepr&auml;gt durch die Zusammenf&uuml;hrung von mathematischen Verfahren, Wirtschaftswissenschaften und Informatik zum Zwecke der Entscheidungsfindung. In diesem Online-Kurs wird die lineare Optimierung/Programmierung
+                            gelehrt, um Teilnehmer zum L&ouml;sen von Maximierungs- und Minimierungsproblemen zu bef&auml;higen. Kursmaterialien umfassen zahlreiche Dokumente, &uuml;bungen und 18 Lernvideos, von denen du auch einige kostenlos &uuml;ber
+                            den YouTube-Kanal des Anbieters abrufen kannst.<br>Stand: 2014 &copy; examio GmbH<br>Autor: Daniel Lambert, wiwiweb.de<br>Abdeckungsgrad 60%</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="https://www.coursera.org/learn/discrete-optimization"><img src="http://www.brillianideas.com/img/learnings/Descrete_Optimization_mooc.png" alt="Discrete Optimization" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="https://www.coursera.org/learn/discrete-optimization">
+                            <div class="font_red heading4 font_caveat aligned_justify">Discrete Optimization</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">Diskrete Optimierung ist eine Alternativbezeichnung f&uuml;r lineare ganzzahlige Optimierung, welche ein zentrales Thema des &raquo;Operations Research&laquo;-Moduls bei IMBIT darstellt. Anhand der Bearbeitung von betrieblichen
+                            Fragestellungen in den Bereichen Planung, Fahrzeug-Routing und Ressourcenzuteilung lernst du grundlegende Konzepte und Algorithmen der Constraint-Programmierung, lokalen Suche und ganzzahligen Programmierung. Besonders relevant
+                            f&uuml;r dich als IMBIT-Student sind dabei die Kurswochen 5 & 6, welche &raquo;Lineare Programmierung&laquo; mit Fokus auf das Simplexverfahren und &raquo;Gemischt-ganzzahlige Programmierung&laquo; behandeln.<br>Stand: 2017
+                            &copy; Coursera Inc.<br>Autor: University of Melbourne<br>Dauer: 8 Wochen<br>Abdeckungsgrad 50%</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="https://www.coursera.org/learn/algorithms-greedy#pricing"><img src="http://www.brillianideas.com/img/learnings/Greedy_Algorithms_mooc.png" alt="Greedy Algorithms, Minimum Spanning Trees, and Dynamic Programming" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="https://www.coursera.org/learn/algorithms-greedy#pricing">
+                            <div class="font_red heading4 font_caveat aligned_justify">Discrete Optimization</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">Fokus des MOOCs sind Algorithmen, die im Umfeld der Operations Research Anwendung finden: zum einen werden Greedy Algorithmen (z.B Prims und Kruskals Algorithmus f&uuml;r minimale Spannb&auml;ume) behandelt, zum anderen verschiedene
+                            Ans&auml;tze der dynamischen Programmierung (z.B. das Rucksack Problem und das Branch-and-Bound-Verfahren). F&uuml;r dich als IMBIT-Student ist insbesondere der Stoff der ersten zwei Kurswochen relevant, da mit Prims und Kruskals
+                            Algorithmen Teile des Curriculumthemas &raquo;Graphentheorie&laquo; abgedeckt werden. Das Wissen im Bereich der Greedy-Algorithmen kannst du zus&auml;tzlich in den folgenden zwei Kurswochen noch vertiefen.<br>Stand: 2017 &copy;
+                            Coursera Inc.<br>Autor: University of Stanford<br>Dauer: 4 Wochen<br>Abdeckungsgrad 50%</div>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+        <!-- Module Description -->
+        <div class="grid_column_10_13 grid_row_4_10">
+            <div class="font_red heading4 font_caveat aligned_justify">Fachbeschreibung</div>
+            <div class="font_black font_tinos aligned_left">Das Modul Mathematik II unterteilt sich in zwei mathematische Gebiete: &raquo;Statistik&laquo; und &raquo;Operations Research&laquo;. &raquo;Statistik&laquo;beinhaltet die Zusammenfassung bestimmter Methoden zur Analyse empirischer Daten.
+                &raquo;Operations Research&laquo; hat das Hauptziel Methoden aus der Mathematik, Spieltheorie, Statistik und Wahrscheinlichkeitsrechnung auf wirtschaftliche Probleme anzuwenden.<br></div>
+            <div class="font_red heading4 font_caveat aligned_justify">Kompetenzziele</div>
+            <div class="font_black font_tinos aligned_left">
+                &bullet; Induktive und Deskriptive Statistik bei ein- und mehrdimensionalem Datenmaterial &bullet; Wahrscheinlichkeitsrechnung und Graphentheorie &bullet; Lineare, Kombinatorische, ganzzahlige und nichtlineare Optimierung
+            </div>
+            <div class="font_red heading4 font_caveat aligned_justify">Weiterf&uuml;hrende Literatur</div>
+            <div class="font_black font_tinos aligned_left">
+                <ul>
+                    <li>Bamberg, G. und Baur, F.: Statistik, M&uuml;nchen.</li>
+                    <li>Bleym&uuml;ller, J., Gehlert, G. und G&uuml;licher, H.: Statistik f&uuml;r Wirtschaftswissenschaftler, M&uuml;nchen.</li>
+                    <li>Domschke, W. und Drexl, A.: Einf&uuml;hrung in Operations Research, Berlin.</li>
+                    <li>Heinrich, Gert.: Basiswissen Mathematik, Statistik und Operations Research f&uuml;r Wirtschaftswissenschaftler, De Gruyter Oldenbourg, M&uuml;nchen.</li>
+                    <li>Heinrich, G.: Operations Research, M&uuml;nchen.</li>
+                    <li>Zimmermann, W. und Stache, U.: Operations Research, M&uuml;nchen.</li>
+                    <li>Schuster, T., Liesen, A.: Statistik f&uuml;r Wirtschaftswissenschaftler, Springer-Verlag, Berlin, Heidelberg.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Grid 3 für methodischegrundlagen-wissarbeiten-->
+    <div class="grid_layout" id="methodischegrundlagen-wissarbeiten">
+
+        <!-- Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings Grid 3-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('methodischegrundlagen-wissarbeiten', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('methodischegrundlagen-wissarbeiten', 'methodischegrundlagen')">Methodische Grundlagen</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">Wissenschaftliches Arbeiten</div>
+        </div>
+
+        <!-- Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+        </div>
+
+        <!-- Module Description: Content eventuell auf Ebene 4 -->
+
+    </div>
+
+    <!-- Grid 3 für methodischegrundlagen-präsundkomm-->
+    <div class="grid_layout" id="methodischegrundlagen-präsundkomm">
+
+        <!-- Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings Grid 3-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('methodischegrundlagen-präsundkomm', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('methodischegrundlagen-präsundkomm', 'methodischegrundlagen')">Methodische Grundlagen</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">Präsentations- & Kommunikationskompetenzen</div>
+        </div>
+
+        <!-- Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+        </div>
+
+        <!-- Module Description: Content -->
+
+    </div>
+
+    <!-- Grid 3 für methodischegrundlagen-schlüsselII-->
+    <div class="grid_layout" id="methodischegrundlagen-schlüsselII">
+
+        <!-- Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings Grid 3-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('methodischegrundlagen-schlüsselII', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('methodischegrundlagen-schlüsselII', 'methodischegrundlagen')">Methodische Grundlagen</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">Schlüsselqualifikationen II</div>
+        </div>
+
+        <!-- Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+        </div>
+
+        <!-- Module Description: Content -->
+
+    </div>
+
+    <!-- Grid 3 für methodischegrundlagen-schlüsselIII-->
+    <div class="grid_layout" id="methodischegrundlagen-schlüsselIII">
+
+        <!-- Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings Grid 3-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('methodischegrundlagen-schlüsselIII', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('methodischegrundlagen-schlüsselIII', 'methodischegrundlagen')">Methodische Grundlagen</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">Schlüsselqualifikationen III</div>
+        </div>
+
+        <!-- Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+        </div>
+
+        <!-- Module Description: Content -->
+
+    </div>
+
+    <!-- Grid 3 für methodischegrundlagen-statanwendung-->
+    <div class="grid_layout" id="methodischegrundlagen-statanwendung">
+
+        <!-- Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings Grid 3-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('methodischegrundlagen-statanwendung', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('methodischegrundlagen-statanwendung', 'methodischegrundlagen')">Methodische Grundlagen</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">Statistik in der Anwendung</div>
+        </div>
+
+        <!-- Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+        </div>
+
+        <!-- Module Description: Content -->
+
+    </div>
+
+
+    <!-- HIER BEGINNT EBENE 3 für Wirtschaftswissenschaften-->
+
+    <!-- Grid 3 für wirtschaft-bwl-->
+    <div class="grid_layout" id="wirtschaft-bwl">
+
+        <!--Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
             <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaft-bwl', 'Grid1')">IMBIT-Curriculum</div>
-          </div>
-
-          <div class="grid_column_9_13 grid_row_2 gridalign_start">
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
             <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaft-bwl', 'wirtschaft')">Wirtschaftswissenschaften</div>
-          </div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right " onclick="changeVisible('wirtschaft-bwl', 'description-bwl')">Grundlagen der Betriebswirtschaftslehre</div>
+        </div>
 
+        <!-- Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+            <table>
+                <tr>
+                    <td>
+                        <a target="_blank" href="https://de.udacity.com/course/how-to-build-a-startup--ep245">
+                            <img src="http://brillianideas.com/img/learnings/How_to_build_a_start-up.png" alt="How to Build a Start-Up?" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="https://de.udacity.com/course/how-to-build-a-startup--ep245">
+                            <div class="font_red heading4 font_caveat aligned_justify">How to Build a Start-Up?</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left"> Dieser MOOC stellt die verschiedenen Schritte zur Gründung eines Start-Ups vor. Du erhälst Einblicke in Strategien, wie man eine Idee zu einem erfolgreichen Start-Up entwickeln kann. Mit diesen Vorgehensweisen und Techniken können
+                            häufige Fehler bei der Entwicklung eines Start-Ups vermieden werden. Der Kurs ist kostenlos, in englischer Sprache verfügbar und wiederholt die Inhalte der Vorlesung &raquo;Einführung in die BWL&laquo;.
+                            <br>Stand: 2017 &copy; Udacity Inc.<br>Autor: Steve Blank; Kathleen Mullaney<br>Dauer: 4 Wochen<br>Abdeckungsgrad 10%</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="https://canvanizer.com/new/business-model-canvas">
+                            <img src="http://brillianideas.com/img/learnings/Business_model_canvas_youtube.jpg" alt="Business Canvas Modelling" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="https://canvanizer.com/new/business-model-canvas">
+                            <div class="font_red heading4 font_caveat aligned_justify">Business Canvas Modelling</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">In diesem online bereitgestellten Tool kannst du einen Business Canvas erstellen. Das Planungstool kann dich bei der Entwicklung und Überarbeitung von komplexen Geschäftsideen unterstützen. So hast du immer einen Überblick über
+                            die Schlüsselfaktoren deines Geschäftsmodells.
+                            <br>Stand: 2017 &copy; Proud Sourcing GmbH<br>Autor: Stefan Roos<br>Abdeckungsgrad 20%</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="https://www.edx.org/course/circular-economy-an-introduction">
+                            <img src="http://brillianideas.com/img/learnings/Circular_economy_An_Introduction.png" alt="Circular Economy: An Introduction" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="https://www.edx.org/course/circular-economy-an-introduction">
+                            <div class="font_red heading4 font_caveat aligned_justify">Circular Economy: An Introduction</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">In diesem MOOC erfährst du wie ein nachhaltiges Wirtschaftssystem funktionieren kann. Dabei geht es um das Wiederverwenden und Wiederverwerten von Produkten und wie daraus Vorteile für das Unternehmen entstehen können. Dieses Thema
+                            baut auf dem Bereich Nachhaltigkeit auf, welcher in der Vorlesung &raquo;Einführung in die BWL&laquo; behandelt wird.
+                            <br> Stand: 2017 &copy; TU Delft<br>Autor: David Peck; Conny Bakker, Ken Webster; Ester van der Voet; Erwin van der Laan<br>Dauer: 7 Wochen<br>Abdeckungsgrad 30% </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="https://de.surveymonkey.com/r/G79PZTY">
+                            <img src="http://brillianideas.com/img/learnings/Umfrage_Unternehmensziele.jpg" alt="Umfrage Unternehmensziele " class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="https://de.surveymonkey.com/r/G79PZTY">
+                            <div class="font_red heading4 font_caveat aligned_justify">Umfrage Unternehmensziele </div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">Diese Umfrage beschäftigt sich mit Unternehmenszielen. Durch das Ausfüllen der Umfrage sollen die Inhalte der Vorlesung gefestigt werden. Die Umfrage wurde von Prof. Dr. Bendl im Rahmen der Vorlesung &raquo;Einführung in die BWL&laquo;
+                            entwickelt und hilft dir die verschiedenen Funktionsbereiche im Unternehmen zu verstehen.
+                            <br>Stand: 2017 &copy; Prof. Dr. Harald Bendl<br>Autor: Prof. Dr. Harald Bendl<br>Abdeckungsgrad 30%</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="https://de.surveymonkey.com/r/HJ6BSWB">
+                            <img src="http://brillianideas.com/img/learnings/Umfrage_Aktiengesellschaft.jpg" alt="Umfrage Aktiengesellschaft" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="https://de.surveymonkey.com/r/HJ6BSWB">
+                            <div class="font_red heading4 font_caveat aligned_justify">Umfrage Aktiengesellschaft</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">Die Umfrage &raquo;Aktiengesellschaft&laquo; beschäftigt sich mit Aktienkursen, Bilanzposten und vielen anderen Themen und soll die in der Vorlesung gelernten Inhalte wiedergeben. Sie wurde im Rahmen der Vorlesung &raquo;Einführung
+                            in die BWL&laquo; von Prof. Dr. Bendl entwickelt und unterstützt dich beim Lernen.
+                            <br>Stand:: 2017 &copy; Prof. Dr. Harald Bendl<br>Autor: Prof. Dr. Harald Bendl<br>Abdeckungsgrad 30%</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="https://webinare.gripscoachtv.de/wefly/marketing-einfach-erklaert/">
+                            <img src="/Users/christianbartels/Documente HD/Studium/5. Semester/IT-Projekt/Bilder/GripsCoachTV.png" alt="FernUni Hagen" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="https://webinare.gripscoachtv.de/wefly/marketing-einfach-erklaert/">
+                            <div class="font_red heading4 font_caveat aligned_justify">Beispielklausur WI FernUni Hagen</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">Dieses Webinar ist ideal für alle Auszubildenden und Umschüler, für die Marketing prüfungsrelevant ist.
+                            <br>Stand: 2018 &copy; GripsCoachTV<br>Autor: GripsCoachTV<br>Abdeckungsgrad 15%</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
 
-          <div class="grid_column_9_13 grid_row_3 gridalign_start">
-            <div class="heading3 font_caveat aligned_right ">Grundlagen der Betriebswirtschaftslehre</div>
-          </div>
+        <!-- Module Description: Content -->
 
-        <!-- Table Start -->
-
-
-      <!-- Module Description -->
-
-      </div>
-
-<!--HIER BEGINNT Grid for Grundlagen BWL -->
-   <div class="grid_layout" id="wirtschaft-dmk">
-     <div class="grid_column_1_3 grid_row_1_3">
-          <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png"/>
     </div>
 
-    <!-- Menü BWL Grid -->
-      <div class="grid_column_9_13 grid_row_1 gridalign_end">
-          <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaft-bwl', 'Grid1')">IMBIT-Curriculum</div>
-      </div>
+    <!-- Grid 3 für wirtschaft-dlm-->
+    <div class="grid_layout" id="wirtschaft-dlm">
 
-      <div class="grid_column_9_13 grid_row_2 gridalign_start">
-          <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaft-bwl', 'wirtschaft')">Wirtschaftswissenschaften</div>
-      </div>
+        <!--Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
 
+        <!-- Headings-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaft-dlm', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaft-dlm', 'wirtschaft')">Wirtschaftswissenschaften</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">Dienstleistungsmanagement</div>
+        </div>
 
-      <div class="grid_column_9_13 grid_row_3 gridalign_start">
-          <div class="heading3 font_caveat aligned_right ">Dienstleistungsmanagement</div>
-      </div>
->>>>>>> 18c73884ed173f14bfdce6883a16848d9f2c31e8
+        <!-- Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+        </div>
+        <!-- Module Description: Content -->
 
-    <!-- Table Start -->
-
-
-    <!-- Module Description -->
-
-</div>
-
-<!--HIER BEGINNT Grid for Dienstleistungsmanagement -->
-        <div class="grid_layout" id="wirtschaft-dlm">
-
-          <div class="grid_column_1_3 grid_row_1_3">
-            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png"/>
-          </div>
-
-    <!-- Menü Dienstleistungsmanagement-->
-          <div class="grid_column_9_13 grid_row_1 gridalign_end">
-            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaft-bwl', 'Grid1')">IMBIT-Curriculum</div>
-          </div>
-
-          <div class="grid_column_9_13 grid_row_2 gridalign_start">
-            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaft-bwl', 'wirtschaft')">Wirtschaftswissenschaften</div>
-          </div>
-
-
-          <div class="grid_column_9_13 grid_row_3 gridalign_start">
-            <div class="heading3 font_caveat aligned_right ">Finanzbuchhaltung & Rechnungswesen</div>
-          </div>
-
-    <!-- Table Start -->
-
-
-    <!-- Module Description -->
-
-  </div>
-
-<!--HIER BEGINNT Grid for Wirtschaftsinformatik Modul -->
-  <div class="grid_layout" id="wirtschaftsinformatik-wirtschaftsinformatik">
-
-    <div class="grid_column_1_3 grid_row_1_3">
-      <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png"/>
     </div>
 
-    <!-- Headings Grid 3-->
-      <div class="grid_column_9_13 grid_row_1 gridalign_end">
-        <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('Grid3', 'Grid1')">IMBIT-Curriculum</div>
-      </div>
+    <!-- Grid 3 für wirtschaft-fiundrewe-->
+    <div class="grid_layout" id="wirtschaft-fiundrewe">
 
-      <div class="grid_column_9_13 grid_row_2 gridalign_start">
-        <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('Grid3', 'Grid2')">Wirtschaftsinformatik</div>
-      </div>
+        <!--Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
 
+        <!-- Headings-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaft-fiundrewe', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaft-fiundrewe', 'wirtschaft')">Wirtschaftswissenschaften</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">Finanzierung und Rechnungswesen</div>
+        </div>
 
-      <div class="grid_column_9_13 grid_row_3 gridalign_start">
-        <div class="heading3 font_caveat aligned_right ">Modul Wirtschaftsinformatik</div>
-      </div>
+        <!-- Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+        </div>
 
-    <!-- Table Start -->
-    <div class="grid_column_2_8 grid_row_4_10">
-    <table>
-      <tr>
-        <td>
-          <a target="_blank" href="https://www.fernuni-hagen.de/wirtschaftswissenschaft/studium/download/pruefungen/31071_0916.pdf"><img src="http://digital-learning-imbit.com/img/learnings/SAP_APPHAUS_eine_kreative_Woche_mit_Design_Thinking.png" alt="FernUni Hagen" class="MOOC_Thumbnail" width="90%"></a>
-        </td>
-        <td>
-          <a target="_blank" href="https://www.fernuni-hagen.de/wirtschaftswissenschaft/studium/download/pruefungen/31071_0916.pdf"><div class="font_red heading4 font_caveat aligned_justify">Beispielklausur WI FernUni Hagen</div></a>
-          <div class="font_black font_tinos aligned_left"> ist eine Beispielklausur für das Modul &raquo;Einführung&laquo; in die Wirtschaftsinformatik von der FernUni Hagen. Es handelt sich hierbei nicht um eine Klausur unserer Hochschule, allerdings ist es hilfreich zu sehen wie eine Klausur aufgebaut sein kann.<br>Stand: 2016 &copy; Fernuni Hagen<br>Autor: Fernuni Hagen<br>Abdeckungsgrad 30%</div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a target="_blank" href="http://www.erp-system.de"><img src="img/ERP_System_DE.jpg" alt="ERP-System.de" class="MOOC_Thumbnail" width="90%"></a>
-        </td>
-        <td>
-          <a target="_blank" href="http://www.erp-system.de"><div class="font_red heading4 font_caveat aligned_justify">ERP-System.de</div></a>
-          <div class="font_black font_tinos aligned_left">erklärt alle Informationen rund um das komplexe Thema ERP umfassend, anschaulich und einfach. Es werden in einer Art ERP-Wiki alle wichtigen Fragestellungen rund um ERP und ERP-Systeme behandelt. Was ist ERP? Was ist ein ERP-System? Was sind die wesentlichen Funktionsbereiche eines ERP-Systems? Wie erfolgt die Auswahl und Einführung eines ERP-Systems aus der Vielzahl von ERP-Anbietern und ERP-Lösungen? Darüber hinaus wird auf die neuesten Trends im Bereich ERP, wie die zunehmende Verbreitung von Cloud ERP und Mobile ERP eingegangen. Des Weiteren verweist ERP-System.de auf wertvolle weiterführende Literatur.<br>Autor: www.erp-system.de</div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a target="_blank" href="https://soundcloud.com/erp-system-de/sets/wozu-benotigt-man-ein-erp-system"><img src="img/ERP_System_DE.jpg"alt="ERP-System.de" class="MOOC_Thumbnail" width="90%"></a>
-        </td>
-        <td>
-          <a target="_blank" href="https://soundcloud.com/erp-system-de/sets/wozu-benotigt-man-ein-erp-system"><div class="font_red heading4 font_caveat aligned_justify">Podcast: ERP-System</div></a>
-          <div class="font_black font_tinos aligned_left">Dieser knackige Podcast von erp-system.de vermittelt Wissen rund um das Thema ERP und ERP-Systeme. Dabei wird zunächst auf die Definition der Begriffe eingegangen, um anschließend wichtige Fragestellungen zur Auswahl und Einführung eines ERP-Systems zu klären. Auch aktuelle Trends werden untersucht wie beispielsweise Cloud ERP und Mobile ERP, wobei die Vor- und Nachteile klar aufgezeigt werden.<br> Stand: 2016 &copy;  www.erp-system.de <br>Autor: www.erp-system.de</div>
-        </td>
-      </tr>
-    </table>
+        <!-- Module Description: Content -->
+
     </div>
 
-  <!-- Module Description -->
-    <div class="grid_column_10_13 grid_row_4_10">
-      <div class="font_red heading4 font_caveat aligned_justify">Fachbeschreibung</div>
-      <div class="font_black font_tinos aligned_left"><br>Die Wertschöpfung durch Informationstechnologie innerhalb eines Unternehmens steht im Fokus der WI. Es werden Konzeption, Entwicklung und Anwendung von Informationssystemen in Wirtschaft und Verwaltung behandelt &mdash; Kernthema der Vorlesung ist das ERP System.<br></div>
-    <br><div class="font_red heading4 font_caveat aligned_justify">Kompetenzziele</div>
-      <div class="font_black font_tinos aligned_left"><ul>
-        <li>Verständnis über Aufgaben und Systeme der Wirtschaftsinformatik</li>
-        <li>Fähigkeit reale Informationssysteme in die Taxonomie der Wirtschaftsinformatik einzuordnen und als soziotechnische Systeme zu beschreiben</li>
-      </ul></div>
-      <br><div class="font_red heading4 font_caveat aligned_justify">Weiterführende Literatur</div>
-      <div class="font_black font_tinos aligned_left"><ul>
-        <li>Abts, D.; Mülder, W.: Grundkurs Wirtschaftsinformatik, Springer Vieweg, Wiesbaden.</li>
-        <li>Bächle, M.; Kolb, A.: Einführung in die Wirtschaftsinformatik, Oldenbourg, München.</li>
-        <li>Hansen, H.R.; Mendling, J.; Neumann, G.: Wirtschaftsinformatik, De Gruyter, Oldenbourg.</li>
-      </ul></div>
+    <!-- Grid 3 für wirtschaft-geschäftsprozesse-->
+    <div class="grid_layout" id="wirtschaft-geschäftsprozesse">
+
+        <!--Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaft-geschäftsprozesse', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaft-geschäftsprozesse', 'wirtschaft')">Wirtschaftswissenschaften</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">Geschäftsprozesse und deren Umsetzung</div>
+        </div>
+
+        <!-- Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+        </div>
+
+        <!-- Module Description: Content -->
+
     </div>
-  </div>
+
+    <!-- Grid 3 für wirtschaft-management-->
+    <div class="grid_layout" id="wirtschaft-management">
+
+        <!--Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaft-management', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaft-management', 'wirtschaft')">Wirtschaftswissenschaften</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">Management</div>
+        </div>
+
+        <!-- Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+        </div>
+
+        <!-- Module Description: Content -->
+
+    </div>
+
+    <!-- Grid 3 für wirtschaft-grundlagenrechnungslegung-->
+    <div class="grid_layout" id="wirtschaft-grundlagenrechnungslegung">
+
+        <!--Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaft-grundlagenrechnungslegung', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaft-grundlagenrechnungslegung', 'wirtschaft')">Wirtschaftswissenschaften</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">Grundlagen der Rechnungslegung</div>
+        </div>
+
+        <!-- Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+        </div>
+
+        <!-- Module Description: Content -->
+
+    </div>
+
+    <!-- Grid 3 für wirtschaft-recht-->
+    <div class="grid_layout" id="wirtschaft-recht">
+
+        <!--Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaft-recht', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaft-recht', 'wirtschaft')">Wirtschaftswissenschaften</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">Recht</div>
+        </div>
+
+        <!-- Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+        </div>
+
+        <!-- Module Description: Content -->
+
+    </div>
+
+    <!-- Grid 3 für wirtschaft-vwl-->
+    <div class="grid_layout" id="wirtschaft-vwl">
+
+        <!--Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaft-vwl', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('wirtschaft-vwl', 'wirtschaft')">Wirtschaftswissenschaften</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">VWL</div>
+        </div>
+
+        <!-- Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+        </div>
+
+        <!-- Module Description: Content -->
+
+    </div>
+
+
+    <!-- HIER BEGINNT EBENE 3 für Informatik-->
+    <!-- Grid 3 für informatik-komsysundos-->
+    <div class="grid_layout" id="informatik-komsysundos">
+
+        <!--Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings Grid 3 informatik-komsysundos-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('informatik-komsysundos', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('informatik-komsysundos', 'informatik')">Informatik</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">Kommunikationssysteme & Betriebssysteme</div>
+        </div>
+
+        <!--Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+            <table>
+                <tr>
+                    <td>
+                        <a target="_blank" href="https://open.hpi.de/courses/internetworking2014"><img src="http://www.brillianideas.com/img/learnings/Internetworking_mit_TCP_IP.jpg" alt="Internetworking mit TCP/IP" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="https://open.hpi.de/courses/internetworking2014">
+                            <div class="font_red heading4 font_caveat aligned_justify">Internetworking mit TCP/IP</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">Dieser Kurs bringt dir die technologischen Grundlagen des Internets n&auml;her. Er behandelt die physikalischen Grundlagen der Daten&uuml;bertragung basierend auf funktionalen Prinzipien und Technologien von Local Area Networks
+                            (LANs) und Wide Area Networks (WANs). Außerdem lernst du das TCP/IP Reference Model &mdash; das Herz des Internets &mdash; kennen und steigst somit in die komplexe Welt der Internettechnologien ein.<br>Stand: 2014 &copy; Hasso-Plattner-Institut<br>Autor:
+                            Prof. Dr. Christoph Meinel<br>Dauer: 6 Wochen<br>Abdeckungsgrad 40%</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="https://youtu.be/Vdc8TCESIg8"><img src="https://i.ytimg.com/vi/Vdc8TCESIg8/hqdefault.jpg" alt="UDP and TCP: Comparison of Transport Protocols" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="https://youtu.be/Vdc8TCESIg8">
+                            <div class="font_red heading4 font_caveat aligned_justify">UDP and TCP: Comparison of Transport Protocols</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">Dieses Lernvideo erkl&auml;rt die Grundlagen von Transportprotokollen und vergleicht zwei verschiedene Arten von Protokollen: UDP und TCP. Dies hilft dir bei der Wiederholung der Vorlesung Kommunikationssysteme.<br>Stand: 2013
+                            &copy; PieterExplainsTech<br>Autor: Pieter Decker<br>Abdeckungsgrad 30% </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="http://dhbw.welter.ws"><img src="http://www.brillianideas.com/img/learnings/Vorlesung_zu_Communication_Systems.jpg" alt="Vorlesung zu Communication Systems" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="http://dhbw.welter.ws">
+                            <div class="font_red heading4 font_caveat aligned_justify">Vorlesung zu Communication Systems</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">Diese Website zeigt alle Skripte aus der Vorlesung Kommunikationssysteme von Prof. Welter aus dem Jahr 2015. Hier lernst du die Grundlagen der Daten&uuml;bertragung kennen und findest n&uuml;tzliche Links zu weiterf&uuml;hrenden
+                            Lerninhalten im Themenbereich wie beispielsweise ein Tool zur Kalkulation von IP-Adressen, Subnetz und Ranges.<br>Stand: 2015 &copy; Prof. Welter<br>Autor: Prof. Welter<br>Abdeckungsgrad 100%</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=HRHQvTO9GZU&feature=youtu.be"><img src="https://i.ytimg.com/vi/HRHQvTO9GZU/hqdefault.jpg" alt="ISO/OSI Modell" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=HRHQvTO9GZU&feature=youtu.be">
+                            <div class="font_red heading4 font_caveat aligned_justify">ISO/OSI Modell</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">Dieses Video erkl&auml;rt das ISO/OSI Schichtenmodell anhand verschiedener Beispiele. Es wurde erstellt von Studenten der DHBW Villingen-Schwellingen. Es hilft dir nicht nur im Rahmen der Vorlesung Kommunikationssysteme, sondern
+                            auch bei m&uuml;ndlichen Pr&uuml;fungen.<br>Stand: 2014 &copy; DHBW Villingen-Schwellingen<br>Autor: Valerie Neff, Julia Hartung, Alexander Meixner, Jonathan Beißwenger<br>Abdeckungsgrad 40%</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="https://www.udacity.com/course/introduction-to-operating-systems--ud923"><img src="http://www.brillianideas.com/img/learnings/Introduction_to_Operating_Systems.png" alt="Introduction to Operating Systems" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="https://www.udacity.com/course/introduction-to-operating-systems--ud923">
+                            <div class="font_red heading4 font_caveat aligned_justify">Introduction to Operating Systems</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">Dies ist ein Einf&uuml;hrungskurs in die Thematik Betriebssysteme. Er vermittelt dir die grundlegenden Betriebssystem-Abstraktionen und -Mechanismen sowie deren Implementierungen. Der Kern des Kurses ist die gleichzeitige Programmierung
+                            (Threads und Synchronisation), Interprozesskommunikation und eine Einf&uuml;hrung in verteilte Betriebssysteme. Der Kurs ist in vier Abschnitte aufgeteilt: (1) Einleitung, (2) Prozess- und Threadmanagement, (3) Ressourcenmanagement
+                            und Kommunikation und (4) Verteilte Systeme.<br>Stand: 2017 &copy; Georgia Tech<br>Autor: Udacity<br>Dauer: 8 Wochen<br>Abdeckungsgrad 60%</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="https://www.tutorialspoint.com/operating_system/index.htm"><img src="http://www.brillianideas.com/img/learnings/Operating_Systems_Tutorial.png" alt="Operating Systems Tutorial" class="MOOC_Thumbnail" width="90%"></a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="https://www.tutorialspoint.com/operating_system/index.htm">
+                            <div class="font_red heading4 font_caveat aligned_justify">Operating Systems Tutorial</div>
+                        </a>
+                        <div class="font_black font_tinos aligned_left">Dieses Tutorial zum Thema Betriebssysteme wurde f&uuml;r Informatikstudenten konzipiert und hilft dir dabei, grundlegende und fortgeschrittene Konzepte von Betriebssystemen zu verstehen. Es deckt den Großteil der IMBIT-Vorlesung
+                            zu Betriebssystemen ab und behandelt Themen wie Asynchronit&auml;t, Ereignissteuerung, Koordinierung paralleler Aktivit&auml;ten, Prozesse, I/O - Systeme und Virtualisierung.<br>Stand: 2017 &copy; Tutorialspoint<br>Autor: Tutorialspoint<br>Abdeckungsgrad
+                            100%
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--Module Description-->
+        <div class="font_red heading4 font_caveat aligned_justify">Fachbeschreibung</div>
+        <div class="font_black font_tinos aligned_left">Dieses Modul vermittelt Studierenden die Grundstrukturen und Aufgaben von Betriebssystemen sowie die Grundlagen der Datenübertragung. <br> Kernthemen sind beispielsweise Interrupts, Memory Management (OS), Virtualisierung oder das ISO/OSI-Referenzmodell,
+            TCP/IP-Modell, RFCs und Netztopologien.<br></div>
+        <div class="font_red heading4 font_caveat aligned_justify">Kompetenzziele</div>
+        <div class="font_black font_tinos aligned_left">
+            &bullet; Verst&auml;ndnis von Rechnerarchitekturen, Aufgaben und Konzepten von Betriebssystemen, Netzwerktechnologien und Kommunikationsinfrastrukturen &bullet; F&auml;higkeit die Wechselwirkung von Betriebssystem und anderen Programmsystemen einzusch&auml;tzen</div>
+        <div class="font_red heading4 font_caveat aligned_justify">Weiterf&uuml;hrende Literatur</div>
+        <div class="font_black font_tinos aligned_left">
+            <ul>
+                <li>Tanenbaum, A. S.: Computernetzwerke, Pearson Studium, München.</li>
+                <li>T&ouml;njes, R.: Mobilkommunikation: Technologien und Anwendungen, in: Informationstechnische Gesellschaft im VDE (Herausgeber): ITG Fachbericht, Nr. 215, VDE Verlag, Berlin und Offenbach.</li>
+                <li>Brause, R: Betriebssysteme &mdash; Grundlagen und Konzepte, Springer Verlag, Berlin.</li>
+                <li>Tanenbaum, A. S.: Moderne Betriebssysteme, Pearson Studium , M&uuml;nchen, Boston (u.a.).</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Grid 3 für informatik-datenbanken-->
+    <div class="grid_layout" id="informatik-datenbanken">
+
+        <!--Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings Grid 3 informatik-komsysundos-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('informatik-datenbanken', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('informatik-datenbanken', 'informatik')">Informatik</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">Datenbanken
+
+
+            </div>
+        </div>
+
+        <!--Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+        </div>
+
+        <!--Module Description-->
+
+    </div>
+
+    <!-- Grid 3 für informatik-verteiltesysteme-->
+    <div class="grid_layout" id="informatik-verteiltesysteme">
+
+        <!--Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings Grid 3 informatik-komsysundos-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('informatik-verteiltesysteme', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('informatik-verteiltesysteme', 'informatik')">Informatik</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">Verteilte Systeme</div>
+        </div>
+
+        <!--Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+        </div>
+
+        <!--Module Description-->
+
+    </div>
+
+    <!-- Grid 3 für informatik-grundIT-->
+    <div class="grid_layout" id="informatik-grundIT">
+
+        <!--Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings Grid 3 informatik-komsysundos-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('informatik-grundIT', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('informatik-grundIT
+      ', 'informatik')">Informatik</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">Grundlagen der IT</div>
+        </div>
+
+        <!--Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+        </div>
+
+        <!--Module Description-->
+
+    </div>
+
+    <!-- Grid 3 für informatik-prog1und2java-->
+    <div class="grid_layout" id="informatik-prog1und2java">
+
+        <!--Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings Grid 3 informatik-komsysundos-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('informatik-prog1und2java', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('informatik-prog1und2java', 'informatik')">Informatik</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">Programmierung I & II - Java</div>
+        </div>
+
+        <!--Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+        </div>
+
+        <!--Module Description-->
+
+    </div>
+
+    <!-- Grid 3 für informatik-swlebenszyklus-->
+    <div class="grid_layout" id="informatik-swlebenszyklus">
+
+        <!--Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings Grid 3 informatik-komsysundos-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('informatik-swlebenszyklus', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('informatik-swlebenszyklus', 'informatik')">Informatik</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">Software Lebenszyklus</div>
+        </div>
+
+        <!--Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+        </div>
+
+        <!--Module Description-->
+
+    </div>
+
+    <!-- HIER BEGINNT EBENE 3 für Interkulturelles-->
+    <!-- Grid 3 für interkulturell-globalpm-->
+    <div class="grid_layout" id="interkulturell-globalpm">
+
+        <!--Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings Grid 3 interkulturell-globalpm-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('interkulturell-globalpm', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('interkulturell-globalpm', 'interkulturell')">Interkulturelles Wissen & Management</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">Global Project Management Skills</div>
+        </div>
+
+        <!--Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+
+        </div>
+
+        <!--Module Description-->
+
+    </div>
+
+    <!-- Grid 3 für interkulturell-icm-->
+    <div class="grid_layout" id="interkulturell-icm">
+
+        <!--Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings Grid 3 interkulturell-icm-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('interkulturell-icm', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('interkulturell-icm', 'interkulturell')">Interkulturelles Wissen & Management</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">ICM</div>
+        </div>
+
+        <!--Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+        </div>
+
+        <!--Module Description-->
+
+    </div>
+
+    <!-- Grid 3 für interkulturell-spanisch-->
+    <div class="grid_layout" id="interkulturell-spanisch">
+
+        <!--Tentakel Kopf_Home-->
+        <div class="grid_column_1_3 grid_row_1_3">
+            <img id="tentakel_home" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        </div>
+
+        <!-- Headings Grid 3 interkulturell-spanisch-->
+        <div class="grid_column_9_13 grid_row_1 gridalign_end">
+            <div class="font_black heading1 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('interkulturell-spanisch', 'Grid1')">IMBIT-Curriculum</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_2 gridalign_start">
+            <div class="font_black heading2 font_caveat aligned_right pointer_onHover font_onHover_red size_onHover" onclick="changeVisible('interkulturell-spanisch', 'interkulturell')">Interkulturelles Wissen & Management</div>
+        </div>
+        <div class="grid_column_9_13 grid_row_3 gridalign_start">
+            <div class="heading3 font_caveat aligned_right ">Spanisch</div>
+        </div>
+
+        <!--Table Start: Content -->
+        <div class="grid_column_2_13 grid_row_4_10">
+        </div>
+
+        <!--Module Description-->
+
+    </div>
+
+    <!-- HIER BEGINNT EBENE 3 für Praxisphasen-->
+
+    <!-- EBENE 4: HIER BEGINNT EBENE 4 FÜR MODUL DESCRIPTIONS: (insgesamt 33 Grids), das vielleicht ein Lightbox aufblenden wenn man auf Modulnamen in Menü klickt-->
+    <div class="grid_column_4_11 grid-row_4_9 background_red" id="description-bwl">
+        <div class="font_white heading4 font_caveat aligned_justify">Fachbeschreibung</div>
+        <div class="font_white font_tinos aligned_left">Die Betriebswirtschaftslehre ist ein Teilbereich der Wirtschaftswissenschaften. Sie befasst sich mit der Organisation, dem Aufbau und der Führung von Betrieben. Im Modul steht die Vermittlung der &raquo;Grundlagen der Betriebswirschaftslehre&laquo;
+            (BWL) und &raquo;Marketing&laquo; im Kontext der allgemeinen Wissenschaften, insbesondere der Wirtschaftswissenschaften, im Fokus.
+            <br></div>
+        <div class="font_white heading4 font_caveat aligned_justify">Kompetenzziele</div>
+        <div class="font_white font_tinos aligned_left">
+            &bullet; Gegenstand und Gliederung der Betriebswirtschaftslehre im Kontext der allgemeinen Wissenschaften und insbesondere der Wirtschaftswissenschaften &bullet; Überblick über die Funktionalbereiche in Industrie-, Handels- und Dienstleistungsunternehmen
+            &bullet; Bedürfnisse, Bedarf und Nachfrage als konstitutiver Ausgangspunkt des Marketing
+        </div>
+        <div class="font_white heading4 font_caveat aligned_justify">Weiterführende Literatur</div>
+        <div class="font_white font_tinos aligned_left">
+            <ul>
+                <li>Mertens, P.; Bodendorf, F.: Programmierte Einführung in die Betriebswirtschaftslehre. Institutionenlehre, Gabler, Wiesbaden.</li>
+                <li>Straub, T.: Einführung in die Allgemeine Betriebswirtschaftslehre, Pearson, Hallbergmoos.</li>
+                <li>Wöhe, G.; Döring, U.: Einführung in die Allgemeine Betriebswirtschaftslehre, Vahlen, München.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="grid_column_4_11 grid-row_4_9" id="description-dlm"></div>
+
 
 </body>
+
 </html>
 
 
 <script type="text/javascript">
-  document.title = "IMBIT Curriculum - brillianIDEAS";
-  digitalLearning("imbit");
+    document.title = "IMBIT Curriculum - brillianIDEAS";
+    digitalLearning("imbit");
 
-  function changeVisible(invisible, visible) {
-    var x = document.getElementById(invisible);
-    var y = document.getElementById(visible);
+    function changeVisible(invisible, visible) {
+        var x = document.getElementById(invisible);
+        var y = document.getElementById(visible);
 
-    x.style.display = "none";
-    y.style.display = "grid";
-  }
+        x.style.display = "none";
+        y.style.display = "grid";
+    }
 </script>
