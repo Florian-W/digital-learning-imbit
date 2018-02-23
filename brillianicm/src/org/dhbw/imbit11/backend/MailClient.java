@@ -82,6 +82,7 @@ public class MailClient extends HttpServlet
 	            //construct the mime message
 	            MimeMessage mimeMessage = new MimeMessage(session);
 	            mimeMessage.setSender(new InternetAddress(mailusername));
+	            mimeMessage.setFrom(new InternetAddress(mailusername));
 	            mimeMessage.setSubject("Your brillianICM certificate");
 	            mimeMessage.setRecipient(Message.RecipientType.TO, new InternetAddress(useremail));
 	            mimeMessage.setContent(mimeMultipart);

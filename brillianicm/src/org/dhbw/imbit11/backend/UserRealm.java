@@ -386,13 +386,12 @@ public class UserRealm extends JdbcRealm {
 			
 			// Execute query
 			rs = ps.executeQuery();
-			//System.out.println("executed the following statement on DB: " +
-			//ps);
+			System.out.println("executed the following statement on DB: " + ps);
 			while (rs.next()) {
 				ArrayList<String> groupRow = new ArrayList<String>();
 				groupRow.add(rs.getString(1));
 				groupRow.add(rs.getString(2));
-				groupRow.add(rs.getString(3));
+				groupRow.add(rs.getString(4));
 				groups.add(groupRow);
 			}
 		} finally {
