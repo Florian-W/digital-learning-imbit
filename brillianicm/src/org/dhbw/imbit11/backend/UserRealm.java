@@ -392,7 +392,7 @@ public class UserRealm extends JdbcRealm {
 				ArrayList<String> groupRow = new ArrayList<String>();
 				groupRow.add(rs.getString(1));
 				groupRow.add(rs.getString(2));
-				groupRow.add(rs.getString(4));
+				groupRow.add(rs.getString(3));
 				groups.add(groupRow);
 			}
 		} finally {
