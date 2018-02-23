@@ -9,11 +9,13 @@
 <body>
 	<h1>Content Browser</h1>
 	<hr />
-	<h4>Hier könnt ihr die ID des Knotens eingeben, dessen Code ihr anschauen möchtet.</h4>
+	<h4>Hier könnt ihr die ID des Knotens eingeben, dessen Code ihr
+		anschauen möchtet.</h4>
 	<h5>Die Konvention für die ID ist lxxxeyyy, also z.B. l001e001.</h5>
 	<hr />
 	<br />
-	<form name="viewnode" id="viewnode" action="Node"  method="get" enctype="multipart/form-data">
+	<form name="viewnode" id="viewnode" action="Node" method="get"
+		enctype="multipart/form-data">
 		<table border="0">
 			<tr>
 				<td>Type Node ID</td>
@@ -26,7 +28,7 @@
 		</table>
 	</form>
 	<hr />
-<!-- 	<form name="viewnode" id="viewnode" action="Node"  method="get" enctype="multipart/form-data">
+	<!-- 	<form name="viewnode" id="viewnode" action="Node"  method="get" enctype="multipart/form-data">
 		<table border="0">
 			<tr>
 				<td>Type Node level</td>
