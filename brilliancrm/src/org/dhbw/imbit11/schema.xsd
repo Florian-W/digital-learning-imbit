@@ -29,7 +29,7 @@
 	<xs:element name="date">
 		<xs:simpleType>
 			<xs:restriction base="xs:string">
-				<xs:enumeration value="2018-04-04 17:21:34"/>
+				<xs:enumeration value="2014-04-04 17:21:34"/>
 			</xs:restriction>
 		</xs:simpleType>
 	</xs:element>
