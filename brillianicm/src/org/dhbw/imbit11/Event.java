@@ -142,8 +142,8 @@ public class Event extends HttpServlet {
 					
 					String username= firstName + " " + lastName; 
 					
-					userRealm.resetUserProgress(email);
 					mailclient.sendCertificateMail(username, email, imcost, imqual, imtime, country, request);
+					userRealm.resetUserProgress(email);
 				
 					
 				}catch (SQLException e) {
