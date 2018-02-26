@@ -56,17 +56,22 @@
 					async : true,
 					success : function(data) {
 						if (data == "1") {
-							document.getElementById("certificationText").innerHTML = "For your certification, please press the button below";
-							document.getElementById("SendButton").innerHTML = "Send Certificate and restart from the begininng";
-							var button = document.getElementById("SendButton");
-							button.onclick = function() {
+							document.getElementById("certificationText").innerHTML = "For your certification, please press the button below or restart the game";
+							//document.getElementById("SendButton").innerHTML = "Send Certificate and restart from the begininng";
+							var buttonSend = document.getElementById("SendButton");
+							buttonSend.onclick = function() {
 								$('#sendcertificate').dialog('open');
 							};
+							var buttonRestart = document.getElementById("RestartButton");
+							buttonRestart.onclick = function() {
+								$('#reset').dialog('open');
+							};
 						} else {
+							document.getElementById("SendButton").style.display = "none";
 							document.getElementById("certificationText").innerHTML = "To restart, please press the button below";
-							document.getElementById("SendButton").innerHTML = "Restart the game from the beginning";
-							var button = document.getElementById("SendButton");
-							button.onclick = function() {
+							//document.getElementById("SendButton").innerHTML = "Restart the game from the beginning";
+							var buttonRestart = document.getElementById("RestartButton");
+							buttonRestart.onclick = function() {
 								$('#reset').dialog('open');
 							};
 						}
@@ -119,9 +124,15 @@
 
 
 					<p>
-					<div id="certificationText"></div> <br /> <br /> <a
-					class="btn btn-default" id="SendButton" href="javascript:void(0)"><div
-							id="SendButtonText"></div></a>
+					<div id="certificationText"></div> <br /> <br />
+					<a class="btn btn-default" id="RestartButton" href="javascript:void(0)">
+					<div id="RestartButtonText"></div>
+					Restart the game from the beginning
+					</a>
+					<a class="btn btn-default" id="SendButton" href="javascript:void(0)">
+					<div id="SendButtonText"></div>
+					Send Certificate
+					</a>
 					</p>
 				</td>
 			</tr>
