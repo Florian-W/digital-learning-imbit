@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title><%=ApplicationConstants.IMPRINT_BUTTON_TEXT%></title>
+<title><%=ApplicationConstants.BADGE_CRITERIA_GERMANY%></title>
 <link rel="apple-touch-icon" sizes="57x57" href="../images/favicons/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="114x114" href="../images/favicons/apple-touch-icon-114x114.png">
 <link rel="apple-touch-icon" sizes="72x72" href="../images/favicons/apple-touch-icon-72x72.png">
@@ -65,15 +65,15 @@
     <section id="about" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Badge Information</h2>
 				<table>
 					<tbody>
 						<tr>
 							<td style="width:25%">
+								<h2>Badge Information</h2>
 								<img src="img/badges/badge_germany.png" style="width:80%"> <!-- Bildquelle hier entsprechend ändern -->
 							</td>
 							<td>
-								<h3>Criteria for "Brillian ICM Modul Germany" - What it takes to earn this badge</h3>
+								<h3>Criteria for "brillianICM Modul Germany" - What it takes to earn this badge</h3>
 
 								<p>Successful completion of the serious game <b>brillianICM</b> which includes the following activities: 
 									<ul><li>Theory module Intercultural Management</li>
