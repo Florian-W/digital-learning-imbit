@@ -227,10 +227,10 @@ body {
   display: inline;
   font-family: 'Caveat Brush';
   color: black;
-  animation-name: pulse;
+  /* animation-name: pulse;
   animation-duration: 6s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease;
+  animation-timing-function: ease; */
 }
 
 .type_learning:hover{
@@ -241,17 +241,18 @@ body {
 
 /* learning cards */
 #interaktive_whiteboards{
-  grid-row: 1/2;
+  /* grid-row: 1/2;
   grid-column: 3/4;
   align-self: center;
   text-align: center;
   justify-self: left;
   animation-delay: 2s;
-  display: inline;
+  display: inline; */
 
 }
 
 #virtual_classrooms{
+<<<<<<< HEAD
   grid-row: 2/3;
   grid-column: 2/3;
   align-self: center;
@@ -259,6 +260,10 @@ body {
   justify-self: center;
   animation-delay: 4s;
   animation-duration: 5s;
+=======
+  /* animation-delay: 4s;
+  animation-duration: 5s; */
+>>>>>>> 7b109f049f6a58042ac1d6a814ce54f81203bf24
 
 }
 
@@ -442,7 +447,7 @@ body {
 
 }
 
-label {
+/* label {
   -webkit-appearance: push-button;
   -moz-appearance: button;
   display: inline-block;
@@ -453,4 +458,4 @@ label {
 input[type=checkbox]:checked ~ div{
    visibility: hidden;
 
-} */
+} */ */
