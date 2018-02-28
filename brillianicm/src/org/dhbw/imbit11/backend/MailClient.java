@@ -75,11 +75,11 @@ public class MailClient extends HttpServlet
 
 	            //construct the JSON file
 	            outputStream = JSONCreator.createAssertion(useremail, completedCountry);
-	            byte[] bytes = outputStream.toByteArray();
+	            byte[] bytesJSON = outputStream.toByteArray();
 	            //construct the JSON body part
-	            DataSource dataSource = new ByteArrayDataSource(bytes, "application/json");
+	            DataSource dataSourceJSON = new ByteArrayDataSource(bytes, "application/json");
 	            MimeBodyPart jsonBodyPart = new MimeBodyPart();
-	            jsonBodyPart.setDataHandler(new DataHandler(dataSource));
+	            jsonBodyPart.setDataHandler(new DataHandler(dataSourceJSON));
 	            jsonBodyPart.setFileName("brillianICM Testbadge "+username+".json");
 	                         
 	            //construct the mime multi part
