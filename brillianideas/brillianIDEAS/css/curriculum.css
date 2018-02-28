@@ -5,8 +5,21 @@ html {
     font-size: 2vh;
 }
 
+.modul {
+    font-size: 3vh;
+    color: black;
+    font-family: "Caveat Brush";
+    text-align: center;
+}
+
+.modul:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    color: #991B33;
+}
+
 .gridlayout {
-    display: grid;
+    display: none;
     height: 100%;
     width: 100%;
     grid-template-rows: repeat(12, 1fr);
@@ -14,9 +27,11 @@ html {
 }
 
 .tintenfischkopf {
-    grid-column: 2 / 8;
+    grid-column: 1 / 8;
     grid-row: 1 / 4;
     text-align: left;
+    height: 75%;
+    width: auto;
 }
 
 .ueberschriftenfeld {
@@ -130,7 +145,7 @@ body {
 /* FUTURE GRID */
 
 .grid_layout {
-    display: grid;
+    display: none;
     height: 100%;
     width: 100%;
     grid-template-rows: repeat(12, 1fr);
