@@ -24,9 +24,9 @@ public class JSONCreator extends HttpServlet {
 //			.add("image", image)
 			.add("issuedOn", today)
 			.add("badge", getBadgeClassURL(badge))
-//			.add("verify", factory.createObjectBuilder()
-//				.add("type", "hosted")
-//				.add("url", ""))
+			.add("verify", factory.createObjectBuilder()
+				.add("url", "")
+				.add("type", "signed")
 			.build()
 			.toString();
 
