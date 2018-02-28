@@ -252,19 +252,15 @@ body {
 }
 
 #virtual_classrooms{
-<<<<<<< HEAD
   grid-row: 2/3;
   grid-column: 2/3;
   align-self: center;
   text-align: center;
   justify-self: center;
   animation-delay: 4s;
-  animation-duration: 5s;
-=======
+  animation-duration: 5s
   /* animation-delay: 4s;
   animation-duration: 5s; */
->>>>>>> 7b109f049f6a58042ac1d6a814ce54f81203bf24
-
 }
 
 #blended_learning{
