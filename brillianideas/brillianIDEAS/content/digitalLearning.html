@@ -13,33 +13,16 @@
 
     </div>
 
-    <!-- The Modal interaktive_whiteboards -->
-    <div id="interaktive_whiteboards_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
-
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close" onclick="hideModalFromSpan()" >&times;</span>
-        <p>Some text in the Modal..</p>
-      </div>
-
-    </div>
-
     <div id="kollaborativ" class="axislabeltop label">kollaborativ</div>
     <div id="individuell" class="axislabelbottom label">individuell</div>
-
-
-
 
     <div class="content-1">
 
         <!-- kind of learning -->
-      <div id="interaktive_whiteboards"><div class="type_learning">interaktive<br />Whiteboards</div> </div>
-      <div id="virtual_classrooms"><div class="type_learning">Virtual <br /> Classrooms</div></div>
       <div id="interaktive_whiteboards" class="type_learning" onclick="showmodal(this.id)">interaktive<br />Whiteboards </div>
       <div id="virtual_classrooms" class="type_learning">Virtual <br /> Classrooms</div>
       <div id="blended_learning" class="type_learning">Blended<br /> Learning</div>
       <div id="planspiele" class="type_learning">Planspiele</div>
-      <div id="serious_games" class="type_learning">Serious<br /> Games</div>
     </div>
 
     <div class="content-2">
@@ -58,7 +41,7 @@
       <div id="formell" class="label">formell</div>
 
       <!-- kind of learning -->
-      <div id="spiel" class="type_learning margin_word">Spiel</div>
+      <div id="spiel" class="type_learning margin_word" onclick="showmodal(this.id)">Spiel</div>
       <div id="cbtwbt" class="type_learning margin_word ">CBT WBT</div>
       <div id="serious_games"><div class="type_learning">Serious<br /> Games</div></div>
     </div>
@@ -76,6 +59,30 @@
       <div id="e_books" class="type_learning">Interaktive<br /> e-Books</div>
       <div id="lerntagebuecher" class="type_learning">Lerntagebücher</div>
     </div>
+
+    <!-- The Modal spiel -->
+    <div id="spiel_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="hideModalFromSpan()" >&times;</span>
+        <h2>Spiel</h2>
+        <p>Bei der Lernform Spiel geht es darum, bestimmte Verhaltensweisen und  Entscheidungsmuster von Menschen nachzuvollziehen und den Umgang mit Konflikten zu üben. Somit wird erfahrungsbezogenes Lernen ermöglicht. Mithilfe des Spiels werden Wahrnehmungen erweitert und bestimmte Verhaltensmuster diskutiert und reflektiert.</p>
+      </div>
+
+    </div>
+
+    <!-- The Modal interaktive_whiteboards -->
+    <div id="interaktive_whiteboards_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="hideModalFromSpan()" >&times;</span>
+        <p>Some text in the Modal..</p>
+      </div>
+
+    </div>
+
   </div>
 </body>
 
@@ -97,7 +104,7 @@
   function hideModalFromClick(e) {
     console.log("1");
     var e = window.event;
-    if (interaktive_whiteboards_content == e.target) {
+    if (id_modal == e.target) {
       document.getElementById(id_modal).style.display =   "none";
     }
   };
