@@ -20,21 +20,23 @@
 
         <!-- kind of learning -->
       <div id="interaktive_whiteboards" class="type_learning" onclick="showmodal(this.id)">interaktive<br />Whiteboards </div>
-      <div id="virtual_classrooms" class="type_learning">Virtual <br /> Classrooms</div>
-      <div id="blended_learning" class="type_learning">Blended<br /> Learning</div>
-      <div id="planspiele" class="type_learning">Planspiele</div>
+      <div id="virtual_classrooms" class="type_learning" onclick="showmodal(this.id)">Virtual <br /> Classrooms</div>
+      <div id="blended_learning" class="type_learning" onclick="showmodal(this.id)">Blended<br /> Learning <br /></div>
+      <div id="planspiele" class="type_learning" onclick="showmodal(this.id)">Planspiele</div>
+      <div id="serious_games"><div class="type_learning"><br />Serious<br /> Games</div></div>
     </div>
 
     <div class="content-2">
 
       <!-- kind of learning -->
-      <div id="virtual_3d" class="type_learning">Virtuelle <br />3D Welten</div>
-      <div id="moocs" class="type_learning">MOOCs</div>
-      <div id="chat" class="type_learning">Chat</div>
-      <div id="foren" class="type_learning">Foren</div>
-      <div id="social_networks" class="type_learning">Social Networks</div>
-      <div id="microblogging_twitter" class="type_learning">Microblogging/<br /> Twitter</div>
-      <div id="webblogs" class="type_learning">Webblogs</div>
+      <div id="virtual_3d" class="type_learning" onclick="showmodal(this.id)">Virtuelle <br />3D Welten</div>
+      <div id="moocs" class="type_learning" onclick="showmodal(this.id)"> &nbsp; &nbsp; MOOCs</div>
+      <div id="chat" class="type_learning" onclick="showmodal(this.id)">Chat</div>
+      <div id="foren" class="type_learning" onclick="showmodal(this.id)">&nbsp; <br /> Foren</div>
+      <div id="social_networks" class="type_learning" onclick="showmodal(this.id)"><br />Social Networks &nbsp;</div>
+      <div id="microblogging_twitter" class="type_learning" onclick="showmodal(this.id)">Microblogging/<br /> Twitter</div>
+      <div id="webblogs" class="type_learning" onclick="showmodal(this.id)">&nbsp; &nbsp; Webblogs <br />&nbsp; </div>
+      <div id="lerntagebuecher" class="type_learning">Lerntagebücher <br /> &nbsp; </div>
     </div>
     <div class="content-3">
 
@@ -43,7 +45,6 @@
       <!-- kind of learning -->
       <div id="spiel" class="type_learning margin_word" onclick="showmodal(this.id)">Spiel</div>
       <div id="cbtwbt" class="type_learning margin_word ">CBT WBT</div>
-      <div id="serious_games"><div class="type_learning">Serious<br /> Games</div></div>
     </div>
     <div class="content-4">
 
@@ -53,11 +54,10 @@
       <div id="wiki" class="type_learning margin_word">Wikis</div>
       <div id="podcasts" class="type_learning margin_word">Podcasts</div>
       <div id="augmented_reality" class="type_learning">Augmented<br /> Reality</div>
-      <div id="learning_demand" class="type_learning">Learning <br />on Demand</div>
-      <div id="lernfilme" class="type_learning">Lernfilme</div>
+      <div id="learning_demand" class="type_learning">Learning &nbsp; &nbsp; <br />on Demand &nbsp; &nbsp;</div>
+      <div id="lernfilme" class="type_learning">Lernfilme <br /> &nbsp;</div>
       <div id="simulationen" class="type_learning">Simulationen</div>
       <div id="e_books" class="type_learning">Interaktive<br /> e-Books</div>
-      <div id="lerntagebuecher" class="type_learning">Lerntagebücher</div>
     </div>
 
     <!-- The Modal spiel -->
@@ -78,7 +78,128 @@
       <!-- Modal content -->
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
+        <p>Ein interaktives Whiteboard - oder eine "digitale Tafel" - ist eine elektronische Projektionswand bzw. eine Weißwandtafel, die in Verbindung mit einem Computer und einem Projektor/Beamer funktioniert. Häufig werden Whiteboards innerhalb von Vorlesungen eingesetzt. Die Vorteile dieses Lernmediums liegen auf der Hand: Bessere Präsentationsmöglichkeiten von Unterrichtsinhalten, ein hohes Maß an Motivation und eine Vielzahl von Interaktionsmöglichkeiten. Letztendlich können mit Hilfe von interaktiven Whiteboards alle Medien wie Text, Grafik, Bilder, Animationen, Töne und Filme präsentiert werden.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- The Modal virtual_classrooms -->
+    <div id="virtual_classrooms_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="hideModalFromSpan()" >&times;</span>
+        <p>Ein virtuelles Klassenzimmer bezeichnet Lehrszenarien, in denen das Internet als Kommunikationsmedium für räumlich getrennte Lehrende und Lernende genutzt wird. Durch den Einsatz von Lernplattformen, Webcams, VoIP oder gar Whiteboards kann sowohl eine Sicht-, Hör- und Sprechverbindung der Beteiligten als auch ein gemeinsames und gleichzeitiges Bearbeiten von Dokumenten ermöglicht werden. Deshalb eignet sich dieses Lernform besonders um einzelne Lerninhalte zu verinnerlichen unabhängig von der Distanz.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- The Modal blended_learning -->
+    <div id="blended_learning_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="hideModalFromSpan()" >&times;</span>
+        <p>Blended Lerning (dt. Integriertes Lernen) ist eine Mischform unterschiedlicher Lernprinzipien. Es vereint zumeist Elemente von Präsenzunterricht, E-Learnings und Selbstbildung, wobei das Verhältnis dieser Elemente zueinander variieren kann. Während E-Learnings und Arbeitsmaterialien beim selbständigen Vor- und Nachbereiten des Präsenzunterrichts helfen, dienen gelegentliche Face-to-Face Sitzungen hauptsächlich als Unterstützung im Umgang mit den Lernmaterialien. So kann der Lernprozess einerseits effektiv und flexibel gestaltet werden, z.B. durch E-Learnings mit anpassbaren Schwierigkeitsniveaus, und beinhaltet andererseits auch Elemente der sozialen Interaktion sowie die Möglichkeit das Wissen im Gespräch zu vertiefen.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- The Modal planspiele -->
+    <div id="planspiele_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="hideModalFromSpan()" >&times;</span>
+        <p>Planspiele sind eine bewährte Technik im Business-Management-Training, da sie Kompetenzen im Umfeld des strategischen Managements schulen. Es handelt sich dabei konkret um interaktive Spiele, bei denen Teilnehmer in einer Simulation mit möglichst realitätsnahen Problemstellungen und Aufgaben konfrontiert werden, die es zu lösen gilt.Spieler schlüpfen in Rollen und sollen durch kreatives, selbständiges und organisiertes Handeln, sowie durch kritische Reflexion und Wechsel der Perspektive Entscheidungsprozesse durchleben und die ihrer Rolle zugedachten Aufgaben erfüllen. Teilnehmern wird so die Möglichkeit gegeben in risikofreiem Umfeld gelernte Theorien in der Praxis anzuwenden und sich durch Feedback dabei zu verbessern. Auch die Fähigkeit zur erfolgreichen Interaktion in Teams wird durch die Rollenkonstellationen im Planspiel trainiert.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- The Modal virtual_3d -->
+    <div id="virtual_3d_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="hideModalFromSpan()" >&times;</span>
+        <p>Virtuelle Welten sind Lernumgebungen innerhalb deren die Anwender in Form eines virtuellen Charakters, (Avatar) handeln und mit anderen Nutzern kommunizieren können. Dieser Avatar verfügt über bestimmte Merkmale und Fähigkeiten, die erweitert und verändert werden können.
+          Genutzt werden virtuelle Welten unter anderem für Rollenspiele, Gruppenarbeiten, virtuelle Klassenzimmer sowie zur kooperativen Gestaltung von Objekten. Studien haben bewiesen, dass sich die verstärkte Präsenzerfahrung in virtuellen Welten positiv auf das Engagement und die informellen Lernprozesse der Studierenden auswirken. Mit virtuellen Welten können verschiedenen Lerntypen und -stile unterstützt werden, allerdings hängt der erfolgreiche Einsatz stark von der Usability und den technischen Rahmenbedingungen, wie Hardware oder Netzwerk, an der Universität bzw. auf Seiten des Anwenders ab.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- The Modal moocs -->
+    <div id="moocs_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <p>Some text in the Modal..</p>
+      </div>
+
+    </div>
+
+    <!-- The Modal chat -->
+    <div id="chat_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="hideModalFromSpan()" >&times;</span>
+        <p>Für eine aktive Verarbeitung des Lerninhaltes im Gedächtnis ist, neben der Wiederholung und den Lernerfolgskontrollen, eine Kommunikation über den Lerninhalt wichtig. Dadurch kommt es indirekt zu einer Wiederholung des Gelernten und damit zu einer weiteren Verankerung im Gehirn. Aus der Wiederholung ergibt sich, dass die Kommunikation nicht ausschließlich für den kommunikativen Lerntyp bedeutend ist. Der Chat stellt hierbei eine Variante der synchronen Kommunikation dar, die dabei hilft, das Gelernte zu verfestigen.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- The Modal foren -->
+    <div id="foren_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="hideModalFromSpan()" >&times;</span>
+        <p>Foren sind meist Bestandteile von Online-Communities, in denen zwischen Teilnehmern Fragen, Antworten, Meinungen und Hinweise ausgetauscht werden. Somit kann man sich in einem Forum durch Interaktion mit Anderen weiterbilden. Neben der Möglichkeit selbst Fragen zu stellen, kann auch das Suchen vergangener ähnlicher Fragen und deren Beantwortung Aufschluss über die eigene Fragestellung geben. Verschlagwortung der Beiträge sowie Foren zu Fokusthemen (z.B. Tech Foren) können bei der gezielten Suche nach Antworten helfen. Oft geben auch Bewertungen und Kommentare der Teilnehmer Aufschluss über die Qualität der Beiträge. Im Gegensatz zu Chats findet hier eine asynchrone Kommunikation statt, das heißt, die Reaktion anderer Forenmitglieder erfolgt zeitversetzt.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- The Modal social_networks -->
+    <div id="social_networks_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="hideModalFromSpan()" >&times;</span>
+        <p>Ein sogenanntes Social Network stellt Online-Communities einen virtuellen Raum zur Verügung, in dem Mitglieder auf verschiedene Art und Weise interagieren können. Insofern fungieren sie auch als Forum, in dem Fragen beantwortet werden und gemeinsame Diskussionen zur Wissensbildung führen können. Außerdem können über Social Media Informationen schnell und für einen großen Empfängerkreis bereitgestellt werden: Zeitungen und Zeitschriften besitzen beispielsweise Profile, über die sie aktuelle Artikel und Neuigkeiten verbreiten. Außerdem können Firmen über Produkte und Dienstleistungen informieren. Profile, die mit eigenen Interessen und Informationsbedarf übereinstimmen, können verfolgt oder 'geliked' werden, sodass Neuigkeiten automatisch übermittelt werden. Je nach Quelle und bereitstellendem Profil ist allerdings zu beachten, dass die veröffentlichen Informationen oft als subjektiv eingefärbt einzustufen sind.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- The Modal microblogging_twitter -->
+    <div id="microblogging_twitter_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="hideModalFromSpan()" >&times;</span>
+        <p>Microblogging, wie etwa Twitter, eignen sich hervorragend um "Häppchenweise" wissen zu vermitteln, wie etwa kurze Fakten.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- The Modal webblogs -->
+    <div id="webblogs_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="hideModalFromSpan()" >&times;</span>
+        <p>Ein Weblog ist ein Logbuch im Web – ein Web-Tagebuch - in das man Beiträge aller Art hineinschreiben kann. Ein Weblog (kurz Blog) besteht im Grunde aus ganz „normalen” Webseiten, die im Gegensatz zu den gewohnten statischen HTML-Seiten bei jedem Aufruf dynamisch aus einer Datenbank erzeugt werden. Diese Blogs erlauben Interaktivität durch Kommentierungsmöglichkeiten. Es kann sich durchaus lohnen, einen Weblog während des Studiums zu pflegen um Gelerntes zu festigen. Außerdem gibt es Anderen die Möglichkeit von eigenen Erfahrungen zu profitieren.
+        </p>
       </div>
 
     </div>
@@ -102,9 +223,11 @@
 
   // When the user clicks anywhere outside of the modal, close it
   function hideModalFromClick(e) {
-    console.log("1");
-    var e = window.event;
-    if (id_modal == e.target) {
+    var e = window.event; //get the event which is triggered right now in the window
+
+    //e.target.id -> get the id of the object which triggered event e
+    //close the modal if this id == id_modal (everything outside the modal itself)
+    if (id_modal == e.target.id) {
       document.getElementById(id_modal).style.display =   "none";
     }
   };

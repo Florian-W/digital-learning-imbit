@@ -235,19 +235,18 @@ body {
 
 .type_learning:hover{
   color:#991B33;
-  font-size: 1.4rem;
+  /*font-size: 1.4rem;*/
+  transform: scale(1.1,1.1);
   cursor:pointer;
 }
 
 /* learning cards */
 #interaktive_whiteboards{
-  /* grid-row: 1/2;
+  grid-row: 1/2;
   grid-column: 3/4;
   align-self: center;
   text-align: center;
   justify-self: left;
-  animation-delay: 2s;
-  display: inline; */
 
 }
 
@@ -256,11 +255,7 @@ body {
   grid-column: 2/3;
   align-self: center;
   text-align: center;
-  justify-self: center;
-  animation-delay: 4s;
-  animation-duration: 5s
-  /* animation-delay: 4s;
-  animation-duration: 5s; */
+  justify-self: left;
 }
 
 #blended_learning{
@@ -268,7 +263,7 @@ body {
   grid-column: 1/2;
   align-self: center;
   text-align: center;
-  justify-self: right;
+  justify-self: center;
 
 }
 
@@ -282,8 +277,8 @@ body {
 }
 
 #serious_games{
-  grid-row: 2/3;
-  grid-column: 3/4;
+  grid-row: 3/4;
+  grid-column: 2/3;
   align-self: center;
   text-align: center;
   justify-self: right;
@@ -329,7 +324,7 @@ body {
 #social_networks{
   grid-row: 2/3;
   grid-column: 3/4;
-  align-self: start;
+  align-self: center;
   text-align: center;
   justify-self: right;
 
@@ -337,35 +332,35 @@ body {
 
 #microblogging_twitter{
   grid-row: 3/4;
-  grid-column: 2/3;
+  grid-column: 2/4;
   align-self: start;
   text-align: center;
-  justify-self: right;
+  justify-self: center;
 
 }
 
 #webblogs{
   grid-row: 3/4;
   grid-column: 1/2;
-  align-self: end;
+  align-self: center;
   text-align: center;
   justify-self: center;
 
 }
 
 #lerntagebuecher{
-  grid-row: 1/2;
+  grid-row: 3/4;
   grid-column: 2/3;
-  align-self: start;
+  align-self: end;
   text-align: center;
-  justify-self: center;
+  justify-self: left;
 
 }
 
 #wiki{
-  grid-row: 2/3;
+  grid-row: 1/2;
   grid-column: 3/4;
-  align-self: start;
+  align-self: center;
   text-align: center;
   justify-self: left;
 
@@ -374,18 +369,18 @@ body {
 #podcasts{
   grid-row: 2/3;
   grid-column: 3/4;
-  align-self: center;
+  align-self: start;
   text-align: center;
-  justify-self: right;
+  justify-self: center;
 
 }
 
 #augmented_reality{
-  grid-row: 3/4;
+  grid-row: 2/3;
   grid-column: 3/4;
-  align-self: start;
+  align-self: end;
   text-align: center;
-  justify-self: center;
+  justify-self: left;
 
 }
 
@@ -399,7 +394,7 @@ body {
 }
 
 #lernfilme{
-  grid-row: 2/4;
+  grid-row: 2/3;
   grid-column: 2/3;
   align-self: center;
   text-align: center;
@@ -410,7 +405,7 @@ body {
 #simulationen{
   grid-row: 2/3;
   grid-column: 1/2;
-  align-self: end;
+  align-self: start;
   text-align: center;
   justify-self: center;
 
@@ -419,7 +414,7 @@ body {
 #e_books{
   grid-row: 3/4;
   grid-column: 1/2;
-  align-self: center;
+  align-self: start;
   text-align: center;
   justify-self: right;
 
