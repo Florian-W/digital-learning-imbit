@@ -3,6 +3,7 @@
 html {
     font-family: "Tinos";
     font-size: 2vh;
+    color: black;
 }
 
 .modul {
@@ -64,19 +65,22 @@ html {
     grid-column: 10 / 15;
     grid-row: 3 / 10;
     padding-right: 5%;
+    color: black;
 }
 
 .moocs {
     grid-column: 1 / 10;
-    grid-row: 2 / 11;
+    grid-row: 3 / 11;
     list-style: none;
     overflow: hidden;
     clear: both;
+    color: black;
 }
 
 .moocs img {
     float: left;
     padding-right: 1%;
+    height: 10vh;
 }
 
 .moocs li:nth-of-type(odd) img {
@@ -98,7 +102,7 @@ html {
 /* waagrechte Listen */
 
 .ziele li:not(:first-child):before {
-    content: '• ';
+    content: "• ";
 }
 
 
