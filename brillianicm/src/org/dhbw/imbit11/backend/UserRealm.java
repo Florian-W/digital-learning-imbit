@@ -216,7 +216,7 @@ public class UserRealm extends JdbcRealm {
 		return certificate;
 	}
 	
-	/*
+	
 	public int getBadgeAssertionID() throws SQLException {
 	    Connection conn = dataSource.getConnection();
 	    PreparedStatement ps = null;
@@ -238,7 +238,7 @@ public class UserRealm extends JdbcRealm {
 	    }
 	    return badgesCount;
 	}
-	*/
+
 	
 	/**
 	 * Invoked in java class ProfessorMain does not work if the user has no

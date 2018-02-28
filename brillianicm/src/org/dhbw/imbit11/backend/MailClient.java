@@ -74,7 +74,7 @@ public class MailClient extends HttpServlet
 	            pdfBodyPart.setFileName("brillianICM Certificate for "+username+".pdf");
 
 	            //construct the JSON file
-	            outputStream = JSONCreator.createAssertion(useremail, completedCountry)
+	            outputStream = JSONCreator.createAssertion(useremail, completedCountry);
 	            byte[] bytes = outputStream.toByteArray();
 	            //construct the JSON body part
 	            DataSource dataSource = new ByteArrayDataSource(bytes, "application/json");

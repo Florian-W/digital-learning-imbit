@@ -1,6 +1,11 @@
 package org.dhbw.imbit11.backend;
 
-import javax.json;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+
+import javax.json.Json;
+import javax.json.JsonBuilderFactory;
+import javax.json.JsonObject;
 
 public class JSONCreator extends HttpServlet {
 
@@ -30,7 +35,7 @@ public class JSONCreator extends HttpServlet {
 	public static int getAssertionId() {
 
 		UserRealm userRealm = new UserRealm();
-		return userRealm.getAssertionId(); 
+		return userRealm.getBadgeAssertionID(); 
 
 	}
 
