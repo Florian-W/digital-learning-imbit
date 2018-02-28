@@ -41,6 +41,7 @@ html {
     padding-right: 5%;
     list-style: none;
     font-family: "Caveat Brush";
+    color: black;
 }
 
 .ueberschriftenfeld li:nth-child(1n) {
@@ -53,6 +54,10 @@ html {
 
 .ueberschriftenfeld li:nth-child(3n) {
     font-size: 3vh;
+}
+
+.ueberschriftenfeld li:last-child {
+    color: #991B33;
 }
 
 .modulbeschreibung {
