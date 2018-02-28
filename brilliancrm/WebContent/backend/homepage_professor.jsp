@@ -216,7 +216,7 @@
 						out.println("<tr>You have not created any courses yet.</tr>");
 					}
 				%>
-			</div>
+			</div></div>></div>
 
 
             <div style="text-align: left; width: 80%; background-color: white; border-width:1px; border-style:solid; border-color:black; padding-bottom: 2%; height: 100%">
