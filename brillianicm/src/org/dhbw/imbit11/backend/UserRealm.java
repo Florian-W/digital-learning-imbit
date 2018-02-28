@@ -220,11 +220,17 @@ public class UserRealm extends JdbcRealm {
 	public int getBadgeAssertionID() throws SQLException {
 	    Connection conn = dataSource.getConnection();
 	    PreparedStatement ps = null;
+	    ResultSet rs = null;
 	    int badgesCount = 0;
 	    try {
 	        ps = conn.prepareStatement(getBadgeAssertionID);
-	        badgesCount = Integer.parseInt(ps.executeQuery())+1;
+	        rs = ps.executeQuery();
 	        
+	        while (rs.next()) {
+				badgesCount = Integer.parseInt(rs.getString(1));
+	        }
+
+	        badgesCount += 1;
 
 	    } finally {
 	        JdbcUtils.closeStatement(ps);

@@ -72,11 +72,21 @@ public class MailClient extends HttpServlet
 	            MimeBodyPart pdfBodyPart = new MimeBodyPart();
 	            pdfBodyPart.setDataHandler(new DataHandler(dataSource));
 	            pdfBodyPart.setFileName("brillianICM Certificate for "+username+".pdf");
+
+	            //construct the JSON file
+	            outputStream = JSONCreator.createAssertion(useremail, completedCountry)
+	            byte[] bytes = outputStream.toByteArray();
+	            //construct the JSON body part
+	            DataSource dataSource = new ByteArrayDataSource(bytes, "application/json");
+	            MimeBodyPart jsonBodyPart = new MimeBodyPart();
+	            jsonBodyPart.setDataHandler(new DataHandler(dataSource));
+	            jsonBodyPart.setFileName("brillianICM Testbadge "+username+".json");
 	                         
 	            //construct the mime multi part
 	            MimeMultipart mimeMultipart = new MimeMultipart();
 	            mimeMultipart.addBodyPart(textBodyPart);
 	            mimeMultipart.addBodyPart(pdfBodyPart);
+	            mimeMultipart.addBodyPart(jsonBodyPart);
 	            
 	             
 	            //construct the mime message
