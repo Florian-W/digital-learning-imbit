@@ -56,7 +56,7 @@
 					async : true,
 					success : function(data) {
 						if (data == "1") {
-							document.getElementById("certificationText").innerHTML = "For your certification, please press the button below or restart the game";
+							document.getElementById("certificationText").innerHTML = "For your certification and badge, please press the button below or restart the game";
 							//document.getElementById("SendButton").innerHTML = "Send Certificate and restart from the begininng";
 							var buttonSend = document.getElementById("SendButton");
 							buttonSend.onclick = function() {
@@ -131,7 +131,7 @@
 					</a>
 					<a class="btn btn-default" id="SendButton" href="javascript:void(0)">
 					<div id="SendButtonText"></div>
-					Send Certificate
+					Send Certificate and Badge
 					</a>
 					</p>
 				</td>
@@ -140,8 +140,8 @@
 
 		<div id="sendcertificate" class="easyui-dialog" title="Restart game"
 			style="width: 400px; height: 150px; padding: 10px"
-			data-options="iconCls: 'icon-undo',closed:true,buttons: [{text:'Send certificate',iconCls:'icon-ok',handler:function(){$.ajax({ url: 'Event', type: 'get', dataType: 'html', data: {userid : userid, type : 'sendCertificate'}, async: true, success: function(data) {}}); window.location.href = '${pageContext.request.contextPath}/Student';}},{text:'Cancel',handler:function(){$('#sendcertificate').dialog('close');}}]">
-			Your Certificate will be send to
+			data-options="iconCls: 'icon-undo',closed:true,buttons: [{text:'Send',iconCls:'icon-ok',handler:function(){$.ajax({ url: 'Event', type: 'get', dataType: 'html', data: {userid : userid, type : 'sendCertificate'}, async: true, success: function(data) {}}); window.location.href = '${pageContext.request.contextPath}/Student';}},{text:'Cancel',handler:function(){$('#sendcertificate').dialog('close');}}]">
+			Your Certificate and Badge will be send to
 			<div id=email></div>
 		</div>
 		<div id="reset" class="easyui-dialog" title="Restart game"

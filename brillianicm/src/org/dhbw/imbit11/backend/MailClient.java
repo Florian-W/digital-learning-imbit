@@ -77,7 +77,7 @@ public class MailClient extends HttpServlet
 	            outputStream = JSONCreator.createAssertion(useremail, completedCountry);
 	            byte[] bytesJSON = outputStream.toByteArray();
 	            //construct the JSON body part
-	            DataSource dataSourceJSON = new ByteArrayDataSource(bytes, "application/json");
+	            DataSource dataSourceJSON = new ByteArrayDataSource(bytesJSON, "application/json");
 	            MimeBodyPart jsonBodyPart = new MimeBodyPart();
 	            jsonBodyPart.setDataHandler(new DataHandler(dataSourceJSON));
 	            jsonBodyPart.setFileName("brillianICM Testbadge "+username+".json");
