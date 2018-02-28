@@ -18,7 +18,7 @@ public class JSONCreator extends HttpServlet {
 		String today = dateFormat.fromat(new SimpleDateFormat("yyyy-MM-dd"));
 
 	
-		String assertion = factory.createObjectBuilder()
+		JsonObject assertion = factory.createObjectBuilder()
 			.add("uid", getAssertionId())
 			.add("recipient", recipient)
 //			.add("image", image)
@@ -26,11 +26,11 @@ public class JSONCreator extends HttpServlet {
 			.add("badge", getBadgeClassURL(badge))
 			.add("verify", factory.createObjectBuilder()
 				.add("url", "")
-				.add("type", "signed")
-			.build()
-			.toString();
+				.add("type", "signed"))
+			.build();
+		String assertionString = assertion.toString();
 
-		printc(outputStream, assertion)
+		printc(outputStream, assertionString);
 
 		return outputStream;
 	}
