@@ -13,6 +13,8 @@ public class JSONCreator extends HttpServlet {
 	
 		ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
 
+		Map<String, Object> config = new HashMap<String, Object>();
+        config.put("javax.json.stream.JsonGenerator.prettyPrinting", Boolean.valueOf(true));
 		JsonBuilderFactory factory = Json.createBuilderFactory(config);	
 
 		String today = dateFormat.fromat(new SimpleDateFormat("yyyy-MM-dd"));
