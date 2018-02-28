@@ -58,9 +58,11 @@ html {
 
 .modulbeschreibung {
     grid-column: 10 / 15;
-    grid-row: 3 / 10;
+    grid-row: 3 / 11;
     padding-right: 5%;
     color: black;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .moocs {
@@ -68,6 +70,7 @@ html {
     grid-row: 3 / 11;
     list-style: none;
     overflow: hidden;
+    overflow-y: scroll;
     clear: both;
     color: black;
 }
