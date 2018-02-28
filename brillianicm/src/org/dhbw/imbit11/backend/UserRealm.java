@@ -70,6 +70,9 @@ public class UserRealm extends JdbcRealm {
 	protected String setCertificate = "Update `group` SET `certificate`=? WHERE `group_id`=?";
 	protected String getCertificate = "SELECT `certificate` FROM `group` WHERE `group_id`=?";
 
+	protected String getBadgeAssertionID = "SELECT COUNT(`UID`) FROM `badges`";
+	protected String newBadgeQuery = "INSERT INTO `badges` VALUES (?,?,?,?)";
+	
 	/**
 	 * Invokes the constructor of parent class (superclass) function looks up an
 	 * insert in the database
@@ -212,7 +215,25 @@ public class UserRealm extends JdbcRealm {
 		}
 		return certificate;
 	}
+	
+	/*
+	public int getBadgeAssertionID() throws SQLException {
+	    Connection conn = dataSource.getConnection();
+	    PreparedStatement ps = null;
+	    int badgesCount = 0;
+	    try {
+	        ps = conn.prepareStatement(getBadgeAssertionID);
+	        badgesCount = Integer.parseInt(ps.executeQuery())+1;
+	        
 
+	    } finally {
+	        JdbcUtils.closeStatement(ps);
+	        conn.close();
+	    }
+	    return badgesCount;
+	}
+	*/
+	
 	/**
 	 * Invoked in java class ProfessorMain does not work if the user has no
 	 * corresponding entry in the user_progress table returns an array list with
