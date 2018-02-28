@@ -23,7 +23,7 @@ public class JSONCreator extends HttpServlet {
 			.add("recipient", recipient)
 //			.add("image", image)
 			.add("issuedOn", today)
-			.add("badge", badge)
+			.add("badge", getBadgeClassURL(badge))
 //			.add("verify", factory.createObjectBuilder()
 //				.add("type", "hosted")
 //				.add("url", ""))
@@ -45,13 +45,49 @@ public class JSONCreator extends HttpServlet {
 
 	}
 
+	//Adding to the ByteArrayOutputStream
 	private static void printc(ByteArrayOutputStream os, String text){
 		for (int i=0; i<text.length(); i++){
 			int toWrite = (byte) text.charAt(i);
 			os.write(toWrite);
 		}
-		
-		currentPositionCount += text.getBytes().length;
+
 	}
+
+	private static String getBadgeClassURL(String badge) {
+		switch(badge){
+			case "Brazil": 	
+				return "URL_Brazil_badge_class";
+				break;
+			case "Spain":	
+				return "URL_Spain_badge_class";
+				break;
+			case "China": 	
+				return "URL_Brazil_badge_class";
+				break;
+			case "USA":	
+				return "URL_Spain_badge_class";
+				break;
+			case "Sweden": 	
+				return "URL_Brazil_badge_class";
+				break;
+			case "India":	
+				return "URL_Spain_badge_class";
+				break;
+			case "Germany": 	
+				return "URL_Brazil_badge_class";
+				break;
+			case "Turkey":	
+				return "URL_Spain_badge_class";
+				break;
+			case "Australia":	
+				return "URL_Spain_badge_class";
+				break;
+			default: 
+				return "";
+				break;
+		}
+	}
+
 
 }
