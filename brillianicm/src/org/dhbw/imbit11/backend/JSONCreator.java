@@ -9,13 +9,14 @@ import javax.json.JsonObject;
 
 public class JSONCreator extends HttpServlet {
 
-	public static jsonObject createAssertion(String recipient, String badge) {
+	public static String createAssertion(String recipient, String badge) {
 	
 	JsonBuilderFactory factory = Json.createBuilderFactory(config);	
 
-	DateFormat today = new SimpleDateFormat("yyyy-MM-dd");
+	String today = dateFormat.fromat(new SimpleDateFormat("yyyy-MM-dd"));
+
 	
-	JsonObject assertion = factory.createObjectBuilder()
+	String assertion = factory.createObjectBuilder()
 		.add("uid", getAssertionId())
 		.add("recipient", recipient)
 //		.add("image", image)
@@ -24,7 +25,8 @@ public class JSONCreator extends HttpServlet {
 //		.add("verify", factory.createObjectBuilder()
 //			.add("type", "hosted")
 //			.add("url", ""))
-		.build();
+		.build()
+		.toString();
 
 		return assertion;
 	}
