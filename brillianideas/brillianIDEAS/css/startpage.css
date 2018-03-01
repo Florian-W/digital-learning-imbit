@@ -1,6 +1,6 @@
 html, body {
 	box-sizing: border-box;
-	font-family: 'Tinos';	
+	font-family: 'Tinos';
 	color: var(--text);
 }
 
@@ -19,6 +19,10 @@ html, body {
 
 .upper{
 	text-transform: uppercase;
+}
+
+.IDEAS{
+	font-size: 1.1153846153846153846153846153846em;
 }
 
 #start_bg_ltr{
