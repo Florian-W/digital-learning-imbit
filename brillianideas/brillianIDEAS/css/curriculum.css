@@ -1,0 +1,594 @@
+/* NEUES CSS */
+
+html {
+    font-family: "Tinos";
+    font-size: 2vh;
+    color: black;
+}
+
+.modul {
+    font-size: 3vh;
+    color: black;
+    font-family: "Caveat Brush";
+    text-align: center;
+}
+
+.modul:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    color: #991B33;
+}
+
+.gridlayout {
+    display: none;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(14, 1fr);
+}
+
+.tintenfischkopf {
+    grid-column: 1 / 8;
+    grid-row: 1 / 4;
+    text-align: left;
+    height: 75%;
+    width: auto;
+}
+
+.ueberschriftenfeld {
+    grid-column: 8 / 15;
+    grid-row: 1 / 4;
+    text-align: right;
+    padding-right: 5%;
+    list-style: none;
+    font-family: "Caveat Brush";
+}
+
+.ueberschriftenfeld li:nth-child(1n) {
+    font-size: 5vh;
+}
+
+.ueberschriftenfeld li:nth-child(2n) {
+    font-size: 4vh;
+}
+
+.ueberschriftenfeld li:nth-child(3n) {
+    font-size: 3vh;
+}
+
+.ueberschriftenfeld li:last-child {
+    color: black;
+    cursor: default;
+}
+
+.ueberschriftenfeld li:not(last-child):hover {
+    cursor: pointer;
+}
+
+.modulbeschreibung {
+    grid-column: 10 / 15;
+    grid-row: 3 / 11;
+    padding-right: 5%;
+    color: black;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.moocs {
+    grid-column: 1 / 10;
+    grid-row: 3 / 11;
+    list-style: none;
+    overflow: hidden;
+    overflow-y: scroll;
+    clear: both;
+    color: black;
+}
+
+.moocs img {
+    float: left;
+    padding-right: 1%;
+    height: 10vh;
+}
+
+.moocs li:nth-of-type(odd) img {
+    float: right;
+    padding-left: 1%;
+}
+
+.moocs li a:nth-child(2n) {
+    color: #991B33;
+    font-family: "Caveat Brush";
+    text-decoration: none;
+}
+
+.ziele li {
+    display: inline;
+}
+
+
+/* waagrechte Listen */
+
+.ziele li:not(:first-child):before {
+    content: "• ";
+}
+
+
+/* allen Listeinträgen außer dem ersten wird ein Spiegelpunkt als Trennzeichen vorgestellt */
+
+.quellen {
+    list-style: none;
+}
+
+
+/* Quelleneinträge ohne Spiegelpunkte */
+
+.quellen li:nth-of-type(odd) {
+    list-style: none;
+    background-color: #eeeeee;
+}
+
+
+/* Quelleneinträge werden abwechselnd grau hinterlegt*/
+
+
+/* NEUES CSS ENDE */
+
+html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    justify-content: center;
+    /* grid-definition */
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 50px;
+    grid-template-areas: "content" "launchbar";
+}
+
+.launchbar {
+    /* style for launchbar */
+    grid-area: launchbar;
+}
+
+
+/* FUTURE GRID */
+
+.grid_layout {
+    display: none;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(14, 1fr);
+}
+
+
+/* Grid Columns */
+
+.grid_column_1 {
+    grid-column: 2;
+}
+
+.grid_column_2 {
+    grid-column: 3;
+}
+
+.grid_column_3 {
+    grid-column: 4;
+}
+
+.grid_column_4 {
+    grid-column: 5;
+}
+
+.grid_column_5 {
+    grid-column: 6;
+}
+
+.grid_column_6 {
+    grid-column: 7;
+}
+
+.grid_column_7 {
+    grid-column: 8;
+}
+
+.grid_column_8 {
+    grid-column: 9;
+}
+
+.grid_column_9 {
+    grid-column: 10;
+}
+
+.grid_column_10 {
+    grid-column: 11;
+}
+
+.grid_column_11 {
+    grid-column: 12;
+}
+
+.grid_column_12 {
+    grid-column: 13;
+}
+
+.grid_column_1_3 {
+    grid-column: 1 / 4;
+}
+
+.grid_column_1_6 {
+    grid-column: 2 / 8;
+}
+
+.grid_column_1_8 {
+    grid-column: 2 / 10;
+}
+
+.grid_column_1_4 {
+    grid-column: 2 / 6;
+}
+
+.grid_column_1_5 {
+    grid-column: 1 / 6;
+}
+
+.grid_column_2_5 {
+    grid-column: 2 / 6;
+}
+
+.grid_column_2_7 {
+    grid-column: 2 / 8;
+}
+
+.grid_column_2_8 {
+    grid-column: 2 / 9;
+}
+
+.grid_column_2_13 {
+    grid-column: 2 / 14;
+}
+
+.grid_column_3_4 {
+    grid-column: 3 / 5;
+}
+
+.grid_column_6_8 {
+    grid-column: 6 / 9;
+}
+
+.grid_column_6_9 {
+    grid-column: 6 / 10;
+}
+
+.grid_column_7_12 {
+    grid-column: 8 / 14;
+}
+
+.grid_column_4_6 {
+    grid-column: 4 / 7;
+}
+
+.grid_column_4_8 {
+    grid-column: 4 / 9;
+}
+
+.grid_column_4_11 {
+    grid-column: 4 / 12;
+}
+
+.grid_column_4_7 {
+    grid-column: 4 / 8;
+}
+
+.grid_column_3_4 {
+    grid-column: 3 / 5;
+}
+
+.grid_column_7_8 {
+    grid-column: 7 / 9;
+}
+
+.grid_column_7_9 {
+    grid-column: 7 / 10;
+}
+
+.grid_column_7_10 {
+    grid-column: 7 / 11;
+}
+
+.grid_column_10_13 {
+    grid-column: 10 / 14;
+}
+
+.grid_column_8_13 {
+    grid-column: 8 / 14;
+}
+
+.grid_column_9_13 {
+    grid-column: 9 / 14;
+}
+
+.grid_column_9_12 {
+    grid-column: 9 / 13;
+}
+
+.grid_column_10_14 {
+    grid-column: 10 / 15;
+}
+
+.grid_column_11_12 {
+    grid-column: 11 / 13;
+}
+
+
+/* Grid Rows */
+
+.grid_row_1_2 {
+    grid-row: 1 / 3;
+}
+
+.grid_row_1_3 {
+    grid-row: 1 / 4;
+}
+
+.grid_row_4_9 {
+    grid-row: 4 / 10;
+}
+
+.grid_row_5_9 {
+    grid-row: 5 / 10;
+}
+
+.grid_row_5_6 {
+    grid-row: 5 / 7;
+}
+
+.grid_row_8_10 {
+    grid-row: 8 / 11;
+}
+
+.grid_row_7_10 {
+    grid-row: 7 / 11;
+}
+
+.grid_row_9_12 {
+    grid-row: 9 / 13;
+}
+
+.grid_row_11_12 {
+    grid-row: 11 / 13;
+}
+
+.grid_row_3_10 {
+    grid-row: 3 / 11;
+}
+
+.grid_row_4_10 {
+    grid-row: 4 / 11;
+}
+
+.grid_row_5_10 {
+    grid-row: 5 / 11;
+}
+
+.grid_row_3 {
+    grid-row: 3;
+}
+
+.grid_row_4 {
+    grid-row: 4;
+}
+
+.grid_row_5 {
+    grid-row: 5;
+}
+
+.grid_row_6 {
+    grid-row: 6;
+}
+
+.grid_row_7 {
+    grid-row: 7;
+}
+
+.grid_row_8 {
+    grid-row: 8;
+}
+
+.grid_row_9 {
+    grid-row: 9;
+}
+
+.grid_row_10 {
+    grid-row: 10;
+}
+
+
+/* FOR FUTURE CLEAN UP: STYLE CLASSES */
+
+.tentakel_left_50 {
+    height: 50%;
+    width: auto;
+    text-align: left;
+}
+
+.bordered {
+    border: 1px solid black;
+}
+
+.pointer_onHover:hover {
+    cursor: pointer;
+}
+
+.size_onHover:hover {
+    transform: scale(1.2, 1.2);
+}
+
+
+/*Fontcolours*/
+
+.font_black {
+    color: black;
+}
+
+.font_red {
+    color: #991B33;
+}
+
+.font_white {
+    color: white;
+}
+
+.font_onHover_black:hover {
+    color: black;
+}
+
+.font_onHover_red:hover {
+    color: #991B33;
+}
+
+.font_onHover_white:hover {
+    color: white;
+}
+
+
+/*Backgrounds*/
+
+.background_white {
+    color: white;
+}
+
+.background_red {
+    color: #991B33;
+}
+
+.background_grey {
+    color: #5E5E5E;
+}
+
+
+/*Headings -size and weight maybe readjusted*/
+
+.heading1 {
+    font-size: 5vmax;
+    font-weight: 700;
+}
+
+.heading2 {
+    font-size: 4vmax;
+    font-weight: 500;
+}
+
+.heading3 {
+    font-size: 3vmax;
+    font-weight: 300;
+}
+
+.heading4 {
+    font-size: 2vmax;
+    font-size: 150;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Font Family */
+
+.font_caveat {
+    font-family: 'Caveat Brush';
+}
+
+.font_tinos {
+    font-family: 'Tinos'
+}
+
+
+/* Font STYLE */
+
+.style_normal {
+    font-style: normal;
+}
+
+.style_italic {
+    font-style: italic;
+}
+
+.style_oblique {
+    font-style: oblique;
+}
+
+
+/* Text Alignment */
+
+.aligned_right {
+    text-align: right;
+}
+
+.aligned_center {
+    text-align: center;
+}
+
+.aligned_left {
+    text-align: left;
+}
+
+.aligned_justify {
+    text-align: justify;
+}
+
+
+/* Position */
+
+.positionabsolute {
+    position: absolute;
+}
+
+.positionrelative {
+    position: relative;
+}
+
+
+/* Position im Grid */
+
+.gridalign_center {
+    align-self: center;
+}
+
+.gridalign_end {
+    align-self: end;
+}
+
+.gridalign_start {
+    align-self: start;
+}
+
+
+/* Bilder Design */
+
+.img_moocs {
+    /* hier größe der Bilder für moocs */
+}
+
+#tentakel_home {
+    width: 100%;
+    height: auto;
+}
+
+#tentacle_img_left {
+    width: 100%;
+    height: auto;
+}
+
+#tentacle_img_right {
+    width: auto;
+    height: 100%;
+}

@@ -23,8 +23,8 @@ body {
 }
 
 #site.a {
-	background-color: var(--text);
-	color: var(--background);
+	background-color: var(--background);
+	color: var(--text);
 }
 
 #site.imbit {

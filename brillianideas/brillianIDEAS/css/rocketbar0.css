@@ -1,0 +1,76 @@
+/* the rocket bar is not animated yet and there is no
+navigation logic in the small tentacle images.
+With 99% probability this logic has to be done With
+JS as there is no or not sufficient CSS only solution. */
+
+.rocketbar{
+	width: 100%;
+	background-color: grey;
+  visibility: visible;
+  position: relative;
+  top: -300px;
+  margin: 0px;
+
+/* grid definition */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows:auto;
+  grid-template-areas: "imbit digitallearning icm crm wiki interactive impressum";
+  grid-column-gap: 60px;
+}
+
+/* tentacle on top of rocketbar */
+#tentacle_img_small_launchbar{
+  position: absolute;
+  top:-47px;
+  left:100px;
+}
+
+/* grid classes */
+.icon{
+  width: 80%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.imbit{
+  grid-area: imbit;
+  text-align: center;
+}
+
+.digitallearning{
+  grid-area: digitallearning;
+  text-align: center;
+}
+
+.icm{
+  grid-area: icm;
+  text-align: center;
+}
+
+.crm{
+  grid-area: crm;
+  text-align: center;
+}
+
+.wiki{
+  grid-area: wiki;
+  text-align: center;
+}
+
+.interactive{
+  grid-area: interactive;
+  text-align: center;
+}
+
+.impressum{
+  grid-area: impressum;
+  text-align: center;
+}
+
+
+
+/* experiment */
+/* #rocketbar:target {
+  display: none;
+} */

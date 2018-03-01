@@ -326,7 +326,7 @@ function loadDialog () {
 	//Setting speechSynthesis parameters for Male Voice:
 	tts.native = false;
 	tts.lang = 'en-GB';
-	tts.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == 'Google UK English Male'; });
+	tts.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == 'Google UK English Male'; })[0];
 	
 	// Checks if the partner female and setting female parameters:
 	if(partner.indexOf('Thomas') == -1 && partner.indexOf('Pria') == -1 && partner.indexOf('Martin') == -1 && partner.indexOf('Avinash') == -1 && partner.indexOf('Rajesh') == -1 && partner.indexOf('Vance') == -1 && partner.indexOf('Stylus') == -1 && partner.indexOf('Jeremy') == -1)
@@ -334,14 +334,14 @@ function loadDialog () {
 		//alert("Female detected!");
 		tts.native = false;
 		tts.lang = 'en-IE';
-		tts.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == 'Moira'; });
+		tts.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == 'Moira'; })[0];
 		
 		if(checkBrowserName('chrome'))
 			{
 			//alert("Chrome detected");
 			tts.native = false;
 			tts.lang = 'en-US';
-			tts.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == 'Google US English'; });
+			tts.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == 'Google US English'; })[0];
 			}
 		
 		}
