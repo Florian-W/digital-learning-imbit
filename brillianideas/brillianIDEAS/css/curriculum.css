@@ -56,6 +56,15 @@ html {
     font-size: 3vh;
 }
 
+.ueberschriftenfeld li:last-child {
+    color: black;
+    cursor: default;
+}
+
+.ueberschriftenfeld li:not(last-child):hover {
+    cursor: pointer;
+}
+
 .modulbeschreibung {
     grid-column: 10 / 15;
     grid-row: 3 / 11;
