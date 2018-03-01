@@ -20,6 +20,9 @@ CREATE TABLE IF NOT EXISTS `group` (
   GROUP_NAME varchar(256) COLLATE utf8_unicode_ci NOT NULL,
   PROFESSOR_ID int(11) NOT NULL,
   CERTIFICATE int(11) NOT NULL SET DEFAULT 0,
+  ORG varchar(256) COLLATE utf8_unicode_ci,
+  DESCRIPTION varchar(256) COLLATE utf8-unicode_ci,
+  URL varchar(256) COLLATE utf8_unicode_ci,
   PRIMARY KEY (GROUP_ID),
   KEY GROUP_ID (GROUP_ID),
   KEY PROFESSOR_ID (PROFESSOR_ID)

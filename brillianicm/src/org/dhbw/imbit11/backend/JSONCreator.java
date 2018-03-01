@@ -33,7 +33,7 @@ public class JSONCreator extends HttpServlet {
 //		int group = userRealm.getUserGroupByEmail(recipient)
 //		String[] issuer_info = getIssuerInfo(group);
 		
-		int badge_id = getAssertionId();
+		String badge_id = String.valueOf(getAssertionId());
 
 		//String today = DateFormat.format(new SimpleDateFormat("yyyy-MM-dd"));
 
@@ -67,7 +67,7 @@ public class JSONCreator extends HttpServlet {
 		String assertionString = assertion.toString();
 
 		printc(outputStream, assertionString);
-		userRealm.newBadge(badge_id, reciepient, info[1], current_date);
+		userRealm.newBadge(badge_id, recipient, info[1], current_date);
 
 		return outputStream;
 	}

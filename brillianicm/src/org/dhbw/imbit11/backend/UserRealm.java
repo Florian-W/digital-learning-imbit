@@ -240,16 +240,16 @@ public class UserRealm extends JdbcRealm {
 	    return badgesCount;
 	}
 
-	public void newBadge(int UID, String recipient, String badge, String issuedOn) throws SQLException {
+	public void newBadge(String UID, String recipient, String badge, String issuedOn) throws SQLException {
 	    Connection conn = dataSource.getConnection();
 	    PreparedStatement ps = null;
 	    try {
 	        ps = conn.prepareStatement(newBadgeQuery);
-	        ps.setLong(1, UID);
+	        ps.setString(1, UID);
 	        ps.setString(2, recipient);
 	        ps.setString(3, badge);
 	        ps.setString(4, issuedOn);
-	        ps.updateQuery();
+	        ps.executeUpdate();
 
 	    } finally {
 	        JdbcUtils.closeStatement(ps);
@@ -257,20 +257,27 @@ public class UserRealm extends JdbcRealm {
 	    }
 	}
 
+	/*
 	public String[] getIssuerInfo(int group) throws SQLException {
 	    Connection conn = dataSource.getConnection();
 	    PreparedStatement ps = null;
+	    ResultSet rs = null;
+	    String[] issuer_info = null;
 	    try {
 	        ps = conn.prepareStatement(getIssuerInfoQuery);
 	        ps.setLong(1, group);
-	        ps.updateQuery();
+	        rs = ps.executeQuery();
+	        
+	        while (rs.next()) {
+				badgesCount = Integer.parseInt(rs.getString(1));
+	        }
 
 	    } finally {
 	        JdbcUtils.closeStatement(ps);
 	        conn.close();
 	    }
 	}
-
+*/
 	
 	/**
 	 * Invoked in java class ProfessorMain does not work if the user has no
