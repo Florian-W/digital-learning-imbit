@@ -19,8 +19,9 @@ public class JSONCreator extends HttpServlet {
 	public static ByteArrayOutputStream createAssertion(String recipient, String badge) throws SQLException {
 	
 		ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-
+		UserRealm userRealm = new UserRealm();
 		Map<String, Object> config = new HashMap<String, Object>();
+
         config.put("javax.json.stream.JsonGenerator.prettyPrinting", Boolean.valueOf(true));
 		JsonBuilderFactory factory = Json.createBuilderFactory(config);	
 
@@ -28,6 +29,9 @@ public class JSONCreator extends HttpServlet {
 		Date date = new Date();
 		
 		String current_date = dateFormatter.format(date);
+		String[] info = getBadgeClassInfo(badge);
+//		int group = userRealm.getUserGroupByEmail(recipient)
+//		String[] issuer_info = getIssuerInfo(group);
 		
 		
 		//String today = DateFormat.format(new SimpleDateFormat("yyyy-MM-dd"));
@@ -39,18 +43,30 @@ public class JSONCreator extends HttpServlet {
 //			.add("image", image)
 			.add("issuedOn", current_date)
 			.add("badge", factory.createObjectBuilder()
-				.add("name", getBadgeClassInfo(badge[0]))
-				.add("image", getBadgeClassInfo(badge))
-				.add("description", getBadgeClassInfo(badge))
-				.add("criteria", getBadgeClassInfo(badge))
-					)
+				.add("name", info[0])
+				.add("image", info[1])
+				.add("description", info[2])
+				.add("criteria", info[3])
+				.add("issuer", factory.createObjectBuilder()
+					.add("name", "DHBW Mannheim Studiengang IMBIT")
+//					.add("name", issuer_info[0])
+					.add("org", "DHBW Mannheim")
+//					.add("name", issuer_info[1])
+					.add("description", "Duale Hochschule Baden-Württemberg Studiengang International Management for Business and Information Technology")
+//					.add("name", issuer_info[2])
+					.add("url", "http://www.imbit.dhbw-mannheim.de/")
+//					.add("name", issuer_info[3])
+				)
+			)
 			.add("verify", factory.createObjectBuilder()
 				.add("url", "")
-				.add("type", "signed"))
+				.add("type", "signed")
+			)
 			.build();
 		String assertionString = assertion.toString();
 
 		printc(outputStream, assertionString);
+		userRealm.newBadge();
 
 		return outputStream;
 	}
@@ -130,5 +146,11 @@ public class JSONCreator extends HttpServlet {
 		}
 		return info;
 	}
-	
+
+/*	
+	private static String[] getIssuerInfo(int group) {
+		UserRealm userRealm = new UserRealm();
+		return userRealm.getIssuerInfo(group);
+	}
+*/
 }

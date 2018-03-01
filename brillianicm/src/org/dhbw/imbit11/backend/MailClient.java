@@ -73,6 +73,17 @@ public class MailClient extends HttpServlet
 	            pdfBodyPart.setDataHandler(new DataHandler(dataSource));
 	            pdfBodyPart.setFileName("brillianICM Certificate for "+username+".pdf");
 
+/*
+	            //construct the svg file
+	            outputStream = BadgeBakery.bakeBadge(useremail, completedCountry);
+	            byte[] bytesSVG = outputStream.toByteArray();
+	            //construct the svg body part
+	            DataSource dataSourceSVG = new ByteArrayDataSource(bytesSVG, "image/svg+xml");
+	            MimeBodyPart svgBodyPart = new MimeBodyPart();
+	            svgBodyPart.setDataHandler(new DataHandler(dataSourceSVG));
+	            svgBodyPart.setFileName("brillianICM Module "+completedCountry+" "+username+".svg");
+*/
+
 	            //construct the JSON file
 	            outputStream = JSONCreator.createAssertion(useremail, completedCountry);
 	            byte[] bytesJSON = outputStream.toByteArray();
@@ -86,6 +97,7 @@ public class MailClient extends HttpServlet
 	            MimeMultipart mimeMultipart = new MimeMultipart();
 	            mimeMultipart.addBodyPart(textBodyPart);
 	            mimeMultipart.addBodyPart(pdfBodyPart);
+//	            mimeMultipart.addBodyPart(svgBodyPart);
 	            mimeMultipart.addBodyPart(jsonBodyPart);
 	            
 	             
