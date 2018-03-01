@@ -6,7 +6,7 @@ html{
 
 body {
   display: grid;
-  grid-template-rows: 90px 1fr 660px 400px 400px 380px 460px 490px 440px 450px 400px;
+  grid-template-rows: 90px 1fr 660px 760px 760px 760px 760px 760px 760px 760px 760px;
   grid-template-columns:5% 25% 70%;
   grid-template-areas:
               "placeholder1 badgeTitle emptySpace1"
