@@ -234,6 +234,7 @@
 				<div class="mainEventContainerImprint easyui-window"
 					data-options="closed:true,width:863,height:576"></div>
 			</div>
+			<div style="padding-bottom: 25px"></div>
 </body>
 <script type="text/javascript">
 	$('body').show();

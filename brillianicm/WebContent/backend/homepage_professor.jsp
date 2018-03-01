@@ -247,12 +247,19 @@
                     <div style="width: 50%; float: left; padding-left: 5%">
                         <h4>Create New Group</h4>
 					<form action="NewUsergroup" method="post">
-						<div class="formLabel">name:</div>
-						<input type="text" name="groupname" maxlength="50" required /> <input
+						<div class="formLabel">Name:</div>
+						<input type="text" name="groupname" maxlength="50" required />
+						<div class="formLabel">Organisation:</div>
+						<input type="text" name="grouporg" maxlength="50" required />
+						<div class="formLabel">Description:</div>
+						<input type="text" name="groupdescription" maxlength="50" required />
+						<div class="formLabel">URL:</div>
+						<input type="text" name="groupurl" maxlength="50" required />
+						 <input
 							type="submit" style="display: none" id="createGroup"
 							value="Create group" /><br /> <br /> <a
 							class="easyui-linkbutton"
-							onclick="$('#createGroup').trigger('click')">create group</a>
+							onclick="$('#createGroup').trigger('click')">Create Group</a>
 						<p style="color: green">${success}</p>
 						<p style="color: red">${error}</p>
 					</form>
@@ -264,15 +271,15 @@
 							value="${username}" style="display: none" /> <input type="text"
 							name="role" maxlength="50" value="professor"
 							style="display: none" />
-						<div class="formLabel" style="padding-right: 20px">new password:</div>
+						<div class="formLabel" style="padding-right: 20px">New Password:</div>
 						<input style="width: 200px" type="password" name="password" maxlength="50" /><br /> <br />
-						<div class="formLabel" style="padding-right: 20px">repeat new password:</div>
+						<div class="formLabel" style="padding-right: 20px">Repeat New Password:</div>
 						<input style="width: 200px" type="password" name="password_repeat" maxlength="50" /><br />
 						<br /> <input id="updatePassword" type="submit"
 							name="updatePassword" value="Update password" hidden="hidden" />
 						<a class="easyui-linkbutton"
-							onclick="$('#updatePassword').trigger('click')">update
-							password</a>
+							onclick="$('#updatePassword').trigger('click')">Update
+							Password</a>
 					</form>
 				</div>
 			</div>
