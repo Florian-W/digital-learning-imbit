@@ -39,6 +39,7 @@ public class UserRealm extends JdbcRealm {
 	protected String getUserEmailByID = "SELECT `email` FROM `user` WHERE `user_id` = ?";
 	protected String getUserGenderByID = "SELECT `gender` FROM `user` WHERE `user_id` = ?";
 	protected String getUserGroupByID = "SELECT `group` FROM `user` WHERE `user_id` = ?";
+	protected String getUserGroupByEmail = "SELECT `group` FROM `user` WHERE `email` = ?";
 
 	protected String newgroupQuery = "INSERT INTO `group`(`group_name`, `professor_id`) VALUES (?,(SELECT `user_id` FROM `user` WHERE `email` = ?))";
 	protected String newUserQuery = "INSERT INTO `user`(`email`, `last_name`, `first_name`, `password`, `role`, `group`,`gender`) VALUES (?,?,?,?,?,?,?)";
@@ -70,6 +71,10 @@ public class UserRealm extends JdbcRealm {
 	protected String setCertificate = "Update `group` SET `certificate`=? WHERE `group_id`=?";
 	protected String getCertificate = "SELECT `certificate` FROM `group` WHERE `group_id`=?";
 
+	protected String getBadgeAssertionID = "SELECT COUNT(`UID`) FROM `badges`";
+	protected String newBadgeQuery = "INSERT INTO `badges` VALUES (?,?,?,?)";
+	protected String getIssuerInfoQuery = "SELECT (`name`,`org`,`description`,`url`) FROM `group` WHERE `group_id`=?";
+	
 	/**
 	 * Invokes the constructor of parent class (superclass) function looks up an
 	 * insert in the database
@@ -213,6 +218,67 @@ public class UserRealm extends JdbcRealm {
 		return certificate;
 	}
 
+	public int getBadgeAssertionID() throws SQLException {
+	    Connection conn = dataSource.getConnection();
+	    PreparedStatement ps = null;
+	    ResultSet rs = null;
+	    int badgesCount = 0;
+	    try {
+	        ps = conn.prepareStatement(getBadgeAssertionID);
+	        rs = ps.executeQuery();
+	        
+	        while (rs.next()) {
+				badgesCount = Integer.parseInt(rs.getString(1));
+	        }
+
+	        badgesCount += 1;
+
+	    } finally {
+	        JdbcUtils.closeStatement(ps);
+	        conn.close();
+	    }
+	    return badgesCount;
+	}
+
+	public void newBadge(String UID, String recipient, String badge, String issuedOn) throws SQLException {
+	    Connection conn = dataSource.getConnection();
+	    PreparedStatement ps = null;
+	    try {
+	        ps = conn.prepareStatement(newBadgeQuery);
+	        ps.setString(1, UID);
+	        ps.setString(2, recipient);
+	        ps.setString(3, badge);
+	        ps.setString(4, issuedOn);
+	        ps.executeUpdate();
+
+	    } finally {
+	        JdbcUtils.closeStatement(ps);
+	        conn.close();
+	    }
+	}
+
+	/*
+	public String[] getIssuerInfo(int group) throws SQLException {
+	    Connection conn = dataSource.getConnection();
+	    PreparedStatement ps = null;
+	    ResultSet rs = null;
+	    String[] issuer_info = null;
+	    try {
+	        ps = conn.prepareStatement(getIssuerInfoQuery);
+	        ps.setLong(1, group);
+	        rs = ps.executeQuery();
+	        
+	        while (rs.next()) {
+				badgesCount = Integer.parseInt(rs.getString(1));
+	        }
+
+	    } finally {
+	        JdbcUtils.closeStatement(ps);
+	        conn.close();
+	    }
+	}
+*/
+	
 	/**
 	 * Invoked in java class ProfessorMain does not work if the user has no
 	 * corresponding entry in the user_progress table returns an array list with
@@ -948,6 +1014,42 @@ public class UserRealm extends JdbcRealm {
 		try {
 			ps = conn.prepareStatement(getUserGroupByID);
 			ps.setString(1, userId);
+			rs = ps.executeQuery();
+			while (rs.next()) {
+				group += rs.getString(1);
+			}
+			// System.out.println("executed the following statement on DB: " +
+			// getUserByEmail);
+			// System.out.println("the userid was "+userid);
+		} finally {
+			JdbcUtils.closeStatement(ps);
+			conn.close();
+		}
+		return group;
+	}
+
+	/**
+	 * Returns the group for the user that is defined by the Email handed to the
+	 * function
+	 * 
+	 * @param userId
+	 *            the userId of a student that was saved to the database
+	 * 
+	 * @return the groupId for the specified userId read from the database
+	 * 
+	 * @throws SQLException
+	 *             - returns a database access error
+	 */
+
+		public String getUserGroupByEmail(String email) throws SQLException {
+
+		Connection conn = dataSource.getConnection();
+		PreparedStatement ps = null;
+		ResultSet rs = null;
+		String group = "";
+		try {
+			ps = conn.prepareStatement(getUserGroupByEmail);
+			ps.setString(1, email);
 			rs = ps.executeQuery();
 			while (rs.next()) {
 				group += rs.getString(1);
