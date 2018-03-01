@@ -76,23 +76,16 @@
 				</thead>
 				<tbody>
 					<%
-						String webAppPath = new String();
-						if (request.getServerPort() == 8080) {
-							webAppPath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
-									+ application.getContextPath();
-						} else {
-							webAppPath = request.getScheme() + "://" + request.getServerName();
-						}
 						if (request.getAttribute("professors") != null) {
 							@SuppressWarnings("unchecked")
-							ArrayList<ArrayList<String>> professors = (ArrayList<ArrayList<String>>) request
-									.getAttribute("professors");
+					ArrayList<ArrayList<String>> professors = (ArrayList<ArrayList<String>>)request.getAttribute("professors");
 
 							java.util.ArrayList<java.util.ArrayList<String>> professors2 = professors;
 							if (professors.isEmpty()) {
 								out.println("<p style='color: red'>There are currently no lecturers.</p>");
-							} else {
 							}
+					else{
+					}
 							for (java.util.ArrayList<String> row : professors) {
 								out.println("<tr><td>");
 								out.println(row.get(0));
@@ -101,10 +94,8 @@
 								out.println("</td><td>");
 								out.println(row.get(2));
 								out.println("</td><td>");
-								out.println("<form action=\"" + webAppPath
-										+ "/DeleteProfessor\" method=\"post\"><input class=\"deleteProfessor\" type=\"submit\" "
-										+ "value=\"Delete\" hidden=\"hidden\"/><a class=\"easyui-linkbutton\" onclick=\"$(this).parent().parent().find('.deleteProfessor').trigger('click');\">Delete</a><input type=\"text\" name=\"delete_professor\" value=\""
-										+ row.get(2) + "\" style=\"display:none\"/></form>");
+					out.println("<form action=\""+ application.getContextPath()+"/DeleteProfessor\" method=\"post\"><input class=\"deleteProfessor\" type=\"submit\" "+
+					"value=\"Delete\" hidden=\"hidden\"/><a class=\"easyui-linkbutton\" onclick=\"$(this).parent().parent().find('.deleteProfessor').trigger('click');\">Delete</a><input type=\"text\" name=\"delete_professor\" value=\""+ row.get(2) +"\" style=\"display:none\"/></form>");
 								out.println("</td></tr>");
 							}
 						} else {
