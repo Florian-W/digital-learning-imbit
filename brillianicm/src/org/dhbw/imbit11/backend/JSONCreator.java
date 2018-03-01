@@ -155,8 +155,7 @@ public class JSONCreator extends HttpServlet {
 				info[2] = "Successful completion of the ICM serious game";
 				info[3] = "http//:link_criteria_page";
 				break;
-		}
-		return info[];
+		}		return info;
 	}
 
 /*	
