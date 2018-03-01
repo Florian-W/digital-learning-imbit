@@ -67,7 +67,7 @@ public class JSONCreator extends HttpServlet {
 		String assertionString = assertion.toString();
 
 		printc(outputStream, assertionString);
-		userRealm.newBadge(badge_id, recipient, info[1], current_date);
+		userRealm.newBadge(badge_id, recipient, current_date, info[1]);
 
 		return outputStream;
 	}
@@ -92,58 +92,69 @@ public class JSONCreator extends HttpServlet {
 	}
 
 	private static String[] getBadgeClassInfo(String badge) {
-		String info[] = null;
+		String[] info = new String[4];
+		
 		switch(badge){
 			case "Brazil": 	
 				info[0] = "brillianICM Brazil";
 				info[1] = "http//:link_image_brazil";
 				info[2] = "Successful completion of the ICM Brazil serious game";
 				info[3] = "http//:link_criteria_page";
+				break;
 			case "Spain":	
 				info[0] = "brillianICM Spain";
 				info[1] = "http//:link_image_spain";
 				info[2] = "Successful completion of the ICM Spain serious game";
 				info[3] = "http//:link_criteria_page";
+				break;
 			case "China": 	
 				info[0] = "brillianICM China";
 				info[1] = "http//:link_image_china";
 				info[2] = "Successful completion of the ICM China serious game";
 				info[3] = "http//:link_criteria_page";
+				break;
 			case "USA":	
 				info[0] = "brillianICM USA";
 				info[1] = "http//:link_image_usa";
 				info[2] = "Successful completion of the ICM USA serious game";
 				info[3] = "http//:link_criteria_page";
+				break;
 			case "Sweden": 	
 				info[0] = "brillianICM Sweden";
 				info[1] = "http//:link_image_sweden";
 				info[2] = "Successful completion of the ICM Sweden serious game";
 				info[3] = "http//:link_criteria_page";
+				break;
 			case "India":	
 				info[0] = "brillianICM India";
 				info[1] = "http//:link_image_india";
 				info[2] = "Successful completion of the ICM India serious game";
 				info[3] = "http//:link_criteria_page";
+				break;
 			case "Germany": 	
 				info[0] = "brillianICM Germany";
 				info[1] = "http//:link_image_germany";
 				info[2] = "Successful completion of the ICM Germany serious game";
 				info[3] = "http//:link_criteria_page";
+				break;
 			case "Turkey":	
 				info[0] = "brillianICM Turkey";
 				info[1] = "http//:link_image_turkey";
 				info[2] = "Successful completion of the ICM Turkey serious game";
 				info[3] = "http//:link_criteria_page";
+				break;
 			case "Australia":	
 				info[0] = "brillianICM Australia";
 				info[1] = "http//:link_image_australia";
 				info[2] = "Successful completion of the ICM Australia serious game";
 				info[3] = "http//:link_criteria_page";
+				break;
 			default:
 				info[0] = "brillianICM";
 				info[1] = "http//:link_image";
 				info[2] = "Successful completion of the ICM serious game";
 				info[3] = "http//:link_criteria_page";
+				break;
 		}
 		return info[];
 	}
