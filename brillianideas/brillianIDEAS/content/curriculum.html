@@ -251,7 +251,7 @@
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_101', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_101', 'wirtschaftsinformatik')">Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik</li>
-            <li> Modul Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik</li>
+            <li onclick="toggleVisible('W3WI_101_QUELLEN')">Modul Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik</li>
         </ul>
 
         <!-- Moocs -->
@@ -294,7 +294,7 @@
                 <li>Informationssysteme als soziotechnische Systeme</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_101_QUELLEN">
                 <li>Abts, D.; Mülder, W.: Grundkurs Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik, Springer Vieweg, Wiesbaden.</li>
                 <li>Bächle, M.; Kolb, A.: Einführung in die Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik, Oldenbourg, München.</li>
                 <li>Hansen, H.R.; Mendling, J.; Neumann, G.: Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik, De Gruyter, Oldenbourg.</li>
@@ -2312,5 +2312,15 @@
 
         x.style.display = "none";
         y.style.display = "grid";
+    }
+
+    function toggleVisible(visibility) {
+        var x = document.getElementById(visibility);
+
+        if (x.style.display != "none") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "inline-block";
+        }
     }
 </script>
