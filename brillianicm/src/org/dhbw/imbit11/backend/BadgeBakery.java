@@ -1,55 +1,74 @@
 package org.dhbw.imbit11.backend;
 
 import javax.servlet.http.HttpServlet;
+import java.io.ByteArrayOutputStream;
+import java.io.FileReader;
+
 
 public class BadgeBakery extends HttpServlet {
 
-	public static bakeBadge(String useremail, String country) {
+	public static ByteArrayOutputStream bakeBadge(String useremail, String country) {
+
+		ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+
+		String SVG = getSVGString(country);
+
+		printc(outputStream, badgeString);
+		return outputStream;
 
 	}
 
-	private static String transformSVGToString(country) {
-		FileReader svgReader = new FileReader();
-		String svgString = "";
+	private static String getSVGString(country) {
+		String fileLocation = "";
 		switch (country){
 			case "Brazil": 
-				svgReader.setOrigin("Origin SVG Brazil");
+				fileLocation = "/etc/opt/tomcat/webapps/brillianICM/WebContent/...badge_brazil.svg";
 				svgString = svgReader.toString();
 				break;
 			case "Spain": 
-				svgReader.setOrigin("Origin SVG Spain");
+				fileLocation = "/etc/opt/tomcat/webapps/brillianICM/WebContent/...badge_spain.svg";
 				svgString = svgReader.toString();
 				break;
 			case "China": 
-				svgReader.setOrigin("Origin SVG China");
+				fileLocation = "/etc/opt/tomcat/webapps/brillianICM/WebContent/...badge_china.svg";
 				svgString = svgReader.toString();
 				break;
 			case "USA": 
-				svgReader.setOrigin("Origin SVG USA");
+				fileLocation = "/etc/opt/tomcat/webapps/brillianICM/WebContent/...badge_USA.svg";
 				svgString = svgReader.toString();
 				break;
 			case "Sweden": 
-				svgReader.setOrigin("Origin SVG Sweden");
+				fileLocation = "/etc/opt/tomcat/webapps/brillianICM/WebContent/...badge_sweden.svg";
 				svgString = svgReader.toString();
 				break;
 			case "India": 
-				svgReader.setOrigin("Origin SVG India");
+				fileLocation = "/etc/opt/tomcat/webapps/brillianICM/WebContent/...badge_india.svg";
 				svgString = svgReader.toString();
 				break;
 			case "Germany": 
-				svgReader.setOrigin("Origin SVG Germany");
+				fileLocation = "/etc/opt/tomcat/webapps/brillianICM/WebContent/...badge_germany.svg";
 				svgString = svgReader.toString();
 				break;	
 			case "Turkey": 
-				svgReader.setOrigin("Origin SVG Turkey");
+				fileLocation = "/etc/opt/tomcat/webapps/brillianICM/WebContent/...badge_turkey.svg";
 				svgString = svgReader.toString();
 				break;
 			case "Australia": 
-				svgReader.setOrigin("Origin SVG Australia");
+				fileLocation = "/etc/opt/tomcat/webapps/brillianICM/WebContent/...badge_australia.svg";
 				svgString = svgReader.toString();
 				break;
 		}
-		return svgString;
+		FileReader svgReader = new FileReader(fileLocation);
+		return svgReader.toString();
+	}
+
+	//Adding to the ByteArrayOutputStream
+	private static void printc(ByteArrayOutputStream os, String text){
+		for (int i=0; i<text.length(); i++){
+			int toWrite = (byte) text.charAt(i);
+			os.write(toWrite);
+		}
+
 	}
 
 }
