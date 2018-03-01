@@ -36,10 +36,10 @@ html {
 }
 
 .ueberschriftenfeld {
-    grid-column: 8 / 15;
+    grid-column: 3 / 15;
     grid-row: 1 / 4;
     text-align: right;
-    padding-right: 5%;
+    padding-right: 2.5%;
     list-style: none;
     font-family: "Caveat Brush";
 }
@@ -87,12 +87,19 @@ html {
 .moocs img {
     float: left;
     padding-right: 1%;
-    height: 10vh;
+    width: 6%;
+    height: auto;
 }
 
-.moocs li:nth-of-type(odd) img {
+.moocs li:nth-of-type(even) img {
     float: right;
     padding-left: 1%;
+}
+
+.moocs li {
+  clear: both;
+  overflow: hidden;
+  margin: 0.1%
 }
 
 .moocs li a:nth-child(2n) {
