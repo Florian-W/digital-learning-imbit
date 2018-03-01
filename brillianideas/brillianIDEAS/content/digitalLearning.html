@@ -44,32 +44,20 @@
 
       <!-- kind of learning -->
       <div id="spiel" class="type_learning margin_word" onclick="showmodal(this.id)">Spiel</div>
-      <div id="cbtwbt" class="type_learning margin_word ">CBT WBT</div>
+      <div id="cbtwbt" class="type_learning margin_word " onclick="showmodal(this.id)">CBT WBT</div>
     </div>
     <div class="content-4">
 
       <div id="informell" class="label">informell</div>
 
       <!-- kind of learning -->
-      <div id="wiki" class="type_learning margin_word">Wikis</div>
-      <div id="podcasts" class="type_learning margin_word">Podcasts</div>
-      <div id="augmented_reality" class="type_learning">Augmented<br /> Reality</div>
-      <div id="learning_demand" class="type_learning">Learning &nbsp; &nbsp; <br />on Demand &nbsp; &nbsp;</div>
-      <div id="lernfilme" class="type_learning">Lernfilme <br /> &nbsp;</div>
-      <div id="simulationen" class="type_learning">Simulationen</div>
-      <div id="e_books" class="type_learning">Interaktive<br /> e-Books</div>
-    </div>
-
-    <!-- The Modal spiel -->
-    <div id="spiel_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
-
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close" onclick="hideModalFromSpan()" >&times;</span>
-        <h2>Spiel</h2>
-        <p>Bei der Lernform Spiel geht es darum, bestimmte Verhaltensweisen und  Entscheidungsmuster von Menschen nachzuvollziehen und den Umgang mit Konflikten zu üben. Somit wird erfahrungsbezogenes Lernen ermöglicht. Mithilfe des Spiels werden Wahrnehmungen erweitert und bestimmte Verhaltensmuster diskutiert und reflektiert.</p>
-      </div>
-
+      <div id="wiki" class="type_learning margin_word" onclick="showmodal(this.id)">Wikis</div>
+      <div id="podcasts" class="type_learning margin_word" onclick="showmodal(this.id)">Podcasts</div>
+      <div id="augmented_reality" class="type_learning" onclick="showmodal(this.id)">Augmented<br /> Reality</div>
+      <div id="learning_demand" class="type_learning" onclick="showmodal(this.id)">Learning &nbsp; &nbsp; <br />on Demand &nbsp; &nbsp;</div>
+      <div id="lernfilme" class="type_learning" onclick="showmodal(this.id)">Lernfilme <br /> &nbsp;</div>
+      <div id="simulationen" class="type_learning" onclick="showmodal(this.id)">Simulationen</div>
+      <div id="e_books" class="type_learning" onclick="showmodal(this.id)">Interaktive<br /> e-Books</div>
     </div>
 
     <!-- The Modal interaktive_whiteboards -->
@@ -200,6 +188,114 @@
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <p>Ein Weblog ist ein Logbuch im Web – ein Web-Tagebuch - in das man Beiträge aller Art hineinschreiben kann. Ein Weblog (kurz Blog) besteht im Grunde aus ganz „normalen” Webseiten, die im Gegensatz zu den gewohnten statischen HTML-Seiten bei jedem Aufruf dynamisch aus einer Datenbank erzeugt werden. Diese Blogs erlauben Interaktivität durch Kommentierungsmöglichkeiten. Es kann sich durchaus lohnen, einen Weblog während des Studiums zu pflegen um Gelerntes zu festigen. Außerdem gibt es Anderen die Möglichkeit von eigenen Erfahrungen zu profitieren.
         </p>
+      </div>
+
+    </div>
+
+    <!-- The Modal spiel -->
+    <div id="spiel_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="hideModalFromSpan()" >&times;</span>
+        <h2>Spiel</h2>
+        <p>Bei der Lernform Spiel geht es darum, bestimmte Verhaltensweisen und  Entscheidungsmuster von Menschen nachzuvollziehen und den Umgang mit Konflikten zu üben. Somit wird erfahrungsbezogenes Lernen ermöglicht. Mithilfe des Spiels werden Wahrnehmungen erweitert und bestimmte Verhaltensmuster diskutiert und reflektiert.</p>
+      </div>
+
+    </div>
+
+    <!-- The Modal CBT WBT -->
+    <div id="cbtwbt_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="hideModalFromSpan()" >&times;</span>
+        <h2>CBT WBT</h2>
+        <p>Unter Computer-Based-Training (CBT) versteht man computerunterstützte Lernprogramme, die inhaltlich abgeschlossene Lehrmaterialien enthalten. Diese können auch offline verwendet werden, was den Einsatz in Gebieten mit schlechter Internetverbindung ermöglicht. Darin liegt auch der Unterschied zum Web-Based-Training (WBT), in dem die Lernmaterialien online bereitgestellt werden. Außerdem können die Dozenten und Teilnehmer über das Internet kommunizieren.</p>
+      </div>
+
+    </div>
+
+    <!-- The Modal Wiki -->
+    <div id="wiki_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="hideModalFromSpan()" >&times;</span>
+        <h2>Wiki</h2>
+        <p>Ein Wiki ist ein Medium, das durch seine offene Struktur für viele Anwendungsfälle geeignet sein kann. Es ist vergleichbar mit der Universalität einer Wandtafel, wobei das Wiki gleichzeitig eine Archivfunktion beinhalten kann. Im Gegensatz etwa zu Content-Management-Systemen ist ein Wiki flexibler, da die Strukturierung der Daten kaum vorgegeben ist.Es ist ein zukunftsweisendes System, das die Medienkompetenz der Schüler wie Lehrer stärkt. Auch Wikipedia, das wohl bekannteste und größte Wiki, kann aktiv in der Schule und für die Schule genutzt werden. Auch wir haben eine Wiki erstellt, ihr könnt diese hier finden: http://wiki.brillianideas.com/index.php/Hauptseite Es handelt sich hierbei um eine Wiki rundum das Thema Cloud, viel Spaß! Quelle: https://wiki.zum.de/wiki/Wikis_in_der_Schule</p>
+      </div>
+
+    </div>
+
+    <!-- The Modal Podcasts -->
+    <div id="podcasts_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="hideModalFromSpan()" >&times;</span>
+        <h2>Podcasts</h2>
+        <p>Podcast ist ein zusammengesetztes Kunstwort aus den Begriffen iPod und Broadcast und meint Audio- und Videobeiträge, die über das Internet zum Download bereitgestellt werden. Nach dem Herunterladen können Interessenten die veröffentlichten Beiträge zu jeder beliebigen Zeit und an jedem beliebigen Ort anhören und ansehen. Podcasts können über verschiedene Feed-Formate abonniert werden (bspw. RSS-Feed).</p>
+      </div>
+
+    </div>
+
+    <!-- The Modal Augmented Reality -->
+    <div id="augmented_reality_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="hideModalFromSpan()" >&times;</span>
+        <h2>Augmented Reality</h2>
+        <p>Unter Augmented Reality versteht man die computergestützte Erweiterung der Wahrnehmung der Realität. Dabei können beispielsweise Bilder oder Vidoes über Einblendungen oder Überlagerungen so dargestellt werden, als wären diese in der Realität zu sehen. Zur Darstellung der Augmented Reality wird meistens eine Kamera, Software und GPS, sowie verschiedene Sensoren verwendet. Mithilfe dieser können beispielsweise Kamerabilder mit Informationen zu Sehenswürdigkeiten oder Straßennamen ergänzt werden.</p>
+      </div>
+
+    </div>
+
+    <!-- The Modal Learning on Demand -->
+    <div id="learning_demand_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="hideModalFromSpan()" >&times;</span>
+        <h2>Learning on Demand</h2>
+        <p>Mit Learning-on-Demand werden Studierende zielbezogener auf unmittelbar bevorstehende Themen und Aufgaben vorbereitet. Diese Lernform kann nicht nur zeit-, sondern auch ortsunabhängig in Anspruch genommen werden. Die Ortsunabhängigkeit birgt die Gefahr, dass das Lernen aufgrund störender Umgebungseinwirkungen unterbrochen wird. Daneben besteht das Risiko, dass die Studierenden zunehmend nur unter Zeitdruck und sehr oberflächlich lernen, da sie erst mit dem Lernen beginnen, wenn die Notwendigkeit gegeben ist. Tendenziell sorgt Learning-on-Demand aber für einen effektiven und effizienten Transfer der erlernten Inhalte.</p>
+      </div>
+
+    </div>
+
+    <!-- The Modal Lernfilme -->
+    <div id="lernfilme_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="hideModalFromSpan()" >&times;</span>
+        <h2>Lernfilme</h2>
+        <p>Als Lernfilm bezeichnet man einen für Unterrichtszwecke produzierten Film. Dieser soll schulische Lernprozesse unterstützen und wird von online Medienzentren verliehen und vertrieben. Der Lernstoff soll filmisch vermittelt werden. Dabei liegt der Schwerpunkt auf der Übermittlung von Wissen und nicht der Darstellung vom Emotionen oder Handlungen. Lernfilme sind ebenso unter der englischen Bezeichnung Tutorial bekannt und im Internet auffindbar.</p>
+      </div>
+
+    </div>
+
+    <!-- The Modal Simulationen -->
+    <div id="simulationen_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="hideModalFromSpan()" >&times;</span>
+        <h2>Simulationen</h2>
+        <p>Eine Simulation ist eine möglichst realitätsnahe Abbildung der Wirklichkeit. Der Mensch lernt am besten in natürlichen Umgebungen, sodass man versucht, den Lernprozess mit Simulationen zu unterstützen. Beispielsweise werden diese dazu eingesetzt, Szenarien durchzuspielen, bei denen Menschen zu Schaden kommen könnten. Durch eine virtuelle Lernumgebung soll das Lernen unterstützt werden.</p>
+      </div>
+
+    </div>
+
+    <!-- The Modal interaktive E-Books -->
+    <div id="e_books_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="hideModalFromSpan()" >&times;</span>
+        <h2>Interaktive E-Books</h2>
+        <p>Interaktive E-Books erweitern die Textinhalte der E-Books um multimediale Inhalte wie Audios und Videos. Der Leser interagiert mit den Inhalten beispielsweise via Mausklick, drag-and-drop oder durch weitere Benutzeraktionen.</p>
       </div>
 
     </div>
