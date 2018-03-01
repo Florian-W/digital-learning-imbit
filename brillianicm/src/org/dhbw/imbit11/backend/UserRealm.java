@@ -240,12 +240,12 @@ public class UserRealm extends JdbcRealm {
 	    return badgesCount;
 	}
 
-	public void newBadge(int UID, String recipient,String badge,String issuedOn) throws SQLException {
+	public void newBadge(int UID, String recipient, String badge, String issuedOn) throws SQLException {
 	    Connection conn = dataSource.getConnection();
 	    PreparedStatement ps = null;
 	    try {
 	        ps = conn.prepareStatement(newBadgeQuery);
-	        ps.setString(1, UID);
+	        ps.setLong(1, UID);
 	        ps.setString(2, recipient);
 	        ps.setString(3, badge);
 	        ps.setString(4, issuedOn);
@@ -262,7 +262,7 @@ public class UserRealm extends JdbcRealm {
 	    PreparedStatement ps = null;
 	    try {
 	        ps = conn.prepareStatement(getIssuerInfoQuery);
-	        ps.setString(1, group);
+	        ps.setLong(1, group);
 	        ps.updateQuery();
 
 	    } finally {
