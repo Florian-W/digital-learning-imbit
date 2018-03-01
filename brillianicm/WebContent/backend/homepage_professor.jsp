@@ -54,13 +54,7 @@
 				<br /> <br />
 
 				<%
-					String webAppPath = new String();
-					if (request.getServerPort() == 8080) {
-						webAppPath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
-								+ application.getContextPath();
-					} else {
-						webAppPath = request.getScheme() + "://" + request.getServerName();
-					}
+
 					if (request.getAttribute("groups") != null) {
 
 						//students = new String[((String [][]) request.getAttribute("students")).length][request.getAttribute("students")[0].length];
@@ -77,76 +71,60 @@
 							out.println(groups.get(i).get(1));
 							out.println("</big></td><td>");
 							//send email invitation button
-							out.println("<form action=\"" + webAppPath
-									+ "/RegistrationPage\" method=\"post\">"
+											out.println("<form action=\""+ application.getContextPath()+"/RegistrationPage\" method=\"post\">"
 									+ "<input style=\"display:none\" id=\"invitationbutton" + i + "\" type=\"submit\" "
-									+ "value=\"Send email invitation\"/><a class= \"easyui-linkbutton\" onclick=\"$('#invitationbutton"
-									+ i + "').trigger('click')\">send email invitation</a>"
-									+ "<input type=\"text\" name=\"link\" value=\"" + groups.get(i).get(3)
-									+ "\" style=\"display:none\"/>" + "</form></td><td>");
+												+ "value=\"Send email invitation\"/><a class= \"easyui-linkbutton\" onclick=\"$('#invitationbutton"+i+"').trigger('click')\">send email invitation</a>"
+												+ "<input type=\"text\" name=\"link\" value=\""+ groups.get(i).get(3) +"\" style=\"display:none\"/>"
+												+ "</form></td><td>");
 							//delete group without members button
-							out.println("<td><form action=\"" + webAppPath + "/DeleteGroup\" method=\"post\">"
-									+ "<input style=\"display:none\" id=\"deleteGroupButton" + i
-									+ "\" type=\"submit\" value=\"Delete Group\"/> <a class= \"easyui-linkbutton\" onclick=checker("
-									+ i + ",\"" + groups.get(i).get(1) + "\")>delete group</a>"
-									+ "<input type=\"text\" name=\"group_id\" value=\"" + groups.get(i).get(0)
-									+ "\" style=\"display:none\"/>" + "</form></td><td>");
+											out.println("<td><form action=\""+ application.getContextPath()+"/DeleteGroup\" method=\"post\">"
+												+ "<input style=\"display:none\" id=\"deleteGroupButton"+i+"\" type=\"submit\" value=\"Delete Group\"/> <a class= \"easyui-linkbutton\" onclick=checker("+i+",\""+groups.get(i).get(1)+"\")>delete group</a>"
+												+ "<input type=\"text\" name=\"group_id\" value=\""+ groups.get(i).get(0) +"\" style=\"display:none\"/>"
+												+ "</form></td><td>");
 							//delete group with all members button
-							out.println("<td><form action=\"" + webAppPath
-									+ "/DeleteGroupMembers\" method=\"post\">"
-									+ "<input style=\"display:none\" id=\"deleteGroupMembersButton" + i
-									+ "\" type=\"submit\" value=\"Delete Group Members\"/> <a class= \"easyui-linkbutton\" onclick=checker("
-									+ i + ",\"" + groups.get(i).get(1) + "\")>delete group with members</a>"
-									+ "<input type=\"text\" name=\"group_id\" value=\"" + groups.get(i).get(0)
-									+ "\" style=\"display:none\"/>" + "</form></td><td>");
+											out.println("<td><form action=\""+ application.getContextPath()+"/DeleteGroupMembers\" method=\"post\">"
+												+ "<input style=\"display:none\" id=\"deleteGroupMembersButton"+i+"\" type=\"submit\" value=\"Delete Group Members\"/> <a class= \"easyui-linkbutton\" onclick=checker("+i+",\""+groups.get(i).get(1)+"\")>delete group with members</a>"
+												+ "<input type=\"text\" name=\"group_id\" value=\""+ groups.get(i).get(0) +"\" style=\"display:none\"/>"
+												+ "</form></td><td>");
 							//set progress dropdown and button with set TCQ progress
 							/*
 							* Philipp K.
 							* 3.3.16
 							* Deleted Cost Time and Quality because its not needed to be updated when beeing set to a new country
 							*/
-							out.println("<form action=\"" + webAppPath + "/SetUserProgress\" method=\"post\">"
-									+ "<input type=\"text\" name=\"group_id\" value=\"" + groups.get(i).get(0)
-									+ "\" style=\"display:none\"/>"
+											out.println("<form action=\""+ application.getContextPath()+"/SetUserProgress\" method=\"post\">"
+												+ "<input type=\"text\" name=\"group_id\" value=\""+ groups.get(i).get(0) +"\" style=\"display:none\"/>"
 									+ "<input type=\"text\" name=\"cost\" value=\"0\" style=\"display:none\"/>"
 									+ "<input type=\"text\" name=\"time\" value=\"0\" style=\"display:none\"/>"
 									+ "<input type=\"text\" name=\"quality\" value=\"0\" style=\"display:none\"/>"
 									/* Set the Level Name and Unique Level ID for the Dropdown in the Lecturer page here */
-									+ "<select name=\"lvlId\" id=\"lvlId\">" + "<option value=\"l700e000\">Tutorial</option>"
-									+ "<option value=\"l100e000\">Brazil</option>" + "<option value=\"l300e000\">China</option>"
-									+ "<option value=\"l600e000\">India</option>" + "<option value=\"l200e000\">Spain</option>"
-									+ "<option value=\"l500e000\">Sweden</option>" + "<option value=\"l400e000\">USA</option>"
-									+ "<option value=\"l800e000\">anderes Land</option>" + "</select>"
-									+ "<input id=\"setProgress" + i + "\" type=\"submit\" "
-									+ "value=\"setProgress\" style=\"display:none\" /></td><td>"
-									+ "<a class= \"easyui-linkbutton\" onclick=\"$('#setProgress" + i
-									+ "').trigger('click')\")>Set progress</a></td></form></td><td>");
-							out.println("<td><form action=\"" + webAppPath
-									+ "/SendCertificate\" method=\"post\">"
-									+ "<input style=\"display:none\" id=\"SendCertificatesNowButton" + i
-									+ "\" type=\"submit\" value=\"SendcertificatesNow\"/> <a class= \"easyui-linkbutton\" onclick=confirmCertificationSend("
-									+ i + ",\"" + groups.get(i).get(1) + "\")>send certificates now</a>"
-									+ "<input type=\"text\" name=\"group_id\" value=\"" + groups.get(i).get(0)
-									+ "\" style=\"display:none\"/>" + "<input type=\"text\" name=\"group_name\" value=\""
-									+ groups.get(i).get(1) + "\" style=\"display:none\"/>" + "</form></td><td>");
+												+ "<select name=\"lvlId\" id=\"lvlId\">"
+												+ "<option value=\"l700e000\">Tutorial</option>"
+												+ "<option value=\"l100e000\">Brazil</option>"
+												+ "<option value=\"l300e000\">China</option>"
+												+ "<option value=\"l600e000\">India</option>"
+												+ "<option value=\"l200e000\">Spain</option>"								
+												+ "<option value=\"l500e000\">Sweden</option>"
+												+ "<option value=\"l400e000\">USA</option>"
+												+ "<option value=\"l800e000\">anderes Land</option>"
+												+ "</select>"								
+												+ "<input id=\"setProgress"+i+"\" type=\"submit\" "+"value=\"setProgress\" style=\"display:none\" /></td><td>"
+												+ "<a class= \"easyui-linkbutton\" onclick=\"$('#setProgress"+ i +"').trigger('click')\")>Set progress</a></td></form></td><td>");
+											out.println("<td><form action=\""+ application.getContextPath()+"/SendCertificate\" method=\"post\">"
+													+ "<input style=\"display:none\" id=\"SendCertificatesNowButton"+i+"\" type=\"submit\" value=\"SendcertificatesNow\"/> <a class= \"easyui-linkbutton\" onclick=confirmCertificationSend("+i+",\""+groups.get(i).get(1)+"\")>send certificates now</a>"
+													+ "<input type=\"text\" name=\"group_id\" value=\""+ groups.get(i).get(0) +"\" style=\"display:none\"/>" 
+													+ "<input type=\"text\" name=\"group_name\" value=\""+ groups.get(i).get(1) +"\" style=\"display:none\"/>" 
+													+ "</form></td><td>");
 							if (groups.get(i).get(2).equals("1")) {
-								out.println("<td><form action=\"" + webAppPath
-										+ "/ChangeCertificate\" method=\"post\">"
-										+ "<input style=\"display:none\" id=\"TurnCertificateOff" + i
-										+ "\" type=\"submit\" value=\"ChangeCertificate\"/> <a class= \"easyui-linkbutton\" onclick=\"$('#TurnCertificateOff"
-										+ i + "').trigger('click')\">Disable Certificate</a>"
-										+ "<input type=\"text\" name=\"group_id\" value=\"" + groups.get(i).get(0)
-										+ "\" style=\"display:none\"/>"
+												out.println("<td><form action=\""+ application.getContextPath()+"/ChangeCertificate\" method=\"post\">"
+													+ "<input style=\"display:none\" id=\"TurnCertificateOff"+i+"\" type=\"submit\" value=\"ChangeCertificate\"/> <a class= \"easyui-linkbutton\" onclick=\"$('#TurnCertificateOff"+ i +"').trigger('click')\">Disable Certificate</a>"
+													+ "<input type=\"text\" name=\"group_id\" value=\""+ groups.get(i).get(0) +"\" style=\"display:none\"/>" 
 										+ "<input type=\"text\" name=\"certificate\" value=\"0\" style=\"display:none\"/>"
 										+ "</form></td><td>");
 							} else {
-								out.println("<td><form action=\"" + webAppPath
-										+ "/ChangeCertificate\" method=\"post\">"
-										+ "<input style=\"display:none\" id=\"TurnCertificateOn" + i
-										+ "\" type=\"submit\" value=\"ChangeCertificate\"/> <a class= \"easyui-linkbutton\" onclick=\"$('#TurnCertificateOn"
-										+ i + "').trigger('click')\">Enable Certificate</a>"
-										+ "<input type=\"text\" name=\"group_id\" value=\"" + groups.get(i).get(0)
-										+ "\" style=\"display:none\"/>"
+												out.println("<td><form action=\""+ application.getContextPath()+"/ChangeCertificate\" method=\"post\">"
+													+ "<input style=\"display:none\" id=\"TurnCertificateOn"+i+"\" type=\"submit\" value=\"ChangeCertificate\"/> <a class= \"easyui-linkbutton\" onclick=\"$('#TurnCertificateOn"+ i +"').trigger('click')\">Enable Certificate</a>"
+													+ "<input type=\"text\" name=\"group_id\" value=\""+ groups.get(i).get(0) +"\" style=\"display:none\"/>" 
 										+ "<input type=\"text\" name=\"certificate\" value=\"1\" style=\"display:none\"/>"
 										+ "</form></td><td>");
 							}
@@ -188,21 +166,13 @@
 									a++;
 									if (groups.get(i).get(1).equals(row.get(5))) {
 										out.println("<tr><td>");
-										out.println("<form action=\"" + webAppPath
-												+ "/DeleteUser\" method=\"post\"><input style=\"display:none\" id=\"deleteUserButton"
-												+ a + "\" type=\"submit\" "
-												+ "value=\"Delete User\"/><a class= \"easyui-linkbutton\" onclick=\"$('#deleteUserButton"
-												+ a + "').trigger('click')\">Delete</a>");
-										out.println("<input type=\"text\" name=\"delete_email\" value=\"" + row.get(6)
-												+ "\" style=\"display:none\"/></form>");
+													out.println("<form action=\""+ application.getContextPath()+"/DeleteUser\" method=\"post\"><input style=\"display:none\" id=\"deleteUserButton"+a+"\" type=\"submit\" "+
+															"value=\"Delete User\"/><a class= \"easyui-linkbutton\" onclick=\"$('#deleteUserButton"+a+"').trigger('click')\">Delete</a>");
+													out.println("<input type=\"text\" name=\"delete_email\" value=\""+ row.get(6) +"\" style=\"display:none\"/></form>");
 										out.println("</td><td>");
-										out.println("<form action=\"" + webAppPath
-												+ "/ResetUserProgress\" method=\"post\"><input style=\"display:none\" id=\"resetUserProgressButton"
-												+ a + "\" type=\"submit\" "
-												+ "value=\"Reset User\"/><a class= \"easyui-linkbutton\" onclick=\"$('#resetUserProgressButton"
-												+ a + "').trigger('click')\">Reset</a>");
-										out.println("<input type=\"text\" name=\"reset_email\" value=\"" + row.get(6)
-												+ "\" style=\"display:none\"/></form>");
+													out.println("<form action=\""+ application.getContextPath()+"/ResetUserProgress\" method=\"post\"><input style=\"display:none\" id=\"resetUserProgressButton"+a+"\" type=\"submit\" "+
+															"value=\"Reset User\"/><a class= \"easyui-linkbutton\" onclick=\"$('#resetUserProgressButton"+a+"').trigger('click')\">Reset</a>");
+													out.println("<input type=\"text\" name=\"reset_email\" value=\""+ row.get(6) +"\" style=\"display:none\"/></form>");
 										out.println("</td><td>");
 										out.println(row.get(1));
 										out.println("</td><td>");
