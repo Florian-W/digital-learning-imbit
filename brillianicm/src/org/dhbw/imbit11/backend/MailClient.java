@@ -60,7 +60,8 @@ public class MailClient extends HttpServlet
 	            MimeBodyPart textBodyPart = new MimeBodyPart();
 	            textBodyPart.setText("Dear " +username + ", \n\n"
 	            		+ "congratulations to the successful completion of your project in "+completedCountry + "! \n"
-	            		+ "Please find your certificate attached. \n\n"
+	            		+ "Please find your certificate and badge attached. \n"
+	            		+ "For more information about OpenBadges visit openbadges.org. \n\n"
 	            		+ "Kind regards, \n"
 	            		+ "Your brillianICM Team \n");
 	             
