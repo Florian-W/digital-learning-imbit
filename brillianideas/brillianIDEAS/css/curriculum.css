@@ -99,7 +99,7 @@ html {
 .moocs li {
   clear: both;
   overflow: hidden;
-  margin: 0.1%
+  margin: 0.05%
 }
 
 .moocs li a:nth-child(2n) {
