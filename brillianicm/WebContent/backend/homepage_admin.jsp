@@ -59,10 +59,11 @@
 			<a id="content" class="easyui-linkbutton" data-options="plain:true"><%=ApplicationConstants.CONTENT_BUTTON_TEXT%></a>
 		</div>
 	</div>
-	<div class="center mainWindow" data-options="region:'center'"
-		align="center">
-		<div
-			style="margin-top: 25px; padding-bottom: 25px; width: 80%; background-color: white; border-width: 1px; border-style: solid; border-color: black; padding-left: 2%; text-align: left">
+	<div class="center mainWindow" data-options="region:'center'" align="center" style="padding-left: 5%; padding-right: 5%">
+	<h1>Admin Page</h1>
+		<div style="width: 100%; text-align: left; padding-left: 5%; padding-right: 5%" align="center">
+			<div class="separator-box" style="margin-bottom:20px">
+			<div style="padding-bottom: 20px; padding-left: 2%; width:80%; background-color: white; border-width:1px; border-style:solid; border-color:black; height: 100%">
 			<h4>Lecturers</h4>
 			<table id="students" class="easyui-datagrid" style="width: 600px"
 				data-options="fitColumns:true,singleSelect:true">
@@ -76,16 +77,23 @@
 				</thead>
 				<tbody>
 					<%
+						String webAppPath = new String();
+						if (request.getServerPort() == 8080) {
+							webAppPath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
+									+ application.getContextPath();
+						} else {
+							webAppPath = request.getScheme() + "://" + request.getServerName();
+						}
 						if (request.getAttribute("professors") != null) {
 							@SuppressWarnings("unchecked")
-					ArrayList<ArrayList<String>> professors = (ArrayList<ArrayList<String>>)request.getAttribute("professors");
+							ArrayList<ArrayList<String>> professors = (ArrayList<ArrayList<String>>) request
+									.getAttribute("professors");
 
 							java.util.ArrayList<java.util.ArrayList<String>> professors2 = professors;
 							if (professors.isEmpty()) {
 								out.println("<p style='color: red'>There are currently no lecturers.</p>");
+							} else {
 							}
-					else{
-					}
 							for (java.util.ArrayList<String> row : professors) {
 								out.println("<tr><td>");
 								out.println(row.get(0));
@@ -94,8 +102,10 @@
 								out.println("</td><td>");
 								out.println(row.get(2));
 								out.println("</td><td>");
-					out.println("<form action=\""+ application.getContextPath()+"/DeleteProfessor\" method=\"post\"><input class=\"deleteProfessor\" type=\"submit\" "+
-					"value=\"Delete\" hidden=\"hidden\"/><a class=\"easyui-linkbutton\" onclick=\"$(this).parent().parent().find('.deleteProfessor').trigger('click');\">Delete</a><input type=\"text\" name=\"delete_professor\" value=\""+ row.get(2) +"\" style=\"display:none\"/></form>");
+								out.println("<form action=\"" + webAppPath
+										+ "/DeleteProfessor\" method=\"post\"><input class=\"deleteProfessor\" type=\"submit\" "
+										+ "value=\"Delete\" hidden=\"hidden\"/><a class=\"easyui-linkbutton\" onclick=\"$(this).parent().parent().find('.deleteProfessor').trigger('click');\">Delete</a><input type=\"text\" name=\"delete_professor\" value=\""
+										+ row.get(2) + "\" style=\"display:none\"/></form>");
 								out.println("</td></tr>");
 							}
 						} else {
@@ -104,9 +114,10 @@
 					%>
 				</tbody>
 			</table>
+			</div></div>
 			<br />
 			<div
-				style="height: 370px; width: 80%; background-color: white; border-width: 1px; border-style: solid; border-color: black; padding-left: 2%; text-align: left; padding-top: 20xp; padding-bottom: 20px">
+				style="height: 370px; width: 80%; background-color: white; border-width: 1px; border-style: solid; border-color: black; padding-left: 2%; text-align: left; padding-bottom: 20px">
 				<div style="height: 100%; width: 50%; float: left">
 					<h4>New Lecturer</h4>
 					<form action="CreateUser" method="post">
