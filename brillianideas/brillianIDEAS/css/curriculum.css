@@ -89,7 +89,7 @@ html {
     height: 10vh;
 }
 
-.moocs li:nth-of-type(odd) img {
+.moocs li:nth-of-type(even) img {
     float: right;
     padding-left: 1%;
 }
