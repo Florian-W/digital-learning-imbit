@@ -60,17 +60,16 @@
 		align="center" style="padding-left: 5%; padding-right: 5%">
 		<div id="studentsOfProfessor">
 			<h1>Lecturer Page</h1>
-			<br />
 			<div class="separator-box" style="padding-bottom: 30px">
 				<div
 					style="width: 80%; background-color: white; border-width: 1px; border-style: solid; border-color: black">
 					<div id="groupsOfProfessor"
-						style="width: 100%; text-align: left; padding-left: 5%; padding-right: 5%">
+						style="width: 100%; text-align: left; padding-left: 5%; padding-right: 5%; padding-bottom:20px">
 						<h4>Groups</h4>
 						Below, all existing groups are listed with their belonging
-						students. <br />
+						students. 
 						<p style="color: blue">${status}</p>
-						<br /> <br />
+						
 
 						<%
 							if (request.getAttribute("groups") != null) {
@@ -254,26 +253,25 @@
 						%>
 					</div>
 				</div>
-				>
 			</div>
 
 
 			<div
-				style="text-align: left; width: 80%; background-color: white; border-width: 1px; border-style: solid; border-color: black; padding-bottom: 2%">
+				style="height: 270px; text-align: left; width: 80%; background-color: white; border-width: 1px; border-style: solid; border-color: black; padding-bottom: 2%">
 				<div style="width: 50%; float: left; padding-left: 5%">
 					<h4>Create New Group</h4>
 					<form action="NewUsergroup" method="post">
 						<div class="formLabel">Name:</div>
-						<input type="text" name="groupname" maxlength="50" required /><br />
+						<input style="width: 200px" type="text" name="groupname" maxlength="50" required /><br />
 						<br />
 						<div class="formLabel">Organisation:</div>
-						<input type="text" name="grouporg" maxlength="50" required /><br />
+						<input style="width: 200px" type="text" name="grouporg" maxlength="50" required /><br />
 						<br />
 						<div class="formLabel">Description:</div>
-						<input type="text" name="groupdescription" maxlength="50" required /><br />
+						<input style="width: 200px" type="text" name="groupdescription" maxlength="50" required /><br />
 						<br />
 						<div class="formLabel">URL:</div>
-						<input type="text" name="groupurl" maxlength="50" required /> <input
+						<input style="width: 200px" type="text" name="groupurl" maxlength="50" required /> <input
 							type="submit" style="display: none" id="createGroup"
 							value="Create group" /><br /> <br /> <a
 							class="easyui-linkbutton"
