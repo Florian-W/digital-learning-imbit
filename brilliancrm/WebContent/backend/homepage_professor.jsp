@@ -59,14 +59,14 @@
         <div id="studentsOfProfessor">
 			<h1>Lecturer Page</h1>
             <br />
-            <div class="separator-box" style="padding-bottom: 30px">
-            <div style="width: 80%; background-color: white; border-width:1px; border-style:solid; border-color:black; height: 100%">                 
+            <div class="separator-box" style="padding-bottom: 20px">
+            <div style="width: 80%; background-color: white; border-width:1px; border-style:solid; border-color:black">                 
 			<div id="groupsOfProfessor" style="width: 100%; text-align: left; padding-left: 5%; padding-right: 5%">
 				<h4>Groups</h4>
 				Below, all existing groups are listed with their belonging students.
 				<br />
 				<p style="color: blue">${status}</p>
-				<br /> <br />
+			
 				<%
 					if (request.getAttribute("groups") != null) {
 						//students = new String[((String [][]) request.getAttribute("students")).length][request.getAttribute("students")[0].length];
@@ -83,7 +83,15 @@
 							out.println(groups.get(i).get(1));
 							out.println("</big></td><td>");
 							//send email invitation button
-									out.println("<form action=\"" + application.getContextPath()
+							String webAppPath = new String();
+							if (request.getServerPort() == 8080) {
+								webAppPath = request.getScheme() + "://" + request.getServerName() + ":"
+										+ request.getServerPort() + application.getContextPath();
+							} else {
+								webAppPath = request.getScheme() + "://" + request.getServerName();
+							}
+							// System.out.println(webAppPath);
+							out.println("<form action=\"" + webAppPath
 									+ "/SendRegistrationLink\" method=\"get\"><input style=\"display:none\" id=\"invitationbutton"
 									+ i + "\" type=\"submit\" "
 									+ "value=\"Send email invitation\"/><a class= \"easyui-linkbutton\" onclick=\"$('#invitationbutton"
@@ -91,22 +99,21 @@
 							out.println("<input type=\"text\" name=\"link\" value=\"" + groups.get(i).get(2)
 									+ "\" style=\"display:none\"/></form></td><td>");
 							//delete group without members button
-									out.println("<td><form action=\"" + application.getContextPath() + "/DeleteGroup\" method=\"post\">"
+							out.println("<td><form action=\"" + webAppPath + "/DeleteGroup\" method=\"post\">"
 									+ "<input style=\"display:none\" id=\"deleteGroupButton" + i
 									+ "\" type=\"submit\" value=\"Delete Group\"/> <a class= \"easyui-linkbutton\" onclick=checker("
 									+ i + ",\"" + groups.get(i).get(1) + "\")>delete group</a>"
 									+ "<input type=\"text\" name=\"group_id\" value=\"" + groups.get(i).get(0)
 									+ "\" style=\"display:none\"/>" + "</form></td><td>");
 							//delete group with all members button
-									out.println("<td><form action=\"" + application.getContextPath()
-											+ "/DeleteGroupMembers\" method=\"post\">"
+							out.println("<td><form action=\"" + webAppPath + "/DeleteGroupMembers\" method=\"post\">"
 									+ "<input style=\"display:none\" id=\"deleteGroupMembersButton" + i
 									+ "\" type=\"submit\" value=\"Delete Group Members\"/> <a class= \"easyui-linkbutton\" onclick=checker("
 									+ i + ",\"" + groups.get(i).get(1) + "\")>delete group with members</a>"
 									+ "<input type=\"text\" name=\"group_id\" value=\"" + groups.get(i).get(0)
 									+ "\" style=\"display:none\"/>" + "</form></td><td>");
 							//set progress dropdown and button with set TCQ progress
-									out.println("<form action=\"" + application.getContextPath() + "/SetUserProgress\" method=\"post\">"
+							out.println("<form action=\"" + webAppPath + "/SetUserProgress\" method=\"post\">"
 									+ "<input type=\"text\" name=\"group_id\" value=\"" + groups.get(i).get(0)
 									+ "\" style=\"display:none\"/>"
 									+ "<input type=\"text\" name=\"cost\" value=\"71\" style=\"display:none\"/>"
@@ -159,7 +166,7 @@
 									a++;
 									if (groups.get(i).get(1).equals(row.get(5))) {
 										out.println("<tr><td>");
-												out.println("<form action=\"" + application.getContextPath()
+										out.println("<form action=\"" + webAppPath
 												+ "/DeleteUser\" method=\"post\"><input style=\"display:none\" id=\"deleteUserButton"
 												+ a + "\" type=\"submit\" "
 												+ "value=\"Delete User\"/><a class= \"easyui-linkbutton\" onclick=\"$('#deleteUserButton"
@@ -167,7 +174,7 @@
 										out.println("<input type=\"text\" name=\"delete_email\" value=\"" + row.get(6)
 												+ "\" style=\"display:none\"/></form>");
 										out.println("</td><td>");
-												out.println("<form action=\"" + application.getContextPath()
+										out.println("<form action=\"" + webAppPath
 												+ "/ResetUserProgress\" method=\"post\"><input style=\"display:none\" id=\"resetUserProgressButton"
 												+ a + "\" type=\"submit\" "
 												+ "value=\"Reset User\"/><a class= \"easyui-linkbutton\" onclick=\"$('#resetUserProgressButton"
@@ -212,16 +219,23 @@
 			</div></div>></div>
 
 
-            <div style="text-align: left; width: 80%; background-color: white; border-width:1px; border-style:solid; border-color:black; padding-bottom: 2%; height: 100%">
+            <div style="height: 300px; text-align: left; width: 80%; background-color: white; border-width:1px; border-style:solid; border-color:black; padding-bottom: 30px;margin-bottom: 30px">
                     <div style="width: 50%; float: left; padding-left: 5%">
                         <h4>Create New Group</h4>
 					<form action="NewUsergroup" method="post">
-						<div class="formLabel">name:</div>
-						<input type="text" name="groupname" maxlength="50" required /> <input
+						<div class="formLabel">Name:</div>
+						<input type="text" name="groupname" maxlength="50" required /><br /><br />
+						<div class="formLabel">Organisation:</div>
+						<input type="text" name="grouporg" maxlength="50" required /><br /><br />
+						<div class="formLabel">Description:</div>
+						<input type="text" name="groupdescription" maxlength="50" required /><br /><br />
+						<div class="formLabel">URL:</div>
+						<input type="text" name="groupurl" maxlength="50" required /> 
+						<input
 							type="submit" style="display: none" id="createGroup"
 							value="Create group" /><br /> <br /> <a
 							class="easyui-linkbutton"
-							onclick="$('#createGroup').trigger('click')">create group</a>
+							onclick="$('#createGroup').trigger('click')">Create group</a>
 						<p style="color: green">${success}</p>
 						<p style="color: red">${error}</p>
 					</form>
@@ -233,14 +247,14 @@
 							value="${username}" style="display: none" /> <input type="text"
 							name="role" maxlength="50" value="professor"
 							style="display: none" />
-						<div class="formLabel" style="padding-right: 20px">new password:</div>
+						<div class="formLabel" style="padding-right: 20px">New password:</div>
 						<input style="width: 200px" type="password" name="password" maxlength="50" /><br /> <br />
-						<div class="formLabel" style="padding-right: 20px">repeat new password:</div>
+						<div class="formLabel" style="padding-right: 20px">Repeat new password:</div>
 						<input style="width: 200px" type="password" name="password_repeat" maxlength="50" /><br />
 						<br /> <input id="updatePassword" type="submit"
 							name="updatePassword" value="Update password" hidden="hidden" />
 						<a class="easyui-linkbutton"
-							onclick="$('#updatePassword').trigger('click')">update
+							onclick="$('#updatePassword').trigger('click')">Update
 							password</a>
 					</form>
 				</div>
