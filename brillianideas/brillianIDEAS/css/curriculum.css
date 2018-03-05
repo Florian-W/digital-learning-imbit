@@ -27,7 +27,7 @@ html {
     grid-template-columns: repeat(14, 1fr);
 }
 
-.tintenfischkopf {
+.tintenfischarm {
     grid-column: 1 / 8;
     grid-row: 1 / 4;
     text-align: left;
