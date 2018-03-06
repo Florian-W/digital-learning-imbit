@@ -58,7 +58,7 @@ body {
   grid-template-rows: 1fr 1fr 1fr;
 
   /* coordinate-grid line */
-  border-right: 1px solid rgb(204,204,204);
+  border-right: 1px solid #991B33;
 }
 
 .content-2 {
@@ -79,8 +79,8 @@ body {
   grid-template-rows: 1fr 1fr 1fr;
 
   /* coordinate-grid lines */
-  border-top: 1px solid rgb(204,204,204);
-  border-right: 1px solid rgb(204,204,204);
+  border-top: 1px solid #991B33;
+  border-right: 1px solid #991B33;
 }
 
 .content-4 {
@@ -92,7 +92,7 @@ body {
   grid-template-rows: 1fr 1fr 1fr;
 
   /* coordinate-grid lines */
-  border-top: 1px solid rgb(204,204,204);
+  border-top: 1px solid #991B33;
 }
 
 .footer {
@@ -223,7 +223,7 @@ body {
   line-height: 1;
   position: relative;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   display: inline;
   font-family: 'Caveat Brush';
   color: black;
