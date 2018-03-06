@@ -80,6 +80,7 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Virtual Classrooms</h2>
+        <img src="img/thumbs/typen/virtual_classrooms.jpg" class = "modal_picture">
         <p>Ein virtuelles Klassenzimmer bezeichnet Lehrszenarien, in denen das Internet als Kommunikationsmedium für räumlich getrennte Lehrende und Lernende genutzt wird. Durch den Einsatz von Lernplattformen, Webcams, VoIP oder gar Whiteboards kann sowohl eine Sicht-, Hör- und Sprechverbindung der Beteiligten als auch ein gemeinsames und gleichzeitiges Bearbeiten von Dokumenten ermöglicht werden. Deshalb eignet sich dieses Lernform besonders um einzelne Lerninhalte zu verinnerlichen unabhängig von der Distanz.
         </p>
       </div>
@@ -320,7 +321,7 @@
   var id_modal = '';
   function showmodal(id) {
     id_modal = id+'_content';
-    document.getElementById(id_modal).style.display = "block";
+    document.getElementById(id_modal).style.display = "inline-block";
   }
 
   // When the user clicks on <span> (x), close the modal
