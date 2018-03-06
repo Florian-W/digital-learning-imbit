@@ -23,7 +23,7 @@
       <div id="virtual_classrooms" class="type_learning" onclick="showmodal(this.id)">Virtual <br /> Classrooms</div>
       <div id="blended_learning" class="type_learning" onclick="showmodal(this.id)">Blended<br /> Learning <br /></div>
       <div id="planspiele" class="type_learning" onclick="showmodal(this.id)">Planspiele</div>
-      <div id="serious_games"><div class="type_learning"><br />Serious<br /> Games</div></div>
+      <div id="serious_games" class="type_learning" onclick="showmodal(this.id)"><br />Serious<br /> Games</div>
     </div>
 
     <div class="content-2">
@@ -36,7 +36,7 @@
       <div id="social_networks" class="type_learning" onclick="showmodal(this.id)"><br />Social Networks &nbsp;</div>
       <div id="microblogging_twitter" class="type_learning" onclick="showmodal(this.id)">Microblogging/<br /> Twitter</div>
       <div id="webblogs" class="type_learning" onclick="showmodal(this.id)">&nbsp; &nbsp; Webblogs <br />&nbsp; </div>
-      <div id="lerntagebuecher" class="type_learning">Lerntagebücher <br /> &nbsp; </div>
+      <div id="lerntagebuecher" class="type_learning" onclick="showmodal(this.id)">Lerntagebücher <br /> &nbsp; </div>
     </div>
     <div class="content-3">
 
@@ -67,6 +67,7 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Interaktive Whiteboards</h2>
+        <img src="img/thumbs/typen/interaktive_whiteboards.jpg" class="modal_picture">
         <p>Ein interaktives Whiteboard - oder eine "digitale Tafel" - ist eine elektronische Projektionswand bzw. eine Weißwandtafel, die in Verbindung mit einem Computer und einem Projektor/Beamer funktioniert. Häufig werden Whiteboards innerhalb von Vorlesungen eingesetzt. Die Vorteile dieses Lernmediums liegen auf der Hand: Bessere Präsentationsmöglichkeiten von Unterrichtsinhalten, ein hohes Maß an Motivation und eine Vielzahl von Interaktionsmöglichkeiten. Letztendlich können mit Hilfe von interaktiven Whiteboards alle Medien wie Text, Grafik, Bilder, Animationen, Töne und Filme präsentiert werden.
         </p>
       </div>
@@ -87,6 +88,37 @@
 
     </div>
 
+<!-- The Modal serious games -->
+    <div id="serious_games_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="hideModalFromSpan()" >&times;</span>
+        <h2>Serious Games</h2>
+        <div class="row_wrapper">
+          <img src="img/thumbs/typen/serious_game.jpg" class = "modal_picture">
+          <p>Serious Games sind digitale Spiele bzw. spielähnliche Anwendungen die nicht ausschließlich auf Unterhaltung abzielen, sondern auch ernsthafte Wissensvermittlung und Weiterbildung zum Ziel haben. Im Unterschied zum klassischen Lernspiel sind bei Serious Games Entertainment- und Bildungsaspekte in sehr ausgewogenem Maße vorhanden und so eng miteinander verwoben, sodass das Spiel nicht auf Phasen der direkten Übermittlung des Lernstoffs folgt, sondern im Gegenteil das Lernen zu jedem Zeitpunkt im Spiel ermöglicht wird. Hier  www.springer.com/gp/book/9783319402154 kannst du außerdem einen IMBIT-Artikel zu Serious Games im Tagungsband der GALA-Konferenz 2015 finden (Springer LCNS 9599, Seite 42ff).
+          </p>
+        </div>
+        <div class="row_wrapper">
+          <a target="_blank" href="http://brillianicm.com/"><img src="img/learnings/BrillianICM_seriousgame.PNG" alt="&nbsp;" class="modal_picture"></a>
+          <p>BrillianICM ist ein interaktives Lernspiel, welches Wissen quer zu allen ICM Schwerpunktthemen abfragt und vertieft. Im Spielverlauf schlüpfst du in die Rolle eines Mitarbeiters im internationalen Umfeld und wirst mit Situationen konfrontiert, in denen du dein erworbenes Wissen über kulturelle Unterschiede und Besonderheiten anwenden musst, um eine erfolgreiche Zusammenarbeit über Ländergrenzen hinweg zu erreichen. Die abgedeckten Themenbereiche (bei wiederholter und aufmerksamer Spielaktivität) sind u.a: "Interkulturelle Zusammenarbeit und Kommunikation", "Das Phänomen Kultur", "Unternehmenskultur und nationale Kultur", sowie die "Zusammenarbeit in internationalen Teams". Dieses Serious Game wurde im Jahr 2015 von IMBIT-Studenten im Rahmen eines IT-Projekts entwickelt.  Stand: 2017  © DHBW Mannheim Autor: WIMBIT12C, WIMBIT13C
+          </p>
+        </div>
+        <div class="row_wrapper">
+          <a target="_blank" href="http://www.brilliancrm.com/"><img src="img/learnings/brilliancrm.JPG" alt="&nbsp;" class="modal_picture"></a>
+          <p>BrillianCRM ist ein Online-Projektmanagement-Spiel, das von IMBIT-Studenten der DHBW für Studenten und IT-Profis entworfen wurde. Ziel ist es, deine Ausbildung im Bereich Projektmanagement für Informationstechnologie zu bereichern. Für mehr Info's schau dir unser <a target="_blank" href="https://vimeo.com/96179581"> Teaser-Video </a> an! Stand: 2017 ©  DHBW Mannheim Autor: WIMBIT12C, WIMBIT13C
+          </p>
+        </div>
+        <div class="row_wrapper">
+          <a target="_blank" href="http://www.deloitteifrslearning.com/registration.asp"><img src="img/learnings/Deloitte_E-Learning_IFRS_und_IAS.png" alt="&nbsp;" class="modal_picture"></a>
+          <p>Dieses Lernspiel beschäftigt sich mit den Rechnungslegungsvorschriften IFRS und IAS . Die Module behandeln jeweils ein eigenes Fachgebiet, z.B. die Abrechnung von Einkommen oder Einkommensbesteuerung. Bereitgestellt wird das Spiel über Zip-Pakete, die man downloaden muss. Nach dem Entpacken kannst du über den Launcher das Modul starten. Dieses Medium eignet sich für das Nachbehandeln der IMBIT Summer School Themen.  Stand: 2013 © Deloitte Autor: Deloitte
+          </p>
+        </div>
+      </div>
+
+    </div>
+
     <!-- The Modal blended_learning -->
     <div id="blended_learning_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
 
@@ -94,6 +126,7 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Blended Learning</h2>
+        <img src="img/thumbs/typen/blended_learning.jpg" class="modal_picture">
         <p>Blended Lerning (dt. Integriertes Lernen) ist eine Mischform unterschiedlicher Lernprinzipien. Es vereint zumeist Elemente von Präsenzunterricht, E-Learnings und Selbstbildung, wobei das Verhältnis dieser Elemente zueinander variieren kann. Während E-Learnings und Arbeitsmaterialien beim selbständigen Vor- und Nachbereiten des Präsenzunterrichts helfen, dienen gelegentliche Face-to-Face Sitzungen hauptsächlich als Unterstützung im Umgang mit den Lernmaterialien. So kann der Lernprozess einerseits effektiv und flexibel gestaltet werden, z.B. durch E-Learnings mit anpassbaren Schwierigkeitsniveaus, und beinhaltet andererseits auch Elemente der sozialen Interaktion sowie die Möglichkeit das Wissen im Gespräch zu vertiefen.
         </p>
       </div>
@@ -107,6 +140,7 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Planspiele</h2>
+        <img src="img/thumbs/typen/planspiel.jpg" class="modal_picture">
         <p>Planspiele sind eine bewährte Technik im Business-Management-Training, da sie Kompetenzen im Umfeld des strategischen Managements schulen. Es handelt sich dabei konkret um interaktive Spiele, bei denen Teilnehmer in einer Simulation mit möglichst realitätsnahen Problemstellungen und Aufgaben konfrontiert werden, die es zu lösen gilt.Spieler schlüpfen in Rollen und sollen durch kreatives, selbständiges und organisiertes Handeln, sowie durch kritische Reflexion und Wechsel der Perspektive Entscheidungsprozesse durchleben und die ihrer Rolle zugedachten Aufgaben erfüllen. Teilnehmern wird so die Möglichkeit gegeben in risikofreiem Umfeld gelernte Theorien in der Praxis anzuwenden und sich durch Feedback dabei zu verbessern. Auch die Fähigkeit zur erfolgreichen Interaktion in Teams wird durch die Rollenkonstellationen im Planspiel trainiert.
         </p>
       </div>
@@ -120,12 +154,14 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Virtuelle Welten</h2>
+        <img src="img/thumbs/typen/virtuelle_3d_welt.jpg" class="modal_picture">
         <p>Virtuelle Welten sind Lernumgebungen innerhalb deren die Anwender in Form eines virtuellen Charakters, (Avatar) handeln und mit anderen Nutzern kommunizieren können. Dieser Avatar verfügt über bestimmte Merkmale und Fähigkeiten, die erweitert und verändert werden können.
           Genutzt werden virtuelle Welten unter anderem für Rollenspiele, Gruppenarbeiten, virtuelle Klassenzimmer sowie zur kooperativen Gestaltung von Objekten. Studien haben bewiesen, dass sich die verstärkte Präsenzerfahrung in virtuellen Welten positiv auf das Engagement und die informellen Lernprozesse der Studierenden auswirken. Mit virtuellen Welten können verschiedenen Lerntypen und -stile unterstützt werden, allerdings hängt der erfolgreiche Einsatz stark von der Usability und den technischen Rahmenbedingungen, wie Hardware oder Netzwerk, an der Universität bzw. auf Seiten des Anwenders ab.
         </p>
       </div>
 
     </div>
+
 
     <!-- The Modal moocs -->
     <div id="moocs_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
@@ -146,6 +182,7 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Chats</h2>
+        <img alt="img" src="img/thumbs/typen/chat.png" class="thumb">
         <p>Für eine aktive Verarbeitung des Lerninhaltes im Gedächtnis ist, neben der Wiederholung und den Lernerfolgskontrollen, eine Kommunikation über den Lerninhalt wichtig. Dadurch kommt es indirekt zu einer Wiederholung des Gelernten und damit zu einer weiteren Verankerung im Gehirn. Aus der Wiederholung ergibt sich, dass die Kommunikation nicht ausschließlich für den kommunikativen Lerntyp bedeutend ist. Der Chat stellt hierbei eine Variante der synchronen Kommunikation dar, die dabei hilft, das Gelernte zu verfestigen.
         </p>
       </div>
@@ -159,6 +196,7 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Foren</h2>
+        <img src="img/thumbs/typen/forum.png" class="modal_picture">
         <p>Foren sind meist Bestandteile von Online-Communities, in denen zwischen Teilnehmern Fragen, Antworten, Meinungen und Hinweise ausgetauscht werden. Somit kann man sich in einem Forum durch Interaktion mit Anderen weiterbilden. Neben der Möglichkeit selbst Fragen zu stellen, kann auch das Suchen vergangener ähnlicher Fragen und deren Beantwortung Aufschluss über die eigene Fragestellung geben. Verschlagwortung der Beiträge sowie Foren zu Fokusthemen (z.B. Tech Foren) können bei der gezielten Suche nach Antworten helfen. Oft geben auch Bewertungen und Kommentare der Teilnehmer Aufschluss über die Qualität der Beiträge. Im Gegensatz zu Chats findet hier eine asynchrone Kommunikation statt, das heißt, die Reaktion anderer Forenmitglieder erfolgt zeitversetzt.
         </p>
       </div>
@@ -172,6 +210,7 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Social Networks</h2>
+        <img src="img/thumbs/typen/Social_Network.png" class="modal_picture">
         <p>Ein sogenanntes Social Network stellt Online-Communities einen virtuellen Raum zur Verügung, in dem Mitglieder auf verschiedene Art und Weise interagieren können. Insofern fungieren sie auch als Forum, in dem Fragen beantwortet werden und gemeinsame Diskussionen zur Wissensbildung führen können. Außerdem können über Social Media Informationen schnell und für einen großen Empfängerkreis bereitgestellt werden: Zeitungen und Zeitschriften besitzen beispielsweise Profile, über die sie aktuelle Artikel und Neuigkeiten verbreiten. Außerdem können Firmen über Produkte und Dienstleistungen informieren. Profile, die mit eigenen Interessen und Informationsbedarf übereinstimmen, können verfolgt oder 'geliked' werden, sodass Neuigkeiten automatisch übermittelt werden. Je nach Quelle und bereitstellendem Profil ist allerdings zu beachten, dass die veröffentlichen Informationen oft als subjektiv eingefärbt einzustufen sind.
         </p>
       </div>
@@ -185,6 +224,7 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Microblogging</h2>
+        <img src="img/thumbs/typen/microblogging.jpg" class="modal_picture">
         <p>Microblogging, wie etwa Twitter, eignen sich hervorragend um "Häppchenweise" wissen zu vermitteln, wie etwa kurze Fakten.
         </p>
       </div>
@@ -198,11 +238,27 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Weblogs</h2>
+        <img src="img/thumbs/typen/weblog.jpg" class="modal_picture">
         <p>Ein Weblog ist ein Logbuch im Web – ein Web-Tagebuch - in das man Beiträge aller Art hineinschreiben kann. Ein Weblog (kurz Blog) besteht im Grunde aus ganz „normalen” Webseiten, die im Gegensatz zu den gewohnten statischen HTML-Seiten bei jedem Aufruf dynamisch aus einer Datenbank erzeugt werden. Diese Blogs erlauben Interaktivität durch Kommentierungsmöglichkeiten. Es kann sich durchaus lohnen, einen Weblog während des Studiums zu pflegen um Gelerntes zu festigen. Außerdem gibt es Anderen die Möglichkeit von eigenen Erfahrungen zu profitieren.
         </p>
       </div>
 
     </div>
+
+    <!-- The Modal lerntagebuecher -->
+    <div id="lerntagebuecher_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="hideModalFromSpan()" >&times;</span>
+        <h2>Lerntagebücher</h2>
+        <img src="img/thumbs/typen/lerntagebuch.jpg" class="modal_picture">
+        <p>Das Führen von Lerntagebüchern ist eine bewährte Methode, die eigene Lernpraxis zu dokumentieren, zu erkunden, zu überprüfen und möglicherweise zu verändern. Lerntagebücher werden auch im Ablauf von universitären Lehrveranstaltungen eingesetzt, um die persönliche Auseinandersetzung von Studierenden mit Lehrinhalten und Lehrzielen zu dokumentieren und zu reflektieren. Diese Methode ist vor allem für solche Lehrveranstaltungen geeignet, in denen es darum geht, eigene Erfahrungen und Einstellungen zu aktualisieren und sich mit ihnen kritisch auseinanderzusetzen. Auch lassen sich die kognitiven Ziele der Lehrveranstaltung wesentlich stärker "personenbezogen" gestalten (vgl. Stangl 1998).</p>
+        </p>
+      </div>
+
+    </div>
+
 
     <!-- The Modal spiel -->
     <div id="spiel_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
@@ -211,7 +267,18 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Spiel</h2>
-        <p>Bei der Lernform Spiel geht es darum, bestimmte Verhaltensweisen und  Entscheidungsmuster von Menschen nachzuvollziehen und den Umgang mit Konflikten zu üben. Somit wird erfahrungsbezogenes Lernen ermöglicht. Mithilfe des Spiels werden Wahrnehmungen erweitert und bestimmte Verhaltensmuster diskutiert und reflektiert.</p>
+        <div class="row_wrapper">
+          <img src="img/thumbs/typen/spiel.png" class="modal_picture">
+          <p>Bei der Lernform Spiel geht es darum, bestimmte Verhaltensweisen und  Entscheidungsmuster von Menschen nachzuvollziehen und den Umgang mit Konflikten zu üben. Somit wird erfahrungsbezogenes Lernen ermöglicht. Mithilfe des Spiels werden Wahrnehmungen erweitert und bestimmte Verhaltensmuster diskutiert und reflektiert.</p>
+        </div>
+        <div class="row_wrapper">
+          <a target="_blank" href="http://www.planspielw.de/Staff.aspx?token=eiuyuaevlvmjcpzavcnqbluu"><img src="img/learnings/Planspiel_Wein.jpg" class="modal_picture"><a/>
+          <p>Im Planspiel Wein führst du eine virtuelle Winzerei. Im Laufe des Spiels musst du dich sowohl um den Vertrieb, die Produktion und die Lagerung, als auch das Personalwesen und die Finanzierung kümmern. So vereint das Planspiel viele verschiedene Bereiche des IMBIT-Studiums und hilft dir Erfahrung im Management eines Unternehmens zu sammeln.  Stand: 2017 © Dr. Martin Brodeck Autor: Dr. Martin Brodeck</p>
+        </div>
+        <div class="row_wrapper">
+          <a target="_blank" href="http://www.topsim.com/de/startseite/startseite.html"><img src="img/learnings/Planspiel.jpg" class="modal_picture"></a>
+          <p>Das kompetitive Industrieplanspiel TOPSIM – General Management ist eine anspruchsvolle Management Simulation, welche die komplexen Zusammenhänge eines produzierenden mittelständischen Unternehmens in der Drucker- und Kopierer Branche abbildet. In der Rolle der Geschäftsführung triffst du als Teilnehmer strategische und operative Entscheidungen in den Unternehmensbereichen Marketing, Vertrieb, Forschung und Entwicklung, Einkauf, Fertigung, Personal und Verwaltung. Dabei erlernst du, strukturiert mit großen Informationsmengen umzugehen und die Reichweite deiner Entscheidungen abzuschätzen.  Stand: 2017 © TATA Interactive Systems GmbH Autor: TATA Interactive Systems GmbH</p>
+        </div>
       </div>
 
     </div>
@@ -223,6 +290,7 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>CBT WBT</h2>
+        <img src="img/thumbs/typen/cbtwbt.jpg" class="modal_picture">
         <p>Unter Computer-Based-Training (CBT) versteht man computerunterstützte Lernprogramme, die inhaltlich abgeschlossene Lehrmaterialien enthalten. Diese können auch offline verwendet werden, was den Einsatz in Gebieten mit schlechter Internetverbindung ermöglicht. Darin liegt auch der Unterschied zum Web-Based-Training (WBT), in dem die Lernmaterialien online bereitgestellt werden. Außerdem können die Dozenten und Teilnehmer über das Internet kommunizieren.</p>
       </div>
 
@@ -235,6 +303,7 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Wiki</h2>
+        <img src="img/thumbs/typen/wiki.png" class="modal_picture">
         <p>Ein Wiki ist ein Medium, das durch seine offene Struktur für viele Anwendungsfälle geeignet sein kann. Es ist vergleichbar mit der Universalität einer Wandtafel, wobei das Wiki gleichzeitig eine Archivfunktion beinhalten kann. Im Gegensatz etwa zu Content-Management-Systemen ist ein Wiki flexibler, da die Strukturierung der Daten kaum vorgegeben ist.Es ist ein zukunftsweisendes System, das die Medienkompetenz der Schüler wie Lehrer stärkt. Auch Wikipedia, das wohl bekannteste und größte Wiki, kann aktiv in der Schule und für die Schule genutzt werden. Auch wir haben eine Wiki erstellt, ihr könnt diese hier finden: http://wiki.brillianideas.com/index.php/Hauptseite Es handelt sich hierbei um eine Wiki rundum das Thema Cloud, viel Spaß! Quelle: https://wiki.zum.de/wiki/Wikis_in_der_Schule</p>
       </div>
 
@@ -247,7 +316,16 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Podcasts</h2>
-        <p>Podcast ist ein zusammengesetztes Kunstwort aus den Begriffen iPod und Broadcast und meint Audio- und Videobeiträge, die über das Internet zum Download bereitgestellt werden. Nach dem Herunterladen können Interessenten die veröffentlichten Beiträge zu jeder beliebigen Zeit und an jedem beliebigen Ort anhören und ansehen. Podcasts können über verschiedene Feed-Formate abonniert werden (bspw. RSS-Feed).</p>
+        <div class="row_wrapper">
+          <img alt="img" src="img/thumbs/typen/podcast.jpg" class="modal_picture">
+          <p>Podcast ist ein zusammengesetztes Kunstwort aus den Begriffen iPod und Broadcast und meint Audio- und Videobeiträge, die über das Internet zum Download bereitgestellt werden. Nach dem Herunterladen können Interessenten die veröffentlichten Beiträge zu jeder beliebigen Zeit und an jedem beliebigen Ort anhören und ansehen. Podcasts können über verschiedene Feed-Formate abonniert werden (bspw. RSS-Feed).</p>
+        </div>
+        <div>
+          <a target="_blank" href="http://biz-anthro.com/index.php/podcasts/" target=" _blank">
+            <img src="img/learnings/Business_Anthropology.jpg" alt="&nbsp;" class="modal_picture">
+          </a>
+          <p>Diese Seite wurde im Rahmen des Seminars “Business Anthropology” am Institut für Ethnologie der Universität Heidelberg erstellt und gibt dir aus studentischer Sicht einen Einblick in den spannenden Anwendungsbereich des Fachs Ethnologie. Die hier erworbenen Kenntnisse können dein Wissen im Bereich "Intercultural Management" erweitern.  Stand: 2017 © Institut für Ethnologie der Universität Heidelberg Autor: Frauke Mörike</p>
+        </div>
       </div>
 
     </div>
@@ -259,7 +337,14 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Augmented Reality</h2>
-        <p>Unter Augmented Reality versteht man die computergestützte Erweiterung der Wahrnehmung der Realität. Dabei können beispielsweise Bilder oder Vidoes über Einblendungen oder Überlagerungen so dargestellt werden, als wären diese in der Realität zu sehen. Zur Darstellung der Augmented Reality wird meistens eine Kamera, Software und GPS, sowie verschiedene Sensoren verwendet. Mithilfe dieser können beispielsweise Kamerabilder mit Informationen zu Sehenswürdigkeiten oder Straßennamen ergänzt werden.</p>
+        <div class="row_wrapper">
+          <img src="img/thumbs/typen/ar.jpg" class="modal_picture">
+          <p>Unter Augmented Reality versteht man die computergestützte Erweiterung der Wahrnehmung der Realität. Dabei können beispielsweise Bilder oder Vidoes über Einblendungen oder Überlagerungen so dargestellt werden, als wären diese in der Realität zu sehen. Zur Darstellung der Augmented Reality wird meistens eine Kamera, Software und GPS, sowie verschiedene Sensoren verwendet. Mithilfe dieser können beispielsweise Kamerabilder mit Informationen zu Sehenswürdigkeiten oder Straßennamen ergänzt werden.</p>
+        </div>
+        <div>
+          <a target="_blank" href="http://amazing-sql.com/"><img src="img/learnings/AmazingSQL.png" class="modal_picture"></a>
+          <p>Amazing SQL ist eine kostenlose Software, mit der du SQL-Abfragen in verschiedenen Schwierigkeitsstufen üben kannst. Die Software eignet sich sowohl für Anfänger als auch für Fortgeschrittene.  Stand: 2017 © AmazingSQL Autor: Andreas Palosi und Jan Freidinger</p>
+        </div>
       </div>
 
     </div>
@@ -271,6 +356,7 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Learning on Demand</h2>
+        <img src="img/thumbs/typen/lod.jpg" class="modal_picture">
         <p>Mit Learning-on-Demand werden Studierende zielbezogener auf unmittelbar bevorstehende Themen und Aufgaben vorbereitet. Diese Lernform kann nicht nur zeit-, sondern auch ortsunabhängig in Anspruch genommen werden. Die Ortsunabhängigkeit birgt die Gefahr, dass das Lernen aufgrund störender Umgebungseinwirkungen unterbrochen wird. Daneben besteht das Risiko, dass die Studierenden zunehmend nur unter Zeitdruck und sehr oberflächlich lernen, da sie erst mit dem Lernen beginnen, wenn die Notwendigkeit gegeben ist. Tendenziell sorgt Learning-on-Demand aber für einen effektiven und effizienten Transfer der erlernten Inhalte.</p>
       </div>
 
@@ -283,7 +369,12 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Lernfilme</h2>
-        <p>Als Lernfilm bezeichnet man einen für Unterrichtszwecke produzierten Film. Dieser soll schulische Lernprozesse unterstützen und wird von online Medienzentren verliehen und vertrieben. Der Lernstoff soll filmisch vermittelt werden. Dabei liegt der Schwerpunkt auf der Übermittlung von Wissen und nicht der Darstellung vom Emotionen oder Handlungen. Lernfilme sind ebenso unter der englischen Bezeichnung Tutorial bekannt und im Internet auffindbar.</p>
+        <div class="row_wrapper">
+          <img src="img/thumbs/typen/lernfilm.jpg" class="modal_picture">
+          <p>Als Lernfilm bezeichnet man einen für Unterrichtszwecke produzierten Film. Dieser soll schulische Lernprozesse unterstützen und wird von online Medienzentren verliehen und vertrieben. Der Lernstoff soll filmisch vermittelt werden. Dabei liegt der Schwerpunkt auf der Übermittlung von Wissen und nicht der Darstellung vom Emotionen oder Handlungen. Lernfilme sind ebenso unter der englischen Bezeichnung Tutorial bekannt und im Internet auffindbar.</p>
+        </div>
+        <div class="row_wrapper">
+        </div>
       </div>
 
     </div>
@@ -295,6 +386,7 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Simulationen</h2>
+        <img alt="img" src="img/thumbs/typen/sim.jpg" class="modal_picture">
         <p>Eine Simulation ist eine möglichst realitätsnahe Abbildung der Wirklichkeit. Der Mensch lernt am besten in natürlichen Umgebungen, sodass man versucht, den Lernprozess mit Simulationen zu unterstützen. Beispielsweise werden diese dazu eingesetzt, Szenarien durchzuspielen, bei denen Menschen zu Schaden kommen könnten. Durch eine virtuelle Lernumgebung soll das Lernen unterstützt werden.</p>
       </div>
 
@@ -307,6 +399,7 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Interaktive E-Books</h2>
+        <img alt="img" src="img/thumbs/typen/ebook.jpg" class="thumb">
         <p>Interaktive E-Books erweitern die Textinhalte der E-Books um multimediale Inhalte wie Audios und Videos. Der Leser interagiert mit den Inhalten beispielsweise via Mausklick, drag-and-drop oder durch weitere Benutzeraktionen.</p>
       </div>
 
