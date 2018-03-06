@@ -1,6 +1,5 @@
 package org.dhbw.imbit11.backend;
 
-
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.HashMap;
@@ -47,15 +46,15 @@ public class JSONCreator extends HttpServlet {
 					.add("name", "DHBW Mannheim Studiengang IMBIT")
 //					.add("name", issuer_info[0])
 					.add("org", "DHBW Mannheim")
-//					.add("name", issuer_info[1])
+//					.add("org", issuer_info[1])
 					.add("description", "Duale Hochschule Baden-Württemberg Studiengang International Management for Business and Information Technology")
-//					.add("name", issuer_info[2])
+//					.add("description", issuer_info[2])
 					.add("url", "http://www.imbit.dhbw-mannheim.de/")
-//					.add("name", issuer_info[3])
+//					.add("url", issuer_info[3])
 				)
 			)
 			.add("verify", factory.createObjectBuilder()
-				.add("url", "")
+				.add("url", "key-pem-file") //add key-pem file on server here
 				.add("type", "signed")
 			)
 			.build();
@@ -63,8 +62,6 @@ public class JSONCreator extends HttpServlet {
 		userRealm.newBadge(badge_id, recipient, current_date, info[1]);
 		return assertionString;
 	}
-	
-
 
 	//Database query for defining the UID of the new Badge
 	public static int getAssertionId() throws SQLException {
