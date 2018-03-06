@@ -31,8 +31,9 @@ html {
     grid-column: 1 / 8;
     grid-row: 1 / 4;
     text-align: left;
-    height: 75%;
-    width: auto;
+    height: auto;
+    width: 25%;
+    /* transform: rotate(-90deg) */
 }
 
 .ueberschriftenfeld {
@@ -115,7 +116,7 @@ html {
 /* waagrechte Listen */
 
 .ziele li:not(:first-child):before {
-    content: "• ";
+    content: "- ";
 }
 
 
