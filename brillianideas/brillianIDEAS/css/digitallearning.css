@@ -122,6 +122,7 @@ body {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    text-align: center; /*Center the Modal Box*/
 }
 
 /* Modal Content/Box */
@@ -131,6 +132,8 @@ body {
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
+    text-align: left; /*reset text-align: center from .model*/
+    display: inline-block; /*Wrap Modal Content*/
 }
 
 /* The Close Button */
@@ -438,6 +441,12 @@ body {
 
 }
 
+.modal_picture{
+  height: 16vh;
+  padding-right: 5px;
+  float: left;
+}
+
 /* label {
   -webkit-appearance: push-button;
   -moz-appearance: button;
@@ -449,4 +458,4 @@ body {
 input[type=checkbox]:checked ~ div{
    visibility: hidden;
 
-} */ */
+} */

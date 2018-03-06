@@ -1,8 +1,3 @@
-<!-- <div id="site" class="imbit">
-<h1 id="title_imbit">IMBIT-Curriculum</h1>
-</div> -->
-
-
 <!DOCTYPE html>
 
 <html>
@@ -22,21 +17,21 @@
     <!-- HIER BEGINNT Grid 1 -->
     <div class="gridlayout" id="Grid1" style="display:grid">
 
-        <!-- <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" /> -->
+        <!-- <img class="tintenfischarm" src="img/tentakelarm_u11.png" /> -->
 
-        <!-- Image Tentakel Left -->
-        <div class="grid_column_10_14 grid_row_8_10">
-            <img id="tentacle_img_left" src="img/tentakel_rtl.png" />
+        <!-- Image Tentakel Right -->
+        <div class="grid_column_10_14 grid_row_8_10" style="text-align: right">
+            <img src="img/tentakel_rtl.png" />
         </div>
 
-        <!-- Image Tentakel Right-->
+        <!-- Image Tentakel Left-->
         <div class="grid_column_1_5 grid_row_5_10">
-            <img id="tentacle_img_right" src="img/tentakel_ltr.png" />
+            <img src="img/tentakel_ltr.png" />
         </div>
 
         <!-- Heading IMBIT Curriculum-->
         <ul class="ueberschriftenfeld">
-            <li>IMBIT-Curriculum</li>
+            <li> <a href="docs/IMBIT-Studienplan ab 2018.pdf" style="text-decoration:none; color:#991B33" target="_blank">IMBIT-Curriculum</a></li>
         </ul>
 
         <!-- Fächer auf Landingpage-->
@@ -57,7 +52,7 @@
         <span class="grid_row_8 grid_column_6_9 modul" onclick="changeVisible('Grid1', 'methodischegrundlagen')">Methodische Grundlagen</span>
 
         <!-- Praxisphasen -->
-        <span class="grid_row_10 grid_column_11_12 modul" onclick="changeVisible('Grid1', 'praxisphasen')">Praxisphasen</span>
+        <span class="grid_row_10 grid_column_11_12 modul" style="justify-self:left" onclick="changeVisible('Grid1', 'praxisphasen')">Praxisphasen</span>
 
     </div>
 
@@ -68,7 +63,7 @@
     <div class="gridlayout" id="wirtschaftsinformatik">
 
         <!-- Tentakel Kopf_Home -->
-        <!-- <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" /> -->
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <!-- Menü für Grid für Wirtschaftsinformatik -->
         <ul class="ueberschriftenfeld">
@@ -79,28 +74,28 @@
 
         <!-- Module von Wirtschaftsinformatik -->
         <!-- bwl. Lösungen -->
-        <span class="grid_column_2 grid_row_3 modul" onclick="changeVisible('wirtschaftsinformatik', 'W3WI_IBI402')">Betriebswirtschaftliche Standardlösungen</span>
+        <span class="grid_column_2_4 grid_row_3 modul" onclick="changeVisible('wirtschaftsinformatik', 'W3WI_IBI402')">Betriebswirtschaftliche Standardlösungen</span>
 
         <!-- Wirtschaftsinformatik -->
-        <span class="grid_column_6 grid_row_6 modul" onclick="changeVisible('wirtschaftsinformatik', 'W3WI_101')">Wirtschaftsinformatik</span>
+        <span class="grid_column_3_5 grid_row_6 modul" onclick="changeVisible('wirtschaftsinformatik', 'W3WI_101')">Wirtschaftsinformatik</span>
 
         <!-- Fallstudie -->
-        <span class="grid_column_11 grid_row_4 modul" onclick="changeVisible('wirtschaftsinformatik', 'W3WI_102_Fallstudie')">Fallstudie</span>
+        <span class="grid_column_11_13 grid_row_4 modul" onclick="changeVisible('wirtschaftsinformatik', 'W3WI_102_Fallstudie')">Fallstudie</span>
 
         <!-- Integrationsseminar -->
-        <span class="grid_column_2 grid_row_9 modul" onclick="changeVisible('wirtschaftsinformatik', 'W3WI_103')">Integrationsseminar zur ausgewählten Themen der Wirtschaftsinformatik</span>
+        <span class="grid_column_2_8 grid_row_10 modul" onclick="changeVisible('wirtschaftsinformatik', 'W3WI_103')">Integrationsseminar zur ausgewählten Themen der Wirtschaftsinformatik</span>
 
         <!-- Neue Konzepte -->
-        <div class="grid_column_8 grid_row_10 modul" onclick="changeVisible('wirtschaftsinformatik', 'W3WI_111')">Neue Konzepte</div>
+        <div class="grid_column_10_12 grid_row_9 modul" onclick="changeVisible('wirtschaftsinformatik', 'W3WI_111')">Neue Konzepte</div>
 
         <!-- Projektmanagement -->
-        <div class="grid_column_9 grid_row_8 modul" onclick="changeVisible('wirtschaftsinformatik', 'W3WI_102_PM')">Projektmanagement</div>
+        <div class="grid_column_11_13 grid_row_7 modul" onclick="changeVisible('wirtschaftsinformatik', 'W3WI_102_PM')">Projektmanagement</div>
 
         <!-- Projekt -->
-        <div class="grid_column_4 grid_row_9 modul" onclick="changeVisible('wirtschaftsinformatik', 'W3WI_107')">Projekt</div>
+        <div class="grid_column_10_11 grid_row_5 modul" onclick="changeVisible('wirtschaftsinformatik', 'W3WI_107')">Projekt</div>
 
         <!-- Systemanalyse -->
-        <div class="grid_column_7 grid_row_7 modul" onclick="changeVisible('wirtschaftsinformatik', 'W3WI_101_SysAn')">Systemanalyse</div>
+        <div class="grid_column_6_8 grid_row_7 modul" onclick="changeVisible('wirtschaftsinformatik', 'W3WI_101_SysAn')">Systemanalyse</div>
 
     </div>
 
@@ -108,7 +103,7 @@
     <div class="gridlayout" id="methodischegrundlagen">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <!-- Menü für Grid für Methodische Grundlagen -->
         <ul class="ueberschriftenfeld">
@@ -119,25 +114,25 @@
 
         <!-- Module von Methodische Grundlagen -->
         <!-- Mathematik I -->
-        <span class="grid_column_3 grid_row_3 modul" onclick="changeVisible('methodischegrundlagen', 'W3WI_601')">Mathematik I</span>
+        <span class="grid_column_2_5 grid_row_5 modul" onclick="changeVisible('methodischegrundlagen', 'W3WI_601')">Mathematik I</span>
 
         <!-- Mathematik II -->
-        <span class="grid_column_6 grid_row_6 modul" onclick="changeVisible('methodischegrundlagen', 'W3WI_602')">Mathematik II</span>
+        <span class="grid_column_2_3  grid_row_8 modul" onclick="changeVisible('methodischegrundlagen', 'W3WI_602')">Mathematik II</span>
 
         <!-- Grundlagen des wissenschaftlichen Arbeitens -->
-        <span class="grid_column_11 grid_row_4 modul" onclick="changeVisible('methodischegrundlagen', 'W3WI_701_wissArbeiten')">Grundlagen des wissenschaftlichen Arbeitens</span>
+        <span class="grid_column_5_9 grid_row_3 modul" onclick="changeVisible('methodischegrundlagen', 'W3WI_701_wissArbeiten')">Grundlagen des wissenschaftlichen Arbeitens</span>
 
         <!-- Präsentations- und Kommunikationskompetenzen -->
-        <span class="grid_column_2 grid_row_7 modul" onclick="changeVisible('methodischegrundlagen', 'W3WI_701_praesentation_kommunikation')">Präsentations- und Kommunikationskompetenzen</span>
+        <span class="grid_column_6_11 grid_row_7 modul" onclick="changeVisible('methodischegrundlagen', 'W3WI_701_praesentation_kommunikation')">Präsentations- und Kommunikationskompetenzen</span>
 
         <!-- Schlüsselqualifikationen II -->
-        <div class="grid_column_8 grid_row_10 modul" onclick="changeVisible('methodischegrundlagen', 'W3WI_702')">Schlüsselqualifikationen II</div>
+        <div class="grid_column_5_9 grid_row_10 modul" onclick="changeVisible('methodischegrundlagen', 'W3WI_702')">Schlüsselqualifikationen II</div>
 
         <!-- Schlüsselqualifikationen III -->
-        <div class="grid_column_9 grid_row_8 modul" onclick="changeVisible('methodischegrundlagen', 'W3WI_703')">Schlüsselqualifikationen III</div>
+        <div class="grid_column_10_13 grid_row_4 modul" onclick="changeVisible('methodischegrundlagen', 'W3WI_703')">Schlüsselqualifikationen III</div>
 
         <!-- Statistik in der Anwendung -->
-        <div class="grid_column_4 grid_row_9 modul" onclick="changeVisible('methodischegrundlagen', 'W3WI_IBI405')">Statistik in der Anwendung</div>
+        <div class="grid_column_10_13 grid_row_9 modul" onclick="changeVisible('methodischegrundlagen', 'W3WI_IBI405')">Statistik in der Anwendung</div>
 
     </div>
 
@@ -145,7 +140,7 @@
     <div class="gridlayout" id="informatik">
 
         <!-- Tentakel Kopf_Home -->
-        <!-- <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" /> -->
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <!-- Menü für Grid für Methodische Grundlagen -->
         <ul class="ueberschriftenfeld">
@@ -156,22 +151,22 @@
 
         <!-- Module von Informatik -->
         <!-- Kommunikations- und Betriebssysteme -->
-        <span class="grid_column_3 grid_row_3 modul" onclick="changeVisible('informatik', 'W3WI_104_CS_OS')">Kommunikations- und Betriebssysteme</span>
+        <span class="grid_column_3_4 grid_row_4 modul" onclick="changeVisible('informatik', 'W3WI_104_CS_OS')">Kommunikations- und Betriebssysteme</span>
 
         <!-- Datenbanken -->
-        <span class="grid_column_5 grid_row_7 modul" onclick="changeVisible('informatik', 'W3WI_105')">Datenbanken</span>
+        <span class="grid_column_6_9 grid_row_3 modul" onclick="changeVisible('informatik', 'W3WI_105')">Datenbanken</span>
 
         <!--Entwicklung verteilter Systeme -->
-        <span class="grid_column_11 grid_row_4 modul" onclick="changeVisible('informatik', 'W3WI_110')">Entwicklung verteilter Systeme</span>
+        <span class="grid_column_10_13 grid_row_5 modul" style="justify-self:right" onclick="changeVisible('informatik', 'W3WI_110')">Entwicklung verteilter Systeme</span>
 
         <!-- Grundlagen der IT -->
-        <span class="grid_column_2 grid_row_7 modul" onclick="changeVisible('informatik', 'W3WI_104_ITIntro')">Grundlagen der IT</span>
+        <span class="grid_column_4_6 grid_row_9 modul" onclick="changeVisible('informatik', 'W3WI_104_ITIntro')">Grundlagen der IT</span>
 
         <!-- Programmierung I und II -->
-        <div class="grid_column_8 grid_row_3 modul" onclick="changeVisible('informatik', 'W3WI_108_109')">Programmierung</div>
+        <div class="grid_column_6_8 grid_row_6 modul" onclick="changeVisible('informatik', 'W3WI_108_109')">Programmierung</div>
 
         <!-- Software-Lebenszyklus -->
-        <div class="grid_column_9 grid_row_8 modul" onclick="changeVisible('informatik', 'W3WI_IBI302')">Software-Lebenszyklus</div>
+        <div class="grid_column_11_13 grid_row_8 modul" onclick="changeVisible('informatik', 'W3WI_IBI302')">Software-Lebenszyklus</div>
 
     </div>
 
@@ -179,7 +174,7 @@
     <div class="gridlayout" id="wirtschaft">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <!-- Menü für Grid für Methodische Grundlagen -->
         <ul class="ueberschriftenfeld">
@@ -219,7 +214,7 @@
     <div class="gridlayout" id="interkulturell">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <!-- Menü für Grid für Methodische Grundlagen -->
         <ul class="ueberschriftenfeld">
@@ -246,12 +241,12 @@
     <div class="gridlayout" id="W3WI_101">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_101', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_101', 'wirtschaftsinformatik')">Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik</li>
-            <li> Modul Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik</li>
+            <li onclick="toggleVisible('W3WI_101_quellen')">Modul Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik</li>
         </ul>
 
         <!-- Moocs -->
@@ -285,7 +280,7 @@
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li>Im Fokus steht die Wertschöpfung durch Informationstechnik. Die Lehrveranstaltung behandelt Konzeption, Entwicklung und Anwendung von ERP-Systemen.</li>
+                <li>Im Fokus steht die Wertschöpfung durch Informationstechnik. Die Lehrveranstaltung behandelt Konzeption, Entwicklung und Anwendung von ERP-Systemen.<span style="color:grey"> Jahr 1</span></li>
             </ul>
             <ul class="ziele">
                 <li>Kompetenzziele</li>
@@ -294,7 +289,7 @@
                 <li>Informationssysteme als soziotechnische Systeme</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_101_quellen">
                 <li>Abts, D.; Mülder, W.: Grundkurs Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik, Springer Vieweg, Wiesbaden.</li>
                 <li>Bächle, M.; Kolb, A.: Einführung in die Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik, Oldenbourg, München.</li>
                 <li>Hansen, H.R.; Mendling, J.; Neumann, G.: Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik, De Gruyter, Oldenbourg.</li>
@@ -307,12 +302,12 @@
     <div class="gridlayout" id="W3WI_IBI402">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_IBI402', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_IBI402', 'wirtschaftsinformatik')">Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik</li>
-            <li>Modul Be&shy;triebs&shy;wirt&shy;schaft&shy;liche Stand&shy;ard&shy;lös&shy;ungen</li>
+            <li onclick="toggleVisible('W3WI_IBI402_quellen')">Modul Be&shy;triebs&shy;wirt&shy;schaft&shy;liche Stand&shy;ard&shy;lös&shy;ungen</li>
         </ul>
 
         <!-- Moocs (None) -->
@@ -323,16 +318,17 @@
                 <li>Im Fokus steht die Wertschöpfung durch Informationstechnik. Die Lehrveranstaltung behandelt Konzeption, Entwicklung und Anwendung von ERP-Systemen.</li>
             </ul>
             <ul class="ziele">
-                <li>Kompetenzziele</li>
-                <li>Verständnis über Aufgaben und Systeme der Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik</li>
-                <li>Taxonomie der Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik</li>
-                <li>Informationssysteme als soziotechnische Systeme</li>
+                <li>Kompetenz&shy;ziele</li>
+                <li>Verstehen von betriebs&shy;wirtschaft&shy;lichen Standard&shy;prozessen und Methoden</li>
+                <li>Über&shy;blick über notwendige Daten in Standard&shy;lösungen, sowie Abläufen in ERP/SCM Systemen</li>
+                <li>Besch&shy;reibung, Model&shy;lierung und Anwendung von Prozess&shy;modellen</li>
             </ul>
 
-            <ul class="quellen">
-                <li>Abts, D.; Mülder, W.: Grundkurs Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik, Springer Vieweg, Wiesbaden.</li>
-                <li>Bächle, M.; Kolb, A.: Einführung in die Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik, Oldenbourg, München.</li>
-                <li>Hansen, H.R.; Mendling, J.; Neumann, G.: Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik, De Gruyter, Oldenbourg.</li>
+            <ul class="quellen" style="display:none" id="W3WI_IBI402_quellen">
+                <li>Wannenwetsch, H. (Hrsg.): Integrierte Materialwirtschaft und Logistik, Springer.</li>
+                <li>Thonemann, U.: Operations Management &mdash; Konzepte, Methoden und Anwendungen, Pearson.</li>
+                <li>Mangan u.a.: Global Logistics and Supply Chain Management, Wiley.</li>
+                <li> Supply Chain Counsel: Supply-Chain-Operations-Reference-Modell (SCOR).</li>
             </ul>
         </div>
     </div>
@@ -341,12 +337,12 @@
     <div class="gridlayout" id="W3WI_102_Fallstudie">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_102_Fallstudie', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_102_Fallstudie', 'wirtschaftsinformatik')">Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik</li>
-            <li>Modul Fall&shy;studie</li>
+            <li onclick="toggleVisible('W3WI_102_Fallstudie_quellen')">Modul Fall&shy;studie</li>
         </ul>
 
         <!-- Moocs (None) -->
@@ -354,7 +350,8 @@
         <div class="modulbeschreibung">
             <ul style="list-style:none">
                 <li>Hier werden Studierende an gemeinsame Projekt&shy;arbeit und Team&shy;organisation heran&shy;ge&shy;f&uuml;hrt, indem Pro&shy;blem&shy;stellungen aus verschiedenen Themen&shy;bereichen der Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik
-                    in selbst&shy;organisierten Teams angegangen und gel&ouml;st werden.</li>
+                    in selbst&shy;organisierten Teams angegangen und gel&ouml;st werden.<span style="color:grey"> Jahr 2
+                    </span></li>
             </ul>
             <ul class="ziele">
                 <li>Kompetenzziele</li>
@@ -369,7 +366,7 @@
     <div class="gridlayout" id="W3WI_103">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_103', 'Grid1')">IMBIT-Curriculum</li>
@@ -381,12 +378,12 @@
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li>Aktuellen Entwicklungen in der Wirtschaftsinformatik und verwandten Disziplinen werden wissenschaftlich aufgearbeitet und mit aktuellen Fragen der Unternehmenspraxis verknüpft.</li>
+                <li>Aktuelle Entwicklungen der Wirtschaftsinformatik und in verwandten Disziplinen werden wissenschaftlich aufgearbeitet und mit aktuellen Fragen der Unternehmenspraxis verknüpft.<span style="color:grey"> Jahr 3</span></li>
             </ul>
             <ul class="ziele">
                 <li>Kompetenzziele</li>
                 <li>Verständnis für übergreifende Zusammenhänge neuer Technik</li>
-                <li>Fachliche Beurteilung ausgewählte Methoden und Techniken hinsichtlich ihrer Relevanz</li>
+                <li>fachliche Beurteilung ausgewählter Methoden und Techniken hinsichtlich ihrer Relevanz</li>
             </ul>
         </div>
     </div>
@@ -395,12 +392,12 @@
     <div class="gridlayout" id="W3WI_111">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_111', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_111', 'wirtschaftsinformatik')">Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik</li>
-            <li>Modul Neue Kon&shy;zep&shy;te</li>
+            <li onclick="toggleVisible('W3WI_111_quellen')">Modul Neue Kon&shy;zep&shy;te</li>
         </ul>
 
         <!-- Moocs -->
@@ -417,7 +414,7 @@
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li> Hier werden aktuelle Themen aus allen Bereichen der Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik aufgegriffen und vermittelt.</li>
+                <li> Hier werden aktuelle Themen aus allen Bereichen der Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik aufgegriffen und vermittelt.<span style="color:grey"> Jahr 3</span></li>
             </ul>
             <ul class="ziele">
                 <li>Kompetenz&shy;ziele</li>
@@ -425,7 +422,7 @@
                 <li>neue Ansätze in der Model&shy;lierung und Software&shy;entwicklung</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_111_quellen">
                 <li>Coulouris, G., Dollimore, J. und Kindberg,T.: Distributed Systems: Concepts and Design, Addison-Wesley, Amsterdam. - Oechsle, R.: Parallele und verteilte Anwendungen in Java, Hanser, München.</li>
                 <li>Schill, A. und Springer, T.: Verteilte Systeme - Grundlagen und Basistechnologien, Springer, Berlin. </li>
                 <li>Stark, T.: Java EE - Einstieg für Anspruchsvolle, Addison-Wesley, München.</li>
@@ -440,19 +437,19 @@
     <div class="gridlayout" id="W3WI_102_PM">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_102_PM', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_102_PM', 'wirtschaftsinformatik')">Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik</li>
-            <li>Modul Pro&shy;jekt&shy;man&shy;age&shy;ment</li>
+            <li onclick="toggleVisible('W3WI_102_PM_quellen')">Modul Pro&shy;jekt&shy;man&shy;age&shy;ment</li>
         </ul>
 
         <!-- Moocs (None)-->
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li>Im Fokus stehen Planung, Organisation und Steuerung von (IT-)Projekten, unter Berücksichtigung moderner Pro&shy;jekt&shy;man&shy;age&shy;ment&shy;me&shy;tho&shy;den und Pro&shy;blem&shy;stel&shy;lung&shy;en aus der Praxis.</li>
+                <li>Im Fokus stehen Planung, Organisation und Steuerung von (IT-)Projekten, unter Berücksichtigung moderner Pro&shy;jekt&shy;man&shy;age&shy;ment&shy;me&shy;tho&shy;den und Pro&shy;blem&shy;stel&shy;lung&shy;en aus der Praxis.<span style="color:grey"> Jahr 2</span></li>
             </ul>
             <ul class="ziele">
                 <li>Kompetenzziele</li>
@@ -460,7 +457,7 @@
                 <li>Umgang mit Werk&shy;zeugen, Team&shy;or&shy;ga&shy;ni&shy;sa&shy;tions&shy;ma&szlig;&shy;nah&shy;men und Pla&shy;nungs&shy;me&shy;tho&shy;den zur erfolgreichen Umsetzung von Pro&shy;jek&shy;ten</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_102_PM_quellen">
                 <li>GPM Deutsche Gesellschaft für Projektmanagement (Hrsg.): Kompetenzbasiertes Projektmanagement, GPM Deutsche Gesellschaft für Projektmanagement, N&uuml;rnberg.</li>
                 <li>Hindel, B.; H&ouml;rmann, K.: Basiswissen Software-Projektmanagement, dpunkt.verlag, Heidelberg.</li>
                 <li>Pichler, R.: Agiles Produktmanagement mit Scrum: Erfolgreich als Product Owner arbeiten, dpunkt.verlag, Heidelberg.</li>
@@ -474,12 +471,12 @@
     <div class="gridlayout" id="W3WI_107">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_107', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_107', 'wirtschaftsinformatik')">Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik</li>
-            <li>Projekt</li>
+            <li onclick="toggleVisible('W3WI_107_quellen')">Projekt</li>
         </ul>
 
         <!-- Moocs -->
@@ -488,7 +485,7 @@
                 <p>
                     <a target="_blank" href="http://www.brilliancrm.com"><img src="http://brillianideas.com/img/learnings/brilliancrm.JPG" alt="brillianCRM"></a>
                     <a target="_blank" href="http://www.brilliancrm.com">brillianCRM</a> &mdash; brillianCRM ist ein Online-Projektmanagement-Spiel, das von IMBIT-Studenten der DHBW für Studenten und IT-Profis entworfen wurde. Ziel ist es, deine Ausbildung
-                    im Bereich Projektmanagement für Informationstechnologie zu bereichern. Für mehr Infos schau dir das <a target="_blank" href="https://vimeo.com/96179581">Teaser-Video</a> an!<span style="color:grey"> Stand 2017 | &copy; DHBW Mannheim | Autor WIMBIT12C, WIMBIT13C | Abdeckungsgrad 40%</span>
+                    im Bereich Projektmanagement für Informationstechnologie zu bereichern. Für mehr Infos schau dir das <a target="_blank" href="https://vimeo.com/96179581">Teaser-Video</a> an!<span style="color:grey"> Stand 2017 | &copy; DHBW Mannheim | Autoren WIMBIT12C, WIMBIT13C | Abdeckungsgrad 40%</span>
                 </p>
             </li>
 
@@ -498,7 +495,7 @@
                     <a target="_blank" href="http://www.brillianicm.com">brillianICM</a> &mdash; brillianICM ist ein interaktives Lernspiel, welches Wissen quer zu allen ICM Schwerpunktthemen abfragt und vertieft. Im Spielverlauf schlüpfst du in die Rolle
                     eines Mitarbeiters im internationalen Umfeld und wirst mit Situationen konfrontiert, in denen du dein erworbenes Wissen über kulturelle Unterschiede und Besonderheiten anwenden musst, um eine erfolgreiche Zusammenarbeit über Ländergrenzen
                     hinweg zu erreichen. Die abgedeckten Themenbereiche (bei wiederholter und aufmerksamer Spielaktivität) sind u.a.: &raquo;Interkulturelle Zusammenarbeit und Kommunikation&laquo;, &raquo;Das Phänomen Kultur&laquo;, &raquo;Unternehmenskultur
-                    und nationale Kultur&laquo;, sowie die &raquo;Zusammenarbeit in internationalen Teams&laquo;. Dieses Serious Game wurde im Jahr 2015 von IMBIT-Studenten im Rahmen eines IT-Projekts entwickelt.<span style="color:grey"> Stand 2017 | &copy; DHBW Mannheim | Autor WIMBIT12C, WIMBIT13C | Abdeckungsgrad 70% </span>
+                    und nationale Kultur&laquo;, sowie die &raquo;Zusammenarbeit in internationalen Teams&laquo;. Dieses Serious Game wurde im Jahr 2015 von IMBIT-Studenten im Rahmen eines IT-Projekts entwickelt.<span style="color:grey"> Stand 2017 | &copy; DHBW Mannheim | Autoren WIMBIT12C, WIMBIT13C | Abdeckungsgrad 70% </span>
                 </p>
             </li>
 
@@ -513,7 +510,7 @@
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li>In dieser Unterrichtseinheit setzen die Studierenden selbständig ein Projekt um. In der Vergangenheit wurden Projekte wie die Serious Games brillianICM und brillianCRM sowie diese Webseite erarbeitet.</li>
+                <li>In dieser Unterrichtseinheit setzen die Studierenden selbständig ein Projekt um. In der Vergangenheit wurden Projekte wie die Serious Games brillianICM und brillianCRM sowie diese Webseite erarbeitet.<span style="color:grey"> Jahr 3</span></li>
             </ul>
             <ul class="ziele">
                 <li>Kompetenzziele</li>
@@ -528,12 +525,12 @@
     <div class="gridlayout" id="W3WI_101_SysAn">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_101_SysAn', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_101_SysAn', 'wirtschaftsinformatik')">Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik</li>
-            <li>System&shy;analyse</li>
+            <li onclick="toggleVisible('W3WI_101_SysAn_quelle')">System&shy;analyse</li>
         </ul>
 
         <!-- Moocs -->
@@ -574,7 +571,7 @@
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li>Verfahren zur strukturierten Lösung von komplexen Problemstellungen der Wirtschaftsinformatik stehen im Fokus der Systemanalyse.</li>
+                <li>Verfahren zur strukturierten Lösung von komplexen Problemstellungen der Wirtschaftsinformatik stehen im Fokus der Systemanalyse.<span style="color:grey"> Jahr 1</span></li>
             </ul>
             <ul class="ziele">
                 <li>Kompetenzziele</li>
@@ -583,7 +580,7 @@
                 <li>Kommunikationstechniken um verschiedene soziale Perspektiven auf Problemstellungen zu koordinieren</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_101_SysAn_quelle">
                 <li>Balzert, H.: Lehrbuch der Objektmodellierung: Analyse und Entwurf mit der UML 2, Spektrum Akademischer Verlag, Heidelberg.</li>
                 <li>Oestereich, B.: Analyse und Design mit UML 2.5: Objektorientierte Softwareentwicklung, Oldenbourg, München.</li>
             </ul>
@@ -595,12 +592,12 @@
     <div class="gridlayout" id="W3WI_601">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_601', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_601', 'methodischegrundlagen')">Methodische Grundlagen</li>
-            <li>Modul Mathematik I</li>
+            <li onclick="toggleVisible('W3WI_601_quelle')">Modul Mathematik I</li>
         </ul>
 
         <!-- Moocs -->
@@ -689,7 +686,7 @@
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li>Im Modul Mathematik I werden am Beispiel &ouml;konomischer Fragestellungen Analysis und lineare Algebra sowie Logik und Algebra vermittelt.</li>
+                <li>Im Modul Mathematik I werden am Beispiel &ouml;konomischer Fragestellungen Analysis und lineare Algebra sowie Logik und Algebra vermittelt.<span style="color:grey"> Jahr 1</span></li>
             </ul>
             <ul class="ziele">
                 <li>Kompetenzziele</li>
@@ -698,7 +695,7 @@
                 <li>algebraische Strukturen</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_601_quelle">
                 <li>Ehrig, H.: Mathematisch-strukturelle Grundlagen der Informatik, Springer, Berlin.</li>
                 <li>Heinrich, G..: Basiswissen Mathematik, Statistik und Operations Research f&uuml;r Wirtschaftswissenschaftler, De Gruyter Oldenbourg, M&uuml;nchen.</li>
                 <li>Heinrich, G. und Severin, T.: Training Mathematik, Oldenbourg Verlag, M&uuml;nchen, Wien: Band 1, Grundlagen, Band 2, Analysis, Band 3, Lineare Algebra.</li>
@@ -712,12 +709,12 @@
     <div class="gridlayout" id="W3WI_602">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_602', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_602', 'methodischegrundlagen')">Methodische Grundlagen</li>
-            <li>Modul Mathematik II</li>
+            <li onclick="toggleVisible('W3WI_602_quelle')">Modul Mathematik II</li>
         </ul>
 
         <!-- Moocs -->
@@ -827,8 +824,8 @@
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li>Das Modul Mathematik II unterteilt sich in zwei mathematische Gebiete: &raquo;Statistik&laquo; und &raquo;Operations Research&laquo;. &raquo;Statistik&laquo;beinhaltet die Zusammenfassung bestimmter Methoden zur Analyse empirischer Daten.
-                    &raquo;Operations Research&laquo; hat das Hauptziel Methoden aus der Mathematik, Spieltheorie, Statistik und Wahrscheinlichkeitsrechnung auf wirtschaftliche Probleme anzuwenden.</li>
+                <li>Das Modul Mathematik II unterteilt sich in zwei mathematische Gebiete: &raquo;Statistik&laquo; und &raquo;Operations Research&laquo;. &raquo;Statistik&laquo; beinhaltet die Zusammenfassung bestimmter Methoden zur Analyse empirischer Daten.
+                    &raquo;Operations Research&laquo; hat das Hauptziel Methoden aus der Mathematik, Spieltheorie, Statistik und Wahrscheinlichkeitsrechnung auf wirtschaftliche Probleme anzuwenden.<span style="color:grey"> Jahr 2</span></li>
             </ul>
             <ul class="ziele">
                 <li>Kompetenzziele</li>
@@ -837,7 +834,7 @@
                 <li>Lineare, Kombinatorische, ganzzahlige und nichtlineare Optimierung</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_602_quelle">
                 <li>Bamberg, G. und Baur, F.: Statistik, M&uuml;nchen.</li>
                 <li>Bleym&uuml;ller, J., Gehlert, G. und G&uuml;licher, H.: Statistik f&uuml;r Wirtschaftswissenschaftler, M&uuml;nchen.</li>
                 <li>Domschke, W. und Drexl, A.: Einf&uuml;hrung in Operations Research, Berlin.</li>
@@ -853,12 +850,12 @@
     <div class="gridlayout" id="W3WI_701_wissArbeiten">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_701_wissArbeiten', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_701_wissArbeiten', 'methodischegrundlagen')">Methodische Grundlagen</li>
-            <li>Modul Grundlagen des wissenschaftlichen Arbeitens</li>
+            <li onclick="toggleVisible('W3WI_701_wissArbeiten_quelle')">Modul Grundlagen des wissenschaftlichen Arbeitens</li>
         </ul>
 
         <!-- Moocs -->
@@ -875,16 +872,16 @@
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li>In diesem Modul werden die grundlegenden Aspekte des wissenschaftlichen Arbeitens betrachtet und vertieft.</li>
+                <li>In diesem Modul werden die grundlegenden Aspekte des wissenschaftlichen Arbeitens betrachtet und vertieft.<span style="color:grey"> Jahr 1</span></li>
             </ul>
             <ul class="ziele">
                 <li>Kompetenzziele</li>
                 <li>Themenfindung, Gliederung, Problemdefinition und wissenschaftliche Quellenarbeit</li>
-                <li>Grundlegende wissenschaftliche Methoden</li>
-                <li>Wissenschaftliches Schreiben und Formale Anforderungen</li>
+                <li>grundlegende wissenschaftliche Methoden</li>
+                <li>wissenschaftliches Schreiben und formale Anforderungen</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_701_wissArbeiten_quelle">
                 <li>B&auml;nsch, A.: Wissenschaftliches Arbeiten, Stuttgart, Oldenbourg.</li>
                 <li>Denscombe, M.: The Good Research Guide, Open University Press.</li>
                 <li>Disterer, G.: Seminararbeiten schreiben: Seminar-, Bachelor, Master und Diplomarbeiten in den Wirtschaftswissenschaften, Springer Gabler, Berlin.</li>
@@ -904,12 +901,12 @@
     <div class="gridlayout" id="W3WI_701_praesentation_kommunikation">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_701_praesentation_kommunikation', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_701_praesentation_kommunikation', 'methodischegrundlagen')">Methodische Grundlagen</li>
-            <li>Modul Präsentations- und Kommunikations&shy;kompetenzen</li>
+            <li onclick="toggleVisible('W3WI_701_praesentation_kommunikation_quelle')">Modul Präsentations- und Kommunikations&shy;kompetenzen</li>
         </ul>
 
         <!-- Moocs (None) -->
@@ -917,7 +914,7 @@
         <div class="modulbeschreibung">
             <ul style="list-style:none">
                 <li>Trainingsszenarien typischer beruflicher Kommunikationssituationen, z.B. Pr&auml;sentationen, Feedbackgespr&auml;che und Moderationen, sowie Konfliktgespr&auml;che und Vertriebsgespr&auml;che werden in diesem Modul behandelt. Die Studierenden
-                    steigern ihre F&auml;higkeiten im Bereich der Moderation, der Gespr&auml;chsf&uuml;hrungen und der Verhandlungssicherheit.</li>
+                    steigern ihre F&auml;higkeiten im Bereich der Moderation, der Gespr&auml;chsf&uuml;hrungen und der Verhandlungssicherheit.<span style="color:grey"> Jahr 1</span></li>
             </ul>
             <ul class="ziele">
                 <li>Kompetenzziele</li>
@@ -925,7 +922,7 @@
                 <li>ein betriebliches Problem kommunizieren und zielgerichtet nach L&ouml;sungen suchen</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_701_praesentation_kommunikation_quelle">
                 <li>Bitzer, Liebsch, Behnert: Betriebliche Konfliktl&ouml;sung durch Mediation, Sauer, Heidelberg.</li>
                 <li>Diel, M.: Das IT-Karrierehandbuch, O'Reilly.</li>
                 <li>Duve, C; Eidenm&uuml;ller, H.; Hacke, A.: Mediation in der Wirtschaft, Wege zum professionellen Konfliktmanagement, Verlag Dr. Otto Schmidt, K&ouml;ln.</li>
@@ -960,28 +957,28 @@
     <div class="gridlayout" id="W3WI_702">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_702', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_702', 'methodischegrundlagen')">Methodische Grundlagen</li>
-            <li>Modul Schlüs&shy;sel&shy;qua&shy;li&shy;fi&shy;ka&shy;tio&shy;nen II</li>
+            <li onclick="toggleVisible('W3WI_702_quelle')">Modul Schlüs&shy;sel&shy;qua&shy;li&shy;fi&shy;ka&shy;tio&shy;nen II</li>
         </ul>
 
         <!-- Moocs (None)-->
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li>Hier wird die Herangehensweise an die Themenfindung f&uuml;r Praxisarbeiten, sowie an die inhaltliche und formale Ausgestaltung dieser behandelt.</li>
+                <li>Hier wird die Herangehensweise an die Themenfindung f&uuml;r Praxisarbeiten, sowie an die inhaltliche und formale Ausgestaltung dieser behandelt.<span style="color:grey"> Jahr 2</span></li>
             </ul>
             <ul class="ziele">
                 <li>Kompetenzziele</li>
                 <li>Beherrschen der Ans&auml;tze und Methoden des wissenschaftlichen Arbeitens im Fach Wirtschaftsinformatik</li>
                 <li>Erkennen der eigenen gesellschaftlichen, ethischen und sozialen Verantwortung in der Praxis</li>
-                <li>Situationsgerechte Kommunikationstechniken und Verhaltensweisen im Umgang mit Menschen anderer Kulturen</li>
+                <li>situationsgerechte Kommunikationstechniken und Verhaltensweisen im Umgang mit Menschen anderer Kulturen</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_702_quelle">
                 <b>Wissenschaftstheorie und wissenschaftliche Methoden der Wirtschaftsinformatik; Angewandtes Wissenschaftliches Arbeiten:</b>
                 <li>B&auml;nsch, A.: Wissenschaftliches Arbeiten, Oldenbourg, M&uuml;nchen</li>
                 <li>Balzer, W.: Die Wissenschaft und ihre Methoden, Verlag Karl Alber, Freiburg</li>
@@ -995,66 +992,66 @@
                 <b>Technikfolgenabsch&auml;tzung:</b>
                 <li>Frank Fuchs-Kittowski; Werner Kriesel (Hrsg.): Informatik und Gesellschaft. Peter Lang Verlag, Wien</li>
                 <li>Andrea Kienle, Gabriele Kunau: Informatik und Gesellschaft, Eine sozio-technische Perspektive, Oldenbourg Wissenschaftsverlag</li>
-                <lu>Hartmut Hirsch-Kreinsen, Peter Ittermann, Jonathan Niehaus (Hrsg.): Digitalisierung industrieller Arbeit, Nomos, Baden-Baden</li>
-                    <li>Frey C, Osborne M : The Future of Employment: How Susceptible are Jobs to Computerisation? Oxford Martin School Working Paper. Oxford</li>
-                    <li>Fischer, P. (Hrsg.): Wirtschaftsethische Fragen der E-Economy. In: Ethische &ouml;konomie, Band 8, Physica-Verlag, Heidelberg.</li>
-                    <li>Hausmanninger, Th.; R. Capurro (Hrsg.): Netzethik - Grundlegungsfragen der Internetethik, Wilhelm Fink Verlag, M&uuml;chen.</li>
-                    <li>Ulrich, P.: Integrative Wirtschaftsethik, Haupt, Bern/Stuttgart/Wien.</li>
-                    <li>Greenfield, S.: Mind Change: How digital technologies are leaving their mark on our brains. Random House: New York</li>
-                    <li>Arntz, M., Gregory, T. und Zierahn, U.: The Risk of Automation for Jobs in OECD Countries A COMPARATIVE ANALYSIS, OECD Social, Employment and Migration Working Papers No. 189. Online verf&uuml;gbar unter http://dx.doi.org/10.1787/5jlz9h56dvq7-en</li><br>
+                <li>Hartmut Hirsch-Kreinsen, Peter Ittermann, Jonathan Niehaus (Hrsg.): Digitalisierung industrieller Arbeit, Nomos, Baden-Baden</li>
+                <li>Frey C, Osborne M : The Future of Employment: How Susceptible are Jobs to Computerisation? Oxford Martin School Working Paper. Oxford</li>
+                <li>Fischer, P. (Hrsg.): Wirtschaftsethische Fragen der E-Economy. In: Ethische &ouml;konomie, Band 8, Physica-Verlag, Heidelberg.</li>
+                <li>Hausmanninger, Th.; R. Capurro (Hrsg.): Netzethik - Grundlegungsfragen der Internetethik, Wilhelm Fink Verlag, M&uuml;chen.</li>
+                <li>Ulrich, P.: Integrative Wirtschaftsethik, Haupt, Bern/Stuttgart/Wien.</li>
+                <li>Greenfield, S.: Mind Change: How digital technologies are leaving their mark on our brains. Random House: New York</li>
+                <li>Arntz, M., Gregory, T. und Zierahn, U.: The Risk of Automation for Jobs in OECD Countries A COMPARATIVE ANALYSIS, OECD Social, Employment and Migration Working Papers No. 189. Online verf&uuml;gbar unter http://dx.doi.org/10.1787/5jlz9h56dvq7-en</li><br>
 
-                    <b>E-Mentoring I+II:</b>
-                    <li>Block, Carl Hans: Von der Gruppe zum Team. Wie Sie die Zusammenarbeit in zukunftsorientierten Unternehmen verbessern. M&uuml;nchen: Beck</li>
-                    <li>Friedrich, Helmut F. / Mandl, Heinz: Handbuch Lernstrategien. G&ouml;ttingen u.a.: Hogrefe</li>
-                    <li>G&auml;de, Ernst-Georg / Listing, Thomas: Gruppen erfolgreich leiten. Empfehlungen f&uuml;r die Zusammenarbeit mit Erwachsenen. Mainz: Gr&uuml;newald</li>
-                    <li>Glasl, Friedrich: Konfliktmanagement. Ein Handbuch f&uuml;r F&uuml;hrungskr&auml;fte, Beraterinnen und Berater. Bern / Stuttgart: Freies Geistesleben</li>
-                    <li>Grae&szlig;ner, Gernot: Moderation &mdash; Das Lehrbuch. Augsburg: Ziel</li>
-                    <li>Hoffmann, Eberhardt / L&ouml;hle, Monika: Erfolgreich Lernen. Effiziente Lern- und Arbeitsstrategien f&uuml;r Schule, Studium und Beruf. G&ouml;ttingen u.a.: Hogrefe</li>
-                    <li>Knoll, J&ouml;rg: Kleingruppenmethoden. Effektive Gruppenarbeit in Kursen, Seminaren, Trainings und Tagungen. Weinheim / Basel: Beltz</li>
-                    <li>Mahlmann, Regina: Konflikte managen. Psychologische Grundlagen, Modelle und Fallstudien. Weinheim / Basel: Beltz</li>
-                    <li>Metzig, Werner / Schuster, Martin: Lernen zu lernen. Lernstrategien wirkungsvoll einsetzen. Berlin: Springer</li>
-                    <li>Rechtien, Wolfgang: Angewandte Gruppendynamik. Ein Lehrbuch f&uuml;r Studierende und Praktiker. M&uuml;nchen: Psychologie Verlags Union, Beltz</li><br>
+                <b>E-Mentoring I+II:</b>
+                <li>Block, Carl Hans: Von der Gruppe zum Team. Wie Sie die Zusammenarbeit in zukunftsorientierten Unternehmen verbessern. M&uuml;nchen: Beck</li>
+                <li>Friedrich, Helmut F. / Mandl, Heinz: Handbuch Lernstrategien. G&ouml;ttingen u.a.: Hogrefe</li>
+                <li>G&auml;de, Ernst-Georg / Listing, Thomas: Gruppen erfolgreich leiten. Empfehlungen f&uuml;r die Zusammenarbeit mit Erwachsenen. Mainz: Gr&uuml;newald</li>
+                <li>Glasl, Friedrich: Konfliktmanagement. Ein Handbuch f&uuml;r F&uuml;hrungskr&auml;fte, Beraterinnen und Berater. Bern / Stuttgart: Freies Geistesleben</li>
+                <li>Grae&szlig;ner, Gernot: Moderation &mdash; Das Lehrbuch. Augsburg: Ziel</li>
+                <li>Hoffmann, Eberhardt / L&ouml;hle, Monika: Erfolgreich Lernen. Effiziente Lern- und Arbeitsstrategien f&uuml;r Schule, Studium und Beruf. G&ouml;ttingen u.a.: Hogrefe</li>
+                <li>Knoll, J&ouml;rg: Kleingruppenmethoden. Effektive Gruppenarbeit in Kursen, Seminaren, Trainings und Tagungen. Weinheim / Basel: Beltz</li>
+                <li>Mahlmann, Regina: Konflikte managen. Psychologische Grundlagen, Modelle und Fallstudien. Weinheim / Basel: Beltz</li>
+                <li>Metzig, Werner / Schuster, Martin: Lernen zu lernen. Lernstrategien wirkungsvoll einsetzen. Berlin: Springer</li>
+                <li>Rechtien, Wolfgang: Angewandte Gruppendynamik. Ein Lehrbuch f&uuml;r Studierende und Praktiker. M&uuml;nchen: Psychologie Verlags Union, Beltz</li><br>
 
-                    <b>E-Learning I+II:</b>
-                    <li>Reinmann, G.: Lehren und Lernen mit Medien: Studientext Didaktisches Design; Universit&auml;t der Bundeswehr M&uuml;nchen</li>
-                    <li>Sch&ouml;n, Sandra; Ebner, Martin (Hg.): L3T.Lehrbuch f&uuml;r Lernen mit Technologien. http://l3t.eu</li>
-                    <li>Arnold, R. & Lermen, K. (Hrsg.): eLearning-Didaktik; Schneider Verlag Hohengehren</li>
-                    <li>Handke, J. & Sch&auml;fer, A.M.: E-Learning, E-Teaching und E-Assessment in der Hochschullehre : eine Anleitung, M&uuml;nchen: Oldenbourg.</li>
-                    <li>Handke J& Sperl A. (Hrsg.) : Das Inverted Classroom Model. Begleitband zur ersten deutschen ICMKonferenz. M&uuml;nster: Oldenburg</li>
-                    <li>Vogt, Michael/ Schneider, Stefan : E-Klausuren an Hochschulen : Didaktik &mdash; Technik &mdash; Systeme &mdash; Recht &mdash; Praxis. Giessener Elektronische Bibliothek.</li>
-                    <li>Fischer,H., K&ouml;hler,T.: Know your Types. Analyse von E-Learning-&uuml;bernehmenden innerhalb des akademischen Lehrpersonals, in: Zeitschrift f&uuml;r e-learning, studienVerlag</li>
-                    <li>Hemsing,S.: Simply the Best. 10 Erfolgsfaktoren f&uuml;r gutes E-Learning in: Hamburger eLearning-Magazin#14, Hamburg,</li>
-                    <li>Johnson,L., Adams Becker,S., Estrada,V., Freeman,A.: NMC Horizon Report: Higher Education Edition; Austin, Texas: The New Media Consortium</li>
-                    <li>Troitzsch,H. et al.: Roadmap to eLearning@ETHZurich, Ein Leitfaden f&uuml;r Dozierende, ETH Z&uuml;rich</li>
-                    <li>Mager R.F.: Lernziele und Unterricht. Beltz, Weinheim</li>
-                    <li>Knoll, J&ouml;rg: Kleingruppenmethoden. Effektive Gruppenarbeit in Kursen, Seminaren, Trainings und Tagungen. Weinheim / Basel: Beltz</li>
-                    <li>Mc Grath, J.E., Hollingshead,A.B.: Groups interacting with technology. Sage: Newbury Park</li>
-                    <li>Niegemann, H.M.et al.: Kompendium E-Learning; Springer</li>
-                    <li>Sauter, Annette M.; Sauter, Werner; Bender, Harald: Blended learning. Effiziente Integration von E-Learning und Pr&auml;senztraining. 2.Aufl.Unterschleissheim/M&uuml;nchen: Luchterhand.</li>
-                    <li>Schulmeister, Rolf e.a.: Didaktik und IT-Service-Management f&uuml;r Hochschulen. Referenzrahmen zur Qualit&auml;tssicherung und -entwicklung von eLearning-Angeboten. Bremen. Online verf&uuml;gbar unter www.mmkh.de</li>
-                    <li>Sharples, M., Adams, A., Alozie, N., Ferguson, R., FitzGerald, E., Gaved, M., McAndrew, P., Means, B., Remold, J., Rienties, - B., Roschelle, J., Vogt, K., Whitelock, D. und Yarnall, L.: Innovating Pedagogy, Open University. Online
-                        verf&uuml;gbar unter http://www.open.ac.uk/blogs/innovating/</li>
-                    <li>Wenger, E. und Wenger, B.: Introduction to communities of practice. Online verf&uuml;gbar unter http://wenger-trayner.com/introduction-to-communities-of-practice/</li><br>
+                <b>E-Learning I+II:</b>
+                <li>Reinmann, G.: Lehren und Lernen mit Medien: Studientext Didaktisches Design; Universit&auml;t der Bundeswehr M&uuml;nchen</li>
+                <li>Sch&ouml;n, Sandra; Ebner, Martin (Hg.): L3T.Lehrbuch f&uuml;r Lernen mit Technologien. http://l3t.eu</li>
+                <li>Arnold, R. & Lermen, K. (Hrsg.): eLearning-Didaktik; Schneider Verlag Hohengehren</li>
+                <li>Handke, J. & Sch&auml;fer, A.M.: E-Learning, E-Teaching und E-Assessment in der Hochschullehre : eine Anleitung, M&uuml;nchen: Oldenbourg.</li>
+                <li>Handke J& Sperl A. (Hrsg.) : Das Inverted Classroom Model. Begleitband zur ersten deutschen ICMKonferenz. M&uuml;nster: Oldenburg</li>
+                <li>Vogt, Michael/ Schneider, Stefan : E-Klausuren an Hochschulen : Didaktik &mdash; Technik &mdash; Systeme &mdash; Recht &mdash; Praxis. Giessener Elektronische Bibliothek.</li>
+                <li>Fischer,H., K&ouml;hler,T.: Know your Types. Analyse von E-Learning-&uuml;bernehmenden innerhalb des akademischen Lehrpersonals, in: Zeitschrift f&uuml;r e-learning, studienVerlag</li>
+                <li>Hemsing,S.: Simply the Best. 10 Erfolgsfaktoren f&uuml;r gutes E-Learning in: Hamburger eLearning-Magazin#14, Hamburg,</li>
+                <li>Johnson,L., Adams Becker,S., Estrada,V., Freeman,A.: NMC Horizon Report: Higher Education Edition; Austin, Texas: The New Media Consortium</li>
+                <li>Troitzsch,H. et al.: Roadmap to eLearning@ETHZurich, Ein Leitfaden f&uuml;r Dozierende, ETH Z&uuml;rich</li>
+                <li>Mager R.F.: Lernziele und Unterricht. Beltz, Weinheim</li>
+                <li>Knoll, J&ouml;rg: Kleingruppenmethoden. Effektive Gruppenarbeit in Kursen, Seminaren, Trainings und Tagungen. Weinheim / Basel: Beltz</li>
+                <li>Mc Grath, J.E., Hollingshead,A.B.: Groups interacting with technology. Sage: Newbury Park</li>
+                <li>Niegemann, H.M.et al.: Kompendium E-Learning; Springer</li>
+                <li>Sauter, Annette M.; Sauter, Werner; Bender, Harald: Blended learning. Effiziente Integration von E-Learning und Pr&auml;senztraining. 2.Aufl.Unterschleissheim/M&uuml;nchen: Luchterhand.</li>
+                <li>Schulmeister, Rolf e.a.: Didaktik und IT-Service-Management f&uuml;r Hochschulen. Referenzrahmen zur Qualit&auml;tssicherung und -entwicklung von eLearning-Angeboten. Bremen. Online verf&uuml;gbar unter www.mmkh.de</li>
+                <li>Sharples, M., Adams, A., Alozie, N., Ferguson, R., FitzGerald, E., Gaved, M., McAndrew, P., Means, B., Remold, J., Rienties, - B., Roschelle, J., Vogt, K., Whitelock, D. und Yarnall, L.: Innovating Pedagogy, Open University. Online verf&uuml;gbar
+                    unter http://www.open.ac.uk/blogs/innovating/</li>
+                <li>Wenger, E. und Wenger, B.: Introduction to communities of practice. Online verf&uuml;gbar unter http://wenger-trayner.com/introduction-to-communities-of-practice/</li><br>
 
-                    <b>Interkulterelle Kompetenz:</b>
-                    <li>Barmeyer, C.; Franklin, P.: Intercultural Management: A Case-Based Approach to Achieving Complementarity and Synergy, Basingstoke: Palgrave Macmillan.</li>
-                    <li>Bolten, J.: Interkulturelle Kompetenz, Erfurt: Landeszentrale f&uuml;r Politische Bildung Th&uuml;ringen.</li>
-                    <li>Fox, K.: Watching the English: The Hidden Rules of English Behaviour, Hodder & Stoughton.</li>
-                    <li>Giesche, S.; Rietz, S. (Hrsg.): Interkulturelle Kompetenz als zentraler Erfolgsfaktor im internationalen Projektmanagement, Diplomica, Hamburg.</li>
-                    <li>Gymnich, A.; Erl, M.: Interkulturelle Kompetenzen. Erfolgreich kommunizieren zwischen den Kulturen, Stuttgart: Klett.</li>
-                    <li>Hall, E.T.:, Beyond culture, Garden City, New York.</li>
-                    <li>Hoffmann, H.-E.; Schoper, Y.-G.; Fitzsimons, C. (Hrsg.): Internationales Projektmanagement: - Interkulturelle Zusammenarbeit in der Praxis, dtv, M&uuml;nchen.</li>
-                    <li>Hofstede, G.; / Hofstede, G. J.; Minkov, M.: Cultures and Organizations: Software of the Mind, New York: McGraw-Hill USA</li>
-                    <li>L&uuml;sebrink, H.-J.: Interkulturelle Kommunikation. Interaktion - Fremdwahrnehmung - Kulturtransfer, Stuttgart: J.B. Metzler</li>
-                    <li>Schroll- Machl, S.: Doing Business with Germans. Their perception, our perception, G&ouml;ttingen: Vandenhoeck & Ruprecht</li>
-                    <li>Thomas, A: &raquo;Interkulturelle Kompetenz &mdash; Grundlagen, Probleme und Konzepte&laquo;, in: Erw&auml;gen, Wissen, Ethik 14.1, p. 137-228</li>
-                    <li>Thomas, A.; Kammhuber, S. und Schroll-Machl: Handbuch Interkulturelle Kommunikation und Kooperation, Vandenhoek & Ruprecht, G&ouml;ttingen</li>
-                    <li>Trompenaars, F.: Handbuch globales Managen, D&uuml;sseldorf, Wien, New York</li><br>
+                <b>Interkulterelle Kompetenz:</b>
+                <li>Barmeyer, C.; Franklin, P.: Intercultural Management: A Case-Based Approach to Achieving Complementarity and Synergy, Basingstoke: Palgrave Macmillan.</li>
+                <li>Bolten, J.: Interkulturelle Kompetenz, Erfurt: Landeszentrale f&uuml;r Politische Bildung Th&uuml;ringen.</li>
+                <li>Fox, K.: Watching the English: The Hidden Rules of English Behaviour, Hodder & Stoughton.</li>
+                <li>Giesche, S.; Rietz, S. (Hrsg.): Interkulturelle Kompetenz als zentraler Erfolgsfaktor im internationalen Projektmanagement, Diplomica, Hamburg.</li>
+                <li>Gymnich, A.; Erl, M.: Interkulturelle Kompetenzen. Erfolgreich kommunizieren zwischen den Kulturen, Stuttgart: Klett.</li>
+                <li>Hall, E.T.:, Beyond culture, Garden City, New York.</li>
+                <li>Hoffmann, H.-E.; Schoper, Y.-G.; Fitzsimons, C. (Hrsg.): Internationales Projektmanagement: - Interkulturelle Zusammenarbeit in der Praxis, dtv, M&uuml;nchen.</li>
+                <li>Hofstede, G.; / Hofstede, G. J.; Minkov, M.: Cultures and Organizations: Software of the Mind, New York: McGraw-Hill USA</li>
+                <li>L&uuml;sebrink, H.-J.: Interkulturelle Kommunikation. Interaktion - Fremdwahrnehmung - Kulturtransfer, Stuttgart: J.B. Metzler</li>
+                <li>Schroll- Machl, S.: Doing Business with Germans. Their perception, our perception, G&ouml;ttingen: Vandenhoeck & Ruprecht</li>
+                <li>Thomas, A: &raquo;Interkulturelle Kompetenz &mdash; Grundlagen, Probleme und Konzepte&laquo;, in: Erw&auml;gen, Wissen, Ethik 14.1, p. 137-228</li>
+                <li>Thomas, A.; Kammhuber, S. und Schroll-Machl: Handbuch Interkulturelle Kommunikation und Kooperation, Vandenhoek & Ruprecht, G&ouml;ttingen</li>
+                <li>Trompenaars, F.: Handbuch globales Managen, D&uuml;sseldorf, Wien, New York</li><br>
 
-                    <b>Teamwork I+II:</b>
-                    <li>Block, C.-H.: Von der Gruppe zum Team. Wie Sie die Zusammenarbeit in zukunftsorientierten Unternehmen verbessern. M&uuml;nchen: Beck</li>
-                    <li>Friedrich, H. F.; Mandl, H.: Handbuch Lernstrategien. G&ouml;ttingen u.a.: Hogrefe</li>
-                    <li>G&auml;de, E.-G.; Listing, T.: Gruppen erfolgreich leiten. Empfehlungen f&uuml;r die Zusammenarbeit mit Erwachsenen. Mainz: Gr&uuml;newald</li>
+                <b>Teamwork I+II:</b>
+                <li>Block, C.-H.: Von der Gruppe zum Team. Wie Sie die Zusammenarbeit in zukunftsorientierten Unternehmen verbessern. M&uuml;nchen: Beck</li>
+                <li>Friedrich, H. F.; Mandl, H.: Handbuch Lernstrategien. G&ouml;ttingen u.a.: Hogrefe</li>
+                <li>G&auml;de, E.-G.; Listing, T.: Gruppen erfolgreich leiten. Empfehlungen f&uuml;r die Zusammenarbeit mit Erwachsenen. Mainz: Gr&uuml;newald</li>
             </ul>
         </div>
     </div>
@@ -1063,19 +1060,19 @@
     <div class="gridlayout" id="W3WI_703">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_703', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_703', 'methodischegrundlagen')">Methodische Grundlagen</li>
-            <li>Modul Schlüs&shy;sel&shy;qua&shy;li&shy;fi&shy;ka&shy;tio&shy;nen III</li>
+            <li onclick="toggleVisible('W3WI_703_quelle')">Modul Schlüs&shy;sel&shy;qua&shy;li&shy;fi&shy;ka&shy;tio&shy;nen III</li>
         </ul>
 
         <!-- Moocs (None)-->
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li>Hier wird ein Planspiel zur Unternehmens- oder Projektsimulation mit mehreren Teams, die verschiedene Unternehmensbereiche und deren Aufgaben abdecken, durchgef&uuml;hrt.</li>
+                <li>Hier wird ein Planspiel zur Unternehmens- oder Projektsimulation mit mehreren Teams, die verschiedene Unternehmensbereiche und deren Aufgaben abdecken, durchgef&uuml;hrt.<span style="color:grey"> Jahr 3</span></li>
             </ul>
             <ul class="ziele">
                 <li>Kompetenzziele</li>
@@ -1084,7 +1081,7 @@
                 <li>Kennen und Anwenden der wesentlichen Konzepte, Methoden und Ziele des wissenschaftlichen Arbeitens in der Wirtschaftsinformatik</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_703_quelle">
                 <b>Unternehmenssimulation:</b>
                 <li>Baum, M., Dickerboom, J., Hackstein, M.: Business Simulation, GRIN Verlag, M&uuml;nchen.</li>
                 <li>Gilbert, N., Troitzsch, K. G.: Simulation for the Social Scientist, Buckingham: Open University Press.</li>
@@ -1127,12 +1124,12 @@
     <div class="gridlayout" id="W3WI_IBI405">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_IBI405', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_IBI405', 'methodischegrundlagen')">Methodische Grundlagen</li>
-            <li>Modul Statistik in der Anwendung</li>
+            <li onclick="toggleVisible('W3WI_IBI405_quelle')">Modul Statistik in der Anwendung</li>
         </ul>
 
         <!-- Moocs -->
@@ -1151,7 +1148,7 @@
         <div class="modulbeschreibung">
             <ul style="list-style:none">
                 <li>Die praktische Umsetzung von Statistikkenntnissen in der Datenanalyse und Datenvisualisierung, unter Anwendung verschiedener Werkzeuge und Sprachen, bildet den Schwerpunkt dieses Moduls.
-                </li>
+                    <span style="color:grey"> Jahr 3</span></li>
             </ul>
             <ul class="ziele">
                 <li>Kompetenz&shy;ziele</li>
@@ -1159,7 +1156,7 @@
                 <li>Aneignung geeigneter Programmiersprachen zur Datenvisualisierung</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_IBI405_quelle">
                 <li>Peter Bruce und Andrew Bruce (2017): Statistics for Data Scientists &mdash; 50 Essential Concepts, O'Reilly.</li>
                 <li>Alberto Cairo (2012): Functional Art, The &mdash; An introduction to information graphics and visualization, Peachpit.</li>
                 <li>Stephen Few (2013): Information Dashboard Design &mdash; Displaying Data for At-a-Glance Monitoring, 2nd Edition, Analytics Press.</li>
@@ -1178,12 +1175,12 @@
     <div class="gridlayout" id="W3WI_104_CS_OS">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_104_CS_OS', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_104_CS_OS', 'informatik')">Informatik</li>
-            <li>Modul Kom&shy;mu&shy;ni&shy;ka&shy;tions- und Be&shy;triebs&shy;sys&shy;teme</li>
+            <li onclick="toggleVisible('W3WI_104_CS_OS_quelle')">Modul Kom&shy;mu&shy;ni&shy;ka&shy;tions- und Be&shy;triebs&shy;sys&shy;teme</li>
         </ul>
 
         <!-- Moocs -->
@@ -1242,7 +1239,7 @@
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li>Dieses Modul vermittelt Studierenden die Grundstrukturen und Aufgaben von Betriebssystemen, sowie die Grundlagen der Datenübertragung.</li>
+                <li>Dieses Modul vermittelt Studierenden die Grundstrukturen und Aufgaben von Betriebssystemen, sowie die Grundlagen der Datenübertragung.<span style="color:grey"> Jahr 1</span></li>
             </ul>
             <ul class="ziele">
                 <li>Kompetenzziele</li>
@@ -1250,7 +1247,7 @@
                 <li>F&auml;higkeit die Wechselwirkung von Betriebssystem und anderen Programmsystemen einzusch&auml;tzen</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_104_CS_OS_quelle">
                 <li>Tanenbaum, A. S.: Computernetzwerke, Pearson Studium, München.</li>
                 <li>T&ouml;njes, R.: Mobilkommunikation: Technologien und Anwendungen, in: Informationstechnische Gesellschaft im VDE (Herausgeber): ITG Fachbericht, Nr. 215, VDE Verlag, Berlin und Offenbach.</li>
                 <li>Brause, R: Betriebssysteme &mdash; Grundlagen und Konzepte, Springer Verlag, Berlin.</li>
@@ -1263,12 +1260,12 @@
     <div class="gridlayout" id="W3WI_105">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_105', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_105', 'informatik')">Informatik</li>
-            <li>Modul Daten&shy;banken</li>
+            <li onclick="toggleVisible('W3WI_105_quelle')">Modul Daten&shy;banken</li>
         </ul>
 
         <!-- Moocs -->
@@ -1300,7 +1297,7 @@
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li>Die grundlegenden Theorie zu Datenbanksystemen, die Realisierung eines Datenbankentwurfs und die Verwendung der Datenbanksprache SQL stehen im Vordergrund.</li>
+                <li>Die grundlegende Theorie zu Datenbanksystemen, die Realisierung eines Datenbankentwurfs und die Verwendung der Datenbanksprache SQL stehen im Vordergrund.<span style="color:grey"> Jahr 2</span></li>
             </ul>
             <ul class="ziele">
                 <li>Kompetenzziele</li>
@@ -1310,7 +1307,7 @@
                 <li>abstraktes und logischen Denkvermögen</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_105_quelle">
                 <li>Elmasri, R. A., Navathe, S. B.: Grundlagen von Datenbanksystemen, Pearson Studium, München, Boston (u.a.).</li>
                 <li>Faeskorn-Woyke, H., Bertelsmeier, B., Riemer, P., Bauer, E.: Datenbanksysteme: Theorie und Praxis mit SQL2003, Oracle und MySQL, Pearson Studium, München, Boston (u.a.).</li>
                 <li>Kemper, A., Eickler, A: Datenbanksysteme: Eine Einführung, Oldenbourg, München.</li>
@@ -1329,12 +1326,12 @@
     <div class="gridlayout" id="W3WI_110">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_110', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_110', 'informatik')">Informatik</li>
-            <li>Entwicklung verteilter Systeme</li>
+            <li onclick="toggleVisible('W3WI_110_quelle')">Entwicklung verteilter Systeme</li>
         </ul>
 
         <!-- Moocs -->
@@ -1367,8 +1364,8 @@
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li> Fokusiert wird sich auf die beiden Teil&shy;bereichte Web-Programm&shy;ierung und Verteilte Systeme. Web-Programm&shy;ierung legt den Fokus auf webbasierten Anwendungen aufbauend darauf vermittelt Verteilte Systeme Kenntnisse in Architektur,
-                    Konzepte und Terminologien.
+                <li> Fokusiert wird sich auf die beiden Teil&shy;bereichte Web-Programm&shy;ierung und Verteilte Systeme. Web-Programm&shy;ierung legt den Fokus auf webbasierte Anwendungen, aufbauend darauf vermittelt Verteilte Systeme Kenntnisse der Web-Architektur,
+                    Konzepte und Terminologien.<span style="color:grey"> Jahr 2</span>
                 </li>
             </ul>
             <ul class="ziele">
@@ -1377,7 +1374,7 @@
                 <li>Verständnis über Konzepte, Architek&shy;turen, Technologien verteilter Systeme </li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_110_quelle">
                 <li>Coulouris, G., Dollimore, J. und Kindberg,T.: Distributed Systems: Concepts and Design, Addison-Wesley, Amsterdam. - Oechsle, R.: Parallele und verteilte Anwendungen in Java, Hanser, München.</li>
                 <li>Schill, A. und Springer, T.: Verteilte Systeme - Grundlagen und Basistechnologien, Springer, Berlin. </li>
                 <li>Stark, T.: Java EE - Einstieg für Anspruchsvolle, Addison-Wesley, München.</li>
@@ -1393,12 +1390,12 @@
     <div class="gridlayout" id="W3WI_104_ITIntro">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_104_ITIntro', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_104_ITIntro', 'informatik')">Informatik</li>
-            <li>Grundlagen der IT</li>
+            <li onclick="toggleVisible('W3WI_104_ITIntro_quelle')">Grundlagen der IT</li>
         </ul>
 
         <!-- Moocs -->
@@ -1426,23 +1423,23 @@
                 <p>
                     <a target="_blank" href="https://youtu.be/59dYVTNjWG4"><img src="img/Komponenten_eines_Computers.jpg" alt="Komponenten eines Computers" </a>
                         <a target="_blank" href="https://youtu.be/59dYVTNjWG4">Komponenten eines Computers</a> &mdash; Was sind die Grundbestandteile eines Computers? Aus welchen Komponenten ist das Computersystem aufgebaut? Beim Aufbau des Computers
-                        unterscheidet man in Hardware und Software, also Betriebssystem und Anwendersoftware. Und was ist ein Motherboard? Hier lernst du die wichtigsten IT-Grundlagen. Auf geht&prime;s!<span style="color:grey"><br> Stand 2017 | &copy; Alexander Giesecke und Nicolai Schork | Abdeckungsgrad 50%</span>
+                        unterscheidet man in Hardware und Software, also Betriebssystem und Anwendersoftware. Und was ist ein Motherboard? Hier lernst du die wichtigsten IT-Grundlagen. Auf geht&prime;s!<span style="color:grey"> Stand 2017 | &copy; Alexander Giesecke und Nicolai Schork | Abdeckungsgrad 50%</span>
                 </p>
             </li>
         </ul>
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li>Fundamentale Lehrinhalte zu den Grundlagen der Informationstechnik sowie bewährten und innovativen Rechnerarchitekturen.</li>
+                <li>Fundamentale Lehrinhalte zu den Grundlagen der Informationstechnik sowie bewährten und innovativen Rechnerarchitekturen.<span style="color:grey"> Jahr 1</span></li>
             </ul>
             <ul class="ziele">
                 <li>Kompetenzziele</li>
-                <li>grundlegenden Konzepte und Modelle der Informationstechnik</li>
+                <li>grundlegende Konzepte und Modelle der Informationstechnik</li>
                 <li>Einschätzung und Einordnung der Komplexität von Technologieschichten</li>
                 <li>fachlich korrekte Kommunikation über informationstechnische Probleme</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_104_ITIntro_quelle">
                 <li>Gumm, H-P; Sommer, M.: Einführung in die Informatik, Oldenbourg Verlag, München.</li>
                 <li>Rechenberg, P.; Pomberger, G.: Informatik-Handbuch, Hanser Verlag, München/Wien.</li>
                 <li>RFC-Editor: www.rfc-editor.org</li>
@@ -1454,22 +1451,30 @@
     <div class="gridlayout" id="W3WI_108_109">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('informatik', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_108_109', 'informatik')">Informatik</li>
-            <li>Programmierung</li>
+            <li onclick="toggleVisible('W3WI_108_109_quelle')">Programmierung</li>
         </ul>
 
         <!-- Moocs -->
         <ul class="moocs">
             <li>
                 <p>
+                    <a target="_blank" href="http://scalingbits.com/java/javakurs1"><img src="img/Scalingbits.gif" alt="Scalingbits"></a>
+                    <a target="_blank" href="http://scalingbits.com/java/javakurs1">Scalingbits</a> &mdash; Dieser Kurs zu den Grundlagen der Java Programmierung wurde von Dr. Stefan Schneider speziell für die IMBIT Kurse erstellt. Die interaktive Plattform
+                    stellt in mehreren Kapiteln umfassendes Wissen zu verschiedenen Java-Disziplinen anschaulich dar. Ergänzend werden Übungen und Musterlösungen angeboten.<span style="color:grey"> Stand 2010 | &copy; Dr. Schneider</span>
+                </p>
+            </li>
+
+            <li>
+                <p>
                     <a target="_blank" href="http://gailer-net.de/tutorials/java/index.html"><img src="http://brillianideas.com/img/learnings/Interaktives_Java_Tutorial.png" alt="Interaktives Java Tutorial"></a>
                     <a target="_blank" href="http://gailer-net.de/tutorials/java/index.html">Interaktives Java Tutorial</a> &mdash; Dies ist ein Einführungskurs in die Programmiersprache Java. Er behandelt die grundlegenden Konzepte des Programmierens
                     und der Informatik. Den größten Nutzen hast du von dem Kurs, wenn du die Aufzeichnungen interaktiv durchgehst, über die Fragen am Ende einer jeden Seite nachdenkst und sie beantwortest. Es gibt ungefähr 20 Seiten pro Kapitel, die einem
-                    das Programmieren Schritt für Schritt näher bringen. Als Programmieranfänger braucht man ca. einen Monat, um alle Aufzeichnungen durchzugehen.<span style="color:grey"> Stand 2016 | &copy; Central Connecticut State University | Autor Bradley Kjell | Abdeckungsgrad 80%</span>
+                    das Programmieren Schritt für Schritt näher bringen. Als Programmieranfänger braucht man ca. einen Monat, um alle Aufzeichnungen durchzugehen.<span style="color:grey"> Stand 2016 | &copy; Central Connecticut State University | &copy; Bradley Kjell | Abdeckungsgrad 80%</span>
                 </p>
             </li>
 
@@ -1489,18 +1494,11 @@
                     auch Java.<span style="color:grey"> Stand 2018 | &copy; Codecademy</span>
                 </p>
             </li>
-
-            <li>
-                <p>
-                    <a target="_blank" href="http://scalingbits.com/java/javakurs1"><img src="img/Scalingbits.gif" alt="Scalingbits"></a>
-                    <a target="_blank" href="http://scalingbits.com/java/javakurs1">Scalingbits</a> &mdash; Dieser Kurs zu den Grundlagen der Java Programmierung wurde von Dr. Stefan Schneider speziell für die IMBIT Kurse erstellt.<span style="color:grey"> Stand 2010 | &copy; Dr. Schneider</span>
-                </p>
-            </li>
         </ul>
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li>Anhand der Sprache Java wird an das Programmieren und der damit verbundenen Logik herangeführt.</li>
+                <li>Anhand der Sprache Java wird an das Programmieren und die damit verbundene Logik herangeführt.<span style="color:grey"> Jahr 1</span></li>
             </ul>
             <ul class="ziele">
                 <li>Kompetenzziele</li>
@@ -1508,7 +1506,7 @@
                 <li>komplexe, praktische Probleme benutzerfreundlich lösen</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_108_109_quelle">
                 <li>Horstmann, C. S.: Core Java for the Impatient. Addison-Wesley, Upper Saddle River, NJ.</li>
                 <li>Deck, K.-G. und Neuendorf, H.: Grundkurs Programmieren für Wirtschaftsinformatiker. Vieweg, Wiesbaden.</li>
                 <li>Ratz, D., Scheffler, J., Seese, D. und Wiesenberger, J.: Grundkurs Programmieren in Java, Hanser, München.</li>
@@ -1525,19 +1523,19 @@
     <div class="gridlayout" id="W3WI_IBI302">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('informatik', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_IBI302', 'informatik')">Informatik</li>
-            <li>Software-Lebens&shy;zyklus</li>
+            <li onclick="toggleVisible('W3WI_IBI302_quelle')">Software-Lebens&shy;zyklus</li>
         </ul>
 
         <!-- Moocs (None) -->
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li>Hier wird Wissen über die Phasen der Softwareentwicklung, Architekturmethoden, Vorgehensmodelle, Prozesse und Werkzeuge vermittelt.</li>
+                <li>Hier wird Wissen über die Phasen der Softwareentwicklung, Architekturmethoden, Vorgehensmodelle, Prozesse und Werkzeuge vermittelt.<span style="color:grey"> Jahr 2</span></li>
             </ul>
             <ul class="ziele">
                 <li>Kompetenzziele</li>
@@ -1546,7 +1544,7 @@
                 <li>systematisches Lösen auftretender Probleme</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_IBI302_quelle">
                 <li>Helmut Balzert, Heide Balzert et al.: &raquo;Lehrbuch der Softwaretechnik: Basiskonzepte und Requirements Engineering&laquo;, Spektrum Akademischer Verlag.</li>
                 <li>Helmut Balzert &raquo;Lehrbuch der Softwaretechnik: Entwurf, Implementierung, Installation und Betrieb&laquo;, Spektrum Akademischer Verlag.</li>
                 <li>Helmut Balzert &raquo;Lehrbuch der Softwaretechnik: Softwaremanagement&laquo;, Spektrum Akademischer Verlag.</li>
@@ -1572,12 +1570,12 @@
     <div class="gridlayout" id="W3WI_201">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('wirtschaft', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_201', 'wirtschaft')">Wirt&shy;schafts&shy;wis&shy;sen&shy;schaf&shy;ten</li>
-            <li>Modul Grundlagen der BWL</li>
+            <li onclick="toggleVisible('W3WI_201_quelle')">Modul Grundlagen der BWL</li>
         </ul>
 
         <!-- Moocs -->
@@ -1625,7 +1623,7 @@
             </li>
             <li>
                 <p>
-                    <a target="_blank" href="https://webinare.gripscoachtv.de/wefly/marketing-einfach-erklaert/"><img src="/Users/christianbartels/Documente HD/Studium/5. Semester/IT-Projekt/Bilder/GripsCoachTV.png" alt="Webinar: Marketing einfach erklärt"></a>
+                    <a target="_blank" href="https://webinare.gripscoachtv.de/wefly/marketing-einfach-erklaert/"><img src="img/GripsCoachTV.png" alt="Webinar: Marketing einfach erklärt"></a>
                     <a target="_blank" href="https://webinare.gripscoachtv.de/wefly/marketing-einfach-erklaert/"> Webinar: Marketing einfach erklärt</a> &mdash; Dieses Webinar ist ideal für alle Auszubildenden und Umschüler, für die Marketing prüfungsrelevant
                     ist.
                     <span style="color:grey"> Stand 2018 |  &copy; GripsCoachTV | Abdeckungsgrad 15%</span>
@@ -1635,7 +1633,9 @@
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li>Im Modul steht die Vermit&shy;tlung der &raquo;Grund&shy;lagen der Be&shy;triebs&shy;wirt&shy;schafts&shy;leh&shy;re&laquo; (BWL) und &raquo;Marketing&laquo; im Kontext der Wirt&shy;schaft&shy;swis&shy;sen&shy;schaf&shy;ten, im Fokus.</li>
+                <li>Im Modul steht die Vermit&shy;tlung der &raquo;Grund&shy;lagen der Be&shy;triebs&shy;wirt&shy;schafts&shy;leh&shy;re&laquo; (BWL) und &raquo;Marketing&laquo; im Kontext der Wirt&shy;schaft&shy;swis&shy;sen&shy;schaf&shy;ten im Fokus.
+                    <span style="color:grey"> Jahr 1</span>
+                </li>
             </ul>
             <ul class="ziele">
                 <li>Kompetenz&shy;ziele</li>
@@ -1643,7 +1643,7 @@
                 <li>Taxonomie des Marketing</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_201_quelle">
                 <li>Mertens, P.; Bodendorf, F.: Programmierte Einführung in die Betriebswirtschaftslehre. Institutionenlehre, Gabler, Wiesbaden.</li>
                 <li>Straub, T.: Einführung in die Allgemeine Betriebswirtschaftslehre, Pearson, Hallbergmoos.</li>
                 <li>Wöhe, G.; Döring, U.: Einführung in die Allgemeine Betriebswirtschaftslehre, Vahlen, München.</li>
@@ -1655,26 +1655,26 @@
     <div class="gridlayout" id="W3WI_IBI403">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_IBI403', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_IBI403', 'wirtschaft')">Wirt&shy;schafts&shy;wis&shy;sen&shy;schaf&shy;ten</li>
-            <li>Modul Dienst&shy;leist&shy;ungs&shy;man&shy;agement</li>
+            <li onclick="toggleVisible('W3WI_IBI403_quelle')">Modul Dienst&shy;leist&shy;ungs&shy;man&shy;agement</li>
         </ul>
 
         <!-- Moocs (None) -->
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li>Im Fokus stehen die Grundzügen des Dienstleistungsmanagements, sowie die des dienstleistungsorientiertem Marketing.</li>
+                <li>Im Fokus stehen die Grundzüge des Dienstleistungsmanagements, sowie die des dienstleistungsorientierten Marketings.<span style="color:grey"> Jahr 3</span></li>
             </ul>
             <ul class="ziele">
                 <li>Kompetenz&shy;ziele</li>
                 <li>fundamentales Wissen über Dienstleistungsmanagement sowie Ansätze, Methodiken und Werkzeuge</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_IBI403_quelle">
                 <li>Bernecker, M. und Beinharz, F.: Social Media Marketing: Strategien, Tipps und Tricks für die Praxis , johanna Verlag, Köln.</li>
                 <li>Biermann, T.: Kompakt-Training Dienstleistungsmanagement, Kiehl, Herne.</li>
                 <li>Haller, S.: Dienstleistungsmanagement: Grundlagen - Konzepte - Instrumente, Gabler, Stuttgart.</li>
@@ -1690,19 +1690,19 @@
     <div class="gridlayout" id="W3WI_203">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_203', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_203', 'wirtschaft')">Wirt&shy;schafts&shy;wis&shy;sen&shy;schaf&shy;ten</li>
-            <li>Modul Finanz&shy;ierung und Rech&shy;nungs&shy;we&shy;sen</li>
+            <li onclick="toggleVisible('W3WI_203_quellen')">Modul Finanz&shy;ierung und Rech&shy;nungs&shy;we&shy;sen</li>
         </ul>
 
         <!-- Moocs -->
         <ul class="moocs">
             <li>
                 <p>
-                    <a target="_blank" href="https://www.youtube.com/channel/UCn8aVW6QGQcRjhF3Znt35mg/videos"><img src="/Users/christianbartels/Documente HD/Studium/5. Semester/IT-Projekt/Bilder/Finanzen.png" alt="Fintool - Finanzausbildung für Jedermann - kurz erklärt"></a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCn8aVW6QGQcRjhF3Znt35mg/videos"><img src="img/Finanzen.png" alt="Fintool - Finanzausbildung für Jedermann - kurz erklärt"></a>
                     <a target="_blank" href="https://www.youtube.com/channel/UCn8aVW6QGQcRjhF3Znt35mg/videos"> Fintool - Finanzausbildung für Jedermann - kurz erklärt</a> &mdash; Das ist eine videobasierte Internet-Plattform für Finanzausbildung. Diese
                     Plattfrom beinhaltet Kurzvideos von 2, 3, höchstens 4 Minuten für Finanzwissen, in welchen die wesentlichen Grundsätze der Finanz- und Anlagetheorie beigebracht werden.
                     <span style="color:grey">Stand 2017 | &copy; Fintool AG | Abdeckungsgrad 30%</span>
@@ -1711,7 +1711,7 @@
 
             <li>
                 <p>
-                    <a target="_blank" href="http://buchhaltung-lernen.com/bilanz"><img src="/Users/christianbartels/Documente HD/Studium/5. Semester/IT-Projekt/Bilder/cyberlab-finanzsoftware.jpg" alt="Bilanzierung lernen"></a>
+                    <a target="_blank" href="http://buchhaltung-lernen.com/bilanz"><img src="img/cyberlab-finanzsoftware.jpg" alt="Bilanzierung lernen"></a>
                     <a target="_blank" href="http://buchhaltung-lernen.com/bilanz">Bilanzierung lernen</a> &mdash; Videokurse zu Bilanzierungsgrundlagen. <span style="color:grey">Stand 2018 | &copy; buchhaltung-lernen.com | Abdeckungsgrad 80%</span>
                 </p>
             </li>
@@ -1719,19 +1719,19 @@
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li>Der erste Teil &raquo;Investition und Finanzierung&laquo; umfasst die Investitionsplanung, statische und dynamische Investitionsrechnung, die wertorientierte Steuerung mit Unternehmensbewertung. Die &raquo;Bilanzierung&laquo; bildet den
-                    zweiten Teil und geht auf die bilanziellen Rechtsgrundlagen ein.
+                <li>Der erste Teil &raquo;Investition und Finanzierung&laquo; umfasst die Investitionsplanung, statische und dynamische Investitionsrechnung und die wertorientierte Steuerung mit Unternehmensbewertung. Die &raquo;Bilanzierung&laquo; bildet
+                    den zweiten Teil und geht auf bilanzielle Rechtsgrundlagen ein.<span style="color:grey"> Jahr 2</span>
                 </li>
             </ul>
             <ul class="ziele">
                 <li>Kompetenz&shy;ziele</li>
                 <li>In&shy;vest&shy;ition&shy;splanung, Finanz&shy;planung</li>
                 <li>Ver&shy;hält&shy;nis von Handels- und Steuer&shy;bilanz</li>
-                <li>Bi&shy;lan&shy;ziel&shy;le Rechts&shy;grund&shy;lagen und Re&shy;gel&shy;ungen</li>
+                <li>bi&shy;lan&shy;ziel&shy;le Rechts&shy;grund&shy;lagen und Re&shy;gel&shy;ungen</li>
                 <li>Grund&shy;sätze ord&shy;nungs&shy;mäßiger Buch&shy;führvung, Aus&shy;weis-, Ansatz- und Be&shy;wert&shy;ungs&shy;vor&shy;schrift&shy;en</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_203_quellen">
                 <li>Coenenberg, A. G.; Haller, A.; Schultze, W.: Jahresabschluss und Jahresabschlussanalyse. Betriebswirtschaftliche, handelsrechtliche, steuerrechtliche und internationale Grundlagen - HGB, IAS/IFRS, US-GAAP, DRS, Schäffer-Poeschel, Stuttgart.</li>
                 <li>Federmann, R.: Bilanzierung nach Handelsrecht, Steuerrecht und IAS/IFRS. Gemeinsamkeiten, Unterschiede und Abhängigkeiten, Erich Schmidt, Berlin.</li>
                 <li>Perridon, L.; Steiner, M.; Rathgeber, A. W.: Finanzwirtschaft der Unternehmung, Vahlen, München.</li>
@@ -1745,12 +1745,12 @@
     <div class="gridlayout" id="W3WI_106">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_106', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_106', 'wirtschaft')">Wirt&shy;schafts&shy;wis&shy;sen&shy;schaf&shy;ten</li>
-            <li>Modul Ge&shy;schäfts&shy;pro&shy;zes&shy;se und de&shy;ren Um&shy;setz&shy;ung</li>
+            <li onclick="toggleVisible('W3WI_106_quellen')">Modul Ge&shy;schäfts&shy;pro&shy;zes&shy;se und de&shy;ren Um&shy;setz&shy;ung</li>
         </ul>
 
         <!-- Moocs -->
@@ -1775,7 +1775,7 @@
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li>Betrachtung des gesamten Lebenszyklus eines Prozesses innerhalb, außerhalb und zwischen Unternehmen.</li>
+                <li>Betrachtung des gesamten Lebenszyklus eines Prozesses innerhalb, außerhalb und zwischen Unternehmen.<span style="color:grey"> Jahr 3</span></li>
             </ul>
             <ul class="ziele">
                 <li>Kompetenzziele</li>
@@ -1783,7 +1783,7 @@
                 <li>Sensibilisierung für konstruktive Zusammenarbeit bei der Arbeit mit Geschäftsprozessen</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_106_quellen">
                 <li>Dumas, La Rosa, Mendling, Reijers: Fundamentals of Business Process Management, Heidelberg.</li>
                 <li>Freund/Rückert: Praxishandbuch BPMN 2.0, München.</li>
                 <li>Gadatsch: Grundkurs Geschäftsprozess-Management, Wiesbaden.</li>
@@ -1800,12 +1800,12 @@
     <div class="gridlayout" id="W3WI_204">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_204', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_204', 'wirtschaft')">Wirt&shy;schafts&shy;wis&shy;sen&shy;schaf&shy;ten</li>
-            <li>Modul Ma&shy;na&shy;ge&shy;ment</li>
+            <li onclick="toggleVisible('W3WI_204_quellen')">Modul Ma&shy;na&shy;ge&shy;ment</li>
         </ul>
 
         <!-- Moocs -->
@@ -1815,8 +1815,7 @@
                     <a target="_blank" href="https://www.open2study.com/courses/human-resources-090215?utm_source=Mooc-list"><img src="http://brillianideas.com/img/learnings/Human_Resources.jpg" alt="Human Resources"></a>
                     <a target="_blank" href="https://www.open2study.com/courses/human-resources-090215?utm_source=Mooc-list"> Human Resources</a> &mdash; In diesem MOOC erfährst du mehr über die verschiedenen Bereiche des Personalmanagements. In die verschiedenen
                     Module sind kurze Quizes integriert, die den Lernfortschritt dokumentieren. Die in englischer Sprache verfügbaren Vorträge behandeln beispielsweise den Umgang mit virtuellen Teams und Recruitment. Der MOOC ist für Studierende geeignet,
-                    die eine Beschäftigung im Personalwesen planen und vertieft die Vorlesung &raquo;Ausgewählte Aspekte des Managements&laquo; im 6. Semester.
-                    <span style="color:grey">Stand 2017 | &copy; Open Universities Australia Pty Ltd | Dauer 4 | WochenAbdeckungsgrad 15%</span>
+                    die eine Beschäftigung im Personalwesen planen und vertieft die Vorlesung &raquo;Ausgewählte Aspekte des Managements&laquo; im 6. Semester.<span style="color:grey"> Stand 2017 | &copy; Open Universities Australia Pty Ltd | Dauer 4 Wochen | Abdeckungsgrad 15%</span>
                 </p>
             </li>
 
@@ -1824,14 +1823,14 @@
                 <p>
                     <a target="_blank" href="https://www.open2study.com/courses/entrepreneurship-and-family-business"><img src="http://brillianideas.com/img/learnings/Entrepreneurship_and_Family_Business.jpg" alt="Entrepreneurship and Family Business"></a>
                     <a target="_blank" href="https://www.open2study.com/courses/entrepreneurship-and-family-business">Entrepreneurship and Family Business</a> &mdash; Dieser MOOC der australischen RMIT Universität behandelt das Thema Unternehmertum. Du
-                    erhältst Einblicke in Führungsverantwortlichkeit, Business Pläne und viele weitere Themen. Anhand dieser Videoserie kannst du Teile der Vorlesung &raquo;Ausgewählte Aspekte des Managements&laquo; wiederholen. <span style="color:grey">Stand 2017 | &copy; Open Universities Australia Pty Ltd | Dauer 4| Abdeckungsgrad 15%</span>
+                    erhältst Einblicke in Führungsverantwortlichkeit, Business Pläne und viele weitere Themen. Anhand dieser Videoserie kannst du Teile der Vorlesung &raquo;Ausgewählte Aspekte des Managements&laquo; wiederholen. <span style="color:grey">Stand 2017 | &copy; Open Universities Australia Pty Ltd | Dauer 4 Wochen | Abdeckungsgrad 15%</span>
                 </p>
             </li>
             <li>
                 <p>
                     <a target="_blank" href="https://www.coursera.org/specializations/human-resource-management"><img src="http://brillianideas.com/img/learnings/Human_Resources_Management.png" alt="Human Resource Management"></a>
                     <a target="_blank" href="https://www.coursera.org/specializations/human-resource-management">Human Resource Management</a> &mdash; Dieser MOOC beschäftigt sich mit dem Human Resource Management. Unter anderem werden die Bereiche Recruiting,
-                    Einstellung und die Gehaltsstrategien untersucht. Anhand dieser Videos kannst du die Inhalte der Management-Vorlesung nochmals wiederholen. <span style="color:grey">Stand 2017 | & &copy; Coursera| Abdeckungsgrad 15%</span>
+                    Einstellung und die Gehaltsstrategien untersucht. Anhand dieser Videos kannst du die Inhalte der Management-Vorlesung nochmals wiederholen.<span style="color:grey"> Stand 2017 | &copy; Coursera | Abdeckungsgrad 15%</span>
                 </p>
             </li>
 
@@ -1839,7 +1838,7 @@
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li>Das Themengebiet Management wird auf der organisatorischen Ebene und anhand der Management-Methoden und den zugehörigen Führungsinstrumenten erläutert.
+                <li>Das Themengebiet Management wird auf der organisatorischen Ebene und anhand der Management-Methoden und den zugehörigen Führungsinstrumenten erläutert.<span style="color:grey"> Jahr 3</span>
                 </li>
             </ul>
             <ul class="ziele">
@@ -1850,7 +1849,7 @@
                 <li>inter&shy;nation&shy;ale Aspekte des Man&shy;age&shy;ment</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_204_quellen">
                 <li>Horvath, P.: Controlling, Vahlen, München.</li>
                 <li>Schreyögg, G., v. Werder, A. (Hrsg.): Handwörterbuch Unternehmensführung und Organisation, in: Enzyklopädie der Betriebswirtschaftslehre - Band 2, Schäfer-Poeschel, Stuttgart.</li>
                 <li>Steinmann, H.; Schreyögg, G.(Autoren); Koch, J. (Künstler): Management. Grundlagen der Unternehmensführung, Gabler, Wiesbaden.</li>
@@ -1860,15 +1859,15 @@
     </div>
 
     <!-- Hier beginnt das Modul Grundlagen der Rechnungslegung innerhalb Wirtschaftswissenschaften-->
-    <div class="gridlayout" id="W3WI_202">
+    <div class="gridlayout" id="">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_202', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_202', 'wirtschaft')">Wirt&shy;schafts&shy;wis&shy;sen&shy;schaf&shy;ten</li>
-            <li>Modul Grundlagen der Rech&shy;nungs&shy;leg&shy;ung</li>
+            <li onclick="toggleVisible('W3WI_202_quellen')">Modul Grundlagen der Rech&shy;nungs&shy;leg&shy;ung</li>
         </ul>
 
         <!-- Moocs -->
@@ -1876,7 +1875,7 @@
             <li>
                 <p>
                     <a target="_blank" href="http://www.uebungs-aufgaben.de/lernmodule/rechnungswesen/index.php"><img src="http://brillianideas.com/img/learnings/Uebungsaufgaben_Rechnungswesen.jpg" alt="Übungsaufgaben Rechnungswesen"></a>
-                    <a target="_blank" href="http://www.uebungs-aufgaben.de/lernmodule/rechnungswesen/index.php"> Übungsaufgaben Rechnungswesen</a> &mdash; DDiese Website stellt Aufgaben zu T-Konten, Inventar und Bilanz, sowie Geschäftsfälle mit Lösungen
+                    <a target="_blank" href="http://www.uebungs-aufgaben.de/lernmodule/rechnungswesen/index.php"> Übungsaufgaben Rechnungswesen</a> &mdash; Diese Website stellt Aufgaben zu T-Konten, Inventar und Bilanz, sowie Geschäftsfälle mit Lösungen
                     zur Verfügung. Die Aufgabentypen sind dabei angelehnt an IMBIT Vorlesungen und Klausuraufgaben der Finanzbuchhaltung. So kannst du dich gut auf eine Prüfung vorbereiten.
                     <span style="color:grey"> Stand 2017 |  &copy; Stefan Schweiger | Abdeckungsgrad 50%</span>
                 </p>
@@ -1908,7 +1907,7 @@
             </li>
             <li>
                 <p>
-                    <a target="_blank" href="http://www.rechnungswesen-verstehen.de/uebungen/rechnungswesen-uebungen.php"><img src="/Users/christianbartels/Documente HD/Studium/5. Semester/IT-Projekt/Bilder/RechnungswesenVerstehen_Logo.png" alt="Rechnungswesen üben"></a>
+                    <a target="_blank" href="http://www.rechnungswesen-verstehen.de/uebungen/rechnungswesen-uebungen.php"><img src="img/RechnungswesenVerstehen_Logo.png" alt="Rechnungswesen üben"></a>
                     <a target="_blank" href="http://www.rechnungswesen-verstehen.de/uebungen/rechnungswesen-uebungen.php"> Rechnungswesen üben</a> &mdash; Auf diesen Seiten befinden sich ausgewählte, kostenlose Übungsaufgaben zu den einzelnen Teilgebieten
                     des Rechnungswesens. Zu allen Übungsaufgaben werden kostenlose Lösungen bereitgestellt.
                     <span style="color:grey"> Stand 2018 |  &copy; Fabian Simon | Abdeckungsgrad 30%</span>
@@ -1916,7 +1915,7 @@
             </li>
             <li>
                 <p>
-                    <a target="_blank" href="http://www.rechnungswesen-verstehen.de/kosten-leistungs-rechnung/klr-grundlagen.php"><img src="/Users/christianbartels/Documente HD/Studium/5. Semester/IT-Projekt/Bilder/RechnungswesenVerstehen_Logo.png" alt="Webinar: KLR Grundlagen"></a>
+                    <a target="_blank" href="http://www.rechnungswesen-verstehen.de/kosten-leistungs-rechnung/klr-grundlagen.php"><img src="img/RechnungswesenVerstehen_Logo.png" alt="Webinar: KLR Grundlagen"></a>
                     <a target="_blank" href="http://www.rechnungswesen-verstehen.de/kosten-leistungs-rechnung/klr-grundlagen.php"> KLR Grundlagen</a> &mdash; Auf dieser Website findet man Informationen zur Kosten- und Leistungsrechnungsgrundlagen.
                     <span style="color:grey"> Stand 2018 |  &copy; Rechnungswesen-verstehen.de | Abdeckungsgrad 20%</span>
                 </p>
@@ -1925,16 +1924,16 @@
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li>Die Grundlagen der Rech&shy;nungs&shy;leg&shy;ung umfassen die Technik der Fi&shy;nanz&shy;buch&shy;hal&shy;ung und die Kosten- und Leis&shy;tungs&shy;rech&shy;nung sowie die dazu&shy;gehörigen Grund&shy;lagen und Konzepte.</li>
+                <li>Die Grundlagen der Rech&shy;nungs&shy;leg&shy;ung umfassen die Technik der Fi&shy;nanz&shy;buch&shy;hal&shy;tung und die Kosten- und Leis&shy;tungs&shy;rech&shy;nung sowie die dazu&shy;gehörigen Grund&shy;lagen und Konzepte.<span style="color:grey"> Jahr 1</span></li>
             </ul>
             <ul class="ziele">
                 <li>Kompetenz&shy;ziele</li>
                 <li>Grundkonzeption des Rechnungswesens</li>
-                <li>Grundsätze ordnungsmäßiger Buchführung</li>
+                <li>Grundsätze ordnungsgemäßer Buchführung</li>
                 <li>Grundlagen der Kostenrechnung</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_202_quellen">
                 <li>Bornhofen, M.; Bornhofen, M. C.: Buchführung 1 DATEV-Kontenrahmen: Grundlagen der Buchführung für Industrie- und Handelsbetriebe, Gabler, Wiesbaden.</li>
                 <li>Bornhofen, M.; Bornhofen, M. C.: Buchführung 2 DATEV-Kontenrahmen: Abschlüsse nach Handels- und Steuerrecht - Betriebswirtschaftliche Auswertung - Vergleich mit IFRS, Gabler, Wiesbaden.</li>
                 <li>Coenenberg, A.; Haller, A.; Mattner, G.; Schultze, W.: Einführung in das Rechnungswesen. Grundlagen der Buchführung und Bilanzierung, Schäffer Poeschel, Stuttgart.</li>
@@ -1949,12 +1948,12 @@
     <div class="gridlayout" id="W3WI_506">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_506', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_506', 'wirtschaft')">Wirt&shy;schafts&shy;wis&shy;sen&shy;schaf&shy;ten</li>
-            <li>Modul Recht</li>
+            <li onclick="toggleVisible('W3WI_506_quellen')">Modul Recht</li>
         </ul>
 
         <!-- Moocs -->
@@ -1962,9 +1961,9 @@
             <li>
                 <p>
                     <a target="_blank" href="http://www.gesetze-im-internet.de/"><img src="http://brillianideas.com/img/learnings/Gesetzbuecher_online.jpg" alt="Gesetzbücher online"></a>
-                    <a target="_blank" href="http://www.gesetze-im-internet.de/"> Gesetzbücher online </a> &mdash; ier findest du Gesetzestexte des Handelsgesetzbuchs, des Bürgerlichen Gesetzbuchs und viele mehr zum Nachschlagen online. Diese Website
+                    <a target="_blank" href="http://www.gesetze-im-internet.de/"> Gesetzbücher online </a> &mdash; Hier findest du Gesetzestexte des Handelsgesetzbuchs, des Bürgerlichen Gesetzbuchs und viele mehr zum Nachschlagen online. Diese Website
                     eignet sich hervorragend, um während der Vorlesung einzelne Gesetze schnell nachzuschlagen oder nachzulesen.
-                    <span style="color:grey">Stand 2017 |&copy; juris GmbH | Abdeckungsgrad 40%</span>
+                    <span style="color:grey">Stand 2017 | &copy; juris GmbH | Abdeckungsgrad 40%</span>
                 </p>
             </li>
 
@@ -1988,16 +1987,16 @@
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li>Überblick über die Rechtssysteme und Rechtsgebiete und erwerb der Kompetenz, rechtliche Problemstellungen zu erkennen, um diese bei Entscheidungen anwenden zu können.
+                <li>Überblick über die Rechtssysteme und Rechtsgebiete. Erwerb der Kompetenz rechtliche Problemstellungen zu erkennen, um diese bei Entscheidungen anwenden zu können.<span style="color:grey"> Jahr 1</span></li>
             </ul>
             <ul class="ziele">
                 <li>Kompetenz&shy;ziele</li>
                 <li>Grund&shy;lagen des Bürger&shy;lichen Rechts, Handels- und Gesel&shy;lschafts&shy;rechts</li>
-                <li>Recht&shy;liche Informa&shy;tionen gesel&shy;lschaftlich und ethisch ref&shy;lekt&shy;ieren</li>
+                <li>recht&shy;liche Informa&shy;tionen gesel&shy;lschaftlich und ethisch ref&shy;lekt&shy;ieren</li>
                 <li>Rechtssubjekte und Rechtsobjekte</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_506_quellen">
                 <li>Brox, H.; Walker, W.-D.: Allgemeiner Teil des BGB, Vahlen, München.</li>
                 <li>Brox, H.; Henssler, M.: Handelsrecht, C.H. Beck, München.</li>
                 <li>Brox, H.; Walker, W.-D.: Allgemeines Schuldrecht, C.H. Beck, München.</li>
@@ -2014,12 +2013,12 @@
     <div class="gridlayout" id="W3WI_505">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_505', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_505', 'wirtschaft')">Wirt&shy;schafts&shy;wis&shy;sen&shy;schaf&shy;ten</li>
-            <li>Modul Volks&shy;wirt&shy;schaftsl&shy;ehre</li>
+            <li onclick="toggleVisible('W3WI_505_quellen')">Modul Volks&shy;wirt&shy;schaftsl&shy;ehre</li>
         </ul>
 
         <!-- Moocs -->
@@ -2038,7 +2037,7 @@
                 <p>
                     <a target="_blank" href="https://www.open2study.com/courses/entrepreneurship-and-family-business"><img src="http://brillianideas.com/img/learnings/Entrepreneurship_and_Family_Business.jpg" alt="Entrepreneurship and Family Business"></a>
                     <a target="_blank" href="https://www.open2study.com/courses/entrepreneurship-and-family-business">Entrepreneurship and Family Business</a> &mdash; Dieser MOOC der australischen RMIT Universität behandelt das Thema Unternehmertum. Du
-                    erhältst Einblicke in Führungsverantwortlichkeit, Business Pläne und viele weitere Themen. Anhand dieser Videoserie kannst du Teile der Vorlesung &raquo;Ausgewählte Aspekte des Managements&laquo; wiederholen. <span style="color:grey">Stand 2017 | &copy; Open Universities Australia Pty Ltd | Dauer 4| Abdeckungsgrad 15%</span>
+                    erhältst Einblicke in Führungsverantwortlichkeit, Business Pläne und viele weitere Themen. Anhand dieser Videoserie kannst du Teile der Vorlesung &raquo;Ausgewählte Aspekte des Managements&laquo; wiederholen. <span style="color:grey">Stand 2017 | &copy; Open Universities Australia Pty Ltd | Dauer 4 Wochen | Abdeckungsgrad 15%</span>
                 </p>
             </li>
             <li>
@@ -2047,7 +2046,7 @@
                     <a target="_blank" href="https://www.edx.org/course/introduction-economics-macroeconomics-snux-snu044-088-2x-0">Introduction to Economics: Macroeconomics</a> &mdash; Dieser Kurs ist ein Einführungskurs auf der elementarsten Ebene,
                     sodass keine Vorkenntnisse der Ökonomie erforderlich sind. In diesem Wirtschaftskurs lernst du die Hauptkonzepte der Makroökonomie, wie Bruttoinlandsprodukt, Preislevel, Inflation, Arbeitslosigkeit, wirtschaftliches Wachstum und Zahlungsbilanz
                     kennen. Zudem lernst du, wie das Markt Equilibrium und die Equilibrium Menge aus den Angebots- und Nachfragekurven bestimmt werden. Gerade zu den Themen Markt Equilibrium, Equilibrium Menge und Inflation werden gerne Klausurfragen
-                    gestellt. <span style="color:grey">Stand 2017 | &copy; edX Inc.| Dauer 6 Wochen | Abdeckungsgrad 30%</span>
+                    gestellt. <span style="color:grey">Stand 2017 | &copy; edX Inc. | Dauer 6 Wochen | Abdeckungsgrad 30%</span>
                 </p>
             </li>
             <li>
@@ -2055,7 +2054,7 @@
                     <a target="_blank" href="https://www.ecb.europa.eu/explainers/tell-me/html/index.en.html"><img src="http://brillianideas.com/img/learnings/European_Central_Bank.jpg" alt="European Central Bank"></a>
                     <a target="_blank" href="https://www.ecb.europa.eu/explainers/tell-me/html/index.en.html">European Central Bank</a> &mdash; Auf dieser Webseite der Europäischen Zentralbank (EZB) findest du hilfreiche Artikel zu Themen wie Mindestreservepflicht,
                     Nominal- und Realzinssatz, sowie Währungspolitik. Anhand von Fallbeispielen und erklärenden Abbildungen werden dir die theoretischen Grundlagen näher gebracht. Auch gibt dir diese Seite Aufschluss über die Aufgaben und die Bedeutung
-                    der EZB als währungspolitisches Organ. In den VWL-Vorlesungen von Prof. Dr. Schuster ist die EZB ein wichtiges Thema und Grundwissen über diese Einrichtung wird für die Klausur vorausgesetzt. <span style="color:grey">Stand 2017 | &copy; European Central Bank. | Abdeckungsgrad 20%</span>
+                    der EZB als währungspolitisches Organ. In den VWL-Vorlesungen von Prof. Dr. Schuster ist die EZB ein wichtiges Thema und Grundwissen über diese Einrichtung wird für die Klausur vorausgesetzt. <span style="color:grey">Stand 2017 | &copy; European Central Bank | Abdeckungsgrad 20%</span>
                 </p>
             </li>
             </li>
@@ -2070,14 +2069,14 @@
             </li>
             <li>
                 <p>
-                    <a target="_blank" href="http://www.rechnungswesen-verstehen.de/bwl-vwl/vwl/vwl-grundlagen.php"><img src="/Users/christianbartels/Documente HD/Studium/5. Semester/IT-Projekt/Bilder/RechnungswesenVerstehen_Logo.png" alt="VWL Grundlagen"></a>
+                    <a target="_blank" href="http://www.rechnungswesen-verstehen.de/bwl-vwl/vwl/vwl-grundlagen.php"><img src="img/RechnungswesenVerstehen_Logo.png" alt="VWL Grundlagen"></a>
                     <a target="_blank" href="http://www.rechnungswesen-verstehen.de/bwl-vwl/vwl/vwl-grundlagen.php">VWL Grundlagen</a> &mdash;Auf dieser Seite von Rechnungswesen-Verstehen.de werden die Grundlagen der VWL möglichst verständlich und einfach
                     erklärt. <span style="color:grey">Stand 2018 |  &copy; rechnungswesen-verstehen.de | Abdeckungsgrad 50%</span>
                 </p>
             </li>
             <li>
                 <p>
-                    <a target="_blank" href="https://itunes.apple.com/de/app/bbc-news/id364147881?mt=8"><img src="/Users/christianbartels/Documente HD/Studium/5. Semester/IT-Projekt/Bilder/BBC_News.jpeg" alt="BBC News"></a>
+                    <a target="_blank" href="https://itunes.apple.com/de/app/bbc-news/id364147881?mt=8"><img src="img/BBC_News.jpeg" alt="BBC News"></a>
                     <a target="_blank" href="https://itunes.apple.com/de/app/bbc-news/id364147881?mt=8">BBC News</a> &mdash;ABBC News ist ein Nachrichtensender des BBCs. <span style="color:grey">Stand 2018 |   &copy; BBC News | Abdeckungsgrad 5%</span>
                 </p>
             </li>
@@ -2085,7 +2084,7 @@
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li>Im Fokus sthet die Analyse der Zusammenhänge bei der Verteilung von Gütern und Produktionsfaktoren als Kern der VWL.
+                <li>Im Fokus steht die Analyse der Zusammenhänge bei der Verteilung von Gütern und Produktionsfaktoren als Kern der VWL.<span style="color:grey"> Jahr 2</span></li>
             </ul>
             <ul class="ziele">
                 <li>Kompetenz&shy;ziele</li>
@@ -2094,7 +2093,7 @@
                 <li>Grundlagen der Wirtschaftspolitik</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_505_quellen">
                 <li>Baßeler, U.; Heinrich, J./Utecht, B.: Grundlagen und Probleme der Volkswirtschaft, Schäffer-Poeschel, Stuttgart.</li>
                 <li>Bofinger, P.: Grundzüge der Volkswirtschaftslehre - Eine Einführung in die Wissenschaft von Märkten, Pearson Studium, München.</li>
                 <li>Krugman, P. R; Obstfeld, M./Melitz, M. J.: International Economics - Theory and Policy, Pearson Education, Boston.</li>
@@ -2109,26 +2108,27 @@
     <div class="gridlayout" id="W3WI_IBI404">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_IBI404', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_IBI404', 'interkulturell')">In&shy;ter&shy;kul&shy;tu&shy;rel&shy;les Ma&shy;na&shy;ge&shy;ment & Wis&shy;sen</li>
-            <li>Modul Global Project Managment Skills</li>
+            <li onclick="toggleVisible('W3WI_IBI404_quellen')">Modul Global Project Managment Skills</li>
         </ul>
 
         <!-- Moocs (None)-->
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li> Im Fokus stehen Komplexität internationaler und verteilter Teams, damit verbundenen Herausforderungen und möglichen Lösungsstrategien.</li>
+                <li> Im Fokus stehen Komplexität internationaler und verteilter Teams, damit verbundene Herausforderungen und mögliche Lösungsstrategien.<span style="color:grey"> Jahr 3</span></li>
             </ul>
             <ul class="ziele">
+                <li>Kompetenz&shy;ziele</li>
                 <li>Grundlagen der Mediation und des Konfliktmanagements</li>
                 <li>Wissen über aktuelle Innovationen und Innovationsstrategien, sowie deren Umsetzung</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_IBI404_quellen">
                 <li>Belinha S. De Abreu und Melda N. Yildiz (Eds) (2015) Global Media Literacy in a Digital Age: Teaching Beyond Borders (Minding the Media), Peter Lang Inc., International Academic Publishers</li>
                 <li>Bernard Roth (2015) The Achievement Habit: Stop Wishing, Start Doing, and Take Command of Your Life, Harper Business</li>
                 <li>Carmine Gallo (2014) Talk Like TED, Pan Books, London</li>
@@ -2152,12 +2152,12 @@
     <div class="gridlayout" id="W3WI_IBI301">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_IBI301', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_IBI301', 'interkulturell')">In&shy;ter&shy;kul&shy;tu&shy;rel&shy;les Ma&shy;na&shy;ge&shy;ment & Wis&shy;sen</li>
-            <li>Modul Intercultural Management</li>
+            <li onclick="toggleVisible('W3WI_IBI301_quellen')">Modul Intercultural Management</li>
         </ul>
 
         <!-- Moocs -->
@@ -2187,7 +2187,7 @@
                     <a target="_blank" href="https://www.youtube.com/channel/UCC5EEtqfF3lbJ7KzrtXGtfg"><img src="http://brillianideas.com/img/learnings/Geert_Hofstede_Dimensions_website.jpg" alt="10 Minutes with Geert Hofstede"></a>
                     <a target="_blank" href="https://www.youtube.com/channel/UCC5EEtqfF3lbJ7KzrtXGtfg">10 Minutes with Geert Hofstede</a> &mdash; Geert Hofstede selbst erklärt in kurzen Videos die Unterschiede der von ihm entwickelten Kulturdimensionen.
                     So erhältst du Einblicke in die Gegensätzlichkeit der Dimensionen-Paare und welche Effekte diese in der Praxis haben. Hofstedes Kulturdimensionen vermitteln ein Grundverständnis für den Curriculum-Bereich &raquo;Fundamentals in Intercultural
-                    Management&laquo; und geben Aufschluss über Themen wie &raquo;Das Phänomen Kultur&laquo;, &raquo;Stereotypisierung&laquo; und &raquo;Unternehmens- und nationale Kultur&laquo;. <span style="color:grey"> Stand 2014/ 2015 | &copy; 10 minutes with | Abdeckungsgrad 10%</span>
+                    Management&laquo; und geben Aufschluss über Themen wie &raquo;Das Phänomen Kultur&laquo;, &raquo;Stereotypisierung&laquo; und &raquo;Unternehmens- und nationale Kultur&laquo;. <span style="color:grey"> Stand 2014 | &copy; 10 minutes with | Abdeckungsgrad 10%</span>
                 </p>
             </li>
 
@@ -2240,7 +2240,7 @@
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li>ICM vermittelt die Grundlangen der Globalisierung und der damit verbunden interkulturellen Zusammenarbeit. Der Fokus der Veranstaltung liegt auf dem Unternehmenskontext.</li>
+                <li>ICM vermittelt die Grundlangen der Globalisierung und der damit verbundenen interkulturellen Zusammenarbeit. Der Fokus der Veranstaltung liegt auf dem Unternehmenskontext.<span style="color:grey"> Jahr 1</span></li>
             </ul>
             <ul class="ziele">
                 <li>Kompetenzziele</li>
@@ -2250,7 +2250,7 @@
                 <li>ergebnisorientierte Anwendung von Internationalisierungsstrategien</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_IBI301_quellen">
                 <li>Broaweays, M.J.; Price, R.: Understanding Cross-cultural Management, Financial Times Prentice Hall, Harlow.</li>
                 <li>Deresky, H.: International Management, Pearson Prentice Hall, Upper Saddle River.</li>
                 <li>Lane, H.W.; Maznevski, M.L.; DiStefano, J.J.; Dietz, J.: International Management Behavior, Wiley, Chichester.</li>
@@ -2266,19 +2266,19 @@
     <div class="gridlayout" id="W3WI_IBI305_IBI306">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_IBI305_IBI306', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_IBI305_IBI306', 'interkulturell')">In&shy;ter&shy;kul&shy;tu&shy;rel&shy;les Ma&shy;na&shy;ge&shy;ment & Wis&shy;sen</li>
-            <li>Modul Spanisch</li>
+            <li onclick="toggleVisible('W3WI_IBI305_IBI306_quellen')">Modul Spanisch</li>
         </ul>
 
         <!-- Moocs -->
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li>Als Basis vermittelt dieses Modul grundlegende Grammatikkenntnisse. Darauf aufbauend behandelt es formelle und informalle Ausdrucksweisen, mit dem Ziel privaten und geschäftlichen Smalltalk halten zu können.</li>
+                <li>Als Basis vermittelt dieses Modul grundlegende Grammatikkenntnisse. Darauf aufbauend behandelt es formelle und informelle Ausdrucksweisen, mit dem Ziel privaten und geschäftlichen Smalltalk halten zu können.<span style="color:grey"> Jahr 2 & 3</span></li>
             </ul>
             <ul class="ziele">
                 <li>Kompetenzziele</li>
@@ -2287,7 +2287,7 @@
                 <li>angemessene fremdsprachliche Kommunikation, schriftlich und mündlich</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_IBI305_IBI306_quellen">
                 <li>Gonzales, M.; Martin, F.; Rodrigo, C.: Colegas 1 und 2, Klett Sprachen, Stuttgart.</li>
                 <li>Juan Lazaro, O.; de Prada Segovia, M.; Zaragoza Andreu, A.: En equipo.es: Spanisch im Beruf 1 und 2, Hueber, Ismaning.</li>
                 <li>Bürsgens, G.: Espanñol Profesional: Spanisch im Beruf 1 und 2, Cornelsen, Berlin.</li>
@@ -2312,5 +2312,15 @@
 
         x.style.display = "none";
         y.style.display = "grid";
+    }
+
+    function toggleVisible(visibility) {
+        var x = document.getElementById(visibility);
+
+        if (x.style.display != "none") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "inline-block";
+        }
     }
 </script>

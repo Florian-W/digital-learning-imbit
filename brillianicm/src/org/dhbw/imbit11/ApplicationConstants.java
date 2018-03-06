@@ -43,4 +43,13 @@ public interface ApplicationConstants {
 	public static  String PAGETITLE_REGISTRATION_COMPLETE = "brillianICM Registration";
 	public static  String PAGETITLE_REGISTRATION= "brillianICM Registration";
 	
+	public static  String BADGE_CRITERIA_GERMANY = "brillianICM Module Germany Badge";
+	public static  String BADGE_CRITERIA_SWEDEN = "brillianICM Module Sweden Badge";
+	public static  String BADGE_CRITERIA_BRAZIL = "brillianICM Module Brazil Badge";
+	public static  String BADGE_CRITERIA_USA = "brillianICM Module USA Badge";
+	public static  String BADGE_CRITERIA_SPAIN = "brillianICM Module Spain Badge";
+	public static  String BADGE_CRITERIA_TURKEY = "brillianICM Module Turkey Badge";
+	public static  String BADGE_CRITERIA_AUSTRALIA = "brillianICM Module Australia Badge";
+	public static  String BADGE_CRITERIA_CHINA = "brillianICM Module China Badge";
+	
 }

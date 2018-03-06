@@ -365,15 +365,7 @@ Anil Balci, Franziska Müller, Marvin Diehl, Annalena von Rhein, Sophie Hagemann
 
     <!-- Map Section -->
  <!--<div id="map"></div>  -->  
-
-    
-
-    
-
+ 
 </body>
-
-
-
-
-  
+ 
 </html>

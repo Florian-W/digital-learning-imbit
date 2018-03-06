@@ -59,6 +59,16 @@ Pay attention to the Java version: 32bit and 64bit! See "java -version" in comma
 
 ### XAMPP or single installations of Apache HTTP Server and PHP
 * e.g. versions Apache 2.2 and PHP7
+* Edit your php.ini file (find it in PHP folder, eg. C:\xampp\php)
+Change short_open_tag from "Off" to On
+```
+short_open_tag=On
+```
+Remove semicolon before extension, where something like xsl or php_xsl is defined
+```
+extension=xsl
+```
+
 * Run your app on Apache: Copy the folder brillianIDEAS from C:/Users/username/git/digital-learning-imbit (or whereever you have your git repository) to the htdocs folder of Apache (in XAMPP: C:/xampp/htdocs), start Apache and open localhost/brillianIDEAS in browser
 
 

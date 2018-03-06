@@ -70,7 +70,7 @@ th,td {
 						<br>Dokumentation
 				</a></td>
 				<td valign="top" align="center"><a
-					href="<%out.print(application.getContextPath());%>/Main"> <img
+					href="${pageContext.request.contextPath}/Main"> <img
 						width="50%" alt="Start Application" src="logo/logo.jpg"> <br>Start
 						Application
 				</a></td>

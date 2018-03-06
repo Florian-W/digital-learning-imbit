@@ -107,6 +107,7 @@ public class Event extends HttpServlet {
 			 * 5.3.16
 			 * Added Cases that handles the certification sending and resets the KPI to 0
 			 */
+			
 			case "sendCertificate": {
 				/*
 				 * System.out.println("Space forcertifcate sendges ");
@@ -142,8 +143,8 @@ public class Event extends HttpServlet {
 					
 					String username= firstName + " " + lastName; 
 					
-					userRealm.resetUserProgress(email);
 					mailclient.sendCertificateMail(username, email, imcost, imqual, imtime, country, request);
+					//userRealm.resetUserProgress(email);
 				
 					
 				}catch (SQLException e) {

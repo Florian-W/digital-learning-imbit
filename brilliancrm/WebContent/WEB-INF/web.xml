@@ -48,18 +48,14 @@
                 [urls]
                 # The 'urls' section is used for url-based security in web applications.
                 /LoginUser = anon
-                /frontend/imprint.jsp = anon
-                
+                /frontend/imprint.jsp = anon              
                 /Student authc, roles[student]
                 /Main = authc, roles[student]
                 /frontend/* = authc, roles[student]
-                /frontend/imprint.jsp = anon
-                
-                
+                /frontend/imprint.jsp = anon              
 				/Admin = authc, roles[admin]
 				/backend/homepage_admin.jsp = authc, roles[admin]
 				/DeleteProfessor = authc, roles[admin]
-				
 				/Professor = authc, roles[professor]
 				/backend/homepage_professor.jsp = authc, roles[professor]
 				/backend/sendRegistrationLink.jsp = authc, roles[professor]
@@ -86,12 +82,14 @@
 		<res-sharing-scope>Shareable</res-sharing-scope>
 	</resource-ref>
 
+	<!-- Context Parameter for Mail -->	
+	
+		<!-- CHANGE TEST vs. PROD: ADAPTATION sendRegistrationLink -->
 	<context-param>
 		<param-name>domain</param-name>
-		<param-value>localhost:8080/brillianCRM</param-value>
+		<param-value>http://ec2-52-14-250-138.us-east-2.compute.amazonaws.com:8080</param-value>
+		<!-- PROD: <param-value>brilliancrm.com:8080</param-value> -->
 	</context-param>
-	
-	<!-- Context Parameter for Mail -->	
 	
 	<context-param>
 		<description>Mail-Server for outgoing mails</description>
@@ -109,12 +107,13 @@
 		<description>Mail-User for mailserver</description>
 		<param-name>mailuser</param-name>
 		<param-value>no-reply@brillianCRM.com</param-value>
+		<!--  ALTERNATIVE: <param-value>no-reply@digital-learning-imbit.com</param-value> -->
 	</context-param>
 	
 	<context-param>
 		<description>Password for Mail-User</description>
 		<param-name>mailpw</param-name>
-		<param-value>wibi12c</param-value>
+		<param-value>password</param-value>
 	</context-param>
 	
 	<context-param>

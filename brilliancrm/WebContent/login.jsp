@@ -67,7 +67,7 @@
 			</tr>
 			<tr>
 				<td align="right" style="padding-right: 28px;">
-					<a class="login" href='<%out.print(application.getContextPath());%>/Registration?g=000' >Register</a>
+					<a class="login" href='${pageContext.request.contextPath}/Registration?g=000' >Register</a>
 				</td>				
 			</tr>
 			<tr>
