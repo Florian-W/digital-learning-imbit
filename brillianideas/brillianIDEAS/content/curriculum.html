@@ -1,8 +1,3 @@
-<!-- <div id="site" class="imbit">
-<h1 id="title_imbit">IMBIT-Curriculum</h1>
-</div> -->
-
-
 <!DOCTYPE html>
 
 <html>
@@ -38,7 +33,7 @@
 
         <!-- Heading IMBIT Curriculum-->
         <ul class="ueberschriftenfeld">
-            <li> <a href="docs/IMBIT-Studienplan ab 2018.pdf" style="text-decoration:none" target="_blank"> IMBIT-Curriculum</a></li>
+            <li> <a href="docs/IMBIT-Studienplan ab 2018.pdf" style="text-decoration:none; color:#991B33" target="_blank">IMBIT-Curriculum</a></li>
         </ul>
 
         <!-- Fächer auf Landingpage-->
@@ -70,7 +65,7 @@
     <div class="gridlayout" id="wirtschaftsinformatik">
 
         <!-- Tentakel Kopf_Home -->
-       <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <!-- Menü für Grid für Wirtschaftsinformatik -->
         <ul class="ueberschriftenfeld">
@@ -147,7 +142,7 @@
     <div class="gridlayout" id="informatik">
 
         <!-- Tentakel Kopf_Home -->
-       <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <!-- Menü für Grid für Methodische Grundlagen -->
         <ul class="ueberschriftenfeld">
@@ -269,7 +264,8 @@
             <li>
                 <p>
                     <a target="_blank" href="http://www.erp-system.de"><img src="http://www.imbit.dhbw-mannheim.de/fileadmin/_migrated/pics/220x220_usp-ffw-imbit.png" alt="ERP-System.de"></a>
-                    <a target="_blank" href="http://www.erp-system.de">ERP-System.de</a> &mdash; ERP-System.de erklärt alle Informationen rund um das komplexe Thema ERP umfassend, anschaulich und einfach. Es werden in einer Art ERP-Wiki alle wichtigen Fragestellungen rund um ERP und ERP-Systeme behandelt. Was ist ERP? Was ist ein ERP-System? Was sind die wesentlichen Funktionsbereiche eines ERP-Systems? Wie erfolgt die Auswahl und Einführung eines ERP-Systems aus der Vielzahl von
+                    <a target="_blank" href="http://www.erp-system.de">ERP-System.de</a> &mdash; ERP-System.de erklärt alle Informationen rund um das komplexe Thema ERP umfassend, anschaulich und einfach. Es werden in einer Art ERP-Wiki alle wichtigen
+                    Fragestellungen rund um ERP und ERP-Systeme behandelt. Was ist ERP? Was ist ein ERP-System? Was sind die wesentlichen Funktionsbereiche eines ERP-Systems? Wie erfolgt die Auswahl und Einführung eines ERP-Systems aus der Vielzahl von
                     ERP-Anbietern und ERP-Lösungen? Darüber hinaus wird auf die neuesten Trends im Bereich ERP, wie die zunehmende Verbreitung von Cloud ERP und Mobile ERP eingegangen. Des Weiteren verweist ERP-System.de auf wertvolle weiterführende Literatur.
                 </p>
             </li>
@@ -331,10 +327,10 @@
             </ul>
 
             <ul class="quellen" style="display:none" id="W3WI_IBI402_quellen">
-              <li>Wannenwetsch, H. (Hrsg.): Integrierte Materialwirtschaft und Logistik, Springer.</li>
-            	<li>Thonemann, U.: Operations Management &mdash; Konzepte, Methoden und Anwendungen, Pearson.</li>
-            	<li>Mangan u.a.: Global Logistics and Supply Chain Management, Wiley.</li>
-            	<li> Supply Chain Counsel: Supply-Chain-Operations-Reference-Modell (SCOR).</li>
+                <li>Wannenwetsch, H. (Hrsg.): Integrierte Materialwirtschaft und Logistik, Springer.</li>
+                <li>Thonemann, U.: Operations Management &mdash; Konzepte, Methoden und Anwendungen, Pearson.</li>
+                <li>Mangan u.a.: Global Logistics and Supply Chain Management, Wiley.</li>
+                <li> Supply Chain Counsel: Supply-Chain-Operations-Reference-Modell (SCOR).</li>
             </ul>
         </div>
     </div>
@@ -603,7 +599,7 @@
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_601', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_601', 'methodischegrundlagen')">Methodische Grundlagen</li>
-            <li>Modul Mathematik I</li>
+            <li onclick="toggleVisible('W3WI_601_quelle')">Modul Mathematik I</li>
         </ul>
 
         <!-- Moocs -->
@@ -720,7 +716,7 @@
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_602', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_602', 'methodischegrundlagen')">Methodische Grundlagen</li>
-            <li>Modul Mathematik II</li>
+            <li onclick="toggleVisible('W3WI_602_quelle')">Modul Mathematik II</li>
         </ul>
 
         <!-- Moocs -->
@@ -861,7 +857,7 @@
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_701_wissArbeiten', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_701_wissArbeiten', 'methodischegrundlagen')">Methodische Grundlagen</li>
-            <li>Modul Grundlagen des wissenschaftlichen Arbeitens</li>
+            <li onclick="toggleVisible('W3WI_701_wissArbeiten_quelle')">Modul Grundlagen des wissenschaftlichen Arbeitens</li>
         </ul>
 
         <!-- Moocs -->
@@ -912,7 +908,7 @@
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_701_praesentation_kommunikation', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_701_praesentation_kommunikation', 'methodischegrundlagen')">Methodische Grundlagen</li>
-            <li>Modul Präsentations- und Kommunikations&shy;kompetenzen</li>
+            <li onclick="toggleVisible('W3WI_701_praesentation_kommunikation_quelle')">Modul Präsentations- und Kommunikations&shy;kompetenzen</li>
         </ul>
 
         <!-- Moocs (None) -->
@@ -968,7 +964,7 @@
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_702', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_702', 'methodischegrundlagen')">Methodische Grundlagen</li>
-            <li>Modul Schlüs&shy;sel&shy;qua&shy;li&shy;fi&shy;ka&shy;tio&shy;nen II</li>
+            <li onclick="toggleVisible('W3WI_702_quelle')">Modul Schlüs&shy;sel&shy;qua&shy;li&shy;fi&shy;ka&shy;tio&shy;nen II</li>
         </ul>
 
         <!-- Moocs (None)-->
@@ -998,66 +994,66 @@
                 <b>Technikfolgenabsch&auml;tzung:</b>
                 <li>Frank Fuchs-Kittowski; Werner Kriesel (Hrsg.): Informatik und Gesellschaft. Peter Lang Verlag, Wien</li>
                 <li>Andrea Kienle, Gabriele Kunau: Informatik und Gesellschaft, Eine sozio-technische Perspektive, Oldenbourg Wissenschaftsverlag</li>
-                <lu>Hartmut Hirsch-Kreinsen, Peter Ittermann, Jonathan Niehaus (Hrsg.): Digitalisierung industrieller Arbeit, Nomos, Baden-Baden</li>
-                    <li>Frey C, Osborne M : The Future of Employment: How Susceptible are Jobs to Computerisation? Oxford Martin School Working Paper. Oxford</li>
-                    <li>Fischer, P. (Hrsg.): Wirtschaftsethische Fragen der E-Economy. In: Ethische &ouml;konomie, Band 8, Physica-Verlag, Heidelberg.</li>
-                    <li>Hausmanninger, Th.; R. Capurro (Hrsg.): Netzethik - Grundlegungsfragen der Internetethik, Wilhelm Fink Verlag, M&uuml;chen.</li>
-                    <li>Ulrich, P.: Integrative Wirtschaftsethik, Haupt, Bern/Stuttgart/Wien.</li>
-                    <li>Greenfield, S.: Mind Change: How digital technologies are leaving their mark on our brains. Random House: New York</li>
-                    <li>Arntz, M., Gregory, T. und Zierahn, U.: The Risk of Automation for Jobs in OECD Countries A COMPARATIVE ANALYSIS, OECD Social, Employment and Migration Working Papers No. 189. Online verf&uuml;gbar unter http://dx.doi.org/10.1787/5jlz9h56dvq7-en</li><br>
+                <li>Hartmut Hirsch-Kreinsen, Peter Ittermann, Jonathan Niehaus (Hrsg.): Digitalisierung industrieller Arbeit, Nomos, Baden-Baden</li>
+                <li>Frey C, Osborne M : The Future of Employment: How Susceptible are Jobs to Computerisation? Oxford Martin School Working Paper. Oxford</li>
+                <li>Fischer, P. (Hrsg.): Wirtschaftsethische Fragen der E-Economy. In: Ethische &ouml;konomie, Band 8, Physica-Verlag, Heidelberg.</li>
+                <li>Hausmanninger, Th.; R. Capurro (Hrsg.): Netzethik - Grundlegungsfragen der Internetethik, Wilhelm Fink Verlag, M&uuml;chen.</li>
+                <li>Ulrich, P.: Integrative Wirtschaftsethik, Haupt, Bern/Stuttgart/Wien.</li>
+                <li>Greenfield, S.: Mind Change: How digital technologies are leaving their mark on our brains. Random House: New York</li>
+                <li>Arntz, M., Gregory, T. und Zierahn, U.: The Risk of Automation for Jobs in OECD Countries A COMPARATIVE ANALYSIS, OECD Social, Employment and Migration Working Papers No. 189. Online verf&uuml;gbar unter http://dx.doi.org/10.1787/5jlz9h56dvq7-en</li><br>
 
-                    <b>E-Mentoring I+II:</b>
-                    <li>Block, Carl Hans: Von der Gruppe zum Team. Wie Sie die Zusammenarbeit in zukunftsorientierten Unternehmen verbessern. M&uuml;nchen: Beck</li>
-                    <li>Friedrich, Helmut F. / Mandl, Heinz: Handbuch Lernstrategien. G&ouml;ttingen u.a.: Hogrefe</li>
-                    <li>G&auml;de, Ernst-Georg / Listing, Thomas: Gruppen erfolgreich leiten. Empfehlungen f&uuml;r die Zusammenarbeit mit Erwachsenen. Mainz: Gr&uuml;newald</li>
-                    <li>Glasl, Friedrich: Konfliktmanagement. Ein Handbuch f&uuml;r F&uuml;hrungskr&auml;fte, Beraterinnen und Berater. Bern / Stuttgart: Freies Geistesleben</li>
-                    <li>Grae&szlig;ner, Gernot: Moderation &mdash; Das Lehrbuch. Augsburg: Ziel</li>
-                    <li>Hoffmann, Eberhardt / L&ouml;hle, Monika: Erfolgreich Lernen. Effiziente Lern- und Arbeitsstrategien f&uuml;r Schule, Studium und Beruf. G&ouml;ttingen u.a.: Hogrefe</li>
-                    <li>Knoll, J&ouml;rg: Kleingruppenmethoden. Effektive Gruppenarbeit in Kursen, Seminaren, Trainings und Tagungen. Weinheim / Basel: Beltz</li>
-                    <li>Mahlmann, Regina: Konflikte managen. Psychologische Grundlagen, Modelle und Fallstudien. Weinheim / Basel: Beltz</li>
-                    <li>Metzig, Werner / Schuster, Martin: Lernen zu lernen. Lernstrategien wirkungsvoll einsetzen. Berlin: Springer</li>
-                    <li>Rechtien, Wolfgang: Angewandte Gruppendynamik. Ein Lehrbuch f&uuml;r Studierende und Praktiker. M&uuml;nchen: Psychologie Verlags Union, Beltz</li><br>
+                <b>E-Mentoring I+II:</b>
+                <li>Block, Carl Hans: Von der Gruppe zum Team. Wie Sie die Zusammenarbeit in zukunftsorientierten Unternehmen verbessern. M&uuml;nchen: Beck</li>
+                <li>Friedrich, Helmut F. / Mandl, Heinz: Handbuch Lernstrategien. G&ouml;ttingen u.a.: Hogrefe</li>
+                <li>G&auml;de, Ernst-Georg / Listing, Thomas: Gruppen erfolgreich leiten. Empfehlungen f&uuml;r die Zusammenarbeit mit Erwachsenen. Mainz: Gr&uuml;newald</li>
+                <li>Glasl, Friedrich: Konfliktmanagement. Ein Handbuch f&uuml;r F&uuml;hrungskr&auml;fte, Beraterinnen und Berater. Bern / Stuttgart: Freies Geistesleben</li>
+                <li>Grae&szlig;ner, Gernot: Moderation &mdash; Das Lehrbuch. Augsburg: Ziel</li>
+                <li>Hoffmann, Eberhardt / L&ouml;hle, Monika: Erfolgreich Lernen. Effiziente Lern- und Arbeitsstrategien f&uuml;r Schule, Studium und Beruf. G&ouml;ttingen u.a.: Hogrefe</li>
+                <li>Knoll, J&ouml;rg: Kleingruppenmethoden. Effektive Gruppenarbeit in Kursen, Seminaren, Trainings und Tagungen. Weinheim / Basel: Beltz</li>
+                <li>Mahlmann, Regina: Konflikte managen. Psychologische Grundlagen, Modelle und Fallstudien. Weinheim / Basel: Beltz</li>
+                <li>Metzig, Werner / Schuster, Martin: Lernen zu lernen. Lernstrategien wirkungsvoll einsetzen. Berlin: Springer</li>
+                <li>Rechtien, Wolfgang: Angewandte Gruppendynamik. Ein Lehrbuch f&uuml;r Studierende und Praktiker. M&uuml;nchen: Psychologie Verlags Union, Beltz</li><br>
 
-                    <b>E-Learning I+II:</b>
-                    <li>Reinmann, G.: Lehren und Lernen mit Medien: Studientext Didaktisches Design; Universit&auml;t der Bundeswehr M&uuml;nchen</li>
-                    <li>Sch&ouml;n, Sandra; Ebner, Martin (Hg.): L3T.Lehrbuch f&uuml;r Lernen mit Technologien. http://l3t.eu</li>
-                    <li>Arnold, R. & Lermen, K. (Hrsg.): eLearning-Didaktik; Schneider Verlag Hohengehren</li>
-                    <li>Handke, J. & Sch&auml;fer, A.M.: E-Learning, E-Teaching und E-Assessment in der Hochschullehre : eine Anleitung, M&uuml;nchen: Oldenbourg.</li>
-                    <li>Handke J& Sperl A. (Hrsg.) : Das Inverted Classroom Model. Begleitband zur ersten deutschen ICMKonferenz. M&uuml;nster: Oldenburg</li>
-                    <li>Vogt, Michael/ Schneider, Stefan : E-Klausuren an Hochschulen : Didaktik &mdash; Technik &mdash; Systeme &mdash; Recht &mdash; Praxis. Giessener Elektronische Bibliothek.</li>
-                    <li>Fischer,H., K&ouml;hler,T.: Know your Types. Analyse von E-Learning-&uuml;bernehmenden innerhalb des akademischen Lehrpersonals, in: Zeitschrift f&uuml;r e-learning, studienVerlag</li>
-                    <li>Hemsing,S.: Simply the Best. 10 Erfolgsfaktoren f&uuml;r gutes E-Learning in: Hamburger eLearning-Magazin#14, Hamburg,</li>
-                    <li>Johnson,L., Adams Becker,S., Estrada,V., Freeman,A.: NMC Horizon Report: Higher Education Edition; Austin, Texas: The New Media Consortium</li>
-                    <li>Troitzsch,H. et al.: Roadmap to eLearning@ETHZurich, Ein Leitfaden f&uuml;r Dozierende, ETH Z&uuml;rich</li>
-                    <li>Mager R.F.: Lernziele und Unterricht. Beltz, Weinheim</li>
-                    <li>Knoll, J&ouml;rg: Kleingruppenmethoden. Effektive Gruppenarbeit in Kursen, Seminaren, Trainings und Tagungen. Weinheim / Basel: Beltz</li>
-                    <li>Mc Grath, J.E., Hollingshead,A.B.: Groups interacting with technology. Sage: Newbury Park</li>
-                    <li>Niegemann, H.M.et al.: Kompendium E-Learning; Springer</li>
-                    <li>Sauter, Annette M.; Sauter, Werner; Bender, Harald: Blended learning. Effiziente Integration von E-Learning und Pr&auml;senztraining. 2.Aufl.Unterschleissheim/M&uuml;nchen: Luchterhand.</li>
-                    <li>Schulmeister, Rolf e.a.: Didaktik und IT-Service-Management f&uuml;r Hochschulen. Referenzrahmen zur Qualit&auml;tssicherung und -entwicklung von eLearning-Angeboten. Bremen. Online verf&uuml;gbar unter www.mmkh.de</li>
-                    <li>Sharples, M., Adams, A., Alozie, N., Ferguson, R., FitzGerald, E., Gaved, M., McAndrew, P., Means, B., Remold, J., Rienties, - B., Roschelle, J., Vogt, K., Whitelock, D. und Yarnall, L.: Innovating Pedagogy, Open University. Online
-                        verf&uuml;gbar unter http://www.open.ac.uk/blogs/innovating/</li>
-                    <li>Wenger, E. und Wenger, B.: Introduction to communities of practice. Online verf&uuml;gbar unter http://wenger-trayner.com/introduction-to-communities-of-practice/</li><br>
+                <b>E-Learning I+II:</b>
+                <li>Reinmann, G.: Lehren und Lernen mit Medien: Studientext Didaktisches Design; Universit&auml;t der Bundeswehr M&uuml;nchen</li>
+                <li>Sch&ouml;n, Sandra; Ebner, Martin (Hg.): L3T.Lehrbuch f&uuml;r Lernen mit Technologien. http://l3t.eu</li>
+                <li>Arnold, R. & Lermen, K. (Hrsg.): eLearning-Didaktik; Schneider Verlag Hohengehren</li>
+                <li>Handke, J. & Sch&auml;fer, A.M.: E-Learning, E-Teaching und E-Assessment in der Hochschullehre : eine Anleitung, M&uuml;nchen: Oldenbourg.</li>
+                <li>Handke J& Sperl A. (Hrsg.) : Das Inverted Classroom Model. Begleitband zur ersten deutschen ICMKonferenz. M&uuml;nster: Oldenburg</li>
+                <li>Vogt, Michael/ Schneider, Stefan : E-Klausuren an Hochschulen : Didaktik &mdash; Technik &mdash; Systeme &mdash; Recht &mdash; Praxis. Giessener Elektronische Bibliothek.</li>
+                <li>Fischer,H., K&ouml;hler,T.: Know your Types. Analyse von E-Learning-&uuml;bernehmenden innerhalb des akademischen Lehrpersonals, in: Zeitschrift f&uuml;r e-learning, studienVerlag</li>
+                <li>Hemsing,S.: Simply the Best. 10 Erfolgsfaktoren f&uuml;r gutes E-Learning in: Hamburger eLearning-Magazin#14, Hamburg,</li>
+                <li>Johnson,L., Adams Becker,S., Estrada,V., Freeman,A.: NMC Horizon Report: Higher Education Edition; Austin, Texas: The New Media Consortium</li>
+                <li>Troitzsch,H. et al.: Roadmap to eLearning@ETHZurich, Ein Leitfaden f&uuml;r Dozierende, ETH Z&uuml;rich</li>
+                <li>Mager R.F.: Lernziele und Unterricht. Beltz, Weinheim</li>
+                <li>Knoll, J&ouml;rg: Kleingruppenmethoden. Effektive Gruppenarbeit in Kursen, Seminaren, Trainings und Tagungen. Weinheim / Basel: Beltz</li>
+                <li>Mc Grath, J.E., Hollingshead,A.B.: Groups interacting with technology. Sage: Newbury Park</li>
+                <li>Niegemann, H.M.et al.: Kompendium E-Learning; Springer</li>
+                <li>Sauter, Annette M.; Sauter, Werner; Bender, Harald: Blended learning. Effiziente Integration von E-Learning und Pr&auml;senztraining. 2.Aufl.Unterschleissheim/M&uuml;nchen: Luchterhand.</li>
+                <li>Schulmeister, Rolf e.a.: Didaktik und IT-Service-Management f&uuml;r Hochschulen. Referenzrahmen zur Qualit&auml;tssicherung und -entwicklung von eLearning-Angeboten. Bremen. Online verf&uuml;gbar unter www.mmkh.de</li>
+                <li>Sharples, M., Adams, A., Alozie, N., Ferguson, R., FitzGerald, E., Gaved, M., McAndrew, P., Means, B., Remold, J., Rienties, - B., Roschelle, J., Vogt, K., Whitelock, D. und Yarnall, L.: Innovating Pedagogy, Open University. Online verf&uuml;gbar
+                    unter http://www.open.ac.uk/blogs/innovating/</li>
+                <li>Wenger, E. und Wenger, B.: Introduction to communities of practice. Online verf&uuml;gbar unter http://wenger-trayner.com/introduction-to-communities-of-practice/</li><br>
 
-                    <b>Interkulterelle Kompetenz:</b>
-                    <li>Barmeyer, C.; Franklin, P.: Intercultural Management: A Case-Based Approach to Achieving Complementarity and Synergy, Basingstoke: Palgrave Macmillan.</li>
-                    <li>Bolten, J.: Interkulturelle Kompetenz, Erfurt: Landeszentrale f&uuml;r Politische Bildung Th&uuml;ringen.</li>
-                    <li>Fox, K.: Watching the English: The Hidden Rules of English Behaviour, Hodder & Stoughton.</li>
-                    <li>Giesche, S.; Rietz, S. (Hrsg.): Interkulturelle Kompetenz als zentraler Erfolgsfaktor im internationalen Projektmanagement, Diplomica, Hamburg.</li>
-                    <li>Gymnich, A.; Erl, M.: Interkulturelle Kompetenzen. Erfolgreich kommunizieren zwischen den Kulturen, Stuttgart: Klett.</li>
-                    <li>Hall, E.T.:, Beyond culture, Garden City, New York.</li>
-                    <li>Hoffmann, H.-E.; Schoper, Y.-G.; Fitzsimons, C. (Hrsg.): Internationales Projektmanagement: - Interkulturelle Zusammenarbeit in der Praxis, dtv, M&uuml;nchen.</li>
-                    <li>Hofstede, G.; / Hofstede, G. J.; Minkov, M.: Cultures and Organizations: Software of the Mind, New York: McGraw-Hill USA</li>
-                    <li>L&uuml;sebrink, H.-J.: Interkulturelle Kommunikation. Interaktion - Fremdwahrnehmung - Kulturtransfer, Stuttgart: J.B. Metzler</li>
-                    <li>Schroll- Machl, S.: Doing Business with Germans. Their perception, our perception, G&ouml;ttingen: Vandenhoeck & Ruprecht</li>
-                    <li>Thomas, A: &raquo;Interkulturelle Kompetenz &mdash; Grundlagen, Probleme und Konzepte&laquo;, in: Erw&auml;gen, Wissen, Ethik 14.1, p. 137-228</li>
-                    <li>Thomas, A.; Kammhuber, S. und Schroll-Machl: Handbuch Interkulturelle Kommunikation und Kooperation, Vandenhoek & Ruprecht, G&ouml;ttingen</li>
-                    <li>Trompenaars, F.: Handbuch globales Managen, D&uuml;sseldorf, Wien, New York</li><br>
+                <b>Interkulterelle Kompetenz:</b>
+                <li>Barmeyer, C.; Franklin, P.: Intercultural Management: A Case-Based Approach to Achieving Complementarity and Synergy, Basingstoke: Palgrave Macmillan.</li>
+                <li>Bolten, J.: Interkulturelle Kompetenz, Erfurt: Landeszentrale f&uuml;r Politische Bildung Th&uuml;ringen.</li>
+                <li>Fox, K.: Watching the English: The Hidden Rules of English Behaviour, Hodder & Stoughton.</li>
+                <li>Giesche, S.; Rietz, S. (Hrsg.): Interkulturelle Kompetenz als zentraler Erfolgsfaktor im internationalen Projektmanagement, Diplomica, Hamburg.</li>
+                <li>Gymnich, A.; Erl, M.: Interkulturelle Kompetenzen. Erfolgreich kommunizieren zwischen den Kulturen, Stuttgart: Klett.</li>
+                <li>Hall, E.T.:, Beyond culture, Garden City, New York.</li>
+                <li>Hoffmann, H.-E.; Schoper, Y.-G.; Fitzsimons, C. (Hrsg.): Internationales Projektmanagement: - Interkulturelle Zusammenarbeit in der Praxis, dtv, M&uuml;nchen.</li>
+                <li>Hofstede, G.; / Hofstede, G. J.; Minkov, M.: Cultures and Organizations: Software of the Mind, New York: McGraw-Hill USA</li>
+                <li>L&uuml;sebrink, H.-J.: Interkulturelle Kommunikation. Interaktion - Fremdwahrnehmung - Kulturtransfer, Stuttgart: J.B. Metzler</li>
+                <li>Schroll- Machl, S.: Doing Business with Germans. Their perception, our perception, G&ouml;ttingen: Vandenhoeck & Ruprecht</li>
+                <li>Thomas, A: &raquo;Interkulturelle Kompetenz &mdash; Grundlagen, Probleme und Konzepte&laquo;, in: Erw&auml;gen, Wissen, Ethik 14.1, p. 137-228</li>
+                <li>Thomas, A.; Kammhuber, S. und Schroll-Machl: Handbuch Interkulturelle Kommunikation und Kooperation, Vandenhoek & Ruprecht, G&ouml;ttingen</li>
+                <li>Trompenaars, F.: Handbuch globales Managen, D&uuml;sseldorf, Wien, New York</li><br>
 
-                    <b>Teamwork I+II:</b>
-                    <li>Block, C.-H.: Von der Gruppe zum Team. Wie Sie die Zusammenarbeit in zukunftsorientierten Unternehmen verbessern. M&uuml;nchen: Beck</li>
-                    <li>Friedrich, H. F.; Mandl, H.: Handbuch Lernstrategien. G&ouml;ttingen u.a.: Hogrefe</li>
-                    <li>G&auml;de, E.-G.; Listing, T.: Gruppen erfolgreich leiten. Empfehlungen f&uuml;r die Zusammenarbeit mit Erwachsenen. Mainz: Gr&uuml;newald</li>
+                <b>Teamwork I+II:</b>
+                <li>Block, C.-H.: Von der Gruppe zum Team. Wie Sie die Zusammenarbeit in zukunftsorientierten Unternehmen verbessern. M&uuml;nchen: Beck</li>
+                <li>Friedrich, H. F.; Mandl, H.: Handbuch Lernstrategien. G&ouml;ttingen u.a.: Hogrefe</li>
+                <li>G&auml;de, E.-G.; Listing, T.: Gruppen erfolgreich leiten. Empfehlungen f&uuml;r die Zusammenarbeit mit Erwachsenen. Mainz: Gr&uuml;newald</li>
             </ul>
         </div>
     </div>
@@ -1071,7 +1067,7 @@
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_703', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_703', 'methodischegrundlagen')">Methodische Grundlagen</li>
-            <li>Modul Schlüs&shy;sel&shy;qua&shy;li&shy;fi&shy;ka&shy;tio&shy;nen III</li>
+            <li onclick="toggleVisible('W3WI_703_quelle')">Modul Schlüs&shy;sel&shy;qua&shy;li&shy;fi&shy;ka&shy;tio&shy;nen III</li>
         </ul>
 
         <!-- Moocs (None)-->
@@ -1135,7 +1131,7 @@
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_IBI405', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_IBI405', 'methodischegrundlagen')">Methodische Grundlagen</li>
-            <li>Modul Statistik in der Anwendung</li>
+            <li onclick="toggleVisible('W3WI_IBI405_quelle')">Modul Statistik in der Anwendung</li>
         </ul>
 
         <!-- Moocs -->
@@ -1154,7 +1150,7 @@
         <div class="modulbeschreibung">
             <ul style="list-style:none">
                 <li>Die praktische Umsetzung von Statistikkenntnissen in der Datenanalyse und Datenvisualisierung, unter Anwendung verschiedener Werkzeuge und Sprachen, bildet den Schwerpunkt dieses Moduls.
-                <span style="color:grey"> Jahr 3</span></li>
+                    <span style="color:grey"> Jahr 3</span></li>
             </ul>
             <ul class="ziele">
                 <li>Kompetenz&shy;ziele</li>
@@ -1186,7 +1182,7 @@
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_104_CS_OS', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_104_CS_OS', 'informatik')">Informatik</li>
-            <li>Modul Kom&shy;mu&shy;ni&shy;ka&shy;tions- und Be&shy;triebs&shy;sys&shy;teme</li>
+            <li onclick="toggleVisible('W3WI_104_CS_OS_quelle')">Modul Kom&shy;mu&shy;ni&shy;ka&shy;tions- und Be&shy;triebs&shy;sys&shy;teme</li>
         </ul>
 
         <!-- Moocs -->
@@ -1271,7 +1267,7 @@
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_105', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_105', 'informatik')">Informatik</li>
-            <li>Modul Daten&shy;banken</li>
+            <li onclick="toggleVisible('W3WI_105_quelle')">Modul Daten&shy;banken</li>
         </ul>
 
         <!-- Moocs -->
@@ -1337,7 +1333,7 @@
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_110', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_110', 'informatik')">Informatik</li>
-            <li>Entwicklung verteilter Systeme</li>
+            <li onclick="toggleVisible('W3WI_110_quelle')">Entwicklung verteilter Systeme</li>
         </ul>
 
         <!-- Moocs -->
@@ -1370,7 +1366,8 @@
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li> Fokusiert wird sich auf die beiden Teil&shy;bereichte Web-Programm&shy;ierung und Verteilte Systeme. Web-Programm&shy;ierung legt den Fokus auf webbasierte Anwendungen, aufbauend darauf vermittelt Verteilte Systeme Kenntnisse der Web-Architektur, Konzepte und Terminologien.<span style="color:grey"> Jahr 2</span>
+                <li> Fokusiert wird sich auf die beiden Teil&shy;bereichte Web-Programm&shy;ierung und Verteilte Systeme. Web-Programm&shy;ierung legt den Fokus auf webbasierte Anwendungen, aufbauend darauf vermittelt Verteilte Systeme Kenntnisse der Web-Architektur,
+                    Konzepte und Terminologien.<span style="color:grey"> Jahr 2</span>
                 </li>
             </ul>
             <ul class="ziele">
@@ -1400,7 +1397,7 @@
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_104_ITIntro', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_104_ITIntro', 'informatik')">Informatik</li>
-            <li>Grundlagen der IT</li>
+            <li onclick="toggleVisible('W3WI_104_ITIntro_quelle')">Grundlagen der IT</li>
         </ul>
 
         <!-- Moocs -->
@@ -1461,7 +1458,7 @@
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('informatik', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_108_109', 'informatik')">Informatik</li>
-            <li>Programmierung</li>
+            <li onclick="toggleVisible('W3WI_108_109_quelle')">Programmierung</li>
         </ul>
 
         <!-- Moocs -->
@@ -1469,7 +1466,8 @@
             <li>
                 <p>
                     <a target="_blank" href="http://scalingbits.com/java/javakurs1"><img src="img/Scalingbits.gif" alt="Scalingbits"></a>
-                    <a target="_blank" href="http://scalingbits.com/java/javakurs1">Scalingbits</a> &mdash; Dieser Kurs zu den Grundlagen der Java Programmierung wurde von Dr. Stefan Schneider speziell für die IMBIT Kurse erstellt. Die interaktive Plattform stellt in mehreren Kapiteln umfassendes Wissen zu verschiedenen Java-Disziplinen anschaulich dar. Ergänzend werden Übungen und Musterlösungen angeboten.<span style="color:grey"> Stand 2010 | &copy; Dr. Schneider</span>
+                    <a target="_blank" href="http://scalingbits.com/java/javakurs1">Scalingbits</a> &mdash; Dieser Kurs zu den Grundlagen der Java Programmierung wurde von Dr. Stefan Schneider speziell für die IMBIT Kurse erstellt. Die interaktive Plattform
+                    stellt in mehreren Kapiteln umfassendes Wissen zu verschiedenen Java-Disziplinen anschaulich dar. Ergänzend werden Übungen und Musterlösungen angeboten.<span style="color:grey"> Stand 2010 | &copy; Dr. Schneider</span>
                 </p>
             </li>
 
@@ -1532,7 +1530,7 @@
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('informatik', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_IBI302', 'informatik')">Informatik</li>
-            <li>Software-Lebens&shy;zyklus</li>
+            <li onclick="toggleVisible('W3WI_IBI302_quelle')">Software-Lebens&shy;zyklus</li>
         </ul>
 
         <!-- Moocs (None) -->
@@ -1579,7 +1577,7 @@
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('wirtschaft', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_201', 'wirtschaft')">Wirt&shy;schafts&shy;wis&shy;sen&shy;schaf&shy;ten</li>
-            <li>Modul Grundlagen der BWL</li>
+            <li onclick="toggleVisible('W3WI_201_quelle')">Modul Grundlagen der BWL</li>
         </ul>
 
         <!-- Moocs -->
@@ -1637,7 +1635,9 @@
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li>Im Modul steht die Vermit&shy;tlung der &raquo;Grund&shy;lagen der Be&shy;triebs&shy;wirt&shy;schafts&shy;leh&shy;re&laquo; (BWL) und &raquo;Marketing&laquo; im Kontext der Wirt&shy;schaft&shy;swis&shy;sen&shy;schaf&shy;ten im Fokus.<span style="color:grey"> Jahr 1</span></li>
+                <li>Im Modul steht die Vermit&shy;tlung der &raquo;Grund&shy;lagen der Be&shy;triebs&shy;wirt&shy;schafts&shy;leh&shy;re&laquo; (BWL) und &raquo;Marketing&laquo; im Kontext der Wirt&shy;schaft&shy;swis&shy;sen&shy;schaf&shy;ten im Fokus.
+                    <span style="color:grey"> Jahr 1</span>
+                </li>
             </ul>
             <ul class="ziele">
                 <li>Kompetenz&shy;ziele</li>
@@ -1662,7 +1662,7 @@
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_IBI403', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_IBI403', 'wirtschaft')">Wirt&shy;schafts&shy;wis&shy;sen&shy;schaf&shy;ten</li>
-            <li>Modul Dienst&shy;leist&shy;ungs&shy;man&shy;agement</li>
+            <li onclick="toggleVisible('W3WI_IBI403_quelle')">Modul Dienst&shy;leist&shy;ungs&shy;man&shy;agement</li>
         </ul>
 
         <!-- Moocs (None) -->
@@ -1697,7 +1697,7 @@
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_203', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_203', 'wirtschaft')">Wirt&shy;schafts&shy;wis&shy;sen&shy;schaf&shy;ten</li>
-            <li>Modul Finanz&shy;ierung und Rech&shy;nungs&shy;we&shy;sen</li>
+            <li onclick="toggleVisible('W3WI_203_quellen')">Modul Finanz&shy;ierung und Rech&shy;nungs&shy;we&shy;sen</li>
         </ul>
 
         <!-- Moocs -->
@@ -1721,8 +1721,8 @@
 
         <div class="modulbeschreibung">
             <ul style="list-style:none">
-                <li>Der erste Teil &raquo;Investition und Finanzierung&laquo; umfasst die Investitionsplanung, statische und dynamische Investitionsrechnung und die wertorientierte Steuerung mit Unternehmensbewertung. Die &raquo;Bilanzierung&laquo; bildet den
-                    zweiten Teil und geht auf bilanzielle Rechtsgrundlagen ein.<span style="color:grey"> Jahr 2</span>
+                <li>Der erste Teil &raquo;Investition und Finanzierung&laquo; umfasst die Investitionsplanung, statische und dynamische Investitionsrechnung und die wertorientierte Steuerung mit Unternehmensbewertung. Die &raquo;Bilanzierung&laquo; bildet
+                    den zweiten Teil und geht auf bilanzielle Rechtsgrundlagen ein.<span style="color:grey"> Jahr 2</span>
                 </li>
             </ul>
             <ul class="ziele">
@@ -1733,7 +1733,7 @@
                 <li>Grund&shy;sätze ord&shy;nungs&shy;mäßiger Buch&shy;führvung, Aus&shy;weis-, Ansatz- und Be&shy;wert&shy;ungs&shy;vor&shy;schrift&shy;en</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_203_quellen">
                 <li>Coenenberg, A. G.; Haller, A.; Schultze, W.: Jahresabschluss und Jahresabschlussanalyse. Betriebswirtschaftliche, handelsrechtliche, steuerrechtliche und internationale Grundlagen - HGB, IAS/IFRS, US-GAAP, DRS, Schäffer-Poeschel, Stuttgart.</li>
                 <li>Federmann, R.: Bilanzierung nach Handelsrecht, Steuerrecht und IAS/IFRS. Gemeinsamkeiten, Unterschiede und Abhängigkeiten, Erich Schmidt, Berlin.</li>
                 <li>Perridon, L.; Steiner, M.; Rathgeber, A. W.: Finanzwirtschaft der Unternehmung, Vahlen, München.</li>
@@ -1752,7 +1752,7 @@
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_106', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_106', 'wirtschaft')">Wirt&shy;schafts&shy;wis&shy;sen&shy;schaf&shy;ten</li>
-            <li>Modul Ge&shy;schäfts&shy;pro&shy;zes&shy;se und de&shy;ren Um&shy;setz&shy;ung</li>
+            <li onclick="toggleVisible('W3WI_106_quellen')">Modul Ge&shy;schäfts&shy;pro&shy;zes&shy;se und de&shy;ren Um&shy;setz&shy;ung</li>
         </ul>
 
         <!-- Moocs -->
@@ -1785,7 +1785,7 @@
                 <li>Sensibilisierung für konstruktive Zusammenarbeit bei der Arbeit mit Geschäftsprozessen</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_106_quellen">
                 <li>Dumas, La Rosa, Mendling, Reijers: Fundamentals of Business Process Management, Heidelberg.</li>
                 <li>Freund/Rückert: Praxishandbuch BPMN 2.0, München.</li>
                 <li>Gadatsch: Grundkurs Geschäftsprozess-Management, Wiesbaden.</li>
@@ -1807,7 +1807,7 @@
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_204', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_204', 'wirtschaft')">Wirt&shy;schafts&shy;wis&shy;sen&shy;schaf&shy;ten</li>
-            <li>Modul Ma&shy;na&shy;ge&shy;ment</li>
+            <li onclick="toggleVisible('W3WI_204_quellen')">Modul Ma&shy;na&shy;ge&shy;ment</li>
         </ul>
 
         <!-- Moocs -->
@@ -1851,7 +1851,7 @@
                 <li>inter&shy;nation&shy;ale Aspekte des Man&shy;age&shy;ment</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_204_quellen">
                 <li>Horvath, P.: Controlling, Vahlen, München.</li>
                 <li>Schreyögg, G., v. Werder, A. (Hrsg.): Handwörterbuch Unternehmensführung und Organisation, in: Enzyklopädie der Betriebswirtschaftslehre - Band 2, Schäfer-Poeschel, Stuttgart.</li>
                 <li>Steinmann, H.; Schreyögg, G.(Autoren); Koch, J. (Künstler): Management. Grundlagen der Unternehmensführung, Gabler, Wiesbaden.</li>
@@ -1861,7 +1861,7 @@
     </div>
 
     <!-- Hier beginnt das Modul Grundlagen der Rechnungslegung innerhalb Wirtschaftswissenschaften-->
-    <div class="gridlayout" id="W3WI_202">
+    <div class="gridlayout" id="">
 
         <!-- Tentakel Kopf_Home -->
         <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
@@ -1869,7 +1869,7 @@
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_202', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_202', 'wirtschaft')">Wirt&shy;schafts&shy;wis&shy;sen&shy;schaf&shy;ten</li>
-            <li>Modul Grundlagen der Rech&shy;nungs&shy;leg&shy;ung</li>
+            <li onclick="toggleVisible('W3WI_202_quellen')">Modul Grundlagen der Rech&shy;nungs&shy;leg&shy;ung</li>
         </ul>
 
         <!-- Moocs -->
@@ -1935,7 +1935,7 @@
                 <li>Grundlagen der Kostenrechnung</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_202_quellen">
                 <li>Bornhofen, M.; Bornhofen, M. C.: Buchführung 1 DATEV-Kontenrahmen: Grundlagen der Buchführung für Industrie- und Handelsbetriebe, Gabler, Wiesbaden.</li>
                 <li>Bornhofen, M.; Bornhofen, M. C.: Buchführung 2 DATEV-Kontenrahmen: Abschlüsse nach Handels- und Steuerrecht - Betriebswirtschaftliche Auswertung - Vergleich mit IFRS, Gabler, Wiesbaden.</li>
                 <li>Coenenberg, A.; Haller, A.; Mattner, G.; Schultze, W.: Einführung in das Rechnungswesen. Grundlagen der Buchführung und Bilanzierung, Schäffer Poeschel, Stuttgart.</li>
@@ -1955,7 +1955,7 @@
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_506', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_506', 'wirtschaft')">Wirt&shy;schafts&shy;wis&shy;sen&shy;schaf&shy;ten</li>
-            <li>Modul Recht</li>
+            <li onclick="toggleVisible('W3WI_506_quellen')">Modul Recht</li>
         </ul>
 
         <!-- Moocs -->
@@ -1998,7 +1998,7 @@
                 <li>Rechtssubjekte und Rechtsobjekte</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_506_quellen">
                 <li>Brox, H.; Walker, W.-D.: Allgemeiner Teil des BGB, Vahlen, München.</li>
                 <li>Brox, H.; Henssler, M.: Handelsrecht, C.H. Beck, München.</li>
                 <li>Brox, H.; Walker, W.-D.: Allgemeines Schuldrecht, C.H. Beck, München.</li>
@@ -2020,7 +2020,7 @@
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_505', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_505', 'wirtschaft')">Wirt&shy;schafts&shy;wis&shy;sen&shy;schaf&shy;ten</li>
-            <li>Modul Volks&shy;wirt&shy;schaftsl&shy;ehre</li>
+            <li onclick="toggleVisible('W3WI_505_quellen')">Modul Volks&shy;wirt&shy;schaftsl&shy;ehre</li>
         </ul>
 
         <!-- Moocs -->
@@ -2095,7 +2095,7 @@
                 <li>Grundlagen der Wirtschaftspolitik</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_505_quellen">
                 <li>Baßeler, U.; Heinrich, J./Utecht, B.: Grundlagen und Probleme der Volkswirtschaft, Schäffer-Poeschel, Stuttgart.</li>
                 <li>Bofinger, P.: Grundzüge der Volkswirtschaftslehre - Eine Einführung in die Wissenschaft von Märkten, Pearson Studium, München.</li>
                 <li>Krugman, P. R; Obstfeld, M./Melitz, M. J.: International Economics - Theory and Policy, Pearson Education, Boston.</li>
@@ -2115,7 +2115,7 @@
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_IBI404', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_IBI404', 'interkulturell')">In&shy;ter&shy;kul&shy;tu&shy;rel&shy;les Ma&shy;na&shy;ge&shy;ment & Wis&shy;sen</li>
-            <li>Modul Global Project Managment Skills</li>
+            <li onclick="toggleVisible('W3WI_IBI404_quellen')">Modul Global Project Managment Skills</li>
         </ul>
 
         <!-- Moocs (None)-->
@@ -2130,7 +2130,7 @@
                 <li>Wissen über aktuelle Innovationen und Innovationsstrategien, sowie deren Umsetzung</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_IBI404_quellen">
                 <li>Belinha S. De Abreu und Melda N. Yildiz (Eds) (2015) Global Media Literacy in a Digital Age: Teaching Beyond Borders (Minding the Media), Peter Lang Inc., International Academic Publishers</li>
                 <li>Bernard Roth (2015) The Achievement Habit: Stop Wishing, Start Doing, and Take Command of Your Life, Harper Business</li>
                 <li>Carmine Gallo (2014) Talk Like TED, Pan Books, London</li>
@@ -2159,7 +2159,7 @@
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_IBI301', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_IBI301', 'interkulturell')">In&shy;ter&shy;kul&shy;tu&shy;rel&shy;les Ma&shy;na&shy;ge&shy;ment & Wis&shy;sen</li>
-            <li>Modul Intercultural Management</li>
+            <li onclick="toggleVisible('W3WI_IBI301_quellen')">Modul Intercultural Management</li>
         </ul>
 
         <!-- Moocs -->
@@ -2252,7 +2252,7 @@
                 <li>ergebnisorientierte Anwendung von Internationalisierungsstrategien</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_IBI301_quellen">
                 <li>Broaweays, M.J.; Price, R.: Understanding Cross-cultural Management, Financial Times Prentice Hall, Harlow.</li>
                 <li>Deresky, H.: International Management, Pearson Prentice Hall, Upper Saddle River.</li>
                 <li>Lane, H.W.; Maznevski, M.L.; DiStefano, J.J.; Dietz, J.: International Management Behavior, Wiley, Chichester.</li>
@@ -2273,7 +2273,7 @@
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_IBI305_IBI306', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_IBI305_IBI306', 'interkulturell')">In&shy;ter&shy;kul&shy;tu&shy;rel&shy;les Ma&shy;na&shy;ge&shy;ment & Wis&shy;sen</li>
-            <li>Modul Spanisch</li>
+            <li onclick="toggleVisible('W3WI_IBI305_IBI306_quellen')">Modul Spanisch</li>
         </ul>
 
         <!-- Moocs -->
@@ -2289,7 +2289,7 @@
                 <li>angemessene fremdsprachliche Kommunikation, schriftlich und mündlich</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_IBI305_IBI306_quellen">
                 <li>Gonzales, M.; Martin, F.; Rodrigo, C.: Colegas 1 und 2, Klett Sprachen, Stuttgart.</li>
                 <li>Juan Lazaro, O.; de Prada Segovia, M.; Zaragoza Andreu, A.: En equipo.es: Spanisch im Beruf 1 und 2, Hueber, Ismaning.</li>
                 <li>Bürsgens, G.: Espanñol Profesional: Spanisch im Beruf 1 und 2, Cornelsen, Berlin.</li>
