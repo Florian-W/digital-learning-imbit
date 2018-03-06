@@ -3,43 +3,63 @@ package org.dhbw.imbit11.backend;
 import javax.servlet.http.HttpServlet;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 
 public class BadgeBakery extends HttpServlet {
-
-	public static ByteArrayOutputStream bakeBadge(String useremail, String country) throws IOException, SQLException {
-
+	public static byte[] bakeBadge(String useremail, String country) throws IOException, SQLException {
+		ArrayList<String> lines = new ArrayList<String>();
+	    String line = null;
 		ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-
 		String svgLocation = getSVGString(country);
-		
-		FileReader svgFile = new FileReader(svgLocation);
-		BufferedReader svgReader = new BufferedReader(svgFile);
-		int stop = 0;
-		String svgString = "";
-		while(stop == 0) {
-			svgString = svgString + svgReader.readLine();
-			System.out.println(svgString);
-			if(svgString.contains("</svg>")) {
-				stop = 1;
+		File svgFile = new File("tmp_badge.svg");
+		try {
+			FileReader svgFileReader = new FileReader(svgLocation);
+			BufferedReader svgReader = new BufferedReader(svgFileReader);
+			while ((line = svgReader.readLine()) != null) {
+                if (line.contains("<![CDATA["))
+                    line = line.replace("<![CDATA[", "<![CDATA[" + JSONCreator.createAssertion(useremail, country));
+                lines.add(line);
+            }
+            svgFileReader.close();
+            svgReader.close();
+            
+            FileWriter svgFileWriter = new FileWriter(svgFile);
+            BufferedWriter svgWriter = new BufferedWriter(svgFileWriter);
+            for(String s : lines) {
+            		svgWriter.write(s);
+            }
+            svgWriter.flush();
+            svgWriter.close();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+		byte[] svgBytes = new byte[(int) svgFile.length()];
+		try {
+			FileInputStream fileInputStream = new FileInputStream(svgFile);
+			fileInputStream.read(svgBytes);
+			/*
+			for (int i = 0; i < svgBytes.length; i++) {
+				System.out.print((char)svgBytes[i]);
 			}
+			*/
+		} catch (FileNotFoundException e) {
+			System.out.println("File not found.");
+		} catch (IOException e1) {
+			System.out.println("Error reading the file.");
 		}
-//		String svgString = svgFile.toString();
-//		svgFile.close();
-//		svgString.replace("<![CDATA[", "<![CDATA[" + JSONCreator.createAssertion(useremail, country));
-		svgString.replace("CDATA", "TESTREPLACE");
-		System.out.println(svgString);
-		svgFile.close();
-		printc(outputStream, svgString);
-		return outputStream;
-
-	}
+		svgFile.delete();
+		return svgBytes;
+    }
 
 	private static String getSVGString(String country) {
 		String fileLocation = "";

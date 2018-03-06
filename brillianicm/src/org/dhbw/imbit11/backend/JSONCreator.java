@@ -18,7 +18,6 @@ public class JSONCreator extends HttpServlet {
 
 	public static String createAssertion(String recipient, String badge) throws SQLException {
 	
-		//ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
 		UserRealm userRealm = new UserRealm();
 		Map<String, Object> config = new HashMap<String, Object>();
 
@@ -38,7 +37,6 @@ public class JSONCreator extends HttpServlet {
 		JsonObject assertion = factory.createObjectBuilder()
 			.add("uid", badge_id)
 			.add("recipient", recipient)
-//			.add("image", image)
 			.add("issuedOn", current_date)
 			.add("badge", factory.createObjectBuilder()
 				.add("name", info[0])
@@ -62,11 +60,8 @@ public class JSONCreator extends HttpServlet {
 			)
 			.build();
 		String assertionString = assertion.toString();
-
-//		printc(outputStream, assertionString);
 		userRealm.newBadge(badge_id, recipient, current_date, info[1]);
 		return assertionString;
-//		return outputStream;
 	}
 	
 

@@ -1,6 +1,7 @@
 package org.dhbw.imbit11.backend;
 
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.util.Properties;
 
 import javax.activation.DataHandler;
@@ -74,33 +75,19 @@ public class MailClient extends HttpServlet
 	            pdfBodyPart.setDataHandler(new DataHandler(dataSource));
 	            pdfBodyPart.setFileName("brillianICM Certificate for "+username+".pdf");
 
-
 	            //construct the svg file
-	            outputStream = BadgeBakery.bakeBadge(useremail, completedCountry);
-	            byte[] bytesSVG = outputStream.toByteArray();
+	            byte[] bytesSVG = BadgeBakery.bakeBadge(useremail, completedCountry);
 	            //construct the svg body part
 	            DataSource dataSourceSVG = new ByteArrayDataSource(bytesSVG, "image/svg+xml");
 	            MimeBodyPart svgBodyPart = new MimeBodyPart();
 	            svgBodyPart.setDataHandler(new DataHandler(dataSourceSVG));
 	            svgBodyPart.setFileName("brillianICM Module "+completedCountry+" "+username+".svg");
-
-/*
-	            //construct the JSON file
-	            outputStream = JSONCreator.createAssertion(useremail, completedCountry);
-	            byte[] bytesJSON = outputStream.toByteArray();
-	            //construct the JSON body part
-	            DataSource dataSourceJSON = new ByteArrayDataSource(bytesJSON, "application/json");
-	            MimeBodyPart jsonBodyPart = new MimeBodyPart();
-	            jsonBodyPart.setDataHandler(new DataHandler(dataSourceJSON));
-	            jsonBodyPart.setFileName("brillianICM Testbadge "+username+".json");
-*/	                         
+	                         
 	            //construct the mime multi part
 	            MimeMultipart mimeMultipart = new MimeMultipart();
 	            mimeMultipart.addBodyPart(textBodyPart);
 	            mimeMultipart.addBodyPart(pdfBodyPart);
 	            mimeMultipart.addBodyPart(svgBodyPart);
-//	            mimeMultipart.addBodyPart(jsonBodyPart);
-	            
 	             
 	            //construct the mime message
 	            MimeMessage mimeMessage = new MimeMessage(session);
