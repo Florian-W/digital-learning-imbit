@@ -47,7 +47,7 @@ public class JSONCreator extends HttpServlet {
 //					.add("name", issuer_info[0])
 					.add("org", "DHBW Mannheim")
 //					.add("org", issuer_info[1])
-					.add("description", "Duale Hochschule Baden-Württemberg Studiengang International Management for Business and Information Technology")
+					.add("description", "DHBW Mannheim - International Management for Business and Information Technology")
 //					.add("description", issuer_info[2])
 					.add("url", "http://www.imbit.dhbw-mannheim.de/")
 //					.add("url", issuer_info[3])
