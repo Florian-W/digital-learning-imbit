@@ -7,34 +7,30 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="144x144" href="images/favicons/logo144.png">
-<link rel="apple-touch-icon" sizes="60x60" href="images/favicons/logo60.png">
-<link rel="apple-touch-icon" sizes="120x120" href="images/favicons/logo120.png">
-<link rel="apple-touch-icon" sizes="76x76" href="images/favicons/logo76.png">
-<link rel="apple-touch-icon" sizes="152x152" href="images/favicons/logo152.png">
-<link rel="icon" type="image/png" href="images/favicons/logo196.png" sizes="196x196">
-<link rel="icon" type="image/png" href="images/favicons/logo160.png" sizes="160x160">
-<link rel="icon" type="image/png" href="images/favicons/logo96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="images/favicons/logo16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="images/favicons/logo32.png" sizes="32x32">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-TileImage" content="images/favicons/logo144.png">
-
-	
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/favicons/logo144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/favicons/logo60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/favicons/logo120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/favicons/logo76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/favicons/logo152.png">
+	<link rel="icon" type="image/png" href="images/favicons/logo196.png" sizes="196x196">
+	<link rel="icon" type="image/png" href="images/favicons/logo160.png" sizes="160x160">
+	<link rel="icon" type="image/png" href="images/favicons/logo96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="images/favicons/logo16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="images/favicons/logo32.png" sizes="32x32">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="images/favicons/logo144.png">
 
 	<script type="text/javascript">	
 		userid = '${userid}';
 	</script>
-
 
    <!-- Framework CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="css/jquery.easyui.css" />
 	<link type="text/css" rel="stylesheet" href="css/jquery.easyui.icon.css" />
 	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
-
 
     <!-- Custom CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
@@ -51,7 +47,6 @@
 	<script type="text/javascript" src="js/frameworks/jquery.fancybox.pack.js?v=2.1.5"></script>
 	<script type="text/javascript" src="js/frameworks/jquery.easing.min.js"></script>
 	<script type="text/javascript" src="js/frameworks/bootstrap.min.js"></script>
-
 	
 	<!--Custom JS -->	
 	<script type="text/javascript" src="js/master.js"></script>
@@ -72,7 +67,7 @@ function changeSelect() {
     var selectBox = document.getElementById("selectBox");
     var selectedValue = selectBox.options[selectBox.selectedIndex].value;
    if (selectedValue=='Account'){
-	   window.location.assign('<%out.print(application.getContextPath());%>/StudentHomepage','_blank');
+	   window.location.assign('${pageContext.request.contextPath}/StudentHomepage','_blank');
 	   
    }else if (selectedValue=='<%=ApplicationConstants.LOGOUT_BUTTON_TEXT%>'){
 	  
@@ -254,7 +249,7 @@ function checkTTS() {
           
             <!-- </ul> 
             <ul class="nav navbar-nav second-button">            
-                 <li><a href="#" id="account" onclick="window.location.assign('<%out.print(application.getContextPath());%>/StudentHomepage','_blank')"  data-options="plain:true"></a></li>   
+                 <li><a href="#" id="account" onclick="window.location.assign('${pageContext.request.contextPath}/StudentHomepage','_blank')"  data-options="plain:true"></a></li>   
 			</ul> -->
 			
 			

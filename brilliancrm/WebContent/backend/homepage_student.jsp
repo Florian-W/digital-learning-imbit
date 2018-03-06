@@ -34,7 +34,7 @@
 
 
 </head>
-<body class="easyui-layout">
+<body class="easyui-layout" style="min-width: 768px">
 	<div class="north" data-options="region:'north',border:false">
 		<div class="div-header window">
 			

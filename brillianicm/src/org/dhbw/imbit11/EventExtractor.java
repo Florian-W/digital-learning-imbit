@@ -3,6 +3,7 @@ package org.dhbw.imbit11;
 import java.io.File;
 import java.io.StringWriter;
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -165,7 +166,7 @@ public class EventExtractor {
 		return (buf.toString());
 	}
 
-	private static void markVisitedCountries(Node node, String userid){
+	private static void markVisitedCountries(Node node, String userid) throws SQLException{
 		Pattern p = Pattern.compile("l[1-7]{1}");
 		UserRealm userRealm = new UserRealm();
 		ArrayList<String> visitedCountries = userRealm.getVisitedCountries(userid);

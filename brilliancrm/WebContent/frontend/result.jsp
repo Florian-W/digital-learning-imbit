@@ -55,13 +55,13 @@
 				<tr>
 					<td colspan="2">
 						<p>
-							If you want to play again please press the button below. Be aware that this step cannot be undone!<br /><br />
+							If you want to play again, please press the button below. Be aware that this step cannot be undone!<br /><br />
 							<a class="easyui-linkbutton" href="javascript:void(0)" onclick="$('#dlg').dialog('open')">Restart game and start from the beginning</a>
 						</p>
 					</td>
 				</tr>
 			</table>
-			<div id="dlg" class="easyui-dialog" title="Restart game" style="width: 400px; height: 150px; padding: 10px" data-options="iconCls: 'icon-undo',closed:true,buttons: [{text:'Restart game',iconCls:'icon-ok',handler:function(){window.location.href = '<%out.print(application.getContextPath());%>/ResetUserProgress';}},{text:'Cancel',handler:function(){$('#dlg').dialog('close');}}]">
+			<div id="dlg" class="easyui-dialog" title="Restart game" style="width: 400px; height: 150px; padding: 10px" data-options="iconCls: 'icon-undo',closed:true,buttons: [{text:'Restart game',iconCls:'icon-ok',handler:function(){window.location.href = '${pageContext.request.contextPath}/ResetUserProgress';}},{text:'Cancel',handler:function(){$('#dlg').dialog('close');}}]">
 				Are you sure you want to restart your game? This step cannot be undone!
 			</div>
 		</div>

@@ -30,7 +30,6 @@
                 # privateSalt needs to be base64-encoded in shiro.ini but not in the Java code
                 hashService.privateSalt = VyFyUyFuZElNQiFUMjAxMSQmJA==
                 passwordMatcher = org.apache.shiro.authc.credential.PasswordMatcher
-
                 passwordService = org.apache.shiro.authc.credential.DefaultPasswordService
                 passwordService.hashService = $hashService
                 passwordMatcher.passwordService = $passwordService
@@ -49,13 +48,10 @@
                 # The 'urls' section is used for url-based security in web applications.
                 /LoginUser = anon
                 /frontend/imprint.jsp = anon
-
                 /Student authc, roles[student]
                 /Main = authc, roles[student]
                 /frontend/* = authc, roles[student]
                 /frontend/imprint.jsp = anon
-
-
                 /Admin = authc, roles[admin]
                 /backend/homepage_admin.jsp = authc, roles[admin]
                 /DeleteProfessor = authc, roles[admin]
@@ -63,7 +59,6 @@
                 /uploadfile.jsp = authc, roles[admin]
                 /viewfile.jsp = authc, roles[admin]
                 /development = authc, roles[admin]
-
                 /Professor = authc, roles[professor]
                 /backend/homepage_professor.jsp = authc, roles[professor]
                 /backend/sendRegistrationLink.jsp = authc, roles[professor]
@@ -91,11 +86,12 @@
 
     <!-- Context Parameter for Mail -->
 
-    <context-param>
-        <param-name>domain</param-name>
-        <param-value>localhost:8080</param-value>
-    </context-param>
-
+		<!-- CHANGE TEST vs. PROD: ADAPTATION sendRegistrationLink -->
+	<context-param>
+		<param-name>domain</param-name>
+		<param-value>http://ec2-52-14-250-138.us-east-2.compute.amazonaws.com:8080</param-value>
+		<!-- PROD: <param-value>brillianicm.com:8080</param-value> -->
+	</context-param>
 
     <context-param>
         <description>Mail-Server for outgoing mails</description>
@@ -113,12 +109,13 @@
         <description>Mail-User for mailserver</description>
         <param-name>mailuser</param-name>
         <param-value>no-reply@brillianICM.com</param-value>
+        <!--  ALTERNATIVE: <param-value>no-reply@digital-learning-imbit.com</param-value> -->
     </context-param>
 
     <context-param>
         <description>Password for Mail-User</description>
         <param-name>mailpw</param-name>
-        <param-value>mail@wimbit12!</param-value>
+        <param-value>password</param-value>
     </context-param>
 
     <context-param>

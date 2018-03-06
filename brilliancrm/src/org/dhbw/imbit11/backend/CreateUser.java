@@ -10,23 +10,23 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet({"/CreateUser"})
+@WebServlet({ "/CreateUser" })
 /**
- * Contains the doPost and doGet methods to get the parameters from the register_student.jsp
- * Assigns user to groups
- * Admin can be created by giving the parameter professor
- * Sends the verification e-Mail to a new user
- * Resolves groupid and calculates checksum
+ * Contains the doPost and doGet methods to get the parameters from the
+ * register_student.jsp Assigns user to groups Admin can be created by giving
+ * the parameter professor Sends the verification e-Mail to a new user Resolves
+ * groupid and calculates checksum
  * 
  * @author Mary und Benste
  *
  */
- public class CreateUser extends javax.servlet.http.HttpServlet implements javax.servlet.Servlet {
-   static final long serialVersionUID = 1L;
-   
-   /**
-    * Invokes the constructor of parent class (superclass) javax.servlet.http.HttpServlet
-    */
+public class CreateUser extends javax.servlet.http.HttpServlet implements javax.servlet.Servlet {
+	static final long serialVersionUID = 1L;
+
+	/**
+	 * Invokes the constructor of parent class (superclass)
+	 * javax.servlet.http.HttpServlet
+	 */
 	public CreateUser() {
 		super();
 	}
@@ -36,31 +36,36 @@ import javax.servlet.http.HttpServletResponse;
 	 * particular class
 	 * 
 	 */
-	protected void doGet(HttpServletRequest request,
-			HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		doPost(request, response);
 	}
 
 	/**
-	 * This method extracts the Parameters sent by register_student.jsp, checks several conditions and creates a new
-	 *  student user
-	 *  this method expects the groupid to be encoded ( first two digits: checksum; remaining digits: groupID*23)
-	 *  Safes parameters so they don't have to be reentered by failure
-	 * 	Verifies if e-Mail and gender is entered, if password equals the password_repeat and changes role of user
-	 *  If the registration was successful the user is redirected to a landing page
-	 *  if not, the form is called again and an error/status message is displayed
-	 *  
-	 *  @param request - contains the request of a client
-	 *  @param response - contains the response of the servlet
-	 *  
-	 *  @throws ServletException - throws exception when servlet encounters difficulties
-	 *  @throws IOException - signals that IO exception occured
+	 * This method extracts the Parameters sent by register_student.jsp, checks
+	 * several conditions and creates a new student user this method expects the
+	 * groupid to be encoded ( first two digits: checksum; remaining digits:
+	 * groupID*23) Safes parameters so they don't have to be reentered by failure
+	 * Verifies if e-Mail and gender is entered, if password equals the
+	 * password_repeat and changes role of user If the registration was successful
+	 * the user is redirected to a landing page if not, the form is called again and
+	 * an error/status message is displayed
+	 * 
+	 * @param request
+	 *            - contains the request of a client
+	 * @param response
+	 *            - contains the response of the servlet
+	 * 
+	 * @throws ServletException
+	 *             - throws exception when servlet encounters difficulties
+	 * @throws IOException
+	 *             - signals that IO exception occured
 	 */
-	protected void doPost(HttpServletRequest request,
-			HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 
 		request.setCharacterEncoding("UTF-8");
-		
+
 		String groupnumber = request.getParameter("groupnumber");
 
 		String url = "/Registration?g=" + groupnumber;
@@ -107,10 +112,8 @@ import javax.servlet.http.HttpServletResponse;
 
 		try {
 
-			if (email != null && !email.equals("") && firstname != null
-					&& !firstname.equals("") && lastname != null
-					&& !lastname.equals("") && password != null
-					&& !password.equals("") && !email.contains("+")){
+			if (email != null && !email.equals("") && firstname != null && !firstname.equals("") && lastname != null
+					&& !lastname.equals("") && password != null && !password.equals("") && !email.contains("+")) {
 
 				if (password.equals(password_repeat)) {
 					// submitting query to create a new student user
@@ -118,38 +121,32 @@ import javax.servlet.http.HttpServletResponse;
 
 						if (!realm.userExists(email)) {
 							// Hasing the password
-							String encryptedPassword = new PasswordEncryptor()
-									.hashPassword(password);
+							String encryptedPassword = new PasswordEncryptor().hashPassword(password);
 
 							switch (role) {
 							case "student":
-								url = createNewStudent(request, realm, email,
-										lastname, firstname, encryptedPassword,
+								url = createNewStudent(request, realm, email, lastname, firstname, encryptedPassword,
 										gender);
 								break;
 							// case "admin": url = createNewAdmin(request,
 							// realm, email, lastname, firstname,
 							// encryptedPassword, gender); break;
 							case "professor":
-								url = createNewProfessor(request, realm, email,
-										lastname, firstname, encryptedPassword,
+								url = createNewProfessor(request, realm, email, lastname, firstname, encryptedPassword,
 										gender);
 								break;
 
 							}
 
 						} else {
-							request.setAttribute("status",
-									"User does already exist.");
+							request.setAttribute("status", "User does already exist.");
 						}
 
 					} else {
-						request.setAttribute("status",
-								"Please select the appropriate title.");
+						request.setAttribute("status", "Please select the appropriate title.");
 					}
 				} else {
-					request.setAttribute("status",
-							"Repeated password does not match.");
+					request.setAttribute("status", "Repeated password does not match.");
 				}
 
 			} else {
@@ -163,31 +160,37 @@ import javax.servlet.http.HttpServletResponse;
 			// System.out.println("creating user failed");
 		}
 
-	     // forward the request and response to the view
-        RequestDispatcher dispatcher =
-             getServletContext().getRequestDispatcher(url);
-        
-        dispatcher.forward(request, response);   	
-        
-	}  
-	
+		// forward the request and response to the view
+		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
+
+		dispatcher.forward(request, response);
+
+	}
+
 	/**
-	 * Assignment of a user to a group, when groupid exists creating user for this certain group
-	 * if group doesn't exist error message and exception by failure
+	 * Assignment of a user to a group, when groupid exists creating user for this
+	 * certain group if group doesn't exist error message and exception by failure
 	 * 
-	 * @param request - contains the request of the client
-	 * @param realm - UserRealm object (was created after the parameters where send by user)
-	 * @param email - contains the e-Mail of the new user
-	 * @param lastname - contains the lastname of the new user
-	 * @param firstname - contains the firstname of the new user
-	 * @param encryptedPassword - contains the encrypted password of the new user
-	 * @param gender - contains the gender of the new user
+	 * @param request
+	 *            - contains the request of the client
+	 * @param realm
+	 *            - UserRealm object (was created after the parameters where send by
+	 *            user)
+	 * @param email
+	 *            - contains the e-Mail of the new user
+	 * @param lastname
+	 *            - contains the lastname of the new user
+	 * @param firstname
+	 *            - contains the firstname of the new user
+	 * @param encryptedPassword
+	 *            - contains the encrypted password of the new user
+	 * @param gender
+	 *            - contains the gender of the new user
 	 * 
 	 * @return url - Registration URL
 	 */
-	protected String createNewStudent(HttpServletRequest request,
-			UserRealm realm, String email, String lastname, String firstname,
-			String encryptedPassword, int gender) {
+	protected String createNewStudent(HttpServletRequest request, UserRealm realm, String email, String lastname,
+			String firstname, String encryptedPassword, int gender) {
 		String groupnumber = request.getParameter("groupnumber");
 
 		String url = "/Registration?g=" + groupnumber;
@@ -200,13 +203,11 @@ import javax.servlet.http.HttpServletResponse;
 			try {
 				if (realm.groupExists(groupnumber)) {
 					// entering the new student user into database
-					String unverifiedEmail = ""
-							+ Math.round(Math.random() * 100000);
+					String unverifiedEmail = "" + Math.round(Math.random() * 100000);
 					url = "/backend/registration_landing.jsp";
-					realm.createNewUser(unverifiedEmail, lastname, firstname,
-							encryptedPassword, "student", groupnumber, gender);
-					sendConfirmationMail(email, firstname, lastname,
-							unverifiedEmail, request);
+					realm.createNewUser(unverifiedEmail, lastname, firstname, encryptedPassword, "student", groupnumber,
+							gender);
+					sendConfirmationMail(email, firstname, lastname, unverifiedEmail, request);
 
 					// attributes not needed anymore after successful
 					// registration
@@ -216,8 +217,7 @@ import javax.servlet.http.HttpServletResponse;
 					request.removeAttribute("gender");
 
 				} else {
-					request.setAttribute("status",
-							"You try to register for a not existing group.");
+					request.setAttribute("status", "You try to register for a not existing group.");
 				}
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
@@ -230,29 +230,38 @@ import javax.servlet.http.HttpServletResponse;
 		}
 		return url;
 	}
-	
+
 	/**
-	 * Creates a new user with the parameter professor with admin rights
-	 * and deletes attributes email, firstname, lastname
+	 * Creates a new user with the parameter professor with admin rights and deletes
+	 * attributes email, firstname, lastname
 	 * 
-	 * @param request - contains the request of the user
-	 * @param realm - - UserRealm object (was created after the parameters where send by user)
-	 * @param email - contains the e-Mail of the new user
-	 * @param lastname - contains the lastname of the new user
-	 * @param firstname - contains the firstname of the new user
-	 * @param encryptedPassword - contains the encrypted password of the new user
-	 * @param gender - contains the gender of the new user
+	 * @param request
+	 *            - contains the request of the user
+	 * @param realm
+	 *            - - UserRealm object (was created after the parameters where send
+	 *            by user)
+	 * @param email
+	 *            - contains the e-Mail of the new user
+	 * @param lastname
+	 *            - contains the lastname of the new user
+	 * @param firstname
+	 *            - contains the firstname of the new user
+	 * @param encryptedPassword
+	 *            - contains the encrypted password of the new user
+	 * @param gender
+	 *            - contains the gender of the new user
 	 * 
-	 * @return url - URL Admin site 
+	 * @return url - URL Admin site
 	 */
-	protected String createNewProfessor(HttpServletRequest request, UserRealm realm, String email, String lastname, String firstname, String encryptedPassword, int gender){
-		
-		String  url = "/Admin";
-		
-		try{
-			realm.createNewUser(email, lastname, firstname, encryptedPassword, "professor", null, gender);			
-						
-			//attributes not needed anymore after successful registration
+	protected String createNewProfessor(HttpServletRequest request, UserRealm realm, String email, String lastname,
+			String firstname, String encryptedPassword, int gender) {
+
+		String url = "/Admin";
+
+		try {
+			realm.createNewUser(email, lastname, firstname, encryptedPassword, "professor", null, gender);
+
+			// attributes not needed anymore after successful registration
 			request.removeAttribute("email");
 			request.removeAttribute("firstname");
 			request.removeAttribute("lastname");
@@ -264,32 +273,42 @@ import javax.servlet.http.HttpServletResponse;
 		}
 		return url;
 	}
-	
+
 	/**
 	 * Sends an email with a link and text to confirm the e-Mail address is valid
 	 * Failure exception is thrown
 	 * 
-	 * @param email - contains the e-Mail of the user, where confirmation mail is send to
-	 * @param firstname - contains the first name of the new user
-	 * @param lastname - contains the last name of the new user
-	 * @param unverifiedEmail - contains the e-Mail address of the new user that needs confirmation
-	 * @param request - contains the request of the user (send user information)
+	 * @param email
+	 *            - contains the e-Mail of the user, where confirmation mail is send
+	 *            to
+	 * @param firstname
+	 *            - contains the first name of the new user
+	 * @param lastname
+	 *            - contains the last name of the new user
+	 * @param unverifiedEmail
+	 *            - contains the e-Mail address of the new user that needs
+	 *            confirmation
+	 * @param request
+	 *            - contains the request of the user (send user information)
 	 */
-	protected void sendConfirmationMail(String email, String firstname, String lastname, String unverifiedEmail, HttpServletRequest request){
-        
-        String msgBody = "Dear "+ firstname + " " + lastname + ",\n\n welcome to brillianCRM. Please confirm your registration by clicking on the following link: \n" 
-        + request.getServletContext().getInitParameter("domain")+ request.getContextPath() + "/ConfirmRegistration?email=";
-        
-        msgBody += email;
-        msgBody += "&ue=";
-        msgBody += unverifiedEmail;
-        msgBody += "\n\n With best regards, \n\n" +
-					"your brillianCRM team \n\n\n Note that this is a system generated e-mail. Please do not reply.";
+	protected void sendConfirmationMail(String email, String firstname, String lastname, String unverifiedEmail,
+			HttpServletRequest request) {
 
-	try {
+		// email that is sent to newly created user by REGISTER
+		String msgBody = "Dear " + firstname + " " + lastname
+				+ ",<br><br> welcome to BrillianCRM. Please confirm your registration by clicking on the following link: <br>"
+				+ request.getServletContext().getInitParameter("domain") + request.getContextPath()
+				+ "/ConfirmRegistration?email=";
+
+		msgBody += email;
+		msgBody += "&ue=";
+		msgBody += unverifiedEmail;
+		msgBody += "<br><br> With best regards, <br><br>"
+				+ "your BrillianCRM Team <br><br><br><br> Note that this is a system generated e-mail. Please do not reply.";
+
+		try {
 			MailClient mailclient = new MailClient();
-			mailclient.sendMail(email, "Please confirm your registration!",
-					msgBody, request);
+			mailclient.sendMail(email, "Please confirm your registration!", msgBody, request);
 		} catch (Exception e) {
 			e.printStackTrace();
 			// System.out.println("Sending email failed with unknown cause, sorry");
@@ -297,10 +316,11 @@ import javax.servlet.http.HttpServletResponse;
 	}
 
 	/**
-	 * This method resolves the groupID entered out of the encrypted groupid
-	 * ( first two digits: checksum of remaining digits; remaining digits: groupID*23)
+	 * This method resolves the groupID entered out of the encrypted groupid ( first
+	 * two digits: checksum of remaining digits; remaining digits: groupID*23)
 	 * 
-	 * @param encryptedgroupid - contains the encrypted groupid of a certain user
+	 * @param encryptedgroupid
+	 *            - contains the encrypted groupid of a certain user
 	 * 
 	 * @return resolved - resolved groupid
 	 */
@@ -320,11 +340,12 @@ import javax.servlet.http.HttpServletResponse;
 			return "false";
 		}
 	}
-	
+
 	/**
 	 * Method to calculate a checksum for the entered int
 	 * 
-	 * @param groupid - contains the group id as an integer
+	 * @param groupid
+	 *            - contains the group id as an integer
 	 * 
 	 * @return ckecksum
 	 */
@@ -333,4 +354,4 @@ import javax.servlet.http.HttpServletResponse;
 			return groupid;
 		return groupid % 10 + calculateChecksum(groupid / 10);
 	}
- }
+}

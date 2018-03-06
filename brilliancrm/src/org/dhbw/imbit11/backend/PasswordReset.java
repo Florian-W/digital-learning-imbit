@@ -150,9 +150,9 @@ import org.apache.shiro.subject.Subject;
 		}
 		
 		//Send the temporary password to the user
-		String content = "Your temporary password is "
-				+ temporaryPassword + ". You can change this after you logged in. \n\nGreetings, \n" +
-					"your brillianCRM admin \n\n\n This is an automated email. Please do not reply.";
+		String content = "Your temporary password is <br>"
+				+ temporaryPassword + "<br> You can change this after you logged in. <br><br>Greetings, <br>" +
+					"your brillianCRM admin. <br><br><br> This is an automated email. Please do not reply.";
 		MailClient mailclient = new MailClient();
 		mailclient.sendMail(email, "Password Reset", content, request);
 		}
