@@ -22,7 +22,9 @@
     <!-- HIER BEGINNT Grid 1 -->
     <div class="gridlayout" id="Grid1" style="display:grid">
 
-        <!-- <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" /> -->
+        <!-- <img class="tintenfischarm" src="img/tentakelarm_u11.png" /> -->
+
+
 
         <!-- Image Tentakel Left -->
         <div class="grid_column_10_14 grid_row_8_10">
@@ -36,7 +38,7 @@
 
         <!-- Heading IMBIT Curriculum-->
         <ul class="ueberschriftenfeld">
-            <li>IMBIT-Curriculum</li>
+            <li> <a href="docs/IMBIT-Studienplan ab 2018.pdf" style="text-decoration:none" target="_blank"> IMBIT-Curriculum</a></li>
         </ul>
 
         <!-- Fächer auf Landingpage-->
@@ -57,7 +59,7 @@
         <span class="grid_row_8 grid_column_6_9 modul" onclick="changeVisible('Grid1', 'methodischegrundlagen')">Methodische Grundlagen</span>
 
         <!-- Praxisphasen -->
-        <span class="grid_row_10 grid_column_11_12 modul" onclick="changeVisible('Grid1', 'praxisphasen')">Praxisphasen</span>
+        <span class="grid_row_9 grid_column_11_12 modul" style="justify-self:left" onclick="changeVisible('Grid1', 'praxisphasen')">Praxisphasen</span>
 
     </div>
 
@@ -68,7 +70,7 @@
     <div class="gridlayout" id="wirtschaftsinformatik">
 
         <!-- Tentakel Kopf_Home -->
-        <!-- <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" /> -->
+       <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <!-- Menü für Grid für Wirtschaftsinformatik -->
         <ul class="ueberschriftenfeld">
@@ -108,7 +110,7 @@
     <div class="gridlayout" id="methodischegrundlagen">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <!-- Menü für Grid für Methodische Grundlagen -->
         <ul class="ueberschriftenfeld">
@@ -145,7 +147,7 @@
     <div class="gridlayout" id="informatik">
 
         <!-- Tentakel Kopf_Home -->
-        <!-- <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" /> -->
+       <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <!-- Menü für Grid für Methodische Grundlagen -->
         <ul class="ueberschriftenfeld">
@@ -162,7 +164,7 @@
         <span class="grid_column_5 grid_row_7 modul" onclick="changeVisible('informatik', 'W3WI_105')">Datenbanken</span>
 
         <!--Entwicklung verteilter Systeme -->
-        <span class="grid_column_11 grid_row_4 modul" onclick="changeVisible('informatik', 'W3WI_110')">Entwicklung verteilter Systeme</span>
+        <span class="grid_column_10 grid_row_6 modul" style="justify-self:right" onclick="changeVisible('informatik', 'W3WI_110')">Entwicklung verteilter Systeme</span>
 
         <!-- Grundlagen der IT -->
         <span class="grid_column_2 grid_row_7 modul" onclick="changeVisible('informatik', 'W3WI_104_ITIntro')">Grundlagen der IT</span>
@@ -171,7 +173,7 @@
         <div class="grid_column_8 grid_row_3 modul" onclick="changeVisible('informatik', 'W3WI_108_109')">Programmierung</div>
 
         <!-- Software-Lebenszyklus -->
-        <div class="grid_column_9 grid_row_8 modul" onclick="changeVisible('informatik', 'W3WI_IBI302')">Software-Lebenszyklus</div>
+        <div class="grid_column_7 grid_row_9 modul" onclick="changeVisible('informatik', 'W3WI_IBI302')">Software-Lebenszyklus</div>
 
     </div>
 
@@ -179,7 +181,7 @@
     <div class="gridlayout" id="wirtschaft">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <!-- Menü für Grid für Methodische Grundlagen -->
         <ul class="ueberschriftenfeld">
@@ -219,7 +221,7 @@
     <div class="gridlayout" id="interkulturell">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <!-- Menü für Grid für Methodische Grundlagen -->
         <ul class="ueberschriftenfeld">
@@ -246,12 +248,12 @@
     <div class="gridlayout" id="W3WI_101">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_101', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_101', 'wirtschaftsinformatik')">Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik</li>
-            <li> Modul Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik</li>
+            <li onclick="toggleVisible('W3WI_101_quellen')">Modul Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik</li>
         </ul>
 
         <!-- Moocs -->
@@ -293,7 +295,7 @@
                 <li>Informationssysteme als soziotechnische Systeme</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_101_quellen">
                 <li>Abts, D.; Mülder, W.: Grundkurs Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik, Springer Vieweg, Wiesbaden.</li>
                 <li>Bächle, M.; Kolb, A.: Einführung in die Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik, Oldenbourg, München.</li>
                 <li>Hansen, H.R.; Mendling, J.; Neumann, G.: Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik, De Gruyter, Oldenbourg.</li>
@@ -306,42 +308,47 @@
     <div class="gridlayout" id="W3WI_IBI402">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
-              <li>IMBIT-Curriculum</li>
-              <li>Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik</li>
-              <li>Modul Be&shy;triebs&shy;wirt&shy;schaft&shy;liche Stand&shy;ard&shy;lös&shy;ungen</li>
-          </ul>
-          <div class="modulbeschreibung">
-              <ul style="list-style:none">
-                  <li>Fokus ist die betriebswirtschaftliche Standardsoftware und standartsoftwarespezifischer Programmierung.
-              <ul class="ziele">
-                  <li>Kompetenz&shy;ziele</li>
-                  <li>Verstehen von betriebs&shy;wirtschaft&shy;lichen Standard&shy;prozessen und Methoden</li>
-                  <li>Über&shy;blick über notwendige Daten in Standard&shy;lösungen, sowie Abläufen in ERP/SCM Systemen</li>
-                  <li>Besch&shy;reibung, Model&shy;lierung und Anwendung von Prozess&shy;modellen</li>
-              </ul>
+            <li onclick="changeVisible('W3WI_IBI402', 'Grid1')">IMBIT-Curriculum</li>
+            <li onclick="changeVisible('W3WI_IBI402', 'wirtschaftsinformatik')">Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik</li>
+            <li onclick="toggleVisible('W3WI_IBI402_quellen')">Modul Be&shy;triebs&shy;wirt&shy;schaft&shy;liche Stand&shy;ard&shy;lös&shy;ungen</li>
+        </ul>
 
-              <ul class="quellen">
+        <!-- Moocs (None) -->
+
+        <!-- modulbeschreibung -->
+        <div class="modulbeschreibung">
+            <ul style="list-style:none">
+                <li>Im Fokus steht die Wertschöpfung durch Informationstechnik. Die Lehrveranstaltung behandelt Konzeption, Entwicklung und Anwendung von ERP-Systemen.</li>
+            </ul>
+            <ul class="ziele">
+                <li>Kompetenz&shy;ziele</li>
+                <li>Verstehen von betriebs&shy;wirtschaft&shy;lichen Standard&shy;prozessen und Methoden</li>
+                <li>Über&shy;blick über notwendige Daten in Standard&shy;lösungen, sowie Abläufen in ERP/SCM Systemen</li>
+                <li>Besch&shy;reibung, Model&shy;lierung und Anwendung von Prozess&shy;modellen</li>
+            </ul>
+
+            <ul class="quellen" style="display:none" id="W3WI_IBI402_quellen">
               <li>Wannenwetsch, H. (Hrsg.): Integrierte Materialwirtschaft und Logistik, Springer.</li>
             	<li>Thonemann, U.: Operations Management &mdash; Konzepte, Methoden und Anwendungen, Pearson.</li>
             	<li>Mangan u.a.: Global Logistics and Supply Chain Management, Wiley.</li>
             	<li> Supply Chain Counsel: Supply-Chain-Operations-Reference-Modell (SCOR).</li>
-              </ul>
-          </div>
+            </ul>
+        </div>
     </div>
 
     <!-- Hier beginnt das Modul Fallstudie innerhalb Wirtschaftsinformatik -->
     <div class="gridlayout" id="W3WI_102_Fallstudie">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_102_Fallstudie', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_102_Fallstudie', 'wirtschaftsinformatik')">Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik</li>
-            <li>Modul Fall&shy;studie</li>
+            <li onclick="toggleVisible('W3WI_102_Fallstudie_quellen')">Modul Fall&shy;studie</li>
         </ul>
 
         <!-- Moocs (None) -->
@@ -365,7 +372,7 @@
     <div class="gridlayout" id="W3WI_103">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_103', 'Grid1')">IMBIT-Curriculum</li>
@@ -391,12 +398,12 @@
     <div class="gridlayout" id="W3WI_111">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_111', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_111', 'wirtschaftsinformatik')">Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik</li>
-            <li>Modul Neue Kon&shy;zep&shy;te</li>
+            <li onclick="toggleVisible('W3WI_111_quellen')">Modul Neue Kon&shy;zep&shy;te</li>
         </ul>
 
         <!-- Moocs -->
@@ -421,7 +428,7 @@
                 <li>neue Ansätze in der Model&shy;lierung und Software&shy;entwicklung</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_111_quellen">
                 <li>Coulouris, G., Dollimore, J. und Kindberg,T.: Distributed Systems: Concepts and Design, Addison-Wesley, Amsterdam. - Oechsle, R.: Parallele und verteilte Anwendungen in Java, Hanser, München.</li>
                 <li>Schill, A. und Springer, T.: Verteilte Systeme - Grundlagen und Basistechnologien, Springer, Berlin. </li>
                 <li>Stark, T.: Java EE - Einstieg für Anspruchsvolle, Addison-Wesley, München.</li>
@@ -436,12 +443,12 @@
     <div class="gridlayout" id="W3WI_102_PM">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_102_PM', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_102_PM', 'wirtschaftsinformatik')">Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik</li>
-            <li>Modul Pro&shy;jekt&shy;man&shy;age&shy;ment</li>
+            <li onclick="toggleVisible('W3WI_102_PM_quellen')">Modul Pro&shy;jekt&shy;man&shy;age&shy;ment</li>
         </ul>
 
         <!-- Moocs (None)-->
@@ -456,7 +463,7 @@
                 <li>Umgang mit Werk&shy;zeugen, Team&shy;or&shy;ga&shy;ni&shy;sa&shy;tions&shy;ma&szlig;&shy;nah&shy;men und Pla&shy;nungs&shy;me&shy;tho&shy;den zur erfolgreichen Umsetzung von Pro&shy;jek&shy;ten</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_102_PM_quellen">
                 <li>GPM Deutsche Gesellschaft für Projektmanagement (Hrsg.): Kompetenzbasiertes Projektmanagement, GPM Deutsche Gesellschaft für Projektmanagement, N&uuml;rnberg.</li>
                 <li>Hindel, B.; H&ouml;rmann, K.: Basiswissen Software-Projektmanagement, dpunkt.verlag, Heidelberg.</li>
                 <li>Pichler, R.: Agiles Produktmanagement mit Scrum: Erfolgreich als Product Owner arbeiten, dpunkt.verlag, Heidelberg.</li>
@@ -470,12 +477,12 @@
     <div class="gridlayout" id="W3WI_107">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_107', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_107', 'wirtschaftsinformatik')">Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik</li>
-            <li>Projekt</li>
+            <li onclick="toggleVisible('W3WI_107_quellen')">Projekt</li>
         </ul>
 
         <!-- Moocs -->
@@ -524,12 +531,12 @@
     <div class="gridlayout" id="W3WI_101_SysAn">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_101_SysAn', 'Grid1')">IMBIT-Curriculum</li>
             <li onclick="changeVisible('W3WI_101_SysAn', 'wirtschaftsinformatik')">Wirt&shy;schafts&shy;in&shy;for&shy;ma&shy;tik</li>
-            <li>System&shy;analyse</li>
+            <li onclick="toggleVisible('W3WI_101_SysAn_quelle')">System&shy;analyse</li>
         </ul>
 
         <!-- Moocs -->
@@ -579,7 +586,7 @@
                 <li>Kommunikationstechniken um verschiedene soziale Perspektiven auf Problemstellungen zu koordinieren</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_101_SysAn_quelle">
                 <li>Balzert, H.: Lehrbuch der Objektmodellierung: Analyse und Entwurf mit der UML 2, Spektrum Akademischer Verlag, Heidelberg.</li>
                 <li>Oestereich, B.: Analyse und Design mit UML 2.5: Objektorientierte Softwareentwicklung, Oldenbourg, München.</li>
             </ul>
@@ -591,7 +598,7 @@
     <div class="gridlayout" id="W3WI_601">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_601', 'Grid1')">IMBIT-Curriculum</li>
@@ -694,7 +701,7 @@
                 <li>algebraische Strukturen</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_601_quelle">
                 <li>Ehrig, H.: Mathematisch-strukturelle Grundlagen der Informatik, Springer, Berlin.</li>
                 <li>Heinrich, G..: Basiswissen Mathematik, Statistik und Operations Research f&uuml;r Wirtschaftswissenschaftler, De Gruyter Oldenbourg, M&uuml;nchen.</li>
                 <li>Heinrich, G. und Severin, T.: Training Mathematik, Oldenbourg Verlag, M&uuml;nchen, Wien: Band 1, Grundlagen, Band 2, Analysis, Band 3, Lineare Algebra.</li>
@@ -708,7 +715,7 @@
     <div class="gridlayout" id="W3WI_602">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_602', 'Grid1')">IMBIT-Curriculum</li>
@@ -833,7 +840,7 @@
                 <li>Lineare, Kombinatorische, ganzzahlige und nichtlineare Optimierung</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_602_quelle">
                 <li>Bamberg, G. und Baur, F.: Statistik, M&uuml;nchen.</li>
                 <li>Bleym&uuml;ller, J., Gehlert, G. und G&uuml;licher, H.: Statistik f&uuml;r Wirtschaftswissenschaftler, M&uuml;nchen.</li>
                 <li>Domschke, W. und Drexl, A.: Einf&uuml;hrung in Operations Research, Berlin.</li>
@@ -849,7 +856,7 @@
     <div class="gridlayout" id="W3WI_701_wissArbeiten">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_701_wissArbeiten', 'Grid1')">IMBIT-Curriculum</li>
@@ -880,7 +887,7 @@
                 <li>wissenschaftliches Schreiben und formale Anforderungen</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_701_wissArbeiten_quelle">
                 <li>B&auml;nsch, A.: Wissenschaftliches Arbeiten, Stuttgart, Oldenbourg.</li>
                 <li>Denscombe, M.: The Good Research Guide, Open University Press.</li>
                 <li>Disterer, G.: Seminararbeiten schreiben: Seminar-, Bachelor, Master und Diplomarbeiten in den Wirtschaftswissenschaften, Springer Gabler, Berlin.</li>
@@ -900,7 +907,7 @@
     <div class="gridlayout" id="W3WI_701_praesentation_kommunikation">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_701_praesentation_kommunikation', 'Grid1')">IMBIT-Curriculum</li>
@@ -921,7 +928,7 @@
                 <li>ein betriebliches Problem kommunizieren und zielgerichtet nach L&ouml;sungen suchen</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_701_praesentation_kommunikation_quelle">
                 <li>Bitzer, Liebsch, Behnert: Betriebliche Konfliktl&ouml;sung durch Mediation, Sauer, Heidelberg.</li>
                 <li>Diel, M.: Das IT-Karrierehandbuch, O'Reilly.</li>
                 <li>Duve, C; Eidenm&uuml;ller, H.; Hacke, A.: Mediation in der Wirtschaft, Wege zum professionellen Konfliktmanagement, Verlag Dr. Otto Schmidt, K&ouml;ln.</li>
@@ -956,7 +963,7 @@
     <div class="gridlayout" id="W3WI_702">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_702', 'Grid1')">IMBIT-Curriculum</li>
@@ -977,7 +984,7 @@
                 <li>situationsgerechte Kommunikationstechniken und Verhaltensweisen im Umgang mit Menschen anderer Kulturen</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_702_quelle">
                 <b>Wissenschaftstheorie und wissenschaftliche Methoden der Wirtschaftsinformatik; Angewandtes Wissenschaftliches Arbeiten:</b>
                 <li>B&auml;nsch, A.: Wissenschaftliches Arbeiten, Oldenbourg, M&uuml;nchen</li>
                 <li>Balzer, W.: Die Wissenschaft und ihre Methoden, Verlag Karl Alber, Freiburg</li>
@@ -1059,7 +1066,7 @@
     <div class="gridlayout" id="W3WI_703">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_703', 'Grid1')">IMBIT-Curriculum</li>
@@ -1080,7 +1087,7 @@
                 <li>Kennen und Anwenden der wesentlichen Konzepte, Methoden und Ziele des wissenschaftlichen Arbeitens in der Wirtschaftsinformatik</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_703_quelle">
                 <b>Unternehmenssimulation:</b>
                 <li>Baum, M., Dickerboom, J., Hackstein, M.: Business Simulation, GRIN Verlag, M&uuml;nchen.</li>
                 <li>Gilbert, N., Troitzsch, K. G.: Simulation for the Social Scientist, Buckingham: Open University Press.</li>
@@ -1123,7 +1130,7 @@
     <div class="gridlayout" id="W3WI_IBI405">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_IBI405', 'Grid1')">IMBIT-Curriculum</li>
@@ -1155,7 +1162,7 @@
                 <li>Aneignung geeigneter Programmiersprachen zur Datenvisualisierung</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_IBI405_quelle">
                 <li>Peter Bruce und Andrew Bruce (2017): Statistics for Data Scientists &mdash; 50 Essential Concepts, O'Reilly.</li>
                 <li>Alberto Cairo (2012): Functional Art, The &mdash; An introduction to information graphics and visualization, Peachpit.</li>
                 <li>Stephen Few (2013): Information Dashboard Design &mdash; Displaying Data for At-a-Glance Monitoring, 2nd Edition, Analytics Press.</li>
@@ -1174,7 +1181,7 @@
     <div class="gridlayout" id="W3WI_104_CS_OS">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_104_CS_OS', 'Grid1')">IMBIT-Curriculum</li>
@@ -1246,7 +1253,7 @@
                 <li>F&auml;higkeit die Wechselwirkung von Betriebssystem und anderen Programmsystemen einzusch&auml;tzen</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_104_CS_OS_quelle">
                 <li>Tanenbaum, A. S.: Computernetzwerke, Pearson Studium, München.</li>
                 <li>T&ouml;njes, R.: Mobilkommunikation: Technologien und Anwendungen, in: Informationstechnische Gesellschaft im VDE (Herausgeber): ITG Fachbericht, Nr. 215, VDE Verlag, Berlin und Offenbach.</li>
                 <li>Brause, R: Betriebssysteme &mdash; Grundlagen und Konzepte, Springer Verlag, Berlin.</li>
@@ -1259,7 +1266,7 @@
     <div class="gridlayout" id="W3WI_105">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_105', 'Grid1')">IMBIT-Curriculum</li>
@@ -1306,7 +1313,7 @@
                 <li>abstraktes und logischen Denkvermögen</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_105_quelle">
                 <li>Elmasri, R. A., Navathe, S. B.: Grundlagen von Datenbanksystemen, Pearson Studium, München, Boston (u.a.).</li>
                 <li>Faeskorn-Woyke, H., Bertelsmeier, B., Riemer, P., Bauer, E.: Datenbanksysteme: Theorie und Praxis mit SQL2003, Oracle und MySQL, Pearson Studium, München, Boston (u.a.).</li>
                 <li>Kemper, A., Eickler, A: Datenbanksysteme: Eine Einführung, Oldenbourg, München.</li>
@@ -1325,7 +1332,7 @@
     <div class="gridlayout" id="W3WI_110">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_110', 'Grid1')">IMBIT-Curriculum</li>
@@ -1372,7 +1379,7 @@
                 <li>Verständnis über Konzepte, Architek&shy;turen, Technologien verteilter Systeme </li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_110_quelle">
                 <li>Coulouris, G., Dollimore, J. und Kindberg,T.: Distributed Systems: Concepts and Design, Addison-Wesley, Amsterdam. - Oechsle, R.: Parallele und verteilte Anwendungen in Java, Hanser, München.</li>
                 <li>Schill, A. und Springer, T.: Verteilte Systeme - Grundlagen und Basistechnologien, Springer, Berlin. </li>
                 <li>Stark, T.: Java EE - Einstieg für Anspruchsvolle, Addison-Wesley, München.</li>
@@ -1388,7 +1395,7 @@
     <div class="gridlayout" id="W3WI_104_ITIntro">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_104_ITIntro', 'Grid1')">IMBIT-Curriculum</li>
@@ -1437,7 +1444,7 @@
                 <li>fachlich korrekte Kommunikation über informationstechnische Probleme</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_104_ITIntro_quelle">
                 <li>Gumm, H-P; Sommer, M.: Einführung in die Informatik, Oldenbourg Verlag, München.</li>
                 <li>Rechenberg, P.; Pomberger, G.: Informatik-Handbuch, Hanser Verlag, München/Wien.</li>
                 <li>RFC-Editor: www.rfc-editor.org</li>
@@ -1449,7 +1456,7 @@
     <div class="gridlayout" id="W3WI_108_109">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('informatik', 'Grid1')">IMBIT-Curriculum</li>
@@ -1503,7 +1510,7 @@
                 <li>komplexe, praktische Probleme benutzerfreundlich lösen</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_108_109_quelle">
                 <li>Horstmann, C. S.: Core Java for the Impatient. Addison-Wesley, Upper Saddle River, NJ.</li>
                 <li>Deck, K.-G. und Neuendorf, H.: Grundkurs Programmieren für Wirtschaftsinformatiker. Vieweg, Wiesbaden.</li>
                 <li>Ratz, D., Scheffler, J., Seese, D. und Wiesenberger, J.: Grundkurs Programmieren in Java, Hanser, München.</li>
@@ -1520,7 +1527,7 @@
     <div class="gridlayout" id="W3WI_IBI302">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('informatik', 'Grid1')">IMBIT-Curriculum</li>
@@ -1541,7 +1548,7 @@
                 <li>systematisches Lösen auftretender Probleme</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_IBI302_quelle">
                 <li>Helmut Balzert, Heide Balzert et al.: &raquo;Lehrbuch der Softwaretechnik: Basiskonzepte und Requirements Engineering&laquo;, Spektrum Akademischer Verlag.</li>
                 <li>Helmut Balzert &raquo;Lehrbuch der Softwaretechnik: Entwurf, Implementierung, Installation und Betrieb&laquo;, Spektrum Akademischer Verlag.</li>
                 <li>Helmut Balzert &raquo;Lehrbuch der Softwaretechnik: Softwaremanagement&laquo;, Spektrum Akademischer Verlag.</li>
@@ -1567,7 +1574,7 @@
     <div class="gridlayout" id="W3WI_201">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('wirtschaft', 'Grid1')">IMBIT-Curriculum</li>
@@ -1620,7 +1627,7 @@
             </li>
             <li>
                 <p>
-                    <a target="_blank" href="https://webinare.gripscoachtv.de/wefly/marketing-einfach-erklaert/"><img src="/Users/christianbartels/Documente HD/Studium/5. Semester/IT-Projekt/Bilder/GripsCoachTV.png" alt="Webinar: Marketing einfach erklärt"></a>
+                    <a target="_blank" href="https://webinare.gripscoachtv.de/wefly/marketing-einfach-erklaert/"><img src="img/GripsCoachTV.png" alt="Webinar: Marketing einfach erklärt"></a>
                     <a target="_blank" href="https://webinare.gripscoachtv.de/wefly/marketing-einfach-erklaert/"> Webinar: Marketing einfach erklärt</a> &mdash; Dieses Webinar ist ideal für alle Auszubildenden und Umschüler, für die Marketing prüfungsrelevant
                     ist.
                     <span style="color:grey"> Stand 2018 |  &copy; GripsCoachTV | Abdeckungsgrad 15%</span>
@@ -1638,7 +1645,7 @@
                 <li>Taxonomie des Marketing</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_201_quelle">
                 <li>Mertens, P.; Bodendorf, F.: Programmierte Einführung in die Betriebswirtschaftslehre. Institutionenlehre, Gabler, Wiesbaden.</li>
                 <li>Straub, T.: Einführung in die Allgemeine Betriebswirtschaftslehre, Pearson, Hallbergmoos.</li>
                 <li>Wöhe, G.; Döring, U.: Einführung in die Allgemeine Betriebswirtschaftslehre, Vahlen, München.</li>
@@ -1650,7 +1657,7 @@
     <div class="gridlayout" id="W3WI_IBI403">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_IBI403', 'Grid1')">IMBIT-Curriculum</li>
@@ -1669,7 +1676,7 @@
                 <li>fundamentales Wissen über Dienstleistungsmanagement sowie Ansätze, Methodiken und Werkzeuge</li>
             </ul>
 
-            <ul class="quellen">
+            <ul class="quellen" style="display:none" id="W3WI_IBI403_quelle">
                 <li>Bernecker, M. und Beinharz, F.: Social Media Marketing: Strategien, Tipps und Tricks für die Praxis , johanna Verlag, Köln.</li>
                 <li>Biermann, T.: Kompakt-Training Dienstleistungsmanagement, Kiehl, Herne.</li>
                 <li>Haller, S.: Dienstleistungsmanagement: Grundlagen - Konzepte - Instrumente, Gabler, Stuttgart.</li>
@@ -1685,7 +1692,7 @@
     <div class="gridlayout" id="W3WI_203">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_203', 'Grid1')">IMBIT-Curriculum</li>
@@ -1697,7 +1704,7 @@
         <ul class="moocs">
             <li>
                 <p>
-                    <a target="_blank" href="https://www.youtube.com/channel/UCn8aVW6QGQcRjhF3Znt35mg/videos"><img src="/Users/christianbartels/Documente HD/Studium/5. Semester/IT-Projekt/Bilder/Finanzen.png" alt="Fintool - Finanzausbildung für Jedermann - kurz erklärt"></a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCn8aVW6QGQcRjhF3Znt35mg/videos"><img src="img/Finanzen.png" alt="Fintool - Finanzausbildung für Jedermann - kurz erklärt"></a>
                     <a target="_blank" href="https://www.youtube.com/channel/UCn8aVW6QGQcRjhF3Znt35mg/videos"> Fintool - Finanzausbildung für Jedermann - kurz erklärt</a> &mdash; Das ist eine videobasierte Internet-Plattform für Finanzausbildung. Diese
                     Plattfrom beinhaltet Kurzvideos von 2, 3, höchstens 4 Minuten für Finanzwissen, in welchen die wesentlichen Grundsätze der Finanz- und Anlagetheorie beigebracht werden.
                     <span style="color:grey">Stand 2017 | &copy; Fintool AG | Abdeckungsgrad 30%</span>
@@ -1706,7 +1713,7 @@
 
             <li>
                 <p>
-                    <a target="_blank" href="http://buchhaltung-lernen.com/bilanz"><img src="/Users/christianbartels/Documente HD/Studium/5. Semester/IT-Projekt/Bilder/cyberlab-finanzsoftware.jpg" alt="Bilanzierung lernen"></a>
+                    <a target="_blank" href="http://buchhaltung-lernen.com/bilanz"><img src="img/cyberlab-finanzsoftware.jpg" alt="Bilanzierung lernen"></a>
                     <a target="_blank" href="http://buchhaltung-lernen.com/bilanz">Bilanzierung lernen</a> &mdash; Videokurse zu Bilanzierungsgrundlagen. <span style="color:grey">Stand 2018 | &copy; buchhaltung-lernen.com | Abdeckungsgrad 80%</span>
                 </p>
             </li>
@@ -1740,7 +1747,7 @@
     <div class="gridlayout" id="W3WI_106">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_106', 'Grid1')">IMBIT-Curriculum</li>
@@ -1795,7 +1802,7 @@
     <div class="gridlayout" id="W3WI_204">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_204', 'Grid1')">IMBIT-Curriculum</li>
@@ -1857,7 +1864,7 @@
     <div class="gridlayout" id="W3WI_202">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_202', 'Grid1')">IMBIT-Curriculum</li>
@@ -1902,7 +1909,7 @@
             </li>
             <li>
                 <p>
-                    <a target="_blank" href="http://www.rechnungswesen-verstehen.de/uebungen/rechnungswesen-uebungen.php"><img src="/Users/christianbartels/Documente HD/Studium/5. Semester/IT-Projekt/Bilder/RechnungswesenVerstehen_Logo.png" alt="Rechnungswesen üben"></a>
+                    <a target="_blank" href="http://www.rechnungswesen-verstehen.de/uebungen/rechnungswesen-uebungen.php"><img src="img/RechnungswesenVerstehen_Logo.png" alt="Rechnungswesen üben"></a>
                     <a target="_blank" href="http://www.rechnungswesen-verstehen.de/uebungen/rechnungswesen-uebungen.php"> Rechnungswesen üben</a> &mdash; Auf diesen Seiten befinden sich ausgewählte, kostenlose Übungsaufgaben zu den einzelnen Teilgebieten
                     des Rechnungswesens. Zu allen Übungsaufgaben werden kostenlose Lösungen bereitgestellt.
                     <span style="color:grey"> Stand 2018 |  &copy; Fabian Simon | Abdeckungsgrad 30%</span>
@@ -1910,7 +1917,7 @@
             </li>
             <li>
                 <p>
-                    <a target="_blank" href="http://www.rechnungswesen-verstehen.de/kosten-leistungs-rechnung/klr-grundlagen.php"><img src="/Users/christianbartels/Documente HD/Studium/5. Semester/IT-Projekt/Bilder/RechnungswesenVerstehen_Logo.png" alt="Webinar: KLR Grundlagen"></a>
+                    <a target="_blank" href="http://www.rechnungswesen-verstehen.de/kosten-leistungs-rechnung/klr-grundlagen.php"><img src="img/RechnungswesenVerstehen_Logo.png" alt="Webinar: KLR Grundlagen"></a>
                     <a target="_blank" href="http://www.rechnungswesen-verstehen.de/kosten-leistungs-rechnung/klr-grundlagen.php"> KLR Grundlagen</a> &mdash; Auf dieser Website findet man Informationen zur Kosten- und Leistungsrechnungsgrundlagen.
                     <span style="color:grey"> Stand 2018 |  &copy; Rechnungswesen-verstehen.de | Abdeckungsgrad 20%</span>
                 </p>
@@ -1943,7 +1950,7 @@
     <div class="gridlayout" id="W3WI_506">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_506', 'Grid1')">IMBIT-Curriculum</li>
@@ -2008,7 +2015,7 @@
     <div class="gridlayout" id="W3WI_505">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_505', 'Grid1')">IMBIT-Curriculum</li>
@@ -2064,14 +2071,14 @@
             </li>
             <li>
                 <p>
-                    <a target="_blank" href="http://www.rechnungswesen-verstehen.de/bwl-vwl/vwl/vwl-grundlagen.php"><img src="/Users/christianbartels/Documente HD/Studium/5. Semester/IT-Projekt/Bilder/RechnungswesenVerstehen_Logo.png" alt="VWL Grundlagen"></a>
+                    <a target="_blank" href="http://www.rechnungswesen-verstehen.de/bwl-vwl/vwl/vwl-grundlagen.php"><img src="img/RechnungswesenVerstehen_Logo.png" alt="VWL Grundlagen"></a>
                     <a target="_blank" href="http://www.rechnungswesen-verstehen.de/bwl-vwl/vwl/vwl-grundlagen.php">VWL Grundlagen</a> &mdash;Auf dieser Seite von Rechnungswesen-Verstehen.de werden die Grundlagen der VWL möglichst verständlich und einfach
                     erklärt. <span style="color:grey">Stand 2018 |  &copy; rechnungswesen-verstehen.de | Abdeckungsgrad 50%</span>
                 </p>
             </li>
             <li>
                 <p>
-                    <a target="_blank" href="https://itunes.apple.com/de/app/bbc-news/id364147881?mt=8"><img src="/Users/christianbartels/Documente HD/Studium/5. Semester/IT-Projekt/Bilder/BBC_News.jpeg" alt="BBC News"></a>
+                    <a target="_blank" href="https://itunes.apple.com/de/app/bbc-news/id364147881?mt=8"><img src="img/BBC_News.jpeg" alt="BBC News"></a>
                     <a target="_blank" href="https://itunes.apple.com/de/app/bbc-news/id364147881?mt=8">BBC News</a> &mdash;ABBC News ist ein Nachrichtensender des BBCs. <span style="color:grey">Stand 2018 |   &copy; BBC News | Abdeckungsgrad 5%</span>
                 </p>
             </li>
@@ -2103,7 +2110,7 @@
     <div class="gridlayout" id="W3WI_IBI404">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_IBI404', 'Grid1')">IMBIT-Curriculum</li>
@@ -2147,7 +2154,7 @@
     <div class="gridlayout" id="W3WI_IBI301">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_IBI301', 'Grid1')">IMBIT-Curriculum</li>
@@ -2261,7 +2268,7 @@
     <div class="gridlayout" id="W3WI_IBI305_IBI306">
 
         <!-- Tentakel Kopf_Home -->
-        <img class="tintenfischkopf" src="img/Tintenfisch_Kopf_HOME_gedreht.png" />
+        <img class="tintenfischarm" src="img/tentakelarm_u11.png" />
 
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('W3WI_IBI305_IBI306', 'Grid1')">IMBIT-Curriculum</li>
@@ -2307,5 +2314,15 @@
 
         x.style.display = "none";
         y.style.display = "grid";
+    }
+
+    function toggleVisible(visibility) {
+        var x = document.getElementById(visibility);
+
+        if (x.style.display != "none") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "inline-block";
+        }
     }
 </script>
