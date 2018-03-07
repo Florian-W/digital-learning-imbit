@@ -13,6 +13,15 @@ import javax.json.JsonBuilderFactory;
 import javax.json.JsonObject;
 import javax.servlet.http.HttpServlet;
 
+
+/**
+ * Main openBadge class
+ * Gets Issuer info from the database, gets badge data, creates JSON assertion data
+ * @author imbit15c
+ * @date 1.3.2018
+ * 
+ */
+
 public class JSONCreator extends HttpServlet {
 
 	public static String createAssertion(String recipient, String badge) throws SQLException {
@@ -54,7 +63,7 @@ public class JSONCreator extends HttpServlet {
 				)
 			)
 			.add("verify", factory.createObjectBuilder()
-				.add("url", "key-pem-file") //add key-pem file on server here
+				.add("url", "key-der-file") //add private-key.der file on server here
 				.add("type", "signed")
 			)
 			.build();

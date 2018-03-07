@@ -160,7 +160,7 @@ public class MailClient extends HttpServlet
 	 
 			} catch (AddressException e) {
 	        	e.printStackTrace();
-				//System.out.println("Sending email failed, uncorrect address.");
+				//System.out.println("Sending email failed, incorrect address.");
 	        } catch (MessagingException e) {
 	        	e.printStackTrace();
 				//System.out.println("Sending email failed, message could not be sent.");

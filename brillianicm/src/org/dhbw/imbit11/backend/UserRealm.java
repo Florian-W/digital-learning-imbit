@@ -30,6 +30,8 @@ import org.apache.shiro.util.JdbcUtils;
  * effected anymore
  * 
  * 5.3.16 Insert new getUserEmailByID query so the email can be loaded
+ * 
+ * 1.3.18 Added openBadge support
  */
 
 public class UserRealm extends JdbcRealm {

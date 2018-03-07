@@ -23,6 +23,14 @@ import java.security.spec.PKCS8EncodedKeySpec;
 import com.nimbusds.jose.*;
 import com.nimbusds.jose.crypto.*;
 
+/**
+ * openBadges
+ * Class for baking and signing the badge .svg-files
+ * @author imbit15c
+ * @date 1.3.2018
+ *
+ */
+
 public class BadgeBakery extends HttpServlet {
 	
 	public static byte[] bakeBadge(String useremail, String country) throws IOException, SQLException {
@@ -36,7 +44,7 @@ public class BadgeBakery extends HttpServlet {
 			BufferedReader svgReader = new BufferedReader(svgFileReader);
 			while ((line = svgReader.readLine()) != null) {
 				if (line.contains("<![CDATA["))
-//					line = line.replace("<![CDATA[", "<![CDATA[" + JSONCreator.createAssertion(useremail, country));
+//					line = line.replace("<![CDATA[", "<![CDATA[" + JSONCreator.createAssertion(useremail, country)); //created assertion without signing
 					line = line.replace("<![CDATA[", "<![CDATA[" + signBadge(JSONCreator.createAssertion(useremail, country)));
 				lines.add(line);
 			}
@@ -58,7 +66,7 @@ public class BadgeBakery extends HttpServlet {
 			FileInputStream fileInputStream = new FileInputStream(svgFile);
 			fileInputStream.read(svgBytes);
 			/*
-			 * for (int i = 0; i < svgBytes.length; i++) {
+			 * for (int i = 0; i < svgBytes.length; i++) { //prints whole file in console. Testing purposes
 			 * System.out.print((char)svgBytes[i]); }
 			 */
 		} catch (FileNotFoundException e) {
