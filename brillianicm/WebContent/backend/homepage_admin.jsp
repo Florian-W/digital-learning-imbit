@@ -59,16 +59,15 @@
 			<a id="content" class="easyui-linkbutton" data-options="plain:true"><%=ApplicationConstants.CONTENT_BUTTON_TEXT%></a>
 		</div>
 	</div>
-	<div class="center mainWindow" data-options="region:'center'"
-		align="center" style="padding-left: 5%; padding-right: 5%">
+	<div class="center mainWindow" data-options="region:'center'" align="center" style="padding-left: 2%; padding-right: 2%">
 		<h1>Admin Page</h1>
+		<div style="text-align: left; padding-left: 5%; padding-right: 5%" align="center">
+		<div class="separator-box" style="margin-bottom: 20px">
 		<div
-			style="width: 100%; text-align: left; padding-left: 5%; padding-right: 5%"
-			align="center">
-			<div class="separator-box" style="margin-bottom: 20px">
-				<div
-					style="padding-bottom: 20px; padding-left: 2%; width: 80%; background-color: white; border-width: 1px; border-style: solid; border-color: black; height: 100%">
-					<h4>Lecturers</h4>
+					style="padding-bottom: 20px; padding-left: 5%; padding-right: 5%; width: 90%; background-color: white; border-width: 1px; border-style: solid; border-color: black; height: 100%">
+					
+			
+				<h4>Lecturers</h4>
 					<table id="students" class="easyui-datagrid" style="width: 600px"
 						data-options="fitColumns:true,singleSelect:true">
 						<thead>
@@ -113,9 +112,9 @@
 					</table>
 				</div>
 			</div>
-			<br />
+			
 			<div
-				style="height: 370px; width: 80%; background-color: white; border-width: 1px; border-style: solid; border-color: black; padding-left: 2%; text-align: left; padding-bottom: 20px">
+				style="height: 370px; width: 90%; background-color: white; border-width: 1px; border-style: solid; border-color: black; padding-left: 5%; padding-right: 5%; text-align: left; padding-bottom: 20px; margin-top: 30px">
 				<div style="height: 100%; width: 50%; float: left">
 					<h4>New Lecturer</h4>
 					<form action="CreateUser" method="post">
@@ -144,7 +143,7 @@
 						<input type="password" name="password_repeat" maxlength="50"
 							required /><br /> <br /> <input id="createUser" type="submit"
 							value="Create now!" hidden="hidden"></input> <a
-							class="easyui-linkbutton"
+							class="easyui-linkbutton" style="width: 53%"
 							onclick="$('#createUser').trigger('click')">Create Lecturer</a>
 						<p style="color: green">${success}</p>
 						<p style="color: red">${error}</p>
@@ -152,10 +151,10 @@
 				</div>
 				<div style="margin-left: 50%">
 					<h4>Change Password</h4>
-					<p style="color: red; padding-left: 32px;">${error}</p>
+					
 					<form action="ResetPassword" method="post">
 						<input type="text" name="role" maxlength="50" value="admin"
-							style="display: none" /><br /> <br />
+							style="display: none" />
 						<!--  Password check -->
 						<div class="formLabel">Old Password:</div>
 						<input type="password" name="oldpassword" maxlength="50" /><br />
@@ -170,11 +169,12 @@
 						<a class="easyui-linkbutton studentButton"
 							onclick=confirmPasswordChange()>Update Password</a>
 					</form>
+					<p style="color: red; padding-left: 32px;">${error}</p>
 				</div>
 			</div>
-			<br>
+			
 			<div
-				style="width: 80%; background-color: white; border-width: 1px; border-style: solid; border-color: black; margin-top: 25px; margin-bottom: 25px; padding-left: 2%; text-align: left">
+				style="width: 90%; background-color: white; border-width: 1px; border-style: solid; border-color: black; margin-top: 30px; margin-bottom: 30px; padding-left: 5%; padding-right: 5%; text-align: left">
 				<h4>Global Settings</h4>
 				<div
 					style="width: 50%; height: 100%; float: left; height: 100%; margin-bottom: 25px">
@@ -230,11 +230,11 @@
 							onclick="$('#setSettings').trigger('click')">Save Changes</a>
 					</form>
 
-				</div>
+				</div></div>
 				<div class="mainEventContainerImprint easyui-window"
 					data-options="closed:true,width:863,height:576"></div>
 			</div>
-			<div style="padding-bottom: 25px"></div>
+			<div style="padding-bottom: 25px"></div></div>
 </body>
 <script type="text/javascript">
 	$('body').show();

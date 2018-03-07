@@ -57,15 +57,13 @@
 			<a id="imprint" class="easyui-linkbutton" data-options="plain:true"><%=ApplicationConstants.IMPRINT_BUTTON_TEXT%></a>
 		</div>
 	</div>
-	<div class="center mainWindow" data-options="region:'center'"
-		align="center" style="padding-left: 5%; padding-right: 5%">
+	<div class="center mainWindow" data-options="region:'center'" align="center" style="padding-left: 2%; padding-right: 2%">
 		<h1>Admin Page</h1>
-		<div
-			style="width: 100%; text-align: left; padding-left: 5%; padding-right: 5%"
-			align="center">
+		<div style="text-align: left; padding-left: 5%; padding-right: 5%" align="center">
+		
 			<div class="separator-box" style="margin-bottom: 30px">
 				<div
-					style="padding-bottom: 20px; padding-left: 2%; width: 80%; background-color: white; border-width: 1px; border-style: solid; border-color: black">
+					style="padding-bottom: 20px; padding-left: 5%; padding-right: 5%; width: 90%; background-color: white; border-width: 1px; border-style: solid; border-color: black">
 					<h4>Lecturers</h4>
 					<table id="students" class="easyui-datagrid" style="width: 600px"
 						data-options="fitColumns:true,singleSelect:true">
@@ -112,7 +110,7 @@
 			</div>
 
 			<div
-				style="height: 400px; width: 80%; background-color: white; border-width: 1px; border-style: solid; border-color: black; padding-left: 2%; text-align: left; padding-bottom: 20px; margin-bottom: 30px">
+				style="height: 400px; width: 90%; background-color: white; border-width: 1px; border-style: solid; border-color: black; padding-left: 5%; padding-right: 5%; text-align: left; padding-bottom: 20px; margin-bottom: 30px">
 				<div style="height: 100%; width: 50%; float: left">
 					<h4>New Lecturer</h4>
 					<form action="CreateUser" method="post">
@@ -154,7 +152,7 @@
 					<p style="color: red; padding-left: 32px;">${error}</p>
 					<form action="ResetPassword" method="post">
 						<input type="text" name="role" maxlength="50" value="admin"
-							style="display: none; width: 55%" /><br /> <br />
+							style="display: none; width: 55%" />
 						<!--  Password check -->
 						<div class="formLabel">Old Password:</div>
 						<input type="password" name="oldpassword" maxlength="50"
@@ -169,14 +167,14 @@
 							style="width: 55%" /><br /> <br /> <input id="updatePassword"
 							type="submit" name="updatePassword" value="Update password"
 							hidden="hidden" /> <a class="easyui-linkbutton studentButton"
-							onclick=confirmPasswordChange() style="width: 50%">Update
+							onclick=confirmPasswordChange()>Update
 							Password</a>
 					</form>
 				</div>
 			</div>
 
 			<div
-				style="width: 80%; background-color: white; border-width: 1px; border-style: solid; border-color: black; margin-bottom: 25px; padding-left: 2%; text-align: left">
+				style="width: 90%; background-color: white; border-width: 1px; border-style: solid; border-color: black; margin-bottom: 25px; padding-left: 5%; padding-right: 5%; text-align: left">
 				<h4>Global Settings</h4>
 				<div
 					style="width: 50%; height: 100%; float: left; height: 100%; margin-bottom: 25px">
@@ -232,7 +230,7 @@
 							onclick="$('#setSettings').trigger('click')">Save Changes</a>
 					</form>
 
-				</div>
+				</div></div>
 				<div class="mainEventContainerImprint easyui-window"
 					data-options="closed:true,width:863,height:576"></div>
 			</div>

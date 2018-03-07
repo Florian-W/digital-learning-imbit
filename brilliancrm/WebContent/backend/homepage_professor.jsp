@@ -56,13 +56,12 @@
 		</div>
 	</div>
 	<div class="center mainWindow" data-options="region:'center'"
-		align="center" style="padding-left: 5%; padding-right: 5%">
+		align="center" style="padding-left: 2%; padding-right: 2%">
 		<div id="studentsOfProfessor">
 			<h1>Lecturer Page</h1>
-			<br />
-			<div class="separator-box" style="padding-bottom: 20px">
+			<div class="separator-box" style="padding-bottom: 30px">
 				<div
-					style="width: 80%; background-color: white; border-width: 1px; border-style: solid; border-color: black">
+					style="width: 90%; background-color: white; border-width: 1px; border-style: solid; border-color: black">
 					<div id="groupsOfProfessor"
 						style="width: 100%; text-align: left; padding-left: 5%; padding-right: 5%">
 						<h4>Groups</h4>
@@ -215,29 +214,29 @@
 						%>
 					</div>
 				</div>
-				>
+				
 			</div>
 
 
 			<div
-				style="height: 300px; text-align: left; width: 80%; background-color: white; border-width: 1px; border-style: solid; border-color: black; padding-bottom: 30px; margin-bottom: 30px">
+				style="height: 300px; text-align: left; width: 90%; background-color: white; border-width: 1px; border-style: solid; border-color: black; padding-bottom: 30px; margin-bottom: 30px">
 				<div style="width: 50%; float: left; padding-left: 5%">
 					<h4>Create New Group</h4>
 					<form action="NewUsergroup" method="post">
 						<div class="formLabel">Name:</div>
-						<input type="text" name="groupname" maxlength="50" required /><br />
+						<input style="width: 55%" type="text" name="groupname" maxlength="50" required /><br />
 						<br />
 						<div class="formLabel">Organisation:</div>
-						<input type="text" name="grouporg" maxlength="50" required /><br />
+						<input style="width: 55%" type="text" name="grouporg" maxlength="50" required /><br />
 						<br />
 						<div class="formLabel">Description:</div>
-						<input type="text" name="groupdescription" maxlength="50" required /><br />
+						<input style="width: 55%" type="text" name="groupdescription" maxlength="50" required /><br />
 						<br />
 						<div class="formLabel">URL:</div>
-						<input type="text" name="groupurl" maxlength="50" required /> <input
-							type="submit" style="display: none" id="createGroup"
+						<input style="width: 55%" type="text" name="groupurl" maxlength="50" required /> <input
+							type="submit" style="display: none; width: 100%" id="createGroup"
 							value="Create group" /><br /> <br /> <a
-							class="easyui-linkbutton"
+							class="easyui-linkbutton" style="width:50%"
 							onclick="$('#createGroup').trigger('click')">Create group</a>
 						<p style="color: green">${success}</p>
 						<p style="color: red">${error}</p>
@@ -252,14 +251,14 @@
 							style="display: none" />
 						<div class="formLabel" style="padding-right: 20px">New
 							password:</div>
-						<input style="width: 200px" type="password" name="password"
+						<input style="width: 55%" type="password" name="password"
 							maxlength="50" /><br /> <br />
 						<div class="formLabel" style="padding-right: 20px">Repeat
 							new password:</div>
-						<input style="width: 200px" type="password" name="password_repeat"
+						<input style="width: 55%" type="password" name="password_repeat"
 							maxlength="50" /><br /> <br /> <input id="updatePassword"
 							type="submit" name="updatePassword" value="Update password"
-							hidden="hidden" /> <a class="easyui-linkbutton"
+							hidden="hidden" /> <a class="easyui-linkbutton" style="width:50%"
 							onclick="$('#updatePassword').trigger('click')">Update
 							password</a>
 					</form>
