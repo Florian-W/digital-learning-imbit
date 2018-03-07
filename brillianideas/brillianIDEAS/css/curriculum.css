@@ -50,11 +50,11 @@ html {
 }
 
 .ueberschriftenfeld li:nth-child(2n) {
-    font-size: 2em;
+    font-size: 2.1em;
 }
 
 .ueberschriftenfeld li:nth-child(3n) {
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 .ueberschriftenfeld li:hover {
@@ -72,6 +72,7 @@ html {
     color: black;
     overflow: hidden;
     overflow-y: scroll;
+    font-size: 1.4em;
 }
 
 .moocs {
@@ -82,6 +83,7 @@ html {
     overflow-y: scroll;
     clear: both;
     color: black;
+    font-size: 1.4em;
 }
 
 .moocs img {
