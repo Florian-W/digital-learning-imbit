@@ -37,8 +37,8 @@ public class JSONCreator extends HttpServlet {
 		
 		String current_date = dateFormatter.format(date);
 		String[] info = getBadgeClassInfo(badge);
-//		int group = userRealm.getUserGroupByEmail(recipient)
-//		String[] issuer_info = getIssuerInfo(group);
+		int group = userRealm.getUserGroupByEmail(recipient)
+		String[] issuer_info = getIssuerInfo(group);
 		
 		String badge_id = String.valueOf(getAssertionId());
 	
@@ -52,18 +52,16 @@ public class JSONCreator extends HttpServlet {
 				.add("description", info[2])
 				.add("criteria", info[3])
 				.add("issuer", factory.createObjectBuilder()
-					.add("name", "DHBW Mannheim Studiengang IMBIT")
-//					.add("name", issuer_info[0])
-					.add("org", "DHBW Mannheim")
-//					.add("org", issuer_info[1])
-					.add("description", "DHBW Mannheim - International Management for Business and Information Technology")
-//					.add("description", issuer_info[2])
-					.add("url", "http://www.imbit.dhbw-mannheim.de/")
-//					.add("url", issuer_info[3])
+//					.add("org", "DHBW Mannheim")
+					.add("org", issuer_info[0])
+//					.add("description", "DHBW Mannheim - International Management for Business and Information Technology")
+					.add("description", issuer_info[1])
+//					.add("url", "http://www.imbit.dhbw-mannheim.de/")
+					.add("url", issuer_info[2])
 				)
 			)
 			.add("verify", factory.createObjectBuilder()
-				.add("url", "key-der-file") //add private-key.der file on server here
+				.add("url", "http://ec2-52-14-250-138.us-east-2.compute.amazonaws.com:8080/brillianICM/badges/public-key-badges.pem")
 				.add("type", "signed")
 			)
 			.build();

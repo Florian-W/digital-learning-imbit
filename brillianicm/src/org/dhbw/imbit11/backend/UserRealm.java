@@ -75,7 +75,9 @@ public class UserRealm extends JdbcRealm {
 
 	protected String getBadgeAssertionID = "SELECT COUNT(`UID`) FROM `badges`";
 	protected String newBadgeQuery = "INSERT INTO `badges` VALUES (?,?,?,?)";
-	protected String getIssuerInfoQuery = "SELECT (`name`,`org`,`description`,`url`) FROM `group` WHERE `group_id`=?";
+	protected String getIssuerOrgQuery = "SELECT `org` FROM `group` WHERE `group_id`=?";
+	protected String getIssuerDescQuery = "SELECT `description` FROM `group` WHERE `group_id`=?";
+	protected String getIssuerURLQuery = "SELECT `url` FROM `group` WHERE `group_id`=?";
 	
 	/**
 	 * Invokes the constructor of parent class (superclass) function looks up an
@@ -263,27 +265,41 @@ public class UserRealm extends JdbcRealm {
 	    }
 	}
 
-	/*
 	public String[] getIssuerInfo(int group) throws SQLException {
 	    Connection conn = dataSource.getConnection();
 	    PreparedStatement ps = null;
 	    ResultSet rs = null;
-	    String[] issuer_info = null;
+	    String[] issuer_info = new String[3];
 	    try {
-	        ps = conn.prepareStatement(getIssuerInfoQuery);
+	        ps = conn.prepareStatement(getIssuerOrgQuery);
 	        ps.setLong(1, group);
 	        rs = ps.executeQuery();
 	        
 	        while (rs.next()) {
-				badgesCount = Integer.parseInt(rs.getString(1));
+				issuer_info[0] = Integer.parseInt(rs.getString(1));
+	        }
+	        ps = conn.prepareStatement(getIssuerDescQuery);
+	        ps.setLong(1, group);
+	        rs = ps.executeQuery();
+	        
+	        while (rs.next()) {
+				issuer_info[1] = Integer.parseInt(rs.getString(1));
+	        }
+	        ps = conn.prepareStatement(getIssuerURLQuery);
+	        ps.setLong(1, group);
+	        rs = ps.executeQuery();
+	        
+	        while (rs.next()) {
+				issuer_info[2] = Integer.parseInt(rs.getString(1));
 	        }
 
 	    } finally {
 	        JdbcUtils.closeStatement(ps);
 	        conn.close();
 	    }
+	    return result
 	}
-*/
+
 	
 	/**
 	 * Invoked in java class ProfessorMain does not work if the user has no
