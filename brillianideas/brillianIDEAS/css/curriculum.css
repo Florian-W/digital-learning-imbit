@@ -31,9 +31,14 @@ html {
     grid-column: 1 / 8;
     grid-row: 1 / 4;
     text-align: left;
-    height: auto;
-    width: 25%;
+    height: 100%;
+    width: 100%;
     /* transform: rotate(-90deg) */
+}
+
+.tintenfischarm img {
+    width: 25%;
+    height: auto;
 }
 
 .ueberschriftenfeld {
