@@ -576,6 +576,14 @@ html {
 
 /* Grid Rows */
 
+.grid_row_1 {
+    grid-row: 11;
+}
+
+.grid_row_2 {
+    grid-row: 2;
+}
+
 .grid_row_3 {
     grid-row: 3;
 }
@@ -606,6 +614,14 @@ html {
 
 .grid_row_10 {
     grid-row: 10;
+}
+
+.grid_row_11 {
+    grid-row: 11;
+}
+
+.grid_row_12 {
+    grid-row: 12;
 }
 
 .grid_row_1_2 {
