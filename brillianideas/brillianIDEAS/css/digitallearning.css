@@ -58,7 +58,7 @@ body {
   grid-template-rows: 1fr 1fr 1fr;
 
   /* coordinate-grid line */
-  border-right: 1px solid rgb(204,204,204);
+  border-right: 1px solid #991B33;
 }
 
 .content-2 {
@@ -79,8 +79,8 @@ body {
   grid-template-rows: 1fr 1fr 1fr;
 
   /* coordinate-grid lines */
-  border-top: 1px solid rgb(204,204,204);
-  border-right: 1px solid rgb(204,204,204);
+  border-top: 1px solid #991B33;
+  border-right: 1px solid #991B33;
 }
 
 .content-4 {
@@ -92,7 +92,7 @@ body {
   grid-template-rows: 1fr 1fr 1fr;
 
   /* coordinate-grid lines */
-  border-top: 1px solid rgb(204,204,204);
+  border-top: 1px solid #991B33;
 }
 
 .footer {
@@ -122,15 +122,23 @@ body {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    text-align: center; /*Center the Modal Box*/
+    color: black;
 }
 
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 10% auto; /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
+    height: 80%; /*Important for overflow: scroll*/
+    text-align: left; /*reset text-align: center from .model*/
+    display: inline-block; /*Wrap Modal Content*/
+    position: fixed;
+    top: -11%;
+    left: 8%;
+    overflow: scroll;
 }
 
 /* The Close Button */
@@ -223,7 +231,7 @@ body {
   line-height: 1;
   position: relative;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   display: inline;
   font-family: 'Caveat Brush';
   color: black;
@@ -438,6 +446,60 @@ body {
 
 }
 
+.modal_picture{
+  height: 16vh;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  float: left;
+}
+
+.modal_picture_small_size{
+  height: 5vh;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.modal_picture_middle_size{
+  height: 7vh;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.row_wrapper{
+  display: inline-block;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td:nth-child(1){
+  width: 15%;
+}
+
+td:nth-child(3){
+  width: 15%;
+}
+
+td:nth-child(2){
+  width: 35%;
+}
+
+td:nth-child(4){
+  width: 35%;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+   text-decoration: none;
+   color: #991B33;
+}
+
 /* label {
   -webkit-appearance: push-button;
   -moz-appearance: button;
@@ -449,4 +511,4 @@ body {
 input[type=checkbox]:checked ~ div{
    visibility: hidden;
 
-} */ */
+} */
