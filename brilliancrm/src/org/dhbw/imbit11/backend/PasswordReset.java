@@ -80,8 +80,9 @@ import org.apache.shiro.subject.Subject;
 				url="/Student";
 			}
 			
-			Subject subject = SecurityUtils.getSubject();
-			String email = (String) subject.getPrincipal();
+//			Subject subject = SecurityUtils.getSubject();
+//			String email = (String) subject.getPrincipal();
+			String email = "student@brilliancrm.com"
 			System.out.println(email);
 			String oldpassword = request.getParameter("oldpassword");
 			System.out.println(oldpassword);
