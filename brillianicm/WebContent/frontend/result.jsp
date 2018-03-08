@@ -56,7 +56,7 @@
 					async : true,
 					success : function(data) {
 						if (data == "1") {
-							document.getElementById("certificationText").innerHTML = "For your <a target='_blank' href='http://ec2-52-14-250-138.us-east-2.compute.amazonaws.com:8080/brillianICM/badges/criteria-brillianICM.html'>certification and badge</a>, please press the button below or restart the game";
+							document.getElementById("certificationText").innerHTML = "For your <a target='_blank' href='badges/badgeCriteriaTable.html'>certification and badge</a>, please press the button below or restart the game";
 							//document.getElementById("SendButton").innerHTML = "Send Certificate and restart from the begininng";
 							var buttonSend = document.getElementById("SendButton");
 							buttonSend.onclick = function() {
