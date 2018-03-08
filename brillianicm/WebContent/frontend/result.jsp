@@ -68,7 +68,7 @@
 							};
 						} else {
 							document.getElementById("SendButton").style.display = "none";
-							document.getElementById("certificationText").innerHTML = "To restart, please press the button below";
+							document.getElementById("certificationText").innerHTML = "To restart, please press the button below. Certificate and badge only available for designated groups.";
 							//document.getElementById("SendButton").innerHTML = "Restart the game from the beginning";
 							var buttonRestart = document.getElementById("RestartButton");
 							buttonRestart.onclick = function() {
@@ -87,7 +87,7 @@
 			</div>-->
 
 	<div class="center" data-options="region:'center'"
-		style="background-color: #d5edf3; height: 100%">
+		style="background-color: #d5edf3; height: 100%; padding-left: 35px">
 		<!-- 
 			Philipp K.
 			5.3.16
@@ -98,22 +98,22 @@
 			<div id=name></div>
 			You completed the game!
 		</h1>
-		<h3>Check out how brilliant you have been:</h3>
+		<h3>Check out how brilliant you've been:</h3>
 		<table>
 			<tr>
 
 				<td>
 					<table style="font-weight: bold;">
 						<tr>
-							<td>Behaviour:</td>
-							<td style="float: right"><div id="cost"></div></td>
+							<td>Behaviour</td>
+							<td style="float: right; padding-left: 10px"><div id="cost"></div></td>
 						</tr>
 						<tr>
-							<td>Competence:</td>
+							<td>Competence</td>
 							<td style="float: right"><div id="time"></div></td>
 						</tr>
 						<tr>
-							<td>Communication:</td>
+							<td>Communication </td>
 							<td style="float: right"><div id="quality"></div></td>
 						</tr>
 					</table>
@@ -131,7 +131,7 @@
 					</a>
 					<a class="btn btn-default" id="SendButton" href="javascript:void(0)">
 					<div id="SendButtonText"></div>
-					Send Certificate and Badge
+					Send certificate and badge
 					</a>
 					</p>
 				</td>
@@ -141,7 +141,7 @@
 		<div id="sendcertificate" class="easyui-dialog" title="Restart game"
 			style="width: 400px; height: 150px; padding: 10px"
 			data-options="iconCls: 'icon-undo',closed:true,buttons: [{text:'Send',iconCls:'icon-ok',handler:function(){$.ajax({ url: 'Event', type: 'get', dataType: 'html', data: {userid : userid, type : 'sendCertificate'}, async: true, success: function(data) {}}); window.location.href = '${pageContext.request.contextPath}/Student';}},{text:'Cancel',handler:function(){$('#sendcertificate').dialog('close');}}]">
-			Your Certificate and Badge will be send to
+			Your certificate and badge will be send to
 			<div id=email></div>
 		</div>
 		<div id="reset" class="easyui-dialog" title="Restart game"

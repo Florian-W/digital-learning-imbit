@@ -41,7 +41,7 @@ public class UserRealm extends JdbcRealm {
 	protected String getUserGroupByID = "SELECT `group` FROM `user` WHERE `user_id` = ?";
 	protected String getUserGroupByEmail = "SELECT `group` FROM `user` WHERE `email` = ?";
 
-	protected String newgroupQuery = "INSERT INTO `group`(`group_name`, `professor_id`) VALUES (?,(SELECT `user_id` FROM `user` WHERE `email` = ?))";
+	protected String newgroupQuery = "INSERT INTO `group`(`group_name`, `professor_id`, `org`, `description`, `url`) VALUES (?,(SELECT `user_id` FROM `user` WHERE `email` = ?),?,?,?)";
 	protected String newUserQuery = "INSERT INTO `user`(`email`, `last_name`, `first_name`, `password`, `role`, `group`,`gender`) VALUES (?,?,?,?,?,?,?)";
 	protected String newProgressQuery = "INSERT INTO `user_progress` VALUES (?,0,0,0,'l000e000', FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE)";
 
@@ -113,13 +113,16 @@ public class UserRealm extends JdbcRealm {
 	 * @throws SQLException
 	 *             - throws a database access error
 	 */
-	protected void createNewGroup(String groupname, String professor) throws SQLException {
+	protected void createNewGroup(String groupname, String professor, String org_name, String org_description, String org_url) throws SQLException {
 		Connection conn = dataSource.getConnection();
 		PreparedStatement ps = null;
 		try {
 			ps = conn.prepareStatement(newgroupQuery);
 			ps.setString(1, groupname);
 			ps.setString(2, professor);
+			ps.setString(3, org_name);
+			ps.setString(4, org_description);
+			ps.setString(5, org_url);
 
 			// Execute query
 			ps.executeUpdate();
@@ -248,7 +251,8 @@ public class UserRealm extends JdbcRealm {
 	        ps.setString(1, UID);
 	        ps.setString(2, recipient);
 	        ps.setString(3, badge);
-	        ps.setString(4, issuedOn);
+	        ps.setString(4
+	        	, issuedOn);
 	        ps.executeUpdate();
 
 	    } finally {

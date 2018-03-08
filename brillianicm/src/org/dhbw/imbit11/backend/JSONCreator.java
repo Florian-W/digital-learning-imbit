@@ -93,6 +93,7 @@ public class JSONCreator extends HttpServlet {
 
 	private static String[] getBadgeClassInfo(String badge) {
 		String[] info = new String[4];
+		
 		switch(badge){
 			case "Brazil": 	
 				info[0] = "brillianICM Brazil";
@@ -154,8 +155,7 @@ public class JSONCreator extends HttpServlet {
 				info[2] = "Successful completion of the ICM serious game";
 				info[3] = "http//:link_criteria_page";
 				break;
-		}
-		return info;
+		}		return info;
 	}
 
 /*	

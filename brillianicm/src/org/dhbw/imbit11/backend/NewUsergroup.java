@@ -67,6 +67,9 @@ import org.apache.shiro.SecurityUtils;
 		
 		//see /login.jsp for these form fields
 		String groupname = request.getParameter("groupname");
+		String org_name = request.getParameter("grouporg");
+		String org_description = request.getParameter("groupdescription");
+		String org_url = request.getParameter("groupurl");
 		
 		try {
 			
@@ -77,7 +80,7 @@ import org.apache.shiro.SecurityUtils;
 			//System.out.println("Der derzeitige Dozent ist " + subjectPrincipal);
 			
 			UserRealm userRealm = new UserRealm();
-			userRealm.createNewGroup(groupname, subjectPrincipal);
+			userRealm.createNewGroup(groupname, subjectPrincipal, org_name, org_description, org_url);
 			request.setAttribute("success", "The new User Group was created!");
 		}
 		
