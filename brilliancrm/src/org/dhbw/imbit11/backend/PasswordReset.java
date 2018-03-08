@@ -63,7 +63,7 @@ import org.apache.shiro.subject.Subject;
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
-
+//		System.out.println("Test");
 		String url;
 		
 		if(request.getParameter("updatePassword") != null){
@@ -80,16 +80,15 @@ import org.apache.shiro.subject.Subject;
 				url="/Student";
 			}
 			
-//			Subject subject = SecurityUtils.getSubject();
-//			String email = (String) subject.getPrincipal();
-			String email = "student@brilliancrm.com"
-			System.out.println(email);
+			Subject subject = SecurityUtils.getSubject();
+			String email = (String) subject.getPrincipal();
+//			System.out.println(email);
 			String oldpassword = request.getParameter("oldpassword");
-			System.out.println(oldpassword);
+//			System.out.println(oldpassword);
 			String password = request.getParameter("password");
-			System.out.println(password);
+//			System.out.println(password);
 			String password_repeat = request.getParameter("password_repeat");
-			System.out.println(password_repeat);
+//			System.out.println(password_repeat);
 
 			try {
 				UsernamePasswordToken token = new UsernamePasswordToken(email, oldpassword);

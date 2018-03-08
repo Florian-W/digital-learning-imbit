@@ -143,8 +143,7 @@ public class LoginUser extends javax.servlet.http.HttpServlet implements
 			} else {
 				throw new Exception();
 			}
-			System.out.println(subject.getPrincipal());
-			System.out.println("Log: " + username + " logged in successfully.");
+//			System.out.println("Log: " + username + " logged in successfully.");
 
 		} catch (UnknownAccountException ex) {
 			// username provided was not found
