@@ -1,0 +1,56 @@
+/* Import Fonts */
+ @import url('https://fonts.googleapis.com/css?family=Caveat|Caveat+Brush|Tinos');
+
+ #map {
+        position: absolute;
+    z-index: 0;
+    top: 50px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+/* Makes the map fill the entire window. */
+ html, body {
+     height: 100%;
+     margin: 0;
+     padding: 0;
+}
+/* Style of the marker's infowindow */
+ #firstHeading {
+    font-family: Caveat, serif;
+}
+
+ #secondHeading {
+    font-family: Caveat, serif;
+}
+ #bodyContent {
+    font-family: Tinos, serif; text-align: justify;
+ }
+ p.section1 {
+    color: red;
+}
+ p.section2 {
+    color: blue;
+}
+#headerbox {position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    min-width: 925px;
+    z-index: 2;
+    background: #8b1831;
+    line-height: 36px;
+    height: 50px;}
+
+h1 {position:relative; text-align:center;font-family: Caveat, serif;font-size: 30px;padding: 10px 0px 10px 0px; margin:0;color: white;}
+h1#firstHeading {color:black;}
+CSS /style.cssen.marnoto.com
+
+h2 {position:relative; text-align:left;font-family: Caveat, serif;font-size: 30px;padding: 10px 0px 10px 0px; margin:0;color: white;}
+h2#secondHeading {color:black;}
+CSS /style.cssen.marnoto.com
+
+#map {
+
+}
