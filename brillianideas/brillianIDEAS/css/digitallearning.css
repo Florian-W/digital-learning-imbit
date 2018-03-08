@@ -477,6 +477,16 @@ td:nth-child(3) {
 
 }
 
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+   text-decoration: none;
+   color: #991B33;
+}
+
 /* label {
   -webkit-appearance: push-button;
   -moz-appearance: button;
