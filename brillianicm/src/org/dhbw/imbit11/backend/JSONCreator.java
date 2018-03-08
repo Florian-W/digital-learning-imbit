@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServlet;
 
 /**
  * Main openBadge class
- * Gets Issuer info from the database, gets badge data, creates JSON assertion data
+ * Gets issuer info from the database, gets badge data, creates JSON assertion data
  * @author imbit15c
  * @date 1.3.2018
  * 
@@ -37,8 +37,8 @@ public class JSONCreator extends HttpServlet {
 		
 		String current_date = dateFormatter.format(date);
 		String[] info = getBadgeClassInfo(badge);
-		int group = userRealm.getUserGroupByEmail(recipient)
-		String[] issuer_info = getIssuerInfo(group);
+		int group = Integer.parseInt(userRealm.getUserGroupByEmail(recipient));
+		String[] issuer_info = userRealm.getIssuerInfo(group);
 		
 		String badge_id = String.valueOf(getAssertionId());
 	
@@ -53,16 +53,18 @@ public class JSONCreator extends HttpServlet {
 				.add("criteria", info[3])
 				.add("issuer", factory.createObjectBuilder()
 //					.add("org", "DHBW Mannheim")
-					.add("org", issuer_info[0])
+					.add("name", issuer_info[0]) //"org" in database, change to "name"?
 //					.add("description", "DHBW Mannheim - International Management for Business and Information Technology")
 					.add("description", issuer_info[1])
 //					.add("url", "http://www.imbit.dhbw-mannheim.de/")
 					.add("url", issuer_info[2])
+					.add("origin", "http://www.brilianICM.com")
 				)
 			)
 			.add("verify", factory.createObjectBuilder()
 				.add("url", "http://ec2-52-14-250-138.us-east-2.compute.amazonaws.com:8080/brillianICM/badges/public-key-badges.pem")
-				.add("type", "signed")
+				//.add("type", "signed")
+				.add("type", "hosted")
 			)
 			.build();
 		String assertionString = assertion.toString();
@@ -75,15 +77,6 @@ public class JSONCreator extends HttpServlet {
 
 		UserRealm userRealm = new UserRealm();
 		return userRealm.getBadgeAssertionID(); 
-
-	}
-
-	//Adding to the ByteArrayOutputStream
-	private static void printc(ByteArrayOutputStream os, String text){
-		for (int i=0; i<text.length(); i++){
-			int toWrite = (byte) text.charAt(i);
-			os.write(toWrite);
-		}
 
 	}
 
@@ -117,9 +110,9 @@ public class JSONCreator extends HttpServlet {
 				break;
 			case "Sweden": 	
 				info[0] = "brillianICM Sweden";
-				info[1] = "http//:link_image_sweden";
+				info[1] = "http://ec2-52-14-250-138.us-east-2.compute.amazonaws.com:8080/brillianICM/img/badges/badge_sweden.svg";
 				info[2] = "Successful completion of the ICM Sweden serious game";
-				info[3] = "http//:link_criteria_page";
+				info[3] = "http://ec2-52-14-250-138.us-east-2.compute.amazonaws.com:8080/brillianICM/badges/criteria-brillianICM.html";
 				break;
 			case "India":	
 				info[0] = "brillianICM India";
@@ -154,11 +147,4 @@ public class JSONCreator extends HttpServlet {
 		}
 		return info;
 	}
-
-/*	
-	private static String[] getIssuerInfo(int group) {
-		UserRealm userRealm = new UserRealm();
-		return userRealm.getIssuerInfo(group);
-	}
-*/
 }

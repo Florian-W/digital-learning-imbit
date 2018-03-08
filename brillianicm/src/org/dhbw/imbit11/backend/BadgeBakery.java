@@ -36,7 +36,6 @@ public class BadgeBakery extends HttpServlet {
 	public static byte[] bakeBadge(String useremail, String country) throws IOException, SQLException {
 		ArrayList<String> lines = new ArrayList<String>();
 		String line = null;
-		ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
 		String svgLocation = getSVGString(country);
 		File svgFile = new File("tmp_badge.svg");
 		try {
@@ -65,10 +64,7 @@ public class BadgeBakery extends HttpServlet {
 		try {
 			FileInputStream fileInputStream = new FileInputStream(svgFile);
 			fileInputStream.read(svgBytes);
-			/*
-			 * for (int i = 0; i < svgBytes.length; i++) { //prints whole file in console. Testing purposes
-			 * System.out.print((char)svgBytes[i]); }
-			 */
+//			fileInputStream.close();
 		} catch (FileNotFoundException e) {
 			System.out.println("File not found.");
 		} catch (IOException e1) {
@@ -110,15 +106,6 @@ public class BadgeBakery extends HttpServlet {
 			break;
 		}
 		return fileLocation;
-
-	}
-
-	// Adding to the ByteArrayOutputStream
-	private static void printc(ByteArrayOutputStream os, String text) {
-		for (int i = 0; i < text.length(); i++) {
-			int toWrite = (byte) text.charAt(i);
-			os.write(toWrite);
-		}
 
 	}
 
