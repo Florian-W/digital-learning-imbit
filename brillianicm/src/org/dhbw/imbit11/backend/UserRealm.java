@@ -273,31 +273,42 @@ public class UserRealm extends JdbcRealm {
 	    try {
 	        ps = conn.prepareStatement(getIssuerOrgQuery);
 	        ps.setLong(1, group);
+//	        System.out.println("Executed Org : " + ps);
 	        rs = ps.executeQuery();
+
 	        
 	        while (rs.next()) {
-				issuer_info[0] = Integer.parseInt(rs.getString(1));
+				issuer_info[0] = rs.getString(1);
 	        }
+//	        System.out.println("the userid was "+ issuer_info[0]);
+	        
 	        ps = conn.prepareStatement(getIssuerDescQuery);
 	        ps.setLong(1, group);
+//	        System.out.println("Executed Desc : " + ps);
 	        rs = ps.executeQuery();
+
 	        
 	        while (rs.next()) {
-				issuer_info[1] = Integer.parseInt(rs.getString(1));
+				issuer_info[1] = rs.getString(1);
 	        }
+//			System.out.println("the userid was "+ issuer_info[1]);
+			
 	        ps = conn.prepareStatement(getIssuerURLQuery);
 	        ps.setLong(1, group);
+//	        System.out.println("Executed URL : " + ps);
 	        rs = ps.executeQuery();
+
 	        
 	        while (rs.next()) {
-				issuer_info[2] = Integer.parseInt(rs.getString(1));
+				issuer_info[2] = rs.getString(1);
 	        }
+	//        System.out.println("the userid was "+ issuer_info[2]);
 
 	    } finally {
 	        JdbcUtils.closeStatement(ps);
 	        conn.close();
 	    }
-	    return result
+	    return issuer_info;
 	}
 
 	
@@ -589,7 +600,7 @@ public class UserRealm extends JdbcRealm {
 			ps.setString(6, group);
 			ps.setInt(7, gender);
 			ps.executeUpdate();
-			System.out.println("executed the following statement on DB: " + newUserQuery);
+//			System.out.println("executed the following statement on DB: " + newUserQuery);
 			if (role == "student") {
 				ps2 = conn.prepareStatement(getUserByEmail);
 				ps2.setString(1, email);
@@ -1076,9 +1087,8 @@ public class UserRealm extends JdbcRealm {
 			while (rs.next()) {
 				group += rs.getString(1);
 			}
-			// System.out.println("executed the following statement on DB: " +
-			// getUserByEmail);
-			// System.out.println("the userid was "+userid);
+			System.out.println("executed the following statement on DB: " + getUserByEmail);
+			System.out.println("the userid was "+ group);
 		} finally {
 			JdbcUtils.closeStatement(ps);
 			conn.close();
