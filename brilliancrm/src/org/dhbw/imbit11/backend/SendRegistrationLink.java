@@ -84,6 +84,7 @@ public class SendRegistrationLink extends javax.servlet.http.HttpServlet impleme
 		mailclient.sendMail(toMail, "Registration Link brillianCRM", content, request);
 
 		request.setAttribute("status", "Your e-mail was sent to the entered address.");
+		System.out.println("Email sent");
 
 		// request.setAttribute("status", "Repeated password does not match.");
 
