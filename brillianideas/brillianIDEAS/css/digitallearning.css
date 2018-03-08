@@ -14,7 +14,7 @@ body {
 
   /* top level grid */
   display: grid;
-  grid-template-rows: 1fr 50px;
+  grid-template-rows: 1fr 100px;
   grid-template-columns: 100%;
   grid-template-areas: "content"
                         "launchbar";
@@ -23,6 +23,7 @@ body {
 /* top level grid classes */
 .launchbar{
   grid-area: launchbar;
+  overflow: hidden;
 }
 
 .contentgrid {
@@ -139,6 +140,9 @@ body {
     top: -11%;
     left: 8%;
     overflow: scroll;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
 }
 
 /* The Close Button */

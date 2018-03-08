@@ -42,7 +42,7 @@ html {
 }
 
 .ueberschriftenfeld {
-    grid-column: 3 / 15;
+    grid-column: 2 / 15;
     grid-row: 1 / 4;
     text-align: right;
     padding-right: 2.5%;
@@ -78,6 +78,9 @@ html {
     overflow: hidden;
     overflow-y: scroll;
     font-size: 1.4em;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
 }
 
 .moocs {
@@ -89,12 +92,15 @@ html {
     clear: both;
     color: black;
     font-size: 1.4em;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
 }
 
 .moocs img {
     float: left;
     padding-right: 1%;
-    width: 6%;
+    width: 12%;
     height: auto;
 }
 
@@ -150,6 +156,7 @@ html {
 .launchbar {
     /* style for launchbar */
     grid-area: launchbar;
+    overflow: hidden;
 }
 
 
