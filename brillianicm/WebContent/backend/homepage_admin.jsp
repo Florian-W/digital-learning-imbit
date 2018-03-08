@@ -59,54 +59,62 @@
 			<a id="content" class="easyui-linkbutton" data-options="plain:true"><%=ApplicationConstants.CONTENT_BUTTON_TEXT%></a>
 		</div>
 	</div>
-	<div class="center mainWindow" data-options="region:'center'"
-		align="center">
+	<div class="center mainWindow" data-options="region:'center'" align="center" style="padding-left: 2%; padding-right: 2%">
+		<h1>Admin Page</h1>
+		<div style="text-align: left; padding-left: 5%; padding-right: 5%" align="center">
+		<div class="separator-box" style="margin-bottom: 20px">
 		<div
-			style="margin-top: 25px; padding-bottom: 25px; width: 80%; background-color: white; border-width: 1px; border-style: solid; border-color: black; padding-left: 2%; text-align: left">
-			<h4>Lecturers</h4>
-			<table id="students" class="easyui-datagrid" style="width: 600px"
-				data-options="fitColumns:true,singleSelect:true">
-				<thead>
-					<tr>
-						<th data-options="field:'firstname',width:100,resizable:false">Firstname</th>
-						<th data-options="field:'lastname',width:100,resizable:false">Lastname</th>
-						<th data-options="field:'email',width:100,resizable:false">Email</th>
-						<th data-options="field:'delete',width:63,resizable:false"></th>
-					</tr>
-				</thead>
-				<tbody>
-					<%
-						if (request.getAttribute("professors") != null) {
-							@SuppressWarnings("unchecked")
-					ArrayList<ArrayList<String>> professors = (ArrayList<ArrayList<String>>)request.getAttribute("professors");
+					style="padding-bottom: 20px; padding-left: 5%; padding-right: 5%; width: 90%; background-color: white; border-width: 1px; border-style: solid; border-color: black; height: 100%">
+					
+			
+				<h4>Lecturers</h4>
+					<table id="students" class="easyui-datagrid" style="width: 600px"
+						data-options="fitColumns:true,singleSelect:true">
+						<thead>
+							<tr>
+								<th data-options="field:'firstname',width:100,resizable:false">Firstname</th>
+								<th data-options="field:'lastname',width:100,resizable:false">Lastname</th>
+								<th data-options="field:'email',width:100,resizable:false">Email</th>
+								<th data-options="field:'delete',width:63,resizable:false"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<%
+								if (request.getAttribute("professors") != null) {
+									@SuppressWarnings("unchecked")
+									ArrayList<ArrayList<String>> professors = (ArrayList<ArrayList<String>>) request
+											.getAttribute("professors");
 
-							java.util.ArrayList<java.util.ArrayList<String>> professors2 = professors;
-							if (professors.isEmpty()) {
-								out.println("<p style='color: red'>There are currently no lecturers.</p>");
-							}
-					else{
-					}
-							for (java.util.ArrayList<String> row : professors) {
-								out.println("<tr><td>");
-								out.println(row.get(0));
-								out.println("</td><td>");
-								out.println(row.get(1));
-								out.println("</td><td>");
-								out.println(row.get(2));
-								out.println("</td><td>");
-					out.println("<form action=\""+ application.getContextPath()+"/DeleteProfessor\" method=\"post\"><input class=\"deleteProfessor\" type=\"submit\" "+
-					"value=\"Delete\" hidden=\"hidden\"/><a class=\"easyui-linkbutton\" onclick=\"$(this).parent().parent().find('.deleteProfessor').trigger('click');\">Delete</a><input type=\"text\" name=\"delete_professor\" value=\""+ row.get(2) +"\" style=\"display:none\"/></form>");
-								out.println("</td></tr>");
-							}
-						} else {
-							out.println("<p style='color: red'>There are currently no professors.</p>");
-						}
-					%>
-				</tbody>
-			</table>
-			<br />
+									java.util.ArrayList<java.util.ArrayList<String>> professors2 = professors;
+									if (professors.isEmpty()) {
+										out.println("<p style='color: red'>There are currently no lecturers.</p>");
+									} else {
+									}
+									for (java.util.ArrayList<String> row : professors) {
+										out.println("<tr><td>");
+										out.println(row.get(0));
+										out.println("</td><td>");
+										out.println(row.get(1));
+										out.println("</td><td>");
+										out.println(row.get(2));
+										out.println("</td><td>");
+										out.println("<form action=\"" + application.getContextPath()
+												+ "/DeleteProfessor\" method=\"post\"><input class=\"deleteProfessor\" type=\"submit\" "
+												+ "value=\"Delete\" hidden=\"hidden\"/><a class=\"easyui-linkbutton\" onclick=\"$(this).parent().parent().find('.deleteProfessor').trigger('click');\">Delete</a><input type=\"text\" name=\"delete_professor\" value=\""
+												+ row.get(2) + "\" style=\"display:none\"/></form>");
+										out.println("</td></tr>");
+									}
+								} else {
+									out.println("<p style='color: red'>There are currently no professors.</p>");
+								}
+							%>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
 			<div
-				style="height: 370px; width: 80%; background-color: white; border-width: 1px; border-style: solid; border-color: black; padding-left: 2%; text-align: left; padding-top: 20xp; padding-bottom: 20px">
+				style="height: 370px; width: 90%; background-color: white; border-width: 1px; border-style: solid; border-color: black; padding-left: 5%; padding-right: 5%; text-align: left; padding-bottom: 20px; margin-top: 30px">
 				<div style="height: 100%; width: 50%; float: left">
 					<h4>New Lecturer</h4>
 					<form action="CreateUser" method="post">
@@ -135,7 +143,7 @@
 						<input type="password" name="password_repeat" maxlength="50"
 							required /><br /> <br /> <input id="createUser" type="submit"
 							value="Create now!" hidden="hidden"></input> <a
-							class="easyui-linkbutton"
+							class="easyui-linkbutton" style="width: 53%"
 							onclick="$('#createUser').trigger('click')">Create Lecturer</a>
 						<p style="color: green">${success}</p>
 						<p style="color: red">${error}</p>
@@ -143,10 +151,10 @@
 				</div>
 				<div style="margin-left: 50%">
 					<h4>Change Password</h4>
-					<p style="color: red; padding-left: 32px;">${error}</p>
+					
 					<form action="ResetPassword" method="post">
 						<input type="text" name="role" maxlength="50" value="admin"
-							style="display: none" /><br /> <br />
+							style="display: none" />
 						<!--  Password check -->
 						<div class="formLabel">Old Password:</div>
 						<input type="password" name="oldpassword" maxlength="50" /><br />
@@ -161,11 +169,12 @@
 						<a class="easyui-linkbutton studentButton"
 							onclick=confirmPasswordChange()>Update Password</a>
 					</form>
+					<p style="color: red; padding-left: 32px;">${error}</p>
 				</div>
 			</div>
-			<br>
+			
 			<div
-				style="width: 80%; background-color: white; border-width: 1px; border-style: solid; border-color: black; margin-top: 25px; margin-bottom: 25px; padding-left: 2%; text-align: left">
+				style="width: 90%; background-color: white; border-width: 1px; border-style: solid; border-color: black; margin-top: 30px; margin-bottom: 30px; padding-left: 5%; padding-right: 5%; text-align: left">
 				<h4>Global Settings</h4>
 				<div
 					style="width: 50%; height: 100%; float: left; height: 100%; margin-bottom: 25px">
@@ -221,11 +230,11 @@
 							onclick="$('#setSettings').trigger('click')">Save Changes</a>
 					</form>
 
-				</div>
+				</div></div>
 				<div class="mainEventContainerImprint easyui-window"
 					data-options="closed:true,width:863,height:576"></div>
 			</div>
-			<div style="padding-bottom: 25px"></div>
+			<div style="padding-bottom: 25px"></div></div>
 </body>
 <script type="text/javascript">
 	$('body').show();

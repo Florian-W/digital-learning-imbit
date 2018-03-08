@@ -23,7 +23,7 @@
       <div id="virtual_classrooms" class="type_learning" onclick="showmodal(this.id)">Virtual <br /> Classrooms</div>
       <div id="blended_learning" class="type_learning" onclick="showmodal(this.id)">Blended<br /> Learning <br /></div>
       <div id="planspiele" class="type_learning" onclick="showmodal(this.id)">Planspiele</div>
-      <div id="serious_games"><div class="type_learning"><br />Serious<br /> Games</div></div>
+      <div id="serious_games" class="type_learning" onclick="showmodal(this.id)"><br />Serious<br /> Games</div>
     </div>
 
     <div class="content-2">
@@ -36,7 +36,7 @@
       <div id="social_networks" class="type_learning" onclick="showmodal(this.id)"><br />Social Networks &nbsp;</div>
       <div id="microblogging_twitter" class="type_learning" onclick="showmodal(this.id)">Microblogging/<br /> Twitter</div>
       <div id="webblogs" class="type_learning" onclick="showmodal(this.id)">&nbsp; &nbsp; Webblogs <br />&nbsp; </div>
-      <div id="lerntagebuecher" class="type_learning">Lerntagebücher <br /> &nbsp; </div>
+      <div id="lerntagebuecher" class="type_learning" onclick="showmodal(this.id)">Lerntagebücher <br /> &nbsp; </div>
     </div>
     <div class="content-3">
 
@@ -67,6 +67,7 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Interaktive Whiteboards</h2>
+        <img src="img/thumbs/typen/interaktive_whiteboards.jpg" class="modal_picture">
         <p>Ein interaktives Whiteboard - oder eine "digitale Tafel" - ist eine elektronische Projektionswand bzw. eine Weißwandtafel, die in Verbindung mit einem Computer und einem Projektor/Beamer funktioniert. Häufig werden Whiteboards innerhalb von Vorlesungen eingesetzt. Die Vorteile dieses Lernmediums liegen auf der Hand: Bessere Präsentationsmöglichkeiten von Unterrichtsinhalten, ein hohes Maß an Motivation und eine Vielzahl von Interaktionsmöglichkeiten. Letztendlich können mit Hilfe von interaktiven Whiteboards alle Medien wie Text, Grafik, Bilder, Animationen, Töne und Filme präsentiert werden.
         </p>
       </div>
@@ -80,8 +81,40 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Virtual Classrooms</h2>
+        <img src="img/thumbs/typen/virtual_classrooms.jpg" class = "modal_picture">
         <p>Ein virtuelles Klassenzimmer bezeichnet Lehrszenarien, in denen das Internet als Kommunikationsmedium für räumlich getrennte Lehrende und Lernende genutzt wird. Durch den Einsatz von Lernplattformen, Webcams, VoIP oder gar Whiteboards kann sowohl eine Sicht-, Hör- und Sprechverbindung der Beteiligten als auch ein gemeinsames und gleichzeitiges Bearbeiten von Dokumenten ermöglicht werden. Deshalb eignet sich dieses Lernform besonders um einzelne Lerninhalte zu verinnerlichen unabhängig von der Distanz.
         </p>
+      </div>
+
+    </div>
+
+<!-- The Modal serious games -->
+    <div id="serious_games_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="hideModalFromSpan()" >&times;</span>
+        <h2>Serious Games</h2>
+        <div class="row_wrapper">
+          <img src="img/thumbs/typen/serious_game.jpg" class = "modal_picture">
+          <p>Serious Games sind digitale Spiele bzw. spielähnliche Anwendungen die nicht ausschließlich auf Unterhaltung abzielen, sondern auch ernsthafte Wissensvermittlung und Weiterbildung zum Ziel haben. Im Unterschied zum klassischen Lernspiel sind bei Serious Games Entertainment- und Bildungsaspekte in sehr ausgewogenem Maße vorhanden und so eng miteinander verwoben, sodass das Spiel nicht auf Phasen der direkten Übermittlung des Lernstoffs folgt, sondern im Gegenteil das Lernen zu jedem Zeitpunkt im Spiel ermöglicht wird. Hier  www.springer.com/gp/book/9783319402154 kannst du außerdem einen IMBIT-Artikel zu Serious Games im Tagungsband der GALA-Konferenz 2015 finden (Springer LCNS 9599, Seite 42ff).
+          </p>
+        </div>
+        <div class="row_wrapper">
+          <a target="_blank" href="http://brillianicm.com/"><img src="img/learnings/BrillianICM_seriousgame.PNG" alt="&nbsp;" class="modal_picture"></a>
+          <p>BrillianICM ist ein interaktives Lernspiel, welches Wissen quer zu allen ICM Schwerpunktthemen abfragt und vertieft. Im Spielverlauf schlüpfst du in die Rolle eines Mitarbeiters im internationalen Umfeld und wirst mit Situationen konfrontiert, in denen du dein erworbenes Wissen über kulturelle Unterschiede und Besonderheiten anwenden musst, um eine erfolgreiche Zusammenarbeit über Ländergrenzen hinweg zu erreichen. Die abgedeckten Themenbereiche (bei wiederholter und aufmerksamer Spielaktivität) sind u.a: "Interkulturelle Zusammenarbeit und Kommunikation", "Das Phänomen Kultur", "Unternehmenskultur und nationale Kultur", sowie die "Zusammenarbeit in internationalen Teams". Dieses Serious Game wurde im Jahr 2015 von IMBIT-Studenten im Rahmen eines IT-Projekts entwickelt.  Stand: 2017  © DHBW Mannheim Autor: WIMBIT12C, WIMBIT13C
+          </p>
+        </div>
+        <div class="row_wrapper">
+          <a target="_blank" href="http://www.brilliancrm.com/"><img src="img/learnings/brilliancrm.JPG" alt="&nbsp;" class="modal_picture"></a>
+          <p>BrillianCRM ist ein Online-Projektmanagement-Spiel, das von IMBIT-Studenten der DHBW für Studenten und IT-Profis entworfen wurde. Ziel ist es, deine Ausbildung im Bereich Projektmanagement für Informationstechnologie zu bereichern. Für mehr Info's schau dir unser <a target="_blank" href="https://vimeo.com/96179581"> Teaser-Video </a> an! Stand: 2017 ©  DHBW Mannheim Autor: WIMBIT12C, WIMBIT13C
+          </p>
+        </div>
+        <div class="row_wrapper">
+          <a target="_blank" href="http://www.deloitteifrslearning.com/registration.asp"><img src="img/learnings/Deloitte_E-Learning_IFRS_und_IAS.png" alt="&nbsp;" class="modal_picture"></a>
+          <p>Dieses Lernspiel beschäftigt sich mit den Rechnungslegungsvorschriften IFRS und IAS . Die Module behandeln jeweils ein eigenes Fachgebiet, z.B. die Abrechnung von Einkommen oder Einkommensbesteuerung. Bereitgestellt wird das Spiel über Zip-Pakete, die man downloaden muss. Nach dem Entpacken kannst du über den Launcher das Modul starten. Dieses Medium eignet sich für das Nachbehandeln der IMBIT Summer School Themen.  Stand: 2013 © Deloitte Autor: Deloitte
+          </p>
+        </div>
       </div>
 
     </div>
@@ -93,6 +126,7 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Blended Learning</h2>
+        <img src="img/thumbs/typen/blended_learning.jpg" class="modal_picture">
         <p>Blended Lerning (dt. Integriertes Lernen) ist eine Mischform unterschiedlicher Lernprinzipien. Es vereint zumeist Elemente von Präsenzunterricht, E-Learnings und Selbstbildung, wobei das Verhältnis dieser Elemente zueinander variieren kann. Während E-Learnings und Arbeitsmaterialien beim selbständigen Vor- und Nachbereiten des Präsenzunterrichts helfen, dienen gelegentliche Face-to-Face Sitzungen hauptsächlich als Unterstützung im Umgang mit den Lernmaterialien. So kann der Lernprozess einerseits effektiv und flexibel gestaltet werden, z.B. durch E-Learnings mit anpassbaren Schwierigkeitsniveaus, und beinhaltet andererseits auch Elemente der sozialen Interaktion sowie die Möglichkeit das Wissen im Gespräch zu vertiefen.
         </p>
       </div>
@@ -106,6 +140,7 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Planspiele</h2>
+        <img src="img/thumbs/typen/planspiel.jpg" class="modal_picture">
         <p>Planspiele sind eine bewährte Technik im Business-Management-Training, da sie Kompetenzen im Umfeld des strategischen Managements schulen. Es handelt sich dabei konkret um interaktive Spiele, bei denen Teilnehmer in einer Simulation mit möglichst realitätsnahen Problemstellungen und Aufgaben konfrontiert werden, die es zu lösen gilt.Spieler schlüpfen in Rollen und sollen durch kreatives, selbständiges und organisiertes Handeln, sowie durch kritische Reflexion und Wechsel der Perspektive Entscheidungsprozesse durchleben und die ihrer Rolle zugedachten Aufgaben erfüllen. Teilnehmern wird so die Möglichkeit gegeben in risikofreiem Umfeld gelernte Theorien in der Praxis anzuwenden und sich durch Feedback dabei zu verbessern. Auch die Fähigkeit zur erfolgreichen Interaktion in Teams wird durch die Rollenkonstellationen im Planspiel trainiert.
         </p>
       </div>
@@ -119,6 +154,7 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Virtuelle Welten</h2>
+        <img src="img/thumbs/typen/virtuelle_3d_welt.jpg" class="modal_picture">
         <p>Virtuelle Welten sind Lernumgebungen innerhalb deren die Anwender in Form eines virtuellen Charakters, (Avatar) handeln und mit anderen Nutzern kommunizieren können. Dieser Avatar verfügt über bestimmte Merkmale und Fähigkeiten, die erweitert und verändert werden können.
           Genutzt werden virtuelle Welten unter anderem für Rollenspiele, Gruppenarbeiten, virtuelle Klassenzimmer sowie zur kooperativen Gestaltung von Objekten. Studien haben bewiesen, dass sich die verstärkte Präsenzerfahrung in virtuellen Welten positiv auf das Engagement und die informellen Lernprozesse der Studierenden auswirken. Mit virtuellen Welten können verschiedenen Lerntypen und -stile unterstützt werden, allerdings hängt der erfolgreiche Einsatz stark von der Usability und den technischen Rahmenbedingungen, wie Hardware oder Netzwerk, an der Universität bzw. auf Seiten des Anwenders ab.
         </p>
@@ -126,17 +162,545 @@
 
     </div>
 
+
     <!-- The Modal moocs -->
-    <div id="moocs_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
+        <div id="moocs_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
 
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close" onclick="hideModalFromSpan()" >&times;</span>
-        <h2>Moocs</h2>
-        <p>Some text in the Modal..</p>
-      </div>
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close" onclick="hideModalFromSpan()" >&times;</span>
+            <h2>Moocs</h2>
+            <div class="row_wrapper">
+              <img src="img/thumbs/typen/mooc.jpg" class = "modal_picture">
+              <p>Die Abkürzung MOOC steht für Massive Open Online Course und bezeichnet einen internetbasierten Kurs, der sich an viele Teilnehmer richtet (engl. "massive": "riesig, enorm") und offen für alle ist (engl. "open"). Die Inhalte werden in Form von Videosequenzen, Skripten und ergänzenden Lernmaterialien vermittelt. Der Austausch der Teilnehmenden findet in Foren und sozialen Netzwerken statt. Die Wissensüberprüfung erfolgt meist durch Multiple-Choice-Tests.  Man unterscheidet zwischen xMoocs und cMoocs. Während ein xMOOC eher lehrerzentriert ist, ist der cMOOC eher lernerzentriert, informell und den sozialen Medien verpflichtet.
+              </p>
+            </div>
 
-    </div>
+            <table>
+              <tr>
+                <td>
+                  <img src="img/learnings/How_to_build_a_start-up.png" class = "modal_picture">
+                </td>
+                <td>
+                  <a href="https://de.udacity.com/course/how-to-build-a-startup--ep245/" target="_blank">
+                    <h3>Wie man ein Start-Up aufbaut</h3>
+                  </a>
+                  <p>Dieser MOOC stellt die verschiedenen Schritte zur Gründung eines Start-Ups vor. Du erhälst Einblicke in Strategien, wie man eine Idee zu einem erfolgreichen Start-Up entwickeln kann.  Der Kurs ist kostenlos, in englischer Sprache verfügbar und wiederholt die Inhalte der Vorlesung "Einführung in die BWL". </br> Stand: 2017 	©Udacity Inc. Autor: Steve Blank; Kathleen Mullaney Dauer: 4 Wochen
+                  </p>
+                </td>
+                <td>
+                  <img src="img/learnings/Circular_economy_An_Introduction.png" class="modal_picture">
+                </td>
+                <td>
+                  <a href="https://de.udacity.com/course/how-to-build-a-startup--ep245/" target="_blank">
+                    <h3>Circular Economy: An Introduction</h3>
+                  </a>
+                  <p>
+                    In diesem MOOC erfährst du, wie ein nachhaltiges Wirtschaftssystem funktionieren kann. Dabei geht es um das Wiederverwenden und Wiederverwerten von Produkten und wie daraus Vorteile für das Unternehmen entstehen können. Dieses Thema baut auf dem Bereich Nachhaltigkeit auf, welcher in der Vorlesung "Einführung in die BWL" behandelt wird. </br> Stand: 2017 ©TU Delft Autor: David Peck; Conny Bakker, Ken Webster; Ester van der Voet; Erwin van der Laan Dauer: 7 Wochen
+                  </p>
+                </td>
+              </tr>
+
+
+
+              <tr>
+                <td>
+                  <img src="img/learnings/Digital_and_social_media_marketing_An_introduction.jpg" class="modal_picture">
+                </td>
+                <td>
+                  <a href="https://iversity.org/de/courses/digital-and-social-media-marketing" target="_blank">
+                    <h3>Digital and Social Media Marketing</h3>
+                  </a>
+                  <p>
+                    Dieser auf Englisch bereitgestellte MOOC beschäftigt sich mit digitalem Marketing. Anhand von Beispielen aus der Industrie erhälst du einen Einblick, wie eine Online-Marketing-Strategie aufgestellt werden kann. </br>
+                    Stand: 2017 ©Lifelong Learning Programm Autor: Aleksey Heinze; Tahir Rashid; Rimantas Gatautis; Elena Vitkauskalte; Milanka Slavova,; Gordon Fletcher; ana Cruz; Bartlomlej Kurzyk Dauer: 6 Wochen
+                  </p>
+                </td>
+                <td>
+                  <img src="img/learnings/Human_Resources.jpg" class="modal_picture">
+                </td>
+                <td>
+                  <a href="https://www.open2study.com/courses/human-resources-090215?utm_source=Mooc-list" target="_blank">
+                    <h3>Human Resources</h3>
+                  </a>
+                  <p>
+                    In diesem MOOC erfährst du mehr über die verschiedenen Bereiche des Personalmanagements. In die verschiedenen Module sind kurze Quizes integriert, die den Lernfortschritt dokumentieren. Die in englischer Sprache verfügbaren Vorträge behandeln beispielsweise den Umgang mit virtuellen Teams und Recruitment. Der MOOC ist für Studierende geeignet, die eine Beschäftigung im Personalwesen planen und vertieft die Vorlesung "Ausgewählte Aspekte des Managements" im 6. Semester.</br> Stand: 2017 ©Open Universities Australia Pty Ltd Autor: Christina Dahdal Dauer: 4 Wochen
+                  </p>
+                </td>
+              </tr>
+
+
+
+
+              <tr>
+                <td>
+                  <img src="img/learnings/Entrepreneurship_and_Family_Business.jpg" class="modal_picture">
+                </td>
+                <td>
+                  <a href="https://www.open2study.com/courses/entrepreneurship-and-family-business" target="_blank">
+                    <h3>Entrepreneurship and Family Business
+                    </h3>
+                  </a>
+                  <p>
+                    Dieser MOOC der australischen RMIT Universität behandelt das Thema Unternehmertum. Du erhälst Einblicke in Führungsverantwortlichkeit, Business Pläne und viele weitere Themen. Anhand dieser Videoserie kannst du Teile der Vorlesung "Ausgewählte Aspekte des Managements" wiederholen. </br>Stand: 2017 ©Open Universities Australia Pty Ltd Autor: Leon Levin Dauer: 4 Wochen
+                  </p>
+                </td>
+
+                <td>
+                  <img src="img/learnings/Human_Resources_Management.png" class="modal_picture">
+                </td>
+                <td>
+                  <a href="https://www.coursera.org/specializations/human-resource-management" target="_blank">
+                    <h3>Human Resource Management: HR for People Managers Specialization
+                    </h3>
+                  </a>
+                  <p>
+                    Dieser MOOC beschäftigt sich mit dem Human Resource Management. Unter anderem werden die Bereiche Recruiting, Einstellung und die Gehaltstsrategien untersucht. Anhand dieser Videos kannst du die Inhalte der Management-Vorlesung nochmals wiederholen.  Stand: 2017 				                    © 				                Coursera Autor: University of Minnesota
+                  </p>
+                </td>
+
+              </tr>
+
+
+
+
+
+              <tr>
+                <td>
+                  <img src="img/learnings/Working_in_Teams_mooc.png" class="modal_picture">
+                </td>
+                <td>
+                  <a href="https://www.edx.org/course/working-teams-practical-guide-uqx-teams101x-2" target="_blank">
+                    <h3>Working in Teams: A Practical Guide
+                    </h3>
+                  </a>
+                  <p>
+                    Dieser MOOC gibt dir Einblicke in die Struktur und den Lifecycle von Teams, sowie in die Rolle des einzelnen Teammitglieds. Des Weiteren werden dir als Kursteilnehmer Werkzeuge und Systeme für eine effektive Zusammenarbeit im Team und für den Umgang mit Konflikten an die Hand gegeben. Der Kurs deckt somit Themenbereiche des ICM Schwerpunktthemas "International Teamwork" ab.  Stand: 2016 				                    © 				                edX Inc. Autor: The University of Queensland Dauer: 6-8h
+                  </p>
+                </td>
+
+                <td>
+                  <img src="img/learnings/Diversity_on_Teams_mooc.png" class="modal_picture">
+                </td>
+                <td>
+                  <a href="https://www.coursera.org/learn/diverse-teams" target="_blank">
+                    <h3>Optimizing Diversity on Teams
+                    </h3>
+                  </a>
+                  <p>
+                    In diesem MOOC lernst du den Begriff "Diversity" kennen. Darauf aufbauend wirst du dazu befähigt, die Vorteile von diversen Teams zu erkennen und bestmöglich zu nutzen, um gute Perfomance, kreatives Arbeiten und Innovation zu erzielen. Auch auf die Herausforderungen innerhalb diverser Teams wird eingegangen und es werden Konfliktbewältigungsstrategien vorgestellt, um diesen erfolgreich zu begegnen. Folgende Themen des ICM Schwerpunktthemas "International Teams" werden abgedeckt: "Zusammenarbeit in internationalen Teams", "Interkulturelle Kompetenz" und "Diversitätsmanagement". Stand: 2017 				                    © 				                cousera Autor: University of Pennsylvania Dauer: 8-16h
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <img src="img/learnings/Introduction_to_Logic_mooc.png" class="modal_picture">
+                </td>
+                <td>
+                  <a href="https://www.coursera.org/learn/logic-introduction?siteID=.GqSdLGGurk-X7XX_Or6pFbYMQ_i.RRpeg&utm_content=10&utm_medium=partners&utm_source=linkshare&utm_campaign=*GqSdLGGurk" target="_blank">
+                    <h3>Introduction to Logic
+                    </h3>
+                  </a>
+                  <p>
+                    Dieser MOOC bietet einen Einstieg in die Logik im Umfeld der rechnergestützen Informationsverarbeitung und stellt deren Anwendungsfelder vor. Zu den Kompetenzen, die dir im Rahmen der Kursteilnahme vermittelt werden, zählt das Formulieren von logischen Sätzen bzw. logischen Formeln und es wird darauf eingegegangen, wie aus dieser Darstellung von Informationen eine logische Beweisführung möglich wird. Der Kursstoff wird dabei hauptsächlich mithilfe von anschaulichen Informationstexten und Übungsaufgaben übermittelt. Folgende Themenbereiche des Logik & Algebra Stoffes des IMBIT-Curriculums werden abgedeckt: "Logische Gesetzmäßigkeiten", "Normalformen", "Äquivalenz- und Ordnungsrelationen". Stand: 2016 				                    © 				                Coursera Inc Autor: Stanford University Dauer: 10 Wochen
+                  </p>
+                </td>
+
+                <td>
+                  <img src="img/learnings/Machine_Learning_mooc.jpg" class="modal_picture">
+                </td>
+                <td>
+                  <a href="https://www.coursera.org/learn/machine-learning" target="_blank">
+                    <h3>Machine Learning
+                    </h3>
+                  </a>
+                  <p>
+                    Maschinelles Lernen ist die Wissenschaft, Computer beizubringen zu handeln, ohne diese Reaktionen und Handlungen explizit zu programmieren (z.B automatische Gesichtserkennung, Google-Suchvorschläge etc.). Dieser MOOC vermittelt die effektivste Maschine-Learn-Techniken und du kannst sofort Praxiswissen sammeln indem du diese selbst implementierst. So wird nicht nur auf die theoretischen Grundlagen eingegangen, sondern auch aufgezeigt wie die Techniken effektiv auf konkrete Problemstellungen angewandt werden können. Dieser Kurs wird dich weiterbringen, wenn du über grundlegende mathematischen Kozepte hinausgehen willst und mit deinen Mathekenntnissen einen weiteren Bogen zur Informationstechnik spannen möchtest - Vielleicht ja sogar im Rahmen einer Praxis- oder Bachelorarbeit? Stand: 2017 				                    © 				                Coursera Inc. Autor: Stanford University Dauer: 11 Wochen
+                  </p>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>
+                  <img src="img/learnings/Decisions_based_on_data_mooc.jpg" class="modal_picture">
+                </td>
+                <td>
+                  <a href="https://de.udacity.com/course/intro-to-statistics--st101" target="_blank">
+                    <h3>Einstieg in die Statistik
+                    </h3>
+                  </a>
+                  <p>
+                    Gerade als Statistik-Anfänger bringt dir dieser MOOC grundlegende Methoden für den versändinsvollen Umgang mit Daten und deren Auswertung näher. Der Fokus liegt sowohl auf Themen der deskriptiven Statistik, wie zum Beispiel "Visualisierung von Daten" und "Maße statistischer Verteilungen", wie auch aus der schließenden Statistik mit Lerneinheiten zur Wahrscheinlichkeitsverteilung, Normalverteilung und Hypothesentests. Stand: 2016 				                    © 				                Udacity, Inc. Autor: Sebastian Thrun Dauer: 8 Wochen
+                  </p>
+                </td>
+
+                <td>
+                  <img src="img/learnings/Preparing_for_Statistics_Exam_mooc.jpg" class="modal_picture">
+                </td>
+                <td>
+                  <a href="https://www.edx.org/course/preparing-ap-statistics-exam-tennessee-board-regents-statx-0" target="_blank">
+                    <h3>Preparing for the AP* Statistics Exam
+                    </h3>
+                  </a>
+                  <p>
+                    Dieser Online-Kurs stellt dir die wichtigsten Konzepte und Werkzeuge für das Sammeln, Darstellen und Analysieren von Daten vor. Das Lernangebot ist dabei in die folgenden vier großen konzeptionellen Themen geteilt: "Beschreiben von Mustern und Abweichungen in Datensätzen", "Durchführung von Studien", "Erforschung zufälliger Phänomene", sowie "Statistische Inferenz (Schätzung von Parametern und Hypothesentests)". Das Videomaterial wird von einer Lehrbuchbeschreibung begleitet, die dir bei der Vor- und Nacharbeit hilft und zur Veranschaulichung dient. Stand: 2016 				                    © 				                edX Inc. Autor: Tennessee Board of Regents  Dauer: 35 Wochen
+                  </p>
+                </td>
+              </tr>
+
+
+
+
+              <tr>
+                <td>
+                  <img src="img/learnings/Probability_and_Statistics_mooc.jpg" class="modal_picture">
+                </td>
+                <td>
+                  <a href="https://lagunita.stanford.edu/courses/course-v1:OLI+ProbStat+Open_Jan2017/about" target="_blank">
+                    <h3>Probability and Statistics
+                    </h3>
+                  </a>
+                  <p>
+                    Dieser Standford MOOC vermittelt den Stoff von einem Semester Statistik mithilfe von anschaulichen Lehrtexten inkl. Grafiken, Beispielen und Multiple-Choice-Quizes, mit denen du dein Verständnis zu umittelbar zuvor vermitteltem Lernstoff überprüfen kannst.    Zentrale Themengebiete sind die Basics der deskriptiven Statistik, sowie Wahrscheinlichkeit und Inferenz (Punkt- und Intervallschätzungen & Hypothesentests).  Stand: 2015 				                    © 				                Stanford University Autor: Stanford University
+                  </p>
+                </td>
+
+                <td>
+                  <img src="img/learnings/OR_online_lernen_mooc.png" class="modal_picture_small_size">
+                </td>
+                <td>
+                  <a href="https://www.wiwiweb.de/online-kurs/bwl-operations-research" target="_blank">
+                    <h3>Operations Research
+                    </h3>
+                  </a>
+                  <p>
+                    Operations Research (OR) ist geprägt durch die Zusammenführung von mathematischen Verfahren, Wirtschaftswissenschaften und Informatik zum Zwecke der Entscheidungsfindung. In diesem Online-Kurs wird die lineare Optimierung/Programmierung gelehrt, um Teilnehmer zum Lösen von Maximierungs- und Minimierungsproblemen zu befähigen. Kursmaterialien umfassen zahlreiche Dokumente, Übungen und 18 Lernvideos, von denen du auch einige kostenlos über den Youtube-Kanal des Anbieters abrufen kannst. Stand: 2014 				                    © 				                examio GmbH Autor: Daniel Lambert, wiwiweb.de
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <img src="img/learnings/Descrete_Optimization_mooc.png" class="modal_picture">
+                </td>
+                <td>
+                  <a href="https://www.coursera.org/learn/discrete-optimization" target="_blank">
+                    <h3>Discrete Optimization
+                    </h3>
+                  </a>
+                  <p>
+                    Diskrete Optimierung ist eine Alternativbezeichnung für lineare ganzzahlige Optimierung, welche ein zentrales Thema des "Operations Research"-Moduls bei IMBIT darstellt. Anhand der Bearbeitung von betrieblichen Fragestellungen in den Bereichen Planung, Fahrzeug-Routing und Ressourcenzuteilung lernst du grundlegende Konzepte und Algorithmen der Constraint-Programmierung, lokalen Suche und ganzzahligen Programmierung. Besonders relevant für dich als IMBIT-Student sind dabei die Kurswochen 5 & 6, welche "Lineare Programmierung" mit Fokus auf das Simplexverfahren und "Gemischt-ganzzahlige Programmierung" behandeln.  Stand: 2017 				                    © 				                Coursera Inc. Autor: University of Melbourne Dauer: 8 Wochen
+                  </p>
+                </td>
+
+                <td>
+                  <img src="img/learnings/Greedy_Algorithms_mooc.png" class="modal_picture">
+                </td>
+                <td>
+                  <a href="https://www.coursera.org/learn/algorithms-greedy#pricing" target="_blank">
+                    <h3>Greedy Algorithms, Minimum Spanning Trees, and Dynamic Programming
+                    </h3>
+                  </a>
+                  <p>
+                    Fokus des MOOCs sind Algorithmen, die im Umfeld der Operations Research Anwendung finden: Zum einen werden Greedy Algorithmen (z.B Prims und Kruskals Algorithmus für minimale Spannbäume) behandelt, zum anderen verschiedene Ansätze der dynamischen Programmierung (z.B. das Rucksack Problem und das Branch-and-Bound-Verfahren). Für dich als IMBIT-Student ist insbesondere der Stoff der ersten zwei Kurswochen relevant, da mit Prims und Kruskals Algoritmus Teile des Curriculumthemas "Graphentheorie" abgedeckt werden. Das Wissen im Bereich der Greedy-Algoritmen kannst du zusätzlich in den folgenden zwei Kurswochen noch vertiefen. Stand: 2017 				                    © 				                Coursera Inc. Autor: University of Stanford Dauer: 4 Wochen
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <img src="img/learnings/Internetworking_mit_TCP_IP.jpg" class="modal_picture">
+                </td>
+                <td>
+                  <a href="https://open.hpi.de/courses/internetworking2014" target="_blank">
+                    <h3>Internetworking with TCP/IP
+                    </h3>
+                  </a>
+                  <p>
+                    Dieser Kurs bringt dir die technologischen Grundlagen des Internets näher. Er behandelt die physikalischen Grundlagen der Datenübertragung basierend auf funktionalen Prinzipien und Technologien von Local Area Networks (LANs) und Wide Area Networks (WANs). Außerdem lernst du das TCP/IP Reference Model - das Herz des Internets - kennen und steigst somit in die komplexe Welt der Internettechnologien ein.  Stand: 2014 				                    © 				                Hasso-Plattner-Institut Autor: Prof. Dr. Christoph Meinel Dauer: 6 Wochen
+                  </p>
+                </td>
+
+                <td>
+                  <img src="img/learnings/Introduction_to_Operating_Systems.png" class="modal_picture">
+                </td>
+                <td>
+                  <a href="https://de.udacity.com/course/introduction-to-operating-systems--ud923" target="_blank">
+                    <h3>Einführung in Betriebssysteme
+                    </h3>
+                  </a>
+                  <p>
+                    Dies ist ein Einführungskurs in die Thematik "Operating Systems". Er vermittelt dir die grundlegenden Betriebssystem-Abstraktionen, -Mechanismen und deren Implementierungen. Der Kern des Kurses ist die gleichzeitige Programmierung (Threads und Synchronisation), Interprozesskommunikation und eine Einführung in verteilte Betriebssysteme. Der Kurs ist in vier Abschnitte aufgeteilt: (1) Einleitung, (2) Prozess- und Threadmanagement, (3) Ressourcenmanagement und Kommunikation und (4) Verteilte Systeme. Stand: 2017 				                    © 				                Georgia Tech Autor: Udacity Dauer: 8 Wochen
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <img src="img/learnings/Datenmanagement_mit_SQL.png" class="modal_picture">
+                </td>
+                <td>
+                  <a href="https://open.hpi.de/courses/sql" target="_blank">
+                    <h3>Datenmanagement mit SQL
+                    </h3>
+                  </a>
+                  <p>
+                    Im openHPI Kurs "Datenmanagement mit SQL" lernst du die Grundlagen von modernen Datenbanksystemen kennen. Zuerst untersuchst du ihren Aufbau, planst den Entwurf von Datenbanken und schließlich lernst du die weltweit dominierende Abfragesprache SQL kennen. Zum Schluss kannst du in einem kleinen Test das Gelernte überprüfen. Los geht´s! Stand: 2017 				                    © 				                OpenHPI Autor: Prof. Dr. Felix Naumann Dauer: 8 Wochen
+                  </p>
+                </td>
+
+                <td>
+                  <img src="img/learnings/Objektorientierte_Programmierung_in_Java.png" class="modal_picture">
+                </td>
+                <td>
+                  <a href="https://open.hpi.de/courses/javaeinstieg2017" target="_blank">
+                    <h3>Objektorientierte Programmierung in Java
+                    </h3>
+                  </a>
+                  <p>
+                    In diesem openHPI Einsteigerkurs lernst du die Grundlagen der objektorientierten Programmierung kennen und löst gemeinsam mit Detektiv Duke einen mysteriösen Entführungsfall. Voraussetzungen für diesen Kurs sind ein Interesse an Programmierung und ein Computer mit Internetzugang. Vorhergehende Programmiererfahrung ist hilfreich, aber nicht notwendig. Also löse den Fall! Stand: 2017 				                    © 				                OpenHPI Autor: OpenHPI Dauer: 3 Wochen
+                  </p>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>
+                  <img src="img/learnings/Webtechnologien.png" class="modal_picture">
+                </td>
+                <td>
+                  <a href="https://open.hpi.de/courses/webtech2017" target="_blank">
+                    <h3>Web-Technologien
+                    </h3>
+                  </a>
+                  <p>
+                    Das World Wide Web hat die Welt auf unvorstellbare Weise verändert. Es hat eine neue digitale Welt geschaffen, die eng mit unserer echten Welt verflochten ist. Dadurch ist möglich geworden, was lange undenkbar schien: Weltweite Kommunikation innerhalb von Sekunden, Filme schauen auf dem Smartphone, mit weit entfernten Menschen gemeinsam Spiele spielen oder Fotos ansehen und Einkäufe oder Bankgeschäfte von Zuhause aus erledigen. In diesem MOOC lernst du, wie das alles funktioniert.  Stand: 2017 				                    © 				                OpenHPI Autor: OpenHPI Dauer: 8 Wochen
+                  </p>
+                </td>
+
+                <td>
+                  <img src="img/learnings/Introduction_to%20Economics_Macroeconomics.png" class="modal_picture">
+                </td>
+                <td>
+                  <a href="https://www.edx.org/course/introduction-economics-macroeconomics-snux-snu044-088-2x-0" target="_blank">
+                    <h3>Introduction to Economics: Macroeconomics
+                    </h3>
+                  </a>
+                  <p>
+                    Dieser Kurs ist ein Einführungskurs auf der elementarsten Ebene, sodass keine Vorkenntnisse der Ökonomie erforderlich sind. In diesem Wirtschaftskurs lernst du die Hauptkonzepte der Makroökonomie, wie Bruttoinlandsprodukt, Preislevel, Inflation, Arbeitslosigkeit, wirtschaftliches Wachstum und Zahlungsbilanz kennen. Zudem lernst du, wie das Markt Equilibrium und die Equilibrium Menge aus den Angebots- und Nachfragekurven bestimmt werden. Gerade zu den Themen Markt Equilibrium, Equilibrium Menge und Inflation werden gerne Klausurfragen gestellt.  Stand: 2017 				                    © 				                edX Inc. Autor: Seoul National University Dauer: 6 Wochen
+                  </p>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>
+                  <img src="img/learnings/Public_Economics.jpg" class="modal_picture">
+                </td>
+                <td>
+                  <a href="https://www.coursera.org/learn/public-economics" target="_blank">
+                    <h3>Public Economics
+                    </h3>
+                  </a>
+                  <p>
+                    Ziel dieses einführenden Kurses ist es, die zentralen Themen der Ökonomie und verwandter Disziplinen aus der Vogelperspektive zu betrachten und Konzepte, Logiken und Ideen zu vermitteln. Das Schwerpunktthema dieses Kurses ist die Rolle der Regierung als Ressourcenallokator, der die Märkte korrigiert, ergänzt und verstärkt. Zudem geht es um Themen wie Besteuerung, Regulierung und Politik der öffentlichen Ökonomie. Das durch diesen MOOC vermittelte Wissen findet sowohl in den VWL-Vorlesungen, als auch im 5. und 6. Semester im Rahmen der Vorlesung "International Business Law and International Organizations" Anwendung.  Stand: 2017 				                    © 				                Coursera Inc. Autor: National Research University Higher School of Economics Dauer: 6 Wochen
+                  </p>
+                </td>
+
+                <td>
+                  <img src="img/learnings/Supply_Chain_Management.jpg" class="modal_picture">
+                </td>
+                <td>
+                  <a href="https://www.coursera.org/specializations/supply-chain-management" target="_blank">
+                    <h3>Supply Chain Management Specialization
+                    </h3>
+                  </a>
+                  <p>
+                    Diese Kurssammlung bietet dir eine Einführung in die faszinierende Welt des Supply Chain Managements. Wenn du diese Supply Chain Management Kurse abgeschlossen hast, wirst du ein besseres Verständnis für die Komplexität haben, mit der die Unternehmen in der heutigen global vernetzten Wirtschaft konfrontiert sind. Die Kurssammlung besteht aus vier grundlegenden Kursen in Logistik, Betrieb, Planung und Beschaffung, gefolgt von einem Capstone-Kurs in Supply Chain Management-Strategie, in dem du echte Business Cases löst und Gelerntes anwendest. Es ist auch möglich, die Kurse jeweils einzeln zu absolvieren.  Stand: 2017 				                    © 				                Coursera Inc. Autor: Rutgers Business School Dauer: 4 Wochen
+                  </p>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>
+                  <img src="img/learnings/SCM.png" class="modal_picture">
+                </td>
+                <td>
+                  <a href="https://www.coursera.org/learn/public-economics" target="_blank">
+                    <h3>Supply Chain Management
+                    </h3>
+                  </a>
+                  <p>
+                    Mit dieser Kurssammlung gewinnst du Fachkompetenzen im wachsenden Bereich des Supply Chain Managements durch ein innovatives Online-Programm bestehend aus fünf Kursen und einer Capstone-Prüfung am Ende. Diese Kurse fördern dein Verständnis für Supply-Chain-Analytik, Design, Technologie, Dynamik und End-to-End-Supply-Chain-Management. Der Umfang dieser Kurse geht deutlich über das in der Vorlesung benötigte Wissen hinaus. Die Kursreihe ist dennoch sehr empfehlenswert für interessierte Studenten auf diesem Gebiet.  Stand: 2017 				                    © 				                edX Inc. Autor: Massachusetts Institute of Technology  Dauer: 8-14 Wochen
+                  </p>
+                </td>
+
+                <td>
+                  <img src="img/learnings/International_Law.png" class="modal_picture">
+                </td>
+                <td>
+                  <a href="https://www.edx.org/course/international-law-louvainx-louv5x-3" target="_blank">
+                    <h3>International Law
+                    </h3>
+                  </a>
+                  <p>
+                    Dieser MOOC vermittelt, wie und wer das internationale Recht aufsetzt, von wem es geachtet werden muss und wo es seine Anwendung findet. Außerdem beantwortet dieser Kurs die Frage, was passiert, wenn bindende Regeln gebrochen werden und inwieweit es möglich ist, Gerechtigkeit in dieser Welt durchzusetzen. Als Ergänzung zur Vorlesung von Prof. Dr. Büchner und zur Klausurvorbereitung ist er sehr zu empfehlen.  Stand: 2017 				                    © 				                edX Inc. Autor: Université catholique de Louvain (UCL) Dauer: 8 Wochen
+                  </p>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>
+                  <img src="img/learnings/European_Business_Law_Understanding_the_Fundamentals.jpg" class="modal_picture">
+                </td>
+                <td>
+                  <a href="https://www.coursera.org/learn/eu-law-doing-business" target="_blank">
+                    <h3>European Business Law: Doing Business in Europe
+                    </h3>
+                  </a>
+                  <p>
+                    Dieser Kurs ist der erste von insgesamt drei zusammenhängenden Kursen und gibt dir einen Einblick in das europäische Wirschaftsrecht. Die Kursserie umfasst die Betrachtung von grundlegenden Strukturen und Prinzipien der Europäischen Union sowie die Thematisierung von verschiedenen Fachgebieten in deren Rechtsbereich. Jeder einzelne Kurs vermittelt dir ein Verständnis für die Gesetze und Richtlinien, die den Markt innerhalb der Europäischen Union regeln. Stand: 2017 				                    © 				                Coursera Inc. Autor: Lund University Dauer: 6 Wochen
+                  </p>
+                </td>
+
+                <td>
+                  <img src="img/learnings/UML_class_diagrams.png" class="modal_picture_middle_size">
+                </td>
+                <td>
+                  <a href="https://www.edx.org/course/uml-class-diagrams-software-engineering-kuleuvenx-umlx-1" target="_blank">
+                    <h3>UML Class Diagrams for Software Engineering
+                    </h3>
+                  </a>
+                  <p>
+                    Hast du dich jemals gefragt, wie Softwarearchitekten, Anforderungsingenieure und Business Analysten skizzieren und ihre Pläne für ein Softwaresystem aufbauen?  In diesem Informatik-Kurs bekommst du ein tiefes Verständnis für die Klassifikationsdiagramme der "Unified Modeling Language" (UML), mit denen die konzeptionelle Gestaltung eines Systems visuell dargestellt wird. Du lernst alles über UML-Klassendiagramme, da sich dieser Kurs darauf spezialisiert. Stand: 2017 				                    © 				                edX Inc. Autor: KU Leuven University Dauer: 3 Wochen
+                  </p>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>
+                  <img src="img/learnings/Projektmanagement_Mooc%20.jpg" class="modal_picture">
+                </td>
+                <td>
+                  <a href="https://www.class-central.com/course/nptel-project-management-7912" target="_blank">
+                    <h3>Project Management
+                    </h3>
+                  </a>
+                  <p>
+                    Dies ist ein MOOC von der Indian Institute of Technology Kanpur bereitgestellt auf Class Central. Es soll Projektmanagement-Basiswissen vermitteln und eignet sich zum Wiederholen einiger Teilaspekte des Projektmanagements. Stand: 2017 				                    © 				                Indian Institute of Technology Kanpur Autor: Indian Institute of Technology Kanpur Dauer: 8 Wochen
+                  </p>
+                </td>
+
+                <td>
+                  <img src="img/learnings/Grundlagen_des_Projektmanagement.png" class="modal_picture_middle_size">
+                </td>
+                <td>
+                  <a href="https://www.oncampus.de/weiterbildung/moocs/projektmanagement-mooc" target="_blank">
+                    <h3>Projektmanagement
+                    </h3>
+                  </a>
+                  <p>
+                    Prof. Marc Opresnik, Professor an der Universität Sankt Gallen, hat in Zusammenarbeit mit der Hochschule Lübeck diesen MOOC entwickelt. Hier werden die Grundlagen des Projektmanagements vermittelt. Inhalte sind: "Einführung in das Projektmanagement", "Projektorganisation","Projektphasen" und "Kommunikation - Fachübergreifende Softskills". Für alle Kursaktivitäten sollten ca. 2 Stunden pro Woche eingeplant werden. Zum Abschluss gibt es eine Teilnahmebescheinigung und ein Zertifikat. Stand: 2015 				                    © 				                Prof. Marc Opresnik, Stefanie Herbst Autor: Prof. Marc Opresnik, Stefanie Herbst Dauer: 6 Wochen
+                  </p>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>
+                  <img src="img/learnings/IT-Recht_fuer_Software-Entwickler.jpg" class="modal_picture">
+                </td>
+                <td>
+                  <a href="https://mooc.house/courses/it-recht2016" target="_blank">
+                    <h3>IT-Recht für Software-Entwickler
+                    </h3>
+                  </a>
+                  <p>
+                    Zukünftig bist du vielleicht Software-Ingenieur, Gründer oder Unternehmer eines IT-Unternehmens. In diesen Positionen begegnet man verschiedenen rechtlichen Themen. Die wichtigsten Themenbereiche sind Verträge, Urheberrecht, Markenrecht, Patentrecht und Datenschutz. Diese werden dir in einem zweiwöchigen Kurs von anerkannten, spezialisierten Rechtsanwälten auf diesem Gebiet nähergebracht. Stand: 2016 				                    © 				                Dr. Brandi-Dohrn, Prof. Czychowski Autor: Dr. Brandi-Dohrn, Prof. Czychowski Dauer: 4 Wochen
+                  </p>
+                </td>
+
+                <td>
+                  <img src="img/learnings/Innovation_and_IT_Management.jpg" class="modal_picture_small_size">
+                </td>
+                <td>
+                  <a href="https://www.edx.org/course/innovation-it-management-iimbx-is110x-1" target="_blank">
+                    <h3>Innovation and IT Management
+                    </h3>
+                  </a>
+                  <p>
+                    Die Verwaltung von IT und Innovation erfordert gute Skills in der Entscheidungsfindung. In diesem MOOC lernst du, wie man Entscheidungen im Zusammenhang mit folgenden Themen trifft: Konkurrenz in der IT, Verwaltung von digitalen Netzwerken und Sicherheit, Umgang mit einer immer größer werdenden IT-Landschaft, die Entwicklung von Software, die Verwaltung von Projekten sowie ethische Aspekte der IT. Auf der Lernplattform EDX hat dieser Kurs weitestgehend sehr gute Bewertungen erhalten.  Stand: 2016 				                    © 				                Indian Institute of Management Autor: Prof. Dr. Rahul De’ Dauer: 4 Wochen
+                  </p>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>
+                  <img src="img/learnings/Developing_international_Software.png" class="modal_picture_small_size">
+                </td>
+                <td>
+                  <a href="https://www.edx.org/course/developing-international-software-microsoft-dis50x-3#!" target="_blank">
+                    <h3>Developing International Software
+                    </h3>
+                  </a>
+                  <p>
+                    Als IMBIT-Student wirst du in der Arbeitswelt innerhalb internationaler Firmen an der Entwicklung von komplexen Computerprogrammen beteiligt sein. Dieser Kurs versucht, dich darauf bestmöglichst vorzubereiten. Er besteht aus folgenden drei Teilen: dem Business Case, dem Design und der Entwicklung. Während man die Teile eins und zwei ohne Programmierkenntnisse durchführen kann, erfordert der dritte Teil Programmiererfahrung.  Stand: 2017 				                    © 				                Microsoft Autor: Microsoft Dauer: 12 Wochen
+                  </p>
+                </td>
+
+                <td>
+                  <img src="img/learnings/Business_Process_Management_Learn_how_to_manage_a_process.png" class="modal_picture_middle_size">
+                </td>
+                <td>
+                  <a href="https://www.opencourseworld.de/pages/coursedescription.jsf?courseId=486671" target="_blank">
+                    <h3>Business Process Management
+                    </h3>
+                  </a>
+                  <p>
+                    Dieser Kurs befasst sich, neben den Grundlagen der Modellierung, mit den Themen Analyse, Verbesserung und Veränderung von Geschäftsprozessen. Bei Geschäftsprozessveränderungen sind sowohl die organisatorische als auch die IT-technische Umsetzung relevant. Das Wissen wird dir von erfahrenen Dozenten der Wirtschaftsinformatik von diversen Universitäten (u.a. der Universitäten Saarbrücken, Münster, München und Hamburg) und Dozenten aus der Wirtschaft  beigebracht. Stand: 2017 				                    © 				                Open Course World Autor: Kirchner et al. Dauer: 16 Wochen
+                  </p>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>
+                  <img src="img/learnings/Business_Process_Management_an_Introduction_to_Process_Thinking.jpg" class="modal_picture_middle_size">
+                </td>
+                <td>
+                  <a href="https://www.futurelearn.com/courses/business-process-management" target="_blank">
+                    <h3>Business Process Management: an Introduction to Process Thinking
+                    </h3>
+                  </a>
+                  <p>
+                    Dieser MOOC gibt dir eine Einführung in das Geschäftsprozessmanagement. Er wurde erstellt an der Queensland University of Technology, einer führenden australischen Universität, die sich unter den besten 2% der Universitäten weltweit befindet.  Stand: 2017 				                    © 				                Queensland University of Technology Autor: Queensland University of Technology Dauer: 3 Wochen
+                  </p>
+                </td>
+
+                <td>
+                  <img src="img/learnings/hpi.jpeg" class="modal_picture_middle_size">
+                </td>
+                <td>
+                  <a href="https://open.hpi.de" target="_blank">
+                    <h3>Hasso-Plattner-Institut
+                    </h3>
+                  </a>
+                  <p>
+                    Machen Sie jetzt mit bei openHPI, der Internet-Bildungsplattform des Potsdamer Hasso-Plattner-Instituts. Bei openHPI können Sie in einem weltweiten sozialen Lernnetzwerk an interaktiven Online-Kursen zu verschiedenen Themen der Informationstechnologie (IT) teilnehmen.
+                  </p>
+                </td>
+              </tr>
+            </table>
+
+          </div>
+
+        </div>
 
     <!-- The Modal chat -->
     <div id="chat_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
@@ -145,6 +709,7 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Chats</h2>
+        <img alt="img" src="img/thumbs/typen/chat.png" class="thumb">
         <p>Für eine aktive Verarbeitung des Lerninhaltes im Gedächtnis ist, neben der Wiederholung und den Lernerfolgskontrollen, eine Kommunikation über den Lerninhalt wichtig. Dadurch kommt es indirekt zu einer Wiederholung des Gelernten und damit zu einer weiteren Verankerung im Gehirn. Aus der Wiederholung ergibt sich, dass die Kommunikation nicht ausschließlich für den kommunikativen Lerntyp bedeutend ist. Der Chat stellt hierbei eine Variante der synchronen Kommunikation dar, die dabei hilft, das Gelernte zu verfestigen.
         </p>
       </div>
@@ -158,6 +723,7 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Foren</h2>
+        <img src="img/thumbs/typen/forum.png" class="modal_picture">
         <p>Foren sind meist Bestandteile von Online-Communities, in denen zwischen Teilnehmern Fragen, Antworten, Meinungen und Hinweise ausgetauscht werden. Somit kann man sich in einem Forum durch Interaktion mit Anderen weiterbilden. Neben der Möglichkeit selbst Fragen zu stellen, kann auch das Suchen vergangener ähnlicher Fragen und deren Beantwortung Aufschluss über die eigene Fragestellung geben. Verschlagwortung der Beiträge sowie Foren zu Fokusthemen (z.B. Tech Foren) können bei der gezielten Suche nach Antworten helfen. Oft geben auch Bewertungen und Kommentare der Teilnehmer Aufschluss über die Qualität der Beiträge. Im Gegensatz zu Chats findet hier eine asynchrone Kommunikation statt, das heißt, die Reaktion anderer Forenmitglieder erfolgt zeitversetzt.
         </p>
       </div>
@@ -171,6 +737,7 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Social Networks</h2>
+        <img src="img/thumbs/typen/Social_Network.png" class="modal_picture">
         <p>Ein sogenanntes Social Network stellt Online-Communities einen virtuellen Raum zur Verügung, in dem Mitglieder auf verschiedene Art und Weise interagieren können. Insofern fungieren sie auch als Forum, in dem Fragen beantwortet werden und gemeinsame Diskussionen zur Wissensbildung führen können. Außerdem können über Social Media Informationen schnell und für einen großen Empfängerkreis bereitgestellt werden: Zeitungen und Zeitschriften besitzen beispielsweise Profile, über die sie aktuelle Artikel und Neuigkeiten verbreiten. Außerdem können Firmen über Produkte und Dienstleistungen informieren. Profile, die mit eigenen Interessen und Informationsbedarf übereinstimmen, können verfolgt oder 'geliked' werden, sodass Neuigkeiten automatisch übermittelt werden. Je nach Quelle und bereitstellendem Profil ist allerdings zu beachten, dass die veröffentlichen Informationen oft als subjektiv eingefärbt einzustufen sind.
         </p>
       </div>
@@ -184,6 +751,7 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Microblogging</h2>
+        <img src="img/thumbs/typen/microblogging.jpg" class="modal_picture">
         <p>Microblogging, wie etwa Twitter, eignen sich hervorragend um "Häppchenweise" wissen zu vermitteln, wie etwa kurze Fakten.
         </p>
       </div>
@@ -197,11 +765,27 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Weblogs</h2>
+        <img src="img/thumbs/typen/weblog.jpg" class="modal_picture">
         <p>Ein Weblog ist ein Logbuch im Web – ein Web-Tagebuch - in das man Beiträge aller Art hineinschreiben kann. Ein Weblog (kurz Blog) besteht im Grunde aus ganz „normalen” Webseiten, die im Gegensatz zu den gewohnten statischen HTML-Seiten bei jedem Aufruf dynamisch aus einer Datenbank erzeugt werden. Diese Blogs erlauben Interaktivität durch Kommentierungsmöglichkeiten. Es kann sich durchaus lohnen, einen Weblog während des Studiums zu pflegen um Gelerntes zu festigen. Außerdem gibt es Anderen die Möglichkeit von eigenen Erfahrungen zu profitieren.
         </p>
       </div>
 
     </div>
+
+    <!-- The Modal lerntagebuecher -->
+    <div id="lerntagebuecher_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="hideModalFromSpan()" >&times;</span>
+        <h2>Lerntagebücher</h2>
+        <img src="img/thumbs/typen/lerntagebuch.jpg" class="modal_picture">
+        <p>Das Führen von Lerntagebüchern ist eine bewährte Methode, die eigene Lernpraxis zu dokumentieren, zu erkunden, zu überprüfen und möglicherweise zu verändern. Lerntagebücher werden auch im Ablauf von universitären Lehrveranstaltungen eingesetzt, um die persönliche Auseinandersetzung von Studierenden mit Lehrinhalten und Lehrzielen zu dokumentieren und zu reflektieren. Diese Methode ist vor allem für solche Lehrveranstaltungen geeignet, in denen es darum geht, eigene Erfahrungen und Einstellungen zu aktualisieren und sich mit ihnen kritisch auseinanderzusetzen. Auch lassen sich die kognitiven Ziele der Lehrveranstaltung wesentlich stärker "personenbezogen" gestalten (vgl. Stangl 1998).</p>
+        </p>
+      </div>
+
+    </div>
+
 
     <!-- The Modal spiel -->
     <div id="spiel_content" class="modal" style="display: none;" onclick="hideModalFromClick()">
@@ -210,7 +794,18 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Spiel</h2>
-        <p>Bei der Lernform Spiel geht es darum, bestimmte Verhaltensweisen und  Entscheidungsmuster von Menschen nachzuvollziehen und den Umgang mit Konflikten zu üben. Somit wird erfahrungsbezogenes Lernen ermöglicht. Mithilfe des Spiels werden Wahrnehmungen erweitert und bestimmte Verhaltensmuster diskutiert und reflektiert.</p>
+        <div class="row_wrapper">
+          <img src="img/thumbs/typen/spiel.png" class="modal_picture">
+          <p>Bei der Lernform Spiel geht es darum, bestimmte Verhaltensweisen und  Entscheidungsmuster von Menschen nachzuvollziehen und den Umgang mit Konflikten zu üben. Somit wird erfahrungsbezogenes Lernen ermöglicht. Mithilfe des Spiels werden Wahrnehmungen erweitert und bestimmte Verhaltensmuster diskutiert und reflektiert.</p>
+        </div>
+        <div class="row_wrapper">
+          <a target="_blank" href="http://www.planspielw.de/Staff.aspx?token=eiuyuaevlvmjcpzavcnqbluu"><img src="img/learnings/Planspiel_Wein.jpg" class="modal_picture"><a/>
+          <p>Im Planspiel Wein führst du eine virtuelle Winzerei. Im Laufe des Spiels musst du dich sowohl um den Vertrieb, die Produktion und die Lagerung, als auch das Personalwesen und die Finanzierung kümmern. So vereint das Planspiel viele verschiedene Bereiche des IMBIT-Studiums und hilft dir Erfahrung im Management eines Unternehmens zu sammeln.  Stand: 2017 © Dr. Martin Brodeck Autor: Dr. Martin Brodeck</p>
+        </div>
+        <div class="row_wrapper">
+          <a target="_blank" href="http://www.topsim.com/de/startseite/startseite.html"><img src="img/learnings/Planspiel.jpg" class="modal_picture"></a>
+          <p>Das kompetitive Industrieplanspiel TOPSIM – General Management ist eine anspruchsvolle Management Simulation, welche die komplexen Zusammenhänge eines produzierenden mittelständischen Unternehmens in der Drucker- und Kopierer Branche abbildet. In der Rolle der Geschäftsführung triffst du als Teilnehmer strategische und operative Entscheidungen in den Unternehmensbereichen Marketing, Vertrieb, Forschung und Entwicklung, Einkauf, Fertigung, Personal und Verwaltung. Dabei erlernst du, strukturiert mit großen Informationsmengen umzugehen und die Reichweite deiner Entscheidungen abzuschätzen.  Stand: 2017 © TATA Interactive Systems GmbH Autor: TATA Interactive Systems GmbH</p>
+        </div>
       </div>
 
     </div>
@@ -222,6 +817,7 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>CBT WBT</h2>
+        <img src="img/thumbs/typen/cbtwbt.jpg" class="modal_picture">
         <p>Unter Computer-Based-Training (CBT) versteht man computerunterstützte Lernprogramme, die inhaltlich abgeschlossene Lehrmaterialien enthalten. Diese können auch offline verwendet werden, was den Einsatz in Gebieten mit schlechter Internetverbindung ermöglicht. Darin liegt auch der Unterschied zum Web-Based-Training (WBT), in dem die Lernmaterialien online bereitgestellt werden. Außerdem können die Dozenten und Teilnehmer über das Internet kommunizieren.</p>
       </div>
 
@@ -234,6 +830,7 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Wiki</h2>
+        <img src="img/thumbs/typen/wiki.png" class="modal_picture">
         <p>Ein Wiki ist ein Medium, das durch seine offene Struktur für viele Anwendungsfälle geeignet sein kann. Es ist vergleichbar mit der Universalität einer Wandtafel, wobei das Wiki gleichzeitig eine Archivfunktion beinhalten kann. Im Gegensatz etwa zu Content-Management-Systemen ist ein Wiki flexibler, da die Strukturierung der Daten kaum vorgegeben ist.Es ist ein zukunftsweisendes System, das die Medienkompetenz der Schüler wie Lehrer stärkt. Auch Wikipedia, das wohl bekannteste und größte Wiki, kann aktiv in der Schule und für die Schule genutzt werden. Auch wir haben eine Wiki erstellt, ihr könnt diese hier finden: http://wiki.brillianideas.com/index.php/Hauptseite Es handelt sich hierbei um eine Wiki rundum das Thema Cloud, viel Spaß! Quelle: https://wiki.zum.de/wiki/Wikis_in_der_Schule</p>
       </div>
 
@@ -246,7 +843,16 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Podcasts</h2>
-        <p>Podcast ist ein zusammengesetztes Kunstwort aus den Begriffen iPod und Broadcast und meint Audio- und Videobeiträge, die über das Internet zum Download bereitgestellt werden. Nach dem Herunterladen können Interessenten die veröffentlichten Beiträge zu jeder beliebigen Zeit und an jedem beliebigen Ort anhören und ansehen. Podcasts können über verschiedene Feed-Formate abonniert werden (bspw. RSS-Feed).</p>
+        <div class="row_wrapper">
+          <img alt="img" src="img/thumbs/typen/podcast.jpg" class="modal_picture">
+          <p>Podcast ist ein zusammengesetztes Kunstwort aus den Begriffen iPod und Broadcast und meint Audio- und Videobeiträge, die über das Internet zum Download bereitgestellt werden. Nach dem Herunterladen können Interessenten die veröffentlichten Beiträge zu jeder beliebigen Zeit und an jedem beliebigen Ort anhören und ansehen. Podcasts können über verschiedene Feed-Formate abonniert werden (bspw. RSS-Feed).</p>
+        </div>
+        <div>
+          <a target="_blank" href="http://biz-anthro.com/index.php/podcasts/" target=" _blank">
+            <img src="img/learnings/Business_Anthropology.jpg" alt="&nbsp;" class="modal_picture">
+          </a>
+          <p>Diese Seite wurde im Rahmen des Seminars “Business Anthropology” am Institut für Ethnologie der Universität Heidelberg erstellt und gibt dir aus studentischer Sicht einen Einblick in den spannenden Anwendungsbereich des Fachs Ethnologie. Die hier erworbenen Kenntnisse können dein Wissen im Bereich "Intercultural Management" erweitern.  Stand: 2017 © Institut für Ethnologie der Universität Heidelberg Autor: Frauke Mörike</p>
+        </div>
       </div>
 
     </div>
@@ -258,7 +864,14 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Augmented Reality</h2>
-        <p>Unter Augmented Reality versteht man die computergestützte Erweiterung der Wahrnehmung der Realität. Dabei können beispielsweise Bilder oder Vidoes über Einblendungen oder Überlagerungen so dargestellt werden, als wären diese in der Realität zu sehen. Zur Darstellung der Augmented Reality wird meistens eine Kamera, Software und GPS, sowie verschiedene Sensoren verwendet. Mithilfe dieser können beispielsweise Kamerabilder mit Informationen zu Sehenswürdigkeiten oder Straßennamen ergänzt werden.</p>
+        <div class="row_wrapper">
+          <img src="img/thumbs/typen/ar.jpg" class="modal_picture">
+          <p>Unter Augmented Reality versteht man die computergestützte Erweiterung der Wahrnehmung der Realität. Dabei können beispielsweise Bilder oder Vidoes über Einblendungen oder Überlagerungen so dargestellt werden, als wären diese in der Realität zu sehen. Zur Darstellung der Augmented Reality wird meistens eine Kamera, Software und GPS, sowie verschiedene Sensoren verwendet. Mithilfe dieser können beispielsweise Kamerabilder mit Informationen zu Sehenswürdigkeiten oder Straßennamen ergänzt werden.</p>
+        </div>
+        <div>
+          <a target="_blank" href="http://amazing-sql.com/"><img src="img/learnings/AmazingSQL.png" class="modal_picture"></a>
+          <p>Amazing SQL ist eine kostenlose Software, mit der du SQL-Abfragen in verschiedenen Schwierigkeitsstufen üben kannst. Die Software eignet sich sowohl für Anfänger als auch für Fortgeschrittene.  Stand: 2017 © AmazingSQL Autor: Andreas Palosi und Jan Freidinger</p>
+        </div>
       </div>
 
     </div>
@@ -270,6 +883,7 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Learning on Demand</h2>
+        <img src="img/thumbs/typen/lod.jpg" class="modal_picture">
         <p>Mit Learning-on-Demand werden Studierende zielbezogener auf unmittelbar bevorstehende Themen und Aufgaben vorbereitet. Diese Lernform kann nicht nur zeit-, sondern auch ortsunabhängig in Anspruch genommen werden. Die Ortsunabhängigkeit birgt die Gefahr, dass das Lernen aufgrund störender Umgebungseinwirkungen unterbrochen wird. Daneben besteht das Risiko, dass die Studierenden zunehmend nur unter Zeitdruck und sehr oberflächlich lernen, da sie erst mit dem Lernen beginnen, wenn die Notwendigkeit gegeben ist. Tendenziell sorgt Learning-on-Demand aber für einen effektiven und effizienten Transfer der erlernten Inhalte.</p>
       </div>
 
@@ -282,7 +896,12 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Lernfilme</h2>
-        <p>Als Lernfilm bezeichnet man einen für Unterrichtszwecke produzierten Film. Dieser soll schulische Lernprozesse unterstützen und wird von online Medienzentren verliehen und vertrieben. Der Lernstoff soll filmisch vermittelt werden. Dabei liegt der Schwerpunkt auf der Übermittlung von Wissen und nicht der Darstellung vom Emotionen oder Handlungen. Lernfilme sind ebenso unter der englischen Bezeichnung Tutorial bekannt und im Internet auffindbar.</p>
+        <div class="row_wrapper">
+          <img src="img/thumbs/typen/lernfilm.jpg" class="modal_picture">
+          <p>Als Lernfilm bezeichnet man einen für Unterrichtszwecke produzierten Film. Dieser soll schulische Lernprozesse unterstützen und wird von online Medienzentren verliehen und vertrieben. Der Lernstoff soll filmisch vermittelt werden. Dabei liegt der Schwerpunkt auf der Übermittlung von Wissen und nicht der Darstellung vom Emotionen oder Handlungen. Lernfilme sind ebenso unter der englischen Bezeichnung Tutorial bekannt und im Internet auffindbar.</p>
+        </div>
+        <div class="row_wrapper">
+        </div>
       </div>
 
     </div>
@@ -294,6 +913,7 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Simulationen</h2>
+        <img alt="img" src="img/thumbs/typen/sim.jpg" class="modal_picture">
         <p>Eine Simulation ist eine möglichst realitätsnahe Abbildung der Wirklichkeit. Der Mensch lernt am besten in natürlichen Umgebungen, sodass man versucht, den Lernprozess mit Simulationen zu unterstützen. Beispielsweise werden diese dazu eingesetzt, Szenarien durchzuspielen, bei denen Menschen zu Schaden kommen könnten. Durch eine virtuelle Lernumgebung soll das Lernen unterstützt werden.</p>
       </div>
 
@@ -306,6 +926,7 @@
       <div class="modal-content">
         <span class="close" onclick="hideModalFromSpan()" >&times;</span>
         <h2>Interaktive E-Books</h2>
+        <img alt="img" src="img/thumbs/typen/ebook.jpg" class="thumb">
         <p>Interaktive E-Books erweitern die Textinhalte der E-Books um multimediale Inhalte wie Audios und Videos. Der Leser interagiert mit den Inhalten beispielsweise via Mausklick, drag-and-drop oder durch weitere Benutzeraktionen.</p>
       </div>
 
@@ -320,7 +941,7 @@
   var id_modal = '';
   function showmodal(id) {
     id_modal = id+'_content';
-    document.getElementById(id_modal).style.display = "block";
+    document.getElementById(id_modal).style.display = "inline-block";
   }
 
   // When the user clicks on <span> (x), close the modal

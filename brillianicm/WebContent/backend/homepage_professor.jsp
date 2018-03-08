@@ -57,20 +57,19 @@
 		</div>
 	</div>
 	<div class="center mainWindow" data-options="region:'center'"
-		align="center" style="padding-left: 5%; padding-right: 5%">
+		align="center" style="padding-left: 2%; padding-right: 2%">
 		<div id="studentsOfProfessor">
 			<h1>Lecturer Page</h1>
-			<br />
 			<div class="separator-box" style="padding-bottom: 30px">
 				<div
-					style="width: 80%; background-color: white; border-width: 1px; border-style: solid; border-color: black; height: 100%">
+					style="width: 90%; background-color: white; border-width: 1px; border-style: solid; border-color: black">
 					<div id="groupsOfProfessor"
-						style="width: 100%; text-align: left; padding-left: 5%; padding-right: 5%">
+						style="width: 100%; text-align: left; padding-left: 5%; padding-right: 5%; padding-bottom:20px">
 						<h4>Groups</h4>
 						Below, all existing groups are listed with their belonging
-						students. <br />
+						students. 
 						<p style="color: blue">${status}</p>
-						<br /> <br />
+						
 
 						<%
 							if (request.getAttribute("groups") != null) {
@@ -186,13 +185,13 @@
 													"<table id=\"students\" class=\"easyui-datagrid\" style=\"width: 1000px\" data-options=\"fitColumns:true,singleSelect:true\">"
 															+ "<thead><tr><th data-options=\"field:'delete',width:47,resizable:false\"></th>"
 															+ "<th data-options=\"field:'reset',width:47,resizable:false\"></th>"
-															+ "<th data-options=\"field:'lastname',width:100,resizable:false\">Last name</th>"
-															+ "<th data-options=\"field:'firstname',width:100,resizable:false\">First name</th>"
+															+ "<th data-options=\"field:'lastname',width:80,resizable:false\">Last name</th>"
+															+ "<th data-options=\"field:'firstname',width:80,resizable:false\">First name</th>"
 															+ "<th data-options=\"field:'cost',width:70,resizable:false,styler:cellStyler\">Behavior</th>"
 															+ "<th data-options=\"field:'time',width:100,resizable:false,styler:cellStyler\">Communication</th>"
-															+ "<th data-options=\"field:'quality',width:100,resizable:false,styler:cellStyler\">Competence</th>"
-															+ "<th data-options=\"field:'finished',width:60,resizable:false\">Finished</th>"
-															+ "<th data-options=\"field:'email',width:200,resizable:false\">Email</th>"
+															+ "<th data-options=\"field:'quality',width:80,resizable:false,styler:cellStyler\">Competence</th>"
+															+ "<th data-options=\"field:'finished',width:50,resizable:false\">Finished</th>"
+															+ "<th data-options=\"field:'email',width:150,resizable:false\">Email</th>"
 															+ "</tr></thead><tbody>");
 										}
 										int a = 0;
@@ -254,35 +253,34 @@
 						%>
 					</div>
 				</div>
-				>
 			</div>
 
 
 			<div
-				style="text-align: left; width: 80%; background-color: white; border-width: 1px; border-style: solid; border-color: black; padding-bottom: 2%; height: 300px">
+				style="height: 270px; text-align: left; width: 90%; background-color: white; border-width: 1px; border-style: solid; border-color: black; padding-bottom: 2%">
 				<div style="width: 50%; float: left; padding-left: 5%">
 					<h4>Create New Group</h4>
 					<form action="NewUsergroup" method="post">
 						<div class="formLabel">Name:</div>
-						<input type="text" name="groupname" maxlength="50" required /><br />
+						<input style="width: 55%" type="text" name="groupname" maxlength="50" required /><br />
 						<br />
 						<div class="formLabel">Organisation:</div>
-						<input type="text" name="grouporg" maxlength="50" required /><br />
+						<input style="width: 55%" type="text" name="grouporg" maxlength="50" required /><br />
 						<br />
 						<div class="formLabel">Description:</div>
-						<input type="text" name="groupdescription" maxlength="50" required /><br />
+						<input style="width: 55%" type="text" name="groupdescription" maxlength="50" required /><br />
 						<br />
 						<div class="formLabel">URL:</div>
-						<input type="text" name="groupurl" maxlength="50" required /> <input
+						<input style="width: 55%" type="text" name="groupurl" maxlength="50" required /> <input
 							type="submit" style="display: none" id="createGroup"
 							value="Create group" /><br /> <br /> <a
-							class="easyui-linkbutton"
+							class="easyui-linkbutton" style="width: 50%"
 							onclick="$('#createGroup').trigger('click')">Create Group</a>
 						<p style="color: green">${success}</p>
 						<p style="color: red">${error}</p>
 					</form>
 				</div>
-				<div style="margin-left: 50%; padding-left: 5%">
+				<div style="margin-left: 50%; padding-right: 5%">
 					<h4>Change Lecturer Password</h4>
 					<form action="ResetPassword" method="post">
 						<input type="text" name="username" maxlength="50"
@@ -291,14 +289,14 @@
 							style="display: none" />
 						<div class="formLabel" style="padding-right: 20px">New
 							Password:</div>
-						<input style="width: 200px" type="password" name="password"
+						<input style="width: 55%" type="password" name="password"
 							maxlength="50" /><br /> <br />
 						<div class="formLabel" style="padding-right: 20px">Repeat
 							New Password:</div>
-						<input style="width: 200px" type="password" name="password_repeat"
+						<input style="width: 55%" type="password" name="password_repeat"
 							maxlength="50" /><br /> <br /> <input id="updatePassword"
 							type="submit" name="updatePassword" value="Update password"
-							hidden="hidden" /> <a class="easyui-linkbutton"
+							hidden="hidden" /> <a class="easyui-linkbutton" style="width: 50%"
 							onclick="$('#updatePassword').trigger('click')">Update
 							Password</a>
 					</form>
@@ -357,4 +355,3 @@
 	}
 </script>
 </html>
-
