@@ -82,8 +82,8 @@ CREATE TABLE IF NOT EXISTS badges (
 
 -- <<Create initial table content>>
 -- 'group' Table Content
-INSERT INTO `group` (GROUP_ID, GROUP_NAME, PROFESSOR_ID, CERTIFICATE) VALUES
-(3, 'WIMBIT', 17, 0), (0, 'Public', 0, 0);
+INSERT INTO `group` (GROUP_ID, GROUP_NAME, PROFESSOR_ID, CERTIFICATE, ORG, DESCRIPTION, URL) VALUES
+(3, 'WIMBIT', 17, 0, DHBW, DHBW Mannheim Studiengang IMBIT, http://www.imbit.dhbw-mannheim.de/), (0, 'Public', 0, 0, NULL, NULL, NULL);
 
 -- 'user' table content
 INSERT INTO user (USER_ID, EMAIL, FIRST_NAME, LAST_NAME, PASSWORD, ROLE, `GROUP`, REG_DATE, GENDER) VALUES
