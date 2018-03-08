@@ -156,6 +156,7 @@ html {
 .launchbar {
     /* style for launchbar */
     grid-area: launchbar;
+    overflow: hidden;
 }
 
 
