@@ -68,7 +68,7 @@ public class MailClient extends HttpServlet
 	 
 				Transport.send(message);
 	 
-				//System.out.println("Done");
+				System.out.println("Email sent");
 	 
 			} catch (AddressException e) {
 	        	e.printStackTrace();
