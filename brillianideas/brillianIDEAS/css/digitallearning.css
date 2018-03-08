@@ -129,12 +129,16 @@ body {
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 10% auto; /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
+    height: 80%; /*Important for overflow: scroll*/
     text-align: left; /*reset text-align: center from .model*/
     display: inline-block; /*Wrap Modal Content*/
+    position: fixed;
+    top: -11%;
+    left: 8%;
+    overflow: scroll;
 }
 
 /* The Close Button */
@@ -453,14 +457,12 @@ body {
   height: 5vh;
   padding-right: 10px;
   padding-bottom: 10px;
-  float: left;
 }
 
 .modal_picture_middle_size{
   height: 7vh;
   padding-right: 10px;
   padding-bottom: 10px;
-  float: left;
 }
 
 .row_wrapper{
