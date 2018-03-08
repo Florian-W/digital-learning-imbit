@@ -56,7 +56,7 @@
 					async : true,
 					success : function(data) {
 						if (data == "1") {
-							document.getElementById("certificationText").innerHTML = "For your certification and badge, please press the button below or restart the game";
+							document.getElementById("certificationText").innerHTML = "For your <a target='_blank' href='badges/badgeCriteriaTable.html'>certification and badge</a>, please press the button below or restart the game";
 							//document.getElementById("SendButton").innerHTML = "Send Certificate and restart from the begininng";
 							var buttonSend = document.getElementById("SendButton");
 							buttonSend.onclick = function() {

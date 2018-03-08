@@ -106,6 +106,8 @@ public class Event extends HttpServlet {
 			 * Philipp K.
 			 * 5.3.16
 			 * Added Cases that handles the certification sending and resets the KPI to 0
+			 * 
+			 * 1.3.18 also used for openBadge sending
 			 */
 			
 			case "sendCertificate": {

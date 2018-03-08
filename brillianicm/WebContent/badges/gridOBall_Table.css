@@ -1,0 +1,71 @@
+html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+table tr th{
+  transform: rotate(270deg);
+  height: 95px;
+}
+
+table tr td {
+  background: #D5EDF3;
+  text-align: center;
+}
+
+table tr:nth-child(even) td {
+  background: #F5F5F5;
+}
+
+table td:nth-child(n) {
+  width: 80px;
+}
+
+table td:nth-child(1) {
+  text-align: left;
+  width: 570px;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 120px 1fr 950px;
+  grid-template-columns: 8% 84% 8%;
+  grid-template-areas:
+    "placeholder1 badgeTitle emptySpace1"
+    "placeholder2 badgeCriteriaGeneral badgeImages"
+    "placeholder3 badgeCriteriaTable empty1"
+  /*              "placeholder4 badgeImageBRA badgeCriteriaBRA"
+              "placeholder5 badgeImageCHN badgeCriteriaCHN"
+              "placeholder6 badgeImageESP badgeCriteriaESP"
+              "placeholder7 badgeImageGER badgeCriteriaGER"
+              "placeholder8 badgeImageIND badgeCriteriaIND"
+              "placeholder9 badgeImageSWE badgeCriteriaSWE"
+              "placeholder10 badgeImageTUR badgeCriteriaTUR"
+              "placeholder11 badgeImageUSA badgeCriteriaUSA";*/
+}
+
+.badgeTitle {
+  /*  grid-area: badgeTitle and emptySpace1 is merged*/
+  grid-column: 2/span 2;
+  grid-row: 1;
+  text-align: left;
+  align-self: end;
+  column-span: "emptySpace1";
+}
+
+.badgeCriteriaGeneral {
+  grid-area: badgeCriteriaGeneral;
+  text-align: justify;
+}
+
+.badgeImages {
+  /*grid-area: badgeImages and empty1 is merged*/
+  grid-column: 2;
+  grid-row: 2/span2;
+  text-align: center;
+}
+
+.badgeCriteriaTable {
+  grid-area: badgeCriteriaTable;
+}

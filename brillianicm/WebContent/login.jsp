@@ -230,6 +230,11 @@
 					<a class="login" href="${pageContext.request.contextPath}/Registration?g=000">Register</a>
 				</td>
 			</tr>
+			<tr>
+				<td align="left">
+					<a class="login" href="badges/badgeAbout.html">More about about open badges</a>
+				</td>
+			</tr>
 		</table>
 			<!-- End of line -->
 		

@@ -112,8 +112,9 @@
 	
 	}else{
 		document.getElementById('setUserProgressForm').style.display = "none";
+		}
 	}
-	}
+	
 	
 </script>
 </body>
