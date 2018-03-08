@@ -78,31 +78,31 @@ public class BadgeBakery extends HttpServlet {
 		String fileLocation = "";
 		switch (country) {
 		case "Brazil":
-			fileLocation = "/etc/opt/tomcat/webapps/brillianICM/WebContent/img/badges/badge_brazil.svg";
+			fileLocation = "WebContent/img/badges/badge_brazil.svg";
 			break;
 		case "Spain":
-			fileLocation = "/etc/opt/tomcat/webapps/brillianICM/WebContent/img/badges/badge_spain.svg";
+			fileLocation = "WebContent/img/badges/badge_spain.svg";
 			break;
 		case "China":
-			fileLocation = "/etc/opt/tomcat/webapps/brillianICM/WebContent/img/badges/badge_china.svg";
+			fileLocation = "WebContent/img/badges/badge_china.svg";
 			break;
 		case "USA":
-			fileLocation = "/etc/opt/tomcat/webapps/brillianICM/WebContent/img/badges/badge_USA.svg";
+			fileLocation = "WebContent/img/badges/badge_USA.svg";
 			break;
 		case "Sweden":
-			fileLocation = "badge_sweden.svg";
+			fileLocation = "WebContent/img/badge/badge_sweden.svg";
 			break;
 		case "India":
-			fileLocation = "/etc/opt/tomcat/webapps/brillianICM/WebContent/img/badges/badge_india.svg";
+			fileLocation = "WebContent/img/badges/badge_india.svg";
 			break;
 		case "Germany":
-			fileLocation = "/etc/opt/tomcat/webapps/brillianICM/WebContent/img/badges/badge_germany.svg";
+			fileLocation = "WebContent/img/badges/badge_germany.svg";
 			break;
 		case "Turkey":
-			fileLocation = "/etc/opt/tomcat/webapps/brillianICM/WebContent/img/badges/badge_turkey.svg";
+			fileLocation = "WebContent/img/badges/badge_turkey.svg";
 			break;
 		case "Australia":
-			fileLocation = "/etc/opt/tomcat/webapps/brillianICM/WebContent/img/badges/badge_australia.svg";
+			fileLocation = "WebContent/img/badges/badge_australia.svg";
 			break;
 		}
 		return fileLocation;

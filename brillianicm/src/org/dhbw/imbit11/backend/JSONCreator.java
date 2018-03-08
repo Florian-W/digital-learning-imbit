@@ -86,57 +86,57 @@ public class JSONCreator extends HttpServlet {
 		switch(badge){
 			case "Brazil": 	
 				info[0] = "brillianICM Brazil";
-				info[1] = "http//:link_image_brazil";
+				info[1] = "http://ec2-52-14-250-138.us-east-2.compute.amazonaws.com:8080/brillianICM/img/badges/badge_brazil.svg";
 				info[2] = "Successful completion of the ICM Brazil serious game";
-				info[3] = "http//:link_criteria_page";
+				info[3] = "http://ec2-52-14-250-138.us-east-2.compute.amazonaws.com:8080/brillianICM/img/badges/badgeCriteriaTable.html";
 				break;
 			case "Spain":	
 				info[0] = "brillianICM Spain";
-				info[1] = "http//:link_image_spain";
+				info[1] = "http://ec2-52-14-250-138.us-east-2.compute.amazonaws.com:8080/brillianICM/img/badges/badge_spain.svg";
 				info[2] = "Successful completion of the ICM Spain serious game";
-				info[3] = "http//:link_criteria_page";
+				info[3] = "http://ec2-52-14-250-138.us-east-2.compute.amazonaws.com:8080/brillianICM/img/badges/badgeCriteriaTable.html";
 				break;
 			case "China": 	
 				info[0] = "brillianICM China";
-				info[1] = "http//:link_image_china";
+				info[1] = "http://ec2-52-14-250-138.us-east-2.compute.amazonaws.com:8080/brillianICM/img/badges/badge_china.svg";
 				info[2] = "Successful completion of the ICM China serious game";
-				info[3] = "http//:link_criteria_page";
+				info[3] = "http://ec2-52-14-250-138.us-east-2.compute.amazonaws.com:8080/brillianICM/img/badges/badgeCriteriaTable.html";
 				break;
 			case "USA":	
 				info[0] = "brillianICM USA";
-				info[1] = "http//:link_image_usa";
+				info[1] = "http://ec2-52-14-250-138.us-east-2.compute.amazonaws.com:8080/brillianICM/img/badges/badge_usa.svg";
 				info[2] = "Successful completion of the ICM USA serious game";
-				info[3] = "http//:link_criteria_page";
+				info[3] = "http://ec2-52-14-250-138.us-east-2.compute.amazonaws.com:8080/brillianICM/img/badges/badgeCriteriaTable.html";
 				break;
 			case "Sweden": 	
 				info[0] = "brillianICM Sweden";
 				info[1] = "http://ec2-52-14-250-138.us-east-2.compute.amazonaws.com:8080/brillianICM/img/badges/badge_sweden.svg";
 				info[2] = "Successful completion of the ICM Sweden serious game";
-				info[3] = "http://ec2-52-14-250-138.us-east-2.compute.amazonaws.com:8080/brillianICM/badges/criteria-brillianICM.html";
+				info[3] = "http://ec2-52-14-250-138.us-east-2.compute.amazonaws.com:8080/brillianICM/img/badges/badgeCriteriaTable.html";
 				break;
 			case "India":	
 				info[0] = "brillianICM India";
-				info[1] = "http//:link_image_india";
+				info[1] = "http://ec2-52-14-250-138.us-east-2.compute.amazonaws.com:8080/brillianICM/img/badges/badge_india.svg";
 				info[2] = "Successful completion of the ICM India serious game";
-				info[3] = "http//:link_criteria_page";
+				info[3] = "http://ec2-52-14-250-138.us-east-2.compute.amazonaws.com:8080/brillianICM/img/badges/badgeCriteriaTable.html";
 				break;
 			case "Germany": 	
 				info[0] = "brillianICM Germany";
-				info[1] = "http//:link_image_germany";
+				info[1] = "http://ec2-52-14-250-138.us-east-2.compute.amazonaws.com:8080/brillianICM/img/badges/badge_germany.svg";
 				info[2] = "Successful completion of the ICM Germany serious game";
-				info[3] = "http//:link_criteria_page";
+				info[3] = "http://ec2-52-14-250-138.us-east-2.compute.amazonaws.com:8080/brillianICM/img/badges/badgeCriteriaTable.html";
 				break;
 			case "Turkey":	
 				info[0] = "brillianICM Turkey";
-				info[1] = "http//:link_image_turkey";
+				info[1] = "http://ec2-52-14-250-138.us-east-2.compute.amazonaws.com:8080/brillianICM/img/badges/badge_turkey.svg";
 				info[2] = "Successful completion of the ICM Turkey serious game";
-				info[3] = "http//:link_criteria_page";
+				info[3] = "http://ec2-52-14-250-138.us-east-2.compute.amazonaws.com:8080/brillianICM/img/badges/badgeCriteriaTable.html";
 				break;
 			case "Australia":	
 				info[0] = "brillianICM Australia";
-				info[1] = "http//:link_image_australia";
+				info[1] = "http://ec2-52-14-250-138.us-east-2.compute.amazonaws.com:8080/brillianICM/img/badges/badge_australia.svg";
 				info[2] = "Successful completion of the ICM Australia serious game";
-				info[3] = "http//:link_criteria_page";
+				info[3] = "http://ec2-52-14-250-138.us-east-2.compute.amazonaws.com:8080/brillianICM/img/badges/badgeCriteriaTable.html";
 				break;
 			default:
 				info[0] = "brillianICM";
