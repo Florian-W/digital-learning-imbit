@@ -82,9 +82,13 @@ import org.apache.shiro.subject.Subject;
 			
 			Subject subject = SecurityUtils.getSubject();
 			String email = (String) subject.getPrincipal();
+			System.out.println(email);
 			String oldpassword = request.getParameter("oldpassword");
+			System.out.println(oldpassword);
 			String password = request.getParameter("password");
+			System.out.println(password);
 			String password_repeat = request.getParameter("password_repeat");
+			System.out.println(password_repeat);
 
 			try {
 				UsernamePasswordToken token = new UsernamePasswordToken(email, oldpassword);
