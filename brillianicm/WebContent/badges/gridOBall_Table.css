@@ -5,7 +5,9 @@ html {
 }
 
 table tr th{
-  text-align: center;
+  text-align: right;
+  transform: rotate(90deg);
+  height: 95px;
 }
 
 table tr td {
