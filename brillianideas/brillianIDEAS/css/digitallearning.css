@@ -140,6 +140,9 @@ body {
     top: -11%;
     left: 8%;
     overflow: scroll;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
 }
 
 /* The Close Button */
