@@ -472,9 +472,20 @@ table {
     width: 100%;
 }
 
-td:nth-child(3) {
-  margin-left: 10vh;
+td:nth-child(1){
+  width: 15%;
+}
 
+td:nth-child(3){
+  width: 15%;
+}
+
+td:nth-child(2){
+  width: 35%;
+}
+
+td:nth-child(4){
+  width: 35%;
 }
 
 /* label {
