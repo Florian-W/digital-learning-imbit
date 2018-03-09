@@ -78,31 +78,31 @@ public class BadgeBakery extends HttpServlet {
 		String fileLocation = "";
 		switch (country) {
 		case "Brazil":
-			fileLocation = "WebContent/img/badges/badge_brazil.svg";
+			fileLocation = "img/badges/badge_brazil.svg";
 			break;
 		case "Spain":
-			fileLocation = "WebContent/img/badges/badge_spain.svg";
+			fileLocation = "img/badges/badge_spain.svg";
 			break;
 		case "China":
-			fileLocation = "WebContent/img/badges/badge_china.svg";
+			fileLocation = "img/badges/badge_china.svg";
 			break;
 		case "USA":
-			fileLocation = "WebContent/img/badges/badge_USA.svg";
+			fileLocation = "img/badges/badge_USA.svg";
 			break;
 		case "Sweden":
-			fileLocation = "WebContent/img/badge/badge_sweden.svg";
+			fileLocation = "img/badge/badge_sweden.svg";
 			break;
 		case "India":
-			fileLocation = "WebContent/img/badges/badge_india.svg";
+			fileLocation = "img/badges/badge_india.svg";
 			break;
 		case "Germany":
-			fileLocation = "WebContent/img/badges/badge_germany.svg";
+			fileLocation = "img/badges/badge_germany.svg";
 			break;
 		case "Turkey":
-			fileLocation = "WebContent/img/badges/badge_turkey.svg";
+			fileLocation = "img/badges/badge_turkey.svg";
 			break;
 		case "Australia":
-			fileLocation = "WebContent/img/badges/badge_australia.svg";
+			fileLocation = "img/badges/badge_australia.svg";
 			break;
 		}
 		return fileLocation;
