@@ -135,7 +135,7 @@ public class LoginUser extends javax.servlet.http.HttpServlet implements
 				url = "/Admin";
 			} else if (subject.hasRole("student")) {
 				url = "/Student";
-				//System.out.println(subject.getPrincipal());
+				// System.out.println(subject.getPrincipal());
 				subject.getSession().setAttribute("student",
 						subject.getPrincipal());
 			} else if (subject.hasRole("professor")) {
@@ -143,7 +143,7 @@ public class LoginUser extends javax.servlet.http.HttpServlet implements
 			} else {
 				throw new Exception();
 			}
-			//System.out.println("Log: " + username + " logged in successfully.");
+//			System.out.println("Log: " + username + " logged in successfully.");
 
 		} catch (UnknownAccountException ex) {
 			// username provided was not found
