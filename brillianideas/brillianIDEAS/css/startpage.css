@@ -1,7 +1,20 @@
-html, body {
+html {
 	box-sizing: border-box;
 	font-family: 'Tinos';
 	color: var(--text);
+}
+
+body {
+	box-sizing: border-box;
+	font-family: 'Tinos';
+	color: var(--text);
+
+	/* top level grid */
+  display: grid;
+  grid-template-rows: 1fr 100px;
+  grid-template-columns: 100%;
+  grid-template-areas: "content"
+                        "launchbar";
 }
 
 #title{
