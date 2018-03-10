@@ -260,28 +260,53 @@
         <!-- Menü für Grid für Praxisphase -->
         <ul class="ueberschriftenfeld">
             <li onclick="changeVisible('praxisphasen', 'Grid1')">IMBIT-Curriculum</li>
-            <li>Praxisphasen</li>
+            <li onclick="toggleVisible('praxisphasen_info')">Praxisphasen</li>
         </ul>
 
 
         <!-- Module von Praxisphase -->
 
         <!-- Auslandserfahrung -->
-        <span class="grid_column_5_6 grid_row_9_10 modul" onclick="changeVisible('praxisphase', '')">
+        <span class="grid_column_4_5 grid_row_9_10 modul" onclick="changeVisible('praxisphase', '')">
           <a href="content/ausland.html">
             Auslandserfahrung
           </a>
         </span>
 
         <!-- Quiz -->
-        <span class="grid_column_8_10 grid_row_5_7 modul" onclick="changeVisible('praxisphase', '')"><a href="content/quiz.html">
+        <span class="grid_column_7_9 grid_row_5_7 modul" onclick="changeVisible('praxisphase', '')"><a href="content/quiz.html">
           Wie dual bin ich?
         </a></span>
 
         <!-- Praxisphasen in der Ausbildung -->
-        <span class="grid_column_4_6 grid_row_4_6 modul" onclick="changeVisible('praxisphase', '')"><a target="_blank" href="http://www.imbit.dhbw-mannheim.de/fileadmin/ms/wirtschaft/imbit/IMBIT_Praxisphasen.pdf">
+        <span class="grid_column_3_5 grid_row_4_6 modul" onclick="changeVisible('praxisphase', '')"><a target="_blank" href="http://www.imbit.dhbw-mannheim.de/fileadmin/ms/wirtschaft/imbit/IMBIT_Praxisphasen.pdf">
           Praxisphasen in der Ausbildung
         </a></span>
+
+        <div class="modulbeschreibung" style="display:none" id="praxisphasen_info">
+            <ul style="list-style:none">
+                <li>
+                  DHBW-Studierende lernen in sechs dreimonatigen Praxiseinsätzen ihre Aus­bil­dungs­unter­neh­men kennen und durchlaufen in der Regel die wesentlichen Fachbereiche der Unternehmen. Durch die Übertragung vielfältiger Aufgaben gewinnen die Studierenden dabei
+                  die notwendige fachliche Breite.
+                  <br>
+                  <br> Anhand dreier wissenschaftlicher Arbeiten weisen sie zudem nach, dass und wie sie das Vorgehen bei den Praxiseinsätzen theoretisch fundieren, aka­de­misch kritisch reflektieren und mit dem Stand der Technik in Bezug setzen; die erste und zweite
+                  Projektarbeit sowie die Bachelorarbeit greifen dazu jeweils Auf­ga­ben­stellungen der Praxiseinsätze des ersten, zweiten und dritten Stu­dien­­jahres auf. Sie können ein Thema aus einem der beiden Praxiseinsätze im selben Stu­dien­jahr wählen; eingereicht,
+                  geschrieben und wissenschaftlich betreut wird im vorgegebenen Zeitraum. Die fachliche Betreuung der Arbeiten erfolgt durch das Unter­nehmen, die wissenschaftliche Betreuung und die Bewertung stellt die DHBW. Für erfolgreiche Praxiseinsätze, nachgewiesen
+                  durch die wiss. Arbeiten, werden den Studierenden ECTS-Punkte angerechnet. Die Bewertung der wiss. Arbeiten erfolgt in der Regel in der darauffolgenden The­orie­phase. Bei Nichtbestehen können die erste und zweite Arbeit überarbeitet werden; bei Wiederholung
+                  der Bachelorarbeit ist ein neues Thema zu wählen.
+                  <br> Am Ende eines jeden Studienjahres sowie gesammelt bei der Anmeldung zur mündlichen Bachelorprüfung geben die Studierenden Reflexionsberichte­ über ihre Praxiseinsätze ab. Die Reflexionsberichte zählen wie PA1-, PA2- und BA-Arbeiten zu den praxisbezogenen
+                  Prüfungsleistungen.
+                  <br>
+                  <br> Die Ausbildungsunternehmen führen die Praxiseinsätze gemäß der Aus­bil­dungs­pläne durch, die sie mit der DHBW vereinbart haben. Diese sind spezifisch auf die jeweiligen Studiengänge zugeschnitten; bei IMBIT gilt:
+                </li>
+            </ul>
+
+            <ul class="quellen">
+              <li>Ein oder mehrere Praxiseinsätze finden im Ausland statt.</li>
+              <li>Mindestens eine wissenschaftliche Arbeit wird auf Englisch geschrieben.</li>
+              <li>Die wissenschaftliche Betreuung aller drei Arbeiten wird vom Studiengang gestellt; die Studierenden müssen diese nicht selbst organisieren.</li>
+            </ul>
+        </div>
 
 
 
