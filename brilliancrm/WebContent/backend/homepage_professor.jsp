@@ -221,19 +221,19 @@
 			<div
 				style="height: 300px; text-align: left; width: 90%; background-color: white; border-width: 1px; border-style: solid; border-color: black; padding-bottom: 30px; margin-bottom: 30px">
 				<div style="width: 50%; float: left; padding-left: 5%">
-					<h4>Create New Group</h4>
+					<h4 title="The following information is required for the certificate.">Create New Group</h4>
 					<form action="NewUsergroup" method="post">
 						<div class="formLabel">Name:</div>
-						<input style="width: 55%" type="text" name="groupname" maxlength="50" required /><br />
+						<input style="width: 55%" type="text" name="groupname" maxlength="50" placeholder="No blank characters allowed!" required /><br />
 						<br />
 						<div class="formLabel">Organisation:</div>
-						<input style="width: 55%" type="text" name="grouporg" maxlength="50" required /><br />
+						<input style="width: 55%" type="text" name="grouporg" maxlength="50" value="DHBW Mannheim" required /><br />
 						<br />
 						<div class="formLabel">Description:</div>
-						<input style="width: 55%" type="text" name="groupdescription" maxlength="50" required /><br />
+						<input style="width: 55%" type="text" name="groupdescription" maxlength="50" value="IMBIT Serious Games" required /><br />
 						<br />
 						<div class="formLabel">URL:</div>
-						<input style="width: 55%" type="text" name="groupurl" maxlength="50" required /> <input
+						<input style="width: 55%" type="text" name="groupurl" maxlength="50" value="www.dhbw-mannheim.de" required /> <input
 							type="submit" style="display: none; width: 100%" id="createGroup"
 							value="Create group" /><br /> <br /> <a
 							class="easyui-linkbutton" style="width:50%"

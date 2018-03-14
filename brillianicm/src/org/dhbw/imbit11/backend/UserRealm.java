@@ -30,6 +30,8 @@ import org.apache.shiro.util.JdbcUtils;
  * effected anymore
  * 
  * 5.3.16 Insert new getUserEmailByID query so the email can be loaded
+ * 
+ * 1.3.18 Added openBadge support
  */
 
 public class UserRealm extends JdbcRealm {
@@ -73,7 +75,9 @@ public class UserRealm extends JdbcRealm {
 
 	protected String getBadgeAssertionID = "SELECT COUNT(`UID`) FROM `badges`";
 	protected String newBadgeQuery = "INSERT INTO `badges` VALUES (?,?,?,?)";
-	protected String getIssuerInfoQuery = "SELECT (`name`,`org`,`description`,`url`) FROM `group` WHERE `group_id`=?";
+	protected String getIssuerOrgQuery = "SELECT `org` FROM `group` WHERE `group_id`=?";
+	protected String getIssuerDescQuery = "SELECT `description` FROM `group` WHERE `group_id`=?";
+	protected String getIssuerURLQuery = "SELECT `url` FROM `group` WHERE `group_id`=?";
 	
 	/**
 	 * Invokes the constructor of parent class (superclass) function looks up an
@@ -261,27 +265,52 @@ public class UserRealm extends JdbcRealm {
 	    }
 	}
 
-	/*
 	public String[] getIssuerInfo(int group) throws SQLException {
 	    Connection conn = dataSource.getConnection();
 	    PreparedStatement ps = null;
 	    ResultSet rs = null;
-	    String[] issuer_info = null;
+	    String[] issuer_info = new String[3];
 	    try {
-	        ps = conn.prepareStatement(getIssuerInfoQuery);
+	        ps = conn.prepareStatement(getIssuerOrgQuery);
 	        ps.setLong(1, group);
+//	        System.out.println("Executed Org : " + ps);
 	        rs = ps.executeQuery();
+
 	        
 	        while (rs.next()) {
-				badgesCount = Integer.parseInt(rs.getString(1));
+				issuer_info[0] = rs.getString(1);
 	        }
+//	        System.out.println("the userid was "+ issuer_info[0]);
+	        
+	        ps = conn.prepareStatement(getIssuerDescQuery);
+	        ps.setLong(1, group);
+//	        System.out.println("Executed Desc : " + ps);
+	        rs = ps.executeQuery();
+
+	        
+	        while (rs.next()) {
+				issuer_info[1] = rs.getString(1);
+	        }
+//			System.out.println("the userid was "+ issuer_info[1]);
+			
+	        ps = conn.prepareStatement(getIssuerURLQuery);
+	        ps.setLong(1, group);
+//	        System.out.println("Executed URL : " + ps);
+	        rs = ps.executeQuery();
+
+	        
+	        while (rs.next()) {
+				issuer_info[2] = rs.getString(1);
+	        }
+	//        System.out.println("the userid was "+ issuer_info[2]);
 
 	    } finally {
 	        JdbcUtils.closeStatement(ps);
 	        conn.close();
 	    }
+	    return issuer_info;
 	}
-*/
+
 	
 	/**
 	 * Invoked in java class ProfessorMain does not work if the user has no
@@ -571,7 +600,7 @@ public class UserRealm extends JdbcRealm {
 			ps.setString(6, group);
 			ps.setInt(7, gender);
 			ps.executeUpdate();
-			System.out.println("executed the following statement on DB: " + newUserQuery);
+//			System.out.println("executed the following statement on DB: " + newUserQuery);
 			if (role == "student") {
 				ps2 = conn.prepareStatement(getUserByEmail);
 				ps2.setString(1, email);
@@ -1058,9 +1087,8 @@ public class UserRealm extends JdbcRealm {
 			while (rs.next()) {
 				group += rs.getString(1);
 			}
-			// System.out.println("executed the following statement on DB: " +
-			// getUserByEmail);
-			// System.out.println("the userid was "+userid);
+//			System.out.println("executed the following statement on DB: " + getGroupByEmail);
+//			System.out.println("the group was "+ group);
 		} finally {
 			JdbcUtils.closeStatement(ps);
 			conn.close();

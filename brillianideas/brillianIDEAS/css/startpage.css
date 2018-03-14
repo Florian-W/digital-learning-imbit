@@ -1,7 +1,20 @@
-html, body {
+html {
 	box-sizing: border-box;
 	font-family: 'Tinos';
 	color: var(--text);
+}
+
+body {
+	box-sizing: border-box;
+	font-family: 'Tinos';
+	color: var(--text);
+
+	/* top level grid */
+  display: grid;
+  grid-template-rows: 1fr 100px;
+  grid-template-columns: 100%;
+  grid-template-areas: "content"
+                        "launchbar";
 }
 
 #title{
@@ -25,6 +38,12 @@ html, body {
 	font-size: 1.1153846153846153846153846153846em;
 }
 
+/*#storer{
+	width: 15%;
+	top:15px;
+	right:10px;
+}*/
+
 #start_bg_ltr{
     top: 50%;
     width: 50vw;
@@ -40,6 +59,7 @@ html, body {
 	max-width: 75vw;
     transform: rotateX(45deg);
 }
+
 #arrowRight{
 	top: 50vh;
 	right: 1%;
@@ -47,6 +67,7 @@ html, body {
 	height: auto;
 	position: absolute;
 }
+
 #arrowLeft{
 	top: 50vh;
 	left: 1%;

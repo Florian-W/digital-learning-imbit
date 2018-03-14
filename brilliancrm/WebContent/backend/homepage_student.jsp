@@ -97,14 +97,10 @@
 	});
 	function confirmPasswordChange()
 	{
-		var box = window.confirm("Click OK if you want to change password. You will be logged out. ");
-		if(box)
-		{
 			$('#updatePassword').trigger('click');
 			sessionStorage.removeItem('userid');
 			window.location.href = 'LogoutUser';
 		}
-	}
 	
 	function changeViewUserProgress() {
 	 if(document.getElementById('setUserProgressForm').style.display == "none"){
@@ -112,8 +108,9 @@
 	
 	}else{
 		document.getElementById('setUserProgressForm').style.display = "none";
+		}
 	}
-	}
+	
 	
 </script>
 </body>
