@@ -44,6 +44,7 @@ dotstyle ul {
     cursor: pointer;
     background-color: transparent !important;
     transition: width 0.3s, height 0.3s;
+    bottom: -50px;
 }
 
 .dotstyle li a {

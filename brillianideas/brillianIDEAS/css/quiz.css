@@ -5,13 +5,13 @@
   border: 1px dotted black;
 }
 
-h1,h2 {color: #ffffff; font-family: "Caveat Brush";}
+h1,h2 {color: #ffffff; font-family: "Caveat Brush"; padding: 0 0 0 27px;}
 
 body{
     font-size: 180%;
 	font-weight: normal;
     line-height: 150%;
-	background-image: url("../img/background.gif");
+	background-image: url("../img/Background.gif");
 	background-size: cover;
 	background-attachment: fixed;
 	}
@@ -46,7 +46,7 @@ h2.quizHeader {
   font-weight:normal;
   font-size:25px;
   line-height: 27px;
-  margin: 24px 0 12px 0;
+  margin: 24px 10px 12px 0;
   padding: 0 0 4px 0;
   border-bottom: 1px solid #a2a2a2;
 }
@@ -58,8 +58,8 @@ h2.quizScore{
   margin: 24px 0 12px 0;
   text-align: center;
   position: relative;
-  width: 1200px;
-  height: 250px;
+  width: 130%;
+  height: 0px;
   top: 50px;
   left: 50px;
 }
@@ -192,4 +192,16 @@ SFS dark red = #9f2026; */
 a {
   color: #941a32;
   text-decoration: none;
+}
+
+b {
+  font-family: Caveat Brush, sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  position: absolute;
+  text-align: right;
+  width: 100%;
+  top: 4px;
+  right: 15px;
+  	}
 }
