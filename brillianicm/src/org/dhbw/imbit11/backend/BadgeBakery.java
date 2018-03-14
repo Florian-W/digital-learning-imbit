@@ -36,7 +36,7 @@ public class BadgeBakery extends HttpServlet {
 		ArrayList<String> lines = new ArrayList<String>();
 		String line = null;
 		String svgLocation = getSVGString(country);
-		File svgFile = new File("tmp_badge.svg");
+		File svgFile = new File("/opt/tomcat/webapps/brillianICM/img/badges/tmp_badge.svg");
 		try {
 			FileReader svgFileReader = new FileReader(svgLocation);
 			BufferedReader svgReader = new BufferedReader(svgFileReader);
@@ -78,31 +78,31 @@ public class BadgeBakery extends HttpServlet {
 		String fileLocation = "";
 		switch (country) {
 		case "Brazil":
-			fileLocation = "/opt/tomcat/webapps/brillianICM/img/badges/img/badges/badge_brazil.svg";
+			fileLocation = "/opt/tomcat/webapps/brillianICM/img/badges/badge_brazil.svg";
 			break;
 		case "Spain":
-			fileLocation = "/opt/tomcat/webapps/brillianICM/img/badges/img/badges/badge_spain.svg";
+			fileLocation = "/opt/tomcat/webapps/brillianICM/img/badges/badge_spain.svg";
 			break;
 		case "China":
-			fileLocation = "/opt/tomcat/webapps/brillianICM/img/badges/img/badges/badge_china.svg";
+			fileLocation = "/opt/tomcat/webapps/brillianICM/img/badges/badge_china.svg";
 			break;
 		case "USA":
-			fileLocation = "/opt/tomcat/webapps/brillianICM/img/badges/img/badges/badge_USA.svg";
+			fileLocation = "/opt/tomcat/webapps/brillianICM/img/badges/badge_USA.svg";
 			break;
 		case "Sweden":
 			fileLocation = "/opt/tomcat/webapps/brillianICM/img/badges/badge_sweden.svg";
 			break;
 		case "India":
-			fileLocation = "/opt/tomcat/webapps/brillianICM/img/badges/img/badges/badge_india.svg";
+			fileLocation = "/opt/tomcat/webapps/brillianICM/img/badges/badge_india.svg";
 			break;
 		case "Germany":
-			fileLocation = "/opt/tomcat/webapps/brillianICM/img/badges/img/badges/badge_germany.svg";
+			fileLocation = "/opt/tomcat/webapps/brillianICM/img/badges/badge_germany.svg";
 			break;
 		case "Turkey":
-			fileLocation = "/opt/tomcat/webapps/brillianICM/img/badges/img/badges/badge_turkey.svg";
+			fileLocation = "/opt/tomcat/webapps/brillianICM/img/badges/badge_turkey.svg";
 			break;
 		case "Australia":
-			fileLocation = "/opt/tomcat/webapps/brillianICM/img/badges/img/badges/badge_australia.svg";
+			fileLocation = "/opt/tomcat/webapps/brillianICM/img/badges/badge_australia.svg";
 			break;
 		}
 		return fileLocation;
@@ -113,6 +113,7 @@ public class BadgeBakery extends HttpServlet {
 
 		// reading private key. Insert location of file on server here
 		File privKeyFile = new File("/opt/tomcat/keys/rsapriv.der");
+
 
 		// read private key DER file
 		DataInputStream dis = new DataInputStream(new FileInputStream(privKeyFile));
