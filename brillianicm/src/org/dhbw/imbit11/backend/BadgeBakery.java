@@ -4,7 +4,6 @@ import javax.servlet.http.HttpServlet;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.ByteArrayOutputStream;
 import java.io.DataInputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -67,6 +66,8 @@ public class BadgeBakery extends HttpServlet {
 //			fileInputStream.close();
 		} catch (FileNotFoundException e) {
 			System.out.println("File not found.");
+			System.out.println("Attempting to read from file in (canonical Path): "+svgFile.getCanonicalPath());
+			System.out.println("Attempting to read from file in (absolute Path): "+svgFile.getAbsolutePath());
 		} catch (IOException e1) {
 			System.out.println("Error reading the file.");
 		}
@@ -90,7 +91,7 @@ public class BadgeBakery extends HttpServlet {
 			fileLocation = "img/badges/badge_USA.svg";
 			break;
 		case "Sweden":
-			fileLocation = "img/badge/badge_sweden.svg";
+			fileLocation = "/opt/tomcat/webapps/brillianICM/img/badges/badge_sweden.svg";
 			break;
 		case "India":
 			fileLocation = "img/badges/badge_india.svg";
