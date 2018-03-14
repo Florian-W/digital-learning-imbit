@@ -519,6 +519,7 @@ public class UserRealm extends JdbcRealm {
 			ps = conn.prepareStatement(updatePasswordQuery);
 			ps.setString(1, password);
 			ps.setString(2, email);
+			System.out.println(ps);
 			ps.executeUpdate();
 			// System.out.println("executed the following statement on DB: " +
 			// updatePasswordQuery);

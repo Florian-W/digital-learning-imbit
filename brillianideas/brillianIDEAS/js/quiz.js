@@ -116,11 +116,11 @@
 					break;
 				case 212:
 					ResultText = "Duales Studium? Das passt!<br>Die finanziellen Möglichkeiten, die ein duales Studium bietet, nutzen viele Studierende um neue Orte, sowohl beruflich als auch privat, kennenzulernen:<br>" + "<a href=http://www.dhbw.de/around-the-world.html target=_blank>Gute Gründe für ein Duales Studium</a>";
-					color = amber;
+					color = green;
 					break;
 				case 213:
 					ResultText = "Duales Studium? Das passt!<br>Die finanziellen Möglichkeiten, die ein duales Studium bietet, nutzen viele Studierende um neue Orte, sowohl beruflich als auch privat, kennenzulernen:<br>" + "<a href=http://www.dhbw.de/around-the-world.html target=_blank>Gute Gründe für ein Duales Studium</a>";
-					color = amber;
+					color = green;
 					break;
 				case 221:
 					ResultText = "Du bist noch unentschlossen?<br>" + "<a href=https://www.wegweiser-duales-studium.de target=_blank> Hier </a>" + "findest du Antworten auf deine Fragen!";
@@ -128,7 +128,7 @@
 					break;
 				case 222:
 					ResultText = "Duales Studium? Das passt!<br>Spannende Studiengänge der DHBW Mannheim findest du " + "<a href=https://www.dhbw-mannheim.de/duales-studium/studienangebot.html target=_blank>hier</a>" + "!";
-					color = amber;
+					color = green;
 					break;
 				case 223:
 					ResultText = "Super!<br>Du scheinst wie gemacht zu sein für ein duales Studium!<br>Deinen zukünftigen Arbeitgeber findest du bei deinem Studiengang: " + "<a href=https://www.dhbw-mannheim.de/duales-studium/studienangebot.html target=_blank>Zukunft planen</a>" + "!";
@@ -160,7 +160,7 @@
 					break;
 				case 321:
 					ResultText = "Klasse! Dir scheint ein duales Studium zu gefallen.<br>Melde dich gleich an unserer " + "<a href=http://www.partner.dhbw-mannheim.de/bewerberboerse.html target=_blank>Partnerbörse</a>" + " an und lass dich finden!";
-					color = amber;
+					color = green;
 					break;
 				case 322:
 					ResultText = "Super! Du scheinst für das duale Studium sehr geeignet zu sein!<br>Melde dich gleich an unserer " + "<a href=http://www.partner.dhbw-mannheim.de/bewerberboerse.html target=_blank>Partnerbörse</a>" + " an und lass dich finden!";
