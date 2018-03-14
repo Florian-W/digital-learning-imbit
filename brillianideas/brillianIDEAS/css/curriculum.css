@@ -80,6 +80,8 @@ html {
     font-size: 1.4em;
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
     hyphens: auto;
 }
 
