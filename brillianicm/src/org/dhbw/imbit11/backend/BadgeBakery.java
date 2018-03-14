@@ -4,7 +4,6 @@ import javax.servlet.http.HttpServlet;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.ByteArrayOutputStream;
 import java.io.DataInputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -37,7 +36,7 @@ public class BadgeBakery extends HttpServlet {
 		ArrayList<String> lines = new ArrayList<String>();
 		String line = null;
 		String svgLocation = getSVGString(country);
-		File svgFile = new File("tmp_badge.svg");
+		File svgFile = new File("/opt/tomcat/webapps/brillianICM/img/badges/tmp_badge.svg");
 		try {
 			FileReader svgFileReader = new FileReader(svgLocation);
 			BufferedReader svgReader = new BufferedReader(svgFileReader);
@@ -67,6 +66,7 @@ public class BadgeBakery extends HttpServlet {
 //			fileInputStream.close();
 		} catch (FileNotFoundException e) {
 			System.out.println("File not found.");
+			System.out.println("Attempting to read from file in (absolute Path): "+svgFile.getAbsolutePath());
 		} catch (IOException e1) {
 			System.out.println("Error reading the file.");
 		}
@@ -78,31 +78,31 @@ public class BadgeBakery extends HttpServlet {
 		String fileLocation = "";
 		switch (country) {
 		case "Brazil":
-			fileLocation = "WebContent/img/badges/badge_brazil.svg";
+			fileLocation = "/opt/tomcat/webapps/brillianICM/img/badges/badge_brazil.svg";
 			break;
 		case "Spain":
-			fileLocation = "WebContent/img/badges/badge_spain.svg";
+			fileLocation = "/opt/tomcat/webapps/brillianICM/img/badges/badge_spain.svg";
 			break;
 		case "China":
-			fileLocation = "WebContent/img/badges/badge_china.svg";
+			fileLocation = "/opt/tomcat/webapps/brillianICM/img/badges/badge_china.svg";
 			break;
 		case "USA":
-			fileLocation = "WebContent/img/badges/badge_USA.svg";
+			fileLocation = "/opt/tomcat/webapps/brillianICM/img/badges/badge_USA.svg";
 			break;
 		case "Sweden":
-			fileLocation = "WebContent/img/badge/badge_sweden.svg";
+			fileLocation = "/opt/tomcat/webapps/brillianICM/img/badges/badge_sweden.svg";
 			break;
 		case "India":
-			fileLocation = "WebContent/img/badges/badge_india.svg";
+			fileLocation = "/opt/tomcat/webapps/brillianICM/img/badges/badge_india.svg";
 			break;
 		case "Germany":
-			fileLocation = "WebContent/img/badges/badge_germany.svg";
+			fileLocation = "/opt/tomcat/webapps/brillianICM/img/badges/badge_germany.svg";
 			break;
 		case "Turkey":
-			fileLocation = "WebContent/img/badges/badge_turkey.svg";
+			fileLocation = "/opt/tomcat/webapps/brillianICM/img/badges/badge_turkey.svg";
 			break;
 		case "Australia":
-			fileLocation = "WebContent/img/badges/badge_australia.svg";
+			fileLocation = "/opt/tomcat/webapps/brillianICM/img/badges/badge_australia.svg";
 			break;
 		}
 		return fileLocation;
@@ -112,7 +112,8 @@ public class BadgeBakery extends HttpServlet {
 	private static String signBadge(String assertion) throws NoSuchAlgorithmException, IOException, InvalidKeySpecException, JOSEException {
 
 		// reading private key. Insert location of file on server here
-		File privKeyFile = new File("rsapriv.der");
+		File privKeyFile = new File("/opt/tomcat/keys/rsapriv.der");
+
 
 		// read private key DER file
 		DataInputStream dis = new DataInputStream(new FileInputStream(privKeyFile));

@@ -1087,8 +1087,8 @@ public class UserRealm extends JdbcRealm {
 			while (rs.next()) {
 				group += rs.getString(1);
 			}
-			System.out.println("executed the following statement on DB: " + getUserByEmail);
-			System.out.println("the userid was "+ group);
+//			System.out.println("executed the following statement on DB: " + getGroupByEmail);
+//			System.out.println("the group was "+ group);
 		} finally {
 			JdbcUtils.closeStatement(ps);
 			conn.close();
