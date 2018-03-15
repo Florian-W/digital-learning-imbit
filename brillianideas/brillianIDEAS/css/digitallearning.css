@@ -145,21 +145,6 @@ body {
     hyphens: auto;
 }
 
-/* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
 #titletext{
   font-weight:700;
   font-style:normal;
