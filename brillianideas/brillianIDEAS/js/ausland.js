@@ -9,9 +9,6 @@ function initMap() {
         center: mycenter
     });
 
-
-
-
     map.addListener("click", function (event){
       for (var i=0; i<array1.length; i++){
         array1[i].close();
@@ -34,7 +31,7 @@ function initMap() {
 		'<h2 id="secondHeading">Lara, 21</h2>' +
         '<div id="bodyContent">' +
         '<p> ' +
-		'Ich war zwei Monate in London und habe dort für einen Kunden der Konsumgüterindustrie das Go-Live eines Salesforce Projektes begleitet. Meine Aufgaben dabei umfassten, vor allem das Testing der implementierten Funktionen sowie die Administration und Bereitstellung einer Salesforce Testumgebung. So hatte ich die Möglichkeit,d die Prozesse vor Ort beim Kunden besser nachvollziehen zu können. Außerdem hatte ich an den Wochenenden die Möglichkeit London sowie weitere Städte und Sehenswürdigkeiten in Großbritannien zu erkunden.' +
+		'Ich war zwei Monate in London und habe dort für einen Kunden der Konsumgüterindustrie das Go-Live eines Salesforce Projektes begleitet. Meine Aufgaben dabei umfassten, vor allem das Testing der implementierten Funktionen sowie die Administration und Bereitstellung einer Salesforce Testumgebung. So hatte ich die Möglichkeit, die Prozesse vor Ort beim Kunden besser nachvollziehen zu können. Außerdem hatte ich an den Wochenenden die Möglichkeit, London sowie weitere Städte und Sehenswürdigkeiten in Großbritannien zu erkunden.' +
 
 		'<h2 id="secondHeading">Sebastian, 21</h2>' +
         '<div id="bodyContent">' +
@@ -73,7 +70,7 @@ function initMap() {
         '<h1 id="firstHeading">&ndash; Mailand &ndash;</h1>' +
 		'<h2 id="secondHeading">Christian, 21</h2>' +
         '<div id="bodyContent">' +
-        '<p>Ich war drei Monate an einem Auslandsstandort meiner Firma in Mailand. Hier habe ich mit einem internationalen Team eine neue Software für das Warehouse Management eingeführt. Mein Aufgabenbereich war vielfältig und herausfordernd. Ein Highlight war für mich das Arbeiten in einem internationalen Team in einer anderen Kultur, da dies sich noch einmal deutlich vom Arbeiten in internationalen Teams in Deutschland unterscheidet. Hierbei hat mir Spanisch als erlernte Fremdsprache an der DHBW geholfen, da Italienisch und Spanisch recht ähnlich sind und es mir so erleichtert hat auch noch etwas Italienisch zu lernen. An den Wochenenden habe ich die Stadt Mailand erkundet oder bin mit Freunden per Auto durch Nord-Italien gereist.' +
+        '<p>Ich war drei Monate an einem Auslandsstandort meiner Firma in Mailand. Hier habe ich mit einem internationalen Team eine neue Software für das Warehouse Management eingeführt. Mein Aufgabenbereich war vielfältig und herausfordernd. Ein Highlight war für mich das Arbeiten in einem internationalen Team und einer anderen Kultur, da sich dies noch einmal deutlich vom Arbeiten in internationalen Teams in Deutschland unterscheidet. Hierbei hat mir Spanisch als erlernte Fremdsprache an der DHBW geholfen, da Italienisch und Spanisch recht ähnlich sind. Das hat es mir erleichtert, auch noch etwas Italienisch zu lernen. An den Wochenenden habe ich die Stadt Mailand erkundet oder bin mit Freunden per Auto durch Nord-Italien gereist.' +
         '</p>' +
         '</div>' +
         '</div>';
@@ -107,7 +104,7 @@ function initMap() {
 		'<h1 id="firstHeading">&ndash; Hongkong &ndash;</h1>' +
 		'<h2 id="secondHeading">Elias, 22</h2>' +
         '<div id="bodyContent">' +
-        '<p>Während meiner Zeit in Hongkong war ich Teil des "Performance Improvement" Teams. Mein Fokus lag darauf, verschiedene Unternehmen bezüglich der Auswirkungen neuer Technologien wie Blockchain, FinTech und Cloud-Lösungen auf ihr Unternehmensmodell zu beraten. Darüber hinaus unterstützte ich bei der Entwicklung digitaler Strategien zur Optimierung des Kundenerlebnisses und der User Journeys. Sehr gut haben mir der hohe Grad an Eigenverantwortung und das starke Vertrauen in die Fähigkeiten der Mitarbeiter gefallen, welche im asiatischen Raum besonders ausgeprägt sind. Während meiner Freizeit hatte ich die Möglichkeit meinen interkulturellen Horizont zu erweitern, indem ich eine Vielzahl von Orten in der Volksrepublik China, Thailand, Malaysia und sogar der Demokratischen Volksrepublik Korea (Nordkorea) besucht habe.' +
+        '<p>Während meiner Zeit in Hongkong war ich Teil des Performance Improvement Teams. Mein Fokus lag darauf, verschiedene Unternehmen bezüglich der Auswirkungen neuer Technologien wie Blockchain, FinTech und Cloud-Lösungen auf ihr Unternehmensmodell zu beraten. Darüber hinaus unterstützte ich bei der Entwicklung digitaler Strategien zur Optimierung des Kundenerlebnisses und der User Journeys. Sehr gut haben mir der hohe Grad an Eigenverantwortung und das starke Vertrauen in die Fähigkeiten der Mitarbeiter gefallen, welche im asiatischen Raum besonders ausgeprägt sind. Während meiner Freizeit hatte ich die Möglichkeit, meinen interkulturellen Horizont zu erweitern, indem ich eine Vielzahl von Orten in der Volksrepublik China, Thailand, Malaysia und sogar der Demokratischen Volksrepublik Korea (Nordkorea) besucht habe.' +
         '</p>' +
         '</div>' +
         '</div>';
@@ -139,7 +136,7 @@ function initMap() {
         '<h1 id="firstHeading">&ndash; Dublin &ndash;</h1>' +
 		'<h2 id="secondHeading">Felix, 21</h2>' +
         '<div id="bodyContent">' +
-        '<p>Ich war zwei Monate lang im Digital Sales Centre in Dublin tätig, wo ich die Möglichkeit hatte mit einem jungen, motivierten Team zu arbeiten. In einem solch internationalen Team, waren besonders die im ICM Unterricht erlernten Kenntnisse sowie die Cloud Vorlesungen hilfreich. Abends ging es dann immer in die Innenstadt, wo man in den zahlreichen Pubs mit sehr internationalem Flair den Abend ausklingen lassen konnte.' +
+        '<p>Ich war zwei Monate lang im Digital Sales Centre in Dublin tätig, wo ich die Möglichkeit hatte, mit einem jungen, motivierten Team zu arbeiten. In einem solch internationalen Team waren besonders die im ICM Unterricht erlernten Kenntnisse sowie die Cloud Vorlesungen hilfreich. Abends ging es dann immer in die Innenstadt, wo man in den zahlreichen Pubs mit sehr internationalem Flair den Abend ausklingen lassen konnte.' +
         '</p>' +
         '</div>' +
         '</div>';
@@ -204,7 +201,7 @@ function initMap() {
 		'<h2 id="secondHeading">Kevin, 22</h2>' +
         '<div id="bodyContent">' +
         '<p>' +
-        'Im Zuge meines Studiums habe ich drei Monate in Spaniens Hauptstadt Madrid verbracht. Dort war ich, neben dem Schreiben einer Projektarbeit, an der Einführung eines neuen SAP CRM Systems für unsere Standorte in Spanien, UK und Südafrika involviert. Geholfen haben mir dabei Vorlesungen wie Wirtschaftsinformatik und Datenbanken. Meine Freizeit habe ich mit der spanischen Küche, dem Nachtleben sowie den vielen Sehenswürdigkeiten und Museen verbracht, die die Stadt zu bieten hat. Insgesamt war es eine tolle Erfahrung.'
+        'Im Zuge meines Studiums habe ich drei Monate in Spaniens Hauptstadt Madrid verbracht. Dort war ich, neben dem Schreiben einer Projektarbeit, an der Einführung eines neuen SAP CRM Systems für unsere Standorte in Spanien, UK und Südafrika involviert. Geholfen haben mir dabei Vorlesungen wie Wirtschaftsinformatik und Datenbanken. Meine Freizeit habe ich mit der spanischen Küche, dem Nachtleben sowie den vielen Sehenswürdigkeiten und in Museen verbracht, die die Stadt zu bieten hat. Insgesamt war es eine tolle Erfahrung.'
 		'</p>' +
         '</div>' +
         '</div>';
@@ -237,7 +234,7 @@ function initMap() {
 		'<h2 id="secondHeading">Maria, 28</h2>' +
         '<div id="bodyContent">' +
         '<p>' +
-        'Sehr kurzfristig schickte mich mein Chef zu einem Kunden in Mexiko, bei dem der Go-Live der Produktion in einem neuen Werk erfolgen sollte, ohne dass die IT-Infrastruktur dazu bereit war. Ich hatte vor Ort nur dreieinhalb Tage Zeit, um den IT-Verantwortlichen so gut wie möglich zu unterstützen, dennoch habe ich in dieser Zeit viel über Kommunikation und Interkulturelles Management gelernt und konnte meine Spanischkenntnisse sehr erfolgreich einsetzen. Besonders durch die Kommunikation zwischen den Service Providern konnte ich zum Erfolg des Go-Live beitragen. Außerdem konnte ich mir die hübschen Städte Querétaro und San Miguel anschauen und die Kultur ein bisschen kennen lernen.'
+        'Sehr kurzfristig schickte mich mein Chef zu einem Kunden in Mexiko, bei dem der Go-Live der Produktion in einem neuen Werk erfolgen sollte, ohne dass die IT-Infrastruktur dazu bereit war. Ich hatte vor Ort nur dreieinhalb Tage Zeit, um den IT-Verantwortlichen so gut wie möglich zu unterstützen. Dennoch habe ich in dieser Zeit viel über Kommunikation und interkulturelles Management gelernt und konnte meine Spanischkenntnisse sehr erfolgreich einsetzen. Besonders durch die Kommunikation zwischen den Service Providern konnte ich zum Erfolg des Go-Lives beitragen. Außerdem konnte ich mir die hübschen Städte Querétaro und San Miguel anschauen und die Kultur ein bisschen kennen lernen.'
 		'</p>' +
         '</div>' +
         '</div>';
@@ -271,12 +268,12 @@ function initMap() {
         '<div id="bodyContent">' +
         '<p>' +
 
-		'Durch meinen Auslandseinsatz habe ich die Möglichkeit bekommen zu erfahren, wie es ist in einer anderen Umgebung zu arbeiten. Es hat mir gezeigt, wie viel ich über die letzten Jahre gelernt habe und wo ich noch Verbesserungspotenzial habe. Insgesamt war der Auslandseinsatz die perfekte Umgebung um meine Zukunft nach dem Studium zu testen. Ähnlich wie ich es in einer neuen Firma tun würde, habe ich in einer neuen Stadt, mit neuen Kollegen und Abläufen, arbeiten dürfen.' +
+		'Durch meinen Auslandseinsatz habe ich die Möglichkeit bekommen zu erfahren, wie es ist, in einer anderen Umgebung zu arbeiten. Es hat mir gezeigt, wie viel ich über die letzten Jahre gelernt habe und wo ich noch Verbesserungspotenzial habe. Insgesamt war der Auslandseinsatz die perfekte Umgebung, um meine Zukunft nach dem Studium zu testen. Ähnlich wie ich es in einer neuen Firma tun würde, habe ich in einer neuen Stadt, mit neuen Kollegen und Abläufen arbeiten dürfen.' +
 
 		'<h2 id="secondHeading">Nina, 23</h2>' +
         '<div id="bodyContent">' +
         '<p>' +
-        'Ich war zwei Monate in Singapur und habe in einem Sales Team, mit Verantwortlichkeit über ganz Asia-Pacific, gearbeitet. Die Sales Aktivitäten haben an viele gelernte Fähigkeiten aus den Vorlesungen an der DHBW angeknüpft, unter anderem an Kenntnisse aus Wirtschaftsinformatik, der IoT Fallstudie in Semester 4 und natürlich ICM. Da Sales Teams meistens nicht zusammen in der Firma sitzen, sondern sich vor Ort beim Kunden aufhalten, hatte ich sofort selbständig arbeiten und mit den Menschen vor Ort kommunizieren müssen, was unheimlich viel Spaß gemacht hat. Ich habe dadurch viele Menschen aus ganz unterschiedlichen Kulturen kennengelernt. Nach der Arbeit sind meine Kollegen sehr oft mit mir essen gegangen oder haben mir mehr von Singapur gezeigt. An Wochenenden habe ich oft Kurztrips in andere asiatische Städte gemacht oder mich mit Freunden am Strand getroffen.' +
+        'Ich war zwei Monate in Singapur und habe in einem Sales Team mit Verantwortlichkeit über ganz Asia-Pacific gearbeitet. Die Sales Aktivitäten haben an viele gelernte Fähigkeiten aus den Vorlesungen an der DHBW angeknüpft, unter anderem an Kenntnisse aus Wirtschaftsinformatik, der IoT Fallstudie in Semester 4 und natürlich ICM. Da Sales Teams meistens nicht zusammen in der Firma sitzen sondern sich vor Ort beim Kunden aufhalten, hatte ich sofort selbständig arbeiten und mit den Menschen vor Ort kommunizieren müssen, was unheimlich viel Spaß gemacht hat. Ich habe dadurch viele Menschen aus ganz unterschiedlichen Kulturen kennengelernt. Nach der Arbeit sind meine Kollegen sehr oft mit mir essen gegangen oder haben mir mehr von Singapur gezeigt. An den Wochenenden habe ich oft Kurztrips in andere asiatische Städte gemacht oder mich mit Freunden am Strand getroffen.' +
 
 		'<h2 id="secondHeading">Stefany, 22</h2>' +
         '<div id="bodyContent">' +
@@ -314,12 +311,12 @@ function initMap() {
 		'<h2 id="secondHeading">Rebecca, 26</h2>' +
         '<div id="bodyContent">' +
         '<p>' +
-		'Ich war zwei Monate in Atlanta, Georgia, in einem Projekt in dem es um die technische Umsetzung der neuen GDPR-Richtlinien ging. Meine Aufgaben dort reichten von Projektmanagement-Aufgaben über die Visualisierung der benötigten IT-Architektur bis hin zum Provisioning entsprechender Server. Besonders gefiel mir, wie abwechslungsreich meine Aufgaben waren und dass es sich um ein hochaktuelles Thema handelte, sowie die Arbeit in einem sehr internationalen, weltweit aufgestellten Team. Besonders hilfreich waren für mich an der DHBW erlernte Aspekte des Projektmanagements und der Systemanalyse (bzw. des Systemdesigns). In meiner Freizeit war ich viel mit "locals" unterwegs um die Region zu erkunden, oder bin gereist.'+
+		'Ich war zwei Monate in Atlanta, Georgia, und habe auf einem Projekt mitgearbeitet, bei dem es um die technische Umsetzung der neuen GDPR-Richtlinien ging. Meine Aufgaben dort reichten von Projektmanagement-Tätigkeiten über die Visualisierung der benötigten IT-Architektur bis hin zum Provisioning entsprechender Server. Besonders gefiel mir, wie abwechslungsreich meine Aufgaben waren und dass es sich um ein hochaktuelles Thema handelte sowie die Arbeit in einem sehr internationalen, weltweit aufgestellten Team. Hilfreich waren für mich die an der DHBW erlernte Aspekte des Projektmanagements und der Systemanalyse (bzw. des Systemdesigns). In meiner Freizeit war ich viel mit Locals unterwegs, um die Region zu erkunden oder bin gereist.'+
 
         '<h2 id="secondHeading">Sophia, 22</h2>' +
         '<div id="bodyContent">' +
         '<p>' +
-        'Ich war drei Monate in Atlanta und habe dort meine Abteilung in einem internen Strategieprojekt unterstützt. In dem Projekt ging es um die Konstruktion einer Datenplattform, die zum Ziel hatte fundierte datengesteuerte Geschäftsentscheidungen basierend auf zuverlässigen und umfassenden Datensätzen zu treffen. Insgesamt konnte ich mich in vielerlei Hinsicht weiterentwickeln. Zum einen ist das Arbeiten in einem anderen Land immer mit interkulturellen Differenzen, die es zu überbrücken gilt, verbunden und zum anderen hatte ich die Möglichkeit insbesondere mein erlerntes Fachwissen aus Datenbanken, Systemanalyse und Communication Systems in der Praxis anzuwenden. An den Wochenenden und in meinem Urlaub habe ich die Zeit genutzt, um quer durch die USA zu reisen. Ich würde es auf jeden Fall wieder machen.'
+        'Ich war drei Monate in Atlanta und habe dort meine Abteilung in einem internen Strategieprojekt unterstützt. In dem Projekt ging es um die Konstruktion einer Datenplattform, die zum Ziel hatte, fundierte, datengesteuerte Geschäftsentscheidungen basierend auf zuverlässigen und umfassenden Datensätzen zu treffen. Insgesamt konnte ich mich in vielerlei Hinsicht weiterentwickeln. Zum einen ist das Arbeiten in einem anderen Land immer mit interkulturellen Differenzen, die es zu überbrücken gilt, verbunden und zum anderen hatte ich die Möglichkeit, insbesondere mein erlerntes Fachwissen aus Datenbanken, Systemanalyse und Communication Systems, in der Praxis anzuwenden. An den Wochenenden und in meinem Urlaub habe ich die Zeit genutzt, um quer durch die USA zu reisen. Ich würde es auf jeden Fall wieder machen.'
 		'</p>' +
         '</div>' +
         '</div>';
@@ -356,7 +353,7 @@ function initMap() {
         '<h2 id="secondHeading">Tobias, 22</h2>' +
         '<div id="bodyContent">' +
         '<p>' +
-        'Im Zuge eines Outsourcing-Projektes für einen Kunden bin ich nach Beijing gereist. Vor Ort habe ich eine Bestandsaufnahme der SAP- & IT-Prozesse gemacht und evaluiert welche Aufgaben ein zukünftiger Service Provider zu bewältigen hat sowie diese in einem Anforderungskatalog erfasst. Mit Hilfe von Request for Proposals, aufgebaut anhand des Anforderungskataloges, holte ich mehrere Service-Angebote für unseren Kunden ein und übergab diese dem General Manager China. Die Selbstständigkeit und Eigenverantwortung in meinem Projekt haben mich, insbesondere in der Bewältigung von Herausforderungen, aber auch in meiner Organisation und Planung, besser gemacht. Hilfreich waren für mich hier die an der DHBW erlernten Kenntnisse im Projektmanagement sowie dem Fachwissen aus IT und Wirtschaftsinformatik. Abseits des geschäftlichen Alltags nutzte ich die Wochenenden, um mit Freunden diverse Städte und Sehenswürdigkeiten zu besichtigen.' +
+        'Im Zuge eines Outsourcing-Projektes für einen Kunden bin ich nach Beijing gereist. Vor Ort habe ich eine Bestandsaufnahme der SAP- & IT-Prozesse gemacht und evaluiert, welche Aufgaben ein zukünftiger Service Provider zu bewältigen hat, sowie diese in einem Anforderungskatalog erfasst. Mit Hilfe von Request for Proposals, aufgebaut anhand des Anforderungskataloges, holte ich mehrere Service-Angebote für unseren Kunden ein und übergab diese dem General Manager China. Die Selbstständigkeit und Eigenverantwortung in meinem Projekt haben mich, insbesondere in der Bewältigung von Herausforderungen, aber auch in meiner Organisation und Planung, besser gemacht. Hilfreich waren für mich hier die an der DHBW erlernten Kenntnisse im Projektmanagement sowie dem Fachwissen aus IT und Wirtschaftsinformatik. Abseits des geschäftlichen Alltags nutzte ich die Wochenenden, um mit Freunden diverse Städte und Sehenswürdigkeiten zu besichtigen.' +
         '</p>' +
         '</div>' +
         '</div>';
@@ -389,7 +386,7 @@ function initMap() {
 		'<h2 id="secondHeading">Niklas, 21</h2>' +
 		'<div id="bodyContent">' +
         '<p>' +
-        'Meinen Auslandseinsatz verbrachte ich in einem Finance Shared Service Center eines Kunden, aus der Chemieindustrie. Dort arbeitete ich in den Bereichen Record-To-Report sowie Procure-To-Pay Accounting und unterstützte den Kunden bei seiner Financial Transformation. Die Zeit im Ausland war für mich eine sehr wertvolle Erfahrung - sowohl in fachlicher als auch persönlicher Hinsicht. ' +
+        'Meinen Auslandseinsatz verbrachte ich in einem Finance Shared Service Center eines Kunden aus der Chemieindustrie. Dort arbeitete ich in den Bereichen Record-To-Report sowie Procure-To-Pay Accounting und unterstützte den Kunden bei seiner Financial Transformation. Die Zeit im Ausland war für mich eine sehr wertvolle Erfahrung - sowohl in fachlicher, als auch persönlicher Hinsicht. ' +
         '</p>' +
         '</div>' +
         '</div>';
@@ -455,7 +452,7 @@ function initMap() {
 		'<h2 id="secondHeading">Liza, 22</h2>' +
        '<div id="bodyContent">' +
         '<p>' +
-        'Ich habe meinen dreimonatigen Auslandsaufenthalt in Boston verbracht. Dort arbeitete ich mit dem Software Entwicklungsteam für HR Solutions zusammen und habe den "Go to Market" Prozess eines bestimmten Produktes unterstützt. Ich konnte viele erlernte Fähigkeiten aus den Vorlesungen an der DHBW anwenden, besonders beim technischen Verständnis und bei der interkulturellen Zusammenarbeit. Neben der Arbeit habe ich die Chance genutzt das Land zu erkunden und so viele Orte wie möglich zu sehen. Ich bin sehr froh darüber, dass mir die Chance gegeben wurde für drei Monate in einem anderen Land zu leben und zu arbeiten. '
+        'Ich habe meinen dreimonatigen Auslandsaufenthalt in Boston verbracht. Dort arbeitete ich mit dem Software Entwicklungsteam für HR Solutions zusammen und habe den Go-to-Market-Prozess eines Produktes unterstützt. Ich konnte viele erlernte Fähigkeiten aus den Vorlesungen an der DHBW anwenden, besonders beim technischen Verständnis und bei der interkulturellen Zusammenarbeit. Neben der Arbeit habe ich die Chance genutzt, das Land zu erkunden und so viele Orte wie möglich zu sehen. Ich bin sehr froh darüber, dass mir die Chance gegeben wurde, für drei Monate in einem anderen Land zu leben und zu arbeiten. '
 		'</p>' +
         '</div>' +
         '</div>';
@@ -488,7 +485,7 @@ function initMap() {
 		'<h2 id="secondHeading">Katharina, 22</h2>' +
         '<div id="bodyContent">' +
         '<p>' +
-        'Ich war zwei Monate in Brasov, Rumänien, und in einem Projekt tätig, welches in der Versicherungsbranche tätig ist. Hier habe ich ein Konzept erstellt, um auf einer internen Webseite Gamification zu implementieren. Hierzu habe ich mehrere kleine Design Thinking Workshops durchgeführt und mithilfe von Axure RP Screens erstellt, an denen sich die Entwickler orientieren konnten. Meine Kollegen waren sehr hilfsbereit und ich habe selten so eine Gastfreundschaft erlebt Rumänien ist nicht so, wie man es sich vorstellt: die Natur ist der Wahnsinn, die Berge sind vergleichbar mit den Alpen.'
+        'Meinen zweimonatigen Auslandseinsatz verbrachte ich in Brasov, Rumäninen, auf einem Projekt in der Versicherungsbranche. Hier habe ich ein Konzept erstellt, um auf einer internen Webseite Gamification zu implementieren. Hierzu habe ich mehrere kleine Design Thinking Workshops durchgeführt und mithilfe von Axure RP Screens erstellt, an denen sich die Entwickler orientieren konnten. Meine Kollegen waren sehr hilfsbereit und ich habe selten so eine Gastfreundschaft erlebt Rumänien ist nicht so, wie man es sich vorstellt: die Natur ist der Wahnsinn, die Berge sind vergleichbar mit den Alpen.'
 		'</p>' +
         '</div>' +
         '</div>';
@@ -521,12 +518,12 @@ function initMap() {
 		'<h2 id="secondHeading">Alexandra, 21</h2>' +
         '<div id="bodyContent">' +
         '<p>' +
-        'Meinen Auslandseinsatz habe ich im Headquarter meiner Firma in Armonk, USA, verbracht, welches nahe New York liegt. Hier habe ich das Programmmanagement unseres "Corporate Service Corps" pro bono Programmes unterstützt und wertvolle Einblicke in den Bereich der Corporate Citizenship bekommen. In der Zeit konnte ich sehr viel lernen - sowohl fachlich als auch in Sachen interkulturelle Kommunikation. Nach der Arbeit und an den Wochenenden ging es fast immer nach New York - eine unglaubliche Stadt in welcher es einem nie langweilig wird! ' +
+        'Meinen Auslandseinsatz habe ich im Hauptsitz meiner Firma in Armonk, USA, verbracht, welches nahe New York liegt. Hier habe ich das Programmmanagement unseres "Corporate Service Corps" pro bono Programmes unterstützt und wertvolle Einblicke in den Bereich der Corporate Citizenship bekommen. In der Zeit konnte ich sehr viel lernen - sowohl fachlich, als auch in Sachen interkulturelle Kommunikation. Nach der Arbeit und an den Wochenenden ging es fast immer nach New York - eine unglaubliche Stadt, in welcher es einem nie langweilig wird! ' +
 
         '<h2 id="secondHeading">Felix, 21</h2>' +
 		'<div id="bodyContent">' +
         '<p>' +
-        'In meinem vierten Praxiseinsatz hatte ich die Chance, für zweieinhalb Monate im Bereich Corporate Citizenship in New York zu arbeiten. Ich war verantwortlich, ein Bewerbungsverfahren für ein internes Leadership Development Programm, bei dem Mitarbeiter auf wohltätigen Projekten auf der ganzen Welt eingesetzt werden, zu entwickeln. Dabei waren vor allem meine BWL- und Projektmanagement-Kenntnisse aus der Uni hilfreich. Für mich war es ein echtes Highlight, über einen längeren Zeitraum in einer Metropole wie New York zu leben - ich habe sehr viel gesehen und kenne mich besser aus, als jeder Urlaub es hätte ermöglichen können.' +
+        'In meinem vierten Praxiseinsatz hatte ich die Chance, für zweieinhalb Monate im Bereich Corporate Citizenship in New York zu arbeiten. Ich war verantwortlich, ein Bewerbungsverfahren für ein internes Leadership Development Programm, bei dem Mitarbeiter auf wohltätigen Projekten auf der ganzen Welt eingesetzt werden, zu entwickeln. Dabei waren vor allem meine BWL- und Projektmanagement-Kenntnisse aus der Uni hilfreich. Für mich war es ein echtes Highlight, für einen längeren Zeitraum in einer Metropole wie New York zu leben. Ich habe sehr viel gesehen und kenne mich besser aus, als jeder Urlaub es hätte ermöglichen können.' +
                '</p>' +
         '</div>' +
         '</div>';
@@ -594,7 +591,7 @@ function initMap() {
 		'<h2 id="secondHeading">Julian, 20</h2>' +
 		'<div id="bodyContent">' +
         '<p>' +
-        'In Bengaluru habe ich meinen dritten Praxiseinsatz verbracht in einem Entwicklungsteam, das einen ChatBot Service baute, der Informationen zu Ticketstatus und Lösungen zu Standardproblemen ausgibt. Alle Kollegen waren sehr nett - ich war schnell Teil des Teams und konnte die indische Kultur aus nächster Nähe kennen lernen. Da man in der IT zwangsläufig mit Indern zu tun haben wird, ist es sehr hilfreich zu verstehen wie Dinge in Indien funktionieren und Menschen dort denken.' +
+        'In Bengaluru habe ich meinen dritten Praxiseinsatz in einem Entwicklungsteam verbracht, das einen ChatBot Service baute, der Informationen zu Ticketstatus und Lösungen zu Standardproblemen ausgibt. Alle Kollegen waren sehr nett - ich war schnell Teil des Teams und konnte die indische Kultur aus nächster Nähe kennen lernen. Da Indien in der heutigen IT eine bedeutsame Rolle spielt, ist es hilfreich, die indische Kultur zu kennen.' +
 		'</p>' +
         '</div>' +
         '</div>';
