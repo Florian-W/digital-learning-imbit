@@ -436,11 +436,10 @@ body {
 }
 
 .modal_picture{
-  height: auto;
+  height: 16vh;
   padding-right: 10px;
   padding-bottom: 10px;
   float: left;
-  width: 15%;
 }
 
 .modal_picture_small_size{
