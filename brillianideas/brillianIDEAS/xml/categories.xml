@@ -368,6 +368,7 @@ Genutzt werden virtuelle Welten unter anderem für Rollenspiele, Gruppenarbeiten
 
 <NewContentItems>
 	<NewContent_Name>BWL</NewContent_Name>
+	<NewContent_Video>XBymMDVMPoQ</NewContent_Video>
 	<NewContent_Beschreibung>Das folgende Modul behandelt weiterführende Fragen zur allgemeinen Betriebswirtschaftslehre. Hier kannst du das übergreifende Wissen aus den anderen BWL-Modulen testen.</NewContent_Beschreibung>
 	<jsonFileName>BWL-Quiz.json</jsonFileName>
 	<ButtonClass>buttonToQuiz6</ButtonClass>
