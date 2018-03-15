@@ -41,22 +41,23 @@
     left: 0;
     top: 0;
     min-width: 925px;
-    z-index: 2;
+    z-index: 1;
     background: #8b1831;
     line-height: 36px;
     height: 50px;
-	z-index:1;}
+	z-index: 1;
+	}
 
 #box {
 	position: fixed;
 	width: 20%;
 	height: 300px;
-	background-color:rgba(255, 255, 255, 0.6);
-	bottom:30px;
-	left:0px;
-	z-index:2;
+	background-color: rgba(255, 255, 255, 0.6);
+	bottom: 30px;
+	left: 0px;
+	z-index: 3;
 	overflow-x: scroll;
-	overflow-x:hidden;
+	overflow-x: hidden;
 	width: 20%;
 }
 
@@ -75,19 +76,42 @@ p#SummerSchoolText {
 	left: 2%;
 	right: 2%;
 	bottom: 2%;
+	z-index: 2;
 }
 
-h1 {position:relative; text-align:center; font-family: Caveat, serif; font-size: 30px; padding: 0.5% 0% 0% 0%; margin:0; color: white;}
-h1#firstHeading {color: black;}
-CSS /style.cssen.marnoto.com
+h1 {
+	position: relative;
+	text-align: center;
+	font-family: Caveat, serif;
+	font-size: 30px;
+	padding: 0.5% 0% 0% 0%;
+	margin: 0;
+	color: white;}
+	h1#firstHeading {color: black;}
+	CSS /style.cssen.marnoto.com
 
-h2 {position:relative; text-align:left; font-family: Caveat, serif; font-size: 30px; padding: 10px 0px 10px 0px; margin:0; color: white;}
-h2#secondHeading {color: black;}
-CSS /style.cssen.marnoto.com
+h2 {
+	position: relative;
+	text-align: left;
+	font-family: Caveat, serif;
+	font-size: 30px;
+	padding: 10px 0px 10px 0px;
+	margin: 0;
+	color: white;}
+	h2#secondHeading {color: black;}
+	CSS /style.cssen.marnoto.com
 
-h3 {position:relative; text-align:center; font-family: Caveat, serif; font-size: 20px; padding: 0px 0px 0px 0px; margin:0; color: black;}
-h3#thirdHeading {color: black; text-align:center; font-size: 25px;}
-CSS /style.cssen.marnoto.com
+h3 {
+	position: relative;
+	text-align: center;
+	font-family: Caveat, serif;
+	font-size: 20px;
+	padding: 0px 0px 0px 0px;
+	margin: 0;
+	color: black;}
+	h3#thirdHeading {color: black; text-align:center; font-size: 25px;}
+	CSS /style.cssen.marnoto.com
+	
 #map {
 
 }

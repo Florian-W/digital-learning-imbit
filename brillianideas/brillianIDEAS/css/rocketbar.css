@@ -31,6 +31,7 @@ JS as there is no or not sufficient CSS only solution. */
   position: absolute;
   top:-47px;
   left:100px;
+	cursor: pointer;
 }
 
 /* grid classes */
