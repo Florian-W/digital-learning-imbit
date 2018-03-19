@@ -42,17 +42,18 @@
 			<div class="welcome"></div>
 		</div>
 	</div>
-<div class="center" data-options="region:'center'">
+<div class="center" data-options="region:'center'" align="center" style="padding-left: 2%; padding-right: 2%">
 <h3>Welcome to brillianCRM</h3>
 <p>Please fill in the form below and hit the send button to register:</p>
+<p>Multiple addresses can be separated by ";".
 <p style="color:red">${status}</p>
-<form action="SendRegistrationLink" method="post">
+<form action="SendRegistrationLink" method="post"> 
  <input type="text" name="link" maxlength="50" value="${link}" style="display:none"/> <!-- Needed to post the groupnumber -->
- e-mail <input type="email" name="email" maxlength="50"/><br />
-<input id="sendRegistration" style="display:none" type="submit" value="Send registration link"></input>
-<a class= "easyui-linkbutton" onclick="$('#sendRegistration').trigger('click')">Send registration link</a>
+ <textarea type="email" name="email" style="width: 355px; height: 150px" placeholder="Please fill in only valid e-mail adresses."></textarea><br />
+<input id="sendRegistration" style="display:none" type="submit" value="Send registration link"></input> <br /> 
+<a class= "easyui-linkbutton" onclick="$('#sendRegistration').trigger('click')" style="margin-bottom: 10px">Send registration link</a>
  </form>
- <form action="<%out.print(application.getContextPath());%>/Professor" method="post">
+ <form action="${pageContext.request.contextPath}/Professor" method="post">
     <input id="backButton" style="display:none" type="submit" value="Back"><a class= "easyui-linkbutton" onclick="$('#backButton').trigger('click')">Back</a>
 </form>
 <div class="mainEventContainerImprint easyui-window" data-options="closed:true,width:863,height:576"></div>

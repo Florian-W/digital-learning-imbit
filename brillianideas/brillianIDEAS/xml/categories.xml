@@ -27,7 +27,7 @@
 	<LearningType>
 		<Medium>Virtuelle&#13;&#10;3D-Welten</Medium>
 		<Abbr>3dwelt</Abbr>
-		<Description>Virtuelle Welten sind Lernumgebungen innerhalb deren die Anwender in Form eines virtuellen Charakters, (Avatar) handeln und mit anderen Nutzern kommunizieren können. Dieser Avatar verfügt über bestimmte Merkmale und Fähigkeiten, die erweitert und verändert werden können. 
+		<Description>Virtuelle Welten sind Lernumgebungen innerhalb deren die Anwender in Form eines virtuellen Charakters, (Avatar) handeln und mit anderen Nutzern kommunizieren können. Dieser Avatar verfügt über bestimmte Merkmale und Fähigkeiten, die erweitert und verändert werden können.
 Genutzt werden virtuelle Welten unter anderem für Rollenspiele, Gruppenarbeiten, virtuelle Klassenzimmer sowie zur kooperativen Gestaltung von Objekten. Studien haben bewiesen, dass sich die verstärkte Präsenzerfahrung in virtuellen Welten positiv auf das Engagement und die informellen Lernprozesse der Studierenden auswirken. Mit virtuellen Welten können verschiedenen Lerntypen und -stile unterstützt werden, allerdings hängt der erfolgreiche Einsatz stark von der Usability und den technischen Rahmenbedingungen, wie Hardware oder Netzwerk, an der Universität bzw. auf Seiten des Anwenders ab.</Description>
 		<Thumb>img/thumbs/typen/virtuelle_3d_welt.jpg</Thumb>
 	</LearningType>
@@ -249,7 +249,7 @@ Genutzt werden virtuelle Welten unter anderem für Rollenspiele, Gruppenarbeiten
 	</Groups>
 	<Groups>
 		<Group-Name>Wirtschaft</Group-Name>
-		<Abbr>W</Abbr>			
+		<Abbr>W</Abbr>
 		<Classes>
 			<Name>Betriebswirtschaftliche Standardlösungen</Name>
 			<Number>W3WI_IMBIT_402</Number>
@@ -364,14 +364,15 @@ Genutzt werden virtuelle Welten unter anderem für Rollenspiele, Gruppenarbeiten
 	<jsonFileName>Shareholder-Stakeholder-Ansatz.json</jsonFileName>
 	<ButtonClass>buttonToQuiz5</ButtonClass>
 	<ButtonID>quizStakeholderShareholder</ButtonID>
-  </NewContentItems>	
-  
-<NewContentItems>		
+  </NewContentItems>
+
+<NewContentItems>
 	<NewContent_Name>BWL</NewContent_Name>
-	<NewContent_Beschreibung>Das folgende Modul behandelt weiterführende Fragen zur allgemeinen Betriebswirtschaftslehre. Hier kannst du das übergreifende Wissen aus den anderen BWL-Modulen testen.</NewContent_Beschreibung>	
-	<jsonFileName>SurveyMonkey_questions.json</jsonFileName>		
-	<ButtonClass>buttonToQuiz6</ButtonClass>		
-	<ButtonID>quizSurveyMonkey</ButtonID>		
-</NewContentItems>	
-	
+	<NewContent_Video>XBymMDVMPoQ</NewContent_Video>
+	<NewContent_Beschreibung>Das folgende Modul behandelt weiterführende Fragen zur allgemeinen Betriebswirtschaftslehre. Hier kannst du das übergreifende Wissen aus den anderen BWL-Modulen testen.</NewContent_Beschreibung>
+	<jsonFileName>BWL-Quiz.json</jsonFileName>
+	<ButtonClass>buttonToQuiz6</ButtonClass>
+	<ButtonID>quizBWL-Quiz</ButtonID>		
+</NewContentItems>
+
 </Categories>

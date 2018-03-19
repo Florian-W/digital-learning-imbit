@@ -1,43 +1,77 @@
-.expstickybar{
-position:fixed;
-color: black;
-right:0; /*horizontally center bar in window*/
-left:0; /*horizontally center bar in window*/
-visibility:hidden;
-background: transparent;
-z-index: 10000;
-transform: translateZ(1000px);
-width:auto; /*set width of bar to width of entire window*/
-font-weight:bold;
+/* the rocket bar is not animated yet and there is no
+navigation logic in the small tentacle images.
+With 99% probability this logic has to be done With
+JS as there is no or not sufficient CSS only solution. */
+
+.rocketbar{
+	width: 100%;
+	background-color: grey;
+  position: fixed;
+  bottom: 0px;
+	left: 0px;
+  margin: 0px;
+	max-height: 0px;
+
+	transition: all 1.5s;
+
+/* grid definition */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows:auto;
+  grid-template-areas: "imbit digitallearning icm crm wiki interactive impressum";
+  grid-column-gap: 60px;
 }
 
-.expstickybar figure {
-	display: table-cell; 
-	padding: 0 0%; 
-	text-align: center;
+.rocketbar.open {
+    max-height: 175px;
 }
 
-#rb_toggle{
-	/*background-color: var(--border);*/
-	height: 60px;
-	border-top-left-radius: 50px;
-	border-top-right-radius: 50px;
-	position: relative;
-	float:left;
-	left: 1%;
-}
-.content{
-	background-color: var(--border);
-	display: table; 
-	width: 100%; 
-	left: auto; 
-	right: auto;	
-	vertical-align: middle;
+/* tentacle on top of rocketbar */
+#tentacle_img_small_launchbar{
+  position: absolute;
+  top:-47px;
+  left:100px;
+	cursor: pointer;
 }
 
-.content img{
-	width: 8vw;
-	height: auto; 
-	padding-top: 7%;
-	padding-bottom: 7%;
+/* grid classes */
+.icon{
+  width: 80%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.imbit{
+  grid-area: imbit;
+  text-align: center;
+}
+
+.digitallearning{
+  grid-area: digitallearning;
+  text-align: center;
+}
+
+.icm{
+  grid-area: icm;
+  text-align: center;
+}
+
+.crm{
+  grid-area: crm;
+  text-align: center;
+}
+
+.wiki{
+  grid-area: wiki;
+  text-align: center;
+}
+
+.interactive{
+  grid-area: interactive;
+  text-align: center;
+}
+
+.impressum{
+  grid-area: impressum;
+  text-align: center;
 }

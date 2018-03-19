@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Wie dual bin ich?</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		 <link rel="shortcut icon" href="/favicon.ico" type="image/ico" />
+	<link rel="stylesheet" type="text/css" href="../css/quiz.css" />
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Caveat|Caveat+Brush|Tinos" rel="stylesheet">
+<script language="javascript" type="text/javascript" src="../js/quiz.js"></script>
+</head>
+<body>
+  <ul><h1 style="color:#ffffff;">Wie dual bin ich?</h1></ul>
+
+
+<div>
+	  <ul><h2 style="color:#ffffff;">Was sind meine Interessen?</h2></ul>
+	<p style="color:#ffffff; font-size:0pt;">
+	<ul>
+			<label id="correctString1" class="container">Ich möchte später lehrend oder forschend tätig sein.
+			<input class="container" type="checkbox" name="q1" value="-1">
+			<span class="checkmark"></span>
+			</label>
+			<label class="container">Ich würde meine Arbeit gerne mit Sport verbinden.
+			<input class="container" type="checkbox" name="q1" value="1">
+			<span class="checkmark"></span>
+			</label>
+			<label class="container">Ich interessiere mich für wirtschaftliche Fragestellungen.
+			<input class="container" type="checkbox" name="q1" value="2">
+			<span class="checkmark"></span>
+			</label>
+			<label class="container">Ich bin sprachaffin.
+			<input class="container" type="checkbox" name="q1" value="0">
+			<span class="checkmark"></span>
+			</label>
+			<label class="container">Ich möchte später gerne mit Kindern zusammenarbeiten.
+			<input class="container" type="checkbox" name="q1" value="-2">
+			<span class="checkmark"></span>
+			</label>
+			<label class="container">Ich interessiere mich für technische Fragestellungen.
+			<input class="container" type="checkbox" name="q1" value="2">
+			<span class="checkmark"></span>
+			</label>
+			<label class="container">Ich weiß schon, in welcher Branche ich arbeiten möchte.
+			<input class="container" type="checkbox" name="q1" value="1">
+			<span class="checkmark"></span>
+			</label>
+    		</ul>
+	  	</div>
+		<div>
+	  	<ul><h2 style="color:#ffffff;">Wie finanziere ich mein Studium?</h2></ul>
+		<p style="color:#ffffff; font-size:0pt;">
+
+			<ul>
+			<label id="correctString2" class="container">Ich muss/möchte mein Studium selbst finanzieren.
+			<input class="container" type="checkbox" name="q2" value="2">
+			<span class="checkmark"></span>
+			</label>
+
+			<label class="container">Ich habe Lust verschiedene »Studentenjobs« auszuprobieren.
+			<input class="container" type="checkbox" name="q2" value="-1">
+			<span class="checkmark"></span>
+			</label>
+
+			<label class="container">Ich möchte nach dem Studium bessere Einstiegschancen haben.
+			<input class="container" type="checkbox" name="q2" value="2">
+			<span class="checkmark"></span>
+			</label>
+
+			<label class="container">Ich möchte über die drei Jahre durchgängig durch mein Ausbildungsunternehmen abgesichert sein.
+			<input class="container" type="checkbox" name="q2" value="2">
+			<span class="checkmark"></span>
+			</label>
+
+    		</ul>
+	  	</div>
+
+	  	<div>
+		<ul><h2 style="color:#ffffff;">Bin ich bereit für ein duales Studium?</h2></ul>
+		<p style="color:#ffffff; font-size:0pt;">
+		<ul>
+			<label id="correctString3" class="container">Ich bin bereit, Verantwortung im Berufsleben zu übernehmen.
+			<input class="container" type="checkbox" name="q3" value="2">
+			<span class="checkmark"></span>
+			</label>
+
+			<label class="container">Ich habe Lust, an verschiedenen Orten zu arbeiten.
+			<input class="container" type="checkbox" name="q3" value="2">
+			<span class="checkmark"></span>
+			</label>
+
+			<label class="container">Ich brauche längere Erholungsphasen.
+			<input class="container" type="checkbox" name="q3" value="-2">
+			<span class="checkmark"></span>
+			</label>
+
+			<label class="container">Ich will gefordert und gefördert werden.
+			<input class="container" type="checkbox" name="q3" value="1">
+			<span class="checkmark"></span>
+			</label>
+
+			<label class="container">Ich möchte meine Leistungsgrenzen erforschen.
+			<input class="container" type="checkbox" name="q3" value="1">
+			<span class="checkmark"></span>
+			</label>
+
+		   <label class="container">Ich möchte die Freiheit haben, meinen Studienablauf selbst zu organisieren.
+			<input class="container" type="checkbox" name="q3" value="-1">
+			<span class="checkmark"></span>
+			</label>
+
+			<label class="container">Ich studiere bereits, möchte allerdings mehr Bezug zur Praxis haben.
+			<input class="container" type="checkbox" name="q3" value="2">
+			<span class="checkmark"></span>
+			</label>
+		</div>
+
+  <div class="submitter">
+          <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+          type="submit" value="Weiter zur Auswertung!" />
+    </div>
+
+</body>
+<div id="postsubmit">
+  <img src="../img/green.png" height="443" width="320" id="TrafficLightGreen" class="tl hidden">
+  <img src="../img/amber.png" height="443" width="320" id="TrafficLightAmber" class="tl hidden">
+	<img src="../img/red.png" height="443" width="320" id="TrafficLightRed" class="tl hidden">
+
+<!--show only wrong answers on submit-->
+<div class="textboxpostsubmit">
+    <div class="quizAnswers" id="correctAnswer1"> </div>
+	    <div class="quizAnswers" id="correctAnswer2"></div>
+    <div class="quizAnswers" id="correctAnswer3"></div>
+
+<!--show score upon submit-->
+    <div>
+    <h2 class="quizScore" id="userScore"></h2>
+    </div>
+
+</div>
+</div>
+<!--Sitemap-->
+	<div>
+	<b>März 2018, WIMBIT15C im Rahmen des <a href=http://www.brillianideas.com/ target=_blank>brillian<span style="font-size: 16.371px">IDEAS</span></a> IT-Projektes</b>
+	</div>
+</body>

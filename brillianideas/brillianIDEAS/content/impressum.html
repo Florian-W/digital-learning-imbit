@@ -1,167 +1,195 @@
-<!-- Sound Einstellungen -->
-<script src="../js/jquery.min.js"></script>
-<script src="../js/einstellung.js"></script>
-<title>Impressum</title>
-<style>
-	.onoffswitch {
+<html>
+  <head>
+      <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Tinos" rel="stylesheet">
+      <link href="../css/rocketbar.css" rel="stylesheet" type="text/css">
+      <link href="../css/impressum.css" rel="stylesheet" type="text/css">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  </head>
 
-		position: relative; width: 45px;
-		-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
-	}
-	.onoffswitch-checkbox {
-		display: none;
-	}
-	.onoffswitch-label {
-		display: block; overflow: hidden; cursor: pointer;
-		height: 20px; padding: 0; line-height: 20px;
-		border: 2px solid #E3E3E3; border-radius: 20px;
-		background-color: #949494;
-		transition: background-color 0.3s ease-in;
-	}
-	.onoffswitch-label:before {
-		content: "";
-		display: block; width: 20px; margin: 0px;
-		background: #FFFFFF;
-		position: absolute; top: 0; bottom: 0;
-		right: 23px;
-		border: 2px solid #E3E3E3; border-radius: 20px;
-		transition: all 0.3s ease-in 0s;
-	}
-	.onoffswitch-checkbox:checked + .onoffswitch-label {
-		background-color: #991B33;
-	}
-	.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
-		border-color: #991B33;
-	}
-	.onoffswitch-checkbox:checked + .onoffswitch-label:before {
-		right: 0px;
-	}
-</style>
+  <!-- Sound Einstellungen -->
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/einstellung.js"></script>
 
+  <script>
+  function showRocketbar() {
+    console.log("1");
+    // document.getElementById("rocketbar").setAttribute("style", "transform: translateY(10%);");
+      document.getElementById("rocketbar").classList.toggle("open");
+  }
 
-<body style="font-family: Tinos ; background-color: #949494;">
+  </script>
 
+  <title>Impressum</title>
 
-<div style="margin-left: 25%; margin-right: 25%;" >
+  <body style="margin: 0px; padding: 0px; background-color: #949494; font-family: Tinos;">
 
+    <!--launchbar -->
 
-<br>
+    <div id = "launchbar" class="launchbar">
 
-<div>
+      <div id="rocketbar" class="rocketbar">
+        <!-- see comments in rocketbar.css -->
+        <div class="imbit">
+            <img id="tentacle_img_small_launchbar" class="img" src="../img/launchbar_tentakel_u10.png" onclick = "showRocketbar()">
+            <a href="http://digital-learning-imbit.com/#imbit"><img src="../img/IMBIT.png" class="icon" alt="IMBIT Homepage"></a>
+        </div>
+        <div class="digitallearning">
+          <a href="http://digital-learning-imbit.com/#digitalLearning" class="navLink"><img src="../img/digitalesLernen.png" class="icon" alt="digitales Lernen"/></a>
+        </div>
+        <div class="icm">
+          <a target="_blank" href="http://www.brillianicm.com"><img src="../img/brillianicm.png" class="icon" alt="brillianICM"></a>
+        </div>
+        <div class="crm">
+          <a target="_blank" href="http://www.brilliancrm.com"><img src="../img/brilliancrm.png" class="icon" alt="brillianCRM"/></a>
+        </div>
+        <div class="wiki">
+          <a target="_blank" href="http://wiki.brillianideas.com"><img src="../img/wiki.png" class="icon" alt="Cloud Wiki"/></a>
+        </div>
+        <div class="interactive">
+          <a href="http://digital-learning-imbit.com/newContent.html"><img src="../img/newContent.png" class="icon" alt="New Content"/></a>
+        </div>
+        <div class="impressum">
+          <a href="../content/impressum.html"><img src="../img/impressum.png" class="icon" alt="Impressum" onClick="window.location.reload()"/></a>
+        </div>
+      </div>
 
-	<div style="display: inline-block; vertical-align: middle;" class="onoffswitch";>
-		<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-		<label class="onoffswitch-label" for="myonoffswitch"></label>
-	</div>
-
-	<a href="https://silentlistening.wordpress.com//">
-		Webseiten-Ton von silent listening</a>
-
-
-</div>
+    </div>
 
 
-	<br>
+      <div style="margin-left: 25%; margin-right: 25%;">
+        <br>
+          <div>
+              <div style="display: inline-block; vertical-align: middle;" class="onoffswitch" ;>
+                  <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+                  <label class="onoffswitch-label" for="myonoffswitch"></label>
+              </div>
+              <audio src="https://static1.squarespace.com/static/5a554c15a9db0978da5e344d/5a5e74a971c10b3c9180271d/5a5e953053450a8e4a196c52/1516148065957/HI+20070307+0925+15_00.mp3" autobuffer loop></audio>
 
-	
-	<hr size="4"; color="991B33"; style="color: 991B33;">
-	
-	<br>
-		Angaben gem&auml;&szlig; &sect; 5 TMG: <br>
-		Studiengang IMBIT, DHBW Mannheim 	<a href = "https://www.imbit.dhbw-mannheim.de/">	www.IMBIT.dhbw-mannheim.de </a> <br>
-		Prof. Dr. Harald Bendl, <a href="mailto:harald.bendl@dhbw-mannheim.de"> harald.bendl@dhbw-mannheim.de </a> <br>
-		Coblitzallee 1 &ndash; 9, D-68163 Mannheim <br>
-
-	<p>
-	<h3>Haftungsausschluss</h3>
-	<p>Der Autor &uuml;bernimmt keine Gew&auml;hr f&uuml;r die Aktualit&auml;t, Richtigkeit und Vollst&auml;ndigkeit der bereitgestellten Informationen auf den brillianIDEAS-Webseiten.
-		Haftungsanspr&uuml;che gegen den Autor, welche sich auf Sch&auml;den materieller oder ideeller Art beziehen, die durch die Nutzung oder Nichtnutzung der dargebotenen
-		Informationen bzw. durch die Nutzung fehlerhafter und unvollst&auml;ndiger Informationen verursacht wurden, sind grunds&auml;tzlich nach &sect;&sect; 8-10 TMG ausgeschlossen,
-		sofern seitens des Autors kein nachweislich vors&auml;tzliches oder grob fahrl&auml;ssiges Verschulden vorliegt.<br>
-		Alle Angebote sind freibleibend und unverbindlich. Der Autor beh&auml;lt es sich ausdr&uuml;cklich vor, Teile der Seiten oder das gesamte Angebot ohne gesonderte
-		Ank&uuml;ndigung zu ver&auml;ndern, zu erg&auml;nzen, zu l&ouml;schen oder die Ver&ouml;ffentlichung zeitweise oder endg&uuml;ltig einzustellen.</p>
+              <a href="http://jupiterfoundation.org/">
+  				Live Whale Audio, Puako, Hawaii</a>
+              </br>
+              </br>
+              <!-- <a href="http://localhost/brillianIDEAS/">Zurück</a>-->
 
 
-	<h3>Informationen &uuml;ber Cookies</h3>
+          </div>
+        <br>
+
+        <hr size="4" ; color="991B33" ; style="color: 991B33;">
 
 
-	<p>Zur Optimierung unseres Internetauftritts setzen wir Cookies ein. Es handelt sich dabei um Textdateien, die im Speicher Ihres Computers gespeichert werden.
-	Die meisten der von uns verwendeten Cookies sind so genannte &quot;Session-Cookies&quot;. Sie werden nach Ende Ihres Besuchs automatisch gel&ouml;scht. Andere Cookies bleiben
-	auf Ihrem Endger&auml;t gespeichert, bis Sie diese l&ouml;schen. Diese Cookies erm&ouml;glichen es uns, Ihren Browser beim n&auml;chsten Besuch wiederzuerkennen. Das Speichern von
-	Cookies k&ouml;nnen Sie verhindern, indem Sie in den Einstellungen ihres Browsers &quot;Cookies blockieren&quot; w&auml;hlen. Dies kann aber eine Funktionseinschr&auml;nkung
-	unserer Website zur Folge haben.</p>
+        <h1> Projektbeschreibung </h1>
+
+        <h2> IT Projekt 2018 – WIMBIT15C </h2>
+        <a>
+            <img src="../img/IT-Projekt-2.jpg" width=100% alt="Gruppenfoto" style="
+        margin-bottom: 10px;
+        margin-top: 10px;
+        ">
+        </a>
+        Im Zuge des IT-Projekts 2018 unter Leitung von Professor Mayr er­wei­tert der WIMBIT15C-Kurs die brillianIDEAS-Plattform für digitales Lernen. Im Laufe des Projektes hat der WIMBIT15C-Kurs die Seite aktualisiert und die User Experience weiter optimiert.
+        Neu hinzugekommen sind insbesondere die IMBIT-Vorlesungsmodule nach neuem Curriculum ab Jahrgang 2018/19 und Informationen zu den Praxiseinsätzen, sowie ein Selbsttest zum dualen Studium -<a href="..//content/quiz.html">Wie dual bin ich?</a> Auf dem Studieninformationstag am 17. März stellt der Kurs seine Ergebnisse vor. Alle Studieninteressierten,
+        aber auch Firmenvertreter sind herzlich eingeladen.
+        <br>
+        <br>
+        <h2> IT Projekt 2017 – WIMBIT14C </h2>
+        <a>
+            <img src="../img/brillianIDEAS Team.jpg" width=100% alt="Gruppenfoto" style="
+        margin-bottom: 10px;
+        margin-top: 10px;
+        ">
+        </a>
+        Im Frühjahr 2017, initiiert von dem IMBIT-Studiengangsleiter Prof. Mayr, entwickelte der IMBIT14C-Kurs der DHBW das neue Lernportal "brillianIDEAS". <br><br> Dieses bündelt zahlreiche digitale Lernmöglichkeiten, ebenso
+        wie die Ergebnisse der vorangegangenen IT-Projekte, die SeriousGames "brillianICM" und "brillianCRM". Sowohl aktuelle als auch ehemalige IMBIT Studenten haben nun die Möglichkeit, ihre Kenntnisse durch Lernmedien wie
+        MOOCs oder die neu geschaffenen Whiteboardvideos zu vertiefen und diese mittels kurzer Testaufgaben auf spielerische Art und Weise zu überprüfen. Auch zukünftige IMBIT Studenten und andere Interessenten können sich mit
+        "brillianIDEAS" über Themen und Schwerpunkte rund um das IMBIT Studium informieren.
+
+        <br><br> Wir wünschen euch viel Spaß beim Ausprobieren!
+        <br><br><br>
+        <hr size="4" ; color="991B33" ; style="color: 991B33;">
+
+          <font size=6;>Impressum </span></font>
+        <br>
+        		Angaben gemäß &sect; 5 TMG: <br>
+        		Studiengang IMBIT, DHBW Mannheim 	<a href = "https://www.imbit.dhbw-mannheim.de/">	www.IMBIT.dhbw-mannheim.de </a> <br>
+        		Prof. Dr. Harald Bendl, <a href="mailto:harald.bendl@dhbw-mannheim.de"> harald.bendl@dhbw-mannheim.de </a> <br>
+        		Coblitzallee 1 &ndash; 9, D-68163 Mannheim <br>
+
+        	<p>
+        	<h3>Haftungsausschluss</h3>
+        	<p>Der Autor übernimmt keine Gewähr für die Aktualität, Richtigkeit und Vollständigkeit der bereitgestellten Informationen auf den brillianIDEAS-Webseiten.
+        		Haftungsansprüche gegen den Autor, welche sich auf Schäden materieller oder ideeller Art beziehen, die durch die Nutzung oder Nichtnutzung der dargebotenen
+        		Informationen bzw. durch die Nutzung fehlerhafter und unvollständiger Informationen verursacht wurden, sind grundsätzlich nach &sect; 8-10 TMG ausgeschlossen,
+        		sofern seitens des Autors kein nachweislich vorsätzliches oder grob fahrlässiges Verschulden vorliegt.<br>
+        		Alle Angebote sind freibleibend und unverbindlich. Der Autor behält es sich ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne gesonderte
+        		Ankündigung zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen.</p>
 
 
-	<h3>Auskunft</h3>
-	<p>Nach dem Bundesdatenschutzgesetz haben Sie das Recht auf eine unentgeltliche Auskunft &uuml;ber Ihre gespeicherten Daten. Zudem haben Sie ggf. ein Recht auf Berichtigung,
-	Sperrung oder L&ouml;schung dieser Daten. Fragen hierzu k&ouml;nnen Sie &uuml;ber die im Impressum angegebenen Kontaktdaten stellen.</p>
+      	<h3>Informationen über Cookies</h3>
 
 
-	<h3>Urheberrecht</h3>
-	<p>Der Autor ist bestrebt, in allen Publikationen die Urheberrechte der verwendeten Bilder, Grafiken, Tondokumente, Videosequenzen und Texte zu beachten, von ihm
-		selbst erstellte Bilder, Grafiken, Tondokumente, Videosequenzen und Texte zu nutzen oder auf lizenzfreie Grafiken, Tondokumente, Videosequenzen und Texte
-		zur&uuml;ckzugreifen.<br>
-		Alle innerhalb des Internetangebotes genannten und ggf. durch Dritte gesch&uuml;tzten Marken- und Warenzeichen unterliegen uneingeschr&auml;nkt den Bestimmungen des jeweils
-		g&uuml;ltigen Kennzeichenrechts und den Besitzrechten der jeweiligen eingetragenen Eigent&uuml;mer. Allein aufgrund der blo&szlig;en Nennung ist nicht der Schluss zu ziehen,
-		dass Markenzeichen nicht durch Rechte Dritter gesch&uuml;tzt sind.<br>
-		Das Copyright f&uuml;r ver&ouml;ffentlichte, vom Autor selbst erstellte Objekte bleibt allein beim Autor der Seiten. Eine Vervielf&auml;ltigung oder Verwendung solcher Grafiken,
-		Tondokumente, Videosequenzen und Texte in anderen elektronischen oder gedruckten Publikationen ist ohne ausdr&uuml;ckliche Zustimmung des Autors nicht gestattet.</p>
+      	<p>Zur Optimierung unseres Internetauftritts setzen wir Cookies ein. Es handelt sich dabei um Textdateien, die im Speicher Ihres Computers gespeichert werden.
+      	Die meisten der von uns verwendeten Cookies sind so genannte "Session-Cookies". Sie werden nach Ende Ihres Besuchs automatisch gelöscht. Andere Cookies bleiben
+      	auf Ihrem Endgerät gespeichert, bis Sie diese löschen. Diese Cookies ermöglichen es uns, Ihren Browser beim nächsten Besuch wiederzuerkennen. Das Speichern von
+      	Cookies können Sie verhindern, indem Sie in den Einstellungen ihres Browsers "Cookies blockieren" wählen. Dies kann aber eine Funktionseinschränkung
+      	unserer Website zur Folge haben.</p>
 
 
-	<h3>Datenschutz</h3>
-	<p>Sofern auf den brillianIDEAS-Webseiten die M&ouml;glichkeit zur Eingabe pers&ouml;nlicher oder gesch&auml;ftlicher Daten wie E-mail-Adressen, Namen, Kennworten oder dergleichen
-		besteht, so erfolgt die Preisgabe dieser Daten seitens des Nutzers auf ausdr&uuml;cklich freiwilliger Basis. Die Nutzung der im Rahmen des Impressums oder vergleichbarer
-		Angaben ver&ouml;ffentlichten Kontaktdaten wie Postanschriften, Telefon- und Faxnummern sowie Emailadressen durch Dritte zur &uuml;bersendung von nicht ausdr&uuml;cklich
-		angeforderten Informationen ist nicht gestattet. Rechtliche Schritte gegen die Versender von sogenannten Spam-Mails bei Verst&ouml;&szlig;en gegen dieses Verbot sind
-		ausdr&uuml;cklich vorbehalten.</p>
+      	<h3>Auskunft</h3>
+      	<p>Nach dem Bundesdatenschutzgesetz haben Sie das Recht auf eine unentgeltliche Auskunft über Ihre gespeicherten Daten. Zudem haben Sie ggf. ein Recht auf Berichtigung,
+      	Sperrung oder Löschung dieser Daten. Fragen hierzu können Sie über die im Impressum angegebenen Kontaktdaten stellen.</p>
 
-	<h3>Anwendbares Recht </h3>
-	<p> Es gilt ausschlie&szlig;lich das ma&szlig;gebliche Recht der Bundesrepublik Deutschland. Diese Nutzungshinweise sind als Teil des Internetangebotes zu betrachten, von dem
-		aus auf diese Seite verwiesen wurde. </p>
 
-	<h3>Angaben zum Copyright </h3>
+      	<h3>Urheberrecht</h3>
+      	<p>Der Autor ist bestrebt, in allen Publikationen die Urheberrechte der verwendeten Bilder, Grafiken, Tondokumente, Videosequenzen und Texte zu beachten, von ihm
+      		selbst erstellte Bilder, Grafiken, Tondokumente, Videosequenzen und Texte zu nutzen oder auf lizenzfreie Grafiken, Tondokumente, Videosequenzen und Texte
+      		zurückzugreifen.<br>
+      		Alle innerhalb des Internetangebotes genannten und ggf. durch Dritte geschützten Marken- und Warenzeichen unterliegen uneingeschränkt den Bestimmungen des jeweils
+      		gültigen Kennzeichenrechts und den Besitzrechten der jeweiligen eingetragenen Eigentümer. Allein aufgrund der bloßen Nennung ist nicht der Schluss zu ziehen,
+      		dass Markenzeichen nicht durch Rechte Dritter geschützt sind.<br>
+      		Das Copyright für veröffentlichte, vom Autor selbst erstellte Objekte bleibt allein beim Autor der Seiten. Eine Vervielfältigung oder Verwendung solcher Grafiken,
+      		Tondokumente, Videosequenzen und Texte in anderen elektronischen oder gedruckten Publikationen ist ohne ausdrückliche Zustimmung des Autors nicht gestattet.</p>
 
-	<a  href="http://tomcat.apache.org/">
-	Apache Tomcat</a>,
 
-	<a  href="https://www.mysql.de/">
-		MySQL</a>,
+      	<h3>Datenschutz</h3>
+      	<p>Sofern auf den brillianIDEAS-Webseiten die Möglichkeit zur Eingabe persönlicher oder geschäftlicher Daten wie E-Mail-Adressen, Namen, Kennworten oder dergleichen
+      		besteht, so erfolgt die Preisgabe dieser Daten seitens des Nutzers auf ausdrücklich freiwilliger Basis. Die Nutzung der im Rahmen des Impressums oder vergleichbarer
+      		Angaben veröffentlichten Kontaktdaten wie Postanschriften, Telefon- und Faxnummern sowie E-Mail-Adressen durch Dritte zur Übersendung von nicht ausdrücklich
+      		angeforderten Informationen ist nicht gestattet. Rechtliche Schritte gegen die Versender von sogenannten Spam-Mails bei Verstößen gegen dieses Verbot sind
+      		ausdrücklich vorbehalten.</p>
 
-	<a  href="https://jquery.com//">
-		jQuery</a>,
+      	<h3>Anwendbares Recht </h3>
+      	<p> Es gilt ausschließlich das maßgebliche Recht der Bundesrepublik Deutschland. Diese Nutzungshinweise sind als Teil des Internetangebotes zu betrachten, von dem
+      		aus auf diese Seite verwiesen wurde. </p>
 
-	<a  href="https://jqueryui.com//">
-		jQuery Easy UI</a>,
-	<a  href="https://www.w3schools.com/js/js_cookies.asp/">
-		JS Cookie Framework</a>,
-	<a  href="https://silentlistening.wordpress.com//">
-		Hintergrund-Sound</a>, Google-Fonts:
-	<a  href="https://fonts.google.com/specimen/Caveat+Brush?selection.family=Caveat+Brush">
-		Caveat Brush</a> und
-	<a  href="https://fonts.google.com/specimen/Tinos">
-		Tinos</a>
-	<br><br>
-	Getestet mit iPad und Chrome
-	<br>
-<br>
-	<hr  size="4"; color="991B33"; style="color: 991B33;">
+      	<h3>Angaben zum Copyright </h3>
 
-	<a>
-		<img src="../img/brillianIDEAS Team.jpg" width=100% alt="Gruppenfoto" style="
-    margin-bottom: 10px;
-    margin-top: 10px;
-">
-	</a>
-	<h1> Projektbeschreibung </h1>
+      	<a  href="http://tomcat.apache.org/">
+      	Apache Tomcat</a>,
 
-	Im Fr&uuml;hjahr 2017, initiiert von dem IMBIT-Studiengangsleiter Prof. Mayr, entwickelte der IMBIT14C-Kurs der DHBW das neue Lernportal &quot;brillianIDEAS&quot;. <br><br>
-	Dieses b&uuml;ndelt zahlreiche digitale Lernm&ouml;glichkeiten ebenso wie die Ergebnisse der vorangegangenen IT-Projekte, die SeriousGames &quot;brillianICM&quot; und &quot;brillianCRM&quot;.
-	Sowohl aktuelle als auch ehemalige IMBIT Studenten haben nun die M&ouml;glichkeit, ihre Kenntnisse durch Lernmedien wie MOOCs oder die neu geschaffenen Whiteboardvideos
-	zu vertiefen und diese mittels kurzer Testaufgaben auf spielerische Art und Weise zu &uuml;berpr&uuml;fen. Auch zuk&uuml;nftige IMBIT Studenten und andere Interessenten k&ouml;nnen
-	sich mit &quot;brillianIDEAS&quot; &uuml;ber Themen und Schwerpunkte rund um das IMBIT Studium informieren.
+      	<a  href="https://www.mysql.de/">
+      		MySQL</a>,
 
-	<br><br>
-	Wir w&uuml;nschen euch viel Spa&szlig; beim Ausprobieren!
-	<br><br><br>
+      	<a  href="https://jquery.com//">
+      		jQuery</a>,
+
+      	<a  href="https://jqueryui.com//">
+      		jQuery Easy UI</a>,
+      	<a  href="https://www.w3schools.com/js/js_cookies.asp/">
+      		JS Cookie Framework</a>,
+      	<a  href="https://silentlistening.wordpress.com//">
+      		Hintergrund-Sound</a>, Google-Fonts:
+      	<a  href="https://fonts.google.com/specimen/Caveat+Brush?selection.family=Caveat+Brush">
+      		Caveat Brush</a> und
+      	<a  href="https://fonts.google.com/specimen/Tinos">
+      		Tinos</a>
+      	<br><br>
+
+      <br>
+            <br>
+            <br>
+
 
 </body>
+</html>

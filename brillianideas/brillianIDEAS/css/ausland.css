@@ -1,0 +1,117 @@
+/* Import Fonts */
+ @import url('https://fonts.googleapis.com/css?family=Caveat|Caveat+Brush|Tinos');
+
+ #map {
+    position: absolute;
+    z-index: 0;
+    top: 50px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+/* Makes the map fill the entire window. */
+ html, body {
+     height: 100%;
+     margin: 0;
+     padding: 0;
+}
+/* Style of the marker's infowindow */
+ #firstHeading {
+    font-family: Caveat, serif;
+}
+ #secondHeading {
+    font-family: Caveat, serif;
+}
+ #thirdHeading {
+    font-family: Caveat, serif;
+}
+ #bodyContent {
+    font-family: Tinos, serif; text-align: justify;
+ }
+ p.section1 {
+    color: red;
+}
+ p.section2 {
+    color: blue;
+}
+#headerbox {
+	position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    min-width: 925px;
+    z-index: 1;
+    background: #8b1831;
+    line-height: 36px;
+    height: 50px;
+	z-index: 1;
+	}
+
+#box {
+	position: fixed;
+	width: 20%;
+	height: 300px;
+	background-color: rgba(255, 255, 255, 0.6);
+	bottom: 30px;
+	left: 0px;
+	z-index: 3;
+	overflow-x: scroll;
+	overflow-x: hidden;
+	width: 20%;
+}
+
+a 	{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+p#SummerSchoolText {
+	font-family: Tinos, serif;
+	font-size: 13px;
+	color: #000000;
+	position: relative;
+	text-align: justify;
+	width: 95%;
+	left: 2%;
+	right: 2%;
+	bottom: 2%;
+	z-index: 2;
+}
+
+h1 {
+	position: relative;
+	text-align: center;
+	font-family: Caveat, serif;
+	font-size: 30px;
+	padding: 0.5% 0% 0% 0%;
+	margin: 0;
+	color: white;}
+	h1#firstHeading {color: black;}
+	CSS /style.cssen.marnoto.com
+
+h2 {
+	position: relative;
+	text-align: left;
+	font-family: Caveat, serif;
+	font-size: 30px;
+	padding: 10px 0px 10px 0px;
+	margin: 0;
+	color: white;}
+	h2#secondHeading {color: black;}
+	CSS /style.cssen.marnoto.com
+
+h3 {
+	position: relative;
+	text-align: center;
+	font-family: Caveat, serif;
+	font-size: 20px;
+	padding: 0px 0px 0px 0px;
+	margin: 0;
+	color: black;}
+	h3#thirdHeading {color: black; text-align:center; font-size: 25px;}
+	CSS /style.cssen.marnoto.com
+	
+#map {
+
+}

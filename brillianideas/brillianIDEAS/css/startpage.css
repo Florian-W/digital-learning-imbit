@@ -1,15 +1,20 @@
-html, body {
+html {
 	box-sizing: border-box;
-	font-family: 'Tinos';	
+	font-family: 'Tinos';
 	color: var(--text);
 }
 
-#title{
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 5em;
+body {
+	box-sizing: border-box;
+	font-family: 'Tinos';
+	color: var(--text);
+
+	/* top level grid */
+  display: grid;
+  grid-template-rows: 1fr 100px;
+  grid-template-columns: 100%;
+  grid-template-areas: "content"
+                        "launchbar";
 }
 
 #title a {
@@ -21,8 +26,28 @@ html, body {
 	text-transform: uppercase;
 }
 
+.IDEAS{
+	font-size: 1.1153846153846153846153846153846em;
+}
+
+.container{
+	height: 100%;
+	display: -webkit-flexbox;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	justify-content: center;
+	font-family: "Caveat Brush";
+	color: #991B33;
+	font-size: 5em;
+}
+
 #start_bg_ltr{
-    top: 50%;
+    top: 40%;
     width: 50vw;
     transform: translateY(-50%);
     max-height: 66vh;
@@ -30,7 +55,7 @@ html, body {
 }
 
 #start_bg_rtl{
-	bottom:0px;
+	bottom: 0px;
 	right: 0px;
 	width: initial;
 	max-width: 75vw;

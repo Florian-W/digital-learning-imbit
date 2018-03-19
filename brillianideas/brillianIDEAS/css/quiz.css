@@ -1,0 +1,207 @@
+/* css here */
+
+@import url('https://fonts.googleapis.com/css?family=Caveat|Caveat+Brush|Tinos');
+{
+  border: 1px dotted black;
+}
+
+h1,h2 {color: #ffffff; font-family: "Caveat Brush"; padding: 0 0 0 27px;}
+
+body{
+    font-size: 180%;
+	font-weight: normal;
+    line-height: 150%;
+	background-image: url("../img/Background.gif");
+	background-size: cover;
+	background-attachment: fixed;
+	}
+
+    <!-- Bootstrap -->
+
+
+		.col-lg-8.col-lg-offset-2 {
+		    text-align: left;
+		    margin-left: 800px;
+		    width: 100%;
+		}
+
+		element.style {
+		    padding-right: 245px;
+		}
+
+		@media (min-width: 767px)
+		.content-section {
+		    padding-top: 220px;
+		}
+
+p.question {
+  font-family: Caveat Brush;
+	  font-size:20px;
+  color: #2E2E2E;
+  margin-bottom:0px;
+}
+
+h2.quizHeader {
+  font-family: Caveat Brush, sans-serif;
+  font-weight:normal;
+  font-size:25px;
+  line-height: 27px;
+  margin: 24px 10px 12px 0;
+  padding: 0 0 4px 0;
+  border-bottom: 1px solid #a2a2a2;
+}
+
+h2.quizScore{
+  font-family: Caveat Brush, sans-serif;
+  font-size:50px;
+  line-height: 54px;
+  margin: 24px 0 12px 0;
+  text-align: center;
+  position: relative;
+  width: 130%;
+  height: 0px;
+  top: 50px;
+  left: 50px;
+}
+
+
+div.quizAnswers{
+  font-family: Tinos, serif;
+  font-size:16px;
+  color: #424242;
+  padding: 4px 0 4px 0;
+}
+
+label {
+  font-family: Caveat, serif;
+  font-size:30px;
+  color: #ffffff;
+  vertical-align:top;
+}
+
+input.quizSubmit[type="submit"] {
+
+  color: #ffffff;
+  background-color: #941a32;
+  font-family: Caveat;
+  font-size: 30px;
+  margin-left: 1.5em;
+  border: 0;
+  outline: 0;
+  height:45px;
+  padding-right: 20px;
+  padding-left: 10px;
+  border: 1px solid #5E5E5E;
+  border-radius:5px;
+
+ }
+
+input.quizSubmit[type="submit"]:hover {
+  color: #ffffff;
+  background: #680f11;
+  text-decoration: none;
+}
+
+
+.submitter {
+	  width:85px;
+}
+
+.hide {
+	  display:none;
+}
+
+#postsubmit {padding-top: 50px; padding-left:20px}
+.textboxpostsubmit {padding-left:50px;width: 60%;}
+
+/*SFS light red = #c30b0a;
+SFS dark red = #9f2026; */
+
+.tl {float:left;}
+
+/*Checkboxes*/
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    bottom: 9px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #680f11;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.hidden { display: none; }
+.unhidden { display: block; float:left; }
+
+a {
+  color: #941a32;
+  text-decoration: none;
+}
+
+b {
+  font-family: Caveat Brush, sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  position: absolute;
+  text-align: right;
+  width: 100%;
+  top: 4px;
+  right: 15px;
+  	}
+}
