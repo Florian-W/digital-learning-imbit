@@ -63,7 +63,7 @@ import org.apache.shiro.subject.Subject;
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
-
+//		System.out.println("Test");
 		String url;
 		
 		if(request.getParameter("updatePassword") != null){
@@ -82,9 +82,13 @@ import org.apache.shiro.subject.Subject;
 			
 			Subject subject = SecurityUtils.getSubject();
 			String email = (String) subject.getPrincipal();
+//			System.out.println(email);
 			String oldpassword = request.getParameter("oldpassword");
+//			System.out.println(oldpassword);
 			String password = request.getParameter("password");
+//			System.out.println(password);
 			String password_repeat = request.getParameter("password_repeat");
+//			System.out.println(password_repeat);
 
 			try {
 				UsernamePasswordToken token = new UsernamePasswordToken(email, oldpassword);
@@ -150,9 +154,9 @@ import org.apache.shiro.subject.Subject;
 		}
 		
 		//Send the temporary password to the user
-		String content = "Your temporary password is "
-				+ temporaryPassword + ". You can change this after you logged in. \n\nGreetings, \n" +
-					"your brillianCRM admin \n\n\n This is an automated email. Please do not reply.";
+		String content = "Your temporary password is <br>"
+				+ temporaryPassword + "<br> You can change this after you logged in. <br><br>Greetings, <br>" +
+					"your brillianCRM admin. <br><br><br> This is an automated email. Please do not reply.";
 		MailClient mailclient = new MailClient();
 		mailclient.sendMail(email, "Password Reset", content, request);
 		}

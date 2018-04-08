@@ -1,0 +1,514 @@
+html{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+body {
+  height:100%;
+  width: 100%;
+  margin: 0px;
+  margin-left: 0px;
+  padding: 0px;
+  justify-content: center;
+
+  /* top level grid */
+  display: grid;
+  grid-template-rows: 1fr 50px;
+  grid-template-columns: 100%;
+  grid-template-areas: "content"
+                        "launchbar";
+}
+
+/* top level grid classes */
+.launchbar{
+  grid-area: launchbar;
+}
+
+.contentgrid {
+
+  width: 90%;
+  height: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+
+/* middle level grid */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 30px 1fr 1fr 30px;
+  grid-template-areas:
+      "title title "
+      "axislabeltop axislabeltop"
+      "content-1 content-2"
+      "content-3 content-4"
+      "axislabelbottom axislabelbottom";
+}
+
+/* middle level grid classes */
+.title {
+  grid-area: title;
+}
+
+.content-1 {
+  grid-area: content-1;
+
+  /* grid in grid */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  /* coordinate-grid line */
+  border-right: 1px solid #991B33;
+}
+
+.content-2 {
+  grid-area: content-2;
+
+  /* grid in grid */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.content-3 {
+  grid-area: content-3;
+
+  /* grid in grid */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  /* coordinate-grid lines */
+  border-top: 1px solid #991B33;
+  border-right: 1px solid #991B33;
+}
+
+.content-4 {
+  grid-area: content-4;
+
+  /* grid in grid */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  /* coordinate-grid lines */
+  border-top: 1px solid #991B33;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.axislabeltop{
+  grid-area: axislabeltop;
+  text-align: center;
+
+}
+
+.axislabelbottom{
+  grid-area: axislabelbottom;
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    text-align: center; /*Center the Modal Box*/
+    color: black;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 80%; /* Could be more or less, depending on screen size */
+    height: 80%; /*Important for overflow: scroll*/
+    text-align: left; /*reset text-align: center from .model*/
+    display: inline-block; /*Wrap Modal Content*/
+    position: fixed;
+    top: -11%;
+    left: 8%;
+    overflow: scroll;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#titletext{
+  font-weight:700;
+  font-style:normal;
+  font-size:4vmax;
+  color:#991B33;
+  font-family: 'Caveat Brush';
+  position: relative;
+  left: -15px;
+  top: -58px;
+  display: inline-block;
+}
+
+/* tentacle at top of page */
+#tentacle_img_large {
+  border-width:0px;
+  width:auto;
+  height:125%;
+  position: relative;
+  top: -20px;
+}
+
+/* tentacle at bottom of page */
+#tentacle_img_small {
+  border-width:0px;
+  position:relative;
+  left:100px;
+  top: 2px;
+  width:48px;
+  height:48px;
+}
+
+/* class for axis labels */
+.label {
+  border-width:0px;
+  position:relative;
+  width:auto;
+  height:auto;
+  font-weight:700;
+  font-style:normal;
+  font-size:1.2rem;
+  color:#991B33;
+  font-family: 'Caveat Brush'
+}
+
+.margin_word {
+  margin-top: 10px;
+}
+
+/* axis labels */
+#informell {
+  text-align: right;
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+
+#formell{
+  text-align: left;
+}
+
+
+#individuell{
+
+}
+
+#kollaborativ{
+  vertical-align: bottom;
+}
+
+
+/* class for learning cards */
+.type_learning {
+  white-space: nowrap;
+  line-height: 1;
+  position: relative;
+  text-align: center;
+  font-size: 1.6rem;
+  display: inline;
+  font-family: 'Caveat Brush';
+  color: black;
+  /* animation-name: pulse;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease; */
+}
+
+.type_learning:hover{
+  color:#991B33;
+  /*font-size: 1.4rem;*/
+  transform: scale(1.1,1.1);
+  cursor:pointer;
+}
+
+/* learning cards */
+#interaktive_whiteboards{
+  grid-row: 1/2;
+  grid-column: 3/4;
+  align-self: center;
+  text-align: center;
+  justify-self: left;
+
+}
+
+#virtual_classrooms{
+  grid-row: 2/3;
+  grid-column: 2/3;
+  align-self: center;
+  text-align: center;
+  justify-self: left;
+}
+
+#blended_learning{
+  grid-row: 3/4;
+  grid-column: 1/2;
+  align-self: center;
+  text-align: center;
+  justify-self: center;
+
+}
+
+#planspiele{
+  grid-row: 2/3;
+  grid-column: 3/4;
+  align-self: end;
+  text-align: right;
+  justify-self: center;
+
+}
+
+#serious_games{
+  grid-row: 3/4;
+  grid-column: 2/3;
+  align-self: center;
+  text-align: center;
+  justify-self: right;
+
+}
+
+#virtual_3d{
+  grid-row: 1/2;
+  grid-column: 2/3;
+  align-self: start;
+  text-align: center;
+  justify-self: center;
+
+}
+
+#moocs{
+  grid-row: 1/2;
+  grid-column: 1/2;
+  align-self: end;
+  text-align: center;
+  justify-self: left;
+
+}
+
+#chat{
+  grid-row: 2/3;
+  grid-column: 2/3;
+  align-self: start;
+  text-align: center;
+  justify-self: left;
+
+}
+
+#foren{
+  grid-row: 2/3;
+  grid-column: 2/4;
+  align-self: start;
+  text-align: center;
+  justify-self: center;
+
+}
+
+#social_networks{
+  grid-row: 2/3;
+  grid-column: 3/4;
+  align-self: center;
+  text-align: center;
+  justify-self: right;
+
+}
+
+#microblogging_twitter{
+  grid-row: 3/4;
+  grid-column: 2/4;
+  align-self: start;
+  text-align: center;
+  justify-self: center;
+
+}
+
+#webblogs{
+  grid-row: 3/4;
+  grid-column: 1/2;
+  align-self: center;
+  text-align: center;
+  justify-self: center;
+
+}
+
+#lerntagebuecher{
+  grid-row: 3/4;
+  grid-column: 2/3;
+  align-self: end;
+  text-align: center;
+  justify-self: left;
+
+}
+
+#wiki{
+  grid-row: 1/2;
+  grid-column: 3/4;
+  align-self: center;
+  text-align: center;
+  justify-self: left;
+
+}
+
+#podcasts{
+  grid-row: 2/3;
+  grid-column: 3/4;
+  align-self: start;
+  text-align: center;
+  justify-self: center;
+
+}
+
+#augmented_reality{
+  grid-row: 2/3;
+  grid-column: 3/4;
+  align-self: end;
+  text-align: center;
+  justify-self: left;
+
+}
+
+#learning_demand{
+  grid-row: 3/4;
+  grid-column: 2/3;
+  align-self: center;
+  text-align: right;
+  justify-self: right;
+
+}
+
+#lernfilme{
+  grid-row: 2/3;
+  grid-column: 2/3;
+  align-self: center;
+  text-align: center;
+  justify-self: center;
+
+}
+
+#simulationen{
+  grid-row: 2/3;
+  grid-column: 1/2;
+  align-self: start;
+  text-align: center;
+  justify-self: center;
+
+}
+
+#e_books{
+  grid-row: 3/4;
+  grid-column: 1/2;
+  align-self: start;
+  text-align: center;
+  justify-self: right;
+
+}
+
+#spiel{
+  grid-row: 1/2;
+  grid-column: 3/4;
+  align-self: center;
+  text-align: left;
+  justify-self: left;
+
+}
+
+#cbtwbt{
+  grid-row: 2/3;
+  grid-column: 1/3;
+  align-self: end;
+  text-align: center;
+  justify-self: center;
+
+}
+
+.modal_picture{
+  height: 16vh;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  float: left;
+}
+
+.modal_picture_small_size{
+  height: 5vh;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.modal_picture_middle_size{
+  height: 7vh;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.row_wrapper{
+  display: inline-block;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td:nth-child(1){
+  width: 15%;
+}
+
+td:nth-child(3){
+  width: 15%;
+}
+
+td:nth-child(2){
+  width: 35%;
+}
+
+td:nth-child(4){
+  width: 35%;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+   text-decoration: none;
+   color: #991B33;
+}
+
+/* label {
+  -webkit-appearance: push-button;
+  -moz-appearance: button;
+  display: inline-block;
+  margin: 0px 0 10px 0;
+  cursor: pointer;
+}
+
+input[type=checkbox]:checked ~ div{
+   visibility: hidden;
+
+} */

@@ -13,6 +13,7 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -21,6 +22,8 @@ import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileItemFactory;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
+
+@WebServlet("/Upload")
 
 public class UploadServlet extends HttpServlet {
 
@@ -55,6 +58,7 @@ public class UploadServlet extends HttpServlet {
 		FileItemFactory factory = new DiskFileItemFactory();
 		ServletFileUpload upload = new ServletFileUpload(factory);
 		try {
+			@SuppressWarnings("unchecked")
 			List<FileItem> fields = upload.parseRequest(request);
 			out.println("<b>Number of files: </b>" + fields.size()
 					+ "<br/><br/>");

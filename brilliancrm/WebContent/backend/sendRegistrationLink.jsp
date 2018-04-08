@@ -52,7 +52,7 @@
 <input id="sendRegistration" style="display:none" type="submit" value="Send registration link"></input>
 <a class= "easyui-linkbutton" onclick="$('#sendRegistration').trigger('click')">Send registration link</a>
  </form>
- <form action="<%out.print(application.getContextPath());%>/Professor" method="post">
+ <form action="${pageContext.request.contextPath}/Professor" method="post">
     <input id="backButton" style="display:none" type="submit" value="Back"><a class= "easyui-linkbutton" onclick="$('#backButton').trigger('click')">Back</a>
 </form>
 <div class="mainEventContainerImprint easyui-window" data-options="closed:true,width:863,height:576"></div>
