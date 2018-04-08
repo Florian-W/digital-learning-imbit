@@ -99,25 +99,28 @@ git reset --hard origin/master
 ## Atom
 1.	Git Repo importieren
 Command Palette > Git Clone: Clone
+![](GitWissenImages/Atom1.png)
+![](GitWissenImages/Atom2.png)
 
  
- 
-
-
 ## Eclipse
 Wie genau ein Git Repo in Eclipse eingebunden wird, kann in dem Dokument „Install Java, Eclipse and import Github Repository in Eclipse“ nachgelesen werden.
 1.	Git Rep in Eclipse importieren
 2.	Eigenen Branch erstellen: Hierfür auf den remote git master mit rechtsklick einen Branch createn.
 3.	Um Branch zu wechseln: Doppelklick auf den Branch, der gewählt werden will
+![](GitWissenImages/eclipse1.png)
 
 
 
 4.	Auf dem Tab Synchronize ist bei 1 Pull und bei 2 Push zu finden
+![](GitWissenImages/eclipse2.png)
+
  
 5.	Auf dem Tab Git Staging, kannst du gewünschte Änderungen in die Staging Area ziehen, eine Commit Message erstellen und  Commiten und oder Pushen
- 
+![](GitWissenImages/eclipse3.png) 
 
 6.	Auf dem Tab History ist der Commit Tree ganz anschaulich dargestellt. Hier kann man seinen eigenen Branch und den Master Branch beobachten und sehen, wann welche commits und merges durchgeführt wurden.
+![](GitWissenImages/eclipse4.png)
  
 7.	Ein merge ist über rechtsklick auf dem eigenen Branch möglich
 
